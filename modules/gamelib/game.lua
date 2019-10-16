@@ -17,7 +17,7 @@ function g_game.findPlayerItem(itemId, subType)
 end
 
 function g_game.chooseRsa(host)
-  if G.currentRsa ~= CIPSOFT_RSA and G.currentRsa ~= OTSERV_RSA then return end
+  if G.currentRsa ~= CIPSOFT_RSA and G.currentRsa ~= MIDGARD then return end
   if host:ends('.tibia.com') or host:ends('.cipsoft.com') then
     g_game.setRsa(CIPSOFT_RSA)
 
@@ -30,7 +30,7 @@ function g_game.chooseRsa(host)
     if G.currentRsa == CIPSOFT_RSA then
       g_game.setCustomOs(-1)
     end
-    g_game.setRsa(OTSERV_RSA)
+    g_game.setRsa(MIDGARD)
   end
 
   -- Hack fix to resolve some 792 login issues
@@ -114,5 +114,5 @@ function g_game.getClientProtocolVersion(client)
 end
 
 if not G.currentRsa then
-  g_game.setRsa(OTSERV_RSA)
+  g_game.setRsa(MIDGARD)
 end
