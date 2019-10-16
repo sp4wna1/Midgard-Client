@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010-2017 OTClient <https://github.com/edubart/otclient>
+ * Copyright (c) 2019 Midgard <https://github.com/sp4wna1/Midgard-Client>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -30,11 +30,11 @@ int main(int argc, const char* argv[])
     std::vector<std::string> args(argv, argv + argc);
 
     // setup application name and version
-    g_app.setName("OTClient");
-    g_app.setCompactName("otclient");
+    g_app.setName("Midgard");
+    g_app.setCompactName("midgard");
     g_app.setVersion(VERSION);
 
-    // initialize application framework and otclient
+    // initialize application framework and midgard
     g_app.init(args);
     g_client.init(args);
 
