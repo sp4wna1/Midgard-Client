@@ -211,8 +211,8 @@ end
 
 function EnterGame.setAccountName(account)
   local account = g_crypt.decrypt(account)
-  enterGame:getChildById('accountNameTextEdit'):setText(account)
-  enterGame:getChildById('accountNameTextEdit'):setCursorPos(-1)
+  enterGame:getChildById('accountNumberTextEdit'):setText(account)
+  enterGame:getChildById('accountNumberTextEdit'):setCursorPos(-1)
   enterGame:getChildById('rememberPasswordBox'):setChecked(#account > 0)
 end
 
@@ -222,10 +222,10 @@ function EnterGame.setPassword(password)
 end
 
 function EnterGame.clearAccountFields()
-  enterGame:getChildById('accountNameTextEdit'):clearText()
+  enterGame:getChildById('accountNumberTextEdit'):clearText()
   enterGame:getChildById('accountPasswordTextEdit'):clearText()
   enterGame:getChildById('authenticatorTokenTextEdit'):clearText()
-  enterGame:getChildById('accountNameTextEdit'):focus()
+  enterGame:getChildById('accountNumberTextEdit'):focus()
   g_settings.remove('account')
   g_settings.remove('password')
 end
@@ -294,7 +294,7 @@ function EnterGame.onClientVersionChange(comboBox, text, data)
 end
 
 function EnterGame.doLogin()
-  G.account = enterGame:getChildById('accountNameTextEdit'):getText()
+  G.account = enterGame:getChildById('accountNumberTextEdit'):getText()
   G.password = enterGame:getChildById('accountPasswordTextEdit'):getText()
   G.authenticatorToken = enterGame:getChildById('authenticatorTokenTextEdit'):getText()
   G.stayLogged = enterGame:getChildById('stayLoggedBox'):isChecked()
@@ -351,7 +351,7 @@ function EnterGame.setDefaultServer(host, port, protocol)
   local hostTextEdit = enterGame:getChildById('serverHostTextEdit')
   local portTextEdit = enterGame:getChildById('serverPortTextEdit')
   local clientLabel = enterGame:getChildById('clientLabel')
-  local accountTextEdit = enterGame:getChildById('accountNameTextEdit')
+  local accountTextEdit = enterGame:getChildById('accountNumberTextEdit')
   local passwordTextEdit = enterGame:getChildById('accountPasswordTextEdit')
   local authenticatorTokenTextEdit = enterGame:getChildById('authenticatorTokenTextEdit')
 

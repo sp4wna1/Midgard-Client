@@ -28,13 +28,13 @@ EnterGameWindow
   @onEnter: EnterGame.doLogin()
 
   MenuLabel
-    !text: tr('Account name')
+    !text: tr('Account number')
     anchors.left: parent.left
     anchors.top: parent.top
     text-auto-resize: true
 
   PasswordTextEdit
-    id: accountNameTextEdit
+    id: accountNumberTextEdit
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom

@@ -20,7 +20,7 @@ neededTranslations = {
   "4b) Pretending to Have Influence on Rule Enforcement",
   "4c) False Report to Gamemaster",
   "Accept",
-  "Account name",
+  "Account number",
   "Account Status",
   "Action",
   "Activate ignorelist",
