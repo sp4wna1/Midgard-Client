@@ -142,7 +142,10 @@ function onSoulChange(localPlayer, soul)
 end
 
 function onFreeCapacityChange(player, freeCapacity)
-  capLabel:setText(tr('Cap') .. ': ' .. freeCapacity)
+  if g_game.getClientVersion() <= 772 then
+    capLabel:setText(tr('Cap') .. ': ' .. (freeCapacity * 100))
+  elseif g_game.getClientVersion() > 772 then
+    capLabel:setText(tr('Cap') .. ': ' .. freeCapacity)
 end
 
 function onStatesChange(localPlayer, now, old)
