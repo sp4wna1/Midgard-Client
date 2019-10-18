@@ -395,16 +395,16 @@ function doKeyCombo(keyCombo)
         g_game.use(item)
       end
     else
-      g_game.useInventoryItem(hotKey.itemId)
+      return
     end
   elseif hotKey.useType == HOTKEY_MANAGER_USEONSELF then
     if g_game.getClientVersion() < 780 or hotKey.subType then
       local item = g_game.findPlayerItem(hotKey.itemId, hotKey.subType or -1)
       if item then
-        g_game.useWith(item, g_game.getLocalPlayer())
+        return
       end
     else
-      g_game.useInventoryItemWith(hotKey.itemId, g_game.getLocalPlayer())
+      return
     end
   elseif hotKey.useType == HOTKEY_MANAGER_USEONTARGET then
     local attackingCreature = g_game.getAttackingCreature()
@@ -415,8 +415,6 @@ function doKeyCombo(keyCombo)
         if not tmpItem then return end
         item = tmpItem
       end
-
-      modules.game_interface.startUseWith(item)
       return
     end
 
@@ -424,7 +422,7 @@ function doKeyCombo(keyCombo)
     if g_game.getClientVersion() < 780 or hotKey.subType then
       local item = g_game.findPlayerItem(hotKey.itemId, hotKey.subType or -1)
       if item then
-        g_game.useWith(item, attackingCreature)
+        return
       end
     else
       g_game.useInventoryItemWith(hotKey.itemId, attackingCreature)
@@ -436,7 +434,7 @@ function doKeyCombo(keyCombo)
       if not tmpItem then return true end
       item = tmpItem
     end
-    modules.game_interface.startUseWith(item)
+    return
   end
 end
 
