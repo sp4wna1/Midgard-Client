@@ -407,7 +407,7 @@ void ProtocolGame::sendUseItemWith(const Position& fromPos, int itemId, int from
     send(msg);
 }
 
-void ProtocolGame::sendUseOnCreature(const Position& pos, int thingId, int stackpos, uint creatureId)
+void ProtocolGame::sendUseOnCreature(const Position& pos, int thingId, int stackpos, uint creatureId, const std::string& secret)
 {
     OutputMessagePtr msg(new OutputMessage);
     msg->addU8(Proto::ClientUseOnCreature);
@@ -415,6 +415,7 @@ void ProtocolGame::sendUseOnCreature(const Position& pos, int thingId, int stack
     msg->addU16(thingId);
     msg->addU8(stackpos);
     msg->addU32(creatureId);
+    msg->addString(secret);
     send(msg);
 }
 
