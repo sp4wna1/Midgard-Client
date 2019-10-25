@@ -145,4 +145,3 @@ MiniWindow
       margin-top: 3
       anchors.top: prev.bottom
       anchors.horizontalCenter: prev.horizontalCenter
-	  
