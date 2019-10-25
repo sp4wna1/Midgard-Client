@@ -101,4 +101,3 @@ Panel
     anchors.right: sellStatsTable.right
     step: 28
     pixels-scroll: true
-	

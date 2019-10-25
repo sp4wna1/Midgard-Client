@@ -7,4 +7,3 @@ Module
   scripts: [ textmessage ]
   @onLoad: init()
   @onUnload: terminate()
-  

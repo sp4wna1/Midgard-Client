@@ -54,4 +54,3 @@ Panel
     anchors.right: detailsTable.right
     step: 28
     pixels-scroll: true
-	

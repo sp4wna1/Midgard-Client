@@ -174,4 +174,3 @@ Panel
     anchors.right: buyingTable.right
     step: 28
     pixels-scroll: true
-	
