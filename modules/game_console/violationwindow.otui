@@ -38,3 +38,4 @@ MainWindow
     anchors.right: parent.right
     anchors.bottom: parent.bottom
     @onClick: self:getParent():onEscape()
+	

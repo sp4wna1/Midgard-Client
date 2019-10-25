@@ -91,3 +91,4 @@ MiniWindow
         id: redFistBox
         anchors.left: prev.right
         anchors.bottom: parent.bottom
+		

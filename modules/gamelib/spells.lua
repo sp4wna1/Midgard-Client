@@ -439,3 +439,4 @@ function Spells.getImageClip(id, profile)
     .. SpelllistSettings[profile].iconSize.width .. ' ' 
     .. SpelllistSettings[profile].iconSize.height
 end
+

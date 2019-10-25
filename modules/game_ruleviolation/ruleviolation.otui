@@ -118,3 +118,4 @@ MainWindow
     anchors.right: prev.left
     anchors.bottom: parent.bottom
     @onClick: report()
+	

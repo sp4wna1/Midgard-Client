@@ -108,3 +108,4 @@ MainWindow
     anchors.right: parent.right
     anchors.bottom: parent.bottom
     @onClick: ServerList.hide()
+	
