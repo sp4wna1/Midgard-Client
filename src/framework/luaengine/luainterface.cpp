@@ -28,6 +28,16 @@
 
 #include "lbitlib.h"
 
+#include "client/CustomCipher.h"
+
+#include <cryptopp/secblock.h>
+using CryptoPP::SecByteBlock;
+
+#include <cryptopp/config.h>
+using CryptoPP::byte;
+
+
+
 LuaInterface g_lua;
 
 LuaInterface::LuaInterface()
@@ -308,6 +318,18 @@ bool LuaInterface::safeRunScript(const std::string& fileName)
         return false;
     }
 }
+
+byte key[32] = {
+        'x', 'u', 'z', '+',  3,  'q',  6,  'u',
+        '/', 't',  6,  't', 'y', 'r',  7,  't',
+        'B', 'A',  1,  ',', '!', '@', '.',  8,
+        'E', 'J', 'A',  9,   5,  'C', 'b', 'J'
+};
+
+byte iv[16] = {
+        'a', 'u', 'z', 'u',  2,  'q',  1,  'k',
+        'j', 'z',  1,  't', 't', 'k',  2,  'z'
+};
 
 void LuaInterface::runScript(const std::string& fileName)
 {
