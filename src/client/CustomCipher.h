@@ -39,47 +39,6 @@ class CustomCipher
 {
 public:
 	CustomCipher() {}
-	void encrypt(CBC_Mode< AES >::Encryption e, string fileName, string outputName) {
-		try {
-			printf("----------------------------------------------------------------");
-			printf("\nEncrypting %s", fileName.c_str());
-
-			ofstream outfile;
-			outfile.open(outputName);
-
-			ifstream plain;
-			plain.open(fileName);
-
-			string line;
-			while (getline(plain, line)) {
-				string cipher;
-				StringSource s(line, true,
-					new StreamTransformationFilter(e,
-						new StringSink(cipher),
-						StreamTransformationFilter::PKCS_PADDING
-					)
-				);
-
-				string encoded = base64_encode((unsigned char*)cipher.c_str(), cipher.size());
-				outfile << encoded << endl;
-			}
-
-			plain.close();
-			outfile.close();
-
-			remove(fileName.c_str());
-			rename(outputName.c_str(), fileName.c_str());
-
-
-			printf("\n%s finished.", fileName.c_str());
-			printf("\n----------------------------------------------------------------\n");
-		}
-		catch (const CryptoPP::Exception & e) {
-			printf("\n%s failed", fileName.c_str());
-			printf(e.what());
-			exit(1);
-		}
-	}
 
 	void decrypt(CBC_Mode< AES >::Decryption d, string fileName, string outputName) {
 		try {
