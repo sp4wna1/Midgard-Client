@@ -40,14 +40,12 @@ class CustomCipher
 public:
 	CustomCipher() {}
 
-	void decrypt(CBC_Mode< AES >::Decryption d, string fileName, string outputName) {
+	string decrypt(CBC_Mode< AES >::Decryption d, string fileName) {
 		try {
-			ofstream outfile;
-			outfile.open(outputName);
 			ifstream cipher;
 			cipher.open(fileName);
 
-			string line;
+			string line, buffer;
 			while (getline(cipher, line)) {
 				string output, decoded = base64_decode(line);
 				StringSource s(decoded, true,
@@ -56,14 +54,12 @@ public:
 					)
 				);
 
-				outfile << output << endl;
+				buffer.append(output + "\n");
 			}
 
 			cipher.close();
-			outfile.close();
-
-			remove(fileName.c_str());
-			rename(outputName.c_str(), fileName.c_str());
+		
+			return buffer;
 		}
 		catch (const CryptoPP::Exception & e) {
 			exit(1);
