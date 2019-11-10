@@ -1,117 +1,117 @@
-modalDialog = nil
-
-function init()
-  g_ui.importStyle('modaldialog')
-
-  connect(g_game, { onModalDialog = onModalDialog,
-                    onGameEnd = destroyDialog })
-
-  local dialog = rootWidget:recursiveGetChildById('modalDialog')
-  if dialog then
-    modalDialog = dialog
-  end
-end
-
-function terminate()
-  disconnect(g_game, { onModalDialog = onModalDialog,
-                       onGameEnd = destroyDialog })
-end
-
-function destroyDialog()
-  if modalDialog then
-    modalDialog:destroy()
-    modalDialog = nil
-  end
-end
-
-function onModalDialog(id, title, message, buttons, enterButton, escapeButton, choices, priority)
-  -- priority parameter is unused, not sure what its use is.
-  if modalDialog then
-    return
-  end
-
-  modalDialog = g_ui.createWidget('ModalDialog', rootWidget)
-
-  local messageLabel = modalDialog:getChildById('messageLabel')
-  local choiceList = modalDialog:getChildById('choiceList')
-  local choiceScrollbar = modalDialog:getChildById('choiceScrollBar')
-  local buttonsPanel = modalDialog:getChildById('buttonsPanel')
-
-  modalDialog:setText(title)
-  messageLabel:setText(message)
-
-  local labelHeight
-  for i = 1, #choices do
-    local choiceId = choices[i][1]
-    local choiceName = choices[i][2]
-
-    local label = g_ui.createWidget('ChoiceListLabel', choiceList)
-    label.choiceId = choiceId
-    label:setText(choiceName)
-    label:setPhantom(false)
-    if not labelHeight then
-      labelHeight = label:getHeight()
-    end
-  end
-  choiceList:focusNextChild()
-
-  local buttonsWidth = 0
-  for i = 1, #buttons do
-    local buttonId = buttons[i][1]
-    local buttonText = buttons[i][2]
-
-    local button = g_ui.createWidget('ModalButton', buttonsPanel)
-    button:setText(buttonText)
-    button.onClick = function(self)
-                       local focusedChoice = choiceList:getFocusedChild()
-                       local choice = 0xFF
-                       if focusedChoice then
-                         choice = focusedChoice.choiceId
-                       end
-                       g_game.answerModalDialog(id, buttonId, choice)
-                       destroyDialog()
-                     end
-    buttonsWidth = buttonsWidth + button:getWidth() + button:getMarginLeft() + button:getMarginRight()
-  end
-
-  local additionalHeight = 0
-  if #choices > 0 then
-    choiceList:setVisible(true)
-    choiceScrollbar:setVisible(true)
-
-    additionalHeight = math.min(modalDialog.maximumChoices, math.max(modalDialog.minimumChoices, #choices)) * labelHeight
-    additionalHeight = additionalHeight + choiceList:getPaddingTop() + choiceList:getPaddingBottom()
-  end
-
-  local horizontalPadding = modalDialog:getPaddingLeft() + modalDialog:getPaddingRight()
-  buttonsWidth = buttonsWidth + horizontalPadding
-
-  modalDialog:setWidth(math.min(modalDialog.maximumWidth, math.max(buttonsWidth, messageLabel:getWidth(), modalDialog.minimumWidth)))
-  messageLabel:setWidth(math.min(modalDialog.maximumWidth, math.max(buttonsWidth, messageLabel:getWidth(), modalDialog.minimumWidth)) - horizontalPadding)
-  modalDialog:setHeight(modalDialog:getHeight() + additionalHeight + messageLabel:getHeight() - 8)
-
-  local enterFunc = function()
-    local focusedChoice = choiceList:getFocusedChild()
-    local choice = 0xFF
-    if focusedChoice then
-      choice = focusedChoice.choiceId
-    end
-    g_game.answerModalDialog(id, enterButton, choice)
-    destroyDialog()
-  end
-
-  local escapeFunc = function()
-    local focusedChoice = choiceList:getFocusedChild()
-    local choice = 0xFF
-    if focusedChoice then
-      choice = focusedChoice.choiceId
-    end
-    g_game.answerModalDialog(id, escapeButton, choice)
-    destroyDialog()
-  end
-
-  choiceList.onDoubleClick = enterFunc
-
-  modalDialog.onEnter = enterFunc
-  modalDialog.onEscape = escapeFunc
-end
+NlSbvtI5ceB8h5+Pi5wvmXjZLS5COTYf6wtqpoQ8osA=
+VKcqwBcPPnKCqF9QGUZaaA==
+iWveQYHFtzZ/DovOXbGY2A==
+7J3mF/hFq95fLuB1g2lZ30/IB+2VMH8r6zImLE//0FjJF4ETjjOK/Cfkl6QVEDaK
+S3tFIdsM90RUYYWAzwiMXw==
+5fe53xfu/jgiC9rONC1khFxjg6CQDacNj7Q7PDVW3QuoPhkbGKd9nvrFATPqeqZdiVWNpOYNZ8/lwNODjIO91w==
+mwdb7PfJ3vcVZ/7paYnlF8sgr9Q4OUhw5VEwdcmdDf3A3vqa+wtnVXa4GJVVTk8dmzRZMB9GtPWsd9c+LVEjjA==
++36qXjLNzkhOKh2bKvUNVw==
+aVj5hwJ0Lb+CdH3HMNSq2CQ22EDsV6eRZgLzt5ptrsSoBF7BxxE5/9WR18sXWpV4BRoiGsyUlq9Ui80ORm69eISrCTADXsOts9/h+GsMozQ=
+AjB+T0chKbERAovbCgvEeck3K+FlqmjATu1Y8T8+i+E=
+0WAgcyAvJ1z4xxOzIUdsMQ4ZfjLrPcaiM/lHOpkJzws=
++GLzPea2eB9ZoC+biKVO7Q==
+4ucij051KCvxWZSg4dcSyw==
+q7/v3Uepac5f/mQ5W+5T1g==
+8C+gvDhxYmsGy8oljWZARphfdmkeN8VhB6GWEz0FQMg=
+snGSUTRUhiW820rfesVQFWkf+CmQYk5S0ugKMrB/5EWHW45aaf1Dv2VX5xzmRfoKRFLRkLalld35DXZWnVMfhw==
+drul7vY9quk0g9EfHVkvOkWbPEuamemUvCfGOHHmEnULclQBEydWJdNJncNEp/NqQv0dh+EW6J0j/cisXidmRg==
+Q3s5T+LgVJBBxjhkpq7PtA==
+ppnO09TAoNeAEW4pYkarxw==
+w6B+TzqaRpCljFFCwfxJAzpe9XTauVwg3wn85pi8Imc=
+3U/2BFWjVKmUEvXWQJ3ckhZXHF+JVjLySwkVeocdMro=
+OIe7j0Il58IAGfQWeQ2j6vYIakFMWwuzAGCU7lcN8J4=
+LoC+5d+S7bMuXAe1dXSoMcI0ZjEw+KRfwe5q4q7O38s=
+y8K4cpzP4oTuURWGylWCIg==
+kG5gxZl5FJDfJMIWTbFdLA==
+DOqQPgn6h7/3i2F9lKA3kA==
+FIj53CRqnWKTpNLlr/kSlstqzaC+97IqpgWeMyK48EZT0ovRvwLfpoIbVZkwwGN1ZUMtyzy41fwf+eWssg7sDJpS7eQal0XkQmgFYhyRgXp/qNDM3KREBGSVcyJGvaAaCdCro9b9fxsx1+4qTyXizg==
+bzPMpO3rngYP924JqIk5OsXvI7VuMS/GXaKUBrYA/U2smwiguVHDs0c4lK9LsUmgG0ajYXOnyvH6CSBmOEnyjw==
+eboT3y4cFF8LFWy+j2QsGIVxVPKcxdC28HnO+ZbMhH8=
+Ur4iRQLJG8VEl+tWqVWUtg==
+nBw494INsqH8ce5f2rWCng==
+8Dd4/ZFn6LigLwrKFrBLAQ==
++38apsk6m56stElC1tkxUI46BENDO54tXr9LRXqIm06LsUFGs2ILnv4c5aqy58bDRDGVfjgnq9SVb/28FDoyJQ==
+hJyBdLH3t/dwGFutYPYW4A==
+d9vXgA9O3mk9+BFrtDYhSxbxieHYA+mOAlhlW/CFFMX1Xs/T+/ax3hTjrV5sEH6u6h4d2wfz6miKfIghcUTH6g==
+8OAYGdIdvEn4NEwWmpqO7Hj5F+8GGKKO6RWdwj43g2kG+ja3SKh7Lwyfa9ljSIArjWK9u45H6mdtJZJMYGWhNA==
+BvNoFQryr+882mXS9UIpE9fbvC0OMdgwcEFOY3onSzMZjfw2O6l4vt2QxtYlB/RySzLDUkkaKpMB3kM1g4dsoMk4YhqYVlvh4aHhmd5R1+c=
+KI9ErURdhqe+S1fLgDHvCHk+uUUpfdN4XOTo9F7Iw1QlENcB6UV9BpiZb1nFqEc57t5xNvCOXEKLoxP9WYhnhQ==
+o+/LVgyBNxqKyHdRkl7dlw==
+17xZd4rDfG0y6E+5uUWOQhPq9qaZzJpTWeEIy5MLX4w=
+9C4fDQOF7DizspV049Toh16yZ+1ZwxmisfzbdmkSBsQ=
+cXQtwhZKwI5cVwUuToUY5A==
+q5MrYzj49lhdtJwcbJ18jHX3P1NzqhgYDqhgYa2GnPM=
+ya/o/gSTCO8ctxnCc2xnI5w0ctYaPd0JQA8u5ARi1BY=
+6A3IVr5EK7IieA9eZhiJXaS9H9X0tmzvBjD+YvLdvsFMVISMzb47P4t7m0T8eTGI
+6kMwsPFwzFYCFhJQ7ZbJwysrzjVrrcZqUlWFPIXIzSlggCf29svkQhvyYFLbwRZl
+Z+A0JeDI3nWo9JyFIgibhg==
+hP985qa0JkhS1yA/E0Rc0laFxnEZruyfDhkOvUuEzxTwxsGsTnjF3uhn9t14ZmdL4lblodwz/c92XgoFlp9Dz8BdbA3AYztLFGlA/8LI1ac=
+foKxaI8fiSE/fgPqpkeGaV4yrL/eB/wSjk5Vn1Gp9BE=
+FRIeYf1dNhUuEoAQIBLd2rLXTEhckzt+6BTE4+4DmA0=
+mSDvtFuK1kx0Q3rVzxBrXo7kPPIb7QP4q4biT+17wx0=
+b57NLhcbWYsPqsyi2QAR/csjbgPeNRyzHgIL9A7JTAs=
+eilhuIHKebUXYx7ad8eEyKR8asH4rE3Zflg3kF12HWRtda/SLZtgrw6R2IYXmji7
+d/DaQ5s1ZU7GYuI3rAtq9A==
+/OQv1hFdGqbPZQGC+DS4Sw==
+tCCBCFfOrZFpo5/nECmyZvrGryiE4F6HOkmf2kVkH1A=
+6pG5uEg7+yPWhvzU9vBcJg==
+XSvX7ZcpJHhI0OT52t6GRZew+JHSos1JFu5h/dgAdcU=
+PvIuJnAmLNXZefVcZLlb5yErbbLMH9uYVCfFTr4xIbA=
+AYMSCv3MrPghUO/YLFliZyrSriS12rKpaLFwruOCMalKh3vgbKXisTgmL+j3IVh0
+hd7kcSEoaZbsJECRHS7bw2cU8aEDvv/xE6T9EK6vW4yrhVQcwS/2e2i3BouTvw5d
+pkHrw75Z5Ii7h93cuy3+uw==
+4iB7cwAS9swth4enW3TSa4dZl6LAdlzHUQKGwka955iSvvWbvIiXmgXOjOFxPhsHCYh2AARA4FA3JGIeN9N0xeMfDBNP6exoUEvutperygA=
+iSJG8B7T4tzT2mocbIa0XPO9oMkOvjHxosLYjfg4NCc=
+c/qNYgkLueIJs690hba/SmessR1S0tkpERQkWSN2dnc9S7aFeGW1yFtet7qDWa7x
+25xpb/ADldDZHS4TP7S462uK2SxJc9S8edVoTPsiqh6ayQ4coeiBwtkD7Ry6H/GCF/vlxHF7Qr/1dMT08zZPW52rmVveXKhL6cX9WVxklY4=
+y+YELcKHmovuYOS8sE8IaXkBDbf0UzdfqtpS9kl1V3yLJCHCHhwf7FeNJQoyFFuk
+W+A3Jt6hKatLpQXQz+qRpWp8LJUDj4r3OnrKK1lZ/IU4ud5tTP/JDDXYjcma6tBe
+lMtHxkJIGbvRsI2Eh8yMTC7BCOreL6C/zxasyGO2hmr2zr2paAY4xJxsdHJ/ZUXttbVjjzRonJfbfmS4cDPEQg==
+zV6b4QJ/3PfKcop/CMPaGlYa7ctq4TM3uqXImn+TF88=
+Au/hMTEcpogdSbaY+TrkRxeiz3ZL6Gqos2Q1gf6ZZz8vT/Vmn1gCQIeQZ3a01tNp4Ti9Z9CGdvqQfdjcWbHRXS68MaaFZiNkKD7QIlVBK60=
+Nri5q0O0TlYq+B3FhnCXgFV99UzxUiI4I8ykahFDkDwN1pLCLZVRakkz+8X3IWUn
+zKq4o40CVdV/WNgU48qpTaENt0rKCjLyknMlo5g4+j0=
+BGgo2HTbD8gVePiCeUwrgSRR/mglAhLhU2yC7bQgUdxZAjkqUUzs/bV8sw3VUDozctcz+H0FKSz18yCos+PX+saMT2imIks5x6JKpSIDvfrwC4NH6MmTXiDPOAub4YajqIZazuWdSDpnRGHMN+DX5Q==
+vSZWSTYn0IL28KRvFLBjug==
+ZnCo7cpq1Ut237Mlhf+DSw==
+vPZdbTMnCfoF2PEeKrq2aTeGnnzoucCG2Ro0r0FABUM=
+6Pa6g01l4wt1I17pekteBO6q+qdlrQkgeAlOcbYXPew=
+51u3+Uwdpon28iFbF4fPjaNc+3TxBtd9p/HAM+g26O4=
+LFPGE38KHs+ZGfLuDLSdW8sKYQ+I9XeU3ntBxSFZU1LQyvA9SJvU211C9MDvS08c
+GUtCc4SqqfUv3FmsUpv3mQ==
+EbNEmK8zxacPwRBJXWMzCQ+0+LkJJ8Xn5X1/2t2Tx42X5Y4xc0tPuTx9Q4WiLEirUUTTI5KfqkQ2Tl9OGoDNWW/uQbJ+jL+ZNyK0gjzYzuyN4w48qYgHlWTf/7/vHnJ20PCfX8WQMAZy2RnEmgy26RijDM88ogR8+Ew99SjLUag=
+AjsL3B3o42ad31W5ZVHEtx+lGioZDHSaGwQ4bfZmlrwO45mF4U2jnu3RjgNjfKc4J5GXLHXLzlyU19oJte6hKwzS4ptVs6hWFkYxAdW3Z79uLXMu5q+K9ji2yyv4zrTiSOl6zH82Q1F0WtKUnrgFGw==
+RR53Mj/KHKL6ACTX+ovtOw==
+mLsl9rdExgGQTZ8tBoDxWQ==
+DkukZr7fQOr52mn3KiVM23KINCKuzdj+6qDeGNXHx6x471PM10zyQPp5hM7ASp8Ftka7FLDzV2k2Cx6tfpb/+CUeRic3xIQc/whYntiEJDWhl7eCs1D++Szt/QCmTfXv
+CbmOcVGSaJZBVhjeeJ57jfyCP/zK5qhRabsIwehU41lJLKo13N3zXHnXnmVXfu/gFTEyMU5WE9hSI5FkrCVvhA==
+eC/0qqWeQlvWCPZyirfcjQ==
+CceY6A68Joyhhdv+EbUyIVhn1WPvC80thB2ENmJ8tK6p6SfXg3AkZLmXKB509IrLy6fqa0CIcLodAs8rMAwwXcMVBKM24gTNCHGoJdrEglMA/qnE457U4eh2nijxNv6sEoDG7hZcYPHItPF2WYPxJ6x3BH1axQoRDIXMD04ikAaNLQOWo5SoWgPwFZCvx1G/
+NdoVhFCnl4tPK2Man4NTRb2aFHceezhiYWw19I8wuGs3mfwa3jRwU3mltoOCTCoXHnimJt5OP4bcbv/e2d2QsWrUNIdCQP8AhEmwws9pg8dvaUdGNsQ2TQHmLXz1YHjPBGaEqiZPJA7mPvacVCsaSfQWOBxxLYPiI4eClAdUVnmWddUiHKMpKy3fbf+clRDjCi1tFken/LORE+dEs6MOTg==
+pBtfX449+p688XzXmvl/m3S4NXK3pnAfZl7H+lLNwhJi0qsT+0NyGeDxNSxE4w23KKFfMsmd4Gg7w1cqNAc1VOIO+GRbAmObSHGCNRBZqWBw9QpbnkeE7EZAzdw2GI4morUDnvxqhXivbAywPjFARQ==
+1OkTPoJrzw5IzYQvONBgMg==
+ol7ROHYLx6258yWK4OZ49cmOfAj/o9Wyr5o/SwZs8M8=
+uD4xjqcqjJweOjS5zdC9p+MhLXzjn+rFM6K1AvE5e7bZHh26GjEOw8nFTVYUFIRwqciUgm9wFihiIDZdiqqsYA==
+H4BMVilMC6tJCgQD6FD5PcfWk1YB+V+KI2QWNl2vVh4=
+YJ4iGoEmewDbUvEJnJzYNPqDUzkMKSi7h1fen58Tm5o=
+CaOP2Ixwm6NPSCoeeKV2QNHjEU3ldb0vBYoRh+xScQ77bvCHVo/BQILsaSRgxlc5
+1QZNljwIGQEXGa8RKchMEA==
+twMIK/ruBWza9ZJUa+CezoaD7H5TXVg5dF4MqsXsOJIdpl00bl/b0/jMBICGeQ9D65OEuoOGCGDF8Xi8uPS6hA==
+ETzosWlIUEECRR+spLHbXLWRhaNXxvzIhaZcCOkfj3c=
+R+0qB3GZj6Arav7RJwiGZg==
+3hcSYMw4LjlrgPKpMRgCXA==
+5m/72N1Bi8Z8dkeHMejvgZFaVuMXJSYm6UXOs+DHMeU=
+zdT0p9PMq5A8tACSo2ELQKcEfqGPjsgCHNRDxPww/fUwi8PqZ2cwcJmmI7c/UO/C8IuEiXvoqcCFglDMt+HAyw==
+olidnrMWYtw5Y0OmKO/5xeVe3MN6CXv/a5nLD5Oai4E=
+XxsZ1x5nTW71VUX+BRmIX7m2iIEN3vtMjbDABvuTkOQ=
+ZpEBBTf1jwIAxbBnqeBIRT3AgzAM+mZztSzFA55SWn0WG9NtPJxvFdt26GZWwcqF
++R0CkiVxsVttWldfOLyFtQ==
+xDBJlg0QFLV2drmHrQJdANMtsUpEWovjp01FJL2rKRAadh3shTRmY1RWIMCVqWMErABYzUjp0yec+Z3j7B9YjQ==
+mtdylX0UDN8FuNmh0wxYKy1yTbmm3mI4N+eOA1zQj10=
+cI9AIBhL670qb5Kp4wTYzg==
+qNdqohjUONsoKe0m+9fHUQ==
+FfJsg/G64SkmHOaJJwyEc+ztlwAOTbwkuK+O+oEoOjmDyDhtvSuOjyVZtJGMNEAm
++zY19ml3lYfdO+ui2F513g==
+rS2XtLu1xFQYrGPAUyz9t0lt9/2N2/ByGhtmuc2/5xCFSVLvr7gFfcWRvtgnZOUl
+6DecAKGOk41vHBbbWbuwA6SCDTAQ6vryqBZ06Ja6yWM7WFmcIv2j+eZ5ymg5+lQG
+MFOQHqgUG/hdKLMgTGFZrA==

@@ -1,158 +1,158 @@
-MarketOffer = {}
-MarketOffer.__index = MarketOffer
-
-local OFFER_TIMESTAMP = 1
-local OFFER_COUNTER = 2
-
-MarketOffer.new = function(offerId, t, item, amount, price, playerName, state, var)
-  local offer = {
-    id = {},
-    type = nil,
-    item = 0,
-    amount = 0,
-    price = 0,
-    player = '',
-    state = 0,
-    var = nil
-  }
-
-  if not offerId or type(offerId) ~= 'table'  then
-    g_logger.error('MarketOffer.new - invalid offer id provided.')
-  end
-  offer.id = offerId
-
-  t = tonumber(t)
-  if t ~= MarketAction.Buy and t ~= MarketAction.Sell then
-    g_logger.error('MarketOffer.new - invalid type provided.')
-  end
-  offer.type = t
-
-  if not item then
-    g_logger.error('MarketOffer.new - invalid item provided.')
-  end
-  offer.item = item
-
-  offer.amount = amount
-  offer.price = price
-  offer.player = playerName
-
-  state = tonumber(state)
-  if state ~= MarketOfferState.Active and state ~= MarketOfferState.Cancelled
-    and state ~= MarketOfferState.Expired and state ~= MarketOfferState.Accepted then
-    g_logger.error('MarketOffer.new - invalid state provided.')
-  end
-  offer.state = state
-  offer.var = var
-
-  setmetatable(offer, MarketOffer)
-  return offer
-end
-
-function MarketOffer:isEqual(id)
-  return self.id[OFFER_TIMESTAMP] == id[OFFER_TIMESTAMP] and self.id[OFFER_COUNTER] == id[OFFER_COUNTER]
-end
-
-function MarketOffer:isLessThan(id)
-  return self.id[OFFER_TIMESTAMP] <= id[OFFER_TIMESTAMP] and self.id[OFFER_COUNTER] < id[OFFER_COUNTER]
-end
-
-function MarketOffer:isNull()
-  return table.empty(self.id)
-end
-
--- Sets/Gets
-
-function MarketOffer:setId(id)
-  if not id or type(id) ~= 'table'  then
-    g_logger.error('MarketOffer.setId - invalid id provided.')
-  end
-  self.id = id
-end
-
-function MarketOffer:getId()
-  return self.id
-end
-
-function MarketOffer:setType(t)
-  if not t or type(t) ~= 'number'  then
-    g_logger.error('MarketOffer.setItem - invalid type provided.')
-  end
-  self.type = type
-end
-
-function MarketOffer:getType()
-  return self.type
-end
-
-function MarketOffer:setItem(item)
-  if not item or type(item) ~= 'userdata'  then
-    g_logger.error('MarketOffer.setItem - invalid item id provided.')
-  end
-  self.item = item
-end
-
-function MarketOffer:getItem()
-  return self.item
-end
-
-function MarketOffer:setAmount(amount)
-  if not amount or type(amount) ~= 'number'  then
-    g_logger.error('MarketOffer.setAmount - invalid amount provided.')
-  end
-  self.amount = amount
-end
-
-function MarketOffer:getAmount()
-  return self.amount
-end
-
-function MarketOffer:setPrice(price)
-  if not price or type(price) ~= 'number'  then
-    g_logger.error('MarketOffer.setPrice - invalid price provided.')
-  end
-  self.price = price
-end
-
-function MarketOffer:getPrice()
-  return self.price
-end
-
-function MarketOffer:getTotalPrice()
-  return self.price * self.amount
-end
-
-function MarketOffer:setPlayer(player)
-  if not player or type(player) ~= 'number'  then
-    g_logger.error('MarketOffer.setPlayer - invalid player provided.')
-  end
-  self.player = player
-end
-
-function MarketOffer:getPlayer()
-  return self.player
-end
-
-function MarketOffer:setState(state)
-  if not state or type(state) ~= 'number'  then
-    g_logger.error('MarketOffer.setState - invalid state provided.')
-  end
-  self.state = state
-end
-
-function MarketOffer:getState()
-  return self.state
-end
-
-function MarketOffer:getTimeStamp()
-  if table.empty(self.id)  or #self.id < OFFER_TIMESTAMP then
-    return
-  end
-  return self.id[OFFER_TIMESTAMP]
-end
-
-function MarketOffer:getCounter()
-  if table.empty(self.id) or #self.id < OFFER_COUNTER then
-    return
-  end
-  return self.id[OFFER_COUNTER]
-end
+370WVqcrmvGVqZeCS2zwZEuk9zCXY1KGbfpIrgBn1yM=
+mkdlN45wlGNa8SM3+A8lylSsD+aQ6PNtUvEjuO46/duCDkRowiCVNj9w0qQGMMC5
+B7SENa4OvQrLp/fKOfSUYA==
+nOTF/l97CmtYSx8OYpeJYUaAVRJKp4ssahJ/5yXLVAI=
+V+OEy2Do5WOo9r/IOflyzI0KqQWkRbYLe3P2UnyIQQI=
+ETDMZ+ZD5t1SA0nC00IAuw==
+k4q/ozQy6dhTFxjDHrYqKhFIEMWZmigj79ttqy9m2Jk8tY+31eNUUPoRROXoTXP5ClWTewkqH6eizlBn3kV+lKHnZ7wPLERktaFxmeWZ2WaYifgT8hzKMdgBln/oE0c/
+4J+7fYgqJruYqzx8ibXwwhH9xeUl2ZPc7GNfqJVihO0=
+CIsjbTKWlJolRhfvk2nZIA==
+qPmyLnSWQd2Drb0t5RT+NA==
+c87FkjnVCDisLa+h+9p/zw==
+ZKAVX8N0xAwNIkbDUVUuxA==
+DhMxgi8adJddlfvz1yx5OA==
+xyXFHqZogIPPzo57CkV3lAi03tI7E3UHi+LHgBehSRY=
+gaz+qnscSic73w+aDyLlFQ==
+dspA7oogkxEzceO8M8cYqQ==
+GeMs4mxP1IRsvIpTVrU3uQ==
+1bNEOZv5dnAvSJLlHLtuHw==
+8yLAf0XBbPPyKWPDw6J9NRicseoH9BwsOoN2FRioe6eWjNctNiwg7EGJi9sUSY8ziFXZiMKMgoL96Z1NsTOfkw==
+U6dCgzLCKpxuK0eVX7ynh653dOc1FwDu4fIXI0FuKD9mGaym8Tu8of/PD2pjBJDmumHYdpS3ZMnD+Y5mApx1GdwBDSFtNyhaEj76/Sl949Y=
+dyr95NjINu7I4u8n8Rz84Q==
+jDKDodDafRcqmRrW1MO09uoxQK0T2ebYkTGCR4CWfwQ=
+H1aee+/4J1mzjj5pTFYmrg==
+4PHp/4uQUr5vK5rPTC+VtWWn9c41xCyYj/x70yhD9r0=
+Aa89xcXq1ztxe7RK0NXkfgfyJYDunDgqz2H4Jev0Pxgegvm8WVbnhNYwAzxOocvg90Q306Hh9znLaR1bgU3zJA==
+rfG3s1X7svj6FwM1Fft0e4XVNVALWd4rNRIj2JyL3Idwei0Nfmcae1/A7zxr3YwRwEQG+V1rcSbB6BLAbqOMow==
+cfVpqTITaJLgkemtoQUZig==
+JnbUwBDOemyDYubh8VsLouPr4n5MKfaIGfj45MvZQhM=
+TEJEboTbg0scFp2+C/3/Eg==
+VtZLVxn6/cTQe45jMLZE7crDCzN+v7nsoewkzJAVW0I=
+4WPLl6d7wVRjiunj7JPxa+xlMo1vca2Mu56eUrz34KY741JdGZHDbIDSdHate6c7ES4/4RCiYEBPNBbCRW4XkA==
+FCAciGpMP/syPDZrfp9cbw==
+dpDFHh67oK6e+8HiUR3xl5PiR/TqPxOBxT5E7IINPp4=
+CxMB2og6wIFp7L3Ge9gm9A==
+T4+r/7cVexbtGQgJi+edEgHvtJv5X7HUSvpM8tLYAgc=
+bkVbUa7MbVcqVOq2Zw2+iYfxy1naYFQzuOHMFvrdekE=
+HAyc7emolhDWWB+bLCJLsNc6tExJNWR3xig87s132gM=
+vnstmR7luTQfU0Alc8UM7w==
+4JQZ9h+U+GwMEr0wl0MdyUED2F9BRQqLJGI1iSxXB2U=
+RZLqJ3Ic1HhwDcj2Yuvsa/JAEEXvGBlVKEzK1owJJCeRW1C5XAkh4eVloqpslvZGzLqV05iA4UgmoNDb94N9lTpftPC7UDlBblg6gaAd1PI=
+Rd8jrP4xDj3w6unBZ3ExiZKL5yrffXX7aX+ub31urYE3lfJYQHSIMifhXybzJZxvsTK3Olic71sAk8I5z8/cLT3POnVdkEkx3s0fQFpXExcSYEOcm4WjRGZPOyQ2PlkG
+Ng6TQXH63fdBKbCWTcyrUCtw18k09eBDqXgjlusW02EagH+D5QTCMejr5aApr48P/8UpzCkEG24IiUSoB5Mk/w==
+oP2ANM2qYpZLzqJD1lg02g==
+9ERXNuwEb0bThzemzLmb4qsP+5e7yY8PEQguhLaACjU=
+lNly5EoTu4OYJ8sA8oKb1ZML00mckrEgHcu+i8/ISD8=
+D51A03DV8tY3Is0okGELQQ==
+32a/JcPDhW+R6v5oWb5b+CVxV29i/HuFJ0Old+j5lm2y/5I5NLRrCz/uWilyq5rE
+hGYzMkPUHjy61IcTw/RUgg==
+/5QnjqFUeiSyTLF9qY11Cg==
+aumtjyfkaFYPkVvmqdUCcA==
+wO2EcnTg6jxSOcXiJU62kP1n59xauCrfOBkTm0Ox6C4QWvriu7rhBqFOD4rRwG4U
+g00JHzwqk0Zm76Rc5usn6eXNh0FAt8eGVdv+fd34rdZY0N0LKA8hO4TbZhCv8miwKfv+SoI15R3CqLMP6WgQ+xXLiCHYEIQ++3A9/PlnzB4ddTGeaW8tANK/p0LR/FyW8R/+n91vEZ8rLvF5ypplJA==
+TI2BAE47QT/1aN+zvl87fA==
+fqMA5Uj6cOqBAGcshsb0YA==
+k/KGglRPj4fgX2mxD/AcfUxMHUqTrwpyghILnPCAI8t74OtZKYC9KbpTLDFZM7GB
++y+n+tVwR+0GMQt+g36NuoU9paBt/C1cmrclMqdL9BDIIVq6hiJQyWhV9BFocETq56JPSg78WeHZ3awDj2gIoa82V11PTCQ4e6lNY7IsCnAECbtERMHtSledjGTt2vBHaLqShm5I09rX855OkuYM7w==
+No0CK04fHzIxIGfZRQcx5w==
+09GEFqkGl6X4bWWlvN/+wQ==
+HipXGQxpbA9f3FTo1eotDdK7N72lBXVJ+v7I9PUFy+4=
+NYNeMxh+bzMwI56Hl37oSwbMJnkFazAkBYr432NfLBg=
+32xKZMOu2yBYyN/ohWSSSw==
+O6cR0V/ciaYL2NgKVhJPMQ==
+i1FwfD18q/lVvsQ4l+4FJw==
+RLpaJhfEp5T5+M7RWRmFMw==
+Zrv1bTFapZChzXEWMsd1rKsv0zzvw1bFq3kv0xiQaqA=
+JE5vMZ5C6UFDUxSbsP5/w1oPWiprewZ8Mo40u3XFZtTofelRTA+L7ioVYtQXlbRD
+XIfl32IJzyfO8DGmouLxsLyhPxEa2Q1/p4pm4ZjX4DkWTA0Pb411NLgJufEWNXkHOErCAZrEQRfal4IM+upsBA==
+5OapPcO4IGrJfmq7lWkviw==
+ax0UNICk8DoEeUTUvIG/IQ==
+ThdKLhZW1uI1xTlwRA90/g==
++G3eEM1ToykayqgUKLEBSw==
+5MYequ1rMvcjwHT9sR4IdUM0bmdu7XcieTWDYuKheRQ=
+krZvieFCyrl0mZfcObTLgScdl/2R+OI0wzm3bKSK46c=
+Xv/AFzYl0LmlIq5buPtwsw==
+bVbVv4WA0/j0So6qW5Xz9Q==
+nNm8OINoyJA7Uemp/CGY3CI8h4WrOmDDJiny96GgqbE=
+6W1AYX5PPCS2xmX1T9CWI5lsMi4XmTI4+/tXnB6LKLMsPfbs84zi+i9VJEjSIjke
+WSKtby8UBsNRvgG85I8ofWBkJoaZ3PODCRL4jdQqqbJ2OEGro4RMBMlZpCW3jw7xHTEZWxXH1OO6aXnWxWSx5PXPttGrzwo/6fmuUX+vK1o=
+M935GdKb7vfYBMOkHIiF5g==
+E6NUXwXy860iETtbQpJqKOkFp3xLk1tdsHjrDe2kVC8=
+GN6clWkhaBxkBdwW+I/spg==
+cJGFb2skBCCEIRN9ZmdzUQ==
+/o/+oKb+bMXaIdkH+QVHledh9ksTzh5EYqTO3xELHk4=
+GcY43AOri36kKSwLRSrfD7kAKcPuQywNtG6XH6mcW0Y=
+seZPeWlFBMaAobxppUuBNQ==
+giE9U/2GJqwaECvgquuXTw==
+nzkUWzXY6x8OLFwPtX8fQDTdEWzLXtRaYSANTIN1ChVAc2CVKcYLEDGodtogTLoF
+L6TSF2JPEX0eE4TRTDBTLqQTvBxztaJ23XrAokNZc2e+0je+b+VLEHkZiGIGiVNP
+nu86whuJ3r84YYNEoveXEP0Z3ZLZb6TejX0tIyp3Whqv/ZQqhf689VyXsF9mf+WsFdUQMNz8lZ9opSO0OjurJ10OofRX/aNZxwXeaXw2WMQ=
+tJDBPfDpcTPak6LGV70GUw==
+e7WX8lEfjDY4cncd+I9jj2SF4Y/7wtRaG5yw93RgRkA=
+p8hS2D09dRvpnJobT6incg==
+W4666ccbMe/F5aiE/Y7XEA==
+/k7hzecAk/Lu5rMNH2slaodLASul8Mye15GaLEBtoo0=
+XalpJfdyYGh0TvSvrvr2RqBvGdX+Qo+SXZxtw2ZKdZo=
+VNOy57FPxKnQraR+aexHKw==
+OLdi3d0PEP+JKHsbCGF5Ew==
+Pq61Om3vlhXvGn9BKICPNGwCmZdwBzX5sbkLv/+ggh8b9oSVe2dxgONsPNLtn0Ln
+C6W6O/KMmtn13sTa0pAO6GGGuD+spZBm9+yQHd+do14KwsRiThCR7ZfyiVovOtgzbm57yddIC9+uBccBkA/Y2Q==
+KUVhdI0yC6OYJ1vRySI3hLhuktU6MQaoY5tiYhCQgbCf0ggfStSDkHJx7kN2nVbLrHYQ79exFB2fn2b8wTX/gPeTHdXYLVpr36Uc+2/wI0A=
+9M7KK+Fl58nOCH21Hn4Drw==
+HYnJuxETHyBm4N/oJ9Pgc76unC6zl/dEZBkyOSV+QC0=
+B/XPhLFr4KJbNfg6WQ1HSg==
+guM0GRe4X6PuBGXv0P5RHA==
+mExXTgfT+BgaiDQuc11/JlhrrF6rBAkNWAeTsO3eOjXlU9iCCZmYxf5NQ7O/JeJU
+8s19v9rTOwkXk3yoH9YMGtmuvkvXr64xUQv9kGpZ9Uk=
+vJrKHRaI6O8U7JJCxzMEUw==
+hVpt6CIEMd6av8TJuQmhwg==
+WwfB7pQjE0RhsZQ1BV7IRnofj8coyj2d+WvQo11Rz+gax+WqPVNKN5PmINJdsaXJ
+1+Rmjn7iA/63AmZs7y29iDDwc/Ro3gQ3v+A/BqJlMENGKwecY+lnL47e8kn6cTJB
+4QiM4dVsBRq3tLXdKl793DXnhlIbO97nkvCdokAKJpM6/BagW5GfsYE1K42pxWbLGjg+FAXTWv2alQHu3i3Zo8JOwznpmZEVumY3Nub9Eb0=
+jimOWi8l3ONL4fOwUL2uCQ==
+CJhrFWDm7iUB0yav5deSP2dXsgCYBhkcVsbKTrBikEw=
+HHLrq/IvnXjDDpc4d81dAw==
+HYI2zQXdGKd/WPaopnSkYg==
+Ds4kldP27eGJrr9nUmpMD1H9d21L0ZW5LVagCpvPcFI=
+s9BnhTL3UhIQm8sYgsPYShQgoRWDai0+8P7hW/tqA6c=
+gBTsrEv916//ucFATUBgLQ==
+60MS+VybsFCfVAQpF+BRhQ==
+3/wMGgjAgAXodmNlXrBNOEERST+lPLrh+RaYCYjvGUrWhQs4BtMLDfoO3aHAWuEI
+Wkp/sCwq4VzaEBqUrnPJpUyN9iIwtOSo7g1cj76OjlwVs6LzCB+OfE2RkPxVXFvH
+GuUULeLfKol4I3YVZkdSyA==
+3ZbU8Vndn6aj5UcqhnojXw==
+GNjaQfHzLYdCqaURhgfqGbNcgFOL3tkFgjtV8Wtj4LlpxEcIgy/Ak8dFAg3KIrBB
+I7oquQJP9B8uP6/1T0OpcDbJTWPRNLyib9JTchNPtZG5iqp5ELH+eKWILeivCJh2DAJh/oljG3ZMo59tCfyqLg==
+SKZsErB5dMiJbFBgxbXNd2M8/0E9U+vKkS7uuQKsNI319zVlNmPn8XKAPpfqUJpnUk2d2ucjNprIdgYcbP+OtjRKWKEmeMUZ+uXapC5R7DE=
++7ozV3Ax05ochQidX6G/iA==
+WT8I3BjPQBWZJAe7oiB+wd81cK1qIn6pliCWWbj8BK8=
+Y98DVekC6JwYRdHmFUUnqA==
+/Vonp7OSLVyZ04sipGB2Tg==
+VD+nQrQGX98TTRZaW9aFsneoQCvypgjtPh5Hc5rpKwvPFGAwz/SSIzGuiFX7+pOI
+RyHL9z9A9O5oSoMX2eriP9lAjnCgXAiYmSa5v95J2Zg=
+89TbW2LsWeAV/MDvaKIdiQ==
+1cDuxoEKzkT8v+q/I287Zg==
+JJfuRpZXagTR9sdHJSIZoYj9amvnopZUtF1DzmtnZJ47D/7Okv6PRI4bMeIZbLVz
+cBFOhDgiCTwRY1vVHUxOTLtB7yEWqZAe/AJG5Bb87RTEDClWV9blV447G1CNAnFJ
+oqRuA9w4KGtMQ4OTdU07w6v6N2TaEX5z4ofF4M0G+WsK4wRctuOiP0uLesMxs3a+BIt9u1EivxymZ2JMgzHd1Upk/+xff2H/8IVRj/xfDUA=
+aP/z7pojTMjhszLs2fx+eQ==
+7evBUQZQcgAnPPeCfTrsm6GO/VhbjV2Sb62W5x8QWvM=
+vTUcKQ6quWtVuAWFQ9OXIw==
+F+jH8CSiyjB5R2BX7roybw==
+D5XBrDGWVbMWpm//Ua4xrSkV4eBV7Qe18IOga3d4jAQ=
+VdzytFtNBZmn8OpTiS76kWvLM/lSDXBA5ObGEnYgUK8=
+8TLETroqafxjs88X8KIAtw==
+xmiv/qTfGo4ikA+3pAlNWg==
+MtJlO/ij5BI03yNdrtOQmDk1DSh6TKzkmFv1m+xz3fMk9+R4FknklKqmHyY8NLW3
+RkGYUl3JbnEUdyW9HNDlBcMHMcnAwrZaB5Mvbl36U6C62tFEkn7P0X98rWBsdzbhgVE0cQq4tcQux+OyURn4vg==
+gBkXydjlTSAQmPkChXsLsw==
+tBaOyQAnuD/9uiAuPWYWaw==
+L+YqxmG/HRg2IYCWfuxqBD19jvAI2vvbopn4YXh0k746rt3o6EFA+EJSKu/eqeeP
+ENhKZmCyPvCodaRY1yZhsg==
+h0JJwfOR66D0vv5S5ei6tA==
+oedr0LDjXhdULDuYg8IRe/ToLjgkXlCRNqMAXw1C7JZoMPoK3rwPeU8yXo/6hUs6
+zxFZxE5N4HMywsDiNgmU6E/Iv6Zy11ov3S/phJOwvREDgP4WzlyXczvUL2fSdmayJAlMQR/vEkB8vkxhdFCpyA==
+kbyppDVXhZYiPzMWOw9lfg==
+z4LBNtrZEqJkfUhqnSHveQ==
+Ravp8MGN0CddN6ruxzRcFb4zBanYJOAC0GolVh5ufCM=
+f8XF/2nIroBOMnQl3p8F0g==

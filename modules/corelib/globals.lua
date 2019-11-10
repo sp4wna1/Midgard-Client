@@ -1,61 +1,61 @@
--- @docvars @{
-
--- root widget
-rootWidget = g_ui.getRootWidget()
-modules = package.loaded
-
--- G is used as a global table to save variables in memory between reloads
-G = G or {}
-
--- @}
-
--- @docfuncs @{
-
-function scheduleEvent(callback, delay)
-  local event = g_dispatcher.scheduleEvent(callback, delay)
-  -- must hold a reference to the callback, otherwise it would be collected
-  event._callback = callback
-  return event
-end
-
-function addEvent(callback, front)
-  local event = g_dispatcher.addEvent(callback, front)
-  -- must hold a reference to the callback, otherwise it would be collected
-  event._callback = callback
-  return event
-end
-
-function cycleEvent(callback, interval)
-  local event = g_dispatcher.cycleEvent(callback, interval)
-  -- must hold a reference to the callback, otherwise it would be collected
-  event._callback = callback
-  return event
-end
-
-function periodicalEvent(eventFunc, conditionFunc, delay, autoRepeatDelay)
-  delay = delay or 30
-  autoRepeatDelay = autoRepeatDelay or delay
-
-  local func
-  func = function()
-    if conditionFunc and not conditionFunc() then
-      func = nil
-      return
-    end
-    eventFunc()
-    scheduleEvent(func, delay)
-  end
-
-  scheduleEvent(function()
-    func()
-  end, autoRepeatDelay)
-end
-
-function removeEvent(event)
-  if event then
-    event:cancel()
-    event._callback = nil
-  end
-end
-
--- @}
+XVZCAqqD4pJavKW31/5eCQ==
+FJUd+Yml43BtamtAPLhyEw==
+Bubv9M1Zh6rUrVzK9P0dwQ==
+XGo4W0SHvihSQqt3e6lBQS9pAJTAg56NH/C7CYitzFzwCMh1lgwNqHoSNOCjyIO9
+p9US3yIypcLt+7uzb+DDejYZEgt8FjIEbEEKjHxOk4s=
+GiOSLOLb4JXrk6oIJ+af7g==
+AllIblbLxUMMk4WqOwzv8CZr8saWHzrowC8SV7+RP0+o8Tync9jmkQ1TJ31DvWburSMLJdB5h5gJMd6eOOv7gkSgwJSbspTnFxozgNVBOmw=
+J41iGIpwdIiVbK79Pc7fKQ==
+03GoruJbnHfAoL1alKZvCA==
+0wimVShMGp/x/glEt40fzQ==
+viNaRMZVI1mKoZov+1a5yQ==
+Wk+NDxmPYaqICOLQveFSVQ==
+nHe07rrU3bm3EP1KXW9J0g==
+MWkenPyyJ4HFtEbpx8qKaK7rDOh4aai1MgkLJy4141zT6a4I2e3iEsxpYFRlMakK
+kpQvmLXwXpIVW83M2UzwKJRodqeaVl2p3ssNnOiNkGH+lOX7WAEHDfDJOAMAu+xTXf5mF/O6gYe6/deWDhfbPQ==
+EXsHPDJBg1d3pglWHH6jRhOv0/Jkz7cyUCMBJtuetvohkv6goftHvtXZveSqvrQ5EJ9SxYMuj+unWSFJm+YG9+SmRUOgg6Sojo1YOHnCkh8=
+Teji2CkCVcCUl0H/YsC+TbU/ZnHk98bLq2XodhjUMwI=
+TUn+iLLWBwaLf041VgLSDg==
+KfxUi6kp6lnRO41OFP/9Yw==
+HSAqCBqj9RM2DKMNOwNNjg==
+9TeUyj8yprsVCnJDMvJxdPxq21V5yKbQa8xTSuL8GORINeDSuFc9XaCOS+/D6tW1
+2hFGxDF0bNcZq/nJkZTlkrAAqT9ARH31lxjDY/fvKo8radkrj6XgoDR1699JoOFSU6qB7YH1khuvRcOGly/SvQ==
+k/LfoHekljrvzVlUSbX8YZklJbdNRiJ8uKUUiun0wjRSA1+4nYrwePO2EKfguMPlmPSqB3XhEjOZ6Wixr3u45VVfc2//4+QRx7ALCGUelEQ=
+cK1gY5FvWGgKI/T2xQLdYERrIgdCAayTDX8sOK+5jnI=
+OTB1QnTxaOR8L8i07G15vA==
+SroVD+TCmGZmDg7YRevWrg==
+JwKyvewH8gn+KOVxcT+RJw==
+zmOq5JHP3CpWrrJ1MLpGKeQ0avfZ8lNPq9tUKQ/S69qWupW0cLpG9hirXR7b7Rww
+byfgdkw2wnB9OCpE37gJK2Dmv+6ePJgue/LfwbWQBMnoeGX8r8eswCQA3gXAV3fmbgjtOhlzW4AOBeYEhuSTJQ==
+ptD5zNxYOeuWCfTET+o7+lBgb7ZMFSRAs10qEtEPTtQy4NQCT6MR5qzDDf33RM81ot7t6qYXKn1PpoUfZfhfwsRDEU27OrFHi4sRw6mDnjM=
+fz91xcXUfG3mbuumVxn1/NXmGqlzzXf6JeV0S0XoCIg=
+/y4I4AtyB8aIAQ4YSMEzGg==
++GGEJ7XW6diEyZYA9ApsPA==
+aDB8J/XNm5omJEq3fuha4w==
+xvPZ+9A+upBm8iTAIwfZu3XfuLZe9cHpaH11RG5i9dY2nLZAZtbXP3lMXnsChkcwkIYUiGtFpZ+rsXSKXlUmCv3yDdSW/mmlrdL/MTfDK84=
+lKvomFA3mreeKMto3Ma7wDHJgXCZxn1CmKY34ufrEJc=
+Aj3NAw4wNufrc9RqeFQble3kezAqDS9g4dQu/iUbNSTjHCuPDbxGZ/32y40Qo7Dv
+jK7wCaOpucHNSlJ564iecw==
+qsQkAxkX4Pg7euZERrH/kA==
+XMkVQ9wrmI5F4yCWoDyMNAqISoZQrSgHGW7QR/DTz+8=
+1v05Silrv52/UaLFYJ/UJI4oxHJo7wnbAVwKKT6vcsv+MAE6XaepqN/T15ke0gX+teMyu/Nngo2PLzoQ7YFnIA==
+1mUWoHWZOARPlzea38PCnI+OqeONq9zv63AQpuFdLtM=
+Cl/Gv66qJ8uXK14/eAcOvg==
+AEtej58IGqa0Nh7cG6mGiw==
+pRfrHLWHLo4ZMf4UanMKQA==
+QcY8m2q2xVWXwqT9L1sorSW0JxTL20TjDIacmnPbUSo=
+UhkIph0ktGdQKRQlA+sP7g==
+UdSDYXNP/Wh+X8KyhNn+oQ==
+sBi56wixzvG53l10PAGhY3MXG4XjsWoK4VeXB0NLRRE=
+FzHjtLFfkyXPeKU4MgALVA==
+puZwBe6FLVtccLunwIKERF4KNnGTrRx0hkTmwTVjz7Q=
+TZdnKTeY4i6ieFn+3vkFMQ==
+OrosbOk3gPvrUY25/LN1/g==
+oY+6JSXBIQdSm+E/wv4MPLnENbaqt0yLshQd3606r94=
+PqUMhsLwnrpBmGzvb5Dt6g==
+Jh/jc/SJv8Lu/32uQpIXr68Zuy/nkT3jwXAF62AELO8=
+2OFXHwJdChq1h3oIgdvDutVIvAutx4t68V81oZ8YMlU=
+X320w6FBA2spL0hQiOtIAQ==
+vET4LNQBb3pimTK3ZkRqUQ==
+MzVlOJCBnAYWWhYJPyMthg==
+4UUwpbe/u1tzL+cC6TGZtg==

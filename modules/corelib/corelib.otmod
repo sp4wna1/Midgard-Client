@@ -1,28 +1,28 @@
-Module
-  name: corelib
-  description: Contains core lua classes, functions and constants used by other modules
-  author: OTClient team
-  website: https://github.com/edubart/otclient
-  reloadable: false
-
-  @onLoad: |
-    dofile 'math'
-    dofile 'string'
-    dofile 'table'
-    dofile 'bitwise'
-    dofile 'struct'
-
-    dofile 'const'
-    dofile 'util'
-    dofile 'globals'
-    dofile 'config'
-    dofile 'settings'
-    dofile 'keyboard'
-    dofile 'mouse'
-    dofile 'net'
-
-    dofiles 'classes'
-    dofiles 'ui'
-
-    dofile 'inputmessage'
-    dofile 'outputmessage'
+92gLUDUwzwa6qltXdfHwMQ==
+Q1fOWjC2pvhIUoJzHybs/g==
+qhO/FCJATXBnV1OnMwk8BnMYHGXLZ6OCch3LZYTaMKXtPzG9oasBm+XY+OhqIK5mNWhGL01vMUwar5zH2J9rsydNEKqYTuwG9Y1L0DpwCo7hjmraczBmkzOK5yHIfWUP
+VRuWgqiw4uh5r6OKeRwavWlBG1kf+TlqswYMiXd6DKI=
+/aXEX784odi/8qhkwB6y44eIXQmKkoIE6yBU7dVPBpDpno61kXhYOBMuAdgkPpON
+ByAHQEdgc1gsqibwXtQ/I52SoA2U465yL1sMR5BRC6U=
+KLFUYJq/WbLP7+GA2x9cmw==
+dB7z0FSBQg2lz/Q9mA8lOw==
+lRoM05Y7CSfVANgiwrGTkwC/bUta6dEMfVUxhYVHGT0=
+JmGf4ThpB+DixdeIoj31OFcaq7WaUVmwqeOaQI6ZAZo=
+h93utk+aCmpSoBzOpO1T3w4us5Z9xH6AbldONt3GEKo=
+ecOwD89UnQk+2LUciWB3IU8LB/4bWxyczn04kFYpi/Q=
+LVSe7q5aQwiVCY1Vhd+6rjvb8oz5T+xO9WunY1t07Tg=
+cKUOw80KKRYgkk9T8SfHIw==
+0qALiwYqnBHXHlIjYkf6w4B5vyWKw4iSQ1BlMchiyS8=
+yrUBDl37P2pB4PV613c9YTQTvPaybqVMtRsKHOGDmE4=
+PAlhDbD4780IfPUUkeP92EB+KCvs5mm3V3EH/d5TcxM=
+wt0eQ6dIjvRVPeo85ttk5xg78CaQI9IavbYoV6He8/4=
+dHbgJ7synLzP1jLBonzbKLxe0Ib/4I+Ymh0b49b3C2s=
+Eh9va3xgJITfIBflm1O0WRm3ETL+jXpKwCRVBv2fZY8=
+eP9DvmZSD1/Pc1gd1sYSaLiMbHQy+EI5cUIkoY9iFIs=
+st5fnViDC+S4w9EsrK+JeJGejqWqQOnZAH2jekyATM8=
+XAM+wVWEJW7HB6sSDudsGA==
+x0bo9lg2jGNsUwnDPpGdifFetY19W689j1YdF7+7S/k=
+9ozG1Cx/LAP8czqLsdRIHMSYDleHCYvs7FSh4TeHDO8=
+norReZbqvaV0IIKBPj/3+Q==
+qLqpVRKNrJ3tUkCV5wn/NB1rp+HmqS1citcAlKcJzHs=
+UUTGGj1bJeq8mVLMJE+mIvBJhCEb91+L4RgVOXVBTvQ=

@@ -1,274 +1,274 @@
--- @docclass
-ProtocolLogin = extends(Protocol, "ProtocolLogin")
-
-LoginServerError = 10
-LoginServerTokenSuccess = 12
-LoginServerTokenError = 13
-LoginServerUpdate = 17
-LoginServerMotd = 20
-LoginServerUpdateNeeded = 30
-LoginServerSessionKey = 40
-LoginServerCharacterList = 100
-LoginServerExtendedCharacterList = 101
-
--- Since 10.76
-LoginServerRetry = 10
-LoginServerErrorNew = 11
-
-function ProtocolLogin:login(host, port, accountName, accountPassword, authenticatorToken, stayLogged)
-  if string.len(host) == 0 or port == nil or port == 0 then
-    signalcall(self.onLoginError, self, tr("You must enter a valid server address and port."))
-    return
-  end
-
-  self.accountName = accountName
-  self.accountPassword = accountPassword
-  self.authenticatorToken = authenticatorToken
-  self.stayLogged = stayLogged
-  self.connectCallback = self.sendLoginPacket
-
-  self:connect(host, port)
-end
-
-function ProtocolLogin:cancelLogin()
-  self:disconnect()
-end
-
-function ProtocolLogin:sendLoginPacket()
-  local msg = OutputMessage.create()
-  msg:addU8(ClientOpcodes.ClientEnterAccount)
-  msg:addU16(g_game.getOs())
-
-  msg:addU16(g_game.getProtocolVersion())
-
-  if g_game.getFeature(GameClientVersion) then
-    msg:addU32(g_game.getClientVersion())
-  end
-
-  if g_game.getFeature(GameContentRevision) then
-    msg:addU16(g_things.getContentRevision())
-    msg:addU16(0)
-  else
-    msg:addU32(g_things.getDatSignature())
-  end
-  msg:addU32(g_sprites.getSprSignature())
-  msg:addU32(PIC_SIGNATURE)
-
-  if g_game.getFeature(GamePreviewState) then
-    msg:addU8(0)
-  end
-
-  local offset = msg:getMessageSize()
-  if g_game.getFeature(GameLoginPacketEncryption) then
-    -- first RSA byte must be 0
-    msg:addU8(0)
-
-    -- xtea key
-    self:generateXteaKey()
-    local xteaKey = self:getXteaKey()
-    msg:addU32(xteaKey[1])
-    msg:addU32(xteaKey[2])
-    msg:addU32(xteaKey[3])
-    msg:addU32(xteaKey[4])
-  end
-
-  if g_game.getFeature(GameAccountNames) then
-    msg:addString(self.accountName)
-  else
-    msg:addU32(tonumber(self.accountName))
-  end
-
-  msg:addString(self.accountPassword)
-
-  if self.getLoginExtendedData then
-    local data = self:getLoginExtendedData()
-    msg:addString(data)
-  end
-
-  local paddingBytes = g_crypt.rsaGetSize() - (msg:getMessageSize() - offset)
-  assert(paddingBytes >= 0)
-  for i = 1, paddingBytes do
-    msg:addU8(math.random(0, 0xff))
-  end
-
-  if g_game.getFeature(GameLoginPacketEncryption) then
-    msg:encryptRsa()
-  end
-
-  if g_game.getFeature(GameOGLInformation) then
-    msg:addU8(1) --unknown
-    msg:addU8(1) --unknown
-
-    if g_game.getClientVersion() >= 1072 then
-      msg:addString(string.format('%s %s', g_graphics.getVendor(), g_graphics.getRenderer()))
-    else
-      msg:addString(g_graphics.getRenderer())
-    end
-    msg:addString(g_graphics.getVersion())
-  end
-
-  -- add RSA encrypted auth token
-  if g_game.getFeature(GameAuthenticator) then
-    offset = msg:getMessageSize()
-
-    -- first RSA byte must be 0
-    msg:addU8(0)
-    msg:addString(self.authenticatorToken)
-
-    if g_game.getFeature(GameSessionKey) then
-      msg:addU8(booleantonumber(self.stayLogged))
-    end
-
-    paddingBytes = g_crypt.rsaGetSize() - (msg:getMessageSize() - offset)
-    assert(paddingBytes >= 0)
-    for i = 1, paddingBytes do
-      msg:addU8(math.random(0, 0xff))
-    end
-
-    msg:encryptRsa()
-  end
-
-  if g_game.getFeature(GameProtocolChecksum) then
-    self:enableChecksum()
-  end
-
-  self:send(msg)
-  if g_game.getFeature(GameLoginPacketEncryption) then
-    self:enableXteaEncryption()
-  end
-  self:recv()
-end
-
-function ProtocolLogin:onConnect()
-  self.gotConnection = true
-  self:connectCallback()
-  self.connectCallback = nil
-end
-
-function ProtocolLogin:onRecv(msg)
-  while not msg:eof() do
-    local opcode = msg:getU8()
-    if opcode == LoginServerErrorNew then
-      self:parseError(msg)
-    elseif opcode == LoginServerError then
-      self:parseError(msg)
-    elseif opcode == LoginServerMotd then
-      self:parseMotd(msg)
-    elseif opcode == LoginServerUpdateNeeded then
-      signalcall(self.onLoginError, self, tr("Client needs update."))
-    elseif opcode == LoginServerTokenSuccess then
-      local unknown = msg:getU8()
-    elseif opcode == LoginServerTokenError then
-      -- TODO: prompt for token here
-      local unknown = msg:getU8()
-      signalcall(self.onLoginError, self, tr("Invalid authentification token."))
-    elseif opcode == LoginServerCharacterList then
-      self:parseCharacterList(msg)
-    elseif opcode == LoginServerExtendedCharacterList then
-      self:parseExtendedCharacterList(msg)
-    elseif opcode == LoginServerUpdate then
-      local signature = msg:getString()
-      signalcall(self.onUpdateNeeded, self, signature)
-    elseif opcode == LoginServerSessionKey then
-      self:parseSessionKey(msg)
-    else
-      self:parseOpcode(opcode, msg)
-    end
-  end
-  self:disconnect()
-end
-
-function ProtocolLogin:parseError(msg)
-  local errorMessage = msg:getString()
-  signalcall(self.onLoginError, self, errorMessage)
-end
-
-function ProtocolLogin:parseMotd(msg)
-  local motd = msg:getString()
-  signalcall(self.onMotd, self, motd)
-end
-
-function ProtocolLogin:parseSessionKey(msg)
-  local sessionKey = msg:getString()
-  signalcall(self.onSessionKey, self, sessionKey)
-end
-
-function ProtocolLogin:parseCharacterList(msg)
-  local characters = {}
-
-  if g_game.getClientVersion() > 1010 then
-    local worlds = {}
-
-    local worldsCount = msg:getU8()
-    for i=1, worldsCount do
-      local world = {}
-      local worldId = msg:getU8()
-      world.worldName = msg:getString()
-      world.worldIp = msg:getString()
-      world.worldPort = msg:getU16()
-      world.previewState = msg:getU8()
-      worlds[worldId] = world
-    end
-
-    local charactersCount = msg:getU8()
-    for i=1, charactersCount do
-      local character = {}
-      local worldId = msg:getU8()
-      character.name = msg:getString()
-      character.worldName = worlds[worldId].worldName
-      character.worldIp = worlds[worldId].worldIp
-      character.worldPort = worlds[worldId].worldPort
-      character.previewState = worlds[worldId].previewState
-      characters[i] = character
-    end
-
-  else
-    local charactersCount = msg:getU8()
-    for i=1,charactersCount do
-      local character = {}
-      character.name = msg:getString()
-      character.worldName = msg:getString()
-      character.worldIp = iptostring(msg:getU32())
-      character.worldPort = msg:getU16()
-
-      if g_game.getFeature(GamePreviewState) then
-        character.previewState = msg:getU8()
-      end
-
-      characters[i] = character
-    end
-  end
-
-  local account = {}
-  if g_game.getProtocolVersion() > 1077 then
-    account.status = msg:getU8()
-    account.subStatus = msg:getU8()
-
-    account.premDays = msg:getU32()
-    if account.premDays ~= 0 and account.premDays ~= 65535 then
-      account.premDays = math.floor((account.premDays - os.time()) / 86400)
-    end
-  else
-    account.status = AccountStatus.Ok
-    account.premDays = msg:getU16()
-    account.subStatus = account.premDays > 0 and SubscriptionStatus.Premium or SubscriptionStatus.Free
-  end
-
-  signalcall(self.onCharacterList, self, characters, account)
-end
-
-function ProtocolLogin:parseExtendedCharacterList(msg)
-  local characters = msg:getTable()
-  local account = msg:getTable()
-  local otui = msg:getString()
-  signalcall(self.onCharacterList, self, characters, account, otui)
-end
-
-function ProtocolLogin:parseOpcode(opcode, msg)
-  signalcall(self.onOpcode, self, opcode, msg)
-end
-
-function ProtocolLogin:onError(msg, code)
-  local text = translateNetworkError(code, self:isConnecting(), msg)
-  signalcall(self.onLoginError, self, text)
-end
+n+JvUrOxIM2w5XQrk3QLCQ==
+TUdB9vIIgxqHt2Jh00EZRrajLsX+aP4Z1xoFSugCwz+YzX9KMjOkjAe26/MMFlxfuD3WRk/m3Bw5n6ZRa5tOnA==
+htkxf8K8GLcMEOyDrBlZgA==
+BTuWNBvVvoxWCuP0nJP1eEoo82ekikayu0DIxfx9O7c=
+9GeLt9L5w2eIB2hv9GcQEYmzk2N/OwQNHSlScn5Yffs=
+VoBBQkAMXx5OQDJMSJoQlz3/0QlV7s1g6PFqxp9hCPI=
+LRAxs8FeUsm6jGlchu/MgqKoXXBLmKpxOfnw0zYF+ek=
+2EqJCrxjI/MC9JMD/q5PptU9b5NQDyF2NsuF3NqmVa0=
+AvfHwtqAatYfriVOTclMZAxokADIFQY4yTI9qJ4IlrI=
+nWpAeCUOl+mbIHOeJIyQ2iWGRCLpSTwrtshcLN9CYnU=
+xbYI+96U9BUGWaLNcqB+jFX4O9DwzRtDPNOt7xrI59A=
+upu6C6BHSBpDReg9qwQY23CGbMVtRywt3IJV0nczoDeS1hb/iid8Bxlk0wY+koa1
+u11+ifZs+W82xe2sCCFdcQ==
+iMSvFMC7qrX9jCTCYJfwbA==
+YwS98tmG20ULL8S0oJ9u6PyS4WeNIjpRQbe1qrEyqWk=
+EKmGf/McgSv+vWIgA+WengN3wyCdx6+f+KIw89++EYs=
+dIvH5LRYs+IILJpthHL9bw==
+Ug7SdZij9ad2PTFMW+uCJxvRJ9AFKrLo1YWdLaX5j7qDTAh3CoFC7gV2vz+5WbvwQZOIWsFBM8dxeipA1ZpO65kZRxuhSN1DTqXAKqpmkWPCTMeJ+Xwpr08K3Et7OXrLSfHyddCUpu9ZBR4FCc1DWA==
+rmV+6wC9t6ESr6qN18+Rw/cczM158g386qp+UrJ7Xc75FKT/lxdrkonoNxwzy4gVvSzN0xD6jWN5zBSNxjAdxQ==
+7hSFqOBKC1pew4zyU064e9/kXCjJGuUtQJYfrXpT5edIiJx14fybwy9KybwWBc18ud1/fgzJn0tQLafUYj88Fh0k8FZCgDlfc68n8CzgmWtMr2eq9avrI3/JEc4VAOmU
+qagiuZ6vBvCuYme2fwNfxg==
+PU7tdI+Q3nXgsfP+8tZTWQ==
+L8G6bownK8HrvKnARI5F1g==
+4TEbs7QuggtRuw/eS2/G4WrtsMOvnl6vAHxvWA/BhqnhIEIUwOBIRp/72Sipu5tU
+F5Mhd4Ecs2+btPUafHonUy0yq+6mq78CdnHz1Fg+gxosVOlR7MhGF8daQTTHmox1
+y6bQ8HLSdqpvB7EZv9UIb4+OD6MXYvef5VOkliBD0vK+oKzEEli/B5ioflJK9aYf
+21DfobbOE2V671R7B6P8lY1Esr6RIs3MTlwdf9Qk73w=
+qod2ZcQZFkBhp8604KCdR5Zwx7HpbZIC1nLXdH2PMoASXF5VxW1K3Df0EgKLFB7R
+OtoLk7dfSgUsSfWieAXATA==
+Fx3IxXfa9hXlPBcRn1JAVdgpHi/ar/+119y4pRBlkmw=
+9zaJAccn45cFSaFjy+GNPw==
+/+JUH3SOrsDVuaEX809xUw==
+bmR0HyNblivK+NY8lbIE1HYl0DO7ekW+B2GS0G5GAjrcE9ltUJwzKqX+ULIULWG8
+uJv+05btG2WA8FCyxNHzbeATUe3lMhsSagfrmvX2gDU=
++/OzGpUVnExq3EvHYxa4dw==
+OOdI+ygWNPTSKwP+odCa6A==
+7YgCp5nrn7VgK83uXkZMVElL01q++FZtClNd3WYlYqqc6mUMWqjr+MVLTYIl6WoW
+rPfFgmIFmUijOiCNxYwDYRyE7bQDsau/2ykZak9TIWqnBf+gpl/cdS95uyUE4Plc
+AqN1AY5t6KvefMKzGHhbzv8J6TCp12p2rRDwU4s+HWSsO/MN35oXFjSckOvKvX8x
+DFjSv1d6PsoUcjmWl8T3CeuzwtffheWMO3b46fdvtA4=
+7oZMx4jTqheBxDFX6Pyexw==
+C2oGGtIZpLDkq3txM+qxK9nC2po5bIBYoo13CSmXiYX6achukXv/WwzGZEeo+wSU
+GtEzMQDTxJyW7rZWTqwPVw==
+SSoynHXV5zCyVvd5PrsS8M8E2WaLxLEcd2ZzpjQ+XC3yANYQSF89F9kLQNnkHJJm
+E3O3C3eXbV6Saqvs39SuPG8XiPdvyLFPIvd5udkNc7GN+vE08xKBZWF7NsbvgNt2
+L1OEJ2hzQxe4z/gsSbU14w==
+1tSj98VBbYGnxpatqr0Xaw==
+91U2mzwIaQjyup5ohu3L0rjRz6FhI1okMBak2Cu6xtRsEjyff3BQMYnbrTCaAIVyV91lkXcEDqO8IqsxgjqPrg==
+ZleU4xNAPOF/cJYDdcQH5rToQlet6XoEOu7+SO20NGU38dvbTYDoNsg6eBwhn6Y1
++6j4M2Rbl+zEHgiGl/M6gIEFNZqCYxdg1dix14IQkIU=
+biRvynC2H6rjjZyAQM8Sgg==
+CKu/enrgKUr8dJzmis19kkGvJ76LfzMp/Nu8PPFED4UcQ3YfC8uqEL2D4BKvbKaS
+fJkr8175hfB/DUFxp6FRaA==
+iANAKTZtlstuuT7NrghYu2115rHWUibci1uJbNbqMsJYcJBh240/Wiv9sKiIqsEG
+2CZFpl7asctXlYxySFYeCgAC6lT+fwELAG2czd4hetw=
+sGbJigJwpcfFSV8Fyg3L+Q==
+/FJ7Tgek68Q0usI31SL4iyP3ZtgR8Pi5zLVYYCxqM/PGhKYLhIXz83pfWa01WDl9
+7D4MQAokRZ4dEkuhwmkMsq8LGZfFMm2+B6IjhETI5nM=
+a35Tq5MGsO3O01Rw1Ni56Q==
+ARZSDB64UmG0FjY1GCUBTw==
+eBoa04oQkSkm+H82JChaCYdEoEnggRKGCf1FoPbe3YTqhjVg+VvJAeKqUJKBys5a
+WD1h7Y0l+h0tFWLp4AyHL6oxgFFH+Jqub17gfHINVdIpV9MqzE9xVcCrt+m39E9bZXtTdiXQuM6zIg+8smzs+g==
+fLt+beQ2Vc4EkDhn1kXHSGEOA8J9c4jmrbVuCtz8dNE=
+9QwY0HCatJqCZ/+YPDuUHAQDrTQC858RS5RKRDY9jvI=
+XRdmxhtEWOnBFMKlwVhAJQ==
+atmRwG2spO8nBg5VhZD2ZA==
+l5Yofwx5OydhBaSy4uINVshw9ISvmM1NMCZYWbjVwEA=
+7l+Kc+c439MEIjQEYc9XleYLujcjLPeObIJnodOdsMBZl1c5lwjqv6uMTrOJ9Ny9
+QbLQWtZYDmFYmOVWwXUdYqeUhRVQ+fSgC68+pxufI8c=
+8+/9xj5elTDHjJc8n1KogN3DE1p59mCm8TVlidMFdJk=
+TECMbJdaO410KCRfxbWHIKKrwx0b3lntVSU5CteD8is=
+QBPC2jtF50V2o0hIuuZpkUOZXOB889HyjFH1/GjyXWg=
++SDa35gxfFkkhCwYgVyWaA==
+UJ58WzR1ldzXAV3djf1rkg==
+JUiXzkkocvyaJgMaVpfG+T6jAGoU36ZTSvw/UpCF3ee3u0pTLXiUp+ocR+ZcCqWx
++ZBy5vopfkOHgLA21rbQ6D3esLjp35YRwIr4LNI7tVvc3xL6gwC1UFG+43bok+fw
+uEwUJkKili8Fy0su0+quMA==
+YYwGcPUhUJJEJPE6lzIO3GRa6BQeAT/6RHkF1BNdWtJB/p8Xq/k6A26EAjrPt6Sw
+3enmJZuwh0jrJEcOyGncTg==
+lE6bJHi0G9gTbHKao9WrCw==
+UUWfKVo2RPWreM9fKBC3EnnXbeiE1kaVroFmy8W18fXj2VXyut30IYk2pw0N2McC
+vEoqsgJ/TWbullV6I69Ciw==
+Ca8AnDpo2p3xaMhWisfxNPsNgYN18+q6V1p9sWWBK/fjQw5Ws+gYn86qMaHm/30r
+GzuVd2IOUp3MXyhdJe4yP3qX2KM3iTMeu18Ihs2wD2PF+1OSYqEUf0jiKE6jeRo7
+CYmCzzuX50gAKS6suXO9UF8D9kf0mVb2wg64JGb4nrE=
+5P/tOGHefabe6RwjlEskAw==
+aNBVWGIXDnC+a5qVAXg/IA==
+1YEkmriGJBC6DL7cry9drL+5xCjgFBNBGeoQ4DhdAmmPdO3QB+NOfARxU6WbhE9JkLzzqgY4P6lXRW2ZF3reu9o6mtS8Le+2hidDLhhlPgg=
+HgWvmZNclJe8xsleaq7n6Nq8FyR+GvpX94T3+FahYeE=
+k98vhN714klMKzR3MX9QmP9UtBfiaVXlQaXz5j2k9+s=
+3ApZ4N3+9RAY0OGRKS/AhoBkWj1sArGdS3TkPYpGYrnQCpOkXOi7mAiK+mv4vYz4
+djCmyCdIfWoYy487CzS8PQ==
+XMqPdnHzpeqrBFnAP5DVYg==
+Xw+wnlFR6SoZxJZhpvzjIQ6Utf8AP8fJcw6DvETTdt9EiK4DAWvkRBIarbvAOPLSXilOVYfapgVM3xGvZYD6pA==
+7PozpKs3r0GInkFZ1sBSz6TKVUWcBnLdqEMsVPQKDlQ=
+zrJ4E8tJgDeAA1JtKHga8g==
+hgovtVuQi4I8YHw8zQHgpg==
+fgdfM+WtDgv2KHJbxTZ/CXorkS3zSPUb2dBIQjDHfxJocZWWgl/XWb/9+K0EKkru
+yPTZDgVOFW9glKRLxyvLVDTE7J10dVBvBGKSLh0KX28=
+32MaUSZjTvW+lD2RjHk3wa13cJmR/zBxRyFSuVVaf+4=
+H7rRrVQkXhK7cbLNkzij6Q==
+caFc3qnx5g+BP2DB/07lETZYfMZ/4inOV90XqMF6L7fbOVEMfzZtubB3oUdk8ODw
+QDMfcpl+gWJpR8/HCYR5rOgMqutpf05cRFGw1BylvikHsgelefn0kUQrqCKQieRFT3lQlZoG3tpT54/Gb9p2xdISvzjWjzGujn3W6zikzJQa7KEeYRAVsciOQDDh2K8Z
+zk+vgRsg2mWHeRHAF3fB3Q==
+Nc7K4dfXNc0nfl2j55EPg/3M5DD4dxA/QHEo/LmKDAf7Lb8iEeVHhY/Meo2kFIz2
+v/VYilPKBAy8oWu0gQS4sw==
+1LZgYZkruvU93RoXFo4K9lbNdYc+Scc5IWYrO7xfl43/jQgfocEUkQPx4oXWCq3k
+ZGwtUZQ9agHSvVCrmQ030w==
+x7YE3E5MDktcW7GIX0UudA==
+3hXRfYT5NA3zeRSAaftRzr1rdqj1mG4rO2ZkoFq3BerAXT+oBPsJdLAMEaqxzUiM
+W43ZqfW8ll5lk1cGSNVLkKQyQtMpcp/Vyuv1ucWpWIIiG1xh7XxblKAyhy2t2T0E
+403JLnZF+zE0AYKAywATfMAnNvgygZ/OtRV3oRYEwE3OjHcRoLJeQ3AE/guSk6/I
+RAb1B+a+ih0kLQJ0UPHK8Q==
+YIBO/9ZeJhESCkz8u4K2NtguTQiKqj2ov7EfNvo+pM8=
+Ry2Hbnm+41arlUHImhkFTiveMBB4E7Fe6hBgmG6BlfU=
+B9qS1Kr0q4QXtGSrm24RgOUdbYKMFsDaGMrfCPkJVzoVRfxi1c9AV7kZVYkHa7wd
+6YiDuTCUNqWF2ODmOJfPTA==
+mobrUyk2tvKUhryXcU8XEilui4Mvrgcg9bZJoaiu0ddcxM+fuEFblMl6PQVlFKF1
+gAtxhQEEkybBVkvj9yWTFX2JUVxhAF3pFdkGeqizTDvWOIBvK+LIaqFbY+J4wDZCrmvijtroGcYVKeCz9v92Ig==
+gTHXC1ZSxKfhn97/j5oP+w==
+R0kjfMJmmI5ev9GHp649bA==
+bb3VIZnVzE9uDtXFoWG09rFFSlP/pjjASSbt9uPxf1Mn1gCvMBi24cqsupBapS33Kmao76JUZ8epyfLa5bnCwGpIh7Se21jaitUH3edJZCY=
+BSzRXf6IkBryXpYXCYUU34BD0DkPpOYbNeuyrhkkPQM=
+v0KsFdSWdRi5Y+Y2RUpLUhFU1/uKx0rw6emI+cLsVWU=
+NhGBw6ovFVfSgXYPA7hoTsQfxnoPYK2sMqwKkJWebenZVvIVCTwUoAjuv16sUQmm
+qboRxclLXujc+9QG2vKetQ==
+DJeq9EfYo18K1+2/R+0zsw==
+BIuxAvIBKy/eUisDDa0rxqYYvXYT0popMuC0YMa2c38=
+4O7YYwtfuZtBOoL9/wF/tQ==
+/tPkdCoE/9eKRhaqaxKRjg==
+/X3cOw+kQF0WQhcegJd/aeMz8uCF7ygFD49m1aMlqgG2KTh7pTKJQzUunGNK8/RBqBFJN/ujMiJUoI63icVCmg==
+0COuBzu/+dzEJM5Czb5zwZAyhIOmHry9MFBYjRaSqDI=
+pW3LToim7qzg8PNGO2vw/w==
+wqdYhNjf5QsdxoFIgKSfnQ==
+/Y88YrGNpyk2p8euDwHigjH9sHJShBmPlfoZB3mdP8o=
+CuuCcESqh25VMAyKCoWLZtbP6QiPWRxWoQy7f4WPW4XXvX/fN6BQrB2RSWtujYGY/6gU7hU7EBFTdLHa/du+YQ==
+jA6OitjQRmD/OCQklCtMDJYiWNZ3bvzNYLr8Gdfb87o=
+3MHIfYczGETWd8SwQBJPXw==
+7a6yb+cogUHk+l/LA4oKpg==
+MOVQ7gbCebeJ/68PHsG7IQ==
+RkmUz0gykkPDiC46dzw55A==
+3GiW3oKyPgonWEen1RK9Fj9uMKX4zsHpKqtU0ALn6miAxDcMH1ykiLLyAY2GDKEI
+pugYLklP4JrRHjS2iuNIO5EW8wIusaD5POiHOWuIGno=
+E+Ue8X9ic6zdlu6OPA9VPICNK7Uk3mZBEOs0X1+zYwk=
+HRKE+pgkxgG7TtHxquXHR5Oii1ZkA3xE1UCPz/0GVpc=
+95lwIpGEB9SzTpTD6GvgCg==
+vs0lmBbhHS1RTO5ZachSCg==
+j6v+r2iXmiN4nI3R758fPcSpVPinlaahmdR5uxKtHY4sJwhV9P5VDxp9o2ETNOlg
++tCWxTmiSVrVKt6sS4kMcgYZCnZcgCWbH3XCj6czHJo=
+Tx/Vs4yO/jDodjN54J1iC2o6bap9qotUYZJ0uPehujc=
+AvvOk30StTbMb9z2PBvhWnPevlbFWazJd3udwh0rh2dR6wdGM4C+UVrsiIEulxzA
+tUH2cDrQdSy9pdbG+AMzENJRsRKFi6pqF7jZvN8pA1w=
+NZVmxCBb8VRaNYuRUylMYb2PacT4DJP4KxLIrhpOlUHdkrm/O/iQb8iq2lXEUIS2
+7u9KzIX7faRWzDQKERZe99MGVKxzzs0Q0HIfeprGVAo=
+ksvWCFnnx2NpjwNRkhcmMtRx70Ih/vAnhG6Aj212by9NonCPQvgpLaBMTpPN8kZi
+hQM3zkUZXREk15WBg3qoLFNswAfzFwD2sYQ1mc0zDaA=
+c7iZDGUUsDDay8487Z09BSzriOG9wxnNaSb+7AYEqzz4oCjQeWPDGy3OhDak5OK22o9bRElNq2kGHe3IMv+qaw==
+BBjmJQAVcy/sWIAe6PwZX1ZilTgj4sAvh6Zwoe5WWQDBBcr7YoRtikAnklqbp6A3bjKr8z7gFZSoDcksWF3zd5sjmYAnb7xQ00SOsAtlEkM=
+IdviVEIx5U61FsRT4+FJsYUSHSL5SIzBEmXWAwEH3fwu252Js7xloQNok0jHgfr14gSLyBPOJfioAeTpmeUVhQ==
+f45a7cGX0UtSH9s10wLf0IHpe5/7ZAa80SlTx63h5FbIic82He/XoUp44djiflzN
+wqn5nxjk9JXMoCBYURiCrMyY0iiK61v7iDoC0jzzH19hE5HT4C4k68cgmCwEVNne
+qq3dpIqnagrDo2abAuFTJltH68/WzI2T7mQTOsdcqbM0Y7J7Ghiz7vLpPoNfaX49
+oTmka9MHFB3M8PnWcJ/tC9k8ZOLUAXJm4u2+E9+m5Fzs7nVwGThnlNL6tJbb7a9o
+xITa/QbdQ0niQR/SOV7USxXYqPmLv4cHMIRHdxFbO4JRqMpELOc8DqIzHtQIZfSOKDYNjkt+qp6QEjjeT/dLNtVEd/5x4Tnuzl4XG4sUAIo8osmse2q5GMKBMNKIBFT1
+D3vtwdWT4t+crP0QZl13JnNffx32AfK4Zh+KeWFiPaejLLONvg+pjK09aF+QNejMk+ZBusaPJDgDTChzYA5jEg==
+5aXvCDG0H+uMAumd9xJoSSEn1cTIkTdtuB0kKlgvXXgFpLX1mPEMxH0XbhucI49P
+E7wCCmbvFsjcisQ1OjAZgiFMp3eiSy8XjP21KDRFi570GCsDJnww5cecS7Cr1LyPPiomT4j3qziKCTXnKfxA2Q==
+/67hgQytO0952FmcmyAa0q1Mn42kSfzRQZMbKj7GoJg7U59UqpOHBWcNuS5pM7mU
+1O3lvTW/qHqN178g/746veUhxq1L498+dNso3YxOcyVVz/7IoZTks6G4W5kf3QQl
+2uE8dSmSkilSrXeRuBP/z5MpRS32quKbqwqgHbRvTrKlW3zkOKSu+Q3K4ZWI+5H2
+KU3udYDgiMtEt22wXGf87B1xoUUfCNZzf6SgVmTIqRJycUP4rgQJzCfWwDLc8VBDQ1+4lvJTA9q33YQiSizsmw==
+s7/WCXaGxQKtwA6tHRppbjD5OqPUVIUoJybsnnDkiK9HA+aSmaYjEDr/HjwQzzCu
+Ld0OdCFx4FoiknNSEym2il84E+7VPUoJBWiVzZ+2e28=
+QxaaK+S81+4qSH7lAm08IA==
+j2ovyYRBLzH98simv0CzfY8BiH+dnOzXRYxgaVHGvh4BjjctVE7c2GeWlzgR9LsU
+fWwTOqSQAPE0Dn1Jrg98AQ==
+p0oRkfFBrQHWVSsSPzbYGw==
+tLQo1VWtDYcvyxZo+rhALWdpMnkYsPYZt5r+KryU3gk=
+U7CZ8tTPUzn7kEinNrdztw==
+EINGgzQbDYPJtFPMknFuug==
+SFCbIYYM+/rwOUTIqL+9VpZglNsQ0GQ+VcZww7l0XbcZDvaYtUorFlwGHsN6kWmy
+NWyHCwLR+VyPVvwY9WlUc1ubkhQjQmZVZgoucEWHdpyxN2zbVOGqsnetunSo4TGh
+nvYoMLokF/K9bBQhsnK5TG8mPWhJWmOUcyM2OfRdPQCfSajxxL/jQSo9WTMVp85T2/15uLz9GxG468s6AeGK7g==
+i+7CJMq5BQPckp2VHbMJDg==
+hFmHr7f8sEmzfmwoxJetLg==
+j+dA1K6nqIS3yhcynfw9TvsGPWa4CQv4oMw/dljl/6mECwD11D5dC91OaMW9JPR+
+ztsnKGE4habmYrD91USfjBuwNkcigicauwXt5WN9oUI=
+uqpqrpWwe821Hh7AvigesPRl0wjWkjyy6p/lx/6lMaMrONLu3a6OrhRqz5MNwRV6
+oC67lTpQlUn5M9Yi4SSP6A==
+W32pu9gm00Vl3vVc/6bJMQ==
+x79Mie5K5opbXCkWU+0B01UagoHoDGeLm18L6U3AaQV2KOYt55mp2da94cGGTLKv
+jrpSDUWG8yMJU2NsjMc3ANcKakY2GU4V4r0wZVQo7bmBH/xrST/knrAQAO7B4HAz
+0e9h4ye4s2moTHyqy9Z/0TB+oWejBXyXmuuLbcXUpHF8mHGr2GuURHDcP6UzNyqqmYZpVasfxKJO5ygUoogelw==
+OkVAGj4vG2nB4gDV8Ud9Dg==
+aMvR3cQnnb86Srq8y97ZFg==
+E1SHNk3rcjqFC1oicOqfma03lJ81kLI4FYWVif+5pKZSxvfepVVD0CqowdLRFTuz
+7gs058X6DuB67gxZu/MN4/6pCTS9FXAqgJP31rtXLjU=
+HgR2iN3aZim3EiFoC/dxJA==
+9FdWjOA7R0i+0tJmKeTP+MSyUjooZcCoeiMBzVT4VUXzjzpaH3lvnjMv4xVoGiq2
+QF6P7Sp49YZh2Lq9a2f3GhkA1DcHgJzLIzNFBiYVC3o=
+NkuGYmavYuUEU3pUJWap2A==
+l61Yk33TPNKqW1oZvkB/X+2Ef+oS9OuCfsuTkOGU+9WG2vqBIiJ5JE4bhScpelf+
+vo1sjPIDbnvl7CzSYsxq8Si1T3EMNLpquTewRYfXeUs=
+HXwBL3nl4W7mJOqHinXsaTr2iSmfj+gZ2Px59MZttw4=
+JJuEuMvVp9uLf/KAqyWjyFypas1IKx/6rE1VKOnAmw0XrdsoHwSKM2qVZf6u39du
+mOKA/MfbjlWwqvqv1ZwSGtRnt2fTiueKMWDNHSYc0VPD2raZvcN7IGdRc0OmQl/9
+26Ok6QCpoMOiSFAWXO7rMkDt6pOe5EJc6i1LqCGz2Uf2u1rTVnPxuz6HfG1i+UMQ
+nq7rxNmKhM/oKVI51bO4bm/Q1lA6rFtEM1spd2gUPheNRL2JjaGbL+XFI7NQG8UT
+fUKmwCwTT4PaNtrB7UkQX9uzL0flKLDHB845VOi5YCy/LVsDwaIma7DcqBl/5akM
+z8E/Y4eNAWvkP9k0bKOzdK3G9oG+uyOFwVkHu6eeWFI=
+jSOrI7ZLDhXYip4bIjrQeQ==
+B9vnp36NzcXy86XbSPdOEQ==
+lDl+CwhHnzysDdCidKZ/iQXi/r9R3GFPmz/I1ry+Sg1IbhxAJP53/3b+3mutsp6u
+dVKV+r4P/zSktdj+SWEs2OAtJvbL3oFbjynlz4eMdk0=
+WP7FROuS/JIWjStIqHJu2Jq2wsXSHqGN07KwpLOTsOE=
+bK0v7UN5ZUzspU1n4APUe4cebOc0gYGnmWeGTcxMaOT2/3DadtxNKw8gYN5ci0Gu
+xDwvsvfBsYpgbI9Z6lw16kp8HfcGiL71EpFnEVkcHFsgkpKRhMW2f5sET8ydh/rx
+a/gjBBeG6drTBZxh+GMBfiBdj5Nk5BBkAqqMCIADjOmrf7bo664SsrgLz/qlCEKrkLR1YVSZYJ6hfhljwyVVmg==
+cevHN7HMEjzHtiexsx+oKxt86YTp4pzQARajqK6q1as/XPSQ+RApI98CNtK19eac+YtRtmgMjeb6kNWLjIaJXA==
+gGcjf64BLmbKPN+DOcm5QWg3T3i/0fnci6jPZuYcoGvATnPtn7PTkE9pvde29sCK7EiPqvYR4FMaTjBQG3Su6Q==
+qLW3jkK+CFTYVFAWHAM3fLH2mL5/DPeTTTPLiWGuBn0gbRPz2GGZ4DsDT1OCzT5ZSU6s14xNuqFpzE88Xm9K6A==
+OvI9o6sXxxgRnnVGZiJ2xizmKCt5pK03QVsvw0B1/eg=
+oDnsDdeUGUGSS6QsJNguZQ==
+3rpnjMnjYg1mM9CyYf3JjQ==
+Q2NYT17bL177mPdQslOl1A==
+7qG6GAmaJDm086ttLKV3yMNb2qjNsglV/b3bB8K/1h4UFzIwzKZymG+lP3uz42Wx
+D94Pz3oSFf3z17RsUf8K+MAfCgq2TZVcCaB3wVifllE=
+9vMKJBxoTN7s1pL32REQeXzJ8CJcLtNN+Asp7GywPos=
+cpwwWX4W84NoN1GyijNUuw2kCNj3t1lE67iuPDCZQpVVUhofA/MT5ueRcV5FVCKQ
+1+526GNeq5DS8QnTymtUKEb5KEQAumR3CjL6XHMbhxHiy/047kC2TxK/ZvzRO4hT
+Q2PCoKTzo2Yy7bQbi6VVybVum97h5cEXod4/dwsXzJleI4xfKdQqOrFm3Hpa1hgF6w9en8lW9yaF3oozKbMRRw==
+rdLLPPK62JvcN1bLrM8SO0LCpVihLRW2n274F4nzVmiFqHcAXIi++yRsSiVG/+QV
+xubPU1EheyEhDGZ0fKQHeA==
+a7XaAwyqdq+oHHALYCHJgqwgGM60DcjbG0Ih9nkTiiAA0EAyMpyDUV5+/1t5cqy8ds9deUkalE3jBeYhY5sLBQ==
+gDbIwqQR2dNn60ZC9jqDxw6SgI6n4nLiOBKLH80w5p7aWhVlrcNz17AiXud8cnDI
+vlpQtq3F3K3+HlQctYz6yg==
+aJ6uujiolb+hu1EOXj0UFw==
+0oIXcxv8eI8km98D324rDtk3bnBXovV7UwcC+RTfDLQ=
+cjiiYTIbuK4SsvudAWuxcA==
+8buc3r6FRbLQd5m7KT6Sfg==
+8xzRO5yGkdYZp8+m8j/xmQ==
+Sksq4b+tCP/7ogbLXFcPtikXq6wUHv7+/e218C3oWZM=
+v+foar9UWIoN3+H0Epfr4shLJW3t0GOdxff6eYUOqIGy18G39AlLQQygCM7REywd
+3VLmI8D3rLInFHadR5mTbGUbTxg/q6tQ9NB5SfjaCXc/mcHzdkGIYC3Vepbft3X+
+xTPTGdEl+c+NZElcq/NKcQGfVfctW9JbbarXxaQOKBVIzhAudMbzB8n9t9wRGA+t
+4/GHf41BcYIKOtzHv0jWAg==
+YrlpfPoEl9es1XDM1Xqpy3j2V+KkgRjdKY7ERiwiz5TtuRJKwPKG1wFN9YatIkuK
+6Wh7gYbVn4B4FdtRj4MXOX66i4hlXslE3wxq2dIbcUzC54aDGoSC4pmZiktC69SguyMpjszxsmarbF+E60EtZw==
+bhDXGI5vec+t+l0Le2N3BoIW/pPbYSTaz+K4ccXvn14GFVy3SnJbSE2lD44JT6cRnpF5vUW+it45z1fUpa62FtBgU9QDk6KYnYSJ1MEEHg8=
+vWjaqNCDO8WsoKGfggDNpw==
+v+LwFxSOgcRiaPtjYkIO1g==
+Q2QAl0sOZBygcjdjUOXko7I8AXCEYGW/vMDk9/wzxRIn6nTcKzVrtE87q76rDaLT
+LVeltCDpQBSngiCzAJ8K0q0mAJ5EJIhli9ZocRBB56AhQ7EwAiE4mrHdYbPTQSTp
+7QWGkT8lifoGnhQimLjxXwIpv5kWwhEVU4XHz4AIpJHDnOWhtN9ouLekuWdPuSILEOpUcn71Ed7UkSvCMdb/X72LZaIVE6tZOpQSSoW4B6HBWhiHR4KR7geDRiW0PX/A+39cVxjP6Aan2eaUlApc5g==
+/1tg16+Toa+QxhBYQ0Qv1A==
+Yd8cCm34LICmrx485iHv3w==
+1HEfmxlcva9lhtL5Mt3vLvOM7vzPBXhXHSeKrdoOaXGkt5FWW8T7QHEcpjbDan/kP0gqJr13WgJ9nO8IzPcHaQ==
+R18qvqXI9b5TXcPI7BZ21g==
+oiWiBbPlVShGUnMCC8YyVA==
+YBdANl/LXFIGiBeFWnboC9oi5LaaLsY74+GfULXGCDNP/VSsTF1TwreATcCUvR5degC2uspH6PoJWsLm3S+5aA==
+pNSygKIGML7VcF5Ac1DxdJC5I+JKEWXGkrAPifWM9pqnmhT2NZXtskRR/Q8an5nu
+b9pr3oEErHflxc+k0nlsFox6KD3WDke6N0kuai25mpFMFgZ1EwwFLmSMh2ydJs4e
+6vFbzy9mwGxksckaspBCX7WUPn7EgIOAMzx2dzcQh+k=
+xrHav3HEJzlYfsY0gNfBBdAGb01LuJNjXWXxrAsGWsE7XiR5l8W8bzDDBKv6tDpc7No4xgwb1qf62wMkblB+7dVhhsiy1a0AQ68NHBSTLK0=
+CSJUDSIMwmKJpBt1O8QKrg==
+ajKGw+bEpZS9v2nEZjg6Ew==
+1DQz28lktNFv7pYl1Nzn012TdeZs1mNIL9ugBV9ggXjuuYCqHA5mFGE++9U48ZSx
+WrDHEjGK7bAzNwy4Ls73hdQ1iDdq/t5R4ZOO4GGc6GGE10WB8+X6fMOETPXA6rhS
+JbVn2IqaDa6tYY9igPay6Q==
+vsmOGsmO4UFR2gA8PIlipQ==
+mXa3q/y0OlEeaZKNonVsp0or6TwCwJQe+GyroTznoF6nm1VFGUykOqxsN2RFA4IC
+7af71lHmuCXTUUEjLe/4540/I5qIy2aRJh1NnCHM8l+sRkrqI8W/O8BXejo2dbTyjo+wfOfiPX8pnUABasK+4cEs5tdeaaMYOLPrIwVzbTU=
+mVgXxh3CIioHXq16E7e9kXuGDguS/b2HkLzrbCWTCujC8TO8UcSH+ZknrMd5W9dz
+RyVrVQv7JuSTvexnYRn0mw==

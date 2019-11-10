@@ -1,319 +1,319 @@
-ADDON_SETS = {
-  [1] = { 1 },
-  [2] = { 2 },
-  [3] = { 1, 2 },
-  [4] = { 3 },
-  [5] = { 1, 3 },
-  [6] = { 2, 3 },
-  [7] = { 1, 2, 3 }
-}
-
-outfitWindow = nil
-outfit = nil
-outfits = nil
-outfitCreature = nil
-currentOutfit = 1
-
-addons = nil
-currentColorBox = nil
-currentClotheButtonBox = nil
-colorBoxes = {}
-
-mount = nil
-mounts = nil
-mountCreature = nil
-currentMount = 1
-
-function init()
-  connect(g_game, {
-    onOpenOutfitWindow = create,
-    onGameEnd = destroy
-  })
-end
-
-function terminate()
-  disconnect(g_game, {
-    onOpenOutfitWindow = create,
-    onGameEnd = destroy
-  })
-  destroy()
-end
-
-function updateMount()
-  if table.empty(mounts) or not mount then
-    return
-  end
-  local nameMountWidget = outfitWindow:getChildById('mountName')
-  nameMountWidget:setText(mounts[currentMount][2])
-
-  mount.type = mounts[currentMount][1]
-  mountCreature:setOutfit(mount)
-end
-
-function create(creatureOutfit, outfitList, creatureMount, mountList)
-  if outfitWindow and not outfitWindow:isHidden() then
-    return
-  end
-
-  outfitCreature = creatureOutfit
-  mountCreature = creatureMount
-  outfits = outfitList
-  mounts = mountList
-  destroy()
-
-  outfitWindow = g_ui.displayUI('outfitwindow')
-  local colorBoxPanel = outfitWindow:getChildById('colorBoxPanel')
-
-  -- setup outfit/mount display boxs
-  local outfitCreatureBox = outfitWindow:getChildById('outfitCreatureBox')
-  if outfitCreature then
-    outfit = outfitCreature:getOutfit()
-    outfitCreatureBox:setCreature(outfitCreature)
-  else
-    outfitCreatureBox:hide()
-    outfitWindow:getChildById('outfitName'):hide()
-    outfitWindow:getChildById('outfitNextButton'):hide()
-    outfitWindow:getChildById('outfitPrevButton'):hide()
-  end
-
-  local mountCreatureBox = outfitWindow:getChildById('mountCreatureBox')
-  if mountCreature then
-    mount = mountCreature:getOutfit()
-    mountCreatureBox:setCreature(mountCreature)
-  else
-    mountCreatureBox:hide()
-    outfitWindow:getChildById('mountName'):hide()
-    outfitWindow:getChildById('mountNextButton'):hide()
-    outfitWindow:getChildById('mountPrevButton'):hide()
-  end
-
-  -- set addons
-  addons = {
-    [1] = {widget = outfitWindow:getChildById('addon1'), value = 1},
-    [2] = {widget = outfitWindow:getChildById('addon2'), value = 2},
-    [3] = {widget = outfitWindow:getChildById('addon3'), value = 4}
-  }
-
-  for _, addon in pairs(addons) do
-    addon.widget.onCheckChange = function(self) onAddonCheckChange(self, addon.value) end
-  end
-
-  if outfit.addons and outfit.addons > 0 then
-    for _, i in pairs(ADDON_SETS[outfit.addons]) do
-      addons[i].widget:setChecked(true)
-    end
-  end
-
-  -- hook outfit sections
-  currentClotheButtonBox = outfitWindow:getChildById('head')
-  outfitWindow:getChildById('head').onCheckChange = onClotheCheckChange
-  outfitWindow:getChildById('primary').onCheckChange = onClotheCheckChange
-  outfitWindow:getChildById('secondary').onCheckChange = onClotheCheckChange
-  outfitWindow:getChildById('detail').onCheckChange = onClotheCheckChange
-
-  -- populate color panel
-  for j=0,6 do
-    for i=0,18 do
-      local colorBox = g_ui.createWidget('ColorBox', colorBoxPanel)
-      local outfitColor = getOutfitColor(j*19 + i)
-      colorBox:setImageColor(outfitColor)
-      colorBox:setId('colorBox' .. j*19+i)
-      colorBox.colorId = j*19 + i
-
-      if j*19 + i == outfit.head then
-        currentColorBox = colorBox
-        colorBox:setChecked(true)
-      end
-      colorBox.onCheckChange = onColorCheckChange
-      colorBoxes[#colorBoxes+1] = colorBox
-    end
-  end
-
-  -- set current outfit/mount
-  currentOutfit = 1
-  for i=1,#outfitList do
-    if outfit and outfitList[i][1] == outfit.type then
-      currentOutfit = i
-      break
-    end
-  end
-  currentMount = 1
-  for i=1,#mountList do
-    if mount and mountList[i][1] == mount.type then
-      currentMount = i
-      break
-    end
-  end
-
-  updateOutfit()
-  updateMount()
-end
-
-function destroy()
-  if outfitWindow then
-    outfitWindow:destroy()
-    outfitWindow = nil
-    outfitCreature = nil
-    mountCreature = nil
-    currentColorBox = nil
-    currentClotheButtonBox = nil
-    colorBoxes = {}
-    addons = {}
-  end
-end
-
-function randomize()
-  local outfitTemplate = {
-    outfitWindow:getChildById('head'),
-    outfitWindow:getChildById('primary'),
-    outfitWindow:getChildById('secondary'),
-    outfitWindow:getChildById('detail')
-  }
-
-  for i = 1, #outfitTemplate do
-    outfitTemplate[i]:setChecked(true)
-    colorBoxes[math.random(1, #colorBoxes)]:setChecked(true)
-    outfitTemplate[i]:setChecked(false)
-  end
-  outfitTemplate[1]:setChecked(true)
-end
-
-function accept()
-  if mount then outfit.mount = mount.type end
-  g_game.changeOutfit(outfit)
-  destroy()
-end
-
-function nextOutfitType()
-  if not outfits then
-    return
-  end
-  currentOutfit = currentOutfit + 1
-  if currentOutfit > #outfits then
-    currentOutfit = 1
-  end
-  updateOutfit()
-end
-
-function previousOutfitType()
-  if not outfits then
-    return
-  end
-  currentOutfit = currentOutfit - 1
-  if currentOutfit <= 0 then
-    currentOutfit = #outfits
-  end
-  updateOutfit()
-end
-
-function nextMountType()
-  if not mounts then
-    return
-  end
-  currentMount = currentMount + 1
-  if currentMount > #mounts then
-    currentMount = 1
-  end
-  updateMount()
-end
-
-function previousMountType()
-  if not mounts then
-    return
-  end
-  currentMount = currentMount - 1
-  if currentMount <= 0 then
-    currentMount = #mounts
-  end
-  updateMount()
-end
-
-function onAddonCheckChange(addon, value)
-  if addon:isChecked() then
-    outfit.addons = outfit.addons + value
-  else
-    outfit.addons = outfit.addons - value
-  end
-  outfitCreature:setOutfit(outfit)
-end
-
-function onColorCheckChange(colorBox)
-  if colorBox == currentColorBox then
-    colorBox.onCheckChange = nil
-    colorBox:setChecked(true)
-    colorBox.onCheckChange = onColorCheckChange
-  else
-    currentColorBox.onCheckChange = nil
-    currentColorBox:setChecked(false)
-    currentColorBox.onCheckChange = onColorCheckChange
-
-    currentColorBox = colorBox
-
-    if currentClotheButtonBox:getId() == 'head' then
-      outfit.head = currentColorBox.colorId
-    elseif currentClotheButtonBox:getId() == 'primary' then
-      outfit.body = currentColorBox.colorId
-    elseif currentClotheButtonBox:getId() == 'secondary' then
-      outfit.legs = currentColorBox.colorId
-    elseif currentClotheButtonBox:getId() == 'detail' then
-      outfit.feet = currentColorBox.colorId
-    end
-
-    outfitCreature:setOutfit(outfit)
-  end
-end
-
-function onClotheCheckChange(clotheButtonBox)
-  if clotheButtonBox == currentClotheButtonBox then
-    clotheButtonBox.onCheckChange = nil
-    clotheButtonBox:setChecked(true)
-    clotheButtonBox.onCheckChange = onClotheCheckChange
-  else
-    currentClotheButtonBox.onCheckChange = nil
-    currentClotheButtonBox:setChecked(false)
-    currentClotheButtonBox.onCheckChange = onClotheCheckChange
-
-    currentClotheButtonBox = clotheButtonBox
-
-    local colorId = 0
-    if currentClotheButtonBox:getId() == 'head' then
-      colorId = outfit.head
-    elseif currentClotheButtonBox:getId() == 'primary' then
-      colorId = outfit.body
-    elseif currentClotheButtonBox:getId() == 'secondary' then
-      colorId = outfit.legs
-    elseif currentClotheButtonBox:getId() == 'detail' then
-      colorId = outfit.feet
-    end
-    outfitWindow:recursiveGetChildById('colorBox' .. colorId):setChecked(true)
-  end
-end
-
-function updateOutfit()
-  if table.empty(outfits) or not outfit then
-    return
-  end
-  local nameWidget = outfitWindow:getChildById('outfitName')
-  nameWidget:setText(outfits[currentOutfit][2])
-
-  local availableAddons = outfits[currentOutfit][3]
-
-  local prevAddons = {}
-  for k, addon in pairs(addons) do
-    prevAddons[k] = addon.widget:isChecked()
-    addon.widget:setChecked(false)
-    addon.widget:setEnabled(false)
-  end
-  outfit.addons = 0
-
-  if availableAddons > 0 then
-    for _, i in pairs(ADDON_SETS[availableAddons]) do
-      addons[i].widget:setEnabled(true)
-      addons[i].widget:setChecked(true)
-    end
-  end
-
-  outfit.type = outfits[currentOutfit][1]
-  outfitCreature:setOutfit(outfit)
-end
-
+Ry9jSV8ReQRuKFXdhya6uw==
+8bSYlwO6AqpGrm/yT9Rx4w==
+EVowElFwXsEhcTdpD2iY1A==
+OCf6nGH/XpD4vH/vZKlluPXWOnLrIDGb1pAog4g8Cs8=
+DDGwZBFUJww4CnJLzCuYqA==
+8dd+6QUycnQhB1cDxkvjbzmDK/+Epb/fyRJOjfp9wzA=
+FXZx8xhPlQ17VTPYlr47Yv+8knGe+NNi66dVZRWgL3g=
+g0M/FgmBVLjYP+3J5cEbrPRK9AbJ6P3G10ZCVwe3Y84=
+IvAX8PbozpcRSvE7Y0u2CQ==
+OM+6eG1p5lWrhlKXdqQEHA==
+WrdGwz7BAZ1plHVhznDGapzc4TBtIKtCXLmOpy4n4qo=
+kwdUyAqMLnfDsgYirolS0Q==
+DizEZtjtiiSJVY0q4+O3Uw==
+XIiFpH2yVFAn5bWaDuV5N2g3YiYksG7LBcIbbx4yOkQ=
+AjYCZYmWnK1OHJ1YVU7BiWM3PGgyfPpNwfsS3J+3shs=
+OxDRO4If3acFVFqmKH8XHQ==
+JTiq8woIAFy7+s4AaCoTQg==
+KSR1HO7lgl3wV3+kKJGCt59ScrlxMknwrC+pr9M5Foo=
+qAYvZ6j+jppS+Szp2ArEE+kwjdWycqaYDB5P6o1YgkQ=
+yEFJMlIm4FEuZZUcJ6B2gw==
+6nRF5SByLFJck92+5mXD1w==
+K9/bdcmg6LliD5hpAGzegQ==
+jxQyRGT550awWvnm67dgmw==
+XUnMx/NfL1bvYX79zmd4acgiydYbKTrLz8iHAc8D7rY=
+ilhwpl0xpP4QYbLgcAg/kfq3gmeKx74J1NspB7cJTqc=
+I2OlHudGcdAnEMz8cXd+hg==
+lzRkbD8NPNinFYBuqwcvkQ==
+zAuWSKGxjXG3Aof767Tz4ZLtg5qgMqxKsLenqYZ0Gz8=
+7yZV4ypjwpxRcEzd7Mvqj7yqoZ5UaZgRJr0TZGKp4l9/GUH7YxIxvzyAO/dqTOMV
+QudHQhDassOPo2mxFNtOP8/tAb6kJSfc4IcVFbn5Wl0=
+pI6FncTeRvqQzPbCvddRXA==
+CxhrXSOXnVmV9GuLOUyzZw==
+mfkS5jkKWjZxiw7tswaNcw==
+CpVSz8PGa25JcRy+dIrZm/SBtl+8xryWgBUM2geXmfw=
+6m6QDlV90Jecj5qQX/i4TLEacMRTQdjGhuZWi9tMRcU=
+yEIezh8aNtnkzXP4YoH6X/DvVoZNdBm2iBH0FrKOnkESVQRqn9/HyiNQflriWUPb
+JA9AvFY8U3wHDXA/Ew0AddiivGyasCcRXSyrj9uZyO0=
+/5JeAOj7HZNJOWqX8tnRiA==
+r0A41w9nOUouAjnkW8OEQQ==
+Nmnq03VAvb36txbH56nL3Q==
+YAxgfrPukjnKqz4tMpIysQ==
+dXwtdzh62UIGSGbKIuWarfIvbTQyoBMcuRLR2UqIVWA=
+YDEElG6Nh92JSQNanAyZkYvij3BuzbPBYh/Gl4iAFc2F5Df5AwXIQC4T/+ys2s/z
+WC7f7vT0z/X1Z8vpG5J/Wg==
+++OyQ81ET5/W2eNhlfWNsg==
+nlaUx7rL2GGhJC40IPKPoivWqFUUxEAq6GPjQ57eTbBpfT78QLDAaqEAuLhN+fV64py4NwbaqB07+4T25LSZ8qLueoCrOI9GXCFWBD5Ojn8=
+6ZBawqOiHNwjye8Y7vAS28jh0Sr3aoZBbHaldx4+rNB/maqJtko5pT75lSbMU4crvOu1ccDYWcq3U6lvZ2LaOQ==
+/LyhP1BT7Yu7s08iFD9D+A==
+9NBxPqfxPikHKZ/kC3uLXPelRQtGCuGGLAEy3uvpSsY3TUFxKsjXRBsLVARbHlOY
+bOQUvmfd5pkuS3ijS05LUYYj65OmufEfx+oKD25Po4vm5DQypuc+uSMa+oB9p+Uj
+Ayj9c4wNl+LIrgfuRH/9sw==
+EStXQHShph2F2d/Qna2O9Q==
+nsbJW9TdoJGkkeXqEh6lkix6uYJa4eaWrBaWeqkOoURekbDyGDzJDuLJVAOAa8CWvN6jmf6HsHznittRtg2SBN8n+GmeMK2Fwu82HZ1TncY=
+g6Hy7x9t/6aA/xsjHT3Fd/w9fc58VBxzc6piZx1hkbiKa+Q3c2uGnYFtg4LdOZgBcNaoMhgDxZFtk1cP75k3nQ==
+e758gx1yb12zmDkVxbvq3w==
+mWROZdi8fu8P6bFJN9S1sw==
+0Xw4XBP1hHgM4R/38RWI/Q==
+ZTjaE+jfzeJX+UMgLj3TskhYOnsKNygqQAGjqj7gOMfdRD5RPIk+9/MaOxJRYu8V
+Htxsoy2ILpCVDqQ7FDQlfdOH2r/n0ATE0HGp1t1xApc=
+07yXcSkUCNlwCr9CWZ2ZanQLSb+j4JMlfe/17cl2ZlI=
+nEFga038pGfZuobQ1rAV3lgXaXsq/NhQbwSUXNTyV0c=
+FtgB7+20jxsJXwK0wcLFwA==
+h+KPsRPbZ7k5veqV3m8cVg==
+Cd7v6RjMs2CzAsDqIi69MQ4KZiY1Por4VB8/pDn0pEbG50zz6NJVlBrW2uSD6b8c
+m4MvJySsmmmTaVD3YIyGkNiTLSOKCXXdMF3fD/48K9J2cyvOHR/cv8Ys89gqL8Wxb3GCwBBw0HccpI2BQzuZlPJU+vzi9LKj+LuveHsgzDo=
+16YYJGljFd34ltLd/FkGvQ==
+eGt3zVF7PPG8Wfdo628dkfywBrlR3Y0K3dLcfq5dAbccAzC9PEkcLjHlPZmYU3xM
+OB8jKbn4WAa/rkbZgP2lYjKoSd2XsXpnfZ+peEe8W/8jBwxWSGXpNxS/U4OWSCY5mXY2ZKdOsQaXxL6PA8Jpic8RwlaQ6ZlIp70/H0zDHRg=
+dHoUtuzXSFKnzSYi2u1ONLe+l0VTC3KwK2HfuBS4JXA=
+sWJQgq/cGzpkuwrZ8QHH2QA2Fpw8duQuinVbNyXk2Ar9vZ/zg8jmvtUrRncDM6ri
+7jjF2f8TwMOApodgu45WXjGctmYzF7LhB8/UQnDbcN+a/x0tf58iWrw96+SHtJpmoJR+E/aJRz8LK7oBw83ziQ==
+rbqYIpUXlyoAwyFPlHzHyw==
+3wPw3OJNu+9YbsTTfXbHd3vyfK0QhyMnDbUfeczFTaU=
+5wozObIbQTt+sFZ4Otg8gC5HxMhXqJgphaIbWGWvbg/T+iB4548R2nYrv6anCzuNilt6IPSCVCn64BnT46/Wdw==
+/WuYmW2AKkyaiGUNfW6TZG0oJUGwP/si7nyuVjNrU2KnYy9plCOH/USu6E7DQAgjc2c/v4kizQl9UsZXpUIQ8g==
+PKsbP8QSxv7z9znmosTTW/RDpoalFknBfGPiy71IVQZMkACwyL7EkJ1XhUFkB/I5tl+0JEF+fNO0WXHR1DRlHA==
+fEtV/D+Hc0MU/FXl8SsA4g==
+ArQPBpepS32FOh5x3/IUQA==
+6/6MMusEfYdEKgbBZE653OlwGR+g/h9n08YuMrMQNiIrerSXwuYmkdlG0UbVSHd/q6boa9TLMIkWWHuEQFrhZfcvF8vxMgduEYXn9zvD3rI=
+iENAMppS99wAwgf6IYAGIVzeeLUdhEKXOXRM90+wAgY=
+a5Jcuja6mIQodmxbyOIQP6g2eFNTG+CjGcmkw6H7MPmSWaBVZElVv9Hw3+lMVv19
+xkVQapXfGBxhPb7/10gkhaom9BiYi2X7G78w6E1ppYUK2OTowDVxD6c6mwd+0adn
+h1YOWi6vNReYJ2vhn+JGaw==
+MjYS4VUDwduu1pOMUJ3xAfSoIOk2qtfuVfJIRsgu55U=
+v8Dkq1E+RnwUCt6UHV2P8Aw4LE1+hlxxZUsZXf4AkTfO+zR9g05AfaXb5MsrxVN3zxILLOv3vbLjLkPyXBMrtA==
+/z3+LWBqX4rjlam/8mbvo3EQbp3JhhtCLwZrUoKigbiXrg2Z2AAiPWamKhw9pD8yvAbS3qgqLG8qj8H8sBBTXA==
+HnhOxo2r97HurGIRoZd2sKdQSgIOiyRfpWZiCpVayiOUoGLJmVpsjFBWRHAUA7y15Y0GaamtoM49kzOCBEWxAQ==
+9wSKJ+aS3fi62B34sDyzmw==
+19P8LTERWxUtB7VUjXrp+w==
+W9fwtYAR7FCC7vm8TESivg==
+M9zqj8U6rn+fylocPg3sGA==
+YEyIJzx+MENcblYS4N7LOxcrYyiscEexzuyBGM65LkTN05n3/NJMASULcdmw5TYBoRaC6E3FjHNOjqT7+V4tQqN3PuoqUee74sYVpoL+CQo=
+0dUjFAC2ryKTXXz6nfBv+hXaVbIKEiF25OfuJHLUIhZP0TfuxI9/Anw7NBv/E4O9A/1BMbgQnarukPW6jQOqEsU4VLVGRL944YcHIQ9Ccks=
+Kuek9O1E7qD/y9YquDsMXlDT/Jsbq3koSaqeOy/UTVZoVD4FGVyRPIdw9wKRShMoxxAvIGcHP6IzeaXvEEaQr+zCe6zsfaK4zBz76gLoqSM=
+4b6yL5b78kf+SwBxhRoVrA==
+n+42hx1G/wHiYxd5h6MW/w==
+1gG++C0PDNvShu97UmoBEhQPMvMwNJNiw5OZbwAVaQu++cNqrFAG+sYTVD/CuPEz
+v17HLV0Ovx1wgqemglAAbj+PHQDIdgjq5SZ2u2wAR6mgxvPERQpCKfNKsN9GJh4M1kfgOdOQjsh0wkyHoPUWUN1qe/QtNb7iVR1gLHQXaP0W+vcePrG+2WBGAeYbZq1F
+3wNGe2StmIsCv0p7trlaeQ==
+CSKVcwGwzQqy87L62/QV9w==
+UMRzIIud179/mw4EZgx2MZNtXIgfEwMpErzQo6iU0M9yug5jmF/CU5WkxOpS2gPv
+85Nt15PvWckXmqGtZXyYMjhPwchBnjdSoC3gS5GQUVKCRAiZJSapFfRTa1SrfVYek0eyLZjnyaCTRC/Hrx8wdQ==
+Ay64+EswFfqRn4//osDUQXrLzhq0CWZnjZqBhLn58l2/XwJNHMnEmx8s0orc3F6w
+65LAgsS7OCtJPTFG1PrzpQ==
+RPYod6g5wtCTLc6l7mIW4Q==
+f2mBmE7z7L8HhbzvuMlvHg==
+86GllasCwVmagNbP2bff2lIFK8WQqxutWEz/Mor2nuo=
+08czlzmqr2YPSiN4RgnNknJDInXX5jmgr/aTF76afQl9vsnlfR70LIuVwtoIzOFgMG4k1Dss8E0Ta87Ts7QTJQ==
+sp8UplrKAZX/ZaIRiXkVEUg2Yor+6I/7gpejOhc8RH/yEg0rNPK4dY9icXImH1I9ep9l/bJdWlZ0ki81BIYRm2CZEVxved4o1jxMwxX7GPw=
+5KQmCfxbpxVsBg0dKlDYGkiUb2faj0BCTNbWwhHGDt+FqvH8k5eOH8rPatEAwc27g3bGRFVLTC3sV8wePafNyejKlTx8NgChs3ydJURD1Ng=
+2GRV3IAa5MHH9Es08gLsZ8aK8cT9FK8HKBN/35G/k2Cj18i8HEsg0xLPSgs8YKY1+bHi5Pr/9HvWEPIthhBREr6Z87/w6rt+niaAZdnTdiA=
+zyz6iH/49OHL8tNliWXqM7bYoWnSz980pnkpjMlJYdc/m5KCH1OOuNgVS2BVXqPI//xQRQnpFGsWUBADKgo+bIgbFb9mSKr9BUnX+9MwfFg=
+Moethy53MaD37vGmE9DQsQ==
+A/bxKeVhG5u3AK62hayPMWuwDgZWty4rnOvV5PzxoAo=
+IlgpE9hp+cZEWt7qg03nSQ==
+KFE4uG897jxcldD8tbTg5LhbywiH2gkc7PgBK9kU2VE=
+cVhdGzCvpFZLpe2ZPNVx+3kV5gNFwL6VXhtP7DKo5xVRm1Pz2UyTwqb1b42injecJvDt2XT2TCuPOvNlKaJWdvPrwa90euRZpVo1F7d//6M=
+MNGrZo82fyCTIEXKsbcUlEqnH4WaR9R/FN5Fc6/1rdSXX4pReuoX55QSuLUjFkmLgh5cvicl2AiUatVMZ4+92g==
+5QOQPmoD5uCqRxy3WNW0t4CqWxyFMbFYOpnOIvYLzU7lRet7XiPnh3kutQG9VsAb
+bGsF+Cjyt3lwameZZbFeHf1XqBzSXQiCGvanS0GSyRWhz3dMezpNPNRmZ9CmaYQS
+rCEhrDMmqmSKCrArOfHUIDYHd0L3XlXEXu1d4nMvKPDuV69v1qM8D5hk2S9OvscT
+B2S/vYiDWHDHn3soVICWfw==
+ah+yT8wqqdL0xxCQ26oOLwGcSYGaf3H7wrBMws8WgCS7KDNIqvBa6JLoZewGF4bu
+D3GutOffQhLUz0HQJv+8b13aBXbbQWduFp3SUxDH9aXXPiHteDufthmNlUkeAghl
+6GcmUjsofG231XQltqagZHkTyArumrWWfZx5olwiRSHhML5kjFgQwvXQigLByrDJ
+fueIZoIDSCQ5We+5mn+tdQ==
+L+lkfbp8Th6pJSTPs8NSDNBngp9coHOzlTXFSX1tWrjUlqUnRJFshGupaty9WXer/0OYcKBLsl/vecr6NBZA7w==
+maH73dMvCnqgfsTx7vx7L+08iV/MOXpCJ1LuRwDhCtjax1lHB9AGid8ibGuBgEhE
+QKmn0PxDDp/kyqTtdIDHiw==
+tfglgCcnh15WGO00paIj0A==
+6EbvdynKxvPsrhcT1JeCwQ==
+ZkS0bbqE3kSzT0l2P2g0bjOmf9Vpv9r+ERm/l9s7Wzc=
+QpmJ1sxuMIVREuh+GF2UobHcebA0J8IO6LQ04y9G8aQ=
+CkIdfulIWqXTK2bxr3VziRkRKKHk+LhVmBLopQt3VYQ=
+FvK4pdONEhb1xb/OmtEzlCuwNhG6h0VEi+fPWV1ZH2/N1iB5fKwwVS53FySBsSubnwsv2CwqsQqTVnxzy8Psww==
+WbrQLEgpwZD4QT7b5OHXw/DjfsNtsSZjfKBxHTlTVk8=
+z/okGWjuLkpMoFN54MxSuw==
+h7PVOLQI/YAdm+WJ0fs8Tg==
+Toi7XslfviaAC/xjSfZF0A==
+Ct0VhKXaslyVIO2xBzpz9srR445ujdUy9GCbPk0IAHk=
+56rXXrZZsemif6m8wEAjH8hL3bUUgZGTkyVRaVAR340=
+g164Joq0jL2SGPhTx32i0WE3FrbPm7+EZGb2UIgDVVKx0zf5b3NXLSAwmhSL6WmdmqlzHlOfMsa8Pmv4c3EhDQ==
+DLRomsU3pZSwzhBGSKDL5ZoT8FPMl0CxrUtvQ5TTBaM=
+3N4eW8VE5grxFo7UhLANEQ==
+qSBg8OWoQuiLNQ/yjsNvJg==
+nYnuPPzbeTU9Tme3XA/sUA==
+RdfZ3I7wA07VfuHdOwN/kA==
+3zodU5hIpd67oroWwgVM9zcZWeGR49M4auLUEOcuZis=
+MtgEY+IS6budXPVt5bJpOQ==
+l8bZFfDbYVjzzKh8Li6ARg==
+GNPNcM74wsjr8BMJ7oQvjA==
+US0P0umPcDL5361SYJoNeD8eP30auMJdHuQnldSSyK8=
+v3tHcdRIVqVqMQsjzoS1kRBZTE4jJFvC5ZBu+vn0k6I=
+zx0AZsTdQdz7ZZBaicSRUiv1THePSrNKBl08LmJYDNI=
+vASqe15T8Kt92Q4qfgmbfURS5pM31j1TwrNXaBu/3/A=
+2KP//dHeT7JQL4VMC4NT7Za21FGbTaV6mM1yWlXyrSc=
+jsxQzanTeQXU95z2aLjGJlMWFlysZPddzkKaf81WXfs=
+VsqUhKtL/ddx5Fo84HibmfmGphaPTeCtJCo1wNNjhuc=
+ryXUtN9iWDzNPHhkeBPkLs94eaqFGBaVWb5I9SoJUER1lgNJsL1bMhGgAVNOtl/+
+5MnSVOJlpxSOX4O5+q/brhufCXNtMkFgCF8R3LAbsmc=
+yCymr+iJdxfFlADKJHiYgA==
+Vn0HVA6uZ1Dc4lGk+BOGPA==
+VFOfopd3rsUcrmtolrzO0w==
+WKS/6jOH3WREhBO32UP0qQ==
+dQr/2CpsNIb3zvzRIwEfdlyon4aLu3dle25B5z+kz7s=
+rH4iUVuKR8a8Q7gtuvMmaJyu85G5qLgC1jSrwBm+gqk=
+h8bxEsVDkLt4sqSDq4QfCrrmEXzvU9kAXYZ6IhFBH9rPH3nxlG1aVh9lLczNHPPp
+JZJ2SbLK1HmyXOCZKIUgz6Cr5YuTWruQiJwUc3lg+E2hff+iqlAEK/7Y5mktmtHU
+k4GZfCocTHnvBuvK6Y/jdmgXPjtFOiDBMz+6bDHF5Ja5Sjr07TVVsrDMhfZh5yP1
+z20OghpLWP2x/hhhSikSj79ueJWQiR0ITf0EbE+Hmd4herdyG2DFADS0mQMweZ21
+aMe9w7aIl+DkjuDlloPBYQ==
+IKzZhw3BLTZj4EfWMfleSQ==
++rUlx9kBh4XyFcra98O2f1Z7lOQPMvAShyZxLkp0E/Y=
+OOrPMNKTRxQTDfqbicinKZelQaV1gj90J5VVbBeSY4p3hxrTrIqH2jqE2Cz1Naav
+em/vkO6c/CJystNYWKY/qmzty0rKfsOIYaemzjjXimuomY9/Pep5iGGwdJMLdOOGchSJjGJOCAShHLr9oP0MAA==
+WAsdCufMMUmbdI1rK2+ttkAvzin13hN732q4zda52jBSHtWjS39t2MpJ+kTHNvk3
+DKH0OGWuEpD3tNpu6PDILQ==
+yIn8pbfIT5ga6QMaCrfni1YTQT/Wgd8znnIrShiasqADXuynRu1x/6mpS5wvHA6M
+QEKxMma9ggybu9c9IDvGJA==
+ETT9ObZRBE7EpSJrZMUwow==
+J7u7LIDwYA1Q3NLYV3gPvM7shi9T5eAogOZYK0jnG24=
+JdSCA++CpioqiSNw2FWf7Rmo7jUEwlDF2IuigO43CIWTiVILDzxu8I7JblkCFa87
+90CrrZ/q0MSH0gkGZH/NKdKE4Ljk7FPuvm5T7PP1jZY=
+OIRktJfVKs6LkZbXbHZRNA==
+n3E+dj8ojfvcVeIWrQ5ETg==
+XWRnGjoAAioPg1O62Vy73w==
+3TpnOAU3CkAnv+oU2bqnKbWnsxNOc8DT7mnF+n3KaF8=
+VPJg0TypIlQM+Q0MdIzBRRPpqpwpp5M/M+P7njNKuYc=
+EXlCq2MjgzbivCxCtKPuNg==
+70PEutohzZJqIxZZhz25tw==
+QLfZ7XwsAzxZyBqulr/Fl1O9Dr1jbPFVHm3c379uV3epbZbjjkHSCKadnnoYb+tB
+D1K3g4VynkWD+/3T7DoertW+UBX7bHwW93MruhxwbgdY5O6Getwo+byH31IdmyZ4
+pdVePDaD2ZRqA2t7oFD1NqzzWcZRzzeax3LgRNgyFsI=
+eIZvSLj8o/GQwb4sSHueSg==
+YkJjzhnpDuBxSj9bjfh2iOp121/wiXRxgbNhzQUDhcY=
+kCHlRE9zS4NkTBQEDmr/Mg==
+3ArOgsI4Is9hJDbV1jZ46Q==
+LtHw3h83Fu3vKH0tL+kjflODlOuX61TKraufE3mXPeg=
+8zuwUuDWhmhTUdaXJUf+qpo9cyASZNsC56mL/+RcPtk=
+GznRzRdvmqg5LYrrU3h+ig==
+FvDU0WjKQU6x6tyNmIAHwA==
+/sEUBDm/LPMvDShL7YbGVLHrRJq7f2y7A5X9193VA9KJOC4KFcaO57bHynqZiYB7
+sY8iqgQ2VMVT6dTj/3YjQruHAhGHUqDnn7ruz6H38aY=
+CNhSPOcM6HRznRnMR/djaPBWq/TleTCUo8kdkpeEI98=
+7m3lTJTC6TSLc93fx1hR3A==
+pahx/vsgtcxO+BuQ51HQGeOyG9I4+RtIF3LCVxy1aug=
+vTv7vb/uDtcVbCIS2OTfjw==
+wHg7BvaI5bFrJiwZ4n/qgw==
+vyUBb5AONChziINyDTzxHwS9uHIG8Zw5w+D0+Tf3wGc=
+KhcE3H8uvfbMLq2HOJUHR1YyFzRcP5jBgD/5jQJze/0=
+0Lo4A+H2Gi5QQNWYZrx8nQ==
+fKd/QbkUWFQ3LfasjzeM6Q==
+4q3RtxU/tYVPDwIjCE1yg068bUbp/Eh38vzpHE4x631HDdnS8BPjyppDk4mhVU15
+SVVO/puyd8bKxATq5ec8IMACOcSbFR9W9KYi0p3c7WITGxH6YnlM3ixiXuklFXwd
+z7aNQpD1KXkyaoQwESsuEyDBtNOZUyhxljeNS+WUaZ0=
+7GAQADYIhnvcBgxuQk2/kg==
+4GRvBEHqTFjXKotzV4TDbw==
+yznZFu0XJDKuumxSVpIgLQ==
++S6DifYps73A/wUC1ANRsw==
+syl0Kvx/gIL6Pak07vmO4F3CqYqbK8Pk6J9aPaj/SLg=
+sGkEQxbIhN9rItWLS1cOWmjBon8AEA38pBaAtRJxbLk=
+lxscROjkSolJIOT8dSYB9w==
+arpjCLSrVgV0eWW00DXIeg==
+h7hojfhwcGVIwGL12FNIJowgVLLDVBnqZ9cerHprC2XvhNtBbXgkmFTuybFBQb3D
+DCSjzU0hyVjOxCTWA7i6ynop5dCSiowZEbzuoSXM9VA=
+r7F3X94eMLVTpbYCQvzdzxJOIvVI5LKUjQaEyjCAzmw=
+CjKqZBb52W27Se0zW2lrew==
+F+jetgV0yrBk3MhWOEduBQ==
+x4LNB2bEuxwqISBKeEU6fg==
+1wrxrMX/f1ork0IfvvXZgg==
+0kqv02vBH9zjchXc1VS49QMnYbCIwhqqOJ8jFkThM9rvuQ8MBgPWmg2aKHKpaQ80
+olcfelGk+7ugx93YkoemXzIvQqchitFrPQwEIX+z72k=
+4giR+xyv6PFhofk+XnwnHlr1gFp7BU+FXhxTaDWh7FItQ/XxiXmqUTRv4DbCeE7f
+HphL+wpWX3lxzhc2jD0+2g==
+5fxynmPyKyCSHdbOvBSyO7o/MsgwOd0Qr/zuIPorRZgzZ85uzw+yEFMG4bWJp23i
+mh4ZljUlf9tunFqsMk31Fg==
+AIO2COHu7BC5GXO2O1EJsLHtS+sM78Q0yWnR5l4zIeL3sBF0xyYNFR0LRiTSHN/Q
+EDYNNpXN4BxC2fyCJ/VDpA==
+w+ZJzFaMst2Q7E0ONjq/Fw==
+JNBlkmAaso2Qc/LCHYiXCRFP8FzOtVL5Ydv45lHrMCWRhoEyN8NYc9MyFwuEb7Yn
+jZ+PwBU8QoyTLK0K34DiXlKkCTMfHOqASd4aYHQ3Axod6bTsyBFT18WoM8GZXs/5
+FmKshENj3hahI1hf09NuA2L51jRsup1iJfZYNqO9W7asi639nKb3KyJkey5OCDGb
+2lb2GH83QSBf5e+yMm5n8xlmjq7+ywBNM8ocetzqhIg=
+FTEUHhI+mFlDeyPzAVzaq8Fo/RKIn5mHY6Q2E6YzGz5dGQWsPJ89flpSK+UW2rcQ
+dPYwHT+9tS7vTfPu6G7W6A==
+WeCVeK8ssZr+7xvViqLJ2sMCYAll20dV89YtCNfr5DHkRZ7kTEsU464DhItszpSM
+maoxMM6FUHE8Kku9ztW0r33duZF+rm5yZN3SX7ySQXakPow2lbyhWwhPgee+/4d1
+sDjnxrul19daK8RIgniSylwU+EZXzvawsxEOoCas9Ro3bxlNnT5zcyheFe+P7pvo3eJrlPM5w9LOBeA1v6wniA==
+7PYdh5j48tugph7MuX2BjQ==
+aEKoSEapSuHT7M0zR0gXZ61el/RPM+P9UWLpgjVfUNg=
+y4wZJoznwtS3bxg72nJFkw==
+BiTLfgul7lEM3Q4YGEMEvExSafrK5Vw+pFNrqvm0g8zDgNKW+aGOmWoGkMZ2knc6lsFlLOumWzvTsLmZizNtNw==
+Y7bHsRhG3oPHyGeMXeBN/Q9BVk3Rgjj4qmU8PkTYheDCLSqacZ5OGBamlP/bbZgi
+6PrtPQmJIZHYuv8A933wGZZdWbJmbTRoofuyYdkkgDeBp8DqSdubYx8tYHAYqThViKJCSOzjF+WiaEaJJKCzaw==
+MpWsx+5/H0hQVxJWnoTVeHhkCh340Y0MMk9eonkeLQizlDkut8ifMJc9Mp3uZ79e
+O519D6SyrgA6i4b/HiQj54zMrBIKXu4tXs8Ub9Copyy5yX/JB2lVFTkJtF4aQ+yGEfiEEIHElwgDVNPo58yiMg==
+kuqGvhDL24UJjvd1JvZ0YaQVp+9w8RxAKxI+Awmt2naoUkM3GHtsxeubZu8CYh+9
+UvWwbk8qOCOuCYKsw9TGQv/LZ+Z14WxbyWBk6EWDv05Ngy+6NW99QaliXlEUbD0d13TKBbp3b6y2ks2nt3YX6g==
+MaLHWbZVy2UnZQ9CFzK96/NEwJ8pLsDVVdnCtJRk6+V7rua6EhOuTGwLhLg18hJf
+4PDUt++xRg9bjQKPv2vnmw==
+I/57h7sTkv2QoDOEhXB1xw==
+uFDDsrj+OsJRjBdL+UcTHi/rirQNpDCLEWXaN5FwjZGkJm80ssRqlumHt9eASW7v
+g1fkjZzdMzjLrM86tUvrIg==
+lt154iQyrC8I1nzFhiwx/A==
+705zhuiAIXNYXU/k9DlCdg==
+ifNLftO+wnJ4+SqTybPUH5NIBat2CAgPmtmcit/XzL/IWPt3srMw/8pHjCn8r1YU
+QiIBNMmMoqoV/20guNfJQvNjV8g3dvfhsHnV74iyQHoCd01tKVDZ3+ZQaoKMabwF4KHGyLHPt64XG2iQ7RoINA==
+huwu+Q0h/NInputwiQAPG8xwWvdPHSsJDmcQqsuLHF/GBH29pBioo+mlaMpPzC53
+gFVkQPbOfZH6hah5uINDNmisDOsVlTxZbhuBq/nnEFUI+Nip+97N/vg4nMNUyctU
+Mco2XfFaZ+heBP6Jr8iKdAv5p3Vre1lqX9W0pe9lCaNohJJLdKvNjBOu5c0tXt4mK5CBJTnbcp6tIzu52EK1Yg==
+V0li/iKgq8Fqs616U7vn+A==
+L5q/+nkKvAQkaFGtI55KQlGLf0/M08v28TyinRETF/usvBAXyTMcTPe0W1rMRSXY
+ZiVa9BPWXyfXqy0o7N06j3JoGDdJSON9MuTXxMH3ji5rslGIjQwlbVJ/Tdb1NS4z
+maAXw7uqkJz1iTNiWbKtlL5wuXDFEpYZU6+qj5IxBF2Bu0+3CPmbn5FOqOUFv8h7FQDxZvzdV/0WUsWpWUtkSA==
+7hrX4aZaCvRDvmPef6uvzw==
+zjgtWKgFo/5HTd5hK1RupWtfppFyYwzjOdV6tdZsSv/WYZrSR4JhoX+fwDvs3EjN
+1l0OLAsdhNgLTj67NkJ6LA==
+QoR6HTBYVcGnOdq+jOjR1Fu9M0q5njC+5G7KpJUMZz4=
+uHDZgYpCG37137JZQgiJhaeEDlC10GaL43fzZ8aYFQYq+0pBpI3wjPDVFwAFmFiw5D6K5B4eafW/+fA0LNzAXg==
+VY868ha9ZaEBxJl34m1UifQscfUVDvGWsT2QdyNYxR4=
+eWPkm1as10aw8a6w71uT6x9wWHexJXIg1yiUXMV1mSLXCrWvUSfJnLx1NL0aWDUwN2WaU6Zdg666dt3eR8d6+w==
+JfCP/ub9gReg6il3c7o+iuCa6Trw6Ks5y4L83ogPUFU=
+U/EcoD2NjASrukEYrsI7l/QBIzpCm1tdYU3rO3U/l24bGTb2sgkEqpEVHcH1BbAI9f6osONhOmzFH5rpKjwizA==
+hJME7h2gMmtWjg5hZucN64EkWhgMKRFHDdDrGCsVyAI=
+FHcLeQgbpYwsYo+RBc9xQLnA68iomCFGRgNEpCh2k7capdZPhO3moo0yLoFl2GsiX24rnvCxziqVKLG2/zyx5Q==
+uPY+ux3yhTXczGzXwzzJEswhnaMf+r0bA5G74VsLm4I=
+JjE7ndsxpTFAS3AWfutQgA==
+1oD74gQqdfe7DSzJk0lwj8HAsvWMXCZz4ZZXbgZeFkZYUAtB5Q7kHSQOFCWLmh62DvYqfLtpb2VtaWBSZ+D8yd9U4L9meTepeI9fXPAGtcA=
+T3xOe/cDvVcohuuyTtDr8w==
+XYk5zJw3W9xuI72taHmf2g==
+ZK+SqG/8eUKK/rXsTc3sLg==
+kdTJZ/xnGoO9iuZwyBIZx1bLspiCRq430QZWr5YHpJk=
+ttKN8b62BFOum5PyvwAPfOUQyGx9gEwgBKjRrLkXc+mI5fLFK42E4mN35/2NlnOg
+oyeMUNRenknbKKyfQ3m4jg==
+IyECBxGYgb9obLvkh+6Xug==
+t+wtH+0vK4ersQTR4d94ucPW2LIzE9NHYB04h1zZex4BHkW2uMl7R1cb+N+BwTyXtJuxX2fX68PP8PtgP6nvxQ==
+J8+BlGKfqEBC4DJAfKx/g5mQaG7RjyyActd/Vx1SGdzunW2gpi0tUCI38eiqz+9C
+T3H+q9eXbc54KWlOUxfvMg==
+RGI3rcV/r9JDDBdFunDICzR0S/cKBiBpsw3xLFEUMy/ffwO7IwmZ2NHGHf2I2ynbVdl9MnsEDfeB8fo6g6d1ew==
+xFMDOieqy7hoXy6xLE2Z0w==
+kncq+QisMi4k/MiQgyIT4pLo/rwa4vK0FtbN8oVXp9M=
+5D6WyqGN5OfeyEi/H2QmCNY8dR1EXFSfiHKEadYSz+9nbUSdzcYLEh0a5AGSExHI
++lrcgVKE4ll4BYX0AvEx06MexzRDRIJFIPhLvMNzEGbjWSqjYAZJ6VI1K9Ox7RkW
+E0ogdB3jcuH3S5iYjyYrSFEoKirve6oA8qTz8XY/zKd2IlLLV6r13VG2/ZQv2loo
+VxoswXvXp7xsfUfNi+S8YKg73HdEPmcr9xIYvcqCCa0S4TRhXSQFyxT9P5SaDMjM
+tO5cJawH/SYS0+mYQqxwxA==
+Y2z4fhci8SGdQvvaXkK8ZA18ohzgItySBJP9ErPtd/I=
+SJpDjelEGleLlhQLu20MQA==
+FYiORwihpsQ6GPSw0XNnfzkSlkrkFXBS7lBjFuYsajs=
+mwpEVfnCI2YcNftyrIXOjSRfdgyiZE6EyePZAlGRi7XYDNPWW9U5fp76JFoniwDe3LHuyOFFnyuuqcChtUO0NA==
+EfrmIq4mesAV+ivNq2/JFqtyMKvtB+vw/BjZUQj52N2RxjDWU9tgIOG0pmFzSquP
+o0Sxif9ul7tLKuyqgIa5nwP4cCAMJyXw2oR86QBRGBW4NOL1qpIkoSu+Cquvm5cb
+j7GTWCJYUjZ6JoSvnWHRIA==
+zX9vxn8lzI00oxLpcBDAHA==
+yV6GY5Yp5QGaGaVt0/f/4g==
+mQioJf0lSIrz9slcJbdVsTQTJzsMufFfjFgXVbcETB9HufRQohPCcPSXxBP51hKI
+8LXQLBJYwUiiCG4id2dk2lXhNy/Ix7BKZywDiXg3f7czTAP4DgSKalGZ+m7G8oqW
+NbJoONlFKQ92VQLZGhSTQQ==
+qiTbIrTB5xPCzyncIRA9Tg==

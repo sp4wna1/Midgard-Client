@@ -1,339 +1,339 @@
--- @docconsts @{
-
-FloorHigher = 0
-FloorLower = 15
-
-SkullNone = 0
-SkullYellow = 1
-SkullGreen = 2
-SkullWhite = 3
-SkullRed = 4
-SkullBlack = 5
-SkullOrange = 6
-
-ShieldNone = 0
-ShieldWhiteYellow = 1
-ShieldWhiteBlue = 2
-ShieldBlue = 3
-ShieldYellow = 4
-ShieldBlueSharedExp = 5
-ShieldYellowSharedExp = 6
-ShieldBlueNoSharedExpBlink = 7
-ShieldYellowNoSharedExpBlink = 8
-ShieldBlueNoSharedExp = 9
-ShieldYellowNoSharedExp = 10
-ShieldGray = 11
-
-EmblemNone = 0
-EmblemGreen = 1
-EmblemRed = 2
-EmblemBlue = 3
-EmblemMember = 4
-EmblemOther = 5
-
-VipIconFirst = 0
-VipIconLast = 10
-
-Directions = {
-  North = 0,
-  East = 1,
-  South = 2,
-  West = 3,
-  NorthEast = 4,
-  SouthEast = 5,
-  SouthWest = 6,
-  NorthWest = 7
-}
-
-Skill = {
-  Fist = 0,
-  Club = 1,
-  Sword = 2,
-  Axe = 3,
-  Distance = 4,
-  Shielding = 5,
-  Fishing = 6,
-  CriticalChance = 7,
-  CriticalDamage = 8,
-  LifeLeechChance = 9,
-  LifeLeechAmount = 10,
-  ManaLeechChance = 11,
-  ManaLeechAmount = 12
-}
-
-North = Directions.North
-East = Directions.East
-South = Directions.South
-West = Directions.West
-NorthEast = Directions.NorthEast
-SouthEast = Directions.SouthEast
-SouthWest = Directions.SouthWest
-NorthWest = Directions.NorthWest
-
-FightOffensive = 1
-FightBalanced = 2
-FightDefensive = 3
-
-DontChase = 0
-ChaseOpponent = 1
-
-PVPWhiteDove = 0
-PVPWhiteHand = 1
-PVPYellowHand = 2
-PVPRedFist = 3
-
-GameProtocolChecksum = 1
-GameAccountNames = 2
-GameChallengeOnLogin = 3
-GamePenalityOnDeath = 4
-GameNameOnNpcTrade = 5
-GameDoubleFreeCapacity = 6
-GameDoubleExperience = 7
-GameTotalCapacity = 8
-GameSkillsBase = 9
-GamePlayerRegenerationTime = 10
-GameChannelPlayerList = 11
-GamePlayerMounts = 12
-GameEnvironmentEffect = 13
-GameCreatureEmblems = 14
-GameItemAnimationPhase = 15
-GameMagicEffectU16 = 16
-GamePlayerMarket = 17
-GameSpritesU32 = 18
-GameChargeableItems = 19
-GameOfflineTrainingTime = 20
-GamePurseSlot = 21
-GameFormatCreatureName = 22
-GameSpellList = 23
-GameClientPing = 24
-GameExtendedClientPing = 25
-GameDoubleHealth = 28
-GameDoubleSkills = 29
-GameChangeMapAwareRange = 30
-GameMapMovePosition = 31
-GameAttackSeq = 32
-GameBlueNpcNameColor = 33
-GameDiagonalAnimatedText = 34
-GameLoginPending = 35
-GameNewSpeedLaw = 36
-GameForceFirstAutoWalkStep = 37
-GameMinimapRemove = 38
-GameDoubleShopSellAmount = 39
-GameContainerPagination = 40
-GameThingMarks = 41
-GameLooktypeU16 = 42
-GamePlayerStamina = 43
-GamePlayerAddons = 44
-GameMessageStatements = 45
-GameMesssageLevel = 46
-GameNewFluids = 47
-GamePlayerStateU16 = 48
-GameNewOutfitProtocol = 49
-GamePVPMode = 50
-GameWritableDate = 51
-GameAdditionalVipInfo = 52
-GameSpritesAlphaChannel = 56
-GamePremiumExpiration = 57
-GameBrowseField = 58
-GameEnhancedAnimations = 59
-GameOGLInformation = 60
-GameMessageSizeCheck = 61
-GamePreviewState = 62
-GameLoginPacketEncryption = 63
-GameClientVersion = 64
-GameContentRevision = 65
-GameExperienceBonus = 66
-GameAuthenticator = 67
-GameUnjustifiedPoints = 68
-GameSessionKey = 69
-GameDeathType = 70
-GameIdleAnimations = 71
-GameKeepUnawareTiles = 72
-GameIngameStore = 73
-GameIngameStoreHighlights = 74
-GameIngameStoreServiceType = 75
-GameAdditionalSkills = 76
-
-TextColors = {
-  red       = '#f55e5e', --'#c83200'
-  orange    = '#f36500', --'#c87832'
-  yellow    = '#ffff00', --'#e6c832'
-  green     = '#00EB00', --'#3fbe32'
-  lightblue = '#5ff7f7',
-  blue      = '#9f9dfd',
-  --blue1     = '#6e50dc',
-  --blue2     = '#3264c8',
-  --blue3     = '#0096c8',
-  white     = '#ffffff', --'#bebebe'
-}
-
-MessageModes = {
-  None                    = 0,
-  Say                     = 1,
-  Whisper                 = 2,
-  Yell                    = 3,
-  PrivateFrom             = 4,
-  PrivateTo               = 5,
-  ChannelManagement       = 6,
-  Channel                 = 7,
-  ChannelHighlight        = 8,
-  Spell                   = 9,
-  NpcFrom                 = 10,
-  NpcTo                   = 11,
-  GamemasterBroadcast     = 12,
-  GamemasterChannel       = 13,
-  GamemasterPrivateFrom   = 14,
-  GamemasterPrivateTo     = 15,
-  Login                   = 16,
-  Warning                 = 17,
-  Game                    = 18,
-  Failure                 = 19,
-  Look                    = 20,
-  DamageDealed            = 21,
-  DamageReceived          = 22,
-  Heal                    = 23,
-  Exp                     = 24,
-  DamageOthers            = 25,
-  HealOthers              = 26,
-  ExpOthers               = 27,
-  Status                  = 28,
-  Loot                    = 29,
-  TradeNpc                = 30,
-  Guild                   = 31,
-  PartyManagement         = 32,
-  Party                   = 33,
-  BarkLow                 = 34,
-  BarkLoud                = 35,
-  Report                  = 36,
-  HotkeyUse               = 37,
-  TutorialHint            = 38,
-  Thankyou                = 39,
-  Market                  = 40,
-  Mana                    = 41,
-  BeyondLast              = 42,
-  MonsterYell             = 43,
-  MonsterSay              = 44,
-  Red                     = 45,
-  Blue                    = 46,
-  RVRChannel              = 47,
-  RVRAnswer               = 48,
-  RVRContinue             = 49,
-  GameHighlight           = 50,
-  NpcFromStartBlock       = 51,
-  Last                    = 52,
-  Invalid                 = 255,
-}
-
-CIPSOFT_RSA = "1321277432058722840622950990822933849527763264961655079678763618" ..
-              "4334395343554449668205332383339435179772895415509701210392836078" ..
-              "6959821132214473291575712138800495033169914814069637740318278150" ..
-              "2907336840325241747827401343576296990629870233111328210165697754" ..
-              "88792221429527047321331896351555606801473202394175817"
-
--- set to the latest Tibia.pic signature to make otclient compatible with official tibia
-PIC_SIGNATURE = 0x56C5DDE7
-
-MIDGARD  =    "135666238727074779682563608687502124742590860285967589421140948412372824439641766120089136698922810092455131568594233752811858085429975780452342541312503721977506346465964648617339788012369040509455606892933816624367166360778833769931415547158692601248587841481641765770330136500449286035194571798509196578547"
-
-OsTypes = {
-  Linux = 1,
-  Windows = 2,
-  Flash = 3,
-  OtclientLinux = 10,
-  OtclientWindows = 11,
-  OtclientMac = 12,
-}
-
-PathFindResults = {
-  Ok = 0,
-  Position = 1,
-  Impossible = 2,
-  TooFar = 3,
-  NoWay = 4,
-}
-
-PathFindFlags = {
-  AllowNullTiles = 1,
-  AllowCreatures = 2,
-  AllowNonPathable = 4,
-  AllowNonWalkable = 8,
-}
-
-VipState = {
-  Offline = 0,
-  Online = 1,
-  Pending = 2,
-}
-
-ExtendedIds = {
-  Activate = 0,
-  Locale = 1,
-  Ping = 2,
-  Sound = 3,
-  Game = 4,
-  Particles = 5,
-  MapShader = 6,
-  NeedsUpdate = 7
-}
-
-PreviewState = {
-  Default = 0,
-  Inactive = 1,
-  Active = 2
-}
-
-Blessings = {
-  None = 0,
-  Adventurer = 1,
-  SpiritualShielding = 2,
-  EmbraceOfTibia = 4,
-  FireOfSuns = 8,
-  WisdomOfSolitude = 16,
-  SparkOfPhoenix = 32
-}
-
-DeathType = {
-  Regular = 0,
-  Blessed = 1
-}
-
-ProductType = {
-  Other = 0,
-  NameChange = 1
-}
-
-StoreErrorType = {
-  NoError = -1,
-  PurchaseError = 0,
-  NetworkError = 1,
-  HistoryError = 2,
-  TransferError = 3,
-  Information = 4
-}
-
-StoreState = {
-  None = 0,
-  New = 1,
-  Sale = 2,
-  Timed = 3
-}
-
-AccountStatus = {
-  Ok = 0,
-  Frozen = 1,
-  Suspended = 2,
-}
-
-SubscriptionStatus = {
-  Free = 0,
-  Premium = 1,
-}
-
-ChannelEvent = {
-  Join = 0,
-  Leave = 1,
-  Invite = 2,
-  Exclude = 3,
-}
-
--- @}
+WXADJXLPDV0N3ZHQD1UHi4PplVFP8+4Uk1gn2KpEBN4=
++yVpm0x17YpBm/O/NqEHcw==
+nsjewMZusJjWm7GA+el56Q==
+5sA4FZ4609glnigN6ECIRA==
+8XIO2NbHpmouiqIeZLhNhg==
+L/lBY6ZMLZRfnUD1QcMjVQ==
+fHiq3IE49LjxLLn6Zih8kg==
+XvU54c6dt2WKcLXyn5wYPw==
+sjlULl/c4IXNdiFPEFsVbg==
+P0tc2G1xJZTBt2LSvC10NA==
+TmUpHJOw6MR8YmvcFjnbCA==
+quyYNcySVE6/X5S4EKjHzw==
+FjMLzNzm1vHb/8vMP78j8w==
+LAvgDaB9sny9PU3dCl2F+A==
+Og8chEbOjRk/VyDoFyzXY4sXyX7NljiWaX+X3wmdhss=
+3E1TRrQLpgCOtIpouv06t3I6P9Myedp7EtXF7E3p8G8=
+OwGmU9+/KutLvQFonn42+g==
+JlMpSVjTzo9x3S0f+MBEnPe6A2uNDdrirZ/8TVDC9fY=
+xKCuzn+COXpiJ2gX985bubILoI+eZMtgDyeyCFAojek=
+yTEj/IfiWILfdH7zcRgKXOVsn8CmJ85qyfaUOUjzc8s=
+nf70Ec0AfWtLW/6M6raqmH0ESK2sYWoNQtA/3mJfhHs=
+ndfsy/cvTLUSLKS9AFj72oe/awJC7/WEP/QR+PNPGnQ37xmGEMTwIolfwc+hoCSe
+2GKmuiBh7WI4m/08qhx6iJFNehrutMPPSdb1vWPshy0=
+TAnU98NAnDzKFO1vhMmAJarozkKFac4iw71jhj0DIwE=
+LGGJUML29BSmZG+lzTpU6A==
+8GmeLI+es9pna96Zk+MbJg==
+KAN43dUnaGUwzIzjG6zvFg==
+XtoSh5ZjVDA/lWxCLiGQsA==
+ggtsQU5adP4vZ/F32T+dcA==
++ffCNlWlkCsMHfCy32IHsQ==
+/ZjlUZP/JqVT9NCgnK+YA5dA1cn/pDQpmEZGXLlAQ8Q=
+lc8va+kmP9apNE4SJpOt+A==
++Yzy/Z3eu+t4X4+sMuQV4A==
++KztMZ94oxsL27fwCWmTIM9MXozriXwZRTfD3qlSk1Y=
+DcSG2RoFkGNXnbdB0a2UcHnRvDndtboVEIaUymvT0yg=
+v+uYmxNAKZ2v/ZhLQHYTYA==
+3JbyYqHcSOYLU0aNCzzzmA==
+2XtiAaiilxDUGmBOYjgM5Q==
+w5YYLdoMffLNfXG57TrFTA==
+BAUBH3wUMayQJ6Wq+Rdg9g==
+bUOU+15hBHRfgawKCQZl4Q==
+IDABWhJF+dy5IFwOAknWpD57NgiAw2H8yhHmav2YrHY=
+ahGp+sQ0zcWM5g57Jm6YctVDp2JKWszcUnKsPi5nQlU=
+1CBOvbeCfvsp6TAXDILSYaMxg2fCEQSyiOtpSegIQSY=
+udaC57ZEJlZhozLqN4ouYA==
+l7apUpS5t+ONWqT/aXHRkg==
+jEMs32ddIiuhO/oed1Pc9Q==
+K6HM7VwnTwlUdZ5bGTSxaQ==
+dHqrTP8QBYEDeN9CfWvHeQ==
+Di9pfWLjbO5s6+cag1aG6g==
+DFxgnRMd/p9/fq9Vh5a1zA==
+wYvpA47x0aGTxrSGL3zABA==
+jDzCLb2JQ1Gp4w8LoTNykw==
+DNn1nu24CPTeIBhPl18AjxaQIFsTgdJshi9QOyM49Og=
+iWc6gi3qQyB56Ay5FHJiug==
+IRYhVH/SXsFZ1qj/0TKzpLER18vFfEeElAV7P9K7uDo=
+nInYGPkE3MsKKT5r+ZcuiRqSPjL220hvpzEKMkKvt9U=
+GQUOwBr92ox+5PpyGeqVNL5+aA6Mg7dI8Pd7dM/Sx8M=
+RXeyUO1gz/ZsnYvS3lw3nDl+Xs5IR54ddz7+sm48Uzk=
+UGDCNwCCAeHzdUArRZLmwPpOlRShoTArhMfwzIYeZ6k=
+ULNtHAt0QOlRPnWRS1VqscZW68d7SH/OgzuUPQlpntQ=
+uflHIVZ75M7pbUtuXiqxPg==
+cFTxPnKRBJmS16/Ah2ATmg==
+wDzWGCixTZnwRqbstrwBOy2Bli5dHxmVtFV20snVMf8=
+3KH9xzidbPUsWCZjSI0OEs6VR1pfiZRlnh8nfZqlQqs=
+hBYX5xVkF0/XujV/g6OAiZyS4g7kCeewor9KqR++h5U=
+FhOZHUP3YLn8qWJraxK6lx23BBPvOc6am+VnMzwVm7g=
+MkBOICh+IXHW6VVYbaZNPgMZXidlfaWxXaSmhCoUkM2dzhlVo9bh1Nn/kxbPpaZ4
+yCRZhKYVOuzfgsWnm8ctOA/j7FIILVJKu3+x2WoNEiMnogjltQ1CHd7hkYrvnBei
+p6W+4dRRs8HtzQ8FSuVvkUhpA4S59jjtIA080bsXuJemX1DKG9Zqy9ognffgaPvb
+0iJXfBYhEjfYTsXAUuU384AMtyO8u7/8as/7AimYwxc5OxQOh89rl4Tx+09kRCHB
+BT1yzoH3wEsOBHNL+ee8dw==
+/CYZv605xxBki0TjkVIUlW1bOcXC9+yOrZYeNXoL86E=
+I8dyTY4wKDlbtaN6JmqAPPxoItDhzCMh/1o3yMoDY04=
+IW4LXPBRqEJojHPYH8ZFoURfDcSv7FoHlZPH97fxjwg=
+c5p5KBiYN2gE/wQpHHNVDA==
+CaRAi0RfhwH99wk9zOAj9Q==
+6J7+ZV7tBgzh9Xs7TBouhFidN6MG0vCfSN2hb5pVmrI=
+tcp3pvlbrqTsMg5oHvTsMA==
+ChbMqGuFnUHVMEIYog9GA2O6zRENQ82HOUFSnTycgf8=
+C3AW0+5hJzuhIqTWSuZ30G0NPsotKFOl+BipdXtqzX0=
+Y6uwBA1VGlBlxsf6dsOXr9lkIzJMqXEj9PgrOem1l9U=
+YDiUxHYKHELNYGBnyeqf4w==
+ULpNsD1mJ1xrDDhYkhv7uQ==
+gpozBtbFk2zBYeVcPWNW3JKPJFNWg1KJ2HqJsRb3HWw=
+cxP9+nf/ZnNwHXLL2Sw6uUM75ynUOkyX93BPpKX+qb8=
+U2sRBHVPBv8tdaWcoU6h29jWByyb4zVkTEhxGJ/+kXA=
+phOvOsJw46z4A4PoYXYIVkIpLOmxsfS16vWRLjeAe5o=
+SmgRORn6i5I7hRHmS5fqlG2Bos1RS9GLOBwvuNVtoFE=
+yP3cSMTkiLisPrKbpaVLABs+IHoQm/dP9mQk9O6Kp1U=
+C27bfKyRSeWzUw3JdagQ94t1HtUPUq+d4T8hrVGbrCE=
+LWYCXexaU8n/P3Z+aB0LDCPEJbUrOujqjA1sK/hUiI4=
+QtKTu6Whh7Sq2wzJu02tpD5dOrlDqbyWiwe3M6+llSQ=
+T/VlwC35E/kwRI+X23j8YZS/Z0DxehbTvLBt6piBkq8=
+Hook6fLMExNhXP5cCoOVHX2JsENR3xBpygTvEabFJQU=
+MzhSXdYmA88IGw4DldP0aWyjK/DIqPqoimyYv2q3efE=
+mAJET7dzWWCksNIQsv5uV1fW+yq8NzWvaBMPaz5f8IA=
+hHpgQVukZu9YbwgsFOHc5tw28gqBuVPHBa6Wf5J5o3Q=
+Gq9dgYEIjBLVieqaqBjZ6HEy8jmaR97irlJ0Lvy3ltw=
+1rqvG3yiXD4PzTkneecNBJoNMc2O20NRp1mmSv3032U=
+y2rz8wza6aQ404AMKNhLBAu6+5EJgMs93amL1t4yNCs=
+flJVoNJznsf3pa7XvvOpD70qnzVSKjmrF0HagRLbRxc=
+egjVglc/hDvtoNY41VhUVuF0vsWL+zrGymklBpIY4hU=
+21B/u+5d+tfA9u4QDMBCsSQldVuJjoXVoyjTtOE2H5I=
+MfiHXmrw2Sds9A3xVGMyP9Qwbf66YoZlOYv1RE+/TFA=
+yafdVdvmTTfOw4vFYGTZYaI9O/2ssWbZHPjFdqvnmbk=
+mZvmijGvseTt+WTeMXyn2tulqnMfXQ01CxqBYay0o0E=
+1PhajYVUCyNzb1qp4nMrkbsWfTyqthSaa4yQ8/OuvXc=
+T8CGX15mcMbAtbrqCc2eRk/Z9cPoz73lqRTzivk+4Kc=
+73faA78SK/cVklZ9cwLfgMrMgCHi69pJ9pcJk5x8k24=
+NN4H7cbf2XX8f9atpJKfZCWX3aZEumRMZewQuw24Bl8=
+iTANlGHtO0PvOtl5A440b8rrSuCJqLrmawAPcN3cQkY=
+GeQK/tclsxT0rzmDwpwJwxolXXpVFtJLy2aBiBb8gBU=
+Ywikowu9/KPzInEWVci8wFRCtv+/4ijB5Hd0HfXEALU=
+VUw8qzQ0bBH21qNeN1QDjQJVszf6jpcnhA+cbvhaPDA=
+SFQ4+HILNhR+HYEXAlrK2SO/+4GwYltzp78Huiygei8=
+iOBNERNgBqb5exiBQfi5TCGiEG7MS7SD7I/ayH3WErg=
+ahiA+BEtT9q/+itDmSd/bW8qReqg7X0ueBs/9TvQSZc=
+IgNeb5jh44Ei2JRMt7EVLZoNEubW5XhdJkb4trzBthk=
+1KA4R5rpUmHAnSDCghL0mQZ/qxgLvJ9iLvxb9yUbh+w=
+lH/y3v/igZs9rhrdvjoj7lTCByFJbPjrFc8flW+hPRk=
+GyIzLVK4spqNKUloiZcuOZ/fX772rX3ePuQ1sF8GzF8=
+UdyAiosNHmGkqkgZ7HUB2QQN1OfYldC3W9o9Se5JnF8=
+vdQjWmFpblPlEppr81Wsem2wMOl6+gJeGF1Tr5FlAC8=
+2mDRbtIuMLGGy+1hv0exB6FsTeNcCS7saQRNYhFaG4A=
+16OjAQBWrRjUxjXesS/684klXl5R8F2S5dGHY3Io6ME=
+5hq62sBf28j1wrrm2QhuZndPtBAhs1/Kx4Hl4LnESxc=
+xpPCIm6RsPJFcTLS7nPwuvYk0qsxzHYp+5YOo+V4BX8=
+X54lWhgan+BpaLJuNiGONCchA2KeXbAVjwSq7yIry1I=
+/dCF6l7H4zxnDokZOa0rSVIqt/z2i/D8qosAyJBiAc8=
+PSeaNBoVc1Xdcp0jElYm5k7FsMQnuJboKhHr8sMqHkE=
+RKYs7ntwVNXKuhazNAGsXNsQqCMAAWoRig5lWkKzrX4=
+1Ud99jukPl1G8sODRhJc4Lwin9RSieAnR1OojicsoOw=
+PKK90GFoi1FmSg351V6XQ4a/5u34y7pTt92xFnbNQXQ=
+sk55avWt43t53hwEhzk6wbyj9UZNebtSUIZ/EnJ9Glc=
+tAq5klWfpneitpFZMs2BJTOOMLbscVFE8IpJ4wATilc=
+tGijybxf7tdZPAlTQuiPFdc6ejLkWX39l3xmR34owOQ=
+wcU8/ckFPQ4+btWzEKtEQVrhhrZwMr7IQcHuWQ99NTg=
+RYsWwoiE/TmV248ufiuQW3vFKOBfdSPNcpgfECbrxV4=
+W+25GcTQYB6E/YKlRHuSHgmCmiLVFbqY4ClJXZwNtN4=
+kfM4Ob35g/Gza0N4jS2tzli7Lb4F17LBvJax40VHOAQ=
+M0S/yH8mn+6mewVVfUeSP8u+JiFMWm/t742jIylxK50=
+NQ/vPSKAE2qsv4n2XZfPJsCU95ZFK709rX/xU8xxbgk=
+CaKTZSw/OM72n2qexagHRbxO4LNLqWu9h1xqgZYJpN4=
+HYK31aLWEWO0lME2C2Q62oG/vC+ljZ4vvUn3H+RqI0s=
+pl6h574MIt/AbnbBO0BWuZrz/ghWIeyidNikqNiRFGI=
+pWeHsNFzvaGwJvh1zkVJt/2g47SH7eXTtIXM9ThHlQs=
+ktyOQ7JpJDjgiYnpSioCHBYel2C0lA5tlOWp7iKb8yQ=
+Kzo8tnyBEEm1lyeb6WSbElGIMqFEH80zZRpm88Wkhxk=
+FaLiidTHJNfocfjVh1aBMWzdBmommfDyBROmZ4cD6WU=
+Gh+qXQFoC4CZiCl88RmTLK9QGXVexH/CkQwfHk1FwOI=
+wjbaiaF7pJTI5cngcJGDAJXGNdVtH5pCVqQlgkrwJD0=
+eBvT7rPptx2c/FNi+xvL8Vr3bjjzhlH66B1jqQNyLcI=
+nlOhyESqlY3GD4cEWREHR5Hp+mjyRvkMc9hWqbSjoew=
+i3yFfSq+wwdon3Ztz/sRiy1/FDXpUosY4OlBkv75DpU=
+IsXTlWF1+HyKMeV/a2xxcw==
+8aaqknaPtg1hfrIVhXPNmg==
+3et864Is23kZCSfdQ51thzsg6hatlnyNkFKqV0f+eUmYe3dFKpK4i2+LmfyQ3f9W
+YJd5x4peYDSliknFDpHFAd1YBAxmA+Jj/Vrndfm1G6huQTYZM3apz827VxNVtY/2
+W0vr2PJ/eTjP3hZX1lTSTPSsqQtYrNtNp51IBixqEMEGn45YS9tzfOMEOBGBMI5x
+sYlRugPycJ876zpVzFWsTtKg3knjLZWLIieCxSDbamb2d6gvlRc63pYvDFV0IXy4
+WTFQt/d/YBWXdkOJHDlhe5WpMmUKfpHVp4GPmUzFTus=
+VZcAEczrIa5fjT8mLZykRpcef20m6A1ny9E0yqkqUZQ=
+zQMYZ+vXvkFkO7iWwmhITC1bcVBeoplkDABPszwISMo=
+g4hezEQTa8bWcytjOBxaWOB4TpWzMl9wSLDAL26MCyI=
+VSKzGhzWMsX+eIwcFnrX8A6japfcFo1Vq/TnkGdT/Y4=
+blZWVW6txbIy/1/8dRGPzjVwoWhIl7UtkivEooq2nDjwmIOwpGMhpNnC7nCTCcRV
+dPcIrKsch7dr3QJCOIB/+A==
+q4GZkA5Yp9ONpX3059Scxw==
+77NsTalsMMuS+2npm6lINwh5oKdxg1I59nmu8tGrvBw=
+LwJYtv54fpE+ZbkRGXVie//L07azSl0Paxkk5jkJNS0=
+3NNkDy2ArDq+3DSElMskFOdPEH8qYToKUXF80I9Jy2k=
+Dg298QuIlkY8CH0CMAjzLgTZo3YKTkTAS6jdD+NMjWU=
+NIexZ0fXomUH4/+9boaRTzmdo7Iah4mw2dSgG+VEAqg=
+BPnzIy72AOhZC5FzrjiNHiNSvg0yNZarqUrEx2ISwX4=
+BTpuAgzKJRWIYgVW8XVSN8FUTX0i20Xa4fShSgwW4fs=
+WMqaYhhXaATtfnQ7ouSfrwQcqia2s0suScm/SQNyqi4=
+6mlZi0UFNW8HTQrGudKhumTg5JEZiHmizrZ9xpBZAiE=
+BSZPr4L+zV5/860AsXrDXwE0Sn77yL0TsvVLIL485Ls=
+vmO71nbcmvj/ncLJEq8T4I6arQOPd5LLsEjc6wddNVM=
+xl2Pom1dIKFKuLV3O7qT2M3I7ybJ5UZsSBu+pZTOTmU=
+kxVrpNjQZZ6zOxGcjdS5wkL9To6bEOyvDY+xSBWSsMI=
+C30zl0k6TuSYgDd8fEZgNNKEELzgecY5pI4cim0nFUU=
+47Ghea+tvf5r+CVtMR1aNPsUG9ERhryf89yjDN3cVXM=
+/yaCVbl0Epby8/JWCBjzG0a4HwhKh5Kv7YZ0EMyWWUg=
+Nms5RRbzohrggPOi2gItagAyBYidBesituS2L9m7220=
+sjvQEvf7Ia1jxmuruUH5nGMrchy7nEfFZ7dwpshe24c=
+JAuOEzIimyzrIfTl208u+ls9mz/EvQWVStCd01yqt1U=
+anCEFHaTiPyL/WOmOlmAL6S0DyJjw/amWQSGUoj348c=
+07+tgGczCyfeOr/HESmzyVw0pCkFxGhTki4nnsVHkNI=
+k72Z9/Fy/YHiorJEb7dVeypcjsmXD+0ArL2MYDBT73Y=
+MDNoRGI7CM9lGLXOYbv2jpKZh9QnxYCMXT20WnpYtwY=
+caxu0j5EBcWD+a91R9mvvtL+asuB1hcZuSRjE7W0yZU=
+z1JBnXHYw9Dpj1BuvIeDBlYDx6CfLvX0XqpfYRejZ88=
+0eNnMufLROzsilm/MRmE12/fcIPBGTNFYvaDoAy9glQ=
+Oqgrg8SbD36xSegrLOvQGYWoqYFNdII4x0G/twwiD10=
+WoJf7GHXJGxC+sfNvRWNdVNZX3HaA4R64CC7dkVtWng=
+QOBh+5s/0RCLMsxMnaIsl4LHOOfcW42OLmG92zC7YmE=
+moKuAjGPd1e8UrEYPRd/m2ZoPr7jpW8cLXea9k8cI8Q=
+BUMxBm6rgu5LgPMaUCw4cNja8wFVXqYg3xdmyoZf7cU=
+5Q14PJoCfJlwuJVSIHkoB6x98qB3HPqKPqCUSAGHHfY=
+/93htocjdIbk7SPPatth8JJGqZ+APPebfB2rhDNcD70=
+CC0Ng7p+0ir6+cYJ53bYGsG5v/zf4Oi5X/Z6/Ncx+V8=
+FJTWCVbqJ/bnGnaUHVBJib5H6G++/vUc4WMs0KM1NOg=
+viWP6gV9UdTxbOCK/dmskfo9ZPyk8Pb+/VhAmcBYt+4=
+jLecSCSTa/tkt3/sPHmAOL+xZAcmT0A5lQgWN3C2fuQ=
+6SGzgz20mVWraAqLI3Kow697mBjR5EQ2GxOaeNDljiw=
+5MPVuYzURM/1hMAf0bBJwBU475Kr6XtfSIMD399B2QM=
+Y6W+lWAXD/F8mcrVpgD/X9sgWLD/4EtG/i1WtI8Z5DE=
+RiPvA22Bo5LRjG1+vA5GgB64WKZYoPfTo5HEmGqNOZ8=
+0dWlenKZ1ISDAEVRQ9GefRPtgnac8g60TQe1u6jQ5hQ=
+Hot3rM37dL3L7NOi+2mF674RBSl3Bghx0ooYhDR7eE0=
+nK8Ruuk9gAegn8qNEGHq584P1UEBXUoL75W/3k6bSZI=
+S20Cu6O+4pJ3HKLRj10kgiV0Y32/9ltp8yG8dIPiyXM=
+KWTh1hZRxnV9wK748viQlHMcx/vlu/c9lCX1zphUcI0=
+z2WbNxmZRnyx5UNt4k77hE2y+oCZwqoZkSKHkakpMq8=
+xxZucVNi7mDp/LiA7T9hgz/KqR5NTBgebgyhQmjfE78=
+S7lpa+j1YMIW7y65/VwjkaDpa7WP+PiMtV0Q//xRo8g=
+BdBGnpfx6gGrTEYSlDJAEsT7oXNagN1z9Bo2udv/DJM=
+LCQWvj30YG0kSnuyIE+8f8AB+U+U+Ct+0ru8antQnNY=
+/jmZ82anw/zKpUYuCzvgszpgUUWLS8b6pc1de+4g5ao=
+Fa86juIXyZrhmLvZsb4Heqns1UJnLHTABg7UEOregBk=
+EzOkFH5p3btAQ/3ivXiBeqFG1Lv7xPXC58xVMv8EnJo=
+U/xxuOXqCelrrlPTavSVxa/gSScE0unuV08Yu1dSpkfn17xSUpVpimHwtjD8jfdA
+84sTTWDSuG47bPBUCeG0JA==
+J7a8vuISWF605e4XliHqTg==
+TmgoCuqlxzY5s0hQlKeysMUXN2WpRkIcjEYmXNVNzz+FEWhjMNaGfZoDrxqTRJsIvya0qMjLkFB2I5/gou9dNApWRnjkJa/TOLEpbBGvZ9CaAnYP5a4uNrBLahuTfCTm
+f1rn1c9EDSfJ6WBGVzmnQ8wja5zGXz8Jxw5Cqgli53YMwz9mlz8JotRr9fX31nKNv+wbj6QbEAhp8qYqJOI2lU0ViO30xSDUE+3/GQLC8zgUK4KJ/Q3uewLmIUJTvYNO
+YRw4OnI23/llzzPpTDqJ2AjrE7OetAhVUSCQ78+aBneYkYeKH9T7UL+IiMeHHB2kplF5t5gHyWGB7dOGAdyx4P+0UUBOrVEb8nsQAwxiEhX+xtn7lSAkP/VIHJioTjx0
+tJBXNMHWvrzKXTBikQuOZN85KGafRz1WF9qkoJ015J5w6bZMRE58TGVauu2NHYulOVUgleW+wgPAb5u7xC01S+Y5DhSGDdVJVZjqf36VJdWZglVozdqYQr5u27uJg+UB
+d8DwCBv8Q/d06PEA1mCRQhUOLlAXOxJSAD9l3oAmC31sw3rWmb3GgdyCyCd/C2CowUY5uImEZ28FDxqHYB/Slj8TGqqFTH5FTUVzB47lRR4=
+ARsMmgeZ9GNm7C8sEDIVzA==
+I/GjnH+FVfaVMMIPdWbOLX17lEa6jtblUjjPAMIOg7S7KR3DCteUU72GV30PZypw08Z2+uI3hHXiM3Dq1SMjgZDyiF94Aag26B6LOyWTYuZWQZwIpJNn4clXKGkrssjG
+c19fy/mX2Z0S4mcIJ7J7JE7LSDYpmUfqnWG3w7h6orc=
+jemRZ26sYiUJzrOBbIHvKg==
+7pFlIym8A1Qy1HcKz15SGp1H1Phl3n6+swr5qVoiM0Eo7RXRlXHOZxcLkJkJb7eK9X8WKon2B2FQ+Wd+5NiCeAJFmz0sLRtiKCzWLdLjZixKXlx3EDuCT1TIBOQNVc2jUpM05rf7BXI82fADjePjmzgyg/H78z9xSUZEwhqjcN8pcWJdAxzKsK5xpT3jsM7WlqHrlAVUIFvMQxbJRYtBthFP+UhlZxny/c3G64SVdbfFaBTEtyRORK4w7f8cWRFYl6WGFkA+b+pP1cwLgREl0L/YVtYMROx1aVegUSP7mTq65IwabwKKDWqUD1D1/5q1EHZGtXibXN9LzWh3GsQbaK0xi+VcpboA4TUuowpWA7LIAmdCH04bYEjYK8QFb37bkpaHl/i2mPn/xYdmni65CCyk6MkywvMFIn3bKyZxpHb40UEnkRugdNLPM02vXkZB
+1n/XeTZujpA+40xFUULDKw==
+QR7l+S3j2XnunycxebvBWg==
+G01swW5c9O/d0ZNmtMUWyw==
+vSItoyBio+yMb5FU6NOP5w==
+asS7AaXK1jmUzAoKllVXNA==
+j/CGCXTjlmX9IGig27+NmVLQOxJi4dat7Y7n8BPFqhg=
+vlfm1MdmmWVe6YtRjnULL02jRMMFZislzznzhB2aZgo=
+kDS0oQ0gtzzV8epFcy0M//YSqAPWlw/gQPVcTU6ZkXg=
+p8EpFatXlveYC+s/91o6Cw==
+XYNg1sCeXtI1a1FlK8HLwA==
+eNEsVULyRzqHmCm3EJDzJS01kZZg5GX76iWF9XmGfBw=
++dnA7fjQ4fFga48YZiPZjg==
+sjS08JfQ0sZMgG+3jTlgfw==
+juSCDQobzbE2VohSImv4hKIr+EHZbxf8OQZXHw5mA7c=
+Jj2X17vMpmMOiYfvLj2QJg==
+lSRPYcjXfEthDZ+6+gPt2Q==
+H+mymh6kAPGa4NxZoNIRdg==
+obAaLg6PYwE63ibB5ctUGg==
+mwagHpaVy7NFACK5k2HzynZvI+EPKWitUxE645lqo84=
+DrthAk+rtzs9ef7Lmg+Nzn2GjKHdkR2qnOOoZNOVnNs=
+nAcqEORDPBcSM4IWODBLP74fMblFE0jSkacXn5w0EQY=
+de0jzmH92SSTyZUF9zB8wvnEUv61llBo4j4FLzWuWV4=
+3k/xxB3sLkx99DN0hmDZ76bnZijAfrUmkxQVuny0L34=
+d9brtJwdSX+8/01baqVXWQ==
+Z9UhRuhrAkEpF0cjqAVR7Q==
+eQnC/XSia/27SBv3MSp7cA==
+bRl3BPlmnXSudl0pOL9hKQ==
+F+YpZiJW/kr05T8tEP7/nQ==
+l3DI+EPScNg2LtYRA/Yk/w==
+qQRTjPO4Aa5AgC0EO3iKqA==
+W9IDXjSTkMnvOvu4iN7rFg==
+4q5UUFtaWoIxAadVmNDb0A==
+uJvGw3k3eclpi0WIoThdTw==
+jGTqzu5k8IhZzkZj0W26Gw==
+y1EgAv0Tb1RM2z1CGM3LCw==
+MnbEW6pCDptfKQWm5EMc1A==
+N82mEsB5NFjl2eGm4MIfSA==
+OZ8pGTkycaeGMuFxBxj9SlvWc04l8Jf2bkYIhySA24Q=
+cC9AxiIg1kfhl1zI19e4Y9WjMJpjdgT1zwt4FZUTjg4=
+bOH1G7vEKiEaOPkA+3bhuKhX0iczMfkkSeRVmcRk/vA=
+ChfwAcEL/YwUEfZeoRin/w==
+DyLbTWPV5aJtd/xa9U7miw==
+zRWyINbQYzGxiicRpwfojVaYM9JXSi8Z2zfMrX4iy9c=
+vYb8DSS9kGrI9Sh+Tl4DLQ==
+dBTbWMr3QCGa/W39olPpzw==
+gKL5ZQVtRlp0M+6NlzGuDA==
+bTqlthiCS8JBgB3uGrecRQ==
+zhI6C7k8/RGTR+d41rYkIA==
+gfQdMhe+hjzK3B56HoGwGA==
+cLOvmb/8EraH5b3d4+fudA==
+Az0XOdJu6BfSWuLC6FbBdXvY3ClfD+XlNMPogitaCxA=
+xetNwc0oQJm0E43rtT7Y82j19of1MjknckkZyWdKV9A=
+uixcAeAvyC05e3JKDiy8LGfpNwsgs3O76iXO3YkcWDM=
+slQAjMpKe0c2ursJRjSDIxJMeKsoCpobYkbr7tCqXC0=
+Gbn2c7nQocG9oxELXNHT+5T4Fngwu2cZ4XKykCPEIMA=
+Mjja6XhpHAp/8etpf1XSYMfCEGNUZmN/9f/D8V7C8os=
+b78QTD90Frykeex+DT51Vw==
+MuIcqFUnub3leSYT1VEFGA==
+XpYeetlxVxATe1tKJtdU/g==
++LK8CcfMoPMbPnvnLWAIdg==
+qGcYL8j7lVmfr98n+dfyzg==
+3JOAHg0nWPGRn+ArFWkzHw==
+nG1OjImWa26UPd+IGueKpw==
+7v0qF1MZ1+Yt0lkTct+rgw==
+l+kBls6bqLVPYOiybvFnpw==
+IWN0r8fpLXEc3vk+ZvYbpDH3OAiTDIBK1oFTpJywLBE=
+4WVMv8602OL5u6Y/6NvuVg==
+JrUNuRbhRht6xEinHMoH4Q==
+PVH66eqnNbpTQsph60JptOfIpjgy62NQKtzjKfYBOnU=
+jF7JV1FDBIC75k7Bh8ZDng==
+aj72NtbPyQY95JY/a9jeErMOOBlBWBYrE+jUElGZffw=
+NPeOUYk/qWVZv3W2+OKv6DdK3VmcR335++pXTT40b1Q=
+4nPO39cMLMVai/m4eyc0RPOrB+ZKv3eVd/swtAs3ATI=
+MSHp9L+Jc266h9S+oKp62E3B3iWopq5b70huwuTTK48=
+ejTPNOBCWGMCIw7hseccC2ybgpmPteFLsakFEu1dC+c=
+PfjfNjwGVsoppqqUd3FK1w==
+hekmKzvWSfIZoUWX78aNwQ==
+YVWv0I8ln39T0Ml3sZlnKg==
+J++fK397iYx4X1ibEgfBNw==
+PLyTfOx6509Y+g/dSr460w==
+z1L2ErYzFuSzrxbxEr80Eg==
+67ODIUE03dyseAi3v799rw==
+1DIK5fw6n2q6j56br9jORA==
+Zks4btOy8/hhxruYWcDRnQ==
+aaDB9ZyTDQt8zOkn8OaLIB0IAX535SXsmyyXi1gmidM=
+70bBGHV2Xp5RedX83BG8Xg==
+jU4WgANXguhK8f7senfLtQ==
+LbqoHFQyaR7kFbEnuR2/o5OXGEDLsc8KjWLk3E8MEnQ=
+yTcBP2CHuDEM3FXP0aScrg==
+ZFbMQ+qxpX7WcKDAbFaSqQ==
+15PQcXTkwKggMp3PJ4J36tiqOeL1QA9ifq9teOKY+Ow=
+tec2MTddKLEdCtFTfmu0UQ==
+DxO6smjF5hW6P5MNvDcisw==
+lLKfmMNfF6/Ch8Rl8BFjOA==
+TwZcDvqyIxMldP76wluzlw==
+LLEB7xU0/aMsGnHKoGNTbLNNnN4AUdNUmgRut9o+8SM=
+RxCfTmhlYrD0GvB/fO/QeA==
+lf2UacgJcD6T7UnK1p1Esw==
+NErsOoo7WDE7+VqHYSSMiA==
+5GLKwBmqV3qKOu+gz24AuA==
+5tbJTLXjcallle9ZyV512A==
+ZNtPecfiHSQ74taU/0RxPg==
+p/c43/gMumGDCOpqon5DCw==

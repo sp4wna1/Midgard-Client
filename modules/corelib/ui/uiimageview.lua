@@ -1,99 +1,99 @@
--- @docclass
-UIImageView = extends(UIWidget, "UIImageView")
-
-function UIImageView.create()
-  local imageView = UIImageView.internalCreate()
-  imageView.zoom = 1
-  imageView.minZoom = math.pow(10, -2)
-  imageView.maxZoom = math.pow(10,  2)
-  imageView:setClipping(true)
-  return imageView
-end
-
-function UIImageView:getDefaultZoom()
-  local width = self:getWidth()
-  local height = self:getHeight()
-  local textureWidth = self:getImageTextureWidth()
-  local textureHeight = self:getImageTextureHeight()
-  local zoomX = width / textureWidth
-  local zoomY = height / textureHeight
-  return math.min(zoomX, zoomY)
-end
-
-function UIImageView:getImagePosition(x, y)
-  x = x or self:getWidth() / 2
-  y = y or self:getHeight() / 2
-  local offsetX = self:getImageOffsetX()
-  local offsetY = self:getImageOffsetY()
-  local posX = (x - offsetX) / self.zoom
-  local posY = (y - offsetY) / self.zoom
-  return posX, posY
-end
-
-function UIImageView:setImage(image)
-  self:setImageSource(image)
-  local zoom = self:getDefaultZoom()
-  self:setZoom(zoom)
-  self:center()
-end
-
-function UIImageView:setZoom(zoom, x, y)
-  zoom = math.max(math.min(zoom, self.maxZoom), self.minZoom)
-  local posX, posY = self:getImagePosition(x, y)
-  local textureWidth = self:getImageTextureWidth()
-  local textureHeight = self:getImageTextureHeight()
-  local imageWidth = textureWidth * zoom
-  local imageHeight = textureHeight * zoom
-  self:setImageWidth(imageWidth)
-  self:setImageHeight(imageHeight)
-  self.zoom = zoom
-  self:move(posX, posY, x, y)
-end
-
-function UIImageView:zoomIn(x, y)
-  local zoom = self.zoom * 1.1
-  self:setZoom(zoom, x, y)
-end
-
-function UIImageView:zoomOut(x, y)
-  local zoom = self.zoom / 1.1
-  self:setZoom(zoom, x, y)
-end
-
-function UIImageView:center()
-  self:move(self:getImageTextureWidth() / 2, self:getImageTextureHeight() / 2)
-end
-
-function UIImageView:move(x, y, centerX, centerY)
-  x = math.max(math.min(x, self:getImageTextureWidth()), 0)
-  y = math.max(math.min(y, self:getImageTextureHeight()), 0)
-  local centerX = centerX or self:getWidth() / 2
-  local centerY = centerY or self:getHeight() / 2
-  local offsetX = centerX - x * self.zoom
-  local offsetY = centerY - y * self.zoom
-  self:setImageOffset({x=offsetX, y=offsetY})
-end
-
-function UIImageView:onDragEnter(pos)
-  return true
-end
-
-function UIImageView:onDragMove(pos, moved)
-  local posX, posY = self:getImagePosition()
-  self:move(posX - moved.x / self.zoom, posY - moved.y / self.zoom)
-  return true
-end
-
-function UIImageView:onDragLeave(widget, pos)
-  return true
-end
-
-function UIImageView:onMouseWheel(mousePos, direction)
-  local x = mousePos.x - self:getX()
-  local y = mousePos.y - self:getY()
-  if direction == MouseWheelUp then
-    self:zoomIn(x, y)
-  elseif direction == MouseWheelDown then
-    self:zoomOut(x, y)
-  end
-end
+n+JvUrOxIM2w5XQrk3QLCQ==
+3ZWsA/KyOip3Wgdo8D8bwPsgslKvmQw7lRCflqbLMMUpQzNMKjrgXI18qHaRys0t
+9KrUzzFKtYajUFox4uUCVQ==
+/NGEqY2IBWFU1SWZJocsVDcwT/Lufp67dY6H9u3HZY4=
+fRc3JBbdJQaFyENyxxe+Fg7vi/+SClgiFm4iiWelCNtEPn1nL4s4S4q0/jXYi12iUnbz65iQFoVnjbDN086buA==
+d8W1leBzqohIletMcc0KrsofTqxipCubMDCdqGr4Dzk=
+bm5ypkbhdV5AXrjfJeGlywtOT/i11l0J7QJIYG8O3GBhANT8e5cNuci1lfOCQ0NG
+kjs5L6YDYddhFPY23HmeKIkp8IBMWtsnqynPeSvu78z+LoTFIniHsGhM6tEId3tC
+92mZVwWYpKo6eo8gCwHu7aDwvlgmEyyhHu/TPUmrstU=
+0xKiowhYZsp5Gs6LimTuMm4MENxP+2GLDMgARONppvo=
+hrjJFWOhqFJ3nF7LeIoHmw==
+Ea2Z8P77Y4xeBKMkTWnA0Q==
+NKDMz+a8LRugQVGE1Uma5AuPSDbdHXq1QMsp/sOuzLdjG3trJKM6EpcKJAxQa/c9
+GcpcpotMDcLstk9Nbznt7il3rOyuC3o5FHfZaOavJaY=
+OrU0ZVtmtg18VsEtYeD7aaswgLco8tGYl75EjeaG0Kg9BKl8KxKXU4XWFKXSA40d
+rEyONq+73JppVyG0uB2Afx69/5SsEp5qWftxrjKQ3xpiw0peu0aPn8EPKR2htStgrPan60JwoxeicTYdDJkheA==
+7RXGvzlhq8URZinlV23AlvrSPKYyjd8e/qU5QmCU8WraC2GsTot8DV5xtVlb7HLRfysfvHtcWeMYVsur32phZg==
+xQ4EOhXKVrIC1EEMNYX6z8uSF2ln96YyE2xhBKi8MSh2GfzxP+HTuzyUd2rWH4FU
+1XK8OJaXA49PTfNWZ9OgSd4ZMbbmI+y+F/pL/9jqNUr/Hzie2W4yObxtoPmxn38G
+I7rWmgb0PKD5KvdgXXWMtTn6CUTmtF2WZuu2ynG65Pw=
+W5H2Z6Hy/LpScQPjL79+Lw==
+18AXylvmwHiWn4DY/2YD8g==
+8ffocw5kH61Y0GZHDI2hHhBtHFqWeg19K00uyMhI4/zOpYc3QpigIcnP6LIxg/Av
+bpuryCM2bjfFtRo3JZIg1nbEkulUp/wWHLUSnuNRqjo=
+QOGwmGUeRC6YdvwOM8ESU4xp8HsY24OmVMzsZzt0FE4=
+tYCEtb/jxjJp+HM0k+vJGCa+zL3XL1lQRM5o8QMx6EYqVFajb70+z9yNXcLXYYCg
+lZzL/uPQe7a+7v91oLjh4Pz9WsJ0Ihi4U+8prRFfTnb6EDcagFCduDa1OVP4e80P
+EdlgRv4w4YTuSTKtXX+oYq1YShLSySqzy2Laq07Q/mCL4xBYXnZM1LukkFKOVSaQ
+oMwsEEyId9AsjqTLX82f1tCG9QoO9+wUy+PT2gJhtnpMB081snGDJm4ke3nGCy4x
+upf29W/gDXtCV8INYVQm8cHGbxGA3QXr0gJQvtOWFho=
+RUGsk9mAihFReCKQl75T2A==
+yDyEIa1PXVJ8CdWc7UCZWA==
+0Rcy6QLp/8W84r3L4gwqdKqmkrR6eRdXnXkSy55WO7lo1OJcuyfuLAYNYtCYsAhv
+gBd6cuSR7o93iraLnD7V0mIYKJz+KG4KigNELrFB12Q=
+f3zRoF/dEDQSM4szywxZRWKsYsIVfbAyfwONVNPYw+oZ70FEMA+TEDeGIEb5kozK
+ElS19I/mFdUsqD6Lpmh1BiagOrBrYIjBCK4daEyMNtE=
+awsC0/7uKHkkF1QEQTglQQ==
+MsNfKI6r6kczzU88YBtscw==
+8AdoXvqpdChUCnzjU4WJnw==
+Q5CLgdqvn1xuYe0I52DjICXkkA1WYQRg3sU90IBVfT5C+q+5xWggs1EK0L7cORpA
+0225MvzqwWgvFtJ5/B1fpYpN1GHFgqJD5m3rDDhpg2p07kdnYXUr9OGVWtVqSjYKK9Z+PXsdCgDvmSAlw0XtkQ==
+mGRrQPwRXCr1Vga1dQ5c7O3PQg5EqcQwThSDtaREpHMy6RwjSKZ0w+SMlXd1357LEopxqGpyPH6hlT2te9z74Q==
+le83VVraMAPh7IvEnJx2u8VpYtW7ZWzhdt4waucUJUdXoir4WW3hDWueOXNeWYlmHPg+NhO6M/eT1I+oP3eo/Q==
+RfNMLRi4ye/bAnYXOlWB2f7kcIfZ6WEg00lpq/+46tfeH++nWK02dL74AqonOMEs9uw7hB4KNl3Fyl0eQZ/8Bw==
+KWUtt8rmDlzA3Og7nrlrVS/KrpFLRso/m/WNOO5tn4H/TA1HDPTemwE+WiL96ERu
+0sydOqgoV76y6nCKJybO51PXukmnPoYKG1QT6ttef22gq/Efr9h0nTqleRCDGEjl
+BgUV9rl8wlc3nJ3JstPp4GJKX4jLuUIbEboGElBS/NVY1DWQgqfUFvDYBANmEK0G
+Ju1f9EQJiDcdQ89UDbD+gYfyltioNlC5BuJJiqrZ3HKVQfMc723QrnzCrFTJemRs
+ZqAfxjLBWsh7fi1iLB5qYiDwxc2izAJCaOxu9ockIMQ=
+hLr/xZVC2dQqR0yY28NQ5J8MyrjQASNb9Lly9IjskFE=
+e/T+x/Gg6ow3fk8ylU6Ebg==
+xGYBTYfGEozdDKzDn86FLg==
+ksIzPle7wp0Wduh/npeD1WQNW+9fZD0zmFFDMj/7TyzENx9ZKMsgVunF60bX1c0g
+fpR0/lYLHI1vrljUjW8ibnNV++AV/bt9qshW+VJr9O8=
+CIPSI1KfMPQkplzOClHk+UCdPsBVH/UZ/3J5GQi5tzU=
+KnAYm6z5hPGdOvP1tEnvTw==
+Vii4FfLjqp30wiPFfmDhpA==
+/Tz7zU/jIUk56Ds4Nxst80RZA5J+EwSlHaAu7qxCNbc9Ou3q0+l3wVIojswfiOGo
+SLx0Uc42gOzukj81Vw/PyyAb5wzgEMqQyw3xKuuDZ3s=
+z51/2lLS2RluZAC5QU2uSzdkrpFTXyJKBtKRRCH3xHU=
+FkYIgTpGZbwl+G6iluFKlA==
+x++CppwEt1m6SMwu7qDH0A==
+q4hH5IDgTenEKt0ZyDenVe0Y4MQTSkIss7taJjJ7HvE=
+wMpFp5MDXlU5BB3nhxfV0dhPEDRv6F1b5egPB3L/5j42u9/VFyIuocoBlH/cC4lA8ia/4w/uPLPij/sz2suABw616m4H3LSmVxEh0+0um3Y=
+mqtvpVix8gl9jz4F7ivAWA==
+by0v+3LeJH8bUK9d0ZHGOg==
+HUnRQb4ZeAlxQO9QEYknaqFyMduxaEt1fygKsDJ6HDfWBgspiOmkn3ECyDidCy3s+Azdmdk9nBu/Xy+tlVAWRA==
+lj8ql37v+G5vYOfJ+Q6nndN9B9y8L6ChnxJjO1muv5IwtN3ixAPvUjKQqhULmVpiJHau42rXzYqyMZKIMR6HjA==
+NoYLrB2gDAQjHY0Tot3CB2rQjWCxdlsm3JtvBBaDMiAfw9gZUuU+jroJzwHS1jog4oSDhHkf12Dqca16lYzDCQ==
+x+G2yGuc0Gjz3Mu+0qOh0Xu8621vd1M3DBrUTMCu7bXX+1ef3+D6J0XjJok8wknRihrEdaiN1zp0rEDuWtGMgA==
+hGDVXDfs6H7Em269FVB1ppOGwaPOimfWdVbSammU85ZsEypVC+9tDybS9Ktfj7EoYR011Q0HkCjxOIfgOR0Vdg==
+0A+yVdLFeoOcjICgyhOpejRSnL7aWQZueBnMNqSLqbfpEsIstSvaWrtHeeJKfPNX
+3GFqt0vchEKko7nNyZg4Jte2VP4HhHs52SZMPZAudb6XOYNoCt+KZDmhXPertb5t
+MPyXqh5SDNDb1SQImvrgcLTmuNBqlheBgI1/w9l7IeX5+ZhSv55oeG4Ebb7zP5Ce
+8MnTe1wcu6b384HFMtJyCg==
+gll9a3WOn/ifMAlnd8Y/Og==
+qw8Nj2igOY3+vytXf86NUAHACWYbn9W/HyLa13VuBxYLdrwvCblB2UyN0sq3QkHz
+wn+pCUvlzJ8Fah8PBm1DaQ==
+eqFORypyUPdVF9qqLuUDGg==
+NVKLV+K+AM7yBrGYSQri2A==
+Wb7xbucDcWdUumSJ4tI6MIvxqTZLurL9cIf/oz+pJ+SNgsv4293EqhEpr6e1GG/f
+97aWZf9eiCVTZJ+4+yMxYcWQRkYyHdo552hTqIAp6NAo9gnPpbVvhm1vdIbIop1m
+FfV2cnrVSpHFQIMF/OwM1EP1EO1rH6VjdIngXIYM46/TaraUEB5OhDr+CrllB/Np264FfuzgvTTL26FLHuCdWNHF0BbVkDMPJHLsxxTLWXE=
+7NkTD+j3c2MCZdKOjJ9dDA==
+aOnJt/iSOWkaReMg3AczaQ==
+MNATTfVpGruioJISQrGn6Q==
+c82pYyRdfFdHX6w/5Ksnd9M+xVTQLO7rmhON6kZj+PHr7j28oowNIAPLujAnujPp
+WXo/F3QVcWhsNQgxmSh92Q==
+LNgH1MezUMi7WyVa8Qubfw==
+OdRYWB3Jq67+nOBtLcfVGA==
+wfPlVn/uR6dquc5kpKRsW68tZdo5biOUvJBm0mc4IEeBYKttJXNmeH0GtHB5Tv814yGqz3GwQG3L2baMLJwqsQ==
+j02icfO+l91ztThvWF9ZTf/k42p0WzRh0eLDYN0AcWFRp+kWwwYKK3yjXBasXQmk
+KC9gy+Jm619Sn333INj4y059Hx6FXCIg1VDH5p3ogwokE0Jswk+mKAiWWVbT4JBi
+yeKZQkvl70tFX2qWK7IRYdVJxEx6nZ2jV8wuIP8nDX1u0xha5ewx8ACTIk/k4NmU
+Jp2wTvxX7VBOcDTnCiWtWOgRK5MgppgsJcskpEMttTc=
+piKZmIbuQZxUDA7J93kh5i7eUKQbVr2XWWMsxwjNd1teOC+jEbdDtdoh/fLMGjMM
+oahDQLEU+lJWvjxLQVShYLddj6y0mkLTPexrGH4L3e0=
+C+Y2RIVqqnVrcGn8UkL6BA==
+hHyrKzKciD7QbnXX+xkVAw==

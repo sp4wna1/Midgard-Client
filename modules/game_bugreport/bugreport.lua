@@ -1,36 +1,36 @@
--- TODO: find another hotkey for this. Ctrl+Z will be reserved to undo on textedits.
-HOTKEY = 'Ctrl+Z'
-
-bugReportWindow = nil
-bugTextEdit = nil
-
-function init()
-  g_ui.importStyle('bugreport')
-
-  bugReportWindow = g_ui.createWidget('BugReportWindow', rootWidget)
-  bugReportWindow:hide()
-
-  bugTextEdit = bugReportWindow:getChildById('bugTextEdit')
-
-  g_keyboard.bindKeyDown(HOTKEY, show)
-end
-
-function terminate()
-  g_keyboard.unbindKeyDown(HOTKEY)
-  bugReportWindow:destroy()
-end
-
-function doReport()
-  g_game.reportBug(bugTextEdit:getText())
-  bugReportWindow:hide()
-  modules.game_textmessage.displayGameMessage(tr('Bug report sent.'))
-end
-
-function show()
-  if g_game.isOnline() then
-    bugTextEdit:setText('')
-    bugReportWindow:show()
-    bugReportWindow:raise()
-    bugReportWindow:focus()
-  end
-end
+P/mGWF9er38AyWo3fWc8VJXN2yyqMfKU52Yk8Q10iZEQJyQfGeX2dTyxjEiH8x/9h+wb0plfeCgtw2z3ToSeuYMMdya06YTlo3yTQyizvwJYvfQ0XHBQpVuthQkPqMre
+tJkKrlaPmCy4mygvkg9pzjXARE0sISFtocb504n37EM=
+RVNpc1Gn4jhhulD0juKIrw==
+zJkjHoD2jHjMfTdPyXjjbJFdqqGkFTAR5laWqllRXS4=
+N0pjxI4fmGNfJvRcLsOK+nfopOV3BLLi2inrd7NDbyw=
+QIgqRWfACPlAW1aT438lTg==
+hCRDVjs61gUvpO4bcbX74A==
+89PaTAbNvVslHnYtXIycuoJn+lxQ/w9T5aA4pQ4GWu4=
+83VfLsSQOofdCGa5n/wQTg==
+q3JOjYoto5w2b6LuAXjKUwTKnHlkPgfZ/cFMlAAo8q6xOVqvcLLkRby3fiegjBj+TInS62O5xm0pEYLX+FxL7a5coJBq20pieNjQmBtUkGE=
+OAGHLJrkpJCKGMM6lkFIKuHTmfqgwViLdlukNYIayxk=
+lD4/JKHovzwpgogk+8IGMg==
+TrpShfB5InXv0IFmWde50F6ZOBfA71Alswr1uZ/IOEZCBX59ayJUePTook/ZdORbshTTssA8pypVkhJGja5xFQ==
+l3VwkIjXl2IDnghME9WBbw==
+L7aoZh2Ib0T7BVzMPAudlp3VxaahMDvnrUk4/ZLnufpbuZeQE8kWk3z0yUzIBoRO
+A79jduJcHR3aD53TBFYRrw==
+JImr1pOPe+eEV7pHQc91Xw==
+H9fBUjGNfbfC8973zYpzVRxYSo3x0vpCx+noSh0wGtc=
+OiuhWAdFFsDMkAqXVE/1TnnOsxzq/UUGansVsoh8SyM4G2DkTN7XNJZsf3UsprtK
+AXf9N2bkm5YkguIFQ8QVvILD/46A4OKjgVNvRPO11Yc=
+AneR+V5jUVy2Rofy1M+XCA==
+A97fYor/P8zeFBsPhpLwsw==
+B7cpMwMzWoxIAaP5RdhPMR0FhaX3ie7fy9U8CH+4RFY=
+vGGAPb1RrxwBxvzow/gn6FnbThzdfBMfn4nx/Z4aLdtLPrYUMl3kNmuC07raDexr
+gQE6fZh0ugZogDLSer4r/HJVAHGUon4y6FsXsCdQyV0=
+S7BojOluyrD2ePQswN/inCE19hvjTEYPAmG0g8JxPzfGYRmbEbj4C6RAqYINkckJq7YkETP5C4Ws6F6KADNrucA/U60osIWDCuE9lkY31eo=
+Ap1PsX58giX8SGTpLS5rjg==
+KmhplC18Ls/VwmMl3zHCIQ==
+MMUMUnUSIhOtdFTnIwjVbA==
+d1n7kBcDNuStDgBMCxmb16RW21JXhqZbh7wzDNYvW2M=
+g+QKrARfJmSX44LCUQ8IMFfB+5kgRQrqcE/bXk2Gfjg=
+OFSyAMkJnOkMRJeQrrpZkCZEylOCZZL7d+uVKkAcDbw=
+uoKnprJQieuIcek90uN/WkpVTodHhN1WDDwd4Bw2Ins=
+xzG8dPpQhlhhI0fvTpxNebxMQJKboShInGNcZa+eHtA=
+3rPxy2xsr9jf9ibGjBG2Lw==
+U5b6RV9NUOvaM1ZxdqQbSQ==

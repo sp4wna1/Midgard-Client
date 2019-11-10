@@ -1,169 +1,169 @@
--- @docclass
-UIComboBox = extends(UIWidget, "UIComboBox")
-
-function UIComboBox.create()
-  local combobox = UIComboBox.internalCreate()
-  combobox:setFocusable(false)
-  combobox.options = {}
-  combobox.currentIndex = -1
-  combobox.mouseScroll = true
-  combobox.menuScroll = false
-  combobox.menuHeight = 100
-  combobox.menuScrollStep = 0
-  return combobox
-end
-
-function UIComboBox:clearOptions()
-  self.options = {}
-  self.currentIndex = -1
-  self:clearText()
-end
-
-function UIComboBox:isOption(text)
-  if not self.options then return false end
-  for i,v in ipairs(self.options) do
-    if v.text == text then
-      return true
-    end
-  end
-  return false
-end
-
-function UIComboBox:setOption(text, dontSignal)
-  self:setCurrentOption(text, dontSignal)
-end
-
-function UIComboBox:setCurrentOption(text, dontSignal)
-  if not self.options then return end
-  for i,v in ipairs(self.options) do
-    if v.text == text and self.currentIndex ~= i then
-      self.currentIndex = i
-      self:setText(text)
-      if not dontSignal then
-        signalcall(self.onOptionChange, self, text, v.data)
-      end
-      return
-    end
-  end
-end
-
-function UIComboBox:setCurrentOptionByData(data, dontSignal)
-  if not self.options then return end
-  for i,v in ipairs(self.options) do
-    if v.data == data and self.currentIndex ~= i then
-      self.currentIndex = i
-      self:setText(v.text)
-      if not dontSignal then
-        signalcall(self.onOptionChange, self, v.text, v.data)
-      end
-      return
-    end
-  end
-end
-
-function UIComboBox:setCurrentIndex(index)
-  if index >= 1 and index <= #self.options then
-    local v = self.options[index]
-    self.currentIndex = index
-    self:setText(v.text)
-    signalcall(self.onOptionChange, self, v.text, v.data)
-  end
-end
-
-function UIComboBox:getCurrentOption()
-  if table.haskey(self.options, self.currentIndex) then
-    return self.options[self.currentIndex]
-  end
-end
-
-function UIComboBox:addOption(text, data)
-  table.insert(self.options, { text = text, data = data })
-  local index = #self.options
-  if index == 1 then self:setCurrentOption(text) end
-  return index
-end
-
-function UIComboBox:removeOption(text)
-  for i,v in ipairs(self.options) do
-    if v.text == text then
-      table.remove(self.options, i)
-      if self.currentIndex == i then
-        self:setCurrentIndex(1)
-      elseif self.currentIndex > i then
-        self.currentIndex = self.currentIndex - 1
-      end
-      return
-    end
-  end
-end
-
-function UIComboBox:onMousePress(mousePos, mouseButton)
-  local menu
-  if self.menuScroll then
-    menu = g_ui.createWidget(self:getStyleName() .. 'PopupScrollMenu')
-    menu:setHeight(self.menuHeight)
-    if self.menuScrollStep > 0 then
-      menu:setScrollbarStep(self.menuScrollStep)
-    end
-  else
-    menu = g_ui.createWidget(self:getStyleName() .. 'PopupMenu')
-  end
-  menu:setId(self:getId() .. 'PopupMenu')
-  for i,v in ipairs(self.options) do
-    menu:addOption(v.text, function() self:setCurrentOption(v.text) end)
-  end
-  menu:setWidth(self:getWidth())
-  menu:display({ x = self:getX(), y = self:getY() + self:getHeight() })
-  connect(menu, { onDestroy = function() self:setOn(false) end })
-  self:setOn(true)
-  return true
-end
-
-function UIComboBox:onMouseWheel(mousePos, direction)
-  if not self.mouseScroll then
-    return false
-  end
-  if direction == MouseWheelUp and self.currentIndex > 1 then
-    self:setCurrentIndex(self.currentIndex - 1)
-  elseif direction == MouseWheelDown and self.currentIndex < #self.options then
-    self:setCurrentIndex(self.currentIndex + 1)
-  end
-  return true
-end
-
-function UIComboBox:onStyleApply(styleName, styleNode)
-  if styleNode.options then
-    for k,option in pairs(styleNode.options) do
-      self:addOption(option)
-    end
-  end
-
-  if styleNode.data then
-    for k,data in pairs(styleNode.data) do
-      local option = self.options[k]
-      if option then
-        option.data = data
-      end
-    end
-  end
-
-  for name,value in pairs(styleNode) do
-    if name == 'mouse-scroll' then
-      self.mouseScroll = value
-    elseif name == 'menu-scroll' then
-      self.menuScroll = value
-    elseif name == 'menu-height' then
-      self.menuHeight = value
-    elseif name == 'menu-scroll-step' then
-      self.menuScrollStep = value
-    end
-  end
-end
-
-function UIComboBox:setMouseScroll(scroll)
-  self.mouseScroll = scroll
-end
-
-function UIComboBox:canMouseScroll()
-  return self.mouseScroll
-end
+n+JvUrOxIM2w5XQrk3QLCQ==
+qZQ/dDySChqmmAoiH5nEpoeEqn7JhTmtPhk/6zh4/Udi4rNlf6MVNxlfRQx2Wegs
+vphkSC+jCU7xVCVnAKwNKQ==
+TRMHw2o5L7VqeJ/jwjA2Klcz2HhqsLGORVg8VWVqd7w=
+nx59tN+cXCUqv6CV70lUYVi+tzP6XB4c1ASC15AVRrVc7OTkYjsTwc4sGlh0JFpo
+er40srqISZ8jeN889eMvIazJ2xuztP0F3rY1nPxsKmQ=
+gtwab3j3ctbGEdpDKDekB80t0tUo1BpUU+svVe4Lb1w=
+5S+OyX8Csj9AFhw7dJgDgwew0QzILgGWlizqd+u5r9Y=
+zIAxValQqrayL6lkUMxssoUpzNaD6fk5aaq0BXaasAE=
+gJvu3gtH/dqFiWzinQ1X+TRZcZ7SlWPAkOCfZtaOdT0=
+QvP5JoQ+XggS4fABj+Owx9+QV8UVfL8KUUf5kUphJFw=
+82c959bJDkWpmCjk5UAWQra+kIeNrkjwAlFKgG1sshk=
+vh+qu1gQ8C0rqeyAlVfrqtr6TzRNxnz9pVtl5tL0ET4=
++3xXerYKeCg2j8iWBfuXEA==
+b5/CwSyruXZAPzohJNRvZA==
+YhiqORgwVgZpILGjcFraqouDyiPU2wP1HiKx3SSAQGhiv43MzdFRg6sc33ckkBWz
+ihu38S2dAoevNt8XB3LX7roYD/XWIUc+zxlpnX4tuEk=
+m4Zym7lHXOqeJLzD3p76pzCPHtWEqsDQhnTpSxe0ZG0=
+BWcdcQ1d5qCKNhjHMZSzMO8ZpyGMn1QurWPQeX0jYJ0=
+d2nbJdBpTY/PEx+Hb+8iAg==
+WDzdfEDEA7FeLw1vl+sXDA==
+X7s80YSTokwNd2s6sWHX/RlDSyk5rQ5+Ux3FHP+Mj07Z3PAlxIUD/zJK5hodwnZ1
+oc3JvzVThz5ARc6FOCOZGN+ZXHIyZEjwz9Xjr+YHX2xe7OUlSYwUpzTEFzHG52i/
+Lsma3sTScOvxeugMFHFzBKROHaoKQ3VnxAC0fY3vGk1O+5cM82ddmHjb3goFVb14
+VbyVuq9IpR8UEpVbiIyT+8TuzXSuwZZGkf3TpcZAjsk=
+Mbf8H5mvJYiEY4V2kKxgVDn96JuT2KLLOmHFaQvc4aw=
++4jqeuUtR75vLndU/pEkyg==
++MAvqc1bupfNHenE9foQeg==
+lQr/67DKDDIhU/NqHGZiWw==
+8f5G3CZ/VyMGekyCjLVHZw==
+z/OKM8I7jxWHM1anuVKL6A==
+ZWZjZ/d8Tv4vkxSN4IVb8AAg0QsHPCUoIUosAeUpPW1orszarB14CvConJFfLzxE
+xXkgqunJYg59QQBaO8/VvRFUMDII/7+z6oyyW5u6z2ufAXri2rWb6GliZRsojELq
+FKlGDyIfW5apfo+P5L2ipA==
+D1k6UX+0H4Sd1fZKx3KThw==
+7Ryp2m40dxaC1yh3tj20a/r5rCumgaKaIAJLq+VwBeuuFG0X32kRXyC9rrGNAoEgmdqu9+3EdE/l+MyJcSE70w==
+ZP7qhFbiKa1DKKX+m73Lbwm6Vls9LCDC1EZpP9tvSEefhpe3cCRqhA0oKAPMdRR4
+Su68jB+SIQ3zaY6ONUlZKy3pcNlmLfVjjVsMIrcRavNvIGidPz8DeJ4f6bFinre4
+t2QfySs9rcVrbt3K/l148jede7u19ZyY21UZ+v2+RgcLk2pIlI6S9B0EqYxo6+gnI8QveTrOw5xcokZLklp7OA==
+wzmdls+dZfFEm2fLJr4Le1VwxYPa/Y+AQ7Y/c4DPFJM=
+0NKrem1LhMGa48CiRjg49yhCL+i+Hp9pZGKSzgJ6fpI=
+UJMJiwPbJSkSIVBb8Nqu50sRgfdDk5XEi80KRg9Xifw=
+j6pBPk93uXTyDqhMndSyCfq8egGKObv63gWwowMoKNxou48B6LwZ92cgslYsEPzWf9uz6MXcwAZjl6+NV5UUYw==
+bzH95i2H4sX34dEBVRj6Qw==
+CBRv7/MjDrVu4mkTVhOUqg==
+JY/aT8o+fOIZ/ZrqMLKc7g==
+kuLG5o/X+qEMpVZ1qjoCtQ==
+RFBdpxKO0YCHCnm6xA//jw==
+8/yN4qpTN1wZF/lGufpj5A==
+WL5RZrRksHddw/A5VFS0sM+FSKwMfBOfcIc5Qu9i8sJjeRwCo1i3xPkN6J8AWGv5ij4aOouGI78AjIJ7LjdmvQ==
+wpKlAve05KlRe+jIGjuRXrue3z77r6eE/tQK7eCSa0BjoHGxqh/RaZRYnM2kCJUv
+2GRfwxOtScTJ168HigbcLLJytu00u+ykSteCGcw+dSrj0vzNNUyg/zotySi4lQl9
+lNi60z+ggVBTUHMgnFZsMxjvlXhaNTnwKHqKWguQKXKDP08tj36ZNreRgy+ZsF7LDQyqUYdogNvpqkULb+l4Tg==
+POAF6kFDB7bWTQBSi5JWqm1JgodGDL7UFTOCpsixGFg=
+9NyVxufNPwNr61JPtIuOZ0nwk8eymHnsGcFBzq64x3Q=
+ND2nEjy+OtML/2Htzqs7/i2YFsompBz3OfE3VXF6Ztg=
+NlWaTWRNUnjxu2ffNX91KhfQd7zY5CUqktljKGbHJSTy/zep8TT/c49MEePDY28aJnspzVCImQeie0On+/GTlQ==
+JJr9g1A3rF8w3vN1GH2mmQ==
+EGDSOuOOU5NCVyusmzD2Wg==
+qOgKw1Aik+gwZ6NgMfj7Xw==
+QA5tIag5byxYXqmX0v3ngg==
+4zU0XeoxTpDWzJ61Yhw3bw==
+bHLrnblawW1RVb2za43Z3w==
+IPD8fUdz+pHIv7bFlpradW47jSOfXyuqe9WziQhIdxdu9YDl2I7PiNIEqmH2Ro+b
+dP2+QIKwLkCcvEyFwduYQVCzaUArHLDABtxkKJPxleowj+ovjM3GRwnOeslvjKri
+BbZ5a+r0nv+HCcA5lwyOw613ClzWtsqc/IW+c07M3swbLO97XPrGhjXb59OsbxEG
+dn4/WSls0NthSp2+0Vc22SozxsIbyS2KzxS3eO4b9qc=
+wJIdeAA+kZtQD/nOOE7aozn3tsa53ZrxLue7Wcfzt1c=
+mpIFDNnnUUO/nqSx9etWdUz7LcFJVckUyk4Hml+y/mRMO7kH9zlxkyPtCU9U2bjqc7F5FK99gJvvBUzj2vAueg==
+5AbeiMzs0goRcJdXFQWR5A==
+I4JhSqL9gAfqfPeuzzayZg==
+/fRp1hevNo9AFpr/iq4nHg==
+9V30Sp6EtTHnj+NJrrqbEgrVScwd0I5HiU0uf9If/RTpJicGXQj2x9mt0sEH/AMH
+tcYp45+W1pKGlR59Ooy00PNtGbxX+TTne+M/cGSL+XlckFJo8E/MOqEVryCqqkiN12tUfql5xkr2usj9oYz1sg==
+60WqE+Jc7drpjDw1DT9H3ZxciCbnWDAd2dhcXLMOItUfyfFLj3STx6qSaUZLFbYl
+ASvkx5PdW4l2zSwXbN28XA==
+glREwALf+66WfMTK/DOSgg==
+CSDCqbwvTCegSjjBoulpyg==
+QFQ7uMOxhqdm9boa6FeJ37PCKX7pzPFYDBYkLQssm1uyfGzQq0tLvNQgWGJInnFY
+hrvxYt4YmlVabqMBc8aszyK4GFME2AcxmLcyp/YBR57TfHbyRxNb1yHe/2UzFjRFVCln+hwC2yENgc1EDtHqKg==
+0wR6X2IexkUVue8CflyxmhRCiR4x6SaiKvJdq02kppw=
+x4VEmIRrbRItyydTsbrFfCc9XMf/RRlBJ4uz4Z7ZOE/3C+p7wtw74QxVdchr9fDZjJA5mh0eivqloVAly8xM9Q==
+rjcm6j3hBCkGy0GYts/s/Q==
+MTBKHNevu/IrcVaL+47c7A==
+PB1JCCfW6G0a8b4BsEdxGg==
+jyMT2PSfDG7KiiUF0fZucyGMDGM+vedVe89ZN/zDnN/+2/V9pZQKMMb035iufUnh
+EORRcrObJ2Vi9XKP7JKP64g2XM8DJ5WP1nXRo9p6BRV3PCyzWDArNK293OB7LKgZ
+r54ScNG7zx5h57cLL3JD6K7zBiQ7yVXa7PRdGSA5aYQ=
+vBODaQYWn8KjMfKoGGARsMfYjwgntIUgx6H7SiX7QqxNleTwfyNxnUvQc/y+GXAl
+k/ocQJapyCbS+Y7SI/5orxHEmLvwkXd4I34ZpZCPr9ERrOKtT1Spp8dU7NgJeZIg
+OumrqfQTQ6Pl54v8V7g9ltmPDszZhY52is7nAzd9XUs=
+Y6J0mXQAmPk85rnt1uhktjPGNTLOajZHD5m2FXcs5BSbcNi3WTRuJv01J0s3H++o
+w3n764N3PhV3Iz/Fvt9MEd46x1qtWd8IKzL/VJ0IXAN+KhyJd05mPY/qOODed/h76a/0BnQB1YuIYDJ2CaP7ng==
+/71iAR82k/pR/HMYATDPIw==
+wDG2GV/JcHK4Iqzv4IjrDg==
+E8BbYisdJxMZFu6FBVl2dQ==
+YzZZEIJv/UkWOvQP0bMYtA==
+wUGGrrfiNMHDVkMNO2VHOQ==
+fHnGuQ28wqyJQyWo1ETvsw==
+CdgXd6LYFQi49MyibS471GkMMPvji4jOtJGacAEnK2D92wBQASOi45g3RgKcCBdbEQfA1e2OtEC1gi/3lmYh5w==
++bsivcRWGeAUJk5MS04BwA==
+nALy+NpXpEIAm79It75hBXm83jrLzBIy7NaLIfs7Amk=
+GP7s27O/+a9VgG+tyW0KYWe+SrNIWi71KrXTYglJT4VvLd7VnqhjKTRLMeCcby3ZNXP19FXbccIUUo5G1CiETDZI9zK1hFuot+vEdh45SGc=
+cPEpmfMqetefeej3y+cKyau9NKFzCWErjZQzgCVhXNeJVbCOdMoZAhKMz1CigtWu
+fsSwBwgHJ9tPcyfb/Z3QaFOj2P5Ivqyg6G0CC3yprKeFV5BvMueCrc1E0RPOoDJs
+ivoywGBIaNVYCnzBpK2qB45q0YuQ4roXKHVABlz9F894Mc0buGCHP0H8vMj3B9aY8mnnJoN/CXna4f7J1ldJAA==
+ka3rOnm3yn6DwsFHv1wNhg==
+MnUKPp1vQuDpUw+Xi5S9PQ==
+bqPJhEh5vPT35jOR9MuWpw9NZv+++x2xj0C0FeZIrr00npPvkgHOmWIQ+mOMOR3hgfXyCe4nFnnwN15pfhHFQFxdDCFj7Cy3frHvsxZXV70=
+8vPfHvPlUqFGZINwp/3GPg==
+swR/Ijm4YoblzmFxt44/SJDtl+bib/eCEx7Ekg1bAatRSwLfTmDWvtntw0TwT0uv
+nzvJs06gaWcJLDjlP66ucRQLC5vCELzCUWeQ181J/cprM3PtOLfrpIu+Cj+4XYPu
+Uj+LAc98snydzQe/9Th9Uz8qfyHYAxkb8lihhFVav6kK0Rd7wgjnb0pefy+AhzvcM2ZjzCmpxEMR9nl6FGLPiU08deJhuwRxrUyV3QYEGPQ=
+D5SFslptA5wr5L5Wh7eFMw==
+rX6nSlzI6drSb9YYaRkhVlEDAXT5qf9wC/s9GAWDSFnPGWLoj7pNM46ksV1fj7Oq
+HQuB3wDL50p/jC/XaAH8NfF4MdyaP5WHpcIUl64RBfgLF3OoyEPRrlILWRWSviD9eoT4C4zF74983BqqOU71JJiYSLuvdN/EaUNCs5KGPes=
+vF1cQ+Y0iA+grEaqVTjlPyu1FcTca6fOUexsWgTrtPa4aouipjoj0KC1aZSDQqtXQRrH0O39JI2FnJwBtKn8F/XoZrIq887q0sjaob55osc=
+iqRxnOwTxaDwrGAE8R2sGTx82gW6HZNtvPrTaVz80XU=
+7tvXaA7yOjxFpGL++psKyA==
+KEbDOSO7PpvDFqkv0be8Ag==
+KyB0rsjzxGQdZy4suRJIKg==
+7XpkL/E+3DR1UKIlNCHHaAbdKk76OERdfsyOgAhd+Mjq+7qe+Eg0uSXA+/0e5sjVuiSWNryM2/0Je2MdYIlheQ==
+bgcMqyCI/3By7ayVisAZCt9wt6tITHPr3HGVwJerUe0=
+SBXxufwcXkrZXuydvkEqdODdAENHjHo4+raiU+9T9Mg=
+GHV7p0xjbHnkbxiyQdIR3Q==
+1POl/Y5aHOpjcoYuqPT5d6i7r8Ckmw62ix7jTB7sVqyq5jhqdOvV4HQLemB5j4VoOlsp4QImfz6B/0MShLeuFA==
++fTB4bggIIFICQZIP7YakPJbYQmDkfRItgcfGfqD2N6/3VWlfcnny3hb06TkF4Jl
+huiyt/1Ffpve1Hqf8oXu+5LDC3+8xBx9f13xyLVgHNBUJ8QArKpON8j0xzv91me3u2qBtfuepps67Zs0YcJvtVqAqgqVaeQ/77R4dcSg0Ew=
+IJKljuzfu17KoTvst9jBRBKsJ49SnRNVpflznHsg3+E2PfxA3tCYRI1QXDrSqO4u
+ppZlenqCLLvj1sC8ejtprQ==
+rftH7gh9mKwPfRraTPapDQ==
+KlqRwsRqbfBFE0uuoJzssA==
+Yf+c3X0hzw8/3bagxgRXBw==
+F/hEXmN9mvoKev4ZsBQvCMoYL1Z0cwCVIgtBWj5rWkSUd/3gH3n3ZdGIhg7jiGWerTl7RjUtfUdLqGqgk2BNuQ==
+ObHAXN4WMGFu9UvxBw3pHFsJBQr8DyB8eLdKKCRIbKs=
+F2cDf8jUxk/1hVQtr7NOZ9cwwC2p25whnWW70AeDQ/jSDlG8Z6+JICJllSHmNhIt
+mfzQ+mbYdo97LPa0FtJ/W9vU2pm3giuVPQoULKhkApY=
+GWrKV51cgzpoCeRoGtyCMQ==
+bQAWBcdmxi9NGT2VBCEHVg==
+QRfMDLHVnFx++rZ6i8EY9A==
+6PaAht3oSk1NE+YQmqtAUZt+kUuP1JIkLwFIDz7KSsc=
+258+xM/tWzEl0T9ziXFEXTPfcWtVpWycw2c+tu4r1LrCD/ZnbBQF7MjfP6StqXNp
+PcyWRIqE1VeoceyZAA5gZLtRvsL+e+w1S89w/8EISPF3kFKWKLSh0K0TYnIxs4z7
+U7Kk8HucjN1BRIUsum44QnZ/SksY220Njus6cjf+LcQ=
+D+r9bmome7oUaO9u7kw5xluw29g4PQGKYURa4WkydeE=
+ki3lAOnLqq6IPWAznWRCww==
+NHLMjy46XLW4Vuy50p7FzQ==
+mR9bM+JIip121WS2SNMN2A==
+AXlJMJNubi09BoUfe5+Ndg==
+EIrPFcdESz0BSJpDEGiIXk/tkbBSAfJ19aY3y28bb7NPg8Ec+9tiCl5cfV1ZCoIS
+c5sI96SGdebFdP1bSrJdEXQpRCyL8kVHAKGnTELarDG5qiGjxi2/uUwPLjhkkYQP
+uHCj+DTOEACrfOsNN1qmC9ikPEewde0JiLV8Ig9aAQ8=
+Wa4p83mldxjWG5J75p2WzwCKQvKnlRXPd/HxJzxLQruXDbyGsHaMDAHI6n4Qb10m
+4nhwrBKGmzslHsTzeaaAfdd1Dz0dNzFKcxOR1cqM1Yw=
+Am90E2XzX3X5omYpM+0npb5xex+kLcS+TSN5YwabkPJL4trW+aEAtAxXAt7XTlEm
+DHBl/rLkvtP4Op7SvrZAh5O73GjHRODiEAKnxGB+U5Q=
+iYpgj0q7qRFYjH/R4/ArUcycZ51PIY5sstRLsMCf1WtODee3kEsiNl6ZDuhmKMOy
+W1xuabv9EZH+mcLLcPcVLk9tF9L+CicJeGXBNndApYqAXmqai8PVz1anhBv3gVJi
+o9tYnCZlpVAoDPocWyAAcg==
+Mt7VC29yx9kLgwluGVRZHw==
+j+/ju2U43orgKnMGqArpiw==
+xS0/YXLrfB7FqP+BolfFDg==
+eT+H8yzYZ5IZFbTDuzPa9R52y9zk81OjSaRsrLwyfIJd4+R2aomw9sss59lWM8Z1
+GG9a82KPFzn3RRq95NtCY3ba6qG2bsN+56p4nHdgO50=
+/i6RE3CWj5gIhSuI/AIl2w==
+tuSI14nJyXtBXGltftBIVA==
+JbLdgcVjPlm6mqIOHCZHv9HnsHfbHXZdbFThT9YfLbeBIpkFggGT0bpl/E0fMD6+
+U71IST/ATmAXs0Bj5lY5pwsfZeEgIzkArvatiSQRG6w=
+SA0uSIPt3Nz404vhuHd4SQ==

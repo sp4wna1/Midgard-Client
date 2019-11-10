@@ -1,18 +1,18 @@
-Module
-  name: client_serverlist
-  description: Manages a server list of previously entered servers
-  author: BeniS
-  website: https://github.com/edubart/otclient
-
-  dependencies:
-    - client_entergame
-
-  @onLoad: |
-    dofile 'serverlist'
-    dofile 'addserver'
-    ServerList.init()
-    AddServer.init()
-
-  @onUnload: |
-    ServerList.terminate()
-    AddServer.terminate()
+92gLUDUwzwa6qltXdfHwMQ==
+w8cr/nc9TkFSVtTFq0TdEHyzInHZ4aQUZNcMZs7sm9g=
+9UrJCl+bR09U0AYLRKEd6vfZ6jbay6a6ELaX2mCud0R5o8QX55Hfd1Cm63W7Bwh0r+2IjNMcVq45CQhe/MvAjXn7tmGYgdoo6wmfqjudCvk=
+LlhmGm4kXuBCLv/e+nE92w==
+LAi1eQa6zarXwju7HNqAMNncnDveMssWXko6vVY1ps+dYvRDkKftrylT1ZEC65KC
+DGHR+uBtcyJLiQpYoSF90w==
+m4/kehHLocGeldNIlwnEbA==
+DsGiAChh/2I1kGu+DtAZmU0AVT5HINXouC1fujqmmrc=
+JvwFWb460O1sQIz6HulwBg==
+yjxHcHFWWc5T5D9uvMOkWw==
+hRHg71iHZsfWROSNPc/74/MOvdCrDxW9LNk8naHqgeE=
+QR8791RCz523+1cZLda9p3VcFJze9L9BWbZfVuTLmMQ=
+m03VHnsYWRnhc9qagu6WrDtU2pYlgotmitZL+3odG68=
+k2o4A8mBiGNwiCDclw8hki7OZ6OUTrZ4Cw3LRhkO4BY=
+0Wf/oQt2NKmECz0yguPxeA==
+zEF/yf3WvKlM+Ag6i8Utvg==
+QEJYmvLEVY2P1BK0MI6NL1yMD1O59w2UzVsDKaY3juQ=
+52rTk8gRQSj7gfURxNfuyEP3jAj/J4xScZGRvUnz4lA=

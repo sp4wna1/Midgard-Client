@@ -1,905 +1,905 @@
-WALK_STEPS_RETRY = 10
-
-gameRootPanel = nil
-gameMapPanel = nil
-gameRightPanel = nil
-gameLeftPanel = nil
-gameBottomPanel = nil
-showTopMenuButton = nil
-logoutButton = nil
-mouseGrabberWidget = nil
-countWindow = nil
-logoutWindow = nil
-exitWindow = nil
-bottomSplitter = nil
-limitedZoom = false
-currentViewMode = 0
-smartWalkDirs = {}
-smartWalkDir = nil
-walkFunction = nil
-hookedMenuOptions = {}
-lastDirTime = g_clock.millis()
-
-function init()
-  g_ui.importStyle('styles/countwindow')
-
-  connect(g_game, {
-    onGameStart = onGameStart,
-    onGameEnd = onGameEnd,
-    onLoginAdvice = onLoginAdvice,
-  }, true)
-
-  -- Call load AFTER game window has been created and 
-  -- resized to a stable state, otherwise the saved 
-  -- settings can get overridden by false onGeometryChange
-  -- events
-  connect(g_app, {
-    onRun = load,
-    onExit = save
-  })
-  
-  gameRootPanel = g_ui.displayUI('gameinterface')
-  gameRootPanel:hide()
-  gameRootPanel:lower()
-  gameRootPanel.onGeometryChange = updateStretchShrink
-  gameRootPanel.onFocusChange = stopSmartWalk
-
-  mouseGrabberWidget = gameRootPanel:getChildById('mouseGrabber')
-  mouseGrabberWidget.onMouseRelease = onMouseGrabberRelease
-
-  bottomSplitter = gameRootPanel:getChildById('bottomSplitter')
-  gameMapPanel = gameRootPanel:getChildById('gameMapPanel')
-  gameRightPanel = gameRootPanel:getChildById('gameRightPanel')
-  gameLeftPanel = gameRootPanel:getChildById('gameLeftPanel')
-  gameBottomPanel = gameRootPanel:getChildById('gameBottomPanel')
-  connect(gameLeftPanel, { onVisibilityChange = onLeftPanelVisibilityChange })
-
-  logoutButton = modules.client_topmenu.addLeftButton('logoutButton', tr('Exit'),
-    '/images/topbuttons/logout', tryLogout, true)
-
-  showTopMenuButton = gameMapPanel:getChildById('showTopMenuButton')
-  showTopMenuButton.onClick = function()
-    modules.client_topmenu.toggle()
-  end
-
-  setupViewMode(0)
-
-  bindKeys()
-
-  if g_game.isOnline() then
-    show()
-  end
-end
-
-function bindKeys()
-  gameRootPanel:setAutoRepeatDelay(200)
-
-  bindWalkKey('Up', North)
-  bindWalkKey('Right', East)
-  bindWalkKey('Down', South)
-  bindWalkKey('Left', West)
-  bindWalkKey('Numpad8', North)
-  bindWalkKey('Numpad9', NorthEast)
-  bindWalkKey('Numpad6', East)
-  bindWalkKey('Numpad3', SouthEast)
-  bindWalkKey('Numpad2', South)
-  bindWalkKey('Numpad1', SouthWest)
-  bindWalkKey('Numpad4', West)
-  bindWalkKey('Numpad7', NorthWest)
-
-  bindTurnKey('Ctrl+Up', North)
-  bindTurnKey('Ctrl+Right', East)
-  bindTurnKey('Ctrl+Down', South)
-  bindTurnKey('Ctrl+Left', West)
-  bindTurnKey('Ctrl+Numpad8', North)
-  bindTurnKey('Ctrl+Numpad6', East)
-  bindTurnKey('Ctrl+Numpad2', South)
-  bindTurnKey('Ctrl+Numpad4', West)
-
-  g_keyboard.bindKeyPress('Escape', function() g_game.cancelAttackAndFollow() end, gameRootPanel)
-  g_keyboard.bindKeyPress('Ctrl+=', function() gameMapPanel:zoomIn() end, gameRootPanel)
-  g_keyboard.bindKeyPress('Ctrl+-', function() gameMapPanel:zoomOut() end, gameRootPanel)
-  g_keyboard.bindKeyDown('Ctrl+Q', function() tryLogout(false) end, gameRootPanel)
-  g_keyboard.bindKeyDown('Ctrl+L', function() tryLogout(false) end, gameRootPanel)
-  g_keyboard.bindKeyDown('Ctrl+W', function() g_map.cleanTexts() modules.game_textmessage.clearMessages() end, gameRootPanel)
-  g_keyboard.bindKeyDown('Ctrl+.', nextViewMode, gameRootPanel)
-end
-
-function bindWalkKey(key, dir)
-  g_keyboard.bindKeyDown(key, function() changeWalkDir(dir) end, gameRootPanel, true)
-  g_keyboard.bindKeyUp(key, function() changeWalkDir(dir, true) end, gameRootPanel, true)
-  g_keyboard.bindKeyPress(key, function() smartWalk(dir) end, gameRootPanel)
-end
-
-function unbindWalkKey(key)
-  g_keyboard.unbindKeyDown(key, gameRootPanel)
-  g_keyboard.unbindKeyUp(key, gameRootPanel)
-  g_keyboard.unbindKeyPress(key, gameRootPanel)
-end
-
-function bindTurnKey(key, dir)
-  local function callback(widget, code, repeatTicks)
-    if g_clock.millis() - lastDirTime >= modules.client_options.getOption('turnDelay') then
-        g_game.turn(dir)
-        changeWalkDir(dir)
-
-        lastDirTime = g_clock.millis()
-    end
-  end
-
-  g_keyboard.bindKeyPress(key, callback, gameRootPanel)
-end
-
-function terminate()
-  hide()
-
-  hookedMenuOptions = {}
-
-  stopSmartWalk()
-
-  disconnect(g_game, {
-    onGameStart = onGameStart,
-    onGameEnd = onGameEnd,
-    onLoginAdvice = onLoginAdvice
-  })
-
-  disconnect(gameLeftPanel, { onVisibilityChange = onLeftPanelVisibilityChange })
-
-  logoutButton:destroy()
-  gameRootPanel:destroy()
-end
-
-function onGameStart()
-  show()
-
-  -- open tibia has delay in auto walking
-  if not g_game.isOfficialTibia() then
-    g_game.enableFeature(GameForceFirstAutoWalkStep)
-  else
-    g_game.disableFeature(GameForceFirstAutoWalkStep)
-  end
-end
-
-function onGameEnd()
-  setupViewMode(0)
-  hide()
-end
-
-function show()
-  connect(g_app, { onClose = tryExit })
-  modules.client_background.hide()
-  gameRootPanel:show()
-  gameRootPanel:focus()
-  gameMapPanel:followCreature(g_game.getLocalPlayer())
-  setupViewMode(0)
-  updateStretchShrink()
-  logoutButton:setTooltip(tr('Logout'))
-
-  addEvent(function()
-    if not limitedZoom or g_game.isGM() then
-      gameMapPanel:setMaxZoomOut(513)
-      gameMapPanel:setLimitVisibleRange(false)
-    else
-      gameMapPanel:setMaxZoomOut(11)
-      gameMapPanel:setLimitVisibleRange(true)
-    end
-  end)
-end
-
-function hide()
-  disconnect(g_app, { onClose = tryExit })
-  logoutButton:setTooltip(tr('Exit'))
-
-  if logoutWindow then
-    logoutWindow:destroy()
-    logoutWindow = nil
-  end
-  if exitWindow then
-    exitWindow:destroy()
-    exitWindow = nil
-  end
-  if countWindow then
-    countWindow:destroy()
-    countWindow = nil
-  end
-  gameRootPanel:hide()
-  modules.client_background.show()
-end
-
-function save()
-  local settings = {}
-  settings.splitterMarginBottom = bottomSplitter:getMarginBottom()
-  g_settings.setNode('game_interface', settings)
-end
-
-function load()
-  local settings = g_settings.getNode('game_interface')
-  if settings then
-    if settings.splitterMarginBottom then
-      bottomSplitter:setMarginBottom(settings.splitterMarginBottom)
-    end
-  end
-end
-
-function onLoginAdvice(message)
-  displayInfoBox(tr("For Your Information"), message)
-end
-
-function forceExit()
-  g_game.cancelLogin()
-  scheduleEvent(exit, 10)
-  return true
-end
-
-function tryExit()
-  if exitWindow then
-    return true
-  end
-
-  local exitFunc = function() g_game.safeLogout() forceExit() end
-  local logoutFunc = function() g_game.safeLogout() exitWindow:destroy() exitWindow = nil end
-  local cancelFunc = function() exitWindow:destroy() exitWindow = nil end
-
-  exitWindow = displayGeneralBox(tr('Exit'), tr("If you shut down the program, your character might stay in the game.\nClick on 'Logout' to ensure that you character leaves the game properly.\nClick on 'Exit' if you want to exit the program without logging out your character."),
-  { { text=tr('Force Exit'), callback=exitFunc },
-    { text=tr('Logout'), callback=logoutFunc },
-    { text=tr('Cancel'), callback=cancelFunc },
-    anchor=AnchorHorizontalCenter }, logoutFunc, cancelFunc)
-
-  return true
-end
-
-function tryLogout(prompt)
-  if type(prompt) ~= "boolean" then
-    prompt = true
-  end
-  if not g_game.isOnline() then
-    exit()
-    return
-  end
-
-  if logoutWindow then
-    return
-  end
-
-  local msg, yesCallback
-  if not g_game.isConnectionOk() then
-    msg = 'Your connection is failing, if you logout now your character will be still online, do you want to force logout?'
-
-    yesCallback = function()
-      g_game.forceLogout()
-      if logoutWindow then
-        logoutWindow:destroy()
-        logoutWindow=nil
-      end
-    end
-  else
-    msg = 'Are you sure you want to logout?'
-
-    yesCallback = function()
-      g_game.safeLogout()
-      if logoutWindow then
-        logoutWindow:destroy()
-        logoutWindow=nil
-      end
-    end
-  end
-
-  local noCallback = function()
-    logoutWindow:destroy()
-    logoutWindow=nil
-  end
-
-  if prompt then
-    logoutWindow = displayGeneralBox(tr('Logout'), tr(msg), {
-      { text=tr('Yes'), callback=yesCallback },
-      { text=tr('No'), callback=noCallback },
-      anchor=AnchorHorizontalCenter}, yesCallback, noCallback)
-  else
-     yesCallback()
-  end
-end
-
-function stopSmartWalk()
-  smartWalkDirs = {}
-  smartWalkDir = nil
-end
-
-function changeWalkDir(dir, pop)
-  while table.removevalue(smartWalkDirs, dir) do end
-  if pop then
-    if #smartWalkDirs == 0 then
-      stopSmartWalk()
-      return
-    end
-  else
-    table.insert(smartWalkDirs, 1, dir)
-  end
-
-  smartWalkDir = smartWalkDirs[1]
-  if modules.client_options.getOption('smartWalk') and #smartWalkDirs > 1 then
-    for _,d in pairs(smartWalkDirs) do
-      if (smartWalkDir == North and d == West) or (smartWalkDir == West and d == North) then
-        smartWalkDir = NorthWest
-        break
-      elseif (smartWalkDir == North and d == East) or (smartWalkDir == East and d == North) then
-        smartWalkDir = NorthEast
-        break
-      elseif (smartWalkDir == South and d == West) or (smartWalkDir == West and d == South) then
-        smartWalkDir = SouthWest
-        break
-      elseif (smartWalkDir == South and d == East) or (smartWalkDir == East and d == South) then
-        smartWalkDir = SouthEast
-        break
-      end
-    end
-  end
-end
-
-function smartWalk(dir)
-  if g_keyboard.getModifiers() == KeyboardNoModifier then
-    local func = walkFunction
-    if not func then
-      if modules.client_options.getOption('dashWalk') then
-        func = g_game.dashWalk
-      else
-        func = g_game.walk
-      end
-    end
-    local dire = smartWalkDir or dir
-    func(dire)
-    return true
-  end
-  return false
-end
-
-function updateStretchShrink()
-  if modules.client_options.getOption('dontStretchShrink') and not alternativeView then
-    gameMapPanel:setVisibleDimension({ width = 15, height = 11 })
-
-    -- Set gameMapPanel size to height = 11 * 32 + 2
-    bottomSplitter:setMarginBottom(bottomSplitter:getMarginBottom() + (gameMapPanel:getHeight() - 32 * 11) - 10)
-  end
-end
-
-function onMouseGrabberRelease(self, mousePosition, mouseButton)
-  if (selectedThing == nil or secret == nil) then
-    return false
-  end
-  if mouseButton == MouseLeftButton then
-    local clickedWidget = gameRootPanel:recursiveGetChildByPos(mousePosition, false)
-    if clickedWidget then
-      if selectedType == 'use' then
-        onUseWith(clickedWidget, mousePosition, secret)
-      elseif selectedType == 'trade' then
-        onTradeWith(clickedWidget, mousePosition)
-      end
-    end
-  end
-
-  selectedThing = nil
-  g_mouse.popCursor('target')
-  self:ungrabMouse()
-  return true
-end
-
-function onUseWith(clickedWidget, mousePosition, secret)
-  if clickedWidget:getClassName() == 'UIGameMap' then
-    local tile = clickedWidget:getTile(mousePosition)
-    if tile then
-      if selectedThing:isFluidContainer() or selectedThing:isMultiUse() then
-        g_game.useWith(selectedThing, tile:getTopMultiUseThing(), secret)
-      else
-        g_game.useWith(selectedThing, tile:getTopUseThing(), secret)
-      end
-    end
-  elseif clickedWidget:getClassName() == 'UIItem' and not clickedWidget:isVirtual() then
-    g_game.useWith(selectedThing, clickedWidget:getItem(), secret)
-  elseif clickedWidget:getClassName() == 'UICreatureButton' then
-    local creature = clickedWidget:getCreature()
-    if creature and not creature:isPlayer() then
-      g_game.useWith(selectedThing, creature, secret)
-    end
-  end
-end
-
-function onTradeWith(clickedWidget, mousePosition)
-  if clickedWidget:getClassName() == 'UIGameMap' then
-    local tile = clickedWidget:getTile(mousePosition)
-    if tile then
-      g_game.requestTrade(selectedThing, tile:getTopCreature())
-    end
-  elseif clickedWidget:getClassName() == 'UICreatureButton' then
-    local creature = clickedWidget:getCreature()
-    if creature then
-      g_game.requestTrade(selectedThing, creature)
-    end
-  end
-end
-
-function startUseWith(thing, newSecret)
-  if not thing then return end
-  if g_ui.isMouseGrabbed() then
-    if selectedThing then
-      selectedType = 'use'
-      selectedThing = thing
-      secret = newSecret
-    end
-    return
-  end
-  selectedType = 'use'
-  selectedThing = thing
-  secret = newSecret
-  mouseGrabberWidget:grabMouse()
-  g_mouse.pushCursor('target')
-end
-
-function startTradeWith(thing)
-  if not thing then return end
-  if g_ui.isMouseGrabbed() then
-    if selectedThing then
-      selectedThing = thing
-      selectedType = 'trade'
-    end
-    return
-  end
-  selectedType = 'trade'
-  selectedThing = thing
-  mouseGrabberWidget:grabMouse()
-  g_mouse.pushCursor('target')
-end
-
-function isMenuHookCategoryEmpty(category)
-  if category then
-    for _,opt in pairs(category) do
-      if opt then return false end
-    end
-  end
-  return true
-end
-
-function addMenuHook(category, name, callback, condition, shortcut)
-  if not hookedMenuOptions[category] then
-    hookedMenuOptions[category] = {}
-  end
-  hookedMenuOptions[category][name] = {
-    callback = callback,
-    condition = condition,
-    shortcut = shortcut
-  }
-end
-
-function removeMenuHook(category, name)
-  if not name then
-    hookedMenuOptions[category] = {}
-  else
-    hookedMenuOptions[category][name] = nil
-  end
-end
-
-function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
-  if not g_game.isOnline() then return end
-
-  local menu = g_ui.createWidget('PopupMenu')
-  menu:setGameMenu(true)
-
-  local classic = modules.client_options.getOption('classicControl')
-  local shortcut = nil
-
-  if not classic then shortcut = '(Shift)' else shortcut = nil end
-  if lookThing then
-    menu:addOption(tr('Look'), function() g_game.look(lookThing) end, shortcut)
-  end
-
-  if not classic then shortcut = '(Ctrl)' else shortcut = nil end
-  if useThing then
-    if useThing:isContainer() then
-      if useThing:getParentContainer() then
-        menu:addOption(tr('Open'), function() g_game.open(useThing, useThing:getParentContainer()) end, shortcut)
-        menu:addOption(tr('Open in new window'), function() g_game.open(useThing) end)
-      else
-        menu:addOption(tr('Open'), function() g_game.open(useThing) end, shortcut)
-      end
-    else
-      if useThing:isMultiUse() then
-        local newSecret = 'x0660'
-        menu:addOption(tr('Use with ...'), function() startUseWith(useThing, newSecret) end, shortcut)
-      else
-        menu:addOption(tr('Use'), function() g_game.use(useThing) end, shortcut)
-      end
-    end
-
-    if useThing:isRotateable() then
-      menu:addOption(tr('Rotate'), function() g_game.rotate(useThing) end)
-    end
-
-    if g_game.getFeature(GameBrowseField) and useThing:getPosition().x ~= 0xffff then
-      menu:addOption(tr('Browse Field'), function() g_game.browseField(useThing:getPosition()) end)
-    end
-  end
-
-  if lookThing and not lookThing:isCreature() and not lookThing:isNotMoveable() and lookThing:isPickupable() then
-    menu:addSeparator()
-    menu:addOption(tr('Trade with ...'), function() startTradeWith(lookThing) end)
-  end
-
-  if lookThing then
-    local parentContainer = lookThing:getParentContainer()
-    if parentContainer and parentContainer:hasParent() then
-      menu:addOption(tr('Move up'), function() g_game.moveToParentContainer(lookThing, lookThing:getCount()) end)
-    end
-  end
-
-  if creatureThing then
-    local localPlayer = g_game.getLocalPlayer()
-    menu:addSeparator()
-
-    if creatureThing:isLocalPlayer() then
-      menu:addOption(tr('Set Outfit'), function() g_game.requestOutfit() end)
-
-      if g_game.getFeature(GamePlayerMounts) then
-        if not localPlayer:isMounted() then
-          menu:addOption(tr('Mount'), function() localPlayer:mount() end)
-        else
-          menu:addOption(tr('Dismount'), function() localPlayer:dismount() end)
-        end
-      end
-
-      if creatureThing:isPartyMember() then
-        if creatureThing:isPartyLeader() then
-          if creatureThing:isPartySharedExperienceActive() then
-            menu:addOption(tr('Disable Shared Experience'), function() g_game.partyShareExperience(false) end)
-          else
-            menu:addOption(tr('Enable Shared Experience'), function() g_game.partyShareExperience(true) end)
-          end
-        end
-        menu:addOption(tr('Leave Party'), function() g_game.partyLeave() end)
-      end
-
-    else
-      local localPosition = localPlayer:getPosition()
-      if not classic then shortcut = '(Alt)' else shortcut = nil end
-      if creatureThing:getPosition().z == localPosition.z then
-        if g_game.getAttackingCreature() ~= creatureThing then
-          menu:addOption(tr('Attack'), function() g_game.attack(creatureThing) end, shortcut)
-        else
-          menu:addOption(tr('Stop Attack'), function() g_game.cancelAttack() end, shortcut)
-        end
-
-        if g_game.getFollowingCreature() ~= creatureThing then
-          menu:addOption(tr('Follow'), function() g_game.follow(creatureThing) end)
-        else
-          menu:addOption(tr('Stop Follow'), function() g_game.cancelFollow() end)
-        end
-      end
-
-      if creatureThing:isPlayer() then
-        menu:addSeparator()
-        local creatureName = creatureThing:getName()
-        menu:addOption(tr('Message to %s', creatureName), function() g_game.openPrivateChannel(creatureName) end)
-        if modules.game_console.getOwnPrivateTab() then
-          menu:addOption(tr('Invite to private chat'), function() g_game.inviteToOwnChannel(creatureName) end)
-          menu:addOption(tr('Exclude from private chat'), function() g_game.excludeFromOwnChannel(creatureName) end) -- [TODO] must be removed after message's popup labels been implemented
-        end
-        if not localPlayer:hasVip(creatureName) then
-          menu:addOption(tr('Add to VIP list'), function() g_game.addVip(creatureName) end)
-        end
-
-        if modules.game_console.isIgnored(creatureName) then
-          menu:addOption(tr('Unignore') .. ' ' .. creatureName, function() modules.game_console.removeIgnoredPlayer(creatureName) end)
-        else
-          menu:addOption(tr('Ignore') .. ' ' .. creatureName, function() modules.game_console.addIgnoredPlayer(creatureName) end)
-        end
-
-        local localPlayerShield = localPlayer:getShield()
-        local creatureShield = creatureThing:getShield()
-
-        if localPlayerShield == ShieldNone or localPlayerShield == ShieldWhiteBlue then
-          if creatureShield == ShieldWhiteYellow then
-            menu:addOption(tr('Join %s\'s Party', creatureThing:getName()), function() g_game.partyJoin(creatureThing:getId()) end)
-          else
-            menu:addOption(tr('Invite to Party'), function() g_game.partyInvite(creatureThing:getId()) end)
-          end
-        elseif localPlayerShield == ShieldWhiteYellow then
-          if creatureShield == ShieldWhiteBlue then
-            menu:addOption(tr('Revoke %s\'s Invitation', creatureThing:getName()), function() g_game.partyRevokeInvitation(creatureThing:getId()) end)
-          end
-        elseif localPlayerShield == ShieldYellow or localPlayerShield == ShieldYellowSharedExp or localPlayerShield == ShieldYellowNoSharedExpBlink or localPlayerShield == ShieldYellowNoSharedExp then
-          if creatureShield == ShieldWhiteBlue then
-            menu:addOption(tr('Revoke %s\'s Invitation', creatureThing:getName()), function() g_game.partyRevokeInvitation(creatureThing:getId()) end)
-          elseif creatureShield == ShieldBlue or creatureShield == ShieldBlueSharedExp or creatureShield == ShieldBlueNoSharedExpBlink or creatureShield == ShieldBlueNoSharedExp then
-            menu:addOption(tr('Pass Leadership to %s', creatureThing:getName()), function() g_game.partyPassLeadership(creatureThing:getId()) end)
-          else
-            menu:addOption(tr('Invite to Party'), function() g_game.partyInvite(creatureThing:getId()) end)
-          end
-        end
-      end
-    end
-
-    if modules.game_ruleviolation.hasWindowAccess() and creatureThing:isPlayer() then
-      menu:addSeparator()
-      menu:addOption(tr('Rule Violation'), function() modules.game_ruleviolation.show(creatureThing:getName()) end)
-    end
-
-    menu:addSeparator()
-    menu:addOption(tr('Copy Name'), function() g_window.setClipboardText(creatureThing:getName()) end)
-  end
-
-  -- hooked menu options
-  for _,category in pairs(hookedMenuOptions) do
-    if not isMenuHookCategoryEmpty(category) then
-      menu:addSeparator()
-      for name,opt in pairs(category) do
-        if opt and opt.condition(menuPosition, lookThing, useThing, creatureThing) then
-          menu:addOption(name, function() opt.callback(menuPosition, 
-            lookThing, useThing, creatureThing) end, opt.shortcut)
-        end
-      end
-    end
-  end
-
-  menu:display(menuPosition)
-end
-
-function processMouseAction(menuPosition, mouseButton, autoWalkPos, lookThing, useThing, creatureThing, attackCreature)
-  local keyboardModifiers = g_keyboard.getModifiers()
-
-  if not modules.client_options.getOption('classicControl') then
-    if keyboardModifiers == KeyboardNoModifier and mouseButton == MouseRightButton then
-      createThingMenu(menuPosition, lookThing, useThing, creatureThing)
-      return true
-    elseif lookThing and keyboardModifiers == KeyboardShiftModifier and (mouseButton == MouseLeftButton or mouseButton == MouseRightButton) then
-      g_game.look(lookThing)
-      return true
-    elseif useThing and keyboardModifiers == KeyboardCtrlModifier and (mouseButton == MouseLeftButton or mouseButton == MouseRightButton) then
-      if useThing:isContainer() then
-        if useThing:getParentContainer() then
-          g_game.open(useThing, useThing:getParentContainer())
-        else
-          g_game.open(useThing)
-        end
-        return true
-      elseif useThing:isMultiUse() then
-        local newSecret = 'x0660'
-        startUseWith(useThing, newSecret)
-        return true
-      else
-        g_game.use(useThing)
-        return true
-      end
-      return true
-    elseif attackCreature and g_keyboard.isAltPressed() and (mouseButton == MouseLeftButton or mouseButton == MouseRightButton) then
-      g_game.attack(attackCreature)
-      return true
-    elseif creatureThing and creatureThing:getPosition().z == autoWalkPos.z and g_keyboard.isAltPressed() and (mouseButton == MouseLeftButton or mouseButton == MouseRightButton) then
-      g_game.attack(creatureThing)
-      return true
-    end
-
-  -- classic control
-  else
-    if useThing and keyboardModifiers == KeyboardNoModifier and mouseButton == MouseRightButton and not g_mouse.isPressed(MouseLeftButton) then
-      local player = g_game.getLocalPlayer()
-      if attackCreature and attackCreature ~= player then
-        g_game.attack(attackCreature)
-        return true
-      elseif creatureThing and creatureThing ~= player and creatureThing:getPosition().z == autoWalkPos.z then
-        g_game.attack(creatureThing)
-        return true
-      elseif useThing:isContainer() then
-        if useThing:getParentContainer() then
-          g_game.open(useThing, useThing:getParentContainer())
-          return true
-        else
-          g_game.open(useThing)
-          return true
-        end
-      elseif useThing:isMultiUse() then
-        local newSecret = 'x0660'
-        startUseWith(useThing, newSecret)
-        return true
-      else
-        g_game.use(useThing)
-        return true
-      end
-      return true
-    elseif lookThing and keyboardModifiers == KeyboardShiftModifier and (mouseButton == MouseLeftButton or mouseButton == MouseRightButton) then
-      g_game.look(lookThing)
-      return true
-    elseif lookThing and ((g_mouse.isPressed(MouseLeftButton) and mouseButton == MouseRightButton) or (g_mouse.isPressed(MouseRightButton) and mouseButton == MouseLeftButton)) then
-      g_game.look(lookThing)
-      return true
-    elseif useThing and keyboardModifiers == KeyboardCtrlModifier and (mouseButton == MouseLeftButton or mouseButton == MouseRightButton) then
-      createThingMenu(menuPosition, lookThing, useThing, creatureThing)
-      return true
-    elseif attackCreature and g_keyboard.isAltPressed() and (mouseButton == MouseLeftButton or mouseButton == MouseRightButton) then
-      g_game.attack(attackCreature)
-      return true
-    elseif creatureThing and creatureThing:getPosition().z == autoWalkPos.z and g_keyboard.isAltPressed() and (mouseButton == MouseLeftButton or mouseButton == MouseRightButton) then
-      g_game.attack(creatureThing)
-      return true
-    end
-  end
-
-
-  local player = g_game.getLocalPlayer()
-  player:stopAutoWalk()
-
-  if autoWalkPos and keyboardModifiers == KeyboardNoModifier and mouseButton == MouseLeftButton then
-    player:autoWalk(autoWalkPos)
-    return true
-  end
-
-  return false
-end
-
-function moveStackableItem(item, toPos)
-  if countWindow then
-    return
-  end
-  if g_keyboard.isCtrlPressed() then
-    g_game.move(item, toPos, item:getCount())
-    return
-  elseif g_keyboard.isShiftPressed() then
-    g_game.move(item, toPos, 1)
-    return
-  end
-  local count = item:getCount()
-
-  countWindow = g_ui.createWidget('CountWindow', rootWidget)
-  local itembox = countWindow:getChildById('item')
-  local scrollbar = countWindow:getChildById('countScrollBar')
-  itembox:setItemId(item:getId())
-  itembox:setItemCount(count)
-  scrollbar:setMaximum(count)
-  scrollbar:setMinimum(1)
-  scrollbar:setValue(count)
-
-  local spinbox = countWindow:getChildById('spinBox')
-  spinbox:setMaximum(count)
-  spinbox:setMinimum(0)
-  spinbox:setValue(0)
-  spinbox:hideButtons()
-  spinbox:focus()
-  spinbox.firstEdit = true
-
-  local spinBoxValueChange = function(self, value)
-    spinbox.firstEdit = false
-    scrollbar:setValue(value)
-  end
-  spinbox.onValueChange = spinBoxValueChange
-
-  local check = function()
-    if spinbox.firstEdit then
-      spinbox:setValue(spinbox:getMaximum())
-      spinbox.firstEdit = false
-    end
-  end
-  g_keyboard.bindKeyPress("Up", function() check() spinbox:up() end, spinbox)
-  g_keyboard.bindKeyPress("Down", function() check() spinbox:down() end, spinbox)
-  g_keyboard.bindKeyPress("Right", function() check() spinbox:up() end, spinbox)
-  g_keyboard.bindKeyPress("Left", function() check() spinbox:down() end, spinbox)
-  g_keyboard.bindKeyPress("PageUp", function() check() spinbox:setValue(spinbox:getValue()+10) end, spinbox)
-  g_keyboard.bindKeyPress("PageDown", function() check() spinbox:setValue(spinbox:getValue()-10) end, spinbox)
-
-  scrollbar.onValueChange = function(self, value)
-    itembox:setItemCount(value)
-    spinbox.onValueChange = nil
-    spinbox:setValue(value)
-    spinbox.onValueChange = spinBoxValueChange
-  end
-
-  local okButton = countWindow:getChildById('buttonOk')
-  local moveFunc = function()
-    g_game.move(item, toPos, itembox:getItemCount())
-    okButton:getParent():destroy()
-    countWindow = nil
-  end
-  local cancelButton = countWindow:getChildById('buttonCancel')
-  local cancelFunc = function()
-    cancelButton:getParent():destroy()
-    countWindow = nil
-  end
-
-  countWindow.onEnter = moveFunc
-  countWindow.onEscape = cancelFunc
-
-  okButton.onClick = moveFunc
-  cancelButton.onClick = cancelFunc
-end
-
-function getRootPanel()
-  return gameRootPanel
-end
-
-function getMapPanel()
-  return gameMapPanel
-end
-
-function getRightPanel()
-  return gameRightPanel
-end
-
-function getLeftPanel()
-  return gameLeftPanel
-end
-
-function getBottomPanel()
-  return gameBottomPanel
-end
-
-function getShowTopMenuButton()
-  return showTopMenuButton
-end
-
-function onLeftPanelVisibilityChange(leftPanel, visible)
-  if not visible and g_game.isOnline() then
-    local children = leftPanel:getChildren()
-    for i=1,#children do
-      children[i]:setParent(gameRightPanel)
-    end
-  end
-end
-
-function nextViewMode()
-  setupViewMode((currentViewMode + 1) % 3)
-end
-
-function setupViewMode(mode)
-  if mode == currentViewMode then return end
-
-  if currentViewMode == 2 then
-    gameMapPanel:addAnchor(AnchorLeft, 'gameLeftPanel', AnchorRight)
-    gameMapPanel:addAnchor(AnchorRight, 'gameRightPanel', AnchorLeft)
-    gameMapPanel:addAnchor(AnchorBottom, 'gameBottomPanel', AnchorTop)
-    gameRootPanel:addAnchor(AnchorTop, 'topMenu', AnchorBottom)
-    gameLeftPanel:setOn(modules.client_options.getOption('showLeftPanel'))
-    gameLeftPanel:setImageColor('white')
-    gameRightPanel:setImageColor('white')
-    gameLeftPanel:setMarginTop(0)
-    gameRightPanel:setMarginTop(0)
-    gameBottomPanel:setImageColor('white')
-    modules.client_topmenu.getTopMenu():setImageColor('white')
-    g_game.changeMapAwareRange(18, 14)
-  end
-
-  if mode == 0 then
-    gameMapPanel:setKeepAspectRatio(true)
-    gameMapPanel:setLimitVisibleRange(false)
-    gameMapPanel:setZoom(11)
-    gameMapPanel:setVisibleDimension({ width = 15, height = 11 })
-  elseif mode == 1 then
-    gameMapPanel:setKeepAspectRatio(false)
-    gameMapPanel:setLimitVisibleRange(true)
-    gameMapPanel:setZoom(11)
-    gameMapPanel:setVisibleDimension({ width = 15, height = 11 })
-  elseif mode == 2 then
-    local limit = limitedZoom and not g_game.isGM()
-    gameMapPanel:setLimitVisibleRange(limit)
-    gameMapPanel:setZoom(11)
-    gameMapPanel:setVisibleDimension({ width = 15, height = 11 })
-    gameMapPanel:fill('parent')
-    gameRootPanel:fill('parent')
-    gameLeftPanel:setImageColor('alpha')
-    gameRightPanel:setImageColor('alpha')
-    gameLeftPanel:setMarginTop(modules.client_topmenu.getTopMenu()
-      :getHeight() - gameLeftPanel:getPaddingTop())
-    gameRightPanel:setMarginTop(modules.client_topmenu.getTopMenu()
-      :getHeight() - gameRightPanel:getPaddingTop())
-    gameLeftPanel:setOn(true)
-    gameLeftPanel:setVisible(true)
-    gameRightPanel:setOn(true)
-    gameMapPanel:setOn(true)
-    gameBottomPanel:setImageColor('#ffffff88')
-    modules.client_topmenu.getTopMenu():setImageColor('#ffffff66')
-    if not limit then
-      g_game.changeMapAwareRange(24, 20)
-    end
-  end
-
-  currentViewMode = mode
-end
-
-function limitZoom()
-  limitedZoom = true
-end
+RPTcqOm0rCu4gbKGpNpFho39FmDueyHFxr4S8KJ2kPc=
+zXzOT13JjfRAJ86bRmIwWg==
+NM7/2eEFv8mvxlbHiQWViZJXipI+UlWmx2t9CiAqy44=
+H4l7QmeuP4PgKxAFPeolwsdTD/xLhrnRvi9ObVdoh0Q=
+sY2T9GzyuF8Bb70pyskKoHdyN7aAVUZsto7DRAFxbWU=
+dKDfnU26Ftn/Yq5j0prSva5VPFFASdLcBp08qHQ7eaw=
+UpSSsL5Gh3f92lVV8q+beO0jUSeDeBVyNgIy1/uVSSs=
+lg8ubMoPZQGl/6m40h8txErjRz5yIVG9LvwUuaWzwfI=
+tvW53qNYE626hoA/FjtInuoN+ndXQAAMtHndpDeLcR0=
+HyjLf0CN3WaoNy2jydRD7DwK1S8qgLdGeBO9wFU2IKk=
+5F+Dr2R4R9MSvXb6n50z/GsCiJcsiPifPo9harI6wbE=
+TAfaW40AuXXSLtDT6xXBHfxmfu0NFFKkOHznlv8mI68=
+euu8BVjfptiDgGdLzlH4gU6vFVZBHYviITMey1iLQRI=
+eJqRZL6QaPxa/czSoJLR2oAFqjfzR046v8NHz9i+98g=
+zu8vvus8uMHbeeIZc8eX2a5jk+jkSMdxD9CxTqaBGiM=
+/9R3DBtJunDACQS9WFehyJX8viQN+YKwdZbx3+BE5rI=
+M2Imi0RHZOfPENB5MGn+TMIJHnxnx0YHNpHLyDjlH/I=
+wccriZfjYxyjmdRGLrregD6Doidlw0pSSlGkY7ZwZts=
+h2QZ/nGh7ErqfyVtFzeY0Ou3QyqWGYpuywuOyf19v60=
+8INi5R1B7eHflBFZb2EQ1mAqmCSuxB0eSwr4IpdZnME=
+vghdFyLaWOMKRMdAoQZzamey+Rt6XZgG6y3pAuwxDMs=
+EuiObbS1c1Jl8kJjfEOKoA==
+serlU61x/jcH5aAMzrah8w==
+EB0x637D7QZPVH+EV/zkj3eMKFDw1ZeOHSlGdqiEmcBCrsOuGDhXZx/9fA8JhaTl
+B+1FQ31riKWkuEDcM+soQA==
+qgOdXiPebJRizAtig811yr7AdfF05mRbijUf7QTx9Zg=
+z79JaYNWWDy7yX6S7zcjCTmS4fAYq7PIAFgNKgBW08c=
+0plAf1qMpYhtG7ZnOpkJ4ePT1clVRWCGd1Y3JhTeZkE=
+utG8nIcWXrM10brnmOyWWb/m9ZI1GsKg9x4mAxfZK///CuXaR/a0XwdiesFgvmAi
+X8G9ROAjIxAe5A48dv8wQg==
+/uZuAc/hRzy00FemuR584g==
+KpzfHaydVJ4i6HrvEpKdiceFSvU+DBcAZCe4H2fYEkM5KsWftGRUlhILbq1XDxIe6eTMJX4PwpIibaMjeSAB1w==
+MOSBlL/Zmdm9VqfEtwBRUTbbAiexS0rUscvD06yeYpNT0ZtQZJTynAhE8ev3TGW1J41UTka2P90V3zO0ur1c9g==
+6M9KSip0M2l+8I71l5SKppgDbKbeENLZXlkt9ceypZRKXUugD0Tln30ruRhy9O8Gti2r8x0MTCKzRu8xmEpv5g==
+3rqmR+wsjmHAUg37v/Cb6g==
+foqLV982Cu6Xf4qmpRt/Q+X6XcdGWj9bI2BKhTNxK40=
+Eki+O+f5LpB+hlakLkWmT0t2mc4Nqqh+Rkas3EipXjA=
+Sjni9fc9QRkRglf/0OlLRtQpQJ3E2OHXF1DBLSmKM24=
+PgCvaF1NQA6enplqebQh0A==
+n7cZQGOh6saA3nN0XYs7hA==
+D+jMuk94PGyfifoR6CLoTrLIK6KPyPV5YZZn4IrHC/d/85NnNGFEwn13k5QCPZytsXU3bVpe4wSrVmyBEO0xXw==
+/Rq2kGW7CmQ3VAuppok6TlEaTJe6GNAjt2OzTkJYLQo=
+qo3Y3NszDyX14kNYvBvAO45C4XNkvcUOL4Fmhg7OkeY=
+dgKtoNPEtXB3h3e7uJB60CfNYffX0Gjj9Ri387sp3RoGTmJrSBYUGUqzf0ATvz8U0KmqqWhSHc/ch95y1PL2MQ==
+EEoKBebfl3GXi/Kk4gt8BIM+XLFk86EETDWkR2TSUgQDZTUJm22gqj27zuVW2FcR
+xnrBuS6HC+mDI8lMAwyQ3Q==
+sCUMq+O1EQJ68tXbmG30pqd6jbHyv3fjvfdGxCNPt/RqtK3h53+Dlsl8K/hiToTRuuMNGoc3hlJm1Ehm95KsqEZCGjP4lHwTGp5JQlaxxGI=
+PK8v+tHio7SPsN34nNnBFecCf3YTBRP6Xl7S3UXHUUYiy1lcJi3rqokT2YcZOuwHs63ZIvfjVagYHlqNX6YvgA==
+6gsmrMl/SSJQHt8s+hONzg==
+9usHiNqqbo/pT47LecDpEPaTfk9wA5OqT5yEiRl1B3eBfGG0j9DfSA4XjGipfEHfOzrM7z5a99easR7UYuorbA==
+OvCG2P2jbT6y3DWQS0njffTBFSezQ112oyUWqqWOSyvqdRXCisSM2CSlrA8zQqqn2q6z7qkYUIW/q2O579+Kng==
+XhiPhSHKmu0VQSTVv/IrHq7xk2J2nU9XgcEEa5VjrUms7+z82MIslaJkmhgPti8JXY2Q+VtVFrpiPVftrO9MQg==
+/kktzBDt2cG32kjqLryg30eun5lYyUj+TNoOC5k5t6ilybVfaxCyAjGezLmFepWr7ibTcJ39FGo5kV0H7ofYVQ==
+DdgYxXHH8IcobeHYZQ4ZPjgBFVjoiUsZUrAzy95vZEvQT/xNaTAPaRtxNHaFcQr9kxn6cdia0jCyK/MBeUbFHg9W22XuihU6HU6NIvtO3u0=
+kYGa41iEaL7o06QE7Fc9Lia71ZDzd1PZMRVQrjWQsDsVUfiS1ifp0urS3Y9qndXbGtvSRNJToFmIeUfCdFX8ChJksThZlM765uSL4u9QilA=
+ZinD+XI9NESvdlHeg2kE1A==
+aonckcWcUd8TU4YJ/y336YlFOK5SuAxsYdDfkFcl4+PYZQNMn97Fj19I7g8CM4H3iYfDygB/rc2SB1sNE1GLCDPoOgxPVagl4N7KpwdMx5qfWJTu46s9jDQcVFZbrSZm
+0hf5K0niK4ZBsv58OzVuxHKa/RQ+OBrQKjaYeWbLcIHpM5d4U+beZMLYiLtYhYCPuHWWoIcHUQRno/EmdJFlwA==
+Zw4i8wJO8clGgpXCvnrWKg==
+4ePCMv/HLjhgZqF1hav2jonOtRQThj9bWvFFY15THUoT1IC9e8GG0aL/gvYRhw/RcluthOV6CVwMZQxXeIrAlCPxgn1hZ1qRSDBBPjq5JNA=
+aMBFVzB4uXoiUBVLwr1g1qjLCPuN+mZ0KFRW/DX0aulFroKs5QTIQ7xP89D2f7Eq
+JbeH+8uVlWjrtwnaYPGOW0u/SWdTevOKu3r/6c3TR3UQ4fwtC+FNI3ZMHwSoCxol
+MHw1FxYZg13YFT0yuBQwfQ==
+4C/TF4twUaLtU10oZeViSg==
++XTK9ZH6WVqEfOSpGgUOpwDjaLTLrDarY/1kYAUxDPE=
+ZH47aOs0bF8+IV3D1X/x0Q==
+C3JX1+bR57rkTa0QG6BENQ==
+Jh6/o5Px1z/596M+sNFKwA==
+m/2Z6bpIv76wNW1Bo1hJyQa4ZPoDFYwtPCUzTfYMzMU=
+kvLwP84ENaZtCWgMnOyIAw==
+ivx0yuBGB98X9D4vvnAd0w==
+z64a2qVbOlDinbkPhu60Rg==
+s2HmaOo39nmK652Md28lmw==
+pYXcpAzszoNOT8XoUP46r2JbRRiqQzXiYue4lNTwM3Q=
+9VXjgDusjxhz0TNfVAyxxruajBEcpKQybhtuQzSWkYTqOmiknw/oD9u9ROIfbNcu
+T4K4kDkYWYsw608OKxo66A==
+E19UK4lD32IR6tmrdkYioPPP/p1hMr0aCyQeE1TguOE=
+oUA2KQ5iJlHWMFn48SNB8gKIRve3znvAPkMA+H1cyLw=
+gRxpYkeybt8itViqrsPmjbda+CjOXw6zpWvO2mUvitU=
+6hYmXofSE46o+KxB7b2hwLOFKuwnel+Z++ARCe1s8pE=
+Qrhz2OZ9zkY95R+tC3CS0v5mwCllSjcm+9sa8OOY3WM=
+zJ8sN5d7MgTmznNpksD3l9f4k0eBrqcG/2wYhk9ET8AIP2ctAo/DEQ5SQyMZ6M19
+7n9gsvaNNqt+beq7Fdt7mWjkHMRQVAer/f1VKqCrm7Y=
+dRG7GReIJblMebax3hDKYufAApNvc/3Kks0aADvvLY2P5Ylsm7WaugZRslklPZXS
+LpMVRmttDKFrcWH2RMyYuLrV38kDCTpFyFoEqRdEih8=
+F/l9Ghx1LQzSvNXYcHW5oI7hByZBW5ii1GL93oyecj39TaqcejcjuwAOUoXymPgP
+oK4FYw8060NcijA/3A+50AvOjsIZk6J2ZQT/d1phXao=
+X7S0CBIgq3cG4VxlYWBaoYkrHoFJNoTpZaMcvxBClzISfso5GolBYC+2iNUlC2R0
+5Lb+1pKUV5oWDusn7Idz6g==
+vUmsaR836JhmT9+Qi4EfLgDReSInGvQSi4e9KQ0UknA=
+FwDgsQ1MjbKs/GjGAf1XT5UIgS27CLoRFCr9+uHeiYETE3yNTNQdI43z+sDCeei2
+WpNMJrTuvQAEhBFjKrAvqTmyUR/d3Nog0/11QsXfwz2tz3j2AIWVtJFbdIQZQdCa
+kInPO61IsqbjZjHYCL/fAQFVmIFWPuTcz4I3muYlq9eggLnbrOX6c5PY/BvDkcn4
+G9Q8s7D5IhfA8jU8qaeRYWGQjWDM4nO+fFkGj9lLrUKEJZnMGDVGvqNQGRo1eCcL
+1DxqPqCCUD0JQezCYz0L6zYRrv6t51qBSEbQflFlr0hkCxpPesP8vNdDoLqN9leI
+MSD+KJSstx8OCatqBYHzu4V3vbdkynBYWXexBQzHCVvdUrctehHwAMJOWFQu7DsP
+40tm7/YRekFmwPROAoqh0DGU1seJYxEO+hDUJ8c1uTT1voA0DP02jWrcpCghqxCF
+CnPEjze7r/1XmEMy5+argQ==
+iqa7Pf8lOH8VTYwh5OsJkfmlDefgHahQA2EzUnYbigQ3q1JTIQY/KXRWim29IGMackZBKJ7cUlpxaAV8PvoWO844gfsfZI0rO2DbggY1GaA86DcZ2yEOZ/6MRxwQt/Gsp0uGTvwgn6VLBiT0NXx/BQ==
+h0mQBjmHrc1OHcEOBc5oNkTDVlmE9S0xp4NpyCeCA69/ZPLsUfGguehXyB3kHNLOXeGcycEYMBVc/WVkloVEl1lnd8mhbLPH+1UeKpdETQmiSpXE/ePCYeLNY3qJdVjC
+9KmX7XfLezx+gEposn1NyjVgOrS8GWCLzEFNbIq0OoImdscJLCUuJ5fCucly0XPAZxSa/0J9wOpcTipHZNMI/qlSaP35ImMZyD8FtF+u3VpvjNdWYp1N4jFZT2XmBDBW
+7IZv4T5DFL8eggYbyG/mnSp1oq6w1yA1MRy8VSYuL1xbFD1HkkJChVYlkHsWiVjWuZVbJ17LWKXhWTZRZe++gTDCt6HDuUmB3Pp9HjB/j4SCJdHGOoGPo1YPGAt2+Wtl
+3ENVHc8lqi4bGMBtspRzK2eTMzBRWY8g3Uhunxc94QkdXn3eArcjOMvrqpb3fw2cHKmZrShB7OVFwZW+mEohbmo9/ZS7PpccqCXtyyTn1/Sk2h6DX1o1UyvanrQglhKh
+8Dfd5qrPoLZf2XVpUURbi/X1nyyWxcVmrA8kqzmyvh79XjiyxkOsYA5H2QrhTLYmB8vUcAN8glJd7+0bH59OccwBSSuF86sfvz7bmEcrVokOJi6dYTHhIm1j6RgQYGIPujgSMIC37yt8a5SSia+QpG6tZ++0H8YOnT55u1/nlWU=
+PU3kex2HWxLIukWvuct1LSSdHgYp9dZM5DTxQ77PpAxDFPSrdsE+eNbk8TkBTF9L6Ngoo5ERQcGxySKl0ahOVw==
+c2QNXGl/etVxVaRJ95UhtA==
+mQl7SNvBbaFcFIWuv4y18g==
+BKMzaxJdqHkHpzJ+R4FzrzSPXnnhliEdWZHtQX5XwLQ=
+u7+FM+VoSbmfi9/AVBXAs6EnIm7jTmLsWTVzo4wIgYE1VL9+8BYTLc1dI7CfiwbGO7tDbreLXNYXfxJSCS4Ewgq9Py8GUvQuzz+q4G+OZRsYXj3YM3Ou77EDLmt6B/cG
+KeKQ4mXemrHCTeAvFSZwBFgYG/4nViwmYEeXR+UaOycJpAe7/KGybJL4ytvpXBHKvJ1vpxfdDofJCf8W66VNpic9Poqz1/qo+2D9rfdCE5QQ75aVXj0u2WG2nnvGgFbk
+9GhwermlpIEUAQvKfMG45mdqUDFLXj+np+zNixy79CcKoyhr4wtUPRbk18PwRdSrNAmBvev9I0kwzIx7/hABgA/6ly5kJQ+U8Weva39Tyk4=
+JHDORv6UCNV61l6GqL+zFw==
+uTFsai1ILFXR73BdyObBUg==
+dXHR7FhgBQhsrtjVzgtrbDQY85SH23clTP5f7PRhWyY=
+dLas/BYTHRkYrREhvc0FPUDrvhluLIt+uOkj2C1tF1CrbzQoQ/hcWtCxdSQl7OR0
+nPnrx2nA0nPT3+q7SQ39SYpI6qXsd7kdWe5e3MBhwMviLBRibRCd7JZDyW82KKOW
+4/y2fuAMiuM1hYPIE3yhhmLQhpblo/pVE7GcFNvUJGUpq6LY7D0NaWkrV9pw3xoJ
+N14U94bp74G+fN19DTIpXA==
+81xvCTPMkp6YQifbsRkCyQ==
+y9Ww1iy1qJyk9Ga4rBhqzVyb4jcZauM4FvqA3kQOh2Y=
+2+sXCQeKRstdj5d0oREFUHmUJtu8ud4pZvHKZoNYXfbDCfpzBDiKE/TCXYHONv1u0FwyOFcjtVePC4tQwQa5Hw==
+HJ7Mg5o7ugteCmawb+qBJ8w+zR4O4Zb4B0Z9PgSreqXgfbMHhIWVVgRCgdyxnXDLhL1z/7rJI2ieuO7ykQZxil3YvC0y1uNhRNoEl8qRGzxWQ/ohJCJI4jjYPZYJlv4n
+5kkd09ndLGY/GfDbUkP/Yi7NYsxjO40DLz7k9KFwMv0=
+bIwhRJWvISoPyRvAxU/Pe8RnLaZPPns2bhPDcBl0QLo=
+IHHz23RTp3vjjA9yu5RPfQ==
+BXarYLHJxXhC000cUpmcmnqSwrG4MYTU44LGf06C/oh2QrKFZDiStcP+4US9njmp
+RWcLnfOVt8rBx1p/Gk8WTw==
+OMY0mSVc2Nvj5fG/+G+mWQ==
+1vmOiAqgT5/KQX3bQFK0Fg==
+0iVyuSsqguG0KRYW/hKfUDp03f9DXLWbJQiRiGIdArFX7BGHSgqoRbtXc4nuZaYa5Dd6YH3WNur/Sq3ssVAFPQ==
+I4BOZZsHgFh7qMdVFa4R3g==
+hoMUVIMuKnlvwpbDxHI7CA==
+q7nM2nwbOdMm9TO3EsomsKwSyHZmBYGCzv/Nl40jmEc=
+olNypZFTZBynpk3xQ9JDYQ==
+0EcdZIXdab6uBjYOy72cyg==
+YmL+DqX7MR82FfL7cRVmlwLGaB2FD2WwVAXWoIklrBo=
+zvrVKvS0tAd63nHL8+dR1A==
+DtyBG/srkFdbDz3nrP3x0NztIm4xNePDlKO7FpBpi5U=
+7sbiFYNMb0Qjd4uqJq4Reg==
+u0YVUF2E1bpCy46aVqqt2PJMbUbAmXImTtfkXKD+8tI=
+lEoBieUBMFBIySDOH39VBNS9c/xayJT49AdlUlbD9QI=
+DZKufgUUsmf5RwfTbaTrNa+T0a4FRd3dal3c3H4y56k=
+bZ8rFMo7mtlShZ9WK/Ief6sPAwAg9jrIGjGBkfLEcyffv0ezhb6q7ZKlhz7plLKz
+O1XSpRi6xZYMUJdAaYSHig==
+s445cxMkRU6hXvfUrGFG2Q==
+BmymE+7FqJ0vG+Rn3DfdZ35tcLwZGy35LTb31GLJE/fJVx691cc00tSdMKD5QrXY+0DJu5aePLVtreRs+REKGGokW0SgqNPW9ftZxkpTgLCAGXIyPkLJe79iG61ypg7t
+7sbRLPvxUVC7vRNdSxRqoA==
+zCTCONDJ3Qj4CgYbaoZ3vy4tQoEnVkv/na2DWEs4VxA=
+UZlC1ThD5Bwib/AEwqeXD1K9zsvIYDRdHbgb3sq/Jac=
++ak+kOPGgM6XfAd9gyikqw==
+PG+MGQsCNBydhC8EsRpLgw==
+2Sq2/PgYyAavbfw2DDslnY1oBj48F+J6RqDyXEPc9e0=
+RA++ZyncsJaWQKTpClwqWg==
+Fng96fwM9qhrbzALTUPZMg==
+v1Kz3ckiW+z3ScorpdRv2GUYanM6nuVOxiYaBEHdRVCqQnnYju1BCkFfdy1ryO68
+9Ahf/j5ifThzb39l73Jxfc5rKp2nINiRIoJDvBSU4zqKB40P19SgTdXHX8dtEPFJ
+c3nWkahkdQUwWRw9kqAd39X/73VoazpzIJ8KLWXctpsJUSgGXzwh4FdlLck8nIejdcrelv5iRQxHJO+cIb1Owg==
+QjDNDMfcSGW1GuaRwhOmKg==
+Rdqw9FAmtSfsrrnMU+xhmyyPldja2fjwpkQ6dm9uRVOiTTUQt+JO//hzsMzFYh+msGC45IWDXvU34PydMvrObQ==
+frkTh07emi4SLvxVqn0SLQ==
+s/sVj43EfD/v/XI8V0TMxw==
+pOpglocil1CmRF7mlAk9iQ==
+rdfp5tOZ2XmynYC3m9WmSAPz5D6iZPedfbs5dXPJ4ic=
+JOPAqfZLBqfc/tOVYweiN8ZgSXArqgsaMbh3aIhSkN4=
+34A8hQlPUpcrxt3pEmYLwg==
+jE9CdATM6sp4JpFRV8Mytg==
+AC1wopFVGGKTSLx1i6UCLg==
+hWEsCvSSOs3FZFJ/Z8wPeg==
+9TLOZRqiV+gpSX5JOG2KMx1rGvfOQMfLPpJeu7ATbop9LqQrpppzrdLhH+7F9s+y
+qqG9PWYt/2oarSGYjF50XO5R3LaLQuMrALbDYjOfI/y7CJ2HQSY99QeOgjA7uP3k
+Lpgx0V0fut+oQBxJE+vaxNJ6cjRZ5DkNTxqPya7Qhpg=
+u5e9BJuxT0rj26jyY90Je0D6KqoF3y91lDtWAMFiTRQ=
+gFEdpbdEyS/a9ooZ2sEHQKNOtg4a5KsVLxtmA/cziqfHCf9xbHAnmvL17RfYaWNtoUkGffGNpCYw9bLTnQt5jw==
+rhvNMT7MHMB5/46GGWkt5HHheRXtj/qvdr9FuLrRzYI=
+h/O2Q64Dytc0zSuS4bPP+0SG5boCCPWLaVTmW2m781o=
+E8Ot67Pa5syuq5ChnXlZJTNd0l57vBZk5viqph/L3uUMqd//lRt38s4gy1cwt9WE
+3CWDhwo41JExTtU/h0K0Ew==
+LURvII/TUSTStef3kLuUH9UnTQUtf8ikLHVtkBTL/5k=
+engzsUEgMDp2nfbiob62/oXxGRTLmWWO2lqSpLosufBlxwAYbR4l8GwdF/ALzFjh
+/MhDdpcTLWBwvWrIEasUz6AbNCrKH/ar5vWFqsbWMFsmPSEkIDlaWuS8tjtNbxS6
+1iO+QB+ZSU29yUtha5Y+qvmtQOQD1ks9v79k1bKSO6fUlWPH+bKzF0BjwUkui9k6
+97k6v6A+F/tRxLWSvBPzIA==
+A+6c1dAe/H4q1XdwvRI315TrEUMCCBGssTVUB/qHJd0q5khZ31olzDBhUqF8QMDW
+EtrdtL6K9XAm6eIGaT2cal+BkhWPq5Crvs0YRALwSKU5yJFxC7/Nrohjee/d1gwu
+D3ToadTyufZlsUDCKg/DNQ==
+f79XrpV4jNV8e2IajNVKAg==
+OF/ieLwr0LsPDjpbFU05AA==
+R6dUXZXsLAQDKjnx+sAbbw==
+8KOoVCHbpB5C3MyGG4QFgg==
+qlnPLEoKhqNpqJVYIN7AoQAFefhYrhA54t1qz1RiljZy1L91TBfSD4X8lcYTJOZl
+UDnJwK1DybkdwUyfUWn7L9bgU4cGyoAz15WSpbz/ZG9+9I2qakmZyozQCFsVNquW
+rZC3OdRSSHRAOxOxpdNXuQ==
+7HwpZqVT4oN/+YxMO2MrVvONxW7ERTlgf5t40jCZj+c=
+Mxrn/hITQ6Jp+fTIo1xTfMs78/LSzeFDZcDvybUBDfQ=
+eeC+XOEoBrQoPGBJgV0gVmZr3R/wPNICtJksacsIcx4=
+vo+7h9JUT218d9VlszShmw==
+PLKCbAs+z5Y4yvmA3L01puzhijysBGMT8CjzXuhDfec=
+4dtIlxp/w1fInexcxfBjHMvogyEngn9CNPZCm1efiIA=
+cepwFRBAG069GwTLZznXsepRe37PRLXDZxNm/ziV7DA=
+GPLlzbfiZjL3Q53UV53f0w==
+L+VoBtG+Dv6JT1X8XcWd78oQ+c9AvjbstyWGDfc05Ic=
+52MsaQbK1P/vkHEzllXEX7fB6VTMKNvOFWWjPcwQKv4=
+nx4IgrE2ILPTwwUgVfIXT4C8DqJTx4yXcSaaLfqQE+o=
+uUOK1ZeD4xObzV9ANtOe2w==
+l2PQjKREsg6Udq2kmT/r3kxm2RzFeW454b5M8V/r9Gs=
+7ZfVBswjs55Yh2L6GWc+xD1ZaOEu1lUwUUzHQtocKXJEts3QIWnTJANXDrxbPcPU
+q/gw+06MqigJdknBVGdp4g==
+D14jCeUgO6Cm020vaqXjAA==
+23jh3yt7mrQRuWMH/xW8iw==
+iDajYFlvDI39mDYY1Yo+5FEHUWIMACYwxqIej9EHK0Y=
+fCp8IDJ5cdZwVp/H2C7vkFcC/at9OP+Wbu/iZsOYGdJYiF/J5aSeBds1iK/UI2WZcIVhaKy0fbkEIKX/So7CRCmAO29awlC8KxhlJ4Hhzso=
+CHR0muAOLw44bsRIhCgy5WgtXvSm1dlIr3GFh/ISyxCuU1tptM/WvhEtsdig9O02nfYISgrNwc3upOHI9kEeHQ==
+0n0A/P2/vAYSqigZgg8HGA==
+RMCmn0L4eXfbVC9CXLVjwg==
+zfQuHeuQQHc9MSXOXzPhLw==
+pn6wAv9B0kwKD377YL/s/YTdg9DYy7gPY1Bj4niKgwPkkJL+jcwrht48ukC6SHtdczkBMSJZBcBD52lcSrsKbQ==
+H71Rlz1TpQhQV6i3EGeHD2nhw8L/pbxFPMyYWXJNMTo=
+chNyz7V+20uUTY7kofA+OvV3Ls/HQiIpfHUe6HKoUMSmPjeGwJL3Uc5QgahcBaFG
+WAIOtblzod1Ame65IW6anMwOcyvipfhknTsA/bux5gXIzGNGkSoaKTikn85aWjjdoL1GBXfAlhkaGu0zNbjSWr24UMbhTKuAN23c8FXYwgc=
+AozGIuOtbZMT0sQPiWQBKg==
+SuHQGuXO09ank9r5xjXksQ==
+AFJxLHyg/e7h3402C8e64A==
+clX/t0wgvXhNtPZHF6E10A==
+4JCEe7EnDOP+anZ4ohc7aWoP9IfpcpSF7Im4FL6wGrQ=
+M6OVODNGtoKiNjg5dF2UmYrsU4OujL1gU3fM8rrUjPOyEwuMrdNGHS2gUqak/qVtBDKWH6QMjZXHDI2Y3QiQDA==
+9mUyLA61dAny6a/3gLxCLw==
+T/k0nuBw09gGN83Km1hUPw==
+7M6FHu9QS4Mx716DMvV0kTqFBFekUQn3usOnajR13RQ=
+L4Ur0NEEmh7v0/4hoGkJPzfdigLSmbmqres46RhEprw=
+boG2V+fNvEmLMoNe2tUHMRu0FN7zNoFxSM69dCMgzNo=
+hIOOZiYIHNdjYZy4oSl+Tg==
+CoIR+MCHUglQti0Xnon/3g==
++7i7L97vUg/6mvS28TgyEQ==
+l9Heucq1fyOydrjBXym6BxUjwX1iyXHafxOWXzTiboo=
+vZRXfUM2CJ/LCBlKM1lsociBGYNGyKnq4hTO4prXVrk=
+PZ7I9qCJU2uKRnc6/cLNEw==
+8iY0mhWPBiI4C2EdE06AJg==
+73ySGYdNc607IbmCi0KsuQ==
+qD9yaIk0sauQUkuru4Wyu0WG7wtWZMXlJyrdeMTYVlycmsWF91/oGLt1tUIX9WyZvZZqRwNj8ibzTUB9AdxsH+BVipm56FZ7VI4ZeBze0X8=
+yW69B+lLJ2RTFfmuGsP8LyhpHNjnNKIpjO8xro6HBHNBbYZ+NH0C9/sXZt73/YHxqXKUTWvbMAuz6Ppwb5Z5xDeikrhi6C8pgFpz908ZZbonKnlDFWNze5V2DSpyyLHC
+zbssxbwWk/2yGbtpzb8kZX9YjUIqceuDRMB3eBZbg+v7ConaRPtmdzDer2K0k+UJkkudNz10Ghn0YlUPhATeJPcxrPLXGBgkg1NzZsRYAdc=
+A9zeFyMCCG1TQ2GHX0SP5Q==
+vL/oj8aY6nJWi9mpXXi+UUBAYwT+1QVHgvfkDCfGy+H7Z5w7rc081ZLY04K0EqBWQ65zbj/hnUgPsro+/j2PokyY34RkdjcKirK8sA7njlGmHoMc+/cdoeSkcZ3eRRbqPjTkYlj2VvJzERt478zKu2p/OC8h+ZI/P5wq+xLsE8Watv/tJdr99bKXdUE0RCQ4x/5Ngm7n1nxjM7h7mKnlowOD0OrmCb70z3nj+G3yfYB0vQwXP4kSNmwvpo5gi1AaT+5O7EGlGvYd+csLTygjDcFHJ0mvtaD2QhXm6LINY22MNT5tWHYRVrW0RplPEFYbrbon6+MXasCo7i7nFg6EEtnEt/cbV/ghjMIJ89e91OeWFyhhSJijG25jVlZYGKaj
+8pYnrqh80kx3U0z6W8GbITj+c6iOddCDlyO7m2+b49rKXxlOA0pibnM2gjjeQOEzu/61RzGF/2Ht+ASbV7R0iQ==
+X3ohgCbtgmeTlp2dTpY6o8Rt3PX8+I37X+84de9BbWLyQ60NAL/3pun38qE1tEDI
+OkChS+axHNA52FCKJCxmPphT5fJkNlyS5a4zzf4D4Bx77kOCfq27uCednzvoTUeo
+LCL4S9ZCCANF4IsG9oooh0cqDEnHcw79X6p/YsMiNSyu2myELwKT5RbQeQV3gsLT1HOulnNNv1fv5OFH4wmZKA==
+HaDrbqsp1Uf30jPVi/mSnQ==
+F/UYplnsILKqxQhe9mCSiw==
+n5QVryK0KvETncnamkpXcA==
+KdIh+61BUWX5WCsy3hi3Cw==
+J2XK2l3fcvh4rT81sHMNpkJYEFnunSmwAQk2dAHfPHA=
+aDha8zD7YNOTGtPQ01LjEDX/67sd9yPkomVSjGJPsDXYVz/xnlftOPdCiNzJyvZc
+18lyuoTyDQbfa2R2sjdFIxSE58Va+OVg7x0T07rMsT8=
+dxCxa05bspefFozoaINu6w==
+wAmhlIl09QfDv1cKyXLyrDxyRK+DdVrjh3OlV5cIzks=
+9xO5mrrX/jDq6PzK1irQyA==
+ROfiHiZ8pwdg+p3ivJbZuA==
+dCwBOSVrwAkWshNJ1LOg1w==
+pmbICRZLepK2RrIVH+TA9Q==
+eITG+2Sb6NQ0U8wV7eCpWSNBv+gofhnMa3W78hmod4E=
+XxQEOfvPCAz47gMUJhMDYQ==
+dPQpcEy2fPkLqhOr3sYAYQ==
+qtlvbKVED8R0qfqXSwgzGA==
+X43ZQCphndqBc9dSsZ0bmAeY3dayGtH6Y/rtoOUhMNI=
+sw4TTbiNqU3keF0js6XKwhVJ//E0bug/yrKPBsCQyK5mzj38c8ePKA6112CLupTs
+6XOaMH+EZV7wPpIRZBHtbT6PPn7Ssf6j4bCc7oa5C7vLArgUoAVobT4d0hj3PNIM2CaUMu6FjlxMNQ6CVmvmA6TkPBnz54tLZN6SKbXuJRtr47Fi9iOU7OTpQzNBgy+awKFYwVXuhNASKOfxxXtv3ykMcjMZ9s9fcUnxZNbgCTA=
+aozmhmzNTw9U8EKMlFmkpw==
+3tQpIOjQMqf7BhizzOY98Y8F1Ralqke7XV1gA4abx1c=
+KDyklzY99Fl5W547SAW9yK9/aqEV5G7pbIst4lOv9m0=
+jTM1HkJTN30gxf5ARPRgnoUOPyYbF0f+h2x9OU4uoOw=
+88vWGgJ4rWuOUPt9bXmLQEdZ60PcRELFa9C+Xp6HEss=
+ZHXnqQ/uxxPiHlmMoPahkBbs4Mqvl0JarE9V/E2Qu+E=
+W86yDd12D6ic7DtazBJBMw==
+As7Wu1R2xjUaQ59MOKVrpA==
+EKdApfeZaCyHmKOWvWi6Xg==
+A9Jmiq7wnCMFOvaOizEZaxd2zmvP9XLheb3enoUasIup27KPY9n7LQ91fhiYvuHM
+asGIAOuQKNQoKxJ0RG+kXg==
+oEYYHB+Uu3snwZCiXHmF8WN6c0YCxBInp7pTPZV90TU=
+xVWyvqciblOoD58ewSBn+JCmzYMBktlykP3Ybd9uguY=
+McO+qIsxkdR6MhF0GRlRI3BVX7wqNNYHrLfdBpctcsE=
+T2gcst3zx0/PVMCH7izczvuda8BzZshLA4/XaaAXD3I=
+nvWx34tzTX4Fd2/kfY7wntQHAIFj7KI97GbRda7+Vn8=
+BjVBj366aWoeH2+E9O+8jw==
+RBxFH8gggm9FhLW8h8dKaw==
+zOi4VEvYcquysqPTDPdWwQ==
+1cHs87A81zNwwbfnPZPm5g==
+Uku+i/eGNlW+YgSI8QoEI8Y6WbtMpMOOGhiU4AIGiWM=
+ofWlk0i/Hj52d2vZ0mYhB6RcajuY9fTlolUQXVjad3w=
+55lINbsIUlam/5WllnRb31Ase46PhrnVME7AbZzvOHw=
+7mM3YWEqLBIeP03YX0hbJg==
+OR3YHt/cRtV0nhKX/X6hnw==
+AjjJaecnuPciaNkJlcA7mEC9HjIf1cLaFdqnuSYZbCw=
+YTlc3W0lZ1Qxvufd9CfZdZSDQeZTqZ4L759cczS08hKVsbgm+mkVCLp0NiBPnQONfvfpeYTnkRY3vLeenoDOqw==
+dB44UqCPRPmmdHZIpCF38FZQVwUWgn5QZnPV9QEgTaWoXp/E3hgP0Top4dN7wdYz
+aWqorRYyKpgIUmDDJq2ygZX5SlTRGcHsPHIRb9NssdTG4FHDrPaz2hLbtj3BoX0G
+dk66gPfkBLYxcBkoYIivNhXA+x5kmVw/V5M+PoQc4IEr78rtKeI659qDtuocZK6dYjvP2fVKdvmwBqkk2LNOBQ==
+m9S2j/RwqrLe6wCORJnBAA==
+7y4ErNaA1XTqyJuC24k7s6HY14NymU0SacCpwqtlyFo=
+mE8LqRLal752uxdqUN04qw==
+IRY4VKnubt/eiX8z4fYHCA==
+BAILxefDZ9vaVU4HhIZakA==
+DzoUaafKBnf1mAjG5oMbihaRBhOJ2oMbahQDjqNkzS0=
+63IV3gsY2RUwHO6+5N0rAkQ+cxvPk0HVI9T1G6bAHq4=
+1YapX19KJHrdbtGQuC3SVw1F2r/QChDfhSt9DZDJXb4=
+QcgGsNrGutHfR/LvPRXuPQ==
+4Oo5VTxaSNoVLSE5plVv+Q==
+vz6kTYqJOb2YnSe9ylO5DKo195mDLXlLRn0iXSB7/vFPqh1Lvw/LHhqMHRq7Fjcs
+rUAv5gYpbxe8CEwRlknugGbvmaHfyz0OrCskkIu79GjcAcdcJ6dbJTaqC5CpfAY34I3HMQXvofzKXQHNRfz7aw==
+MRqCx/JWceuaSePt/UkyNg==
+jMO7g85mIm9A0DOSAt3lKLCD/oaPIfsTGwJy/dhCryU=
+TJ98CzXzHwRugQMqq0no9J5xwhpIMSq+zNUDRDqTSpg=
+xQeXPtSJwiPsM6yA2RIcjQ==
+TftfqfPZ9qVyAkDgfJyXsA==
+i/S1XLcSmxFB/1biq1sLFw==
+uJ7L3IgeOjWIw1LaeNEqfJ8YwuSNGX0s1wqLOZgXidpZg753ChbSfDwntEbvCQFi
+2A1f6M1JVzTuqitbc/AYnw==
+T7U4B9uyacDb26scqSzwpA==
+69pCKbYCXpz0034PO27/oTsgVl8hgFBZI8WqYZwbSi+07x/Iea1kaRArx1cBvpx7
+a1Dt8qC6G9PG3Nct1on7vE0Is7EoSZxIf5vVNhmiNDzO2oRipyPjC0IF0DewO/xMGtomR+Nl9MRhB4u103t8Er5EmqbHmGyGUeVxhD1pbKk=
+Dp6pVsgBK0MAO5CHdkSroHDYmJFlOIs/5PMzZj9ngKbCNySCKFONhWR+2owma2mQ
+nk3Q6gcNGfsBSswbQH4SeYof33xjcAUBF+rSX0dD9pP53hB2/0GWrV+oAD3QrKcD9IdVrUGOIQk3wZvfXxb4ZbnNhTYtjWDRD3YyxSEPQFdm02BSriPqfN1gvh8bpzgi
+1a/x7i5gHBoxsIgT9vBF+lSjM6HQmO5qPEv1zTdc/E41uk1OQnp/VE/RcpIfWDK/
+AGbi1jUDbqpJR5mylrTYAg==
+g96yRYa7GRk7EkI6ku4FJd1ZWoZoqnq1bTe1bCZHkabUBzbNbvzvvuebZimAfIHGOmw/SLv7q8g9V7b7wrhu0w3cf1LS2lSejYNeLUy9BcIzK8375SGhEa2ydUMCqCsFf+gGFj1O+wAx/GnkWsF43w==
+a3c9WR7Xua4Aaxxvj7He1+cQVPlmb6ompcncYlRP0GXhNux3oy4F91dYaG9sqiq5
+QA951+etGtUPRBg4xajsEA==
+OyBv670g2hsyVatd7mbQwPVR7sKOKtC0dGztDiLwk3yT7N009PNy5GYQWVInuLkduPXy6aix/YhtZrGuyPlOP27D07vaeMuLbVVdAW4YmbvBHQdpywBxjsD7EL5Dm/rS0BhaqalGdIFd4LNfYpGnhA==
+zK99qjl/j//n/8bYOYuXvWAzvMSKFNABLyScaFnzIMFBwxsSpxfP27Z5KUzpGaaI
+xoCh8ZDRChPFYpO2leFRrw==
+yVzboOE8VLGLfr3CRpGsh7AFPvI4Niav/Omg7VP3hUfXC994teyC0ppDBiHKwPW4IHTzUyXSgs2BLV2f2asBjix73rgflQybnJdV6gzHcID+xojrkB7zL6e7ErrxGNzKCRS34OikoJr5bCPdsCTNnw==
+Px9Py8Mv28Zwzqai+zoIABv14Nf6wVGboX+cL3+llQgR4CMvnyOyoExSGtsU6w3G
+A9GJhEIQf9a9iZu2P3b6hA==
+SZ3k7X4dOFSaeddZgUvMdA==
+Ln2SRrAuTbYdcCWRy684Dg==
+bV4xnoDlQiAZgocbjdTxuw==
+wvl05kPh12QmxiODiapHbw==
+A9JtVjWhv6BA3sI2zR9Lpw==
+3OAf8K5xILDLozsfbqzfRE9u1ge/pOnqCF3xbxMuIjQ=
+fmjK4eMGHWQ5msbpX7l6CKPuOscbhhHH17iWtZdVn3ruTOmkUVXpdeSQTnaImMVxZGHilbDbmgJIi7ItovCrSg==
+/gRE64V43ucViuxg45ULoHLyop9Ewezl0/sgEOYeo50=
+JeR8sgoaO6rAQcplc1dFetmdQqJklXSBwAfwDnWXNe8=
+/BuU2Tz3Ms7gmWlA/Uz+P0wjWQJc6MUnKyjjbjaJZ0sqezK/SVHADBoZLL1a7MFN/mCEuqaI0hKoDcDEMBXACw==
+ET/SRahD0XztXc9vTET95zYJpqZJ/rfcf3SwJewEou8=
+Sx8yObB/GhH2JFvAIqOOsw==
+KhaNkoKbw4/lEo6qVAC/iQhTbedHGTPa/OP6XQQFU9M=
+qYkatw4+44JyFPlFNT+F4g==
+p2ILu9oCEQKUnh/Y6HAtXA==
+KTuoeTf7Z0rWDTahwRnYSM5npcv6HM192ae2r+hC0vrt148teYgtR16N1pzg9mQX
+oU8DMYpE0oJlgatZBy8Cig==
+KnzjHuEgNE1D95a8mg2KhQ==
+sNqWKXuUEfaBZUrSlv8baQ==
+Fjv379U+5GC+hqVV1VoIUw==
+e1si0WawetyBPm8Hn5rpjA==
+BBjJhtfK9HYgKRG6+zNdSA==
+Tf0uVw2GjYvMyD7Bc92ePc5L/E6+Mz4L54b0iyL8/Ow=
+AOtw2N2bv3X8s9v0AQ03mnkgrfBEmDNgcQ4gKCgu7MxduT9F+HmJRa4pUZDA5GfgMbtOoFmIrexDgfnj3i5ppDnX9f0JTYIizdkuO9GZZ2HNQdK3sitbuLFkbuhQBsds
+Yx3YpQYBY7M7TRSmViZXVSxcaactW6QGH120KevX7mFkMfWf7yqx01s/lzlaGpuUHvCCF7Uy+AzqaTFUcWBi1vTeqs+MEqQ/LQqtsSSFvHg=
+NZg0Ufc6FiLeyOB6Hp7f3Q==
+MkGW/xG7GouEqvcBsR/6eV3FwNjQt1q5ehcw3EwiErAXEccQF9l39Wu3/+/NX+dct/e+UARtsmcXvMna/G5kPA==
+/7gbg9n9kIaYNNGwjsPHJp8MT0SUUzfFA8uoXiUUSJlInUqF1BE5ALFHGKOEEk+zTUYb4Ov2t2PDXlDHI+ROE9TaWkRupkkEskhM2170IooBCU3wueeT2ycHMcrgD96DlUfR7sAPqfs2lwUHa4fN1J3MOFB55CC2m/t7Z2G+qDE=
+sEcGXW4ZMomiSsD0otNmww==
+RMSjnyHPDRSiw1cz5v9eiA==
+34UrH7Q8REVMafOBrh3yVA==
+BI5gmgkskE5plPKS1m0TvPYbwFIVpiypIHzZUW5d7tmhAgdIKKMuyKNOsdWXA7Wdhy/GmmbrB0YrpsDokb+QhyEJWx8sgPVSZvr9fZBDGb0=
+wWiol+w17iIXHTOfiSagc8VRccyOYerXs/b8KyZ8/d4JCCGL6rWGKn7wsTBWL4UvYQteZrWF1IpZu/2SawNN0Q==
+ev6uU4ERC07xYZPAVTufCLFYw8UHLkAvV+9GlOO1qdc=
+whum2EYFVDm4XWk2Z+POPQ==
+RAl3gB6ql0RqxIejwBtbfh+r8poBK+jeI8iR2JfKf3ARdXb9d70hcc3222ae8z0X
+LltihjBTQSVxY07B5hyCRiNuBxePvCLwK5v/t5ZwCIUO+JIgOkAicvnyHcnZbbfCMUmC/pHKzOilsYe8hlJ2Wic06pnkajSOPq899qTZmgfNJNHHfJOBAI2U1VcLAL0H
+fM/wFuhDEHwWcj4b+RHlWAuCkukkrfDvLGa647BID10=
+fNl/0BYzVjHfv/AHvIKUrjU7K3aJjG7VxN49TKqVm9r1cNjR6QCwIC7SPdD7y9t/
+fhWf0VE1fLCKxu0TzWnTpXo5eCmnHx9eMOF0IDoVYu+j89nOAnMsD/J2a522o2vXBXVDSeN0IrSCuUnNseRRVQ==
+YZ/lzJ89uxPCznXYac6YurJbfJoS8BQFM5qcW8mWuJgIEJtytV6rDER6b3TWH/6/
+OswVQ2yzwxf+2uxw5xfOdvBL1oZdVf3LqWzIRqECz79lIQRCiWucVjDaR1Fju+8sCb9W/c1z9V5uypL9Mgr+9w==
+f4BRIqDDlNrhJcdemyG0ug==
+M8+rLNWVMBDQQijZTFg8Kg==
+xf2XuAGW7ac4VmrppD4Sag==
+KBkrz2ek/QjxSv/v3E968A==
+IT9B2snmskd+8QMfOfdLRMu3oQy3rNDBAG7gwCL7aZI=
+7ploKx5gN1YgeE6pxCzL/zgzPzYMa1PXab7ktj/JcHg=
+Mm4CSkSqXp0PHUqse+6Rlm/Jr3Csxml5YkyJuQC+UU8=
+Nit4E59Pp+ZXTOaRrO2BGA==
++GMP4MDGoHP0YWaTwZKBtA==
+5cI2WbwW9v6knNMUHzsVVA==
+UznyHNBKlcbANN4AyDuXTNfZfWIjTGcyyGlhHken98aMqTnaf24SGCtW0xnSUG2ZQ4vlE1KB61wHzSEUynS8oQ==
+KQ+Q68aG8pSoGhy6PvDK/kWXh8EoC5HrOFuAuTgoVCrx0OlYuSs6iNpEMJ7w9yKkd073A95stmAPJ6YHwJ6sLQ==
+q4ev2rpbzALAU3ODLT5O9TwGfA1unCmpOixPmYROZBmZ/3f7Wi3bI9Xkjf+G288h7i+Ih2c9D5ge8NmAY2wYgQ==
+r1WgynsbTRoZRGzrAhaBt1Nny6XfE+CuXIF0y6EXTRQ=
+ZgZ5hzFunMq58j1w+AKuQ9N1OiZQ3rruPf9Y4nK13sNLKejfaExEnnj0vY7NgVcwU5z2ib1shwKs077wemSUHKGMinGbb7uLvriAQnBqz5Q=
+nLJSPcE4igN+X60q12DyVkBGpeipphX1osf/g3+/HTIJkc97s3zUVaW50at0L+qN1yKytJL6oJQTqgvyx5lqrye6hA+a/+lBxn0XXpUjCns=
+qr2VUdrGX8BUw6zUfAgCCA==
+lDY3NgMThHd+ErP/tnobH5TW0CHk4BfdCsIsKDbHbLUkNEPiR/CUfo+OdCSAvK+WIrAaoHszrDwcAfEZC1JpCNPFs9Jvz8q3P5izsdYN7yY=
+O54lwq4FZ0Y+x18BQ19NiQ==
+9MWQtZEnB7rPx7Ma36THPw==
+2guRmP8zt1gejH+eZlNzEIQLyJzXjVsRZaxz0mlXwo9BE+uYHABfW08uGb5q+OLA3DSgOhnFF0OUX4tTGDhCQI50mGd45XPry1ToZNGSbBv+gpZtHnabGtibpUk6JayE
+PMgzHmjhA1Gh03MpzCqxGU1cOM51W/vNR/CxAR83sV0L7Qg26F/SLUfdY0hGIzFSOApFiS2/51ukgkr3pAv1ALJaOf4nEMJRtJwdm3qxIGc=
+pS7UITCWlSU798OIbNb3OGr1NloUXvMTai47RVOxndwU248KRViNu8H+7Y653N/oLKCwoKu+ga6PgENXuwowhJcYveLosseEZQ+GK35e3XQ=
+Xa22of9GWTRwd39Xlp+k1rYBw5F8rNFexQFzSdS9kzmStKfSddFRe2Z3iCV4A0y1jZ31RCBbmm5Z4LPQzvO+yw==
+bAq67Nc1KxWS8kHiIUVzCsl9sapA/xIYtrwjOtEALvM8YkIG3s+GPWUCGsKSStSkRdZDbJV7tsO5kHthSwnLwA==
+GmFxMr6Rs/9XOEwGDjhyCximMCf+UpHE3/DDv9dMxvmOFaN8NHmsvoHqoheXpeRkVmkn37PAzoOnOC4Eqj9Y0A==
+jskgXDCo6HhfebeNk/iUdw==
+NPEN1Dpbpm1RhJ1H8zcabw==
+z3wbpVQ3X5jZREnx0RXcVQ==
+ee6LOTWn1Ta57SLsetNQfg==
+t06WlCJeiYh4ZnOaeZFNuHhx2m/vu74Mo4RK9yE5dlvBNW8Y6kQo596AXIQLFoLDRTGHUMPBmjEjvP2EUNxK6Q==
+WwatMjS0DCEJ0gFIn2rapOFTlcW+rzl3d1ctSr8bE0XiXW5FO82ILwzaZkkCb5nNENz6J1dKwyFtlzchgCa3KQ==
+lsZdR6X77BugaRcye6wobmMM4Iy6x6dx5GBWyINNhtyc4lHT5OlgtnGhlDiw7YmlKnBAyP2xWhgfVHbRXXty0w==
+fr9OQ48fM4Fse76xUk5m5R14XybCdQyNnl6zM1XyIFM=
+RRIIXueFer+hpsjFs20FdfF6FOoxRY40blcWpt5NmZVFMjS9p/xzxCn1Y4avjOx7IBCgW6Le6xhVQAWk87ktxg==
+cd/prsLcDPW/bJih6xKXMA==
+bxRND0W4042mowvTqzaOSMH+4Yo+ZUOYoVAmxwL09lF3JlzCNiB6bttJiBx9V0tQSdG9kMRL957omB2IKXHp7t+NdbMOMO/18Z56A6uOHTc=
+/LzwKXaPTi5Q3FIwGyJSX/h78HJ2PoCEINxyd/A5o6hnflqeP3OGdoxCc/RmdbOnq+YX4QJ9hJierEq0J3BQbg==
+tQ4m50mPktX172Mi86AYCI9amPH0Rcbtu4gQJwZRqqg=
+BoJQ5FqBFPy/oJxs2wW3md0w+JYFWH/7WsHuUxrFoQOk/ww/d6udcW5/6ViJnDiOz/wXGKaaOaKmaylhJeHx8A==
+BvSScrf6e063/N8WutRHhA==
+2BvN+RNrFg5DXEOqBaQGRQ==
+Ztf1O9UwM8VW9Y1bRVLzWA==
+oIr4nmswo0ui23gUMFKtZQ==
+jUQ8GvgQt8OyQTKcfkMORn8qRxTjeZRY3o9+2z3TBGSgF63sp/EsiCUGRc+Knd2P
+Lv+W20SIE3Eypa/BoaMaD7OmltzmbV1HUHVOTvodhds=
+iHTjpGKnaiRY+GdsS0n+r46X1gswzS6ogheIDqmSMu8=
+HPKMUjgFwWCZ8VHeOTzKQ2sKrx3K3KrHT77+Te9IcYo=
+qIFgOIKHbdE5pqP8l+v1yn9kit6+rYNgAUAzcUGLoj0=
+3yYkLKGB0+jcRcmKHMAXvpCPSxS8j0a732reuYBuuzA=
+hXynoLf7KPnEHDoZxHVqowJBzfpCE2KZ5AIhcLy8U0g=
+k1zJum2w4p1rHbpj3swSnw==
+DN1RA31KgGoMmb4wHTcv6g==
+cyVXT7iZScUw+4nZTcU1xg==
+zNFCdu8Q7qghmcGXNI3fmBGPwGRmqzeZZcNBlMFjsMk=
+9WiBEPUGDH4tfr6r3DO+PcqUmPzpUO+VJeVw5MspUg4=
+DfR9C6afqiYtmT5RfXxABxiAKTUOA+oefe3jPQN20x8=
+E3GHhKlqN3ponIvxCBJbMHwEv7uTHzhJkSu8FTRekkSqKiPX5Wsh5xCYFyYieAJE
+UGDnj0NGg4Z8JlNq7TOVNEL5d5IxlzkRGaoywXfqOC8=
+vrPSQ7IqAuoW4YDWmB5VkA==
+pdMDqQDKsUHUrx97BwpA/g==
+UxKrq6EJyjWeqcm85MONN/qJ3oaGbvCOLf3DVaTChMc=
+MMLcZk4vgnLmWEuenzFpaveDjQ1qQ+rR9iwmyhI9wkw=
+3oPz8GSsiM3YS2zTAdOH4uVBBiG2+32FvmkYb/lugRQ=
+oeFaGfBjwR/IJLieUJRaOZ8N7rjUhdde0e1HWujL2Fk=
+jWgZ4YrUNJI1veS1RL9+Pgowh9jXEzghGquOjhmOMoE=
+XL+ehF6kYjDeiH0t2pQ31dXxFGVLDiKsigU7tWVDiHg=
+KU4HkLc7fU6kIPtTwcGocw==
+4JM/7F/2evnOkxMxbUVwkA==
+I4dBb8aFNipXm/+Ku8fLzw==
+U29QMz5RH8fuS6tZqEfSelmvoCKtAwe4DW21PH13Zqk=
+GYWRhH4K63h1SiDcBSitoFuaQcILpoRSaMcXj/6leWw=
+xcZKOTae5xBNNKGlVuffAxw2qjcJ+YwXU4OQNd7jk7S7/hXUUYxk9Nyw/q0ceZnc
+3hSIANVvfDBdmelfWJ5znaEo5Hk1SV1h4vKA7uKdPbE=
+jalTegIxlHhxE7X4CxjHaA==
+pNvw08/KnFWJfyO9arH84g==
+IME/MnUbcaAi/R1PIOrayl7YeRZKw2CGu7nDqTlfkubEQlQrumQHHDl+MRxNIJuX
+VMMZQ/4hAREiTfLmmqBVozrqpA18D9E0FtNspqw+5mU=
+tQfuTATMEUtDzqYWnKIEk+4pvp789Bxfls4/ekuh46JL+faEmlBJvkF/JJblg7tL
+RxEdoqOUA5jDZx857SK2/UnvlOkIvvoKMnCHRH4W96ev8Ur1Tl+h1ZtqyTZIFJRi
+ryEOENK7sM2m8Y0wweyCFQ==
+NpXMt8TuXw/cPO9nQotwrw==
+OBS2nCrSfATDPuLaYzhtBw==
+Y199h39aPfcQjA15fHKWCQ==
+iWO4f+Hfof9joAY5l3iaYg==
+gPvUT0GlyY1PcRqum5bvw/1aOPscP+U0O0G44IcCCx4voVgg1jSWknO+4L0eNCDPvNPJ9fH7P32i+Ol+hAUKlZ95/wVUAxNu9iurrZb98RI=
+F4xy+1w/iMpGi+SjDwcTwKAOWFRQTXKikIgnrH17hhvDOn+ywMriq7h9/HGWunqO
+J7sBk46ybWwLS2+K0+P6HZAZ+6cvxJs0bqS5QRuXZMJig+fgTiYIgGzrBVYe0KjE
+Wy030bF5N89ax48/Hl5Wjg==
+tFPQ78mtbb9sLPrHzRDamv+lsdP3fx3hiiNAPHcycS5p00r9EIcu1yKIr4ddf1pt
+mtWziD2kl3T4TFaGB/TEjMqsJ8XQt0wBKF0q/f2DpuI=
+boze7ZKhbzvaSjvBlOeDrdzq5naw/ImO8mZ9NyDJqBI=
+0XTotF7hdLsaepSG7dyqVQl+mcXUK+e1JK5T2J+G74s=
+7pa8F16e1j70inh6PTgdLA==
+N+9Ms33S8xwhWVYcZHuKfw==
+pCsXS6UyF8S40hce5xdvYg==
+OrpZLof1sK5mp7reZoRHKEIhK9IJHFXMAmLoi9oNmlrcAET+GJEw6XlGWuk+pu15
+74/3XESH91RCUp5Gh3Oru1zizNl8FeMt/Wwlk0bRm2Y=
+3mRO4Gd76li51r8kh/6oIZtiP4AnHv3fsuj8du5PdoYS5CuRiCJe/VMairU544ry
+3Vrcdntg0yt1/vGdMUGIaQ==
+3vW9r1+no29dPdZPXoSFvi/VHkDU596n5vnkoECYihgoVLJJAmuFoWwsKHGe/HHN
+uOWZIYRLux+lneh+ji4McQ==
+Tg4lZgrGXxS2iyUnIsDQqg==
+EQUwm7DPiOioq/WrLqkIQA==
+d17HsVbc1IDnYdhYSmBwfxnwv9rS+8fEvUlRiIqB5TNLDShiNR7bxtLUx79wWwvaKJqj3GvePYnLkv6jRqCSp131ulBKvESBaQ5L7cDbQxU=
+XP49ZBNePggVt3xZLJSdo1HlSbqK1JvqVZbLhc9JrJnady90nzd/LOoOXbh5sZYQ
+MR1iI4iFHvGpGRxYQA0VvA==
+L4o35QNuTh5+5TF4+s+D1qT6T8muJUp+wAosIeiE/Hkhqufa70GR4P5x4gMIfMDx
+K/8ihAILJvrVWvkTGctQWIcgSEZlg0skxEfGUIvT+/g=
+9bHOX/tTnHvwmYzop3x2cA==
+VJTz+4XEHZuBk2y3mpO0xhRwf+RUG+V4xGolxGFF12mFbAZwS7trA+iu2RyHzrcAxkNm+yUuQOSkORW1CTetvc3AWiEsSZk6sbmggnCSIyo=
+hQ1ywoOZHS+dLmPDzzxaBJJopupdU5demIc+qSCUKKg=
+YXUW1SX9gmBEInyemYKLfA==
+6ZH5DQlRVaywU3kWN0gIF4On8avpzg3BN0800Q2H9TqdQK5HoK3IFtOMoP5DKGP/iKop0HvXIL8FXow9Hqxqd9A+19e4sTAsEpAk7YFYb4s=
+eIheeWO7EoP2TpXEJO3NCEcS5XheTKzbFcCq5Q358Tg=
+xtH4aOOBq7QKAu6W++14oty6oRXQAOxvsaU4EC4nOZQeZ8a5AYlG/dvDBM45bVF7nSvCaSUuO/eDqb5jneO53G+aaVJY0hCp0Uw6IfHoQvc=
+z0UVtc4exobLbXKBM8tqMw==
++6AJ7xUCxqCVAJaOxsXWuA==
+XGj+7WRfVmUYdtYkIH5SbUkNmjeFkFJY1v9Ao/uAoqkhO02qFehUA5B2NwQ3rDcqo9K+u/3aBYZPLcTWRnCQ6vBhwUta7gy3ITobA8VTwUs=
+d3ujRtSfOToOQMw8QO3R1wGMgNhTVEaidB2Fdt+C5zw=
+YQlpRy1HT8Eel/tHkBozVAnXfsl792cfn69rgcSL0EfM65fOE636PIgiatsy2CxH
+CEdc0ykJLufg4yeT2XEWRz0v+3safol7YRg3CaaxWqKWLlKU6X8NGwQdfHejt5iB
+s3G7nJXkxGRWZkZ2oKzheMXT1sdlDPXtWuX7tivvrkmennOFYo+moIQVSutQxI+0S7lIDZv9p3fSCdV4jWQ3kdj+2jgrvBFJN2BtM7Ei1TOwPtpl8J3L8QDbh4K19oFxzMwa8DKenlkMqz0G4sDWbgoDjAOm/ldip70D4HDSGuM=
+YUxG4wneUqJi47Fyyj6tBmuSFHsLbp3vjQy7vGvrbT+/aCFf7bHIeJixgjwiJn86MI6II8da/6nLucRgKYmj4kpmOv2OXAD0Yvh2YB/NmHNuyyn7h5Bv3bK8k7jXXZyW
+Y7fTitQaYRsblaXJlZ6JoQ==
+3OzGnGqLkTxUAOoT5eyhIituMBayHvtqE7MVa13aAZFbbpP2kaXLx8QL6X4duj4+hxKuDf3GyzXShRLOJuWQ5xUnu81As0vp1mlhSx3xcYhErqvI5LJqUFr6zctfi4aQ
+2+hcArf1KXHNZrowKPgiJQ==
+JfB6fe+cjNyPqXFWMK7+3g==
+DzakGKkcDC/b407ztlVtMB6QWqXhOeVElWUlYjwEcR603J0yc29DE1Cxvn2aBQgz
+3WDEidVmwsx7lczLrVysz/xBl1QiDZdq8tljpNo3/AomSekYUSDBRboxkhfGIvMJ
+fe8H8f6m/yUBS2mOYAZG8/Ip6yWe7JcvUU4NaOKJOZ4iCIFodHc2XAO63JllKtdtXquY+8uDGZXTv0N38Q+oi9DhVfQc7qgg/pB3VUXD+o+118uDPcMQ1D0VP3b+168nuprSmrwqdgVW7L+qVezF1A==
+8nWhCOnrg/VifBLvAZdgEA==
+EKsgqe9pz3d7qtrkS9djNr9d8qBlG1LKeG8BfJqB97PKnGLBTItJFBwTVJNIUjEqeiXfpwEbrTmgs5bagF99mmlXOcI6QKpdYqQnQKdd36iUkPE4vJNrO/m2LNB8E3BZ
+uKUXezthpkg4amlaVYZhLg==
+0ah2xvNQlE0mgFRSh7xVsw==
+FqEU5A14qKWkMCTeEYR3Zg==
+Sf7nOCBYoXXrGdmlOJ42XUiRDZRnsOPlETCGl047yZsc2AN30h6X8ZIwnV2cU1lp
++p1Lbjcdi+4gtAZzCEEcrfYo809pY6A2cSYurCnyHCV7a3vyqssTgF6xU/xjbjYRf6BJNr1XQnvyHwKLBpGlK1AzxhMD+TncFob0iJRJZ0k=
+cHb01Fe/PHUCZXRWWV6qEA==
+iNEGFd8Hrj6L6V6KVpmHbg==
+B+KaOsmpHB6f+LlKUsb21lFGekndVYBFuNmvjnD+Nus7TCvmRcjTeglNABxRF20CSEhfsbYDixJRnFhbACEN2arqwlOVkwNSsXl3oUwztTB9p7Jlb3293CJVO7ggPQw6
+m8ec0SqMImXGzpMjJBYzMIF/3i66F0GpXAfsY4KiQExNomHj9yIj0s4fLRrrLIjqAegW+9ncGw1Ga+mybprnSqxYi7KVVWxVT968RjflwcfGFpGAuOlMllQtLqs6Pm+yzYgcUy+Ohw/wzLtqAOQqGA==
+UFA0azYIhywTPYDvH3fwow==
++gVmzthLfRo366rTAbex1g==
+if+GzAa0K5rEGzIVveaF+Q==
+I6RCoLWN7WIGPtHIyPJn5v7TYK1cVW9q/6np3XEkvPAFIXAzFAGgL7Ct35QmlSWBgYh30SEi3nucusJ3FZrq5886QrqzlwBQ4l+Vd5pNksyb0VzPLvogiyy66EeEA1Oubd3MrXLv0HvxouilUmOlHjBbwtTL91DHDZ7tKgjtO7o=
+8De36i42w0UkWVQU/WT6Q7pfQVy5oXP7KBzCcLCC7l0=
+lfNqrirrxIU+9DjjTDM6TcFrODCC3yTs1JoEpR1eLvYFUZRBLuJ871pqCig4q1hY1LeWq7seiP26zBWZbLFRvgn8830zHxXqUy+tV7G8UApLplgKc/rz7SFQp4xfM03/
+7/+yt5Ho2v7A6zz2ffFVrw==
+UDBN78o46GwPTSKcI6nprA==
+f6WdqsL9Q7lCX3MS+3dCSJTM4vpza7gBAgPD4I/IFTU=
+nxAU2v7YO+Ly57yDiw0m/gERn7dsrWv0M3L4+jH3k9K1XjjDlGuT978/fLkgMxymjKx/k6s6K0tWRrmOtA6YJA==
+r6J9DS8byCoiuFjEnx2/Q7KqqZ3VobmgaX0c2JvIyfuW2xRBaiML7AL5GpdIaAdEbXrYjW8nGUo9u1bkkclTww==
+W1VFs92DevQwkN+x/u3kxo3n255TqFC6/lJfqsEtdtvlcnVFfm1D8IY6MTOCMxxBgZcxKDMxkSQopMtz3agkW/YDGRHqwGgmkVrDOh2gJ23Jaw0iecwVQCiOruQ0niG7EJrjcg+qCLMNT/YQo6HYkr96Vgk4AVm3fVp41falWIA=
+x9/r0n7LPkoo/8TljN334Q==
+0K31Si+gZ9swSPdhx49vQQ==
+HEKhGkHhtSnFTEqYSZ9ivg==
+QWEPe6jpCRTDTpVtikd4uwCqmiuZZVtYGbetuOullEc=
+jT+N0L/oyub1d7A+wEWc3CC7Cs3cj/Z3Cn4KQ0Y7002dpSc4alhYle9/7TSiaYf0
+1fmao98kFcWxVVgTtaxO6zwt2fBssp9MmDcFEBIonjY=
+ceCVjpdqcXtamDnAjaRW/g==
+8zNhhbVRd5h3yqtkq93HaTCHtlXVyxvWFyXu5mrWYre9JhnOtdVEm+KiPsrbHXRX
+NB+Sg/Hq4ciOoxOcYyTquiBdzFyAjuQ7wiMaQ3fPcXFJ0oy49h3n5jlLtnYf8dshrFWFMdBNwOI3/v5PffYtZkAsWjOI+tZokkBNdsgZNC0=
+7qbOvWTn0PMAg9V4pH0fbQ==
+yak6Ks69whlFVJbi4/KV00zS2nwjmK++92tIvZ+1reyndF0wltp8fFYo1juzOzH87QZDyvUZxN14ceJVvpdeBg==
+TNBcys7cH4EGZEURtT4/vqmgu9aucqLYI9IA3PDFy32+PESdfJhj8ycUj0F+b3Vy
+DW+4XbW01I1bwcQo9+sR2dhBlHoUK90aSBy4cogyaHYw8l+qMreFUEh9WXQt45PdZRgDpjr3u9TvpapJI7WdcvK2KA4Kfvb7DJJmVIHKjm0=
+Q3GPFOtIoA/TflgwrV+9TA==
+/+2QBSwGIlELgROcNUvn21Yqn4VrczNUvamPCeQoYXAQFg1SNUYPAoOxMst21V2ko+ooI5wq4+bzQD7oX1TsoboFhez+VfnP3POd0zmecJE=
+XzeDiqE/gPabsKKYJjZb0w==
+wQyprvJV8JNj7JfUuw+DlA==
+f8bdNorlt5ONce+TKuvlUQ==
+3SN6R/ilMABvDuw7ONiHinKnwxlhZiWf3gQikxa0TpiamgigcVBNWv/9mE2lD2xi
+MHseAVZXQexxBbW22V0p7clSk+kT7Wq9C0P4ifiZ7OUXjxnTtn2M/MBtVKMebgB8
+xKNf5LBb1MHM91t5+sZcSHXtDysZzsAvlh3nhOo+5T1VRk6inDjEOhGG8G2gmVVgd13Hcslx4UC+sYU1Ves9jg==
+S3pBlqtP7Skq7giJJDPZF3MUO0477oQQ+4dY0QWNXL0LijEZOu0BfJvOgyv9qa31S2P3UmfTX43N+WCdjBNvc/Ee9RlFzQbwCLsSjw+LTpK/9d6+uZUhKBMTXUnNEI0UQ9KFtlGMuga7IN0zp/2aDw==
+6UZNArXGr4V/nCDW2sLRnQ==
+ezkjQexYvFT35LrPBCbHpR60bD46TKsueJMy+QmqUZjQhVT9AOt8hc0z//stwsuztzUNA65OvO19e4z3uHeACaPnB4R/XfuZ02mJ+YCOocdznB6rzUt/d0zkTwWfSrG2wsXy6vswiYBIJFmOa0GQFA==
+xq4raGs4dp31KucbPtwuOQ==
+ATN6IzsZqfjKnV9+Sk+2Mg==
+c0z7GWksbmn9p7IgcyRGKf6seDyCB81yr6hToRqj5+PxscpMxfmxHc/ldOYC5PJTiGbRGZ1iAxV869mCQpHYMQKmoJNebM4UbADNNlAWUKs=
+kAaUwXVAS1F41pDLfEbMIA==
+5jjNH2HiRzCiXsBWIRUiVQ==
+zQV2p4RmrpAjxICgQ+GvFg==
+SDchyxp61/b4Ej4cTjwfwpRNYwqKNQqY3tijmb3ZkKK949efAyvNETELYUiN8eaMBWpkw88eOwuO1Nj8PlpvZg==
+n8da1QRsEkWCI0JZcPxTJo3YW6Vknp/cUG4W02FTHm/pn3JKnlXTetCttcCjln3GJeBptqOO/w4RUPTPt/gIDGvQWJpgW2fblJHbYZ2Ps+M=
+KRoym8i/QXBUevaBx5AvD4hZE0/yJa+Lw6xykANayVwRGu1RnDSRPZlbtQZUTLnPtI1Z8CeR500y1AzDPUvVRg==
+dxnro8XJh5lpeRjWTdkxEfDR1Qv0JnupvguoFdrcTmD4IbjHhUDlmmRSaCIDy4sCa4GcNgTnq6K7cRyjX5h0XQ==
+zcPf4jjoyEKN3QWgzKPm7naeJ2nJHnzjl3czU1hLhTWFMzs3OaLt+ZVez4zvx6rb2Bz334W/+g9zOyQb2BB4EpruQ9Ym1xTzYtqhuRy7H//8mJRf+3+Wix2ICa+1rCtG
+g2SyCbiCXlE4ReESZvFaWg==
+mJgXtTcoxsgqUKAPoW57O6N7fcvrTz0wW+G7cjqVOYZtG/aQFZn1i4LnjbmMxFES2X488PKFyo9VKRw3/o/XM4DAa4c8MttNCHs6l0WPii9nN94xYVcY+Q5YMl4H08Hz
+eVLZJfCu36eCp4NtN7J6Rw==
+ur3/BrdeqBATpiMnQ1zT0Q==
+KSOjK6B3qYtPPC7RCHs7vjujdFHcFeVYB8lrZneOZMekPoFYptjaqqirpMQp4xmv/mqv+edEuBUmVoaKqBiPiQ==
+wmwqSQkQvC3VGFJRHMONcMsaRXpGsKWabMlvNFA+24z8iIxSkXh2r/9GPK1X69hgEwZ+poS7DHdOp2cnX05c1kPhys7ppfMxK6okx8fgkMPsQWH8IUx0bryjamzn4Umq
+osMgRWti3e3zTtKAPCkXsw==
+V9qrfKcjUFt++8LC5G1jgFIZYJ0BkarqguK/1bPJqW8240gbqYm2SKSfmujxjyDCIyNx2c9OaAzSard4mooG2Oz6kI8NF7wXTVZGKzUJnWSvfGo52UU+IULnWiB6/Q6g
+701eenCw2ujLW/cTbjlKhg==
+ts0nkQLwqY3cFCFVNIp6gQ==
+LIhYkKCbIubUGsMDo9Zqzw==
+13B6d3iKPrduiR4dob+F9U43Clc7l6T91VK7L+qfkaeY0AHhpsgqGCR27bTNaETP
++XhngxivfmppRvCrHPjMJScl+e9h5Vmx65Wz0IeU0Ww=
+PzRfjY4vOun7pKcMZZS+idRhNG5HTr4YjOTPRZCRnQX6Fj0vtsbzgWkC6cJ7mSwZga5FWBxKXsf00aKNN2slXA==
+VumeI6iUqx9EvPqB3rQieSTc0yZVnKhot9RNk5AglACLFmZBdJ223HUIHKGR/POvIzlreWDSaufpt6d1pzJrFEHxPj50xBjWj6pAWZR7bkqo5HhSVwKp7VIEfpQfbxVvNwrzUTWrFF6FRUheSj79lv4qvLDPxy+amhPa6Lgi3OY=
+ynkr94fBQaK3vuTnqanUfEO2YVp8pnvOhOS3+0MNN4vWgLaHfQiGQMPTgY/PW5yqTD3LlHPikkw9U7+wlU+KhQ==
+MNPQp+AOkiyIlquuWGXZV+r/TaxTPRwIVj7FjA26p85r4RrxzEHaJcL09ecYcwpW1KyieeGEiotkSzPxFMbWbDS3TqsU2mmfd0aYZtbpX7yzKMdzMPzs809gmGf1QWEUgF9u2j/INr7/xuPhD7NNTg==
+/8iqS0zi+LE69j0acc0cRUmM3m3TAaqx4/N3k4CiGN2jaa5vOD6ultU+WM1UkcJ5UbXGtvVGZOUbmEgHPaYA9fRxMCQZpljhlSB6AdrgjXOz3TuPT7L4gzbQtfqATxQ6pbVetjIPwgHC75TZuafkMKMvfr4RGpXQdfJlA0okeJbRz5l9dXwMBHIFUdycbRHCa82uOLD1/HxPUfglN2x/EN9CDK3eaI62gdaCu89tA8vvGdg0NqQtuAmKDcCy8Gyq
+MfhXkuDISq2g3h0eQLHFUw==
+XGVAm5HjJhBY0BM+rxP51zbUoKFaiM8jEHug/+NwpGIBFr0XETxMe1/j06mLJpcMaMUh1xIg+/4L2BaaFt85wA==
+Vx9kIY9rzZqmhcQUBygIRP80HvO/KBpEssS6ISpD32aYOTiuSqfAjJnc32T8lV88U/nSVTLhexJtfzrtIyjj+PLoPwfIapburgDdOjVcdOLCudNbCPCdwFD8oqek6m3n
+2kLhuGcTHjMRQIlVB5pB2g==
+1VrR2IqymyYPgeeQ9B0nmw==
+aeDDDWMH95n77tdZRKRfNGzx4l8uKUlZRGPmWCUSTzBb2meBddliw1kbNFggazHM+/esty9hmBDYegiytQTkqw==
+mSoEuld9cR7YxeItnTo/5mNhs5ER5ZTk+y0mnBj3Qdpa1hI0w/a6Q/oFWUruCG+obW5LxeKIDEDTlmNMZI1YYGoUUMK81sSKqcuSgBm1qdQhiQgtwc/QLekAFgSYdRLocHUX1CpW4FEovCtv2Gn8L3skexWJHkBzVswnRSGMyswdSwlhBggANNgQBaO415c5
+65MXu4o3lx+NB2Nq2ZcDYw==
+NzedrBsfyJuUKaLswIbl29bam3/xnyjjCrHvd+ENW1dLzbE/aZUDk97nfItwNc4A0Pp5zabQjeOLR2hQ+oPAWl1ax1kxpES4l9CSZw3qQHCoQqe5O+HlD682omA/Gz6Uqhqr09TYOWX2Yq7pITnLptGQMXysdRkfeuaQA/bA4aqiXHcW0CLfeDg8SrdpsvEE
+fh5iEFjEuM1HGDC3KDk9wA==
+X/ubAn43l/tXOdPwVz5TZQ==
+zoiaKUBkod/Mxda66hRRDZG/EnAt05oRFik2nXLihUHdxVqTuOpj7LOZiuXwQbW7Nu9hIdBE0YhScCCZI8hZIg==
+FRU0UGA41KKaY8hByT8wYIlEofaVrVq3sLUz+IRPn9NAhObTKwr12Q8a3PpTy4rGwAjBdl5odU4ilJAlLS5TWA==
+ePTufVMfL7fXlZmfzMBZLg==
+9AcuedBi04PkjXOXcm/rSmEinyVPKJ0YazpG/xtAwj9Fe+ygS0eyKn0sNjzSRsni6g1V1KJaLPb7phCG/XUJ7dfUjoen8E/pwAQAeBNyInomebOqi//XiTM0Lk1qwr4G
+mDfWbt02IvhcnmHZL/Nry0/NksEKZucWqIj1upLFxZzW5IslCbsQjMW+FEu8UG0QDYLRt77NvSxob5qyGQ9j8w==
+5yty6mnCNX+IiyRVhzcSrqxrVmCjeNzIZ3OtrmpQuiRDSZddZhsIF1iPDFIjGd7mFV7Q+qO6bP3iuXGoDIHXwDFJZww0yfoc4td7S6FLgPkzKlYnNWxzFm2MFZmCx6dvqkoRDf30C6scWGdvuLAIhA0115/IEGB3CEKJdTcwduq9bP6eBcDGAaer62NRnWOo
+U1Ls3V/cKoGAWIdi1LMaAg==
+NXJu5tS8FKhWv+272SrjiusctN1hXsfGndei1njpzuWkvu/s7/+NLF9EGvKH576smi8uTofz1qr2Ko0QK4RtPNSEzjH6w7/zRZgYx7jxVIXytudD8Ckd3b2EP221XTeuasA/nJTd5pESIHTfpn78vQ==
+rN9tkYBDN0SZBXhisrBPAA==
+RMKUxqfDU8eQyy6gzY09SbxytUEXDlPlwXZEcc3bdSF1JPm5kOE6uwGBJvsZN4gHYmDzeEcFfoZeqEV388FkDQ==
+on3GWjibKo7IHrsOSj0/elDCNYQptWk8NVQIiEadxANG2axrJHPSjJ9ZQQ3XLFjyyf8gRYOvUoVC4c7pSlyJTA==
+7PK/q7Nq6JI+fWPBDvMs4SM/XpGpbQ45kaxS86+MzVDRfu2Bh8ub/msJSUuJjKpMkxydlbfd1DwSezFGZ9k4m+qcCCk35MYuFAmy+quja0ytAiotoqBOBe9EQlCxu15vfW1GAxLPS1jpbS4wWIrKqcoPmQFbjzXfnyChAEmgV5sSybQ7a/8FfH1wlSMoz9kjARzaecZWtzr7HqFI1TQ4Sg==
+wY07SLi18W6KTSzFMZg76Q==
+q5+kpqpzHyQJsupR6Zu4mZ13WoTVsATdqg/jv6+fFPgBL1CSThsr5xbLvURX5hN/g8puCltba5HIag7OLtn3O9nfCIJCSKP/ERKSwK2HyLjqvwYShhkag1xkAde1DKGT/3G7S/StE58C3eix1N6gJg27vocuVkN6vGGU9bVsrpAcri4TnZ5BhC0QORdEYzcIpIUWiEZ5aeS8a6/Ro0YBBC2cHs4rVCqECNbsIh15VsVXoGAjsT6xz6YRVCJ4rKa8Dmew+jfMcbFeLl7XB2CKmQ==
+VEWTFI1r73RzLW84r/LhVK1D/1iH152bNaoFPJ7B+40GeqtMYqH+Zk50HTn/ojMh4/mnz3W5uIZ/chMtDFsanw==
+7xOiW7a3ROpX4WVsblkPEBjQldqhXtgmjjlkUUQJAEnjG60xl+XouMx37Bj4ZRSIr8L01J7XFkyQy4HfDpFJ61yTOnlShBWcCgVy5YzR+3+Yd9er915Kb9hDo45gbLIWCPzabbujP59c4yM8H+tu73l/70B6xdlTDc1y0rCe1GSoYqukdGyJ2k75L3tT+X7qLjhoRqZnRP6bsVrnGiDHPQ==
+/4LpJ3zjt53oCcIKWDl62BR7VT9whCzv6u/BPdRpRUhoeuFhs1xZ2sEYeL4CLJutjc1NgWpq9WK5/6dNxboXIUHV9PitewkKnZhy4OJtY6m/ycPYm6g4A9UNEneVGyuAvlCE+pR/Hf6azGbEyd9bDsUVehvw1Ur52POMTGh+RcqcdDjSdy4CfTn3FuN8R9HK3Q309uiFFaeXJka2/y6ZHct/BBWFKuSRY7v/n5wLh5LLf73fw9fQP4TXwCyX7CXV
+UQlY3fAbss+i30o08h8ryVaqN7bbeuXZwx365h9llLJ+U0Sp4iDTNQQMHTLYqarwmESWXGcKTAWYgYGtSpPWgiVdLYGa0z3olb3Z9ZfST+gq0m6MVCRJaYQBxYL9tTys/Y33brMeg9u5haks2dbSCTKB6iHDEID0KmhOe5qZGZWZd8UXgO9GpYRMIztQBE41A+nsehKx06KxDlPCFpIbyw==
+lyzykRvyVm/4yj0q5HKZ2g==
+nngn+6ayAAfFAD9z737pXb2+Wdn2Hp9k5C02gVOKgyhFgsYRGI8FIG6jAZzlMRLnHGhAkAwrhL4r4mxlPwz9vzD6sEv3/PrGPrlmxUkuTuLUDiAFuBypk9X/vvVoPr6qWvJJSTAJFQvlvOa1ba6xVg==
+zAuvcRDTNnpAXaeYyr1Znw==
+z08HTiw8PmGAfkDARo33VQ==
+GMUAkQ0/x/dPa8fNQabRsA==
+zyUv6z3yUPTBEFtNlGDu2Q==
+xuvmwDlceAE4NgsT0hjqbA==
+VIF+H1dSO9+33ybY/vXNZX/q8Ccvuep69yGQCRh1y4slmn/3jCI/iYtwBojIZtjs1JzkzREeqFMzBKfJ2RljeW8JjA/tZ/Ze97ULxrJ4SWe1NJM0wHQ12XU7pD8gzUY0
+T+n0WWkHZjvInR14uQaaz9hX5HiKGJAgYC0t6oHGekc=
+X7ibqiZRlntvyi6Dhi+B5tOEid2kFm7h+P6U/h7rwFNp/o23AUd6IcTp2xn62pmbg/l0qS4BulfRrtP6UB3OxT0XQGUjma7+/bc0MIaEG2B7JXuTtKzBvFqkANq2Iddm+2DCKls5VSlMbngM3jRyt5uTDao3MKyPFZFTfpfSh7c=
+Eb9YNAYST593UzqA6PwNSw==
+DV4PWHK5W936oQ5/aEM4pw==
+TI3R4gB07IkXn6Enou7eUqnz0kMVQLj9PoMMJ1pe6Ks=
+Iyr0id3mL+ia41RGfsM/fI29XnKVV4IE3OU40FV2OixanRN/pjPuoe8BUx3pylsERIK5Vefb90ufFYEDzbx4QDmYXxoJhQ4CoFuFCVCdjoybBW++eMHG91UUi90XFv8dKyg0zBo7SlF3WMKjEcm00A==
+F1OXmDFGHGu9azTI2BDzZA==
+KZbO4p9nzNGAhCNm2Vy6aQ==
+09MB0DTMaMmnT8rOhpJqv4a3RhF3wOYVP0rB6OcFoOQ=
+l/kdOBzWr65HvuuNFxz0WXXJVLYtg1bTe5HSlnc5NQ7R5ejrbWNagvdIrYBRqk3y
+hpwlhkTZQSnviSRPlR0L3NTGBgv2Wp5XYY8l0kXH+88NhqSPgc4mb0GIpL0L4U6p0xLvdEPrbTZrcYEMxunSQQ==
+yydjahGPoyCrPU0MDjmO3owBnVpcpZ4t2UHxF2RwKNo=
+frIZ/HPhznBkvQ8z1PwSgSdKMLIPnds/O5NpPpcH1rUiT8+S1bIFFmDnGCu8Qhhx
+gI5KYLMfuLCD7R7oxpF+7d1juXnAASmPeIVNnfhmGkXVOVtZwof75kxqTyKrTzxexugKuViv3soOkRJHUzaJ6PVjngRiIunhLl23vzN3DCKjzUG1StuiSdj0rTIHfziu
+uDCmdSzQYBZudxvh4Bseft25SqQJldav36cPHUU0zWlL5PmXtwU57VEAoCS1B0kgxdLg4KU4Xnf19XapjfZvKJziLtnPt/lWLF7ohx6bALM=
+G22X6VS/MbMGL4cPWellcJyq9TVnek4dNbb79SgPkjq5cAWv72y0JcNT0PQ7T5BBVV4Ct88hSfVS9SUAhhT7ML/HIQzuSEtEP5eATZN32Yg=
+xXXOeIlet1aaLHPPBTdwQQ==
+knw1X95kPi4Atiw9YPhpRw==
+RAxzRf/xH6xoGlGHfMaA+g==
+09s2uEwlXHVM3UaAX8y42w==
+9CjD3xCCy97IIVtUZr+79Q==
+pbvuelA7K3N3SJeytSxf5bwAyM5Dfe6uPczvM/80uBI=
+MneH1w1qqHflCV48Bh5Jbw==
+OJBZfRaHowBqpn63iEv6dw==
+fFbmBQr3y3XyJIqU6j5xRfzetZW5uIa4UxqBWMHExW1kESADxiu63INkjoAf5+jZ9GoaKEWQrcMAuOOyW6JfIG+DnFnuUvc+6lAqR0SiVlnyQvAtsijtGKJe9B5JiRyWPXLGz4PJxcc7pPcALYkcDE9T3nE2frGdiGIFdZqrx2g=
+mEO4UGm2rJzABaQJVPhiaj+cqP+z/8vpxLkbzuO02OrfdNp9hP+hBKD8xv/nneoqPMLZza9mpbmCj7mCpR3OCA==
+mjA+dUS/Vcig0ksnEhtQzQ==
+z6uoG5eFNXMoHM6ebzi7sImB1PL5meEnBHKcaDmtM2q1VsOwfIHEHZZppYb2eIjTFI35tRe/zav1RnBwt6Vh9OcG7r3+WKvRUqNmFsR93zY=
+MZ0KQWv6QWCrWpoATgm73liGUQCeyLEOps8AS+6hw0S2Kogcx6dZh6ZVfUyTvTMEzNH+Hei41nE+QZ8mogCmj+3WmDyHv4jyf1LMxsAkM6FqEy3L51rc+ll60hU3rpNN
+E8fX0jurq2bMe18J9lNCKcaJZBwbTr0UMiRsyv6m1vwiHucUS68d9RG0Qa+MLF/uaW0DB/zMJcmZqwnmI0jqvre3qVZgyH917vEOVboUN98=
+u0Fp/RZ0+hdZHs4ijfkDjwork1EW+vMgMv+7h7D6Tgg=
+I9O2zQred8G4seTZ2Jyz0yvmc6lvGrJMMJmkA/H9nnYsKA+T6APy5UU4wvMM+iI/jDjKVYZTX34FWBpVJv8QPN22aEwEnYSmn7tAw2fOy+UWUq3KCYzdsdi0fGeLOuyhIWXiO7waYmH38BnZ4gX+QLCad8a7vHEvla+Xyy0IEDfddE+cmvZmZj7GeUltKFeB7YjzosiUwPaxXcWZBpLNLg==
+tRgITjLr5OtPsBbHZ7146grONd18N6EclajVNQDG3nM=
+Ygv+jiwkYrfTX+2PErvY+HFt8ZKxirppfjTojrEQw8g=
+Ov6FlwAUeK6YYxTxAGyeC8ik9VsjqJr5KKmhHOq/RJ/mJzeIIY8roPmgUvVpIsOa3sDZhEGnIy4RyTHYkrsulVaPz8w92zKBQ3A/zHu45a6aczwCpKAjllHsUx8TJGQRP5dVrMjiptFXv/QLdmlGnoX8gTr7yvxJdYkwZO/E4pdWpxMkbNoa5Vp47euAiiH2
+EJLGSeT8qB9zfuMteNQ4LWE0lx4ImXD+A3gvOGfzSQXO7BzBR+ikqz53ly6TYkRc
+2Qvmckss/vRpFTbPCOhStwINUyyNJlPFoEyMc13W1ZogUzyanlvgtN5Bm0ev6UD4
+WUnLh6AolIAhtNVCziX5x397rB9l/zKlq20HqjwjqKVNtePHyqw9wy1443U2usJxfGqJAf55+TrdXmCSMWlEvA==
+FaFyRgnE+Pk/dUonzq54gw==
+ew4ixvoO1RqgQc+MfLl3jLayCRpDIbL80i+yYRa8OEM=
+Wv/oCmpfBrfWrD9YLmUYMQ==
+KSA//iuQtg5FlTbAMqCKtCeqm8rV5zsUHq0dQBFoWJ8=
+VuPkD4pQK9d/SMO6ZpBf0cPIYoFvpGUuTKN5+6w6znIOFxHRDCfWVBe6A+rdG76g
+Vb7g4Zd02JqLm9i/z7dLxvv3dYmry/acdtcnMg9kJRIFL+epISQb56hLEkf5m1GJ
+DcxgEhk9+t5LQYRMS7tBJiUqJWCNYsx435TkkGkSXuOuylKDVo7jorcn9GuJ2bv+
+uo/zKTOJN2JlquYpizAnE+H17VnRVxAXNdDzTvWfaF0=
+psOO73r6g6+HpnanKJ2jXA==
+V2N/cfGZBNFgvzyBiiH+PY+OXkXxIT6E5XQl8iYa6BM=
+1WPenzNQhnNFnc9eHgQyPCNs6AxGlOEAgpZ2QVNYKXw=
+O2KlgsuUW6N5SKLS/CkBOg==
+zR0rXLHACRuAS75N9u6A9KnlpUv7CU126WUFtMgeCq0=
+qgFmnWDTK7q/omxzTWP5I0co+tBlF8jJrujy8kUGsaEUOudpHqIvL/STBh1qVQYrZjJTyy674I02tUMo1uCsAEZHkf31oixFwJHasuVOP6ErDfCxYxBRzD8e65syf6Q/tc1JbWYhW+WQJZ2revbWeAaeLbyBuplQo8q90G+XJf5HCVxNXewhfzeZiR3ApWV5
+HQwu6/kbxb+GaG7hqUreMva472jWdr5Lrrwq9ckZuNxEdnZeVKRErdvJQFOXPFcp
+UYtjG1JN7hgjsbCCcVGndIVKSV7DeAV3SrutfYK9jcg=
+hcwsNMU1jEQNgcdBXeRfaYAEFsIFGmyed2QxEiF1DSbi9xnOiuK4k+azHVmdxOGZeFXIvtVvyKCvIu8Yy4L3ZXMMEqM9hQ/qKc/NyWGktS1NDTlecKrEYbkqpYAuCjCP2Xy+eu9wDBR4OPUzbcSXq7cRUFZSsmZq9MEqEaJGnKFT1j2dQui1az2oUH5VFSbuTNZEF39BeXW4hNzsRS+x4CMVA/MvJxAdx4zb9mVYCb0Fb2lP6u7y2r2zUETbKgLs
+NHmH3ZKv6p2iPJaWPV+G15FEu6nq7AgX/pVyXO/MSN+qBonuMtWC4QMBpP0pBV/2
+jZ9eRLxm7AdPgUqYABfEKltBYJ1SkzypanYasp+MM9I=
++XcVMSBfYTpT5HRBUvYJqQ==
+fHx7ka6EP/4Nedtyl1zxOw==
+zWDuVtPerRstCENFIZkLhhgdriQiI68G9olC8n9aYa8=
+zOoBUV9n2GYM1bnxgpa/Wg==
+Z5Ljl+pE3GBRN2KATYZ3NI//mrYPUXljmlX4zxMIrwON38D5NmP4REJre9YIcure5XUR2k6YYhw78u4cIlYn97x/VuWH0h3M3L+Bdgk1uSZivZB4qk++kRLoHAiVOMvuIzfqhYE+AufXhLwLzP9XfCdgQNDl7jjfxbhxQsJz3E3akaAEWP1StBy16he1ini9
+DNZOYmUnPQhjHLtwbEtTBs5uxi6CAXPOuEpiYHLTZCmiokRcO5Cwdq1mIx6m3F8X
+5EEr8aqgba+0mGimm5sm5lNGMxazFM9NFo4/dt/Q2n0urcZFsozc4xts/EJ2v0l2EGpXd9Lqi5FCnUeCNOdBqw==
+HyFzHr+BwcYaBZRavGRF4+5cNyPX8Vp1EPYYZHWTeJLa9gKH+8/y0f1XjzjtRoca
+uWJRoMCmqelgw92agG5W+otIVybAXUhTJghQ1uoflok=
+mrnfxWUmzxmc4nLpifmeCMQkKhRdmnTYihrlaLhDm6jHpn92uiFfRaIK+qeirhqJqEd5vrzfP4yBwxpuj0iZIgDfdisUWLqMajd/7QhlG669VWL0uDsMoYEX69AhisHfziaRGcSuPvbPyZv/EpRieA==
+6Ocq16KLYcjKWJnUqdmIxxfj34XHO1oXzjnHfH39BU94rNiXT0pm+zfBL9HGhmf5
+L0FE5tClGsDBdEPQjGXaVWDsKjhgqg+RpxwG0X/DSW8=
+5Gs0MnWXeMfVMHb+W7/6iddaE+EVR6A4FaA2XxSrh6GS/speygv0kcY/StmURfG6
+N+f424fnkAuxM/tlvnI8bZTdDEKoyYtuZUrAiLWkuYeN1O8F4TbUo7o5w9bNbv0O
+CvJV0GXaJPw7QM5cV+U/KwAoDum0wsJHWZuifKu1xiuRgHjXzUwkNA3X+/p/v2BoirMI1lsuTDFea3Y6SUuc+w==
+gipYPqAWhcy/nVhk6SFkXNciyZo7fbUEb1bY+vODaE0=
+Eps8dpAqmQumybEY8j4nAw==
+u/sXDav7RTkYX77XGRUK0yO2F56GMKX0MZMGm8ePLpk=
+L5HvqAoGfNIjq8Qs/s4jmj58V87aYtQlE7T1SgKZCaU=
+E+WtRcQWNvgaCQ379T4mrA==
+R1v78CqoBWWn6EMKD/EMcpqMDUlImImvhflZagevqnwjzpfGJmcjiKm9NsYfCoPZ
+Z9xZIbsHR3p9Rkv/ig8k++Sd/YWIctCvPLvTE0abM7ihGpSuzwCtADDSnnelBx3S
+f4OH5s74HLUeYb+PKcFwDmDKpPzQbTz3JT1L6RmIFGQyDnjc2HT577J+ic5Giv4u
+MA9jOtF/Q/fjHadAS0h6PjqCA1yJ/eOeGaTcsw4VG9U=
+DTogtLW/F6uvqdPok72d9Q==
+KFfGSd11KlwyaOp8qoBuciE8K+BopCAquswq7CU8Eco=
+fRq+lLZUnD61TPZY6/a2NKuUG4zGSqoVwPXcig3P1Hs=
+CdlPQjObfiotFlY1uTkmoQ==
+NL+U4IuLXDQX3yUIrXBUIFVVV7alZxrTkEDk/vYjUF0=
+8ngfwrZvGXLf9h8M0ubhdiEne3Of/fY7icMYmK0FZ27uAGc2IGEJS10NCtKJqFZrzPJxokk+zcsSDnDb13PnNDaIR6oHcupUFn44KNKS1zupr+uyaBtWZ3sFLlcxEDbS5Fkci2BdafyliKAsbnT+IyNMUWRw3FgoTSJTqHXVzPX9SwaRGZ5ead/uDPXfL5MBJoy5ORxLXP68XgBu1ra73g==
+GXnsgHHnAl8uuVQLQFvW3btBfCesJIGLy8kl4UU/x+U=
+nBGS3PrKzh4rn59+iSI592wKbV/UeGGRJziZFzcZkR4=
+Upwv3hduFzri4+F7uYNdjHYQ9Uqit/TLom+blFrJVYKht3YEyVdMAJlm5bpXfL6n42Hw49XgIP/YBAYInqt/aOUjJQm7THFahcAi49C/rWRn/2Bi6OgnVI4PfY7DkvOr9TCJP7z9pnXL3iqbdl7FqtFKt1RyUJf6dNdC7RBKJJUHZGSeAd5a5zGyqXH8edgce+aaElzQ9Vb9bDkqihzJEQhbXayLuezze+wWVFQaaXMoJmrEZGgk0bqdYGLLA5AQ
+edqGfo90UgDoeI7FJBYB4Xgm96ZHUaIwoYQAsBxIlDI=
+miYj305cbTbgToqBNK8UXfnR3Z6oo10L470DJBvraD4=
+RmxAa5URSu/7Lt0XrwG2XCjNuA9Mg0Jh3FJFyQNx7DzMOqMugVsXHgAftikHGiZ8PVkx2j+51/nx++nkjI0gGR5Ly0oDUY78cNB4lZUUmONHmHMHsNB7Ov6UXyDvFGFH3YP0fJZ33hmyR7dEHRpLRW8VHZS/GsRnbek6Dj2eT+a9bxXvzE7q5LK3WRnrI+Dw
+ySIPENaEwYiDJYc00KTIJiE0G0Y1TznKoiPrXqWwokIdTjg7kuyBUkKhJMdbFHG/ycNb+Dllvi9g8gfkwhue786GXva4fRBqEN8V9lnOhuk=
+u+eIOo+Zwy2UV104lUNl8BiRhgrEsUgjOgHSYGNXcMo=
+S+fQG5tvHgHxAE6NyogToxMgvAXBw2bGDuFzmz8xHNlWLzYMGG/RcxaV/fDoopXft33raFKxi3jMSutmVd0EtOVU9Um/3ZrXgXsIBz6YvatvWwhA1/4OVoIzN4yS0oBl3NahhtTSkSQIZ+n69kto1TGhk1av6aMy4/SnIzwc3KOtIDDnvnuBSQoYWDg0F9nt
+Zz22gTgzTSFmNpri8ChJFpmycgpoLCscMSfhXdfrXJU0pj44DGwN8tA90dF7IEN+
+UIj8+JpxdM8C+U+BL+cJg+UM3YE9VuoOEFCb+R9D2mo=
+oIQ58Q7DMLhQzTKrhMKy7fVJwWq0zILN21zV1BGKJuRZVrsTqGES3W+5dDE9MoTMUA1RgsdrFUHmewiLo8DifzxfOiEaBYw0f3B1EmppI0aLIvnAyZgjBeMqiG8SXHtruV7AYi0GhfjwzLmVtdwlmbvSD2S4szDUtBjRUNRDr8xovsOtScC4/9eTl1F3EGR08ov0OMl358vTZ8X916Oxfy/ha5XVEKjL786O/Oc3Kwc6YiyV8REU/Iees86xHwRH
+xACkUxmevnSRZ4EdvqQKpp8o7ppSljqeGutaTfnUERS8qxMjVZK7I6Xcw1mjgftO
+wOyK8VHVOjsQ02tGpmDRDuub545OYC8G5u4qcvUB950=
+12B1urapUZEC0fqoRsQKxA==
+7J178qISo1wyfMrRKChTXg==
+ws+0/75z93tHrPh0+9EQKw==
+pGmJAvejYBYC++atUehs6g==
+w80hOZbA87KZBow53w2ekl/wJLosJ+/mQtn56eVn7qE0jAtDycR4NPbJubqFo/Mf
+Vp06FkSwdZYekjDTPpBMej0VFa7vK8tM3lGcd9MOnR8=
+/r908aMQszWRYvOD3BiobA==
+9n7Ttdsintav747zabJKjovxkMfijoJGx4CWOXPdBvs38TzCeD67GU414o9X2wUOQYDaQdDuWNmUpzS6+AtOrbgUQZk5+8GXvB2Xtj0KAY8ws4FspUbxaNy1tdnvOvr41YQfhaCTb3b6Tr36xyPqpA==
++/HbmyO5se93aBBcpkoIZD4Ma+LcYQikgrkJ0d62qfcC7KI9IymvkcI+k2n4ox39
+7VyPnMEQndQLItMVAXwC4Q==
+fMuXgBJBLvM0PkIg3eBx2g==
+Dq2LJk1q2tBJ5lOkMHxkJA==
+nGc+cKl9SwfCXXoLAnwJlA==
+lpHO0LsZ3I8cEEASO1cqcA==
+V/xcjO/i5g0eM3VyHFp+/A==
+y1K05+Km3Vm9COcmja2JOAoSiHDjYB15Xj0wNpsvomVJCOMHNiRROAvA2o1lXHlw
+V0WQW7r0893cUMP2aC89XpGKrU1TpMcnTFzjVPNLcEs=
+ofuhlHdMaFchD08IFi+BGw==
+0QsFqy69p+yI1l8899+Ypg==
+enMZqB2BTsk7jRBiuR7LAdX7FbcXgr5tj8bdT2fHt6hBNb3jU92tNz1wUlTbCErw
++ElcIwzq5dm8xbBPxGKIrFGu5yZ/VVFn0yzet5XhfkNlurp/rmCMOcaqaHXkcGx9
+0l9PJb/uygvtrpWlkyyoxw==
+3bLaflbisaR43f7ywnwDPXgo9NN1lte2IULYjCgf4agNxwLWuy93cYorbm4a4d6b
+6DTooonIvxIAHTvyXpO1DXMpkLqeHhNa3D3ioRGU2QA=
+WFjvD/2Whhf4sXbiRd/LeA==
+8EH081zo4d/LfwGwOD/4+A==
+EHTJECbmVJvMeAHwIznyAGW0JyZVRj3Laj50yvenPZ4=
+Q/M+iV3vt6BxRRCIopPD+Q==
+Ma45YIthhE3jTCIhutXgYezwL6XMiuh00ZDGLboZyUhh1jKYhUdzFr0i9PfRKHABSeedH6NbKEXephWZrAthcg==
+NGtRvRbTNi7GIA02Ytw5fJ6buF/i9mgy67psxd2e+kDtD0QLp6bb4onuWzDLb4sldWn2YTqZcfesN9POXazd9g==
+dNVqXrXTFgLKFtFBC9J5fMc0whq194Z1S+rhmZ408wYxisjA77eBTVf9+8Y02Fe5rfZXJfj9RmzQrcbjxaFbug==
+9+9kTN7DAGsrRKjfgSWbFLMr9KTO+fflpTEyHubpTMwbi23k5tlh311yBfAGuIBl
+pfdiaATF8zPEU4d3nAsmpzGN0JHmC8+dI3WTvx0GgTs=
+MaEYQpzL9ZWZu5wQCc9MojtQu4LsgM7Ubphl9Uv43QA=
+EEflwamAVmdE8aDlIXMHjKrI3aCnOVY0Gcwgnaf4rbw=
+C7r1aiyPGv4hzXMbBfgjucKIp6XdjFOwK8GDHBZ6VyY=
+G4vYFoWkoFCOxZSAJ3m98w==
+2DA8AWXiDWgDzAYxdwlzzaI0n5sm9Q5sGOCXNocyc2hmjC3qYFoRi3MiKQMLbI9sqDGbuT0Jcekkkj6pj6dftQ==
+4e3i/nDuaTmveJLWAYMBGjAyjFeQFoOgxLftFN7nF3k=
+9TCisoeMoMCteKEtBEvewKguVO1Jn/6RM3gopQP/Yeg=
+U7sYThH/5BdBwG3qshwwJR7SLYsKKT2h0iVJYD0Plg8=
+K6p4pLr7KBsv+AW7UrSne7jLeH0OGfHzsRCAhwRlnuc=
+A0U0387W3UOP22/w89DKyrlyusqOYXStj63TUPrPr/g=
+F+/lUhOiUV5H1xgIbUOP5rh3pzgKSMKDlAIRAXGH1vE=
+CwC8HiavL2pHX8+Er5Dozw==
+VLRsA09RLQ9bHqZnvpvZIMy94aOdyrxq9ZEDJPQ5o62XuErW6KFScW8p+yuWO6r0UVpFZ7lnDNvbWH6X2RN0tQ==
++sJtgrOiG66+jfxyyFduVron4rkfPhrZb36DrjEKUh8=
+QVbOt59nPpGQP/IGbe9jT+tzLiMtx6dPJboJTuIpZ44=
+Z2N5ckXIYzDanfA2hZAK2A==
+Q3px46sB8xf30rpwEvBXniNVbe/dqxx0rXJ0AxDNuClV83cr6efvV/glL72miCel
+XbDqFbrfGAA9+882rxz0Zg==
+GyouRIrHRUz5QhpBmX90J3A5aJfYUl2LMUJ+TpPb/Es=
+QSGu8FYH5LR4pQw3E6e4CkZYHp9tG/rYTuDCDfvv+x8=
+JSMPli/bVNePlzptSzz85opHOzRcsBwLufBk+pPNzvILV4LsVBlZAuerfYvucbGs
+r/lXwzyCBLxxDpMdxO1EjKApZjlJ6PbmxtQ81mf7NUI=
+2wZr/bm5BU3bCrr3KfNoNw==
+I/vy1VYvl5EflphE0uO9BQ==
+KizpMDmB4Q4tIJZ6CbnRGeWAOHjp0iMm8VRrm8Ex2gKzBT9Z/CjRG9qqENgeId8Jk+GE3NQqflh/kRVmLS/vbL1A4mFaERdzPU+oEQNNowU=
+XZcOPn/y46Pueu2z2DzOXj30GphBeUOVtoDuFZzokEOulvWGMjIugiAr4zl1nZvHkOwMnx195F9nN7yt77UhmIIha16otX86T47mFS31XUrkmnfRTdmVyK4/M3Og5LOR
+mRhd1hsHOo09D3EkXXaRkWcQdkxns0kqdxs8i6Pp538ApppiTlAu5HANYJeqP4SK7+YZ/fOzSaAbwiN16otupkUDRmwvByqRvun4YRfGjSXGwPpF16DAerIlSRtVtazW
+GUbll+BI0nJA155inK7R2NSwGHRE3qaKLc08+LCddQ1CFcw09k9P/zqWHnvU3DkkuAlSez3Y97moko7ImaANqKUv42DuaD0xaJ2tu2G2YphQ2aLwwTHDKqvmnvugQf83
+FMYjgyiisPHEfjxNu3w/m5SaRD9BoC+RGtFpJe1nkg+Li8evmwEaxKwWJ6ptIQaAzBK4+8Q//N8uigFJUCkgXNfHJ6fe2cXqRrJQeveAX4W8/VguipdNxwiXaHRIPDAzHkzWb1pHxg8ICh/UTWBLdQ==
+bW13w2/cZEMQ2zNKj38aUZZ8btAhQm3914OAqlnl9NisDT+HAP1UhOPpDi+NOt0rmtPXp6LLsrh1xDH5C0i9QWsJWgxitgmpM+QTJmqdUW8jkod0Aa5V40YSxIBfKLMjm8FApgvpfYQazMDgdCdaaA==
+BORoSUdyxlx3IQAQXThlsA==
+zII+qc+4FEbSaYRFKklcL+9CxM+PP538Ho/VO2am607b6YXLDRELEHTIohY+DCvSVRURj0KHqK03Ud1ZSB/yWA==
+IGDUw9o7o0Nsz9NhbiCUGgFSYsU9ByvI7tWARge2vww=
+thZFP443xF7pYFaCL5gqHDNfQ+zUzU8MeRA2HeFPBHE=
+GELJKV4SP3SgvEmIUnrQ4lrsyOcCrhyWEIPUCTSeg74=
+mWFoyVI0OZqN9UitcRK7IcSHvBnoZHA7Q+K/sJ7vdVU+b7MHkWpw0y4Wk0QlkadW
+0zlG9P1wWhKdSa1+o8x0/Q==
+SyrIK0zt19Ioa0ffpWFa8Q==
+75koARI8osaCS5EcEO1EOl9TmHPDVYO4aKhQaJgGc8Bye5egBeU2yZ/aa+c3PVw87W0HsA1lzxIHXxHsjLi04w==
+dHwoEVq5Dst5sEAUowULpEYWW+hIlZE4jssu77WiC6M=
+GhOeDAlYSyuWXCARD8MiyHZ5HlBzBu+X6aXrfhOnweYQ3kupzyPWeiymczvwi5KMpbFHn/r4htlTgruIoBtYmA==
+i/H1IHsonEtfJiSvJMZBc131FDKxIywVwkhHYssit8PsurXGs4uDyResvSDMhJXF
+miRqIppXcutSyn/5MZmA7eBvMQYE/lAhEIJYh8YsYoE=
+8g5LYQfLzgA8PrEu6zpkMQ==
+AHbI+a+rDBY8FxcxqvnO35AWAgvH/b9AGy5pl/YZAa0nGNLLovcr7DYYscrDl/cyJknoxRDzmFp46xin8d4HHA==
+qU2tZvdqkRCRg8GZazVxehvOI2qQTWeQWJ7AnZtI690=
+S7x/1P9SGme2YyBrvmSSWw5CdQNtJfAUD88/j5rG+/b0P9WeHhj9SCvnLy3te0HM
+z0e8UAhXlIOqstDpmsRlFodWHMVCqFrcpKPkBsQWPSY=
+nwp3rjADsPn+2BIIk+xGTQ==
+QvZiGh1nZZ8NZ4T8mR9Zng==
+8JnyzMiBvrEVAbacdAZnNEaLybLb5PwS9EYL5IvNha8P67qbVKOgnnMVYVvRhlFA
+Z+kk18D24AuxuF9yDiXSAS13m1o2uSY+ZoGksAdMAkp3txA6vmMhA/cc5urkCav1
+Y3U8epOBhAJm1astnPUDNQ==
+1PIooJMaxXselkPwdf2MGDvAUvPQp9vgkIR0kCQjdDM=
+l3T5cLsQ/9gNFMqdR1Ty3ByxR3+3gdTer7180SCPXyeZP6i3wMrFoxt56YUFau00
+S/dv+A0SZN0lDP8mmE7YqQ==
+QkrVcI85tnKi/4txXqmcAg==
+Ldb+Kp1rBfeKlrPvsZAtMkMYkeW2anMIvZ7Pn8r0cWw=
+tVOIAlQRg3t2Dt7fj434c8M9LOwFIBezxO1LX9WOxi0=
+Yv2bTnDx02F44iPVp9WccQ==
+jZR7V4t6C2GwuKcMwhG+xw==
+yFP5mJtDjOYhPT07qxEUfjbfaN+GvYM2RddNlMyk59U=
+y9lqowNlpi4IGpRKT2HrjTR1Mo8k+SgZoMb0Kmj1spc=
+gbSoFDaO61GVZO30jZSvmw==
+rCFSWqTEyjTddhovw/ocCA==
+hJnXy+KpYzKcYyLIUhWYddqD9HEvnUJDZY+T5ZyPfuw=
+QapWTlDkyqyqVugewEFHar62qA3rMee8RJiCj25ay2o=
+SpkHIQ+kjjFtRXr4cJaa+A==
+ljZabXJVmTHkgruOvLyjAQ==
+k7sIqAoRi2EQFVzxxrk+eaz4y7o+GY+G/EmsduAWpSQ=
+vst5HgWiMfXRE7S/jZxQBaRAWJCOwmxl/1UGBoYaqmk=
+xmxJLEPC6kJcj1s1rvUB1w==
+TCme1pZOf0RAx/sudiXGeA==
+2JlO9kX2z8WyY0xXoI3oZU9Cu5l9SZlbXNgtca5ifL4=
+0B+49Vk/8N/JMYHbBebmiyoaB8e7yhpJYVrjgLdInZA=
+r1NYtaESzq+zk9TYHjkXYg==
+PA1yDkMiySEZQ5X+PtgYiA==
+WZFesWbCe3JQxikWV2bTSTYooPVXi1aLahbBP6nvj60=
+YnfWnkJPuM2X1+etLtGl2u7VrzhYtX3xbS8FmuGCwYc=
+ygafv2KnQCDrrIQ+aRA0rw==
+1EmsJ/RL3lUTvbPwo58SfA==
+ua5chjw6P3FltwVlLH1UjBT8NxlzxD0rIyOL/2SDLc94wCGBqCSDdJ7chjDTjs8d/o1lLLFox1vsqEEIylPI+Q==
+aFU6m7TjXt7HPWj6zH91qLqWX4r7Mxq2dDAD8I9uSx3CdN3v6cXTE9Md4RezS96r
+vOIFbzMdcgK+a1DQ71q7kdCn6wy3KnuhIIsJ1DrkRhSEHdzWNFHsK3IR53tQgyB0
+W+l8eNPbYYA9DBwe0G5zz15eFJQgw+vKVuJ5MCgF1xA=
+V6QVJlVoKTND+RmDhLqJZy9jRvP062cZaUl6dFyUerQ5vB1ChJX8K1KJvxUjbl6h
+I0f4LedkICHUW0ulA6S73Q==
+Hqs1psfqdhf7dFVbplXgOw==
+pBoSCeF2hxNv2pyAmiJEZA==
+Jdo7Rqm9KuArJzht5Agp7w==
+IXKbw1v72Raztxesaw2+8w8cpVe9XXLGT+bHGNGCvoM=
+lETGAZRvxZSU3v13ogMZsFkV0ckbPBVpFzkXxnnYE8AXHWKJDZh7otlupPcP/iAL
+X/FzrQUj0nqrpUJDeJkAxg==
+7j4dHrj7aEPoESr37PDz6w==
+j0d53oVdyDYJH/+vwuH7RWtqb2uhxIy/+eCx2iJG6zk=
+v+EyipTuo4AnQqr4pWy9E/mj+JXS1kC+gwF1MYo48oX0jzt3Q+XR5lo/dA9HObmv
+1Y82X7X8woqNtCKBokcJbg==
+J/0M8bmqivrKcVNQi3tCHZqKzZHJvdujIbb8T5QydQQ=
+mYBCxmKWVDefP+aCiPnHk1gMLv7AELWL6RNJAL8yyonJWPl3QSZKMW8W7xkxL9AFPR+2iXO0UE2vI81HitCuOA5y0C+0MlPXd+OaeLmRYcU=
+gRQSnDSiw+7oXsVXjsaVSrWyrDfov2RITh3Kx5Bxq4b2neHUKWKVcMzBup+Q8/G0C67RIgTDVnvaRwYrAmwXzjq6O4NVTYzwZCB+/pAG4e4=
+CUF7qtPcnTQsMxumCN+h9yAlSC2xN3is5EAa762jFyUJJyTl+SVeqo4XbrJnJtcp9jla76HgdQkigIHa932z6K1JalOYpMbeMEnFl1V8aps=
+AEapwnvQXK6f1kc4CrbCqgm+TS6x3IftCRAULQEX/t09R9/Z6RHMXO82HaJOu2C/cJoZ4C8hVphjgtjLNiHiig==
+nav45HdP7b9JsEfE1iENNJJS4wV4DQUTgFdk+Q0oaqdQH7zElgvNcxEBaZDUe8vsin9emSGFHcfcF+ZhQj/fMQlJwjopBVXOj6wKmmHmaU4=
+m1+ZqdlzTKKjQXL2Yir+8KQtQK09VBXzfpU895ausi283HPQ5PCbs78+IQfxnJ5A
+/Db/nYWWQxsFKUqi/h97xXaVSUHwgEsYq1turVV3X8TSHmT6aEPbfCwoG1ghxRec
+KsoSIX383veWpGiEaTJn+kIf4nYNl4m053jic7NxkCVCUKXD0HU+cqsbSABWzVJg
+xBLNaYdylSk/cYjgEnF0VII75V3FiEp/x7lNadQ9hqzkAEFWMXMDNk6Joc2YmMoc
+JDL/EgamuQWyKFj8UCey0SSu+FM/zOFe1+mCnUIBIRsjASbHAL5JiR3YgI9Fw2Rr
+B0vD8mz9cVaZblgF0WcrGQJUlrN8ZhVLQtEaC44y/LhrFT4AtuPxdTwbtQZazsvnJkGLZOvJK4WgliousFFiuw==
+cGmc9JkqOuRgaOmEvccnW6taizl6bdjfNCRYLThxXeAeIf/Dt4AvvE4+5DQwFMfw
+EjeDnB2OBI1FSNLUvc7HbQ==
+f2PAfVkMQ2NP/807HehDrg==
+7npKT4Fk5W6NhK82Jpqoo4yl75R7odsZzR9a4ZHW20Q=
+z9pSTcK2KBQcPCpV6DejZFlp832cQnDcSuPDIqTsYdYRaTuwah+tw+UBb9DoB+4S
+foD4k5e9GGDcR0JVZ3HYzHByHoQkeejc4OVxaKwg6i6wIaKGnwJpwq/oFZj1CTSD
+GwivBTA7IO8ibla0dxORI2YJcUztMDuo7cxjPGzr6kA=
+En1VCyPqCpewVy8Km2YbE80Zi8aaQX3aRT03MXTuZLqRyah1sDh2AD0YVlpRW5BeruSMBZENhGF/mIvPX7tbwpkmS1kRGPOqiAor0d9V20s=
+scY3/dCk/8AhWkYXw12+/xw5rwWMUYi60Dd9sZLf+G0=
+w0T8/cHk2TUZM2eaDRx9Es5OWnvfnu9tPaZe0eOeXm69DiYtC3mh+f4/g/ZU4hA0
+6J1CElwjBvXCYyPN1Yz7FFOI/B3m/Yz8hzrSCVdoyGe1Jf0EtEwKg8jzcq0vD23S
+8bHkdRsPZwgE/9vgeTzd2zACLJMVISC4jy012z8nqXw=
+4AAWs4msvCk+CFXdRprFWM1ujlWJSCzYBJgMvjl4v5P2EIsh+TkUrBnRn+///r6AEs7N/Jef249+CB3dwSxBayhCxnK1QiGWTFbBJIhB+wo=
+NAvG+T7MaV8PebPKpeBGMX/78lWqILgMp/gO4t4BtTM=
+nk3czK/01PbNHAQD2SPQDSYX60WKTNxobyRkKVToVv3h9CdKAw0KuNI+DxMWx7Ya9l8MLbsJj/5MYVqq59IneA==
+6iHUwt8TItxAMeEBg028/1r9De6jnmJYS9BAB5I2/rtEvR9/R45O6fWOpPIi0Tzw
+71Cfqw1YR204oSKmVt8ebU2OvOgNsd7Rd2fpVfyWsmg=
+GTJrW69xtWpvEV/bBNNaUrOf4P+PAkiGNMLHufWT8mgKPn6gOTihAo4Zb8t6x6abEoQAEWb+q05j3x2q3hq6q4zpo13POs6JBL/TVmSYJpA=
+HNIQgzf5tQBLqxf3KkiLG+Xt1Md4AjHfjADbwILC4DA=
+p6Bfhc9D3JwWXvqJsNzVYGNo5wENEj3pgjo+DEnBlXbo4GjaoSu+8uvsMfYSYWxV
+2BXy3YZcCAQKOGBgDRxWUwKS0siAjC0JYeka7eddj0uwga5bTH/WNmQYb6wkkylP
+5O2C/s151gwoPmkOwKf+9SbnkdO2Pdvy8IgKLNVHSRoZsD3+CyTt53bCqBFtA7q4
+KN8haZXzBgSmLPGUfi+f+X/lNzj297uRuZZgeGtDPmHDzM7fl9R4MyZ2684AUk1h3npCJogsyKZzgneTMKZk5s4iqvdnuIXYx5DG3XZ3DgE=
+FmBtHLFd6k8O+mXgloOP/7XMDmlV3sKhxeG50puozeEpamDVOayLIs49XPg/D0yLdgIeWn5kyne9o72zkWw7iA==
+fh/V5ljasPY2+S+v0FM8NCzbMBItKsTtP+wZLyE0k2+mpE7/yfYCdr600iAeygjmA7G8u8ns32V3CXgnTzkki5D8K9A3HnZOEtG2sSmqKA4=
+scND+pTLaM5JBBSBrdpscn7FcOX75vv+E037hIVCEgYqPKV9uljNd+lldS3klQ9KJ/vKY+BJ5VPhwfFPon+Zkg==
+2CoRmd+wG5aEd7y6+6L1JhIqyRRf0dd+evKljG6BAUs=
+GnXkkRDwP/VLdA7XMVk6bMcjyacSmOX74/UQbMATmLLWbo+A+x/jd/lju/Vlbnkg
+p2VLp8J3lq2K6ldeLLbNoKQezUUdjY2Vd/M9XkUnuBE=
+alNHJM/LRLOrmTpv+f6/vBCabk25wuA6ZratdD7ykAM=
+WqirH7bs+ze4T/l4nY0NbjdPpKV0N3yRPaSEn59dxoUe3/7IB3BJEYQULutq+YFr
+tYgQa7hqXS/7/PS/Jv/ALWeOlzmdc1/Lmt+p2GX1koyUbKBDPNIXu7WSayrNbh6ewKTDP9rFvjsd3jRuezVL7dl+sLXdMbG9JHA9+lXFQjE=
+Y2eGvFUAFD86Sr7FY3UKgneRS9oL/lqd1t6h+TeiENc=
+sBcNjSxwsQv7D7VURTuCFXkGtaafjklRempb/t79PAptkJmOwiiChlE/t0oilaOU
+YCO5ttT+5sMQgrrPhXfhLQ==
+KCHyu+6Evh9ebjRaCQ4vcw==
+lY8TmVGgEIiC5jcinMMrNA==
+KQaIoBNjdsatZ+hGveO7vDUZtRY+rRiBKOdtvpPzpJo=
+E0pPF4J11dWP/eq2z2vbIg==
+Uekv6hMW0R6QjdznmtuCcg==
+vVn6oJeYVjyvVa/NNdA8YrVaHu5P5TbhpaQskVMCzMk=
+uvifccAIKnWlImbg/bou1J3Kj24TMv8Gurmejj+cne4=
+Tn37HoNUg4pEcH0HLHDZLA==

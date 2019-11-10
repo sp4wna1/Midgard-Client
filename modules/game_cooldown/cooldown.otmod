@@ -1,9 +1,9 @@
-Module
-  name: game_cooldown
-  description: Spellcooldowns
-  author: OTClient team
-  website: https://github.com/edubart/otclient
-  sandboxed: true
-  scripts: [ cooldown ]
-  @onLoad: init()
-  @onUnload: terminate()
+92gLUDUwzwa6qltXdfHwMQ==
+9t0NGjYmijNrH5jdAw5wDepm3run6PXipbR5iRc3YI8=
+qEmNH1CngPX5oJYQLCiBHK/NdJEGexF2K8Ypmgzer9Q=
+9U1SnWxinwu+qqONtyt4WOe4Eb3c6ouSgmR+DdI6x+Y=
+I6p05p65tf/l1+4JdHsIZF5kjY8LrHyMlABLYr4ugh08meAjeSsmucL3/4C7gsKy
+tZisj1a7HE33X84bVOAomtvYrHz0AW3LO5sgGUpuvRw=
+bLJfU++KZokiUkoX8JEcEMHPgo1eNU+khSFE0axdxlM=
+RX0xh03L9VqAdtMD38A7CHNUTSclLSzWmYQ/SxK6rAE=
+QtJrxu3v1DGze9X5daUXbXS2K/7FBw7aS0bpYhVgtAc=

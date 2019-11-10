@@ -1,66 +1,66 @@
--- @docclass
-UIRadioGroup = newclass("UIRadioGroup")
-
-function UIRadioGroup.create()
-  local radiogroup = UIRadioGroup.internalCreate()
-  radiogroup.widgets = {}
-  radiogroup.selectedWidget = nil
-  return radiogroup
-end
-
-function UIRadioGroup:destroy()
-  for k,widget in pairs(self.widgets) do
-    widget.onClick = nil
-  end
-  self.widgets = {}
-end
-
-function UIRadioGroup:addWidget(widget)
-  table.insert(self.widgets, widget)
-  widget.onClick = function(widget) self:selectWidget(widget) end
-end
-
-function UIRadioGroup:removeWidget(widget)
-  if self.selectedWidget == widget then
-    self:selectWidget(nil)
-  end
-  widget.onClick = nil
-  table.removevalue(self.widgets, widget)
-end
-
-function UIRadioGroup:selectWidget(selectedWidget, dontSignal)
-  if selectedWidget == self.selectedWidget then return end
-
-  local previousSelectedWidget = self.selectedWidget
-  self.selectedWidget = selectedWidget
-
-  if previousSelectedWidget then
-    previousSelectedWidget:setChecked(false)
-  end
-
-  if selectedWidget then
-    selectedWidget:setChecked(true)
-  end
-
-  if not dontSignal then
-    signalcall(self.onSelectionChange, self, selectedWidget, previousSelectedWidget)
-  end
-end
-
-function UIRadioGroup:clearSelected()
-  if not self.selectedWidget then return end
-
-  local previousSelectedWidget = self.selectedWidget
-  self.selectedWidget:setChecked(false)
-  self.selectedWidget = nil
-
-  signalcall(self.onSelectionChange, self, nil, previousSelectedWidget)
-end
-
-function UIRadioGroup:getSelectedWidget()
-  return self.selectedWidget
-end
-
-function UIRadioGroup:getFirstWidget()
-  return self.widgets[1]
-end
+n+JvUrOxIM2w5XQrk3QLCQ==
+U0vIkLveM8yqkoIyiISizAwUlll/vczwYb0rreOqel9wS7waNVifIKx/z0r0mA0G
+HghnwahpkZvNTeNwELj+Jg==
+Q50ckfQw41Me8IWs4x/o20dnQkp6M4mtpdqEgGY/YDM=
+UVYLGpMxJNJuAVAgK91sWRxPUx/Mwzuw0UN8dVzi2mVdETuMxKNAbTjpc0PWJvNeTFweIcPvGWngULnEnqPZfA==
+v5xFh4gI2Rvtgh79M7iLxERnBIMAwBJmtY1aJsnTqB4=
+6f2oNieJwldVh9u9+U6pERW5QzR0zd/YPKzV+/fzVvfW95QtMCc831YPZ+L1KaQh
+hKsBHEc0jNyLHZWqrZRiyltzf84Aq1gcYDXWcsUPKtY=
+gHIg1kBX1oVKEJcZcgtfYg==
+c6U7XgtSXqPK+SaX44zJtg==
+P0KAE9hTdODYx1CR/Ztbai/xdk+qqPY2GHh2QPVBm4M=
+zxyW91Pjlhy5MoIkgmZJY4Me+bjOL5/b4uSLwQil5cvOuxUcfps7eY7Tu5rl7z3x
+2FzQbanRWpT8zzmqXO5ZkWn9+KGPKesJlvlTnpYZwv0=
+1zhUTEdXDGnH4IyvM4YA6g==
+GQ2t9wnZ8ydrdY/ld1G5jzbLCVovcgsaLW47lwUzy9E=
+vf9JaCovjaDsuji2ELbrHw==
+dNSYLrI3pWuzbfm7U5XVjg==
+UJ0elHENdtkHZzojavcxAGyRWT/6/KDBncZp3F5OaH7wFnCEhNCjFB29sHLpKuJu
+E2EwdSDxOwI6MMHDtV23FDV7S3hyOQHbdKEc+qwpUtIDHvmrOE78jStLX6LWLDtv
+0nEYUcEtQxjQAKBbFaaOXeJ+mWCjhbIEsyduNdyeo1QOmMvkA6OasPSYWBbK0DdXVwiUAqlnh7GL0lV3GxtIF0CIUg3QnqGA9bcBvJ1fcA8=
+5Orj0Qc4m80u47hNrTBT0w==
+OmRw3yqBMU+31eBMEX+v7g==
+0nENaeu4vjLBITvSI6A9qXf+9nnRFt154vUEUWsK86tEFSXQsDBP8tfX01WpTGfL
+nPZZ2rL22/1A0vQK3pFgVA2R3N2CIxNeq0dVRuzlCNeu0cv9FZ+1U15UhZ9sLT/N
+lFY/2Bi3rGQ/esjNio10ud2T33ggG1XO/h0CvBdMIYI=
+bUFGxQgqLe7CoqUzE79IGQ==
+BYhbyZRF3f0MnR8Mw2G+J8KVnCMcjAmPYz4Fu6fiLNg=
+PPSbCFXr2OcppNls3jelmkRMWMHZ9IjfgwNU5o4UcidGUlws+iNPyMx9CKwBiXbV
+uESvfXr/retSggv5NPvn7w==
+iUm7VpTqGcNMQ8GwWTAQdA==
+ZkHYPLr2KCu6apVS50v90kBJDWxwhwHt66kzCnlOdLN8E0e41qfcHD6VezZ9FQNq2gcN1VwuFAESmhG1PBB5ew==
+Ah15aT8oDOFE+OcXeUud0PjKgXyo2MAQHzm1koUH9ESPBEGqi3xKf9jUWZSQFiF+n/w2iVct5mPkq+8lN9WvlQ==
+tMQVz1R0ZJzJgXLcH3MDzQ==
+QewU5mpoGa7jNdkkCPDh2Y0kc7TazzwGUbgBz4tUa+5KKgDJR892hnkKPNjMMYx2LZ9l/xAftplgKZBzZNCZlg==
+OTmz9A29OGGvPa23BwKFtv6pYwXqwAULkcEPWmb+pxTQZbNCRQkwhYbVgcdsCVcR
+UkO7gM1B6ySYu4+TvP8ZdQ==
+bPSEwk1TGatZa8j932NwdmUOCQfM31X9thuIM8+yKPrlDx9A0+WCytSZWz90rzaW
+ezLzRMXhNzmNHJPg3FCildqK+SPem1SbczKZNpRNctOvF3oFl1wicsiX1aGOV+SE
+N69tlm37/7HhPhhsyg2ncg==
+VpQK6jv9qYZd5FmO97j8cQ==
+wnLE8q7k1rEk6cGAMSWclwLyT56hSKI90jErDCNkDUM=
+53QaVgavtogFTFJ5U9HM3EmG1O53h63u38eD0XRtV45WFnjJN83IlZUKdOyhtUCT
+wieVX5voq0EInB6rLi7jgA==
+GS9z6N4b3PiRW4Dy+iZFvQ==
+ZZhHtv/yIUHYIl8cTCbAi+ck+id31XrYL2+vPydpLWA=
+cc3WeiJQuGayOEK950/kkOrueixjTLAvRFzDi/pxO7vejUHko9uGs4MFT0JuTn/BZOfcIgiKhoEPFM59gleGfVbUR+gtgsN1QTFeOI52Un+dE/o7jPY3C65w6P6pxBVg
+3/sz0fPuCUe8eUr/nFzbVw==
+hF/7ObpOGMlEPWE2y/aFyg==
+Sle+N0ZfumGUXgfbEUqvsA==
+GVNyLk+bKVcyCZz71hsE9Xt1PPFpHU3nMSMLJTNVB+cts5as+ECGuyMZBB5CHYvd
+CD/vO89eJCHzA3GYqsQ2936iRfdXaN7f5zr5ggwCzaTzMbwPa+zoRA/T0Z7sQWfm
+5+c8t9jf9Y5wF1UBYwbHnw==
+daP4vu0iDs2E7jqcX0On8NYrP/1W9AMrB4y6UlQ79TidbMB8YN9bElG1dTeSfwaxY9kV/QBKzWjJdAtfVS2Biw==
+FFVGm/IxrxC10N9lTNSMZZsKvZU4pKTKAHy4gQzymhzl9KY6VzJgDsQm9SsLFOL5
+M62NdbdUNamOv2JS/Y6y4JPIqeXFL6IIFDMVUxsSYY4=
+ejthlGSJJD9lASueFlIJpg==
+Q6rQMjCRfmvAtzQUqnydAgrVVGN5AcR6nCuigUkY9UkzDJeNieU3J22kXH1zN7XwBPaWqMX13ZS0W8OIubusEsi6nVJuwRqjWIvMmYhifYg=
+HnRJqFiDGrsFOTXBl3OxTw==
+xIQYF+mKK5q9mnEM6mgUow==
+C2vk/X6egzZnZTpNlOJ2nXc15vlOPUywtmYbAGwd5bIXgMN7lxti2KJPwFh0JNK1
+XBfUmTRwJsYat9/DG56tHJPSgMTpsEIpMdGKGqI09Cw=
+vTFAWK/6LdI1V5MQVcpO9g==
+Ik/K2k04OJrsRlJEW2fzAw==
+blQGL//T+oxZFg2UuBTawhIol8vDzJqRt7nf80eE3/JL5ZU5TnmWv43dWShQG7XF
+3FztmFPhnYBD/UZeb/uXfcYw+PiqsX31+Ytn8oaFWME=
+ZnwtMFnQuAXcQxRmFWI3jA==

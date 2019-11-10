@@ -1,9 +1,9 @@
-Module
-  name: game_minimap
-  description: Manage minimap
-  author: edubart, BeniS
-  website: https://github.com/edubart/otclient
-  sandboxed: true
-  scripts: [ minimap ]
-  @onLoad: init()
-  @onUnload: terminate()
+92gLUDUwzwa6qltXdfHwMQ==
+gAEyPtQh6RllAtx5zoq3/qmnGE2KSYAXUS0XpY7/SCE=
+Wqga124j8POQiJgEWy7VYZUhRQM6ROaj7vp6NVi0iRI=
+dirLDBKGxc2tJ3eXMjw0cZxQn2ztP13XsQSWYi3+2MA=
+9NIHdB3qd9E7UCPNCwA+vE/ntUFCNUJpBXp89keKi8LiFFHMHv+KxoY4hM7g/FOk
+ek8ojUr2F9ZASj/AD0aJnlXIAV8KYQfq8/SUmxY8+ig=
+pRgNGWoAW2BQkHDwQbJBl2ggGDT/8CFWopbrV18UCL8=
+yA7MD8PmAATJb/e8hIDI4np7KD4JYrrPz+fxXyxotZ0=
+jzXOGZJ6aD8h7rZHJR5mIb5Tnoy11CurnaTQyjjOE2c=

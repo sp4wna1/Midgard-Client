@@ -1,597 +1,597 @@
-HOTKEY_MANAGER_USE = nil
-HOTKEY_MANAGER_USEONSELF = 1
-HOTKEY_MANAGER_USEONTARGET = 2
-HOTKEY_MANAGER_USEWITH = 3
-
-HotkeyColors = {
-  text = '#888888',
-  textAutoSend = '#FFFFFF',
-  itemUse = '#8888FF',
-  itemUseSelf = '#00FF00',
-  itemUseTarget = '#FF0000',
-  itemUseWith = '#F5B325',
-}
-
-hotkeysManagerLoaded = false
-hotkeysWindow = nil
-hotkeysButton = nil
-currentHotkeyLabel = nil
-currentItemPreview = nil
-itemWidget = nil
-addHotkeyButton = nil
-removeHotkeyButton = nil
-hotkeyText = nil
-hotKeyTextLabel = nil
-sendAutomatically = nil
-selectObjectButton = nil
-clearObjectButton = nil
-useOnSelf = nil
-useOnTarget = nil
-useWith = nil
-defaultComboKeys = nil
-perServer = true
-perCharacter = true
-mouseGrabberWidget = nil
-useRadioGroup = nil
-currentHotkeys = nil
-boundCombosCallback = {}
-hotkeysList = {}
-lastHotkeyTime = g_clock.millis()
-
--- public functions
-function init()
-  hotkeysButton = modules.client_topmenu.addLeftGameButton('hotkeysButton', tr('Hotkeys') .. ' (Ctrl+K)', '/images/topbuttons/hotkeys', toggle)
-  g_keyboard.bindKeyDown('Ctrl+K', toggle)
-  hotkeysWindow = g_ui.displayUI('hotkeys_manager')
-  hotkeysWindow:setVisible(false)
-
-  currentHotkeys = hotkeysWindow:getChildById('currentHotkeys')
-  currentItemPreview = hotkeysWindow:getChildById('itemPreview')
-  addHotkeyButton = hotkeysWindow:getChildById('addHotkeyButton')
-  removeHotkeyButton = hotkeysWindow:getChildById('removeHotkeyButton')
-  hotkeyText = hotkeysWindow:getChildById('hotkeyText')
-  hotKeyTextLabel = hotkeysWindow:getChildById('hotKeyTextLabel')
-  sendAutomatically = hotkeysWindow:getChildById('sendAutomatically')
-  selectObjectButton = hotkeysWindow:getChildById('selectObjectButton')
-  clearObjectButton = hotkeysWindow:getChildById('clearObjectButton')
-  useOnSelf = hotkeysWindow:getChildById('useOnSelf')
-  useOnTarget = hotkeysWindow:getChildById('useOnTarget')
-  useWith = hotkeysWindow:getChildById('useWith')
-
-  useRadioGroup = UIRadioGroup.create()
-  useRadioGroup:addWidget(useOnSelf)
-  useRadioGroup:addWidget(useOnTarget)
-  useRadioGroup:addWidget(useWith)
-  useRadioGroup.onSelectionChange = function(self, selected) onChangeUseType(selected) end
-
-  mouseGrabberWidget = g_ui.createWidget('UIWidget')
-  mouseGrabberWidget:setVisible(false)
-  mouseGrabberWidget:setFocusable(false)
-  mouseGrabberWidget.onMouseRelease = onChooseItemMouseRelease
-
-  currentHotkeys.onChildFocusChange = function(self, hotkeyLabel) onSelectHotkeyLabel(hotkeyLabel) end
-  g_keyboard.bindKeyPress('Down', function() currentHotkeys:focusNextChild(KeyboardFocusReason) end, hotkeysWindow)
-  g_keyboard.bindKeyPress('Up', function() currentHotkeys:focusPreviousChild(KeyboardFocusReason) end, hotkeysWindow)
-
-  connect(g_game, {
-    onGameStart = online,
-    onGameEnd = offline
-  })
-
-  load()
-end
-
-function terminate()
-  disconnect(g_game, {
-    onGameStart = online,
-    onGameEnd = offline
-  })
-
-  g_keyboard.unbindKeyDown('Ctrl+K')
-
-  unload()
-
-  hotkeysWindow:destroy()
-  hotkeysButton:destroy()
-  mouseGrabberWidget:destroy()
-end
-
-function configure(savePerServer, savePerCharacter)
-  perServer = savePerServer
-  perCharacter = savePerCharacter
-  reload()
-end
-
-function online()
-  reload()
-  hide()
-end
-
-function offline()
-  unload()
-  hide()
-end
-
-function show()
-  if not g_game.isOnline() then
-    return
-  end
-  hotkeysWindow:show()
-  hotkeysWindow:raise()
-  hotkeysWindow:focus()
-end
-
-function hide()
-  hotkeysWindow:hide()
-end
-
-function toggle()
-  if not hotkeysWindow:isVisible() then
-    show()
-  else
-    hide()
-  end
-end
-
-function ok()
-  save()
-  hide()
-end
-
-function cancel()
-  reload()
-  hide()
-end
-
-function load(forceDefaults)
-  hotkeysManagerLoaded = false
-
-  local hotkeySettings = g_settings.getNode('game_hotkeys')
-  local hotkeys = {}
-
-  if not table.empty(hotkeySettings) then hotkeys = hotkeySettings end
-  if perServer and not table.empty(hotkeys) then hotkeys = hotkeys[G.host] end
-  if perCharacter and not table.empty(hotkeys) then hotkeys = hotkeys[g_game.getCharacterName()] end
-
-  hotkeyList = {}
-  if not forceDefaults then
-    if not table.empty(hotkeys) then
-      for keyCombo, setting in pairs(hotkeys) do
-        keyCombo = tostring(keyCombo)
-        addKeyCombo(keyCombo, setting)
-        hotkeyList[keyCombo] = setting
-      end
-    end
-  end
-
-  if currentHotkeys:getChildCount() == 0 then
-    loadDefautComboKeys()
-  end
-
-  hotkeysManagerLoaded = true
-end
-
-function unload()
-  for keyCombo,callback in pairs(boundCombosCallback) do
-    g_keyboard.unbindKeyPress(keyCombo, callback)
-  end
-  boundCombosCallback = {}
-  currentHotkeys:destroyChildren()
-  currentHotkeyLabel = nil
-  updateHotkeyForm(true)
-  hotkeyList = {}
-end
-
-function reset()
-  unload()
-  load(true)
-end
-
-function reload()
-  unload()
-  load()
-end
-
-function save()
-  local hotkeySettings = g_settings.getNode('game_hotkeys') or {}
-  local hotkeys = hotkeySettings
-
-  if perServer then
-    if not hotkeys[G.host] then
-      hotkeys[G.host] = {}
-    end
-    hotkeys = hotkeys[G.host]
-  end
-
-  if perCharacter then
-    local char = g_game.getCharacterName()
-    if not hotkeys[char] then
-      hotkeys[char] = {}
-    end
-    hotkeys = hotkeys[char]
-  end
-
-  table.clear(hotkeys)
-
-  for _,child in pairs(currentHotkeys:getChildren()) do
-    hotkeys[child.keyCombo] = {
-      autoSend = child.autoSend,
-      itemId = child.itemId,
-      subType = child.subType,
-      useType = child.useType,
-      value = child.value
-    }
-  end
-
-  hotkeyList = hotkeys
-  g_settings.setNode('game_hotkeys', hotkeySettings)
-  g_settings.save()
-end
-
-function loadDefautComboKeys()
-  if not defaultComboKeys then
-    for i=1,12 do
-      addKeyCombo('F' .. i)
-    end
-    for i=1,4 do
-      addKeyCombo('Shift+F' .. i)
-    end
-  else
-    for keyCombo, keySettings in pairs(defaultComboKeys) do
-      addKeyCombo(keyCombo, keySettings)
-    end
-  end
-end
-
-function setDefaultComboKeys(combo)
-  defaultComboKeys = combo
-end
-
-function onChooseItemMouseRelease(self, mousePosition, mouseButton)
-  local item = nil
-  if mouseButton == MouseLeftButton then
-    local clickedWidget = modules.game_interface.getRootPanel():recursiveGetChildByPos(mousePosition, false)
-    if clickedWidget then
-      if clickedWidget:getClassName() == 'UIGameMap' then
-        local tile = clickedWidget:getTile(mousePosition)
-        if tile then
-          local thing = tile:getTopMoveThing()
-          if thing and thing:isItem() then
-            item = thing
-          end
-        end
-      elseif clickedWidget:getClassName() == 'UIItem' and not clickedWidget:isVirtual() then
-        item = clickedWidget:getItem()
-      end
-    end
-  end
-
-  if item and currentHotkeyLabel then
-    currentHotkeyLabel.itemId = item:getId()
-    if item:isFluidContainer() then
-        currentHotkeyLabel.subType = item:getSubType()
-    end
-    if item:isMultiUse() then
-      currentHotkeyLabel.useType = HOTKEY_MANAGER_USEWITH
-    else
-      currentHotkeyLabel.useType = HOTKEY_MANAGER_USE
-    end
-    currentHotkeyLabel.value = nil
-    currentHotkeyLabel.autoSend = false
-    updateHotkeyLabel(currentHotkeyLabel)
-    updateHotkeyForm(true)
-  end
-
-  show()
-
-  g_mouse.popCursor('target')
-  self:ungrabMouse()
-  return true
-end
-
-function startChooseItem()
-  if g_ui.isMouseGrabbed() then return end
-  mouseGrabberWidget:grabMouse()
-  g_mouse.pushCursor('target')
-  hide()
-end
-
-function clearObject()
-  currentHotkeyLabel.itemId = nil
-  currentHotkeyLabel.subType = nil
-  currentHotkeyLabel.useType = nil
-  currentHotkeyLabel.autoSend = nil
-  currentHotkeyLabel.value = nil
-  updateHotkeyLabel(currentHotkeyLabel)
-  updateHotkeyForm(true)
-end
-
-function addHotkey()
-  local assignWindow = g_ui.createWidget('HotkeyAssignWindow', rootWidget)
-  assignWindow:grabKeyboard()
-
-  local comboLabel = assignWindow:getChildById('comboPreview')
-  comboLabel.keyCombo = ''
-  assignWindow.onKeyDown = hotkeyCapture
-end
-
-function addKeyCombo(keyCombo, keySettings, focus)
-  if keyCombo == nil or #keyCombo == 0 then return end
-  if not keyCombo then return end
-  local hotkeyLabel = currentHotkeys:getChildById(keyCombo)
-  if not hotkeyLabel then
-    hotkeyLabel = g_ui.createWidget('HotkeyListLabel')
-    hotkeyLabel:setId(keyCombo)
-
-    local children = currentHotkeys:getChildren()
-    children[#children+1] = hotkeyLabel
-    table.sort(children, function(a,b)
-      if a:getId():len() < b:getId():len() then
-        return true
-      elseif a:getId():len() == b:getId():len() then
-        return a:getId() < b:getId()
-      else
-        return false
-      end
-    end)
-    for i=1,#children do
-      if children[i] == hotkeyLabel then
-        currentHotkeys:insertChild(i, hotkeyLabel)
-        break
-      end
-    end
-
-    if keySettings then
-      currentHotkeyLabel = hotkeyLabel
-      hotkeyLabel.keyCombo = keyCombo
-      hotkeyLabel.autoSend = toboolean(keySettings.autoSend)
-      hotkeyLabel.itemId = tonumber(keySettings.itemId)
-      hotkeyLabel.subType = tonumber(keySettings.subType)
-      hotkeyLabel.useType = tonumber(keySettings.useType)
-      if keySettings.value then hotkeyLabel.value = tostring(keySettings.value) end
-    else
-      hotkeyLabel.keyCombo = keyCombo
-      hotkeyLabel.autoSend = false
-      hotkeyLabel.itemId = nil
-      hotkeyLabel.subType = nil
-      hotkeyLabel.useType = nil
-      hotkeyLabel.value = ''
-    end
-
-    updateHotkeyLabel(hotkeyLabel)
-
-    boundCombosCallback[keyCombo] = function() doKeyCombo(keyCombo) end
-    g_keyboard.bindKeyPress(keyCombo, boundCombosCallback[keyCombo])
-  end
-
-  if focus then
-    currentHotkeys:focusChild(hotkeyLabel)
-    currentHotkeys:ensureChildVisible(hotkeyLabel)
-    updateHotkeyForm(true)
-  end
-end
-
-function doKeyCombo(keyCombo)
-  if not g_game.isOnline() then return end
-  local hotKey = hotkeyList[keyCombo]
-  if not hotKey then return end
-
-  if g_clock.millis() - lastHotkeyTime < modules.client_options.getOption('hotkeyDelay') then
-    return
-  end
-  lastHotkeyTime = g_clock.millis()
-
-  if hotKey.itemId == nil then
-    if not hotKey.value or #hotKey.value == 0 then return end
-    if hotKey.autoSend then
-      modules.game_console.sendMessage(hotKey.value)
-    else
-      modules.game_console.setTextEditText(hotKey.value)
-    end
-  elseif hotKey.useType == HOTKEY_MANAGER_USE then
-    if g_game.getClientVersion() < 780 or hotKey.subType then
-      local item = g_game.findPlayerItem(hotKey.itemId, hotKey.subType or -1)
-      if item then
-        g_game.use(item)
-      end
-    else
-      return
-    end
-  elseif hotKey.useType == HOTKEY_MANAGER_USEONSELF then
-    if g_game.getClientVersion() < 780 or hotKey.subType then
-      local item = g_game.findPlayerItem(hotKey.itemId, hotKey.subType or -1)
-      if item then
-        return
-      end
-    else
-      return
-    end
-  elseif hotKey.useType == HOTKEY_MANAGER_USEONTARGET then
-    local attackingCreature = g_game.getAttackingCreature()
-    if not attackingCreature then
-      local item = Item.create(hotKey.itemId)
-      if g_game.getClientVersion() < 780 or hotKey.subType then
-        local tmpItem = g_game.findPlayerItem(hotKey.itemId, hotKey.subType or -1)
-        if not tmpItem then return end
-        item = tmpItem
-      end
-      return
-    end
-
-    if not attackingCreature:getTile() then return end
-    if g_game.getClientVersion() < 780 or hotKey.subType then
-      local item = g_game.findPlayerItem(hotKey.itemId, hotKey.subType or -1)
-      if item then
-        return
-      end
-    else
-      g_game.useInventoryItemWith(hotKey.itemId, attackingCreature)
-    end
-  elseif hotKey.useType == HOTKEY_MANAGER_USEWITH then
-    local item = Item.create(hotKey.itemId)
-    if g_game.getClientVersion() < 780 or hotKey.subType then
-      local tmpItem = g_game.findPlayerItem(hotKey.itemId, hotKey.subType or -1)
-      if not tmpItem then return true end
-      item = tmpItem
-    end
-    return
-  end
-end
-
-function updateHotkeyLabel(hotkeyLabel)
-  if not hotkeyLabel then return end
-  if hotkeyLabel.useType == HOTKEY_MANAGER_USEONSELF then
-    hotkeyLabel:setText(tr('%s: (use object on yourself)', hotkeyLabel.keyCombo))
-    hotkeyLabel:setColor(HotkeyColors.itemUseSelf)
-  elseif hotkeyLabel.useType == HOTKEY_MANAGER_USEONTARGET then
-    hotkeyLabel:setText(tr('%s: (use object on target)', hotkeyLabel.keyCombo))
-    hotkeyLabel:setColor(HotkeyColors.itemUseTarget)
-  elseif hotkeyLabel.useType == HOTKEY_MANAGER_USEWITH then
-    hotkeyLabel:setText(tr('%s: (use object with crosshair)', hotkeyLabel.keyCombo))
-    hotkeyLabel:setColor(HotkeyColors.itemUseWith)
-  elseif hotkeyLabel.itemId ~= nil then
-    hotkeyLabel:setText(tr('%s: (use object)', hotkeyLabel.keyCombo))
-    hotkeyLabel:setColor(HotkeyColors.itemUse)
-  else
-    local text = hotkeyLabel.keyCombo .. ': '
-    if hotkeyLabel.value then
-      text = text .. hotkeyLabel.value
-    end
-    hotkeyLabel:setText(text)
-    if hotkeyLabel.autoSend then
-      hotkeyLabel:setColor(HotkeyColors.autoSend)
-    else
-      hotkeyLabel:setColor(HotkeyColors.text)
-    end
-  end
-end
-
-function updateHotkeyForm(reset)
-  if currentHotkeyLabel then
-    removeHotkeyButton:enable()
-    if currentHotkeyLabel.itemId ~= nil then
-      hotkeyText:clearText()
-      hotkeyText:disable()
-      hotKeyTextLabel:disable()
-      sendAutomatically:setChecked(false)
-      sendAutomatically:disable()
-      selectObjectButton:disable()
-      clearObjectButton:enable()
-      currentItemPreview:setItemId(currentHotkeyLabel.itemId)
-      if currentHotkeyLabel.subType then
-        currentItemPreview:setItemSubType(currentHotkeyLabel.subType)
-      end
-      if currentItemPreview:getItem():isMultiUse() then
-        useOnSelf:enable()
-        useOnTarget:enable()
-        useWith:enable()
-        if currentHotkeyLabel.useType == HOTKEY_MANAGER_USEONSELF then
-          useRadioGroup:selectWidget(useOnSelf)
-        elseif currentHotkeyLabel.useType == HOTKEY_MANAGER_USEONTARGET then
-          useRadioGroup:selectWidget(useOnTarget)
-        elseif currentHotkeyLabel.useType == HOTKEY_MANAGER_USEWITH then
-          useRadioGroup:selectWidget(useWith)
-        end
-      else
-        useOnSelf:disable()
-        useOnTarget:disable()
-        useWith:disable()
-        useRadioGroup:clearSelected()
-      end
-    else
-      useOnSelf:disable()
-      useOnTarget:disable()
-      useWith:disable()
-      useRadioGroup:clearSelected()
-      hotkeyText:enable()
-      hotkeyText:focus()
-      hotKeyTextLabel:enable()
-      if reset then
-        hotkeyText:setCursorPos(-1)
-      end
-      hotkeyText:setText(currentHotkeyLabel.value)
-      sendAutomatically:setChecked(currentHotkeyLabel.autoSend)
-      sendAutomatically:setEnabled(currentHotkeyLabel.value and #currentHotkeyLabel.value > 0)
-      selectObjectButton:enable()
-      clearObjectButton:disable()
-      currentItemPreview:clearItem()
-    end
-  else
-    removeHotkeyButton:disable()
-    hotkeyText:disable()
-    sendAutomatically:disable()
-    selectObjectButton:disable()
-    clearObjectButton:disable()
-    useOnSelf:disable()
-    useOnTarget:disable()
-    useWith:disable()
-    hotkeyText:clearText()
-    useRadioGroup:clearSelected()
-    sendAutomatically:setChecked(false)
-    currentItemPreview:clearItem()
-  end
-end
-
-function removeHotkey()
-  if currentHotkeyLabel == nil then return end
-  g_keyboard.unbindKeyPress(currentHotkeyLabel.keyCombo, boundCombosCallback[currentHotkeyLabel.keyCombo])
-  boundCombosCallback[currentHotkeyLabel.keyCombo] = nil
-  currentHotkeyLabel:destroy()
-  currentHotkeyLabel = nil
-end
-
-function onHotkeyTextChange(value)
-  if not hotkeysManagerLoaded then return end
-  if currentHotkeyLabel == nil then return end
-  currentHotkeyLabel.value = value
-  if value == '' then
-    currentHotkeyLabel.autoSend = false
-  end
-  updateHotkeyLabel(currentHotkeyLabel)
-  updateHotkeyForm()
-end
-
-function onSendAutomaticallyChange(autoSend)
-  if not hotkeysManagerLoaded then return end
-  if currentHotkeyLabel == nil then return end
-  if not currentHotkeyLabel.value or #currentHotkeyLabel.value == 0 then return end
-  currentHotkeyLabel.autoSend = autoSend
-  updateHotkeyLabel(currentHotkeyLabel)
-  updateHotkeyForm()
-end
-
-function onChangeUseType(useTypeWidget)
-  if not hotkeysManagerLoaded then return end
-  if currentHotkeyLabel == nil then return end
-  if useTypeWidget == useOnSelf then
-    currentHotkeyLabel.useType = HOTKEY_MANAGER_USEONSELF
-  elseif useTypeWidget == useOnTarget then
-    currentHotkeyLabel.useType = HOTKEY_MANAGER_USEONTARGET
-  elseif useTypeWidget == useWith then
-    currentHotkeyLabel.useType = HOTKEY_MANAGER_USEWITH
-  else
-    currentHotkeyLabel.useType = HOTKEY_MANAGER_USE
-  end
-  updateHotkeyLabel(currentHotkeyLabel)
-  updateHotkeyForm()
-end
-
-function onSelectHotkeyLabel(hotkeyLabel)
-  currentHotkeyLabel = hotkeyLabel
-  updateHotkeyForm(true)
-end
-
-function hotkeyCapture(assignWindow, keyCode, keyboardModifiers)
-  local keyCombo = determineKeyComboDesc(keyCode, keyboardModifiers)
-  local comboPreview = assignWindow:getChildById('comboPreview')
-  comboPreview:setText(tr('Current hotkey to add: %s', keyCombo))
-  comboPreview.keyCombo = keyCombo
-  comboPreview:resizeToText()
-  assignWindow:getChildById('addButton'):enable()
-  return true
-end
-
-function hotkeyCaptureOk(assignWindow, keyCombo)
-  addKeyCombo(keyCombo, nil, true)
-  assignWindow:destroy()
-end
+xSqrS5w84GWacHRWeZgqqpf1t5cYXf1/hu5S62XSAA4=
+3/yTHb6KzJ6jNQW6jH/ymMW1/ZqtKdq8mFuik4D/B2c=
+ubAvWLcw1m3UafWHOPOJwx1Y06+XfWq2bS0wzan0vwQ=
+b5PYktzm3gOdYXLS5Hov26rTTg7epDokPatNnSLdSmo=
+YysXjjbn6NdhHCH5QK7Z8g==
+O63V0qr8lWyRtLUQ2zbOUFmPUnJEXV9VFOWrYkfKAgo=
+fFTy1KeXFOEBYiwj3p1r0XSLuwXd9t8vdDqReDmlyCc=
+hCVD7aWDmuICgM0kuPV47Dmyf/po5UjBzwdCNS+xDrY=
+gbMNyK24/3aKbEz9FI4sjM4oR1VYODeJXEUeA2pCPSY=
+3Rr5PAdKsSShkGSMlH139V7TRvBBW47RFE/M7voj/00=
+19NjxfFi13djKKZRk16byu1mgJp2jFSvndTnxn6PEdw=
+agVdKEVjZsSN8DeAoEKswXphrBFcr6Y+N0GNTg8q+NY=
++QsYEULfBHdzag0ko6vccQ==
+FcMZ29Z4VmatJ9N+Mgi/Mw==
+YcGeCbBQxrFdWeUpD8aKc6yVp4iBlUjyode++ZgPMg4=
+2MMpGj4QWVkc++HqAPlKLdIWG4e5Yj1Ee5W9lT9CUc0=
+wBpI1pdzV5Ihq3aEo55KkciU1KU9DOZwgoDRBqCXpTs=
+1AtI/s9+1X+Qd/vrX0Y3lPjhgRB7PGQiASVnppBJBrI=
+FGacUcR6wT43ToYQQ0hEpkXyS0rPkkC37wjNM5DnPqc=
+EF1L8OeUjjX6vNdR4im3uzJ5np7bSt2hMzmUQ9jQJ74=
+LNTax9fMTCnk6bVt72TYFpDoMmqrWVgV/yujGtgJfrM=
+hmC6FELCJlaTzNRv9e2WVT8exyCSkVtT38GJc2Ew+xM=
+SX/4kSZR3QEV87c8uUaMp4Xdv37c55cXVh3fCWjhVJE=
+SBMqP0Yuyzd5kRpDXlhne19I4nLS66QMSdHnhSZDB3o=
+IFKKJK+9Gi22/k1tLNwGA+eU144lhQkE1EWVbxWhSNM=
+nnuFFFcQt1fYEMzABEiRnMDzsk2XAFSDg/u7naD1/lo=
+HeDApi27Vbr4YwpsG7V+k5/zjzJQZPUqGbh0J7GSxCQ=
+5dQkIDwdTZC6PzdrMhesVQ==
+ieQB0B1ounEstKTEwpov6Yac8aigEe3R/LLvcZQ1Su0=
+Vze7hxheCfKT+zrxUBHfhQ==
+DHHk/sJEjwR0M2Rpn+xr+xhxX0XKmBlEmmmeHxt9MQ8=
+EMexFOsI6pBLxgOO0OC6F4U22FUvoZu28AD9SAsCATE=
+E6MRp3IDHeSfmo5vbkYp1f88CIt9TQoLd8PbY4JdYBY=
+IrH2gkMinnLXZ4vhn8OUaoLzkLDCkIR8l/Bo+przc2s=
++n0eIiAv9iZIjm4S8eu+C3bT7gi7bPGZnvsfyY+xjUo=
+zX3npc84OkC5u8MLVWvaj36aaDCc2COUP3emmzwBIZs=
+kttModpWMjggyY5OQ4Jrt5fhdi61BJQYJLhjgEci460=
+WF6A2wVFvZj9SyNfIPW0Bkw24sOSS2+zFUSOQSit58Y=
+8fUPPDUR1UDfyeW148+sRNbPaySTddw/9tcqlLVmt2Bc0cFtiM7SrgMB5zLMU1jV
+i7G7Fc9pBwy0PZAp+3PChg==
+BAS514Z7vTcY/hOYjnLXuVuJg8FXjYEholzLWwEyvvM=
+59e1FdW0MB9okzEhEBzGuQ==
+pRIbr2F/zlZd1/2Dnc4ggTfFkjIMuElHbGOc8wKfnl2yWQX1PwWn7AeXJY+fdja7UTuquwRDQeGIgvdmlp0kwt80a3gwGUrJQqg1/C+nBUno44xTsErtJ5v1Bh6DTILGsjqRcAMsjHn88tKC5YYxOYWT8BJC+XEHAW9Buw/dQ6FVAavuew/30UtrloTTSxBQ
+xqnTLpxOTcwTBsqAweJeEfWxxmfsodcB6+iEiHEuT09z38uRSCmDpQ8V5WgYDAvI
+1ifxoy/1Y2ZsB8l+FOQZDB05AcXu0IzmUrqVys4dZKYBTkTI4zvX+Me5HqH/5OcP4xb4MkyOhLOgNdMK3qrczw==
+IvuuAVVcD3SGdYa6lBpwQjosOYImnyjE04ISYMB80D0d4F/JKM7f4LQvp4QOibye
+yYUXxiheeBMTgK67PmHiSQ==
+Ao7AWwje2pFCG5xrO6KQS/i57TtUo78j5VuolEMiQ7jtC4AyW1rgPaiW03S+E3ZtWTdCS/lSztSPgJRVRq26KQ==
+yk5Zc7fAhliZgtanxy1z3IBa98alLNZzax4t80nT1D0xqAxtoDF1UfdrgCxlDaKs9u3GLoVBW63cbjVmI8KfUnQvYIVJIKwQEkGVmYJ6ACA=
+6SiwPixVAD33x+awKeiDa5lw6Vv1GaJu50JQYfbpM6LYJi6qwgItlHNQgMFv+mxLoinGXHsiGH+hY0xumW+8qJ6Jkfhqd61K+VQi54kA8DA=
+yRNrcsuCekDa8L7UUZVVFMQmPpXSXQ5mhDtT9TLjTWANv5B0OAthR8AL043gKyWKp6pP/QUH3EC/LcjNThpctQth2Ij7nLbDJgDgusZjF0k=
+FN/3wFDfmpiTPa2kXq+jzK42BmY7rNvHoeurA0R39dkxskHspK3vTVhtpxL6KJ+teZdeCoh7TnP8dBy406/Tiw==
+W4hXpNO1gRi86c7QfENGgwFZC5kZrfW4mv2eM6XGmrwqmf7zoY1sk66L2zKQm0Ti1ha8P53aSy2MHYRjZ8haPUS5UWaMgrIXEhKUMcaE+o0=
+1ejIcV68TPS7NLB5yagaTs9M50sRVTgfq0iWihRQqQ2pzm4nTItPs7mBonZ9lbBhBDbN67iV77psluNZHekjb1BKuzvvE3Q9ziatTD1nGLQ=
+qD8t3bH2OqrKCqd9SXjIj2b1OiDYGWzO4F57E+awR3A1kz/8p1vQYeGc8IB9UriKyK7ggyZ4/rApzUMBHYi6Uu8RIram1pWjK6weckVlmf8=
+YV+n5mMcX0w7D7zE8V6ZsuVs+iYSuve8BCpx0h6xD7BXNapg9TSEHONsR89IZruye68fmWT/Pp9KtVfb59dWIsclF529p3p4/OIt+6guWwY=
+3CZEDoScezsLhR+karK3Ku8YcmkEkL4F1P8xO9d5xRAtHLpbrvlngPMHEiDqN2+CncFUntDVca/vIi/shcRPeA==
+d55vKaYCSzsH5irnpV9w+HS5xm4NkIr8rrrhLO7xijPorUCus947oI272tRdrFCue417XqMc+SOWtvc1u37W4Q==
+NIeb3aKvRbmlgAfrF8+npdVWLXv+owMK+5Sz/wKbfAhJqUn9nmCoK44o39tCU+EY1g7oL+Udza52wGyHFKy3ZA==
+ck8gV83fkYOexFwLdsBtEA==
+uJo1qBJX+1Q+ulPMes0tEoqGejtFRWzICN6hdgyFyaSpERWEWdql4jgDne770uuy
+W+9Q1F/iWkjfzMx/+CoCt++lmwJ/ru4Y1Ys2JlI9Iu8Tb7TVsLOUwW7MUYDP2pDu
+mbvMg8rBXUYw15ddJqltj0zIL1/NYG95hfeX3X2a1doD7IZ/FLR2+8LSMJ5Kn9ym
+YJiG5sgmkgRUExV4Pi8bYmuvVFeqKxqEpTd0RVzrMe49oVWcL5wv2lE4KGkIeyK4
+2eKhcAKTdGTvrPFpPitc80LLGGf8W5J7aSbzrYXt3PB33UecIP5vcMlr0A5pS7JU7LZwE3ddzn0aT+lheMFtPZ0t24DiBwSGJ63adbavneAIZhBzEjaSYUddwsxYdnQM
+VOP09KMvs4lxDSspdyBiFw==
+Tbku8PnyMedtP9wd1fE1oQWrhq8Dq1FpsXBd7f7VEr5TfKKic035xjp1DqJnK7buWD8DbmAyZZ5P2gNlHeIQ1A==
+atvGCv4SBy/uriHioJ3iNw+IqGyrhzS2/jzPuU9KhDZ8Pyq/89DpL/c/3CzRCgC3
+O8bqXR3lCYFcEUzS/hOeBXvucEm5r2T8jbHXVnitIhGnp5+2vAxkckG20r5eUCr/
+6tTVTlZHB4p02AuLujz2d8DQZWUMTp//sJ2MA07kpmk+Knu6On5gL4T5oecJEpa8MqcTljaQww2qwzvMXXS93w==
+M60xlnl3mYV7mgxOYJPRDA==
+5PomSpuXPzE4gIaJ3euZeLOxJUzdFAgV2ply7TfQpbevyiiySheo2ysyCN33tSqgSycYLeBTrMdtJRxuiUWWK3uTw4mo4YWVItIHcpPX8zgQyibx7KS3QATKklIKXyQ0IKUnuZjRnmtgyZoRaiy4tA==
+8A8vklHP4vaxL/D+aQdlS0avK4SDsSoe/2EZb974UGEz48SH18bnz3ChqorAGsfDq6Gq5Gf7BF5pcx+0S+GAiW3log9KXzwp9nVawErRNOq2jl7/FaPKGMrmp/xt2JnFgNIyB/kQZQ0p/UjJskgdg+MVmSyykbMh8VCxoN4vyMc=
+yg0FazSb7/k9Z7P3w4n9Dfrx1d+6N2LuKlIIPxfacbK6DBcipY76Y89sH3JPAUqxw8mdelXmSQdpcC6fHUo9RftR0lxiSRVQM2HgHlvL/Yz8dDpoqOc1gyhSuOP7oe9mZYryUxA3xUEGDkEj4WVLQhkMLiFsflbdKEmnWGy05o8=
+5NyDhsXMJiRlyyX4f0Z+Ag==
+J3j7NuphcJLDn/EFcBF8Rb5cogN+W7YxGB3ReKv/RLU=
+TZ/oO1MsCZABjmgAjUdTF0mBhkZiU+iQ4jr+TF4oXzs=
+5xTTKo3/YGbx1vkAJmKlpk8YYWWetWlaxUS3r1bXFKQ=
+cHLa0H95ENoHw9hsDW1STA==
+k2jtq/tBYevcvMoHhetcQQ==
+MkvqE2uNYbSkFNFiHrTEmw==
+zJVjVHi9vV1MRr0uxlAyQg==
+mF/wktXaZZarzG52sxd2zw==
+2bzM/Sf25u58b5UaB6ocW4mwaa3WAV7belQN25dLBYs=
+5UkMjhJbLk01yMc1M1xucNYLe5dUU4L5yriVL4b15jk=
+j+ORxM38SRojO2rqxGP6egJP2qm2pYJGE62d4sv3IVE=
+JQzC9n6jzTBOrE2ykXMlyRtzQFTmyF3G6SvL8oZH2mY=
+xzPYhjZa6vOmvsQVPZvwTA==
+VSFpY4Z1+ON6YjvNr+6j+g==
+tnGWzk/+HFgvHv1EwFwxCUwWX303Qgs2jc7dc1MMRHLmDmEGYCYAxZzBEZy898v+
+ABujGJBQxuScZHCKRd6shQ==
+ci9QYa3f1A8g3r3unTETeA==
+g1o3uhEPYh++AukZh41B0A==
+a3iMheOdMQ98UAQKmZ+oZh8NE3CwSDboi/3m46OrrEw=
+lUIws0d7/iiIpYUW/b47t4BebxR36RgZ3EIU9Thor5A=
+Tcg/ofH9/Qt2uJXM6kSG0D5AuDk2YWh9KuWNe5oR174=
+6Lrlt77tuMkJNqVQhzgqrg==
+sA8qwsjPei6Nk7IxLKp1Sw==
+3IvF8o0kTrpb+18i6/UCinVbY1kXNh8tz/Dl12ZiNsQimmSTtA3rhUYtNmQrGKlBb/52rDuLAdbx4fBijjGaSA==
+hiwIDp7HxE4Vk2mBZhN6EiPnui5cOHsxNhemBu0bNmg=
+czX8sAJ3d8TacfbL1vQV0wpt15ne4VbwGticw8z0yGFQb1bopn2if1ey/eMkEZTf
+BQlj/Zvvkk14GQ3qom2s0A==
+W7d0naTtsJ/8MjX/N5jE9A==
+UruBxkDnThpUyWnVz0vEcA==
+bAGlsVFdWCZ5KeFgZ/qZr0e7RFk62Iw5yHh086jeDjc=
+LPTY7/F6+/rrST1pgffSDw==
+ou4EIWL1AJ/FfpJ+4lgFtA==
+wnX5/OE0Wvac61//87V1rw==
+9lGE97hOy+zhcprNrNx4tw==
+SakBe5g/X0FY1VoRNtMhVks9GMwdoFS+VYDvhMj/DQo=
+u9Wl2d+7t+CVM5qAqdBvlg==
+f1M+dZNHaSV6TPSQtEMPRw==
+OHjB8dSp8eygGVKOQp8aZQ==
+HydBc22kTar4kn9IWIE4/w==
+KQYJBqDYaM7w+yYuTHWh6w==
+PRq0RDRk0QZeTA0CQqEgeBMuLzw7xRkvpV1fE/jyDVc=
+opXElykzBOKTImqV6pOdQA==
+8QCO3rdSzWXDFnX61Cz0DQ==
+MzuNMwlstearM9jy4qRBov9SOhvmBu7vwAm/yv6osZ0=
++M/o4/clg7GMA92uZO4fHMPTqiWGh9fwxDn+ZeD4lgc=
+B2jrMtCLMGziXkHMrXuKxV0dm4WORBo8NSjETebMuNk=
+Um+q+gZkcDoYt6wv/dgiNA==
+guhx2f44el106K8FRerUXg==
+I+FB70YCjF1YGKUQaRPQvw==
+BVtPEcFMi/Qf4MXYy7E36irrjlHa8zVrJxjqS4rD30M=
+Ky+U7PYu6wem3To9v8shEQ==
+LhQMNCToHwoyzr6Ab1OiOA==
+Qt652SJglFLgIz5VGkv2MCUOkWB87jJ7prla1DzZRxc=
+EU6vJfbxq4vxeVjup4Duu6o1b17oz4cYIbZw2yf0hOuLlVBZJ/oL9JqXgzsNeuAF
+KMcZBB7wgmG3esNZxMAIAQ==
+0e9y9VG5TYoYwp5LOsoduw==
+gTVjZFuCJSUyPQWDrGFHCg==
+L5iFRXUQHEZgd91WaAQ10Q==
+nXZjUaMHM7r2ANjdEfJgFA==
+8E6yZcIl09MW6ZCvMtFNuA==
+zBePjbGKzcTjbc813piP3Q==
+b0Vw2T2SPK9Lge9AYoy0Bw==
+QwOa/AjVuDMsB2ohfaK60g==
+qVnHUlOj6YmDlmkjfdXDbA==
+jnp76kBf9KAnHM0d2lutgQ==
+1gkM+cD54G9asozEg0eOSKTFWlhMV9t1+2YPtXpWXUY=
+J16SCRRbNFiWCgCOkHR+Mw==
+L+TmlPxsqCKAnVdbf8p+gA==
+k5tQ6wcoeFkd60CwyT9TZA==
+25XSNlfEiSu95RFvIi1Rpg==
+zUyEzfwWm62f31NteDsHcxkhmCWK24YbR6SX2wGoYo0=
+zpDJziriIH85+YWCWqzTLAxowhTqThImfhv1IY4pZ1U=
+RipLziHWTeScXfN86zUjAw==
+qg97nTJ9UVDJwE4LHOSukoHz3Xl/QuJbewLj55H6C9hHi69pCXa3f83mOZ3IW3HkhyYma68mDt6cSjIw0IFlGw==
+/nnTtrd0s2cNJAwmw2iAzAlOS2CCnrqXDivlGqaGFHQ=
+2gabG/nkeHjhj6Jgs4c1uw==
+nfpG0sTLZ0phKMpplZQjcMiU02vsZfEpBs6TZtAHUtH3Krm45DGFGtoeIJHHV1Mkmg033Gnwb5gkZMs+MCB0TodIx3TsLwki8085WQCHGJc=
+OTnLH/0D9UPB2N9/fh4M2zEmbR1z+NlJemipPFvoF5TfN6i6RwMIy18mYEz+mmxho+Qz1ST47+oGUcLXyhCzsXIIQ6At9n/LKk5J7jHTEbs=
+ao/SodObfpGBvKYJ1s/DlrlGTqQ4Sh7e7yj01PI4zqrGbHiAQL0PEkvQVjAeeSdPoCiHFQ6bMoWS5CgSdQyEGV3Als5Slxa5MxUnlBo2mZfZE9hrLNz3CbjUQAiGicmjp/aw5wUjiYqJ2T3gJIf3bQ==
+xrVX2BagbIKnKC77w5N8LQ==
+kBjJvFdgGup8MCtd/7K5y8okKrmZzeIP1ko+7PaoZZE=
+c81ec87ftoz9D3vwYw2raWmUaIiGLQQgnwl4Oa/YAIg=
+9XaO1Tt99/yVSyNJsdrTYSpJbV/xlsj1z9hVtJw+aHhAeKfYrlXbhvUYc0ETQk36
+9indVsVUtXZTkuAFlG6Cx3joiZHjzDZuNOJRWWwWaP/Cdzu2n1APfGPQm6YUHkPHZ454UoHWSTiI1DDDo92Vfw==
+PtdTZs66FheyA24/ShzRbWygtUtE+KbDF0DUTcfrKOn3Wn9Hiq8GRo84t4M2FAIL
+PmLYUDnSp0DBTg4nuVnYtn2UIjfC7VNNwqkz9CqNdNzRrXZRGFQZpiGY3B0Cnw+t
+bbJqAH0LOqySTCTb5qi7aHB1A/8seDVeRYPDF3z6JFcy/JA2WC6vf4ldS7DYdfBa
+cCFmI/9i3sGCDUK341VROw==
+0ewCaa5b5OApt84oB94yEg==
+ufA6FxMeSMoHsoYKWghqqg==
+jLvKf4XdlWev5bArkouCog==
+2ZqdwqBs+XY6hF4S4gO4zA5QF1xkRQmLxsEthfXp7vJFSg/kKyEj682YHlc33V5b
++A0+MsJHUPtYoHmvNBsTg5FVHLFzWHgjZRiVHP/A2g4=
+uezZDmn042HA2MUjLlk9og==
+zqXis2At/CCrHIeFGkneHw==
+CWYF1jPgR4pANgXNL04qnDmFpA3QBbjx2JEBy8c6tp4=
+D5QjoqPPS2mAJiPFniOP0g==
+vWSKUztbdPgkaY7blz9igA==
+ZMrOQ/TrS4ceuFMiSisMSoFbFn1awZn4IT+UM7V+76w=
+EHoyNpsmj+IKyelmCxicb9whqmtdhkl0D6EjL+86Io29BFu2SUeloB4KV0PQb4vvKYf/IaGYIJbGmJLsnC4HIQ==
+03JDtakFi8QLMd4L67DQYDzTZxNb3Vs2yDfigKEhC9aJ3n36hoGfkE+7xtjPc9HSIuoVL/9oJTK+WE5zrdcRGw==
+awaP56dAKFEn/1JZQyPyzQ==
+FeCyg4pgeSfic9AnJtnZtGOQWKja7TE/K7/SGZyMpN8=
+XQUjr7ECOt9jJAuXB1DiemrOClnchlkbI6YQrVS2a+aIsXnPRYI6VqBmV/MxG0L6
+gOyJwtbjSgEmtvXDG0TvMi0Kwigzm3YRyTCUWBCwlSQ=
+eWFhNlMMsKHb/J1waEcn2Qn1GI7Ta0Egg73CAdJlAtc=
+A80ZSjIRMnEuVoT8vXSWlwOpOEnykv2JMnc2+pM+Alk=
+Ga9HXM5ENRD2JQjWGHBCVQ==
+t10ufxIR1nIHf1+jsAxtrQ==
+3P7k4jqUxoPA+F3FWCxqiFuFdQ/3x+0/lEGm80zNijU=
+roMXZvuoFDMRQjqgc/6FuQ==
+SZzXkS19gnghemSx/17FZA==
+ynYUN5GFb6Kt5MKeqzpROQ==
+q3gmMnIAyqH0o6SKyXZ0WA==
+/5Oy5canDNsAmDYAvgNwPCZetbUcvHqN3hwAJA2kkks=
+xAZqUK7eI8WsHSfeZG7zow==
+Uc3dYEqyyzx2jtPjAWBOrQ==
+C6vlUToRRdh+1+nbkPOVtA==
+ZQhVnS0NMHO2L8nQZiWTxQ==
+3J60WppXVyMBnn5DdpQyAA==
+6AAoKFD4hyAy4wYV2dQE3SAz9QDDTVDQs4QNtD6WfDD8N7DcE21VD/KTgmBMQY8r3o+JTTeD9BsfKuI511BPDjXCn+vnAz6/moWVOeWt4e8=
+MHMz2Uw14IYUhaYBvyh+YrjMarklFLefipnuAWjPluYjxID3f7PJOYhT+VayCLyh
+xkyE6gjXrwvJSe0sMzV+AA==
+IyQ6V5kByHLWNieLbkSfDuKATHYadWBrF02l4j8Ezu0=
+wbd5aa2PkfORcss2kUE/ivrhmIAUnmQFmF0Ot/NauKA=
+jRT7r0UD3CKa7c3djMwEVWbZ1wTGT/o8/+SeDnvN5l4=
+VcoFM3MsvKAG2JbLa8qObA==
+7dUcPHUJfgoCbHj0WttmudrfvyINF2kuq6vRbAvkieA=
+omY++wOxdRUqpaOQqTHCAg==
+rqrLlggkBMk+rg+uDvuI2w==
+3U0lPj8hYfekhR6ypwXdooeqfIjrTWBENXhygHQZTyM=
+j8SUYLyPQ8d71kHeEUQoeTtp4EeVYxgy2/smg6S7f3rAyR4ljS0vZjzIHajxuQLZ
+A6KEplic+ITdxdldeTPP8Ltf3FKHJr7zpf5IOOI9kFw=
+FhfYE6b6Az2zyjHvkbRP4rg74e9xnjIZgxmQCayx9gQ=
+xM3XSkSMwLfrziqbXnw4og==
+kHMzQKZlKO0Q1oOa4Df7tu8XviktcH85jsgBy0gLllM=
+PVX+XpBGCSL49qsQjL+tCg==
+0fV87AAhb0kVYPgjfx8xeA==
+Srm0WRmDhIkyGbg+bBR2Wz7rSh8y6yHdB/ceIyI8VUs=
+5X6zrpIhCxrDDyHnv2k9Hw==
+D4uJ9g2YHr4sioATIhTc+Eho+7/yiBcwnwIuy2WnO1PCH5uhZF33RjNWEqC7dSK1VaYIMfr/A7s/5v+kTQGUow==
+ongF4HJEEoVvPWkgPHdatvXcrVssg8n8ftb7jwJsPfA=
+RuW5TFJnYN41859SyklMcYVS7CRvW+yOchofNRUXGaMHQX4GBLUMbQaaeBaAXbHZ
+2+28xqpTAN0YOzovyBu/WOC7D1diyZdIsbhskgLcBZ8=
+LM4ymDsnR+Nvq9/t8cq3GaMWnNwNpTNdtWLumfqWW6g=
+INiStABUZQP1empp6LbgkEnzA+wdHh2wi8PkWQauVw0=
+FuPGUnSfPT60a6HPB8ZrHF+wWRO4hdtr87pD/RdcjQU=
+RYYw0WOEisABj6ytaFuxkQ==
+TXJ0GDFQgEQV6ULkJu2sEw==
+t2oUnHpERJyCwB3o99euSQ==
+sR1odEZc6oIw6+ZUb7wIhG0vvhvq8aUipjY3WInOias=
+9ks5RngbUPZ325W+cqvDPMzAeAmuarTFdHZj8MSXgEGvJlVQGu8nt+4FsLl0BUFXlwpkh/K+8ZsWvDHotr7WNg==
+xtJhwhJ+TsDv4MwOMo0RSCEg/oGkHGg65JRPvc1eNkw=
+Fq/zm05j3fDrGJPEi9XAzw==
+zHKpU50EahEWCGJi0WDufA==
+3lX4vutY4f9aE8khpzHZZf5L8NCnyh3p0jIkNM8knlQ=
+arfN+isO6/1n44EnPG61LiboJlPe3BN9ONSaZW3KPqE=
+BfbuhdEoe6/7Yx+aBLamHBaxv8LVcgj9KUUr3YLJSQc=
+sbXkWc+cfqgzD3XEBPUyCEbggGC0m/QxEJjmOffLmGk=
+ggDCHbsTRGXCeluj+8Sn3A==
+P8xYNP6czfWy0EXYMJ880JAubGKQBT9ORXH2kEYriSE=
+UIFv5Q19e1yPC85me2FXhFLvygPimeMIECqYH7YQj50c2jc9ySdPEB9OIha59vas
+vbLNjB4gHqb2NHpZteIR5Q==
+UlsmNSosfJv9YfnqDhu9Gg==
+P+gOZUHK6fhkapevE2LtqGSeXoQUVvcFMnn6ApxqYc/AYVpz1DJJ24SptC9XU2+sEhvRq1Il6Hj4gG53BCeKdQ==
+n4ViR3B2+pX1Z3FUeHNyQfhlS/9jmCgdsGO+vOB46NjlQPq8iUyIvmtf48e6KLyg
+eUYPS5jnf7RS79RM3qVRTQ==
+a1e6R9bFlbV7g/MY1USEsQ==
+H79dkgznoFwZl0YRmTwzww==
+yrhz+/NIxdkXtdvjegdHtQ==
+KIpL+R5tK0av+eoXd3jrHg8eyTbSZ2uT9aTsWTQXza7z1InIqB5qQtY/sHqxiNGW
+BF1MTn5N2A+pfqhfAoF8N4icNkHDmPvliixQRKyKWUE=
+G80Dl2eglBSSEsEPFvwnbA==
+rfgmD/b8X6s9Y2hFK4dDVg==
+S/RSgsh2iHyftTGKjsIW0iCJC7SuFT/sNHfmUDTpWEr8xSgvzXih9oCTw1HKjMBLjFOMnNrjwXTYixhhWHxRrK+NI6U0/PBAP82Nm6jD6+Q=
+j1w50mnpP02u7+E/bvLfwRT+HSHkTcKXQIRLc09IuEU=
+fQQ7Z0yPmDBukNkGTSV5d5+3O54+voNU3EmZ260Dq9x3nqFx4T2N11uoTFeX7jCm
+ZjG2LUas4TjWkJRMWEwsWe8r9yvJTOl5ZlEy7yNzGPrAnwbIcavypxZR/CHFYrv+xrJ6LRrdV/Stm0LJ6MtXi3X02gdsNSu3QEksunaReBTDLUiGqpEYorjwRc8+qNdWX0dvfqTDBoYZo/MjEpW8TA==
+1z0gE1RbzlJfKLmkW/8e8K2Lrdp97E1U9EaP+JDyyZY=
+CTl6Em0WUt4NARGJGgjssTNHeySCFkO6mCLbfBXAS0TuiYkM5OwVxIhvTrC4aVL97jUOl+aNg9Js2AO7E5nZ5A==
+DihSzw8Io9vGQUotAmB4+cJqHY+EnH8bfn0aBMkn0aBLbbd8VgQcrtSBuJFvARhht/egt4qCNs/xEjNhsnrDLw==
+FCtvhwnt7rusoTKlAyWzx2W9ZVBS8Rw/6+p6JGimZcs=
+DqmDv5Ws5xM1Ng/jXmEHxKpCLVOCFQzbvgWBfd9a+b2SwhD1CYd756EgTT9c5ETM
+3OKqadH4bsEGeOmW/XtqFKxvpXRGr7JL+ZC9WoR7cLfGkgSh12tKr9mvCvN4eqk1
+atT+OUAL8SPeli9yN3pEF65bDPnyNnUAE5pt4vRQZKg=
+ypr4Q68K5SrB9R8mJn1s8Q==
+vZCnHZ+MP/YIbxe+9A8/iQ==
+lmVZ1lDlvDYWkEVwujWv7aZP+2v0TrSWXbbUA24j5bQm5AqZFMzz/JgSJLTptW2XIgkwTNviS31Li0GIGGdxxWD4UWzl2aa+MEEzgerQx/4r8VptIqnT/+iipBZXlKOj
+mccSeIX4DxAEzdFCeG0SCpYSojXyDWoOcD9a0JuzGNSCA1MnktquBBiMwpfrG2/O
+XEiK24kb/gOc5+fhF+fZxw==
+nt2a2Ymu/TWxi0m2sZeU9A==
+LDFf/4+Cuov67G3P4lIzfg==
+0gka6pwgOk31yLgAhe+5LA==
+zEtKOUqXz2iSC8i+x+naTgi+SD/9N4psw2y15FGM6n7mdMutmncxzLQJ3+hOQ4Dc
+EupHTXsjaxrYT5Gtd6s/GB1i2cuqmGvvN5HhCrXBwK4ghzct5TifHIGmNO/D5N7b
+O9oQa4UE1ssoh0BAA+s6DrwUZlEuTlIUp/aEk8kxGOux+gMsbz8+m3FbCuNraZgv
+5A3t6jXSrrk7ISmZ71+CK9swQp3nZBmK8f4mdH/a501GsNecrN9bJsufVym7LxaUUvUMABiKlb44hnMRr5G8DA==
+8ziLaAJwTDnDRCwZslhcdw==
+0Vii4HSDgFqU3eOJplWeS57cUcQpr09ttKThPU5TJ6Q=
+evcGUicBNThZ/jIOgcVrSt3k1FVzAKbSsXXwaLlbhiLEaXkhI3EjlEtUkODUVmxCCb+FYhnG3iE/GOm1G8XNPg==
+qVxNt5YJXFRTH2s3B8I53A==
+VrlY7EDW6uaedkfV4Be9hoX1TOWEI5VmQpumgnSVXGEHAzpvdw8p72iqny80eCwZh4zQbTidLSxRw3cbjsuKCA==
+Erwkzxfl7rGv7k7vskm7SA==
+dyimQZfhOGk1SayF+df7tPRelgV5DjkByCdbjPwoAxVLp464aG7Gc6e4vdveCi3e
+anmIzCtwLp9IBwotIVQUYhGwKzZzU1J1l/OwUYCInJi5chWTkK4kgLnuFC/vX3GF
+FSweYSnphmcdURuRule3SS0U50Q9IcxALkzzy/ytEEZF4xZv/dcBRUbrtZKnPLvc
+fZhoFh9l2/zPdE03/rCpw2euJTSXw64NBMZgmAoUlMc=
+ZZ5UDXVDWsy8Af8UsiuN4Q==
+y0lkef23nDGyqLhjsgU+wQ==
+DlyoMG+NRB6hD6EuDBO/pw==
+1ToZkSyP/5MGtDg1CluSXA==
+mBWw6Mjxh+D7qeyzQ0bjkXP7s9fA0FWVB0/LmhoqS98=
+m06ZFVEJwnTm8pjkBOTgxuSjHplfz8WyNMxwRm2MNSg=
+bb4QMSCIkrlNcuM6ITcfEA==
+pwHy3Vvcu3RPnC3ACZDW5A==
+cSoXJE0/lGSNFkPaV9+V9Q==
+Q0Bqve/yC22CxQmOdrdysPXcQrsCA2LN1+ubKc+y3r0=
+LZ8/ChnOxAZW8tYvuVAIvWBGFr8Z7fpC0t9fFytYTqKq0/i/dq7pclRGzIiHuq46
+ryRzuZKVR3WE7FKs56WzYdRAAQoNFgA9eFJeY54JMfzKcwho9qxFySHXXJICwbMX
+1CX/wt7UPy5NceSXpTlXR2PyZFv6KwJqiCikZA9dG4Q=
+khAxvdtzw2v0E3NFs9Pwrw==
+Mfyw1ldMk1JWD4p/mr+aiQ==
+TR73Ry/3GRHgxkHKY19sTg==
+KKWGOWki38TpfYsHjWgTUqoKMfaSrmYvVAroLQU4OzE=
+LgtNa/NWhYWuH8Lfq3hPVzdCxtjyalj+p2i3e/L31VdONsm/vx7VFl8EjtaNTsJX
+FhLlTlndQ62Xonc6D3wgnkb6fLct5o8MXb1x/VZNTNsVabnbPvZ8HWbKMWYA8QcC
+dzERTj9c9L9iyvPPUTGLioGwDMSNciLfCXxLleAuE4zCpYzGRNz23L5sQZbQO/e6
+7R5WIK6u0LaODvkw/EwDV3yt2fTOHUOH/zeXmiu5GpahDJn4Vz9oZKnDNwv8qZc1
+F7HAyT+76Er8q03khm0Xd8usRPucZMI7Mbp0izagxwWJms/srjSQVzDT1uNaBJpi
+iBEFRIY7bLij0syc9xZYA8MGwsHfbdsSbRA2/z1izp+EemBBuFBTUOJid++7beXA
+bWT81afJPONaSI3wXGwhSORJxBvD+XaASOH1reHbisI=
+Aq1MSuUYDlCyzHFOpoYXig==
+nph2G03hMHsjpFJnF2cbYA==
+sPfLZ6n+qeAGXdOota2hpVS4qI2IqGgWjkyhJI+TkIs=
+FDhzkb0+vvumdEYBGjbKKQ5vr8Hbet195VpmszUFW6drrUa7qGHlTviEu2HOUaahABykufKGC53cqyTR9DtFOlsQivPUvk6pxEJju0eg/PU=
+Y+AQ1n0hO/e7gQWB5A1NVOs2sOVKSsoXg7AhI7+TDn0=
+RoIPyRriDC2S+HfWRL6imQ==
+M6hZVp+xxmgC3kDEmV6aF9O3ZmyA7vyOee0aoCkX7s49YJa+cUrg4nJH7xhpOfN0UoJoz3gV/WgUC9ajNgEQHw==
+B2eLRuzDLU1QVgwkystjqKyuaipdlfluFDR+vtiwkK0=
+MilmxAYqNP6cl0FBBgmgJwN1PDBinDw7g4K4uc2Ll7uHgj4LCoNPavfLTLgy6DAM
+GC4q6gszve75mduAanK/HQ==
+FhtJlqi9rTZh6So6XwJTQg==
+ZXU408G3rngLQS0CQG/AkdRCvr51IPzHthTA7Dxx7/5oKRrnLJDQENILeBtzPxZOsE4hbFxV9wLkKzEVzO8tFA==
+826w5+I/ZNQ7+ukc5g4OO3UPyYyKspQfd4rxYG4s+0iUaeJBywKkBHlpdzUnaBZEqEURD8Fan59tUQObXrPf5g==
+bJjJVV1UoTijsGGR3nogt0qRFKZQozrPi2WJOImsr+gOGLhqRQS2w0Zd0yczEXjT
+iz/JRF5Ggw4GTeydTdIkX5LEBTILdAB7hJm5tvvYkul/tnVpCio9i/pcwWXSMNqfYSEpzQocvhwdWOVeAhT5Zw==
+BJnUfk89n0Saw3y2/Vn9p1TDez4gZo/61JSn6fOGKkk=
+vZj+GEVkf27qX45bSwHd2wFCGJiQ5v6g/q0oqRICHcNiN9TiZ/TBoe0dtXfDSfjyqvO072FE/vSJZ6xaqKZiug==
+/8M9dEw2UQzJ+MbJEHQB+YEBi65p1Zy5jA+dZEQF/Fc=
+IHhvYrMK4SVBg5v2HUfFfw==
+nXvYJa3kbJL+GoIpVIqdjmOebeAYqlU79d9EJl7S6ebEbl2BA0GeFGlW/jRmGTL07Vamk7c9T4RL6rNrMITxBQ==
+Pte2e2bEx2y8zrg1NcYo/MxNJefLxT9ANqoc43uXdslfz3CHKR+D87Do774y/Dif
+mRQJ1tMveQMjpPmwBluMSO3LEHQ2YgSetWXnX3ewizavuVe8jkOawTXCSoV/jy/w
+6KL87iQibiOXUt6p3PtL1LwQSbCtSra87D5tq7MmZT13WlsW9oHZDXpkQNV3NZSU
+b/mNddhT10wvLnGMpZWpWTP8zDe/bH5ZArSOBeZpv8g=
+OkFr7JOXqEEMdUN9Nw3lo14fSU9uw+9Fq7a6bUUm6Ig05lrp+Qf73VzP0bB3QQNIc+tC56fG6IYw+lTmbCa0vw==
+AZuBFVZgAvkz4/ss+MkwNZuhOdkKwVOMVLvVNxgx7uXt6jYjtAIJSVJEavecj2eZ
+bxhAtzUSeWVcN381v8SBaQ==
+ymAUMowt4OkjLzyCR/W8jZDT6/5XTudOMT1gofi9w+s=
+podkF3lzoYRM3iK/xfakyA==
+Nd0lxMcC1BZkg/EKrAH3XQ==
+emSqzfNtmU0QoxH2p/iVMLGUHHc2QxxPfe+8AHx08A8=
+NAPYn7QYvrWZrZO5+lnOA9pMhd36UyFmDQJcT9RQDWcd69GV5t1FSIbKQFRfOeQB
+AB/bepWgBFcHwPTBsinqwTSDo8CER3DjXysdKrUN0vH8CAxcQe9tSBhlSAzC8i5NOtXeiFL+9UYNI0D4hQlW0Q==
+tmuJJG2sQeh1hdlydXnpFA==
+VAFI4TZC6ry6vfYV2n63sA==
+CFdeoRsIH1PFIlBXI58GzQ==
+Dj2VyOooBO03DvuWaE+pug==
+AmEvibUnZ2ar1f6mlj1cGt9RYooPg6gIVQoU027yg5A=
+0ph21M0dSPmfut9Ek0sJrijL7y6WmdhIu8Eow5Wxklm7iIWr7l4TA7rXBQSbYMhT
+Yqg7JOin9TQt0cLsAquRpmM+hAq4/AEL7umW0uZv6Mjsvs676iZJcjj8Uzii0Ta3
+1NIBz9R5uNPU1dV0W7eWK4Ou02r0xMxgfKmDBqpqtZEcWH0BgpSj2Y5HvBbXdVdJ5FGxhRVmtrapE+JfDSnJwg==
+3dh2SLb8qu0TaT6+g/BU0R5yu6BnP0FaWrxDF9PpXisH65xJh/Wfka2phL85RuEtxJgliSCvN5v8LgucSk9l8A==
+PMVG/9WGbs7lTPcFiogL5FkFV8+izj1TVbnFXVSUmi43qUoeNuTyXeyEkuWtaLU5M1F1H+wxgB6mgIOIriKKVA==
+/CEip6dMH+Zywu7+5GxQVAwdg/pgRNWDJupCZqA2HJiaE91aESMWH6Ct3OVlYVThT9BDltYjhQOd5BLFkypFDw==
+K74dKrb5M4bSv4oEx9ZLXiMt7ixeaX2Af7181EC/0I+RANBISgxWqq8wj7J6WvHAAX6u+sw+/SQITMyqjL79zo2qfJp9EW1KJAI6VhKoHosdIbzXuWBrsAcQLO+Wh/9f
+XwxYr4TbB267qNPnUZMGgg==
+GXFyYl3tTWAUochXECTk+XATo45/Gk9aHR00iIyf8m4kOP+JjYYcRFi/a48uHREM
+A1EVUpqTO2PtTOd6A9+nealeNjb+Izn1xAAnUg2tG6K649ea0R0HCLOH8wOgeJma
+ULk5Q8oYym1oRP16q3XxfRRFoTGWM4wi7VzIzG48fWE=
+BEr+6mFOgitbgCmp/TAeH5X0K5moGqnRLtqRIofWABQ=
+U6PT/O8QRrEx2doyL6FwLqWJyx2nnCEzxz6S21+2NRc=
+0vFzAnpI5A2wvB4dMiN/soC3vkwPHcpdiGrw1uEUO9U=
+p7uUMh96Z9cOLrY+0fCXLg==
+HON6zDcaVSdr0duDjm1sGg==
+qf273AexZ6edJhtAZvnaqvCk2e9nE9NzDmpsoXrZIm6HYvE08J5jjnUMm4vmN9+d
+qyFMhPEHrM9On2WwVMXUrw==
+GKIU732kChyY9gzA/kOUyMyKciOxrrXata+7WOXxRE28jqiN2Oyn3w4gnPn5mCwUgmIe9Dqxwrgn7yufgQZIbjhZivZeA41fXT9+meS7+Ms=
+i2vs8o7gDbMlwY14jVVEWk6oywHDYLzatB/xvxB5EZ7qCT2kMihEW9i0c7jULSXhHLCaeRO2//2GKuX/k4WhxUEAqlDjDPz2JwbBnu8YITc=
+7zzsNHfXVCHbMZqoBPIRAg==
+hU8nIKb2EaaNBRFSqo1ryw==
+i8BJT2/bPbNDiRYU60Aa5A==
+bbdpmZFCxL2gFNzdapY2LKNTHc0cUBwLMhPa8piZ6ggExTCNDduTTHoQH3wyGvR3
+gf3o0FarJpcme+6l59fhSCyoOwtrAOrJtAMqEHBOwpOc5Q/S++crKtIktQKj6YwtRRPW5ZP3ROfISMon2pGv7g==
+DIKw5jR5tffRI7X7xibk51epWjXIq7emOqID+H6DAP4=
+iwph2q1sRiw34JZNLBPnbA==
+/Y5AN7lkbGYg49VdDAv10w==
+rB18jSWYQUa7+W1lEGSakg==
+Y2ehAH1pN8MjobStlCIfL3mX2+spSgmb6y5uIDWNNfk=
+8oibYDL4UXOe39cjDaYtAs8BP+dXpIbzx5PYQKXhIpuYPGAnHNYTX9fxOy7G4cvW
+1I0Brfdem/ZedQ78wsUjKRaTrXWlJcuXaKYmO2ZHVRwhrZVaBJL+rF1sMvyUGLPt
+RBzbmqC2cKhijrwQ+xJwvz0lKvlPDivPHtItmjj6x0s=
+r4YYk0gMpC9cvQ6R9ND55w==
+Pyh7vol7J1ImNF4xdMuKRSBXrVVyvgB6M7YSmhnpOS1+OMutp0YzAIPm0rl0/GE+E894MIa/pL6fuKgurGbhc17J4yoo7MKvbZc5x21SaqTWVNuzSXVsR+WV+5G1+ps4
+QUhwORjjurB9FBjN7N9zGw==
+r3B4alj6n0rp5rZV8d2KcQ==
+38Jj8WOx7tsH9DNk+jVKx0qfk5lFkbbw94pK/rn9h1CXlz2rNTwKVBhrl10iBVq+
+otwbTJSAOrpaXpHIZeDevw==
+Ssxy95hT7qryE4qkOTsYy1Vxv2pJSXtvu80xTTdnJVs=
+xYW8nSlingZc/ZIeNuaZkaCCSmzktM68kVbpKKIsKucO8jQtozE/2NRmOM9+5ED0nvacDd2T20rSCSY9PhBaGw==
+mQ7JzfUnmM9W6sfCF1mYYzj2bMZr6KadNDDdExEQ8cA=
+5m+ajypAHJcPkO9TyBdl5lWffO6wxBMsPd4UP3oPVlhZV7s0YT82khkUPUYXdqkUpBMbO62TvotZiAedVezLrA==
+prGZXHsC7yihIi6tDUXaFg==
+iKI1+GxmUSLvgLVOnrR0hVz+mvkCXCzejw60Zxp8OV8zKLN8YWvDN0+/PfO4aBds0GWSr7PkmkMxx9qxxNhaCA==
+6LNz0N27r5081zT6pmPUiQ==
+XGzVRxa5a7kqtCAM1X72CqoxlKK5kqZUNKWjqNuVszfWsk3Ciuoyq4q4ue+Ln0MKPJ4Wxd85x+lky4ehFrGVfA==
+6KdTYbi9boFK7LmQhADqmxrIG6HUq1F6y2QgewPkL0EzIP3ZLUlRiJi2TQmw53mw9OCu4ycTouxAmG2//ekxtA==
+MDuoNf7hicNYAs7pLWxmPpcIjOlZBDs9BsCsmJ8m8t4eIs8Cib0hmG5XcLC7tWZbMBxym2rqqWg7cVo3TfDJMVSWOVk+fcedSCc/e1thCcs=
+kbMfCoSjRnew+xslmgUad9N/SfvSo9XRrbjwXYsi2uM=
+ErRHnOZtPjhoOwyMFrO+9NQkjgWHjlPPt/3rmHhKqeA=
+HpI+bwyheS9ChUmJC7iY5Q==
+6JicE3yjj744dJpnRUBtfA==
++DJPBHvOsQMxhFKJT+5ThA==
+1QpSROKEQJmxnaesbgeAzQ==
+ETqMUgwjtLixgh13Se5krAaoZnAWuLwe9ik+4XLhchCt2eWJRPTtzqoX/gjmigAxJKGWo3utG4MVp09Kja7ZLQ==
+JZSAOqBZx2b3dRQnL4ndo44LwF/xC5ZF5kVVsObz8e2AXGvEBnvcDPuvZQCTvAD4LZMki0NmJw4JkK9atDbW2g==
+KXw4tKb6B+63RLoPnJKRGxaXe+0nkKr25+JEfpRn58ecl6J9HC3/zz7Vk+f/nbT4HRxJGNxPvJo/DwpO5MRkjAoT1VsQf7qzr8X9TtmN6SI=
+UU7DSdkj6vTmm/RrU2/e1PyU/TTNGi8kK2+o47Q657E=
+pxdBMCN5F+QOKo3n6IeDNQ==
+Z8g+vnelLpKtlmm0tp1n1w==
+SAmDY7JbF9famFS7HSz+3Q==
+Qs8HSodsmeLqQNalRFTZQA==
+duZEhP1+onCCeL4nQX6VRA==
+yQ9Q/e7DSVmxUl2vTEPZIJ5o++fWXcUCH495gRJXteWfz8x18vXiSSvMBNkAu9hIAm5oLR1JeV2nABrOGKO9/Q==
+are5olJ1HqOwwnt06YWFSvYrikrBOnwZyolOyelGHkw3hKobdfEU3ME2XhombkzA6a18RhrU4VuWUmIAfFauAQ==
+8BXscSVWA7lJLSHXouYNMOVSHsnVLX+VcfePygWqKqF0jQlC+4vk24UjGUtIWFAM
+GU4NpZPo4FnSs0f5PoRV+uJQrbpa80R0x2pau3ouBnsa9hnnK/fLFkvtufUeokxQ
+Be9hgRREYmZt+k7hMsXQqyUE12V2CAXThWMUZmi06B1ABZ2+FVFRx/18hcPl87U1U4vNqZKiET1SESGjOwg2/g==
+omeKsgbFLeLUMH1lcaSLA8vvH8g58jYY9V26UWXrHSpRaXgHbXGNAMo7RJDNNKcEi036bzZEdarTNh1Q/heYzA6mDvBLBzlpJb4FnfYZpOumGCeKYvZgr6rpby8OF+pb
+nkh7DjRGdIrUQDMvF5aVcsYkCDEFpOq3JdohK1f+/d749TvtS6zN61cD+g/I/FWt
+kExA0K/8P2fIhouZR/AMLZO/lbqAt7pD8OfQ0C/nhGs=
+Mju8Hg+++i+QI1JBf2HlSg==
+7ucojpSWwatUtUcNFutRgw==
+cYGAVheDfotS5Wc1LF8bew==
+66UPLQ4hiHDkP3NvQNbB9w==
+4+p9XmO32C47oSt4PIxRMxnoFGbHmBwyG54LvjqS2sM2BKvdIJL6VUb9FmFgZcU40X/zui0MkU/crohTDJs+/Q==
+NsXwnmNCBzQ1Wlnvxo4i1S3Trqo3s+a1Z3kPrr5N0i9r4ybO+SixqwaIaq1+HINdLiaeA7/7j7MUnefM+B0gmg==
+YMSakbYfzv++yILj3dJI5x6DVLYkUB4Um8cCrbq/4tSk/5QIrsAZUkaRU3Q+H9ezhLRIVS3mI/AnIXG2LHzki33I9HbmxbiH+Pp7wCi5vIA=
+58zeA5zvIEwwk7h7KCtoZDQToFQJwL/cOUVbooYFkow=
+OPpypG/Zwy6dGCt+YmxSHw==
+sur1UNrY0jfM6dj0yFU2Yw==
+sr5fatwq9lg2AnF59/CaNQ==
+ULze2XZqlJ4nYxPFA3ATtgQlxx1bW/dYAq2PjTXFB6WNulWrK+TPfj5p0OFoeshjb5y9FmPe7zRTHN/9cAEeET0BuheIpAlkYfSaJZcFbNg=
+7PgFbiUnjbUUrU20/siquQ==
+0bhsNvCN7AojF89zofd5vFOkzsbd2x9MAhf1ItgXbfnsVsdbsBlGvgGHKwEHj05ISaXuZ7yNzyFW3oHJ1YC9pA==
+vWsW2/ZtuJM7DlCXRyX9tu69g5m4pabhsUC1rhDz4ysomzQKqecUYdAtDqcu/G5a
+iW7mOYPX357s9M3W1kAPiMpN8dQFnSA2KejF9eskYUsua8Le2Mhgs/kzfg53r2wZSkePX2WuH1bLqmKku4dLbQ==
+kskxPVC2iMxhLvncSb7fBaxkrsCGoKWbZlD3fkbbbSD3Lo4RdjjLlW0COn/7SawiIEJS40MwnWwJ9SmV9CdABNVh8OqDnSnXQZBSS371MonWwSqi36D2tuK1Ae4dMf9a
+cQlVHnGNuYipkASoG8p2ceqPoJKXN0pshe5NEJR4SZp9XF7oyJahstFPFacjZ4V3
+I57oCa/ukC15lH91qb2SKl9aaqxkEBgK8P1KGEGxz0Q=
+U+v2Y2cBenbDSbuRX27fVA==
+pTm2atG4eslI2jdOoNgtCQ==
+g3ZDFN8tsnrywmIzuwPfRw==
+TEI5DurGvHM+Z9n77MapLQ==
+JPh8VhmRjE4WCXNab6Uwag==
+ILdVOIspEpRjxgka5oLQ3h2b7w3/GTk9p6NGVHBLnHjRjrFa8jRW67kbPw6AtHlr
+5lX9lkhjCzra01PdzN0Hn+F3xkNuD90/TpvTFo2eyF5apq4Rug2VzqOLT8LVVHpm
+3POdD1QcqKFQkkkhk2u1Fr0PhyjrGKye/SUotoVsXzY7T41ASG5EkdslvmhP3poSoUgdl2tX20HoNf9b2Ft9IQ==
+4q1e0UEtP1odfJFmkOAZelNfsT63q2phJGXNVk5gCQj1ZRccvYX2FknDDP1k/rmxc67AlCDpeGXZQitHXW6lTJG8e6wgUn4qMxpDu5JExKbKy+LvgtHQXHlQ1b7dEwBf
+oX15GWAsBNvjGoNuNPvUZMqKhn1WstoWH1LcnzNbxyKnVWdG1wBrGCZO7Sghu5LXjErtFWyepcdltSdtMf28DQ==
+F9NOjKdJIOshYy1xN0tnBZckY8u9wYzNDOC1Y/UiE7GZNLHWX1ChlE5ULcTt21BJHfGVdahc/Am0PaqQAter9g==
+Njvuksv4fispvH/Cfz8LhFMvN1TnK3gfrOiwlqnHFM1uAJrnCkqFUY7LmsE2uP9in4NYuJKj4VVBYwLepV7/f73h9UGXjwFMVOH+S3nt/5A=
+RFq3WsIT82d4Y41Fzfs4fRHyJ34iFThYYtmCVh/FpuaR2uqPvYBZdhAybypBjIVogPedsEGqcfYmZxvflKxFVw==
+T2eM5L/IaOw2I12jQRY6L16seQfEDGKNPWaE3cczNN5Zmaaexe5YiJsB9V5iayo6sou1hoR0EkWtryzkzSKAbA==
+SYZ3iP3wO3/IA03egAVEOS0JrJKaMV3YLhU6BMgAnootimaNmJM4+Sc+Bct16SeEHZkTGt8QjbRX2FGnzDUW/l+mSxpLeEKyY3MMFVGojcIQX6X387oW8ESNYoui/wnn
+CmPjaBiwKT8z3/p0pvI/Fy1nnAihBWFYUvbwoll92Pqbgu/BxG14SUwTU2icmKGW5iLqEuIhXkWkjhO69vo9AA==
+Z0fGTIkgfdgXrrA6ggciuYJfv3JzcTyCKtd2JziGnF2gL/aBxj031Ml54+ro5UiR
+aykifu0J2NLhPied87Y8MeKTGKVYj2dsS4lpRiXNYh95KgFsKyjS6OpsthDeP8SND1HArJB5lZ5A277rsqqw2qWPP+z5HK6Ln37C+2lSiYs=
+VmbB26BAGn5jNMIAHukwWdwJheDaRyz9az/Q9AoJUbGYS2Z5YcYtrltreIwEPpCN
+A07ahYSRhavZRGiLiqQ0cg==
+iMB1zA9aSaRdgZ/qNCQxg67Qj2E20Ngq2P8XRdTa5MmjMn9jB8xTim3WDpWf2sB9
+qxmvYD7iUGvt2QtkC8NzGQt/dmLxi8mTwpNECOBHN48=
+J3eFBfFkNbjXACjkaarrcgU0HI5Wmhm5tIoCi9xKpQRIqj+M+qlW5e4QhoV8dd7y
+xR44uhBI5Zy10OFZnse1mw==
+lIxgW2Yaa+eF/TtbXcRXisNkC4HFeeA5ooVZYchWlPQ=
+daTmPgnFqezEwZf9CVIFMh3S0FfkO2iuQMiSt8mlbmoHAOk4P94FNrUTAo/+m8Uu
+ooxoN+Rt1N9exUk9DOW7XchAo92bvdh+eLYiAHxaIzYoJy/MHtgC5StSs8DyODwwu+8aaoY8ra/y0ffT+kI/7w==
+sBmPJ49vTdqvvzVxDa6o9Q==
+ktxvUa0L/0V70aI36zZMGmLFPyuEqedGpZlCMsd2WO43UgjSsvfFuIQRQjnlbZya
+wYgHRxr729eEeqb/NJJm4Q==
+3Rphed2FnmY7ZG1NPmbsUQ==
+2mC8VFIW0g+slOXWYjWSmg==
+Y+DYTHehsFGYyWZaVRm1IQ==
+ZWllbGZnF2YFfRXv5gR/Es80qPSsm3e0/9j1nX/5hpT4s0k52yConnBeWE43JJLP
+SGPYv5FQQAxaT+HWcTzXkim7gZBynohIBUqTsmwYGcI=
+k4XPvscPhtWBtyatfduJI5tSURIPRd6A8KLeKFhRGcY=
+HFIVfb7yYWFNqZ4tgomtHWUk5GTREGCgnibKtpn/c84woeikwDf7+Oiy/wOtgG6k
+h5WTxPtrBWaZMYLwJlBXCCpjEAV9WPyY+q+IHi5ZyuA=
++QgpOYbhx7d5FUWJSV5PYBZtRvAXpw4T3CGeXb7fQO8=
+NXkbI30Jx0e9ak/+lYx5S/WxydNx6g0S8VjznJSDimw=
+jxrWqxRyI4Ig02VcPZTvUuD3UIp4B18rbMMzDbRqDibYHD5vGESq0SXKmSveAE7H
+hlKRMdj09kKDFH8EYnPw2s4Aj2NuQUBVE02AXtwQLEg48IcjYINSc24gJ62WJFLK
+2hbv6j6cTSFxvND9OeSMBCo2wnMMIRnFSMKqayb2Gy5UA5cKujCj0q/6mtzYYdFh
+k15qFF9guOo66ezYBpzN5pnZ8ve88Jhw22UOFYe+DBpjd7ueChu6NqWfsqo5MjKL
+eWrZyJ+efn3vvfDTiu4qNe/tuakDlAncEDIrLZNV9kWggdj6XaHuFtpcjD0+lPe1ZLv9OXjU95ibdymUbnTJNw==
+QZvnbe/0wsu0fnEAAqay6rD6M+m59eMCtoAQ/479nHe8NIapSwuCdJzpkBOIlUJ5
+Ez23hjE1nD72CPVxN85nzGThnU0xkkqOckDsb28ms0eFGPFeUs8kua5kXpagWX+S7i57ylJ2p4UeULtwX0WNrNF35Y61C1HZT20zBFfKFzw=
+9swHEyUbLu2YAr7DVDAjsQ==
+MzlOZ+jlagv7DvrugnxrafmNeMemLMAEtw9ZIl8WlCi7lI3ZM3b0n+0ixH7Vg2MZBpP2LpEEPSrFnET+KGAyoQ==
+Kw8MsZLjVsqppKmvATOEaIrj0cPFKC8V9vNAf6QqnDs=
+H3TnabIkY8vokxAqVg9ac0tPr1WJfCaaMHdX8drOwBE=
+1wR9A0KqitOrSngiZ/TfWFBnDBqO7uGZgwN5mO4RVoE=
+g2LHAmc/mVHUO4ASILITOIlCzuuUAy4iDRiRS7PeES8keH+ctey5t0j9lu5z8jMR7rqyI8sH3DVA1AwuRUubJgPVTGCAScFQIC7I5wwnNxE=
+v1nfw389s+aH0sFRi3YviO5zKsac23YsqSfOGSqGlReRSE6xWSR9G8Ujx4J4EdsX
+ai+wkvLyBgDm41G9M9xBDNxao3eTqnQri4g2hwkEHAx1ARYF87hU3X0wMEpDacx/nGt5eyX6D+TJ0M2Wh631aCgtQ8UhXOKrg8FUpKL1SEw=
+S0TTP7FpGBUI0Fjzvn9nNRwriURm+QO5yFqmAzaGzaq/mtEQl90oO+dw2+pX+iqKm/o+/TbQj20RTL1pvfuPOA==
+mNOrjOIjkH9eRRn3n/VRqHde6eKY/g9Es4igLcHohAySrRz0p4MECtWFup0gIojsrd2kKKFwG73ZhydHS58rUjjTPWxj/DXM7fT/2ydAx4g=
+OkP2fIrbv27JzUI2XxNWyrV+Q4iCYs2+xdEU/QOvBaxd2ld8Kqt4f5FSIk1bATlM
+BV20fdUrlmnRLJ4WkpgA/w==
+yX4J2ftX1X/urMhwZN6+zg==
+FwhwkIZOU8n86oEM8Q5mxSarWEDQTgiMup0VeuDnNeo=
+yvGAe9WG6CEBj1ZWorLEeBdLdf6yexyVAvAXsICFMDE=
+YfTCtoYluN6auwiaNEEfhJMWE0gDKQh7mKgP4p331SA=
+yDt6klg9JQsmkgQA40WQciIdbhyRLVekvJgW7dA7+vav4+QQ7ADckCXPGchNJhQ0
+EHVl1LyI6CxClkeD+GLo7g==
++mHe4+0w3fAKiTWt3QWYYw==
+KubJWYg0btbiNKZNQyaNXmQyGh4+Oy8ykIE57qUFRes=
+tIQMt3UEi/3wnBXjjJP+Y2l0DGYLSv7pOUv+mS6OV/Y=
+XiOSZfckK48/l2Br8PxFh7sxCq6UvJxfh0k3z/VVVvY=
+bcuNTwJHmQwaHY3ShoQtjE0Yqk+hBwQKFQ7o7Axq7jxNT3xGvh2+GD91F6N7NiuS
+m0xysXMG+/WCYAl+wPizb2wfaZw5N+A6L9lBWLyQMNo=
+x5AtXi1t6+Wif/uX0wW+hZm8wpG8XziSFEvJytNaANk=
+ES0d9xYY4iIw5iBL4DAIBVjVyCPsu5v7AR/FaIK5Xnw=
+/PsSA/s3zVJs8o2eLl2zMVSK5VkfO4Kb14C7gj/H6qA=
+62uL/z15QBCBrhrC/G3E/osMmCgej0NfQ20iGGRw0PRGOQDMVTd462nPIX4BCgT2
+997o7RtSwFi4xABjC5djAQ==
+vlvRh5tgEykucY0FlpJhCWYDdyiIJEhwVqh73eD99W67m3YsgOA/sfnnSUxofqL7ON0Z86GSIE5DfLC3CM449A==
+CjYk7c2RYzeu3LjMIvMI4BHrc92i6QOVYI2TxchyTqeaL06zSst+4zf4vYkW5OBm8pG4bfWjd2fW/FUvu24qpA==
+h2Nh2SaELgDrFur/Bs+ZO5LU9vBf+AbKaxejq8sJqhT6iDcHpVl2J1vcuivkfCAyArx/pVHseoajwttCJ6nl1at0O6D0QnLhpUlJY8hlzYwiuSy8xPRiXiLWdq7PLGCE
+MZ1WPCt8nRm51eUjXA+lLeGIOJ09xYa52N19ohcts9jeKzMg3oQpvfOvv5bD38Dw
+mGyvVhcxxnV5MsK678PZYxj3Lylyt44NR+13J4tyzkEaEImUj9XdmA+LoLy5ZgF+
+WSyqtQid34N5YJaeTK+f1lGYOP7aZIicOwqXrGGlhyzcmWk7tQRbb5/yar8oBxOb
+mn/5PCYrst5dtLaE+hal2w==
+ixYqNt1pEcpcLKxF8q829w==
+4qGqwd5z6X1t+wGbG8R4wQuUAg0y2IVScMOEhp+xUkK3wZPiYHMDqjEEimC6rR8b
+TSrMqXRYMwiKkdG34U+O390+V72uvst308KIKKdABOw=
+vD5S5Ckx741YHO4q2CNs48lHUffPDbAfpIVY7dhUQ4c=
+iolFDvLFPoCR71mpuMnTvfgrP1O7KWxoOWpOhilP7zmD1o1nCDF38GRYmjhxOoOK
+DWbYAPt3g+CFjP86kfzbBGE5QS1aPzHyeBBLUqt5Hv8=
+u6/RafMbpAYIX0L9jK3XPXMI+YSx8bgKIoJFyJfaOMY=
+wdS+7vqweUB4gkjwOzx5IAiqLXLLTWkZhvlB6ilPQvI=
+r3FMCQ0gs5MIGKAmen9KddrdS5S24KTXuBLZozBmmPg=
+F2HNiJKuJ5D5P9YV+SKadN1dMHOBQSBh50Tyc75j+0Q=
+ATKARjSgm+V4jYJsKOkbcpvvXwkrnX2237v741JNuu6mTeo+u0A7I5VztVjsGsnx
+QADEk9V/owHgcD2XJ3xiwV1dSJ47u49aLCtBLUQ62slr00lYdgnA1eDA4s8DnlVp
+6XAIR3cql1DH9Now6X1aLDLCN6/LbnvOhfpLWrdFpW/mhPsVa5aGrDQgrCvBunmI
+4wUvOy/vvrkrcY0Br5XnKw==
+GUuzoArO5SNoKnkW4U0DrA==
+2oSVys7jVtYtQvFa4KU7Rw==
+dVUoY/YWBIdwxqWxRYcSw06ot/45paxMz4nUUqKm6Zw=
+rCCPGtfIS8RGwZpA/nG/4v4s54fQnS/D5Z0X/6G1IB/7uqByhZvwsj4nVlQb7Hbc
+TISYntoUqh1gx0YzmF5DL9HlFF7cEXK57wWz4icvP52nNlTZP+2HLrYsM2gkcAiwm2t3rGJEEdNHmKC4vLsKVmUlgodqs1b7pPyDIOO6OdztKNhj7UHNceZ0/13P7daiR/vOneLA2v0XM7FhTP424A==
+TMxbxXsdGzF9mA8stSXJCEu66RfgKJt4PfPFaV/XMnkInrep1At9MZenQqNUnjrWyo2eLsOujF1mzRtLlz7Mgg==
+ooChdgT9zHw8A5vl9uNLAVQZSJd0+7Km1nfOk4dqezc=
+bfymEFaplcWsUvcQ7ciqcELzy1Ng+4xkG8Gk0nV7oaQ=
+h1neyB8A7REh3J1zNf7/Tw==
+r46JqGr/9KcBYar36r/Ahg==
+FmvQEFkQ9LcVEnpYvxyllrJSqVJ9Qx2TOh4petu6FDLlBk2R86HwUGKbDAVrZh+h
+toQbsEvaXvfm961Rb40f9jvBIRKT0TWPDFIgR8riiCQTy0Soa3iycQ6fojD+iswV
++zPHQJMqorVpsAly8FtwKtWDPpBdZ+gNh9dXb04Nr/N4cVJtalljMvrdBAalYURS
+HInPZiiL6w34lzjls1K3/ZM4Ij8sXP7l03PG6kLIPt0XeDR1cs0bBPDyz3oGSgmf
+xs5LN2ClpHJ3FJMpBi4sHksW23Pd0HopHu/EBnhylhM=
+J8x4XPMcNJqWnnxogOxicCQzqYm2OmhMr3r3HCB7OUGWYjT6umVJtiDkB0Tx9q+s
+sZVSJGi0iPjZjhVux6A/LA==
+MCYw2BneMglotCt/VNyuMcv1zxsRs0YeobBI/za3DaVXeEfOow1jVZ2NOZ9oRym/
+Aun0GZycGYTJbjNzkJAjridrJALjsPvyKElMguOGxTE=
+g6yC7uXpuw/o5AiJAyx51A==
+7UKA7twzmXlknuIn52ZaCw==
+v077T+7gyzYXZnOCP8fdIzWKtyzMlpH3pXw11So6rvBvQYydAfUN4Ja6dXnzEgk5
+Aqf7bwrKx3LCjqnSHu0fbWNr9lzz0gjiXciAWsiAmvbU0Jv4ppvVkxx7dbUf5HhW
+V91i7IqHhwu/sI00yHVib8KagE/fI3J4vkD6ylKuYmQ4bZv8dXhy1iYVtdvi61pR
+i0Z96aogrFTdZhovdc0cymvGVn3rbB4dUhXfqzIuIhxA+oiYeuCc6vBaw0xVisC7IzEOhspxmUPdvG2lUeVkahc3TKis0gUpJGVMIv1uRqhF+IbucGpm471pQIAP8E5J
+Pc+OcfbiO071dhF7s1AxLYDXBNgmlCYUkHFQeaHd5cQ9v72yDJg5o73ObZM9ixgF
+5/LLyqRNHAyxu2SRcACBAmI/un6zfj1TEFog7YcOyjUUXL6hLMn2zwt1raiJBGtB
+In0K3UtY0ZihVClxE7pYZlcI/345uaYDpfUlMYvquOk=
+fgWLglgxSe/HHGaT7UhKjw==
+Hf4SS5WTUcERw9S/Rv3nVw==
+Wh5+5occcHXk7fCFm4Hamh+kDvDZKFT/O0qOof4BUM57z+5Dip+loS/OBBp0MCMV
+BuFYghZNR9mp5UteYZiYVvPei3hRT0Q4/KqUoRIXvWxqFSHone8GCig+fB3hDwXV
+vc3ILnI3KbfL/0sv0EpWB8xmpgyAbiXjHvs+f2j1FheFUagsf0Wan/H0LO5h/vfF
+Kv5En54WpTSnFF5+D4fcuOwqcbWRDj8xSvlC3qM3r0ky3aK/5RdtXbnqxA4NycKZ
+0IdlKRbNdQGG9reypC6h5eDgixrBrrDApuF3vwd7MaZhc//DD4fUOJjOwhvaC6bp/Hg4RbeneITFfgEV/Tm2rA==
+0IOwmZ1rUUmHfuXLCCHBzxxLzUemGpS4Zp6JeRRUngXMaKjiyuSgDcnau34o9wDM
+a9eALNChJEp2crXeDEyvOhKSinuTRmRIqbg03pizixa5cS5Cku+Cvn7Fk0XogTWCOdQiQ9myI2pp3Q7xxW9AYQ==
+yoES5Kb2WmVF+wQ/x/pIED9wlNmOSwMH/fEHE8EzuO+PiJNp67xXxEfnTRelY0U4
+GgHn6NmOdfvxsd3jcNNjqz/vx+NqRK0S8teH7gKS+7sLD8M5XLCw/Xt4F21QB6FbsDXra+gzRAvfCt7VpWoCRg==
+tQiR6whugqIfcPWDlqqRbQ==
++f7cyq+fC2l+zyzJS858pBFucBmc4GGUbrcufBy3oRxhnm2jHcrE9eQiltfixt53JNFQwD+Nbep1OACd8DgBOA==
+Y4N8CtztaazPpYKGn2LhiQ==
+doHjIdyU1UWwldUMVkMRo0R24cdzQbLbN2J+JJobOjsYI8DNdxGihiYKCsTAyAKI
+bLGaMAh9EelBsLjRg3qrKJ8R/oC0iCu3k8b4ibBQdpw=
+337QLzWIDaIEcJp0GXkPOw==
+1Yla7n8j9HZmMGaeNCRn7Q==
+kzM7ev7WaXWebobHANHOaqu79OC6B4pTVKylyWMxvjRxU+PMDAWLD9pm805eSvUB
+Nsk/DmBj2qZcjPmJOPrr6y3L80tC6ZYxaCiMrKFxi1Fsp4RRNoFvjRDG30xh4EhQ
+5ZwXqqraJLwGoNHg6ZLiDLuGau/emgqKOqGJX1TP4TA=
+/VzhN4cEGk6NsfMto+Tu4w==
+Dv6FN7E6gTi0H6AM6Rf5bw==
+g4ct9CS2bcJiaSrf9LU4E83uPOyUepLmmE2IR317yVWUvnuUBy95z7b2lZef0JpoHw/jOrj7zDEoe43LypTEcLNLLghwtEwEdkL6lLwKDRg=
+adKtp3NVrItiEexNt9G8uS8NlhNvsPU6p/OzG625YJfN+OHG162aZy5WaiV+JZtQFBsU58puCKC7jkCSzDY0j7gDWHR2PSZ/RpRb9lmId68=
+mwv4/HUE27BfPCg5o5iD+Ej2XaOsDWBDMzMH10i4xNjrDanBIReGwWUuBEkujYKaBhhlLRupe2EWdmvameVNfLOm5aRLpDpDc0F/Tgyf5Sk=
+KURHE1POMZ2vZJBnhy2wRhvV7wkTjFBxwsfczivf7in9Coq/2u7mpSz/SqaPYlX7fYELFHfsM+cXBpDmpU4/5hxRoPyuldBWhV/LcKKbcF4=
+VCvxmdCYG2dKgqnLw18J3zWmoDfSB1gNNtkegi+1PSB1yT8rikOjUJOv4oxDgPqP
+/opKgshMrU/nNC7RRohxZcuKAptU9c+xZyDwQmJbIAs=
+OusIyJbUrbyURmbNB+V/Iubc/u2K1QJeOh4Z+kzHi0+ZM76mKdtFFX5u+d8QBKk6GRkRTjAADM9CsrCCAeClQg==
+7ESD/bq2FLE5m9ZeUy6tIg==
+bbCqZd5dAijmZ1vyPsF8zQ==
+fesO9ToXVk5mWGWGuT09Eg==
+cr1gdRn2LUTNXRVn7vDxh2Alj0bfMjDiEJ03d7r1cbguktOH0bGVN+l/Oh4eyBTDbU3R9tBLX2Mpin20s+qnUA==
+D2V3l7S0BFvLctBoq7Ez8YvTzzFeHQA+mKuxgfuMKnxjJlfUd14kLxvZZXDR6RjK
+VhMdIm2ztQIld2BuM2LmxL58+ih1hPr5hqJrVa0pLLU=
+DJGa11vTMCvUpo9sPix5Jg==

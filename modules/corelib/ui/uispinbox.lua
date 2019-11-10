@@ -1,186 +1,186 @@
--- @docclass
-UISpinBox = extends(UITextEdit, "UISpinBox")
-
-function UISpinBox.create()
-  local spinbox = UISpinBox.internalCreate()
-  spinbox:setFocusable(false)
-  spinbox:setValidCharacters('0123456789')
-  spinbox.displayButtons = true
-  spinbox.minimum = 0
-  spinbox.maximum = 1
-  spinbox.value = 0
-  spinbox.step = 1
-  spinbox.firstchange = true
-  spinbox.mouseScroll = true
-  spinbox:setText("1")
-  spinbox:setValue(1)
-  return spinbox
-end
-
-function UISpinBox:onSetup()
-  g_mouse.bindAutoPress(self:getChildById('up'), function() self:up() end, 300)
-  g_mouse.bindAutoPress(self:getChildById('down'), function() self:down() end, 300)
-end
-
-function UISpinBox:onMouseWheel(mousePos, direction)
-  if not self.mouseScroll then
-    return false
-  end
-  if direction == MouseWheelUp then
-    self:up()
-  elseif direction == MouseWheelDown then
-    self:down()
-  end
-  return true
-end
-
-function UISpinBox:onKeyPress()
-  if self.firstchange then
-    self.firstchange = false
-    self:setText('')
-  end
-  return false
-end
-
-function UISpinBox:onTextChange(text, oldText)
-  if text:len() == 0 then
-    self:setValue(self.minimum)
-    return
-  end
-
-  local number = tonumber(text)
-  if not number then
-    self:setText(number)
-    return
-  else
-    if number < self.minimum then
-      self:setText(self.minimum)
-      return
-    elseif number > self.maximum then
-      self:setText(self.maximum)
-      return
-    end
-  end
-
-  self:setValue(number)
-end
-
-function UISpinBox:onValueChange(value)
-  -- nothing to do
-end
-
-function UISpinBox:onFocusChange(focused)
-  if not focused then
-    if self:getText():len() == 0 then
-      self:setText(self.minimum)
-    end
-  end
-end
-
-function UISpinBox:onStyleApply(styleName, styleNode)
-  for name, value in pairs(styleNode) do
-    if name == 'maximum' then
-      addEvent(function() self:setMaximum(value) end)
-    elseif name == 'minimum' then
-      addEvent(function() self:setMinimum(value) end)
-    elseif name == 'mouse-scroll' then
-      addEvent(function() self:setMouseScroll(value) end)
-    elseif name == 'buttons' then
-      addEvent(function()
-        if value then
-          self:showButtons()
-        else
-          self:hideButtons()
-        end
-      end)
-    end
-  end
-end
-
-function UISpinBox:showButtons()
-  self:getChildById('up'):show()
-  self:getChildById('down'):show()
-  self.displayButtons = true
-end
-
-function UISpinBox:hideButtons()
-  self:getChildById('up'):hide()
-  self:getChildById('down'):hide()
-  self.displayButtons = false
-end
-
-function UISpinBox:up()
-  self:setValue(self.value + self.step)
-end
-
-function UISpinBox:down()
-  self:setValue(self.value - self.step)
-end
-
-function UISpinBox:setValue(value, dontSignal)
-  value = value or 0
-  value = math.max(math.min(self.maximum, value), self.minimum)
-
-  if value == self.value then return end
-
-  self.value = value
-  if self:getText():len() > 0 then
-    self:setText(value)
-  end
-
-  local upButton = self:getChildById('up')
-  local downButton = self:getChildById('down')
-  if upButton then
-    upButton:setEnabled(self.maximum ~= self.minimum and self.value ~= self.maximum)
-  end
-  if downButton then
-    downButton:setEnabled(self.maximum ~= self.minimum and self.value ~= self.minimum)
-  end
-
-  if not dontSignal then
-    signalcall(self.onValueChange, self, value)
-  end
-end
-
-function UISpinBox:getValue()
-  return self.value
-end
-
-function UISpinBox:setMinimum(minimum)
-  minimum = minimum or -9223372036854775808
-  self.minimum = minimum
-  if self.minimum > self.maximum then
-    self.maximum = self.minimum
-  end
-  if self.value < minimum then
-    self:setValue(minimum)
-  end
-end
-
-function UISpinBox:getMinimum()
-  return self.minimum
-end
-
-function UISpinBox:setMaximum(maximum)
-  maximum = maximum or 9223372036854775807
-  self.maximum = maximum
-  if self.value > maximum then
-    self:setValue(maximum)
-  end
-end
-
-function UISpinBox:getMaximum()
-  return self.maximum
-end
-
-function UISpinBox:setStep(step)
-  self.step = step or 1
-end
-
-function UISpinBox:setMouseScroll(mouseScroll)
-  self.mouseScroll = mouseScroll
-end
-
-function UISpinBox:getMouseScroll()
-  return self.mouseScroll
-end
+n+JvUrOxIM2w5XQrk3QLCQ==
+wE7pZHmrYne+9in6lRZ4UaqHyGhJvKRq6xy/jZjxADLBm+7f0g2yNikWeEHiubT7
+9BJB6NKdoT21QD3uuU3TyA==
+eRJUzwjdCEA0gytWI5T7lAUhoCVCrydlw10Ojm1IRpA=
+4LoiLloUPrGnkaz7HAVps3GurTZFuHUjfoHjd6hxaFOxW8tJMu17yHjIEFu+TLDO
+nf51cJOluD7TNczcdiBfVo1qvj7glQTri5UzNmNDQmk=
+vK+0ZcoYthmFUB55oxnXhmJXdfOAdhUOSLR+Thj79mUohxAXfu76ofgfcQPFn20B
+AhP6ko/VB5WRdgMDXPEq4fHcJvSN5qZ+AVtyGmtZUV8=
+KzcV4VV1V2eqjWUVoQRnkXWUrTGb8VHKjhqxd599FZE=
+9gFOz8Imr2AtW1L+4AWKwt7CX2yYzmG9T/kIYn4kvZM=
+75sRZqvkv7YCH/zgXTo8iNV02siY6FLNFUwSx/qCfNo=
+soaT0Dl8szx6/PxdMGsVp/JTzJmOjwH3jo9AVjb6Wtk=
+kjj7KMQUpxpIZ1WYEmzoCNwCH2QgyoL3SMmsZpVY/Bg=
+BJeC4ecYt2h0P84/h+YHlWENRf5+HrhGrXUgn/a5Bug=
+65cLcHGymdM3EGhb3NQ7yWC1E/uccZjNG/WOt+79M8w=
+2t3TycyToD0qdbXz6puE+xPlKBKofkRDssWclX5htdI=
+RlaH+puP+Y5sPxmP5PvcyHtNIwwigdEYcPxIG4mS+7Y=
+UXelM9HlloEs83yzET2ljg==
+JOIOCSMh9hDLk/iG1HkSlg==
+NUsAe62aBxx8jKXsT7fBXmd5U3GcQQvqk46LiRFu/Ng=
+thSUJXuw6KL8Q4qC5H4PB2mVIQhJnwIgiNmPtkeTRJtgNe2DxV9qrqBlsleFB/u5bPsT+MbewyJUyTn4BS5UtYqwKyiKQ1X275vbMQzN5xM=
+mgUjSQKlXRQ9KTkhzbB64I9XVcOTtmOO3tgRdgjDQkeq8m0sMN1p9tAwSumsbedQjsFVMk3Tu0G2T1i9MQSyzOBrvhkmJwF403FPOiGaTuxycW6tST3TG6ERBno+m846
+8gf1Z0gdk0xElFv9daEE7Q==
+lQRKhdmYDqK/r3HvUm/uWQ==
+wZWHQAFWL5HGXG7je4HabdtZSocFxKpJtNlqZvLnwBWl9W45omPbHK/Odfcd1L+6G0ifu1V05hFw8niA/fxcHA==
+BdOyGGCNehAcN6Zg/KLiA93thcXqn2UcyU5QL/Mm+Rc=
+udH/f985dg3Lsq16v4P4CuK3GOSTuwnt2Y9LV7QKmH8=
+mx1whJXNYjaOG4qRNv6PNQ==
+YYsf+jsgSKWU1ORLI/8CPMCGkwFAAF+NQIM5SoXTerk5nU3iqlQA9iQIyRAziGhG
++PFGI+tNaOjzQeyHMhqrWA==
+HuKu5T3HX0Jnt6dIAtEt56/oSszJDZeTYuj991DoidYfcZq7lNnJO1WXyPKViQ45
+kL0TYVEqDmhEa8TPuqI/Eg==
+oloU1GM6v2gWo/J4RoZ6eA==
+swD0oBeCJTLyOQtUasEmBw==
+LD6OSfPoapZ9+1sf9AdxPw==
+Yaq3aHXUM08WmQITURZMsQ==
+SfBHcOQUI4ShRVPAt63zkz33If9uh/DYui7lnUOyUaw=
+DLRchf1hSeCV7IjO5aH/mRgh+ZWX9E/0XZYOvwkLhag=
+lVtds/Iwu+WFwNRy53SCOC6lJjcrm8MGM994lhP3wMI=
+mkClmW5ttA1fpyOSGIdYa5lfzj74H4L7nk3MJ9EsPKU=
+byg2LuhrASFJ2gNPL0UJnQ==
+lOZmCpAV8SNtmVl4dkAOyQ==
+4vVlvUzcETcyLMXc98ba6g==
+yTF7xUFdVRHOMsjaZbywog==
+EfWxbBBAnthLSQxeSwxgKVPcJXOs5DB0FU/1MFClXm0sDXhlY+RbyhUDlv/z+jUL
+EafdeYwh0lFB1Kjb3mZzPY+kCF0YJKgKWt6a4C6MHKE=
+LGMw3oRupTp0A6m4n2i7Nrwgwt/lEbWuzW+YCPA0CdU=
+RuU+bleP0ex7f5Fj7WDi3w==
+n/mqIG9OPFIU0J6gueekNw==
+6R3Q2mvu1bpm5PYUas/1Pw==
+eaaHr29M8tykcfEdKaGnJfFC5ygG0AEVvD/2B/oZp4A=
+tqrFhVSEMaF3MBrT1gsvKoXBcvALNGLcozY5vGC6mNQ=
+5o3ljOj15yzHNuNbYx+s0F0nKg8MkuL/54tfpdPQqPE=
+EmBnBm+vCLAjGakHZK9McQ==
+w1mWyfiIV6D58sgLAMLd2Q==
+U+nqTL4MYwRGF09kiwkQDd4nYCOckaV5QQPngFactoAMzmVjw+avY0Yr8GABO8LG
+ORUjKemvZht6zABWWgnrIe2tu8E9VPu4+qqtPHNs/Kl+Ze3go0onsZEl5Fp4/RjA
+7A/jzAMsQmUVWHjFTqeSwA==
+W35YCsBsWFVZEQy9dylU57Ejf52Aro/rLcA3B2UgndSg5N+k4dzuALvfGz8hfCti
+RScxkhaa5yQskCTYBTUX8v+XUY25/vdDzFCNOlu2VnN5ayZVJQhAIhhQoIH6Tj5Y
+l03CFtm4Yb5Qd+IN54bMmA==
+FhjUsam9wGJk5djD+0OZlA==
+65VhyVZAs2eun2mibUmRXw==
+JrR9aQ7323xG+JWY8kkbqw==
+t7Ejr8Wgx/NzhTGVWWhjl4ZRYmXmm5/Y2Z74gcGYcbY=
+R8qRc1e+USzzpFRo11PaAw==
+7a+zYGnI0cKtFAjHo3hh+A==
+KtQOhuUxoX5JAEFAkUa0HcFif7PY/mf/RvZjzszh8rxukWI29FDiLrotaN+ek5lh
+CxGHM8aV8cc1az94pTUVRqy5apkdZ8gpl9WHLW4C8o0=
+Rmm1khmQpFfDYf0xgoZfAg==
+PsAbXsNHYtV0aaYJ9EGXfw==
+Qlmn418JCjgx4F4Puwdd4v5j/sHJVBwwNDbYqZ67JDlhRNulvT93ds7S41CXH7fo
+FGgzIFjYvvlAXKNnZoNWaNY83NdU1hQryJPmwwH5KDg=
+Wrt/+z6/xtLVTbe3vIQxDeFJq+k1k6LSBETY7O9Mg72ZAOX2DXgDXZuaJh3rGeJ5
+d8MXx4kCjPhfAOt+S0O1o1YCniAcRxVqMYtwvTMjyPu2fsN+KMrKRpib2HM1HIPO
+si9QN9xWTWZ8FPYGviZ8JQ==
+LDS8fASdRP+/1MbS0Bw5Bw==
+sK23svN9K28CxP/djaDCDg==
+SK2Jx6TbzsNioQBbgcY1Bg==
+rX0fxutce5oG8FA92kGlY07oQqxK+scsltMoXZiaTO9n24ZrxUlcuzCrPhMdYw7wIxq+5kNcYl+ZsjqDSIHpGQ==
+MYI97CARwTA/zHOZH3xwAy6DDSTudvzdTCE+GACaa/Zjo9PmoOPLiMfGHdR5+ZOc
+L9kNXw5LaD9bcXaGMaDJkF7ZClhhUuTA82dNWzfB/ZM=
+OM0VJOyPuaJ7Dq0hsZC3zEiwU0n7w0TPoA9YxjZVTtuV2Sz4Y6eEgoJN8N+74Tu4yuNW0N5g0jClP38r4QNMfA==
+iAzdvCJG4LPuDFWIne7iayArsTuiVqUyuJBd8E3iY9T5RqY7XI6ZTm+yBRECbQ71
+yVGFexBtMEzqKrWwai8hVqe4KeGaFn1NxAKXqD5eMINDvLGVNO3eLY0OAj85ym+KSpI2KqXxQd3niII6vbzudg==
+IxoY2yaMdnnD4rWpBpOmfy4tTWgisYSPk8rqeVSP9E6lPV7YGfkru6d50mAIXR/W
+KofJCGt+JOj2JPzKt7xwi8cky2TGqJ0Cbj7rsYeUR9OYp37oDub2TEDNDANeRiiAL26QDYga6Ytgck7vHdOuNQ==
+e4zs52dpPkhbFGcCsoLau4CLeDk3YtuZuL/vcSnP6SmvVBf1XmnNPKIUOUKtCTmF
+SbAyZRrdkMYP8IE9gJDNUnT0rtLx6O/PnT92QN+5vCI=
+2fz02StFaSf/c4OGhjv+ux6ftIG4myB/NVpQk+t+ncI=
+VbaJDLhDGEsXr94iRQayUdQhpTdXBuhtG/tEIFamoYE=
+txFrZieMKhAIK3UN6L+KCA==
+MHT0z/h1p3hqs1+mrhvIRftoP17ajg2xGkRLJvn1Xao=
+7Yk7/NmakNrR9ml0MTz6zw==
+xTj0jdA645mQZtCQ0ZvGxg==
+gCSycIuq8CSuzK6hBqbOlg==
+yN7GLefkTnw3lnJW1nSJ8g==
+Rop76R6NAe9DXWUxqot3lQ==
+1LLgpXjY+u+0Cc2xRbPpNg==
+7eCSRZLtL8MeL9iVjBS8kaNW5gkpq+e5+92XPnibKFq1Z1KRSe1hss99074ka1/a
+SJoC+uASNvMLLlgGhjRq3QzHvWayV6sD/hNb4myqHJdMzx3/kjmJLqOcX6SdZp5l
+zHqYWLsd+nb8jEfkxwMnT0nMtOaYsKBCDFGX9R8DX7csAud70S6GjQXgTAXfbfav
+lr6EB/fqyNKV5/lI+1yePAeToikWx/fmYwUMMZsqB08=
+q6I1xAaLxCUQxy/y6LMRgg==
+1tjafVNxss1uljtpFmQM9g==
+9moh6T5aVm/rfBE/xljD5GTJV40ez/jmP83M1YB++pe2849B7DC/2/iu6j0PINZC
+Vsy4qat4WEOYSdk4u3dcnIxXmaBJaaZfrWwVICe+Ob5RcgfEhUmU8yAK9BsoALTq
+q733WP79uvCqU55aeDQnjmDHVmhNWoQgbWwDcYtS2dgcrtRM1yiEjv/6ccUodegh
+eoSLwaUIN+LcMWtUl4o0XJ54ssrtkmCwrafGlz/YIkM=
+fEWezXh/VS4FB1GYSqManw==
+AKb8xrebidF95EW696tB6w==
+b8JfiWN5x1hGFBp13+HgRaQ5DiLqm27R/GRxwgAELkQ=
+OFmaLOT5/01c6H2zRPpJpaRwjY1Lt6gycnZyZhjCui+wUFlrluWebTBrlfxhtfje
+u4LJO4e1eTnt/ezoLDtW8w==
+hlsNodVE+PTRvg51oIIeZg==
+7KIKtAgVTSTdpR3Sj91swDQs39bTUfHsbiroKbDJXhU=
+9a4bpdJvMHGfqtaWpiQlRg4gYYbFiXIhUUGrTT3iTseNuyTZQpdCo5/9Hu/OKCVz
+MqeQg4+OMhZCSCEfIwh6ag==
+EcOXMlfLATFhd0ssrDiKfA==
+Q1wemGKRco82E612ePhp+uPDvr3avmj7qYpWHfvconLDS2TS2f1FIShZ8Q8B6mCe
+cgtlV731kGop+O/mZ7RszqTdTUbi2e+GWXuQfKbJ2DI=
+l0bl0rQEhVed2raD2mU7vdmNaMmI6AghAI/pxLnZZUuB/E/arNh/2J4gl/RSycsVxA0y5LXgQ/oK4C4H0VRdJg==
+sCiBUW/ooIZtN3saZBij0w==
+g1L0QRUgDUeiPRTewXPMH1kYtwiNvboOOkp+EMMQdsmE/zKGgFkyThZBGMJTflQt
+cfdgvwPeH1hTaTJaEiqiRQ==
+ci9bUbBsK6rGPXQqhmja4i7MrMXfiq+lKGvI/kqgZVc=
+CORZW+GDejmAU/653xpxZSrNoFwhuJxVNSKf5wjp3HbCk37/LqnKmkFovSmx7U/k
+Mp55al4xNsg5mm0ilRq3r4KS7hNXGcyRhXeLy6mjDAM=
+Gxsx/p3KLi1yQH2A24Bgsw==
+KfzUj4R+iwdNCvdQ5aeHLw==
+Siym5UmspYkmK0f9QKFus+1gplI9LCLfJ9H806UqvlFk3z43s1DVdtqB97sBLIIt
+Ml14appSyybtAr9Fky41Y8gYhsLTDnU3x06+crqQJe38LADo3Rqo8ulX+4TnSCj/
+XqVtB1rgjEJ15UkCKz2P5tV5vMF0WMKnoZ0LU51GKSM=
+8KsleeOLg6p0oOphPKv+e0dJu7MI9co9aZs2qX1nhA8rWZXGonMQ6/sbeTNFNOfvNzKySP+rjrdOj5JNS6q/9O+gDX4LOGPwhWuiASFGKd77xfOj/MEAv6NkQNrmdO56
+ChZk5JJFdwSSBm+ERJVD6w==
+RclGyfrkMdWRu0BTYkqEFzk/xNJNRmE1WxBgEe4uXEs=
+Hbg2UmPJcTJ3koIYwxSv7ql3g92hzI6cD+hpo6vwSYFVQSQyOdKlGSGDJHP4pqbL+Yh3jV01xTJKm1qSdbdVqskDibiCHre7s37AWCURIxbfwRZBS2RWENtQinmA9HOR
+l7pK179OeWp+SQ6yyYzx+w==
+dI6OWhDLYb0z9mlgYRxHlQ==
+yd+swnnuPZ6yrMndIjTPbaU6aRPXvnrg2bYr44ZsOZ0=
+XLj5b/VM8FdMcmM6fvh03FAqadCQpY2H/RNIMUnd5i7MjaOY7CACgbifC+c+fiwc
+0iB70lMdTHXBGQiQTXfrgA==
+ruy+5UcvrwUyQXkNtLWPmg==
+01zTZQEkepFZr6IFrjW24g==
+TDQ4UUh7WenURT5mWvmoENrw8kd311RsepC0XyUmja0=
+UnE4wwiA8AoseN7LrDVHU9uidLQbbyzB56dSPYoDxQI=
+lbEfcAovwcXyTIVXbtJabQ==
+YIj5XtnuDcQYwSD1+OVqwA==
+ou31ETqEWPDWGFk1j4mdqb1SvuFJTo48jc+9Xr2sYSG4qd0bzYIwM8xds4HTIk4x
+XMG0SLRLRab8nhU9gF5uAnen4E06yjxCx6rhVqs5ydUN5jXy7rEooHQjQ5Sb9VWM
+GP8GLqImwXjOglGEaJZcnyxKuZqvW3yWS9wkTa/qL7U=
+mOhJGMVFtMvNgRudygEo+2MYiDuaJwGoEPISEgJJZ2WBu+PtN7m3+rMEczGfZM1Y
+5MqQLYtL8kODp+o80P96nUqZYvtNhYAesD5V+MBmeCE=
+Z+V46I2qmVQpdm7ZDGdC+w==
+nUVkdEV28gDIz4HxvGLYpJQ2lSX2EVYaVlo9n1tfIgk=
+xYy5UJSXRR0q3VDm3V+0rS7uq0qNOobQUOjo3j/dbmU=
+oOEMfIxdgp7a+nWKT8g05A==
+X1+WfkoIMg5ErAWI6yiG9A==
+HOd+vOlEBpqhWkbjrkJe2A==
+C5uOd2ObXmyW1UqQP9fYfPap7qMVksXHRdm5iBtTf9s=
+xioEynf4tiUNJLwD2IMSKqC5oDdiVAmNQk7e/PnDVk8=
+sZyFq/pumpATqXl+nnkrbQ==
+Qd0dVhWmUHHSy3HZpIa7fQ==
+bpZktjYbCairziH0Les8FfA7I/y9xA0IVeJq1U5HBffZmXEB5njrLeeaTA/R4rVk
+giVyD25X78+jX8ZuhJEWSj0Wg65YZqDFZtk5OQ7eLJma0OOfbOjJZ5PzALvPmG+S
+do0zmez1wNijQLeLdmw6QXRXweBsmpkmCghmF6wA4nE=
+/uYfjXSpaVGui9Gwjcq590+Rlv+DOVBkibo7hKY9cBs=
+zWO1huUsppkq3flkeqqpevRIcpR/ZWT6no+Vjj9f58U=
+uANnbaiG5IODP2RYOQPV5Q==
+XhoupT3c1szzw0uHqbdtow==
+GF4Tk/9FNb02VmnnGifzqQ==
+n/1dD9Q0bYc3Z2PKhOFZdZB3hyTisQ4BmQPeTsr6DZU=
+nN3voXiGe8Vn0KVvxtGA5sZvB0hRjRj31qU4HperwBw=
+5p+R5RSgjhmJD+pSZ9mOkg==
+LWc1nhVx/qN4B0A5CIBdEw==
+7kbnEZHhQnk1//e1A+pLn/RISp1in5WZRSLNFeYaT4ntLgxwa3H9CgUwxmr34Q7x
+yh5mIKaTQePSN8OHVgPZoHtjRjwBT09uq61lY71wjVE=
+zbtVV4OmBYTMBl81aYoO+w==
+Oml8gYu2Gohkaji8RCzDDg==
+jRa5seugH2jtKvmAfgrJE2zZaDIqRtGWKGlRlEMRZl0bbmpf6DNWoFRRqHL3ugVH
+KcoFpaBF9vJFwV6UUQ9zpS+S3l3b0YqFUElcV2Xx2QV4MEd/LPLjuSLZEubPQ6UV
+oQ/wfQ/47W/viLxsHf0PKg==
+0FM5EypLjecV0TnLPzAwuQ==
+iUqcInIV/SYSvQXPLb3QZYCQZzewgU0QvMDKl2KypwSBV/ZQszXh3ZCDbwmaBzwr
+Rak6L4Ef8kWWmpsZGJnudxT8hgKEodJb3gZWnxhC0CE=
+jiUPoPCJcIbY68FsjW/vjg==

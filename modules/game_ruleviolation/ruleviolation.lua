@@ -1,151 +1,151 @@
-rvreasons = {}
-rvreasons[1] = tr("1a) Offensive Name")
-rvreasons[2] = tr("1b) Invalid Name Format")
-rvreasons[3] = tr("1c) Unsuitable Name")
-rvreasons[4] = tr("1d) Name Inciting Rule Violation")
-rvreasons[5] = tr("2a) Offensive Statement")
-rvreasons[6] = tr("2b) Spamming")
-rvreasons[7] = tr("2c) Illegal Advertising")
-rvreasons[8] = tr("2d) Off-Topic Public Statement")
-rvreasons[9] = tr("2e) Non-English Public Statement")
-rvreasons[10] = tr("2f) Inciting Rule Violation")
-rvreasons[11] = tr("3a) Bug Abuse")
-rvreasons[12] = tr("3b) Game Weakness Abuse")
-rvreasons[13] = tr("3c) Using Unofficial Software to Play")
-rvreasons[14] = tr("3d) Hacking")
-rvreasons[15] = tr("3e) Multi-Clienting")
-rvreasons[16] = tr("3f) Account Trading or Sharing")
-rvreasons[17] = tr("4a) Threatening Gamemaster")
-rvreasons[18] = tr("4b) Pretending to Have Influence on Rule Enforcement")
-rvreasons[19] = tr("4c) False Report to Gamemaster")
-rvreasons[20] = tr("Destructive Behaviour")
-rvreasons[21] = tr("Excessive Unjustified Player Killing")
-
-rvactions = {}
-rvactions[0] = tr("Notation")
-rvactions[1] = tr("Name Report")
-rvactions[2] = tr("Banishment")
-rvactions[3] = tr("Name Report + Banishment")
-rvactions[4] = tr("Banishment + Final Warning")
-rvactions[5] = tr("Name Report + Banishment + Final Warning")
-rvactions[6] = tr("Statement Report")
-
-ruleViolationWindow = nil
-reasonsTextList = nil
-actionsTextList = nil
-
-function init()
-  connect(g_game, { onGMActions = loadReasons })
-
-  ruleViolationWindow = g_ui.displayUI('ruleviolation')
-  ruleViolationWindow:setVisible(false)
-
-  reasonsTextList = ruleViolationWindow:getChildById('reasonList')
-  actionsTextList = ruleViolationWindow:getChildById('actionList')
-
-  g_keyboard.bindKeyDown('Ctrl+Y', function() show() end)
-
-  if g_game.isOnline() then
-    loadReasons()
-  end
-end
-
-function terminate()
-  disconnect(g_game, { onGMActions = loadReasons })
-  g_keyboard.unbindKeyDown('Ctrl+Y')
-
-  ruleViolationWindow:destroy()
-end
-
-function hasWindowAccess()
-  return reasonsTextList:getChildCount() > 0
-end
-
-function loadReasons()
-  reasonsTextList:destroyChildren()
-  actionsTextList:destroyChildren()
-
-  local actions = g_game.getGMActions()
-  for reason, actionFlags in pairs(actions) do
-    local label = g_ui.createWidget('RVListLabel', reasonsTextList)
-    label.onFocusChange = onSelectReason
-    label:setText(rvreasons[reason])
-    label.reasonId = reason
-    label.actionFlags = actionFlags
-  end
-
-  if not hasWindowAccess() and ruleViolationWindow:isVisible() then hide() end
-end
-
-function show(target, statement)
-  if g_game.isOnline() and hasWindowAccess() then
-    if target then
-      ruleViolationWindow:getChildById('nameText'):setText(target)
-    end
-
-    if statement then
-      ruleViolationWindow:getChildById('statementText'):setText(statement)
-    end
-
-    ruleViolationWindow:show()
-    ruleViolationWindow:raise()
-    ruleViolationWindow:focus()
-    ruleViolationWindow:getChildById('commentText'):focus()
-  end
-end
-
-function hide()
-  ruleViolationWindow:hide()
-  clearForm()
-end
-
-function onSelectReason(reasonLabel, focused)
-  if reasonLabel.actionFlags and focused then
-    actionsTextList:destroyChildren()
-    for actionBaseFlag = 0, #rvactions do
-      local actionFlagString = rvactions[actionBaseFlag]
-      if bit32.band(reasonLabel.actionFlags, math.pow(2, actionBaseFlag)) > 0 then
-        local label = g_ui.createWidget('RVListLabel', actionsTextList)
-        label:setText(actionFlagString)
-        label.actionId = actionBaseFlag
-      end
-    end
-  end
-end
-
-function report()
-  local reasonLabel = reasonsTextList:getFocusedChild()
-  if not reasonLabel then
-    displayErrorBox(tr("Error"), tr("You must select a reason."))
-    return
-  end
-
-  local actionLabel = actionsTextList:getFocusedChild()
-  if not actionLabel then
-    displayErrorBox(tr("Error"), tr("You must select an action."))
-    return
-  end
-
-  local target = ruleViolationWindow:getChildById('nameText'):getText()
-  local reason = reasonLabel.reasonId
-  local action = actionLabel.actionId
-  local comment = ruleViolationWindow:getChildById('commentText'):getText()
-  local statement = ruleViolationWindow:getChildById('statementText'):getText()
-  local statementId = 0 -- TODO: message unique id ?
-  local ipBanishment = ruleViolationWindow:getChildById('ipBanCheckBox'):isChecked()
-  if action == 6 and statement == "" then
-    displayErrorBox(tr("Error"), tr("No statement has been selected."))
-  elseif comment == "" then
-    displayErrorBox(tr("Error"), tr("You must enter a comment."))
-  else
-    g_game.reportRuleViolation(target, reason, action, comment, statement, statementId, ipBanishment)
-    hide()
-  end
-end
-
-function clearForm()
-  ruleViolationWindow:getChildById('nameText'):clearText()
-  ruleViolationWindow:getChildById('commentText'):clearText()
-  ruleViolationWindow:getChildById('statementText'):clearText()
-  ruleViolationWindow:getChildById('ipBanCheckBox'):setChecked(false)
-end
+b3jKv6hibh/i9VUbyLeHBw==
+ZX6+4G0I/77SQ4BlqH10CnVkD7VvRW8zJUb5M3N8LLYB+OxWah2N21HOsfYYWlv+
+JeSxq2jLqCFTAqOaeSX4CJazRbHWOM2j1E3w3MkeewEo/o2oVq6tt4MSkqJOG4gb
+JKcqVRHgVbY2BVxjoT0t95r0H2p+tG6YFODzQAqAPNLcLajgtoh1rk4sd1wVaLRq
+iECk5/KAYMtAAxXkdWOLZybwsLp0VuVaTw7NnFnhuoQrQKFZ6jQOr0STptPY2NbcsQyngJ7GKb+XZ2C/3DRpCQ==
+DFeK26f+epF+r6xTkngZZ51RV+jMJy2WgvQKAOaHf8COtUWQsQPpL9H9GdQ22Rg7
+qB85GDLWQMvgLmWayi4pCgcgewI2wHpdSbruIzJjL4XFvDhA6QmefUGYSPugYRzh
+jwrbSjr9l9v/fDtwBDHY7gSrtCMQOSldjsumkJBu4cThl0HtQ2vcgVg3UxxcCfnB
+RPfjyHD41KcB3eMXyImA8djowk9qULki1mU7h2Ax/pWipYVhIoWaHxSTqViGf4mTw2PWvbplWFuppciP2DjzYA==
+lygA6SnMdihUlF/TEey+am1Eqbxe04NsUAiAnam+IMYL3iprHswzfaPRLy4AC8ucJshgLLYB+E1J8B785tXzMg==
+/e+JbQEp/2sHw5z5vAJtrtfZ0tgQ3G0UdL4c1WLRgN2T/w009NuNs3dv63AETwOKyxCreJT7rp9GZP/PML/P5w==
+Akcl6GblTa40E+aIMlcNHXaOdpMcAzksdkfUQ1jSM3Pr0m+y38enqVCSVe+jCzm4
+jxDCrFLLwBx7qOX/F18nTlwGVgp5/ZSEDY/PrUjZxqvoSSAy3irHR9n2GVs+7zwV
+ZRxhOMEf9DnTbkmX0k8QXUT1x/2PwXrUlWq6ptT3XlvsK9odLXOb76GzY3QxitO+sqQgvh0zLl/kzaw9fnMgeA==
+Y69zr8YW2azq2J6CjsprL5ZzQQ65zV+PP3mQZmoj7yRgwSf8DrS5z6olvEb8qT19
+MOkQA46jJOslQf24NKMicOkmaedquKOLXOPfqgrKQUK9vWZS3PfEga5STKn76Itq
+iNGg7wVP6HneB+Tq8t+fsotCa6XyreBgBFVfRX6m/V7jjd4SLqtLerkRVWWfBACMgofiVXSZNrnJ9HkOwPMR3Q==
+E7kfWX61GW2HPsyBhBFqGGaWRLd+gPSAd/LtTs2yd9l3E0gyLEtVUU+U1anp0czz6/5G2Nrn5lwpX5evQRNh3w==
+S2CH8FmtreCra6HIlJtAb158S2f397q3pLtw7qdzSoTn6lp6CNACE8sGCKAs2Ktxd/an3BKEhRko2yJj3Xjek3U52pdwjDvdYCb/faXHv3E=
+Vv+fL9RR9vELMUgYW4yYXryV2KF6eGSaTNHXDyfRURWccIIpMIjVGjfvYnAmzZT+SwwBy56i+ZMuRu5yj8fNug==
+HmuGKkWfWHBebczulzMrPMux41hUhTKN35iLWO/CjVuBBhshTU/9BgR2XS4hc9Xv
+IJ3DERHjieFe9kLRIYg+x7WyNL9uNR9ieIx3OhT9oddYWlZqD/ywlMkhnVIXvyOy713He8jKYwKyRqPS3bvEtw==
+P6ho2XBV5/NffScZ9lmDXA==
+XTJOWvfVmO6goskf+5KPoQ==
+B3D4/fiuWA8OjQyRcA2ZkIII3u8idwcvAsHz3rv+hAs=
+3EC0742l6PXo9AbAQRpSTWhEchho9tt0TaICaEDQAQafxnzOKBfcSHlGI4ntSuE9
+v1Rb0sGP8bCXotI+c9Eu2+F9WJR9TrpBrAgzVJGkhW8=
+0s94YBQreHkBrpRsotWry7VvQjfnrRl1I1FqDeUCkiTu3aklHTLdxaafp+jjgjBv
+81lv6iVHOP6St11c1u+vHiGqcP0TPRIissEbCUGQges0jFQLNVKj8YHczQnnXi8A
+KOHtS1PYU6HWgl0Woz1DmIiKzfXJrdZVkY3DXk7gPwMg2/mKEqughkZ0f8yM/bueFV/UBlV0tW2nBAg3kqIPhA==
+kc//iR0bPrCEQ2ItSprRr4r7J7meaVEx0A32JUDEawxAQL27RkIbeEAe7htXiHS0
+UUmombKuz1IS91DIUp4BGw==
+dI+S3albFp1IUDaiX/GWOfWxuuMr7Xe+18Qyti0TjF0=
+5F3pgeRuNQqtCjHkH6cP/JUfMy1WFPHz+kEuEYycBT8=
+5Gob2AkrxDRiazWqlbuBGDA2x+Zk+HdEQfFJmUN5TIM=
+aIgzrLZwOythZqSmi++x5Q==
+JzUc7fPO5JFggEFZYkeCxg==
+wTW/E/zRbZEaMNnF+h6zh++NUC+YD3c4Az7JDVPa0n2WVNlq5aGQny1rkqGBTdHzAZgCvTR99WHXmy4hcu/OkQ==
+kUiN6MNDibbcF4MFuxxorA==
+KbWdooaP5UBSGunqWDcAYirrNHdy1UF59nlhhZBY2I6T4DJcHAIU0sJrhOZMWUaJDPFBZuUq3OfaPfEjPuhR3g==
+SLyXP4pkARle7VLN/HPdXmTG0e5XShwf9S1UeoNPoVZdkWuHx9cQ4wYhGjk6BANs
+QqvX2QXUfX/yjk1EcxbvGQ==
+MvuDo3Fs2DWLFhkyepJQpYRtrNw/uMOn2Vw9ySYZs+w+AXhDvQdWQrAJNVbOEoDJLCAlyWjW73lDJ8M+tjxpKBa9a0gsDCGLLakF4m6u1+s=
+19nxSba8BEiIjRGLCL0+Xo8UXQixA3DNQ6YQAo+FjnbnLIdZPAb49YtieEl0PRdGx6CRyF16rMK4YOwh7xpd5WpFuAYIuwjMwzT4bOfTn48=
+Rp7KAD8bodfT5hd5JLIvgQ==
+eCHDV2hX6AIprjk7yscepP77f3iW74MlEA+bu52kOb7Sw2YliLU3dFfpoAyiimwh8tdvbUwiwGCgJXZ4j4oDtA==
+KJyKBCt85sjEnCz+YqvDpA==
+o+8QuTuAiiLt3Dx6AWsvsheXp4pKt4KQ4qQgXPZ+xWY=
+HK2WbnlnPgASatoFoP3nWlcMLtnI7uSSu3k7Iklll3E=
+e1eWf4UE6aR5vtIcRTzN0A==
+m3fLD8xT+KVO7sg/bSLU8g==
+IQZj/3lAvpwaLUeG22PEow==
+64JaEZVpmrmaeGjPh/j8wgmgfSI8LYXOW6Jazu2PbBk=
+g3V8gETO2QKaRnnOKOEXcRUgYeOfv3WZDzCH8DkiJKmxnP2/av9SYIiYeccR1rMjrmVg2YUFOoiZ1oqtCksG2g==
+LK1qpTuuz6LpnfkgROK3u1kmQfctGR/Q17gFwFk//+U3wahrwzJ0h6oMvrc+T0qQ
+x+p2Cx1JuyxaXhR1Ct+aJg==
+Kf/6BJXKeC/N/MZFgPyagBGHAB925cS4e6ZID34AmFQ=
+UwZ1+oQRziehPHqk0fGHYw==
+ndUnsbRfrSejjCSfTZsmsg==
+AIocH6knxY22TKa1P5fM3rM8lQY46Rx+oIbkh3kwSq8=
++67AqzgimLlft9bzpR2y4XiwP8mlfQDFpJ1V3v+TU2yIW40hg7+Mgg8YoeMzIH5r
+vhwW3b6M4Hu5ISpM9bSLQw==
+pIK7zid4nt/dqilL6jLozg==
+P/m0oMsR6lmPJGy2dAW52dAmjNZEvinDXnzh5Fg7LTM=
+nLyobnRCDJw/bKdIYs/aAAyRnYcpGw4P2bqiew+ZUZ/8aJ+GcbWblYc16Iv41py8
+nYrjtg74X9QumM8DJBp2UsSUMHlkvU35dvB+czHqhtdXIlf6LQ9Onf8y1OdHKJkn
+AweK5f31ad9w/Ej8i284BA==
+adKhSLTRT3aTiVyDYxoACRa/dxVFhpkzmrkdbClp7+cFhxbMCe2xp4ggVgTssSSx
+xi2JjHtWj6YGxzVXQOsCSMCnYCP78RX3dkVfmDQ6VKLBd9vBMgn1zIjTrsjmOkFY
+7HC2syfghGzUPDKCyq2M/W7oOMN7CqOnBEeH0TwH7zKNvNEscxGlkMNGEICyjTS6DtS68ZaGwzTfFwsI8hfvobkm23YnC+tAIlTEPNZJdi8=
+qGu/0tDSlnJEJ0zNesaewCYQMGBw745hz/Er5OZuOFTQ8hOcXDq0e1gVZBKLSH0u
+XTtZkICxxVZU3qcWFcTBmLD5KGeAXidFAA0lNyoTs5VCUfCm3APgLM3ikIx+cU3o
+4112hH9kcSnGZvhR1U8eeqAYFOaOXuuBwlTAJ3J4/48=
+YqJVagZtpaG6pICCtSIWUqynpeVThA67x6yFvZI4h4mrF1Dsv4d6+fNMCaaIil0C
+ZqQ3z60/9TANUlYfcuOATw==
+yP3vNyLUWEExPdLbVehvcA==
+VaPpoOPMnhORgrpMY4JmMPkLMgHM3fGp7q0qF/p3/h4gOrshfYazTpZpjvfnj9EWsWrLbCDP3AlH6TFStfuvNFEDPUZLV5PJJne6kL9orzE=
+ob7FFTS4YhIQWgWWABnwlg==
+1log36Pzr4FMjomvVPLqDg==
+h/V5TDnThyvQbGbDYxfn7LtTrTslt21YEikIhFHmmFKBUHkjSlNpxMGDmSKx6S+4
+NS1cn93wjdE2cOhtSUogOzwEsAqEulqr+fIwDVjG/cx720KxEAnQSviIQtHcLxygz07I5OLjpIjCJYPy7FzSmA==
+08V+930Y/E2/eHi/sR7IGJk2Lz3cRNstBC8T9QAGcOo=
+ri38adaN7FGrXuWpPhbCGVFMHOYPqPLPXITZ67IszFhCrpPm6w0IKEvPDPYt+KZyWA45fmKt/EoSdkxuGu7WGvVy5aHDBXbxpjACy3JRW7A=
+grKlbtEP9UbToz5pz2Lk2w==
+AfNFK64rYRRogRAjYdwtIA==
+PBNSEaXJCuet5jrMu2c2WkwLGZSBJ/Y3DerXxKN7mXc=
+VdaOQm7IuDPnLLQpY72PSQxp2klb97hMqdtmZxTbLXTGiIt26DXNv49IrdAWAv+RNCyA6kUpiD0cf5UejvZwOKPaxgdQf5i0G5OnUn5N6EU=
+oZl4wqXHO+geE0QeKt9L9A==
+GRy23VWFjZRSCE/Ys/a0Jw==
+8CjkxCRemi29XzGdflknuN/47+Yc9JN4ReK64BBVda8=
+yDLBuDvjVRAzhcftuqpk3utOGh0J71zzzeenTlOLD3g=
+lmVUNXxrP5EOkqRKr+1r0bjajHIwGefrr5YZo8bleRs=
+pRxOtI2tqyplqKJ37VtPSFmNg89SJTT65+Zm2BiCvBMYI0Mg6COcj0qWwnUOH86wBDP6x0cG9w16Yf87kmlsJg==
+Zb6UafCnovvPwQBA61JZYA==
+f5RKEc/aHRDWfxVXuWc5tQ==
+ZW3rDNu6UDb5hNkoNkpsng==
+shJwiYyOajdrQnWsqCCyOA==
+R9j0Kt4M1Chkt3TNJOeGHUQSjh6Nh7RIAfvUD81Wcqo=
+R0iYMBuAgOcFt72OjIg3/g==
++sPMvjbIiKg+MmkFh8feGw==
+q7QrdhE6dhdrIxRPoo9WEA==
+JAMptsQFCVbAMf+AodPqYO6s7jZEc2U+DSHgWy/eb7vaGc44os2kJfmLLfkGHtBg
+mw6IfbZkUHxoUm1nKkwAgifcSE/9FGYbVFDVckiyfgcOyLZN1I8Xg4I7nWhF+x4K
+1oq5d9PPAyPwKqh/xp2XCr2pkx0UFX+pwfm8fdpTM60k57gjCyDZMpjtcjt+4WQQ
+m77NHxveFnF7qsqcZoY1nmBGt++AsxljzRRlFW2LifgvgDgOblGxemLVdmVQwGZm
+HXlkykUVoknNAWRu23fnOW7xkZzQWc+nhxfakbFojLpa27FIa60beXQKAG6BQZwp5jVwwDCLWwY14U4yHo2sPA==
+HcEm/J2/zrXFFxXfnkqjrZ/BNb3o+LDrmfegmxHe0Loc0ZgKxgJJnrylAVwhRqEHIcudBFKMIRvlTRFaS9eOU9i+OsKECL5ASCcNlQxERBBNqMO4kan8JIXYqJXaU+FS
+epDzxEOU4mbmaffCPcMsxp1PsPS3/4maFGtIQwpdvFrGB7x0o/jn7GZiW24e5Ssl1eC9NrA+9znyszI5SZ80YzLtnd4jiVvxD6Bmnr2v9ow=
+1r8ZPgpEm1GHJHDM+87c4GR3/dKee7G6TS+x82l4QZg4MVAZ9vZlhTcbJ3mPM75I
+CVwW7CmAVopYQPEy/gBHUNddJhrjrdhSMav2gt7QCpLMfh/xBC3lLTj5BXNYgIaq
+RR83QO03tyqNFVi3SYWt/g==
+pLXGrow+HKzC6evdFgziOQ==
+JD86JJps/i9+Z32ow458dw==
+HwJKYo7IlK4aAoPb/oi6Vw==
+VV7QuxwzZ6unRv2Bhnca7Q==
+KQfzUwRgkj5YWo31KheLIICvEzAYEpvAiSUArpOgZ0A=
+PpOnGUgNK+IBT0KpzluJ9lpCvYtHSKz9L/kvizck1JCmz2G1Ra+b2GTQXPvRfuO648+wN6mXxnhsc873W3eKRQ==
+Fdgdevi12G+SWOz3OEkbHFfF39Dt+8jKhV21nSocU+A=
+Ia3g4p/H6adHfuJkxFVuswmJbbWlCG3bfhKp8+wjn4GSRvcXtNwOmvkrpLqSuPIY4jRJBfg3Dj7bpq0z7q47oQ27jiJM8seFibyhunzpPAw=
+YRq7MJRbNWbM20TpivDdkg==
+1W6wsYwk/cTxPzWACbPwzg==
+PdJUoMPlI+CWdHgELB+zzg==
+kVPZR9zv9Of9pD2si17P2WupxZXSrrat16mtECYvY10JlBGT2oVKw3jR2j8flDSmX/1AZgcHrY92ohD8RtmHZw==
+5uz7GlIVdJhdPkfftgF+ERGmDIMWBFHqlrb0SacA5AQ=
+DTrszDhMXlNsGSG62UKcehh/EbSyTiifriZdKBPilz10XD6Pp/yMQriteVHrIK3+1wNBHjejyMzPGGgz7Poe1mtQx9rgO3bDHU57jLssqAY=
+syB0ZsANDASdr/EjkR7w+A==
+iW0Yunf94msZHPIYEcy6Gw==
+tAd0cYJvZHk6rkOoOpgsLA==
+stGSuN92/TP3gLZH1Ulu6CAa7gRoCoZjUmjsUd8gh1QCniOi3bBmQfkW0xSEq1/hoXwzJNxiIy78zSLu00fTbnXqlyWcojSLpnF8dn1OhBA=
+kcdDijMEZguO9ss4gy09nUZjzKGS3sb37Z20E1520qs8OTzryKfUeXwhxMfNpEEe
+CGWq/qkzO6Fbz0go7JVK99M1L6fDYfEONpIzRHeTZ57X/HNHMQb3lJJZxCLwq3KH
+wh+zusfxENBATpP53gYPTQx8sm18qhvhOeSDza4CKwZNufiLg7EYoiLvOZfq5YeulgRtq1Vmd/+ZrYsIZEjM3sLLJ/ZDDp0RCn7f/LC7RLE=
+PEAqrbTMED5+wJ0rUjKDwWggOn76si1SIVDuOElm3FHai/hvE3i3OqjZ04TNKEQZZQ6Zzs9RBkrBC02c88KtuLy+UDYNG2FVzsfeQw8vn4U=
+bFQg8qeLCxo6CVDUaRmzjVLuwwCaJ582Ic7GR4tje8vrFSzDI7d9DDGCjvke8qUM9X8KEqqsu+h6BwygVvcEXg==
+FNEz2ZEaN3nv1uZAX8fvU9fYKVlqqHRavfAI3mJQ8QY+SY0IGS3SGcaD6xi1VrmL4SQuBE/zJ6lciXql14LZKO20PRMU2N7LYpS2CQVom4SD0ZDYEN6J3gyWQR6Ei7fv
+dZW38Nr0nhQYd4t7R8/HImG6BroAFZCRkHWjMwDMDnwBgpsuXZOtPt3lQf0o7IuC
+paPEaD8KIENqreQ8B3B6qG6wVppUl6mI6aPuGM7BEl+WVQPt/Oa79+8ygEZr3VF0xo2FV2lQLwk5OMipxJ1WXxPcAetrwcnGHP4uCQCCF78=
+gQkDTcsPWpSTohGhGK4a0iSPdTJKyQ/EYI14joQRIxQ=
+53PiKfJxEuIuf3h7H/c9sAdm6ozPffiejVuasQJE598GJzSM6V0MWp5tFNz1flj67vQz4ZfK+8Rtul6mXtJfXtnAPNoCqSgvmMAB0F4Dw9s=
+/pYOqgR4isWNLZ9GUgogTQ==
+AdJ8IvD1+eqOQ9vt/iRnGDwxtNiDF2t/41QrqzSYai+y5e2eLCXBzbNNsMkC7wDG2IAODUMv8fd0e+ybm0Qe1Nd5iHs0Uw4nwS5ychAZ72ehCXiLSb35ZSHFcAW0cPjkPr+5T/Zk3wyLrZBNq78Ynw==
+lenpgkf5ltNcAnK2se34tA==
+HNN5FTmHsN07lXeuvFsmjw==
+pwbCZZftLxRtlOJy0Zw9nQ==
+hEefVrvs8yKEYSjsllv1pw==
+KbbYmwSfef74FmupPopK1LBKx1g0dxsKnbz0h/Uuays=
+TyycqkDvybsK7tIsuHDzXwgiEdd8T2/Ws6tXunqwelCrnVPC4cDJ6QVzE1/XQ5hM3Zjrt+7AdMvlyZG23FjC7g==
+dX46g+OgvgchB/PeDZ/Tw61LsPj1VN8BBXGQ1IPt6RstMFZw3twm8m6/8bjNX9QZ17I/sxTwdkp33HCWV9tOYw==
+2JVdVVoS3NUk5VFdxyQf/mGX6bu31qJXG1/qKq/fAlvPGw9i/O3qjrblnJYykSMhFNB5q18/hwUWIG2u7J2ubA==
+siugA/hkISGJYjsqxnNo6uBVrO+RNnuuBh7npV21jXD128QbMFPOYL0oF/0pOF1RZX98khvAPB5NXm9RIoMfY8qqwsNpCVHdFxq07vXtdMk=
+XOsoho53rV5IUt7E3WozBQ==

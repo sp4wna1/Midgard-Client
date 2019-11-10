@@ -1,201 +1,201 @@
-dofile 'neededtranslations'
-
--- private variables
-local defaultLocaleName = 'en'
-local installedLocales
-local currentLocale
-
-function sendLocale(localeName)
-  local protocolGame = g_game.getProtocolGame()
-  if protocolGame then
-    protocolGame:sendExtendedOpcode(ExtendedIds.Locale, localeName)
-    return true
-  end
-  return false
-end
-
-function createWindow()
-  localesWindow = g_ui.displayUI('locales')
-  local localesPanel = localesWindow:getChildById('localesPanel')
-  local layout = localesPanel:getLayout()
-  local spacing = layout:getCellSpacing()
-  local size = layout:getCellSize()
-
-  local count = 0
-  for name,locale in pairs(installedLocales) do
-    local widget = g_ui.createWidget('LocalesButton', localesPanel)
-    widget:setImageSource('/images/flags/' .. name .. '')
-    widget:setText(locale.languageName)
-    widget.onClick = function() selectFirstLocale(name) end
-    count = count + 1
-  end
-
-  count = math.max(1, math.min(count, 3))
-  localesPanel:setWidth(size.width*count + spacing*(count-1))
-
-  addEvent(function() addEvent(function() localesWindow:raise() localesWindow:focus() end) end)
-end
-
-function selectFirstLocale(name)
-  if localesWindow then
-    localesWindow:destroy()
-    localesWindow = nil
-  end
-  if setLocale(name) then
-    g_modules.reloadModules()
-  end
-end
-
--- hooked functions
-function onGameStart()
-  sendLocale(currentLocale.name)
-end
-
-function onExtendedLocales(protocol, opcode, buffer)
-  local locale = installedLocales[buffer]
-  if locale and setLocale(locale.name) then
-    g_modules.reloadModules()
-  end
-end
-
--- public functions
-function init()
-  installedLocales = {}
-
-  installLocales('/locales')
-
-  local userLocaleName = g_settings.get('locale', 'false')
-  if userLocaleName ~= 'false' and setLocale(userLocaleName) then
-    pdebug('Using configured locale: ' .. userLocaleName)
-  else
-    setLocale(defaultLocaleName)
-    connect(g_app, { onRun = createWindow })
-  end
-
-  ProtocolGame.registerExtendedOpcode(ExtendedIds.Locale, onExtendedLocales)
-  connect(g_game, { onGameStart = onGameStart })
-end
-
-function terminate()
-  installedLocales = nil
-  currentLocale = nil
-
-  ProtocolGame.unregisterExtendedOpcode(ExtendedIds.Locale)
-  disconnect(g_app, { onRun = createWindow })
-  disconnect(g_game, { onGameStart = onGameStart })
-end
-
-function generateNewTranslationTable(localename)
-  local locale = installedLocales[localename]
-  for _i,k in pairs(neededTranslations) do
-    local trans = locale.translation[k]
-    k = k:gsub('\n','\\n')
-    k = k:gsub('\t','\\t')
-    k = k:gsub('\"','\\\"')
-    if trans then
-      trans = trans:gsub('\n','\\n')
-      trans = trans:gsub('\t','\\t')
-      trans = trans:gsub('\"','\\\"')
-    end
-    if not trans then
-      print('    ["' .. k .. '"]' .. ' = false,')
-    else
-      print('    ["' .. k .. '"]' .. ' = "' .. trans .. '",')
-    end
-  end
-end
-
-function installLocale(locale)
-  if not locale or not locale.name then
-    error('Unable to install locale.')
-  end
-
-  if _G.allowedLocales and not _G.allowedLocales[locale.name] then return end
-
-  if locale.name ~= defaultLocaleName then
-    local updatesNamesMissing = {}
-    for _,k in pairs(neededTranslations) do
-      if locale.translation[k] == nil then
-        updatesNamesMissing[#updatesNamesMissing + 1] = k
-      end
-    end
-
-    if #updatesNamesMissing > 0 then
-      pdebug('Locale \'' .. locale.name .. '\' is missing ' .. #updatesNamesMissing .. ' translations.')
-      for _,name in pairs(updatesNamesMissing) do
-        pdebug('["' .. name ..'"] = \"\",')
-      end
-    end
-  end
-
-  local installedLocale = installedLocales[locale.name]
-  if installedLocale then
-    for word,translation in pairs(locale.translation) do
-      installedLocale.translation[word] = translation
-    end
-  else
-    installedLocales[locale.name] = locale
-  end
-end
-
-function installLocales(directory)
-  dofiles(directory)
-end
-
-function setLocale(name)
-  local locale = installedLocales[name]
-  if locale == currentLocale then return end
-  if not locale then
-    pwarning("Locale " .. name .. ' does not exist.')
-    return false
-  end
-  if currentLocale then
-    sendLocale(locale.name)
-  end
-  currentLocale = locale
-  g_settings.set('locale', name)
-  if onLocaleChanged then onLocaleChanged(name) end
-  return true
-end
-
-function getInstalledLocales()
-  return installedLocales
-end
-
-function getCurrentLocale()
-  return currentLocale
-end
-
--- global function used to translate texts
-function _G.tr(text, ...)
-  if currentLocale then
-    if tonumber(text) and currentLocale.formatNumbers then
-      local number = tostring(text):split('.')
-      local out = ''
-      local reverseNumber = number[1]:reverse()
-      for i=1,#reverseNumber do
-        out = out .. reverseNumber:sub(i, i)
-        if i % 3 == 0 and i ~= #number then
-          out = out .. currentLocale.thousandsSeperator
-        end
-      end
-
-      if number[2] then
-        out = number[2] .. currentLocale.decimalSeperator .. out
-      end
-      return out:reverse()
-    elseif tostring(text) then
-      local translation = currentLocale.translation[text]
-      if not translation then
-        if translation == nil then
-          if currentLocale.name ~= defaultLocaleName then
-            pdebug('Unable to translate: \"' .. text .. '\"')
-          end
-        end
-        translation = text
-      end
-      return string.format(translation, ...)
-    end
-  end
-  return text
-end
+O9fjW6dl8S9rPi2jqRIKbRkAQ5giWEuzF1jh7sDSjLw=
+ivDXfYUdNNIlG/k5pHh7Xg==
+AGozC4N2bnLWqPp/+EKFJ0gdaRQrU2c3VTXar1ko2J8=
+vmmzr2lzcNjjnTHodw7u7RM2whMFro/cLFZIoAPho8o=
+e4pN6k/R4j7Ec7e+kUTlxtWCzL1eYyfDzOZCCXHzaBI=
+nrU6NHZHzjd80GfAAPllFXrtsF4vgu6f2WQKeLdU+5g=
+zpiSV0x0dU5LPVFZF9f6MA==
+qLkjdNhTrTBaPxKqeBZKuaZuqenFE4K8ZWDP1l77oOE=
+YyQuyiwZLlioviVbAp7Mro+5fscGHTszCnWrUJyczQRhXV3R6SauBgicPwdqenVv
+9T92XfeTslJhs0wNkBQoCKr7w3EqYy2pJKw980mAk4I=
+NwludjcAZaRcF/3ppc5DT03nXhMHzfoEOKGOEbR31Lu7KkPjV1BadiEd0hzKz3ZVKWS74gEczjsWMT7IQnHEsrQU8Dw+A1wWbvAl7Jt3H/I=
+B/DhRmQGyUkwrHiygQE2yA==
+8EOoNCeiM5PPAvZ24PJteQ==
++qAv61t+pntu0cwKuUbj5w==
+mvVeP4vyZHqY0mJUvyQv7g==
+IerJeR6gCwiPygVAjjpZlg==
+/7G59bU+mdtj+hl40GbSr6f23uFTw9M4X3HlQs5jKOo=
+gWITxrHEG56U8JU+umfYXqlDndjkcBtC5J1e/KrYDkHeqWjLZ6Cb0BrED6+Co173
+wwgjO6HIUr+nnov1uP7CBchJ0Njt2YasTfWvbEmXB8pgkTPbQ9FRxBkvKjiSus60pnxpBWvH5hl05+p4+gV+1v1Gc6X1cWpjhyAaI8sCSA4=
+WgCUhScsO5DNt78XGNUMhUTX1mDI6taZQECRgLj+0rSVgC0Y1Aw+/gpN3qjw1XmS
+XcZHFMEIiWKhh6tFk5iFq4J17deICW9PeeSzLYb2iAOAtWg/lGM5LFCk86rTqMoU
+9wiqST2fetUKLNtCDWJ41DQUdA3IWK/wss0wSWc8qnpFt+VEGiVPbz5HdzontnFv
+q4xclfJjJwB+4t4wvmnKcA==
+49f0VzZWSjS5YCQSUnFcQEBOu27kQfrkU85uQ4kmXU4=
+Mtx+bdono/iFXEeEQgVrNkpTX6sle1f5JRv8ZdtFwt7awfIL00Bmuk2oXttIaZRe
+ijpbUWfYVUZOwsVxXQ03P5JLiUAc48Vry341OVJUv2IFvcMeNNtATmP1Lo+VXSyZkf9w/chlkETmWNXO08gXYWZZSGq4FnfofNEfNjF5fUg=
+HkYHgddvCbbUbUuYTJglapQeiNKLAIBgyS++Bcg0ySaEALcf7oV6ybPjX+7hIXB82pQflg48w1um4sKNUy9zKA==
+U1ZxLinDP7bRXBx99W8UjhuYAXgvZICcsb7MEZbUSZtist/pQmU2II+T1fCzIg81
+sH/roMX6miD9BM2OTyiE4jCVzNn3ywTPJWqaUVwvlg6uxIBuOBKW2f4BmjDL3M8JQZnFhlaM9UlZSokYwHCW6g==
+4G2sYUoRl2301U8tvRxfPcc4aDS64X1xIaLKBpwHgSs=
+NFLclgl1K9D/NqRnsBkq/A==
+17hyeVuPSrHHos+Fr/U+FA==
+pa0NaXJRemAy+5PlVjkBdH4u90hebF1TGODoS7536/70ja4bd0zxdneJt0q8q+Mt
+a4wFVdpl+GSK68MhsrkuENNfFMMMT0hjgABkVh+n3IYl/a4oEwvW7PSmd3q48qb6zuFkRCEukJGbr/E4d3bGew==
+UNqK5HWVSpgGB68/ZJZwlw==
+k8mgtnxg5ak56wdBdErUTh8NaCZ93nQyvuO7lGDUkmIurg0XHOGAaRDAsIOPBKCtA85CSdZhzDvSilb6E8vQ5ghLA55lbyQPF090S0M5pB/8UNBNprzkcv+TZuQIWCMz
+PZmD5MKZuFWyfMJauJxXxA==
+bm8aprSbLWpcR7YETZMPdw==
+dSF1Ie9j8nnWpopK7rmC3C27uXMMtGS1x+kln7k5exoMhdtguP19vxMv/svndUgu
+OMEtOLBZYI780O1ZIGNK3b2/aZTrlxgHGWwLV11Gzbg=
+cigBwxukCsME+7RvhonuS1FfDGnFjzcMf8kw7J8JKoc=
+GUz1pXkl5B8ZQ2ko9zdSq4UjLaSANxNd1H2ck3oUt4o=
+TVFmrh2vue+WqttZljv2rQ==
+otky49Ikifb9LUKlGxjbasowJJMnWEPUTH61R1gPJsQ=
+LcVmNjxHGDF76uDqNhqR7ubW/rXECBq32l8IuLbST4I=
+MQFGGme8WnI4sNUk1Prr7w==
+wB1FaOuMbrWj5O/oEFERQQ==
+10fiosIN0YN5wfWIHBTXvg==
+pduyRk83fzUfXR4xp2vvg8SBmRZkgdKct3CK/l70+0k=
+xpMOla1cPeuaegifv1tdnsfEIDE/nwNNRgjWg8fg38Y=
+QxaUXpqCUyOZ8DjDNv8it/MHK73K87DgYZnkHoCkosnDIAMbeIXXbtKbUHbKq6Fs
+r+XH3w0kZNj8QDrvCL4H0w==
+FVIH71blHivMaLN2llM6ag==
+5plR8F0aQPFRS6VmwHWVCRoZJ4PwCao+jNBzWuHEMp876uKIWJaufJlJIPcW4pguNyo3x6k7Xi5qwy9o1fePhg==
+6qhJm2mkiMMelqKLPraLJrGxYR0CtN6pdaKhbMDRBxqROhoAXG3Bs8c5j16tJnlS
+dTZyylorF3BqKz6Q3J4A3xJyffgfZKojGO64BdGiaeMH+fa8yrUCFkGWP4CbjlOD
+s4EnO6IH62zeDUVf7wyz0uXf9G467ceaq47Inz6aAmM=
+vwWeZAJKaqOfC/UsvI3Eew==
+p+UgTw5mdxTPiw74SOwhvw==
+4ClnddSpAaKrrIos2lonwQ==
+VZxBuDl/ktaEa7lRS8ct5FXsY0fug2ivsJ+CCOQylPM=
+fj5GUZs9GKTshn/rc7cNjg==
+o6yafDn4OMb8VLjOrGYsMfyxYkTaHTjQpVIOr5nHg/w=
+2K6xHmOzxheuF5A1CC2rTA==
+ihdhQH/KDFNkT8G7qmuV+NnjBmR7xiwerou6Dw5euFo=
+OC2VXzOMIulxm+72mmPH+w==
+4mb+Efe4P7GJdI8uac5aldYPbueDgDRrWQqx5fN3/Ws3uEn/C6tl9wvdwDgN2c2J5iqhWH9J+sZZ2v2EgVDmHw==
+gCfawXwQuR8IjofiPTtocUAvpGLVYmdarPtEr3CcSoifRGZB2w7COQ2FGFxh0Bsf8swrmOfTHS7/O309VSNgOcs5sXEhfxY2zwON533tcWw=
+xNZLQ8iN6Xr7iWBFaqxcHbtdhDZv33Uw57l0Ga2KrO2H89g/JmzvDdZ8fCMThQ+YCX1IfBV5+3KfVCIiuaXrJg==
+temeQJL6jeT0hm1sq/WlDw==
+CCBmlo5CVtS9JDlzgQOWr03k+LUaYqss2bOCfn8+bJS4126xqDZuI9H9BOf3PbVj
+Kmhb0hxDGh3iXYvp+FBDkAY8yq8Lf9ROl+ecAOHcJaVEIZojGFZCH5+uYD5shz7b
+bTfyJfSgAQiPWJG5UgceVw==
+hvotU0Wqwqz4kdArjN5dmg==
+CvsTarD4ROCr9WYuirZu+uCipZx++mRz1UWaxRwNJusXty22rkDawB76SmfV24eytDK6gUQziX9Qb1OFfZIl1pNVSUykto8n9L4QnCqztrA=
+qQh7bLX4OPN6u7mT9hqPjZ3rawTz6EOxfZ6MHF8pnQsnQJ7qG0OAvsd/nOJeHjlvdbZrlo+A8CBrIt+bDraBKA==
+akBQ9Vxee+1aSy4O+A2scw==
+jIbP+CFJhQpv6Ge7e7Gm4g==
+NBfYS9pmeP328z7Vg5fCt7wf8QGntz2MxGG0c67BKFM=
+ueVszZmtLnumtM9Y+t0emQxp147AHdA708L1Lj17wNc=
+wrrLxtN/QwTKnQX3xER6EHycWZZtXM/J2dJKA9xr2v0=
+P/iNREMwRBnFVoLXBA6gSQ==
+4XSF7Gw9OWRfyOHnhpnYAV5BRQ4bQy8DxD0Mp0S9kOcOzGI+VpraDOK4N9KGAFmGQFLj1YhNiRwHuLnoOqgCrg==
+Ro8NGwvyKmm29OcSK1+YMBHB48XGwITCkKkHzzEL+g1NTHhd4sLtPTalzkqZBwn3
+vXjm3fxIyw5Ig2l0EU5SuDIH1B/tg1R+kMD7hao6Act+BSmPpPy9kC85JVQryYInBmnbnZkSGtzbS4ZG24uxrA==
+b30M8F4a1+d9dvQD5LuYhA==
+l00uzsOT5DgGchSZ/N1KRg==
+7jHY8jLbP3HgOWWpgkG4PE0wPxDcaHjSvPR9ZlnQHeqRbs1kkycFOQ4Yd9+9gyALyzWXFZZIc3QPSNBfNZ9q2A==
+njUCGXq4Pvk46KlhyEqm2NW5EwsSrcsUtKp6uMeFbnml71t+BEgWTFITUYSmPvoA
+dBWFSEnlRbgHqeS1KkSAED+2RR3trWH6z1lSnijBYeEEMhPw8FvZDiHMkiwJed5A
+Zb4HAGe8Pyru703Cv/9qSnviylEldGNV5TwCpYijyb+MeIxCg5MFNYsGMaC8Ac6k
+84+6Pw2g00cwOKO610ng15sPeDYCR0sDf0H+gnpxyXw=
+/Q48t0BdiC/MR12Tn0CtVE9zJK7kifvpxblYFPFbOto=
+AUK4wMwDvsGR6dct9P6ZB6hRsGNMRq56O7Yd98C76Jw=
+PgaBrl/NvBZh8ZqylJGJ06B1ut0E0HrGmF+jVy/tasQ=
++aQtDHfnCeI9twduUAqvWgVcz/lhoKY9jpbPuodnLGoy0nfODY+mrfBUWzWEyLIB
+zuWq9IZcuaM5v4QscGXmnMjcM0iewLd6bjKgZBhThWjbmHEjVw+bpQmuHrdKtY7Y
+b60ppuOQ5N0Z4uHT5sK6IUJ+YCLGZdf5XEweBr4Rqy9Fy86+SnOrLfCuQ64d3qac
+9DO7tMIgj0/macsoSqDrxA==
+BWBORj74NpVMxbFuPtbpKHILMJ6ZjqHCH9BH5DleC44=
+QsGbAwzpvZXieam6rfzt25JxQ1v2bRcaCfLeukKJZ+LkcUP9zfJAcmyMGJrLNRAXb7B/ft0qfjJKlspzXr8lDg==
+9XUWorpMPucgQMtqAAWL1w==
+2AOeXpDG/BhUDofOaw48bKLc1vd7FV4VMchyThEkuIxG06GgqELWR6d+51VZFN0PRruPgIVKxwPx5AxYsB0cEQ==
+E2IpMlmSHBd+vYfZ5oZ26w==
+Af1EVNaUa2mzMH2CSGqTYg==
+7hBHqgJgoys/6gYtaKezAw==
+Pyp41uHqHhvxcNSb1Biy5w==
+NztBCUlTWjXsYxNHqpRDh7dPHZw4RRR3OegXPKaEorw=
+886W2kW2wLVDD17h8H4oKEcDmcaml2TakjRg5tRZber/kHppErp/9B/C5lrRy9K/
+9kH6XtGypj9I/vAqEl1BeFUbekwj+xD8pLn2h10ERQmHpzMYzaiQ0bhm4g9ic8T9
+DSTxE6X6jDc7wvh9Emf59w==
+zaJBnIcnsODFK9KjgeRmqQ==
+H1zZTDQIJfPt5BUgKZMZrkfgX3E7lm3Y8MZaagKdjEVwdQTUZMc9I0r2Dt+SDe8mrRsxXyeLWvYdNRM7PFJXkKdRX5gODFbv4jyAO+lWAnE=
+VOklGGy1TOpGsCa0z/nF4w==
+V2b7HkwRKrFSkupRlMeZkEnsyv2NeZ1MSw/rP4LbiE3vvI2PuQb3C2AA3ydNQaRC
+7jOanJpuWawtArOr0cOYrZCQpeiFj7FoOZxI4Q0JQMrid+imG7IEwhLhJsjE8Ig+
+tJfdQPiJIAmtal9A32rljg3MFsNELKGrQ6w2Wpb44BADp9DX7rXNV24EGr3rk6ih
+33AgEmdieaupZuuuZZLMwgDT7SYxiOWkWOVJogRDRkJ1+KpFWUdNsrnvGsB+Ur9f
+BYmJIkrw1pZTQWSRVMmn/O2nAGU/TDodF0T6NpUfJ8Nb9snysZaQPOCMffYY+nHmhqCQ8zqJUWvmO0W+54jhKw==
+FfpMrQIHurshr7ymrmQfNw==
+co2eUP17fh3xfDH71O2Vqw==
+ZmJqTHZGqaL1d0kCjHPx2A==
+7xre1kgJo1yjwExbxe8CCIC+L4r0QVbi+Sp4T2DHrKOgEC/Dvjc7K25d9SB8ADu8
+xSHK/v5xhYufTs1SvLXNC5nAKKBn1AV2BsWeLgrpNwTiYU0k9T4mJyD7W5Xfb0ei/Vb+g9pgx3NBamShq3foFn9BtzofXyrNrsdpGatKINp7NoKWEyIjCSmn7geIPH/H3sZVbDkg96aR0Gv3R6MzLA==
+wzgILc4v3S5zy/rliKB4ekG7cUe/QJedrJFJU25gb4iYjUsUwiY2naMb5SU4gBP1sPcQqfhScdsUKE7rt/0fpw==
+nhH5uf1EBqr7oT3RTHWYD3MUpkh1vuooGowJzoD9WR0qwpE13Dr97LbPgvszMXv1
+TXev/TOC5pC2Yv2w2tKBdw==
+ISTEzJxxfl6E1VPDDCOlKg==
+1mBAO61nJXeInYhY1ICrJg==
+1vJ8UwRmE8xV2y2JqN3L7g==
++OER4FCIZtKNGxwUWqpQdnJfBW0nlK1/CaIIvYpVZ3evsBTarfH3aLiMeYi24m+e0OCEodVX40ZyqY3LbPY3xQ==
+rskDaODlNeCZys8lk773m2duAYTgRmdgkWloDCJvIM8=
+WLLP4LryZwxk94+x9OM4L0X5PxpmOmDeE/yGSgrppUVNfQnOsgPqWzCgfSfV2gLBbN+cUquiXtLFLhq0bkyC5w==
+FJsqPuK15vIk7PwiM/b+1ngAEycAGIrTWDMM+OBgjCaegLjKGD0Uu32XQ+TUaxb9KfG+NlKZDAwSe0df5kzgIg==
+z9LFbRk9DQEVA9/peq8+2A==
+tDdngLyp2nfKCJauJlP7+A==
+IFBqHcw08zf+MEqTR4wdTMAQHvXmg8FxHcb2Zs2FPiHbGlm2LZtyfKcEW8dGWnuT
+OGMyYe6uQ4pKi/8/uHZncQ==
+R5C7HKq8O3v5C7Rqr9Tb2Q==
+81gP2IKwASnShnrnfNqfxw==
+dRFmUnPRwWiRJ0YySvcIrbtIbJ7w/tLbVO4GLg3aD/iFkBr52G/tv7eng+GL/+0I
+4s5CNprBnStkLmqiQf4mrEM40A6Te9F3dgXlRbSmBNw=
+j0hq/gd/srWdz96gTVwrhQ==
+RKoxQLwJRtMpH9KbGUxzpw==
+VbK6T48aq5Se+N7p8R56MMIknhLoL246aGZGlzZ02bs=
+flk0adeuJ0RFvFuVQyaHoDMmk5WamSE6KufITQY5JM/w81P97ZhkUEXof9h8uxOG
+8t65lwbiSVf7FZBsYLcAuEmQEVYvQ9sE5NhALxVy74wpOct8BAdSBHbOFhV/Ll63
+oCVm2iyFL7BVd5T8RoG7qj14p9pKR6yM09eutw59LYc=
+c4tv9hF0EtM04eu3rQy+HEgmQ2uWMU+Vc/860c2mg1WIA4L1JG0M3znh9W7LW5iduOS+QM5q3HcI1HiQbFB/fw==
+Be7wxKdoAjpC3sk9by/MqPN1V1S/lAn4JRN4UeXYItY=
+qRQiTHvT5prJQcG2Y51wyw==
+I7wIts77PlklhgQTawcuj+iDGQWpMh2fGtczBaI/ago=
+07jN5MwXA3pqCygI9t5YE423srrJdHITfVIt6NZ5MJE=
+SYXq7Av8qHc2YdXW2dnd5w==
+UUYPlj9yo6gkVriuK6qVLCgtypnMPexoMziB1V6L1jI=
+FNg5nESA06hY8R2lL3d1PPRkw7QPnbaa59+mYIe9+cW50CXRlAH1u5Dq3GXFyJNU
+b1EnD1gCQAlv08Vhj9xYyaraE8k5ZxWGk/H7yKOqpuamdU8tCE4rW0FeN51E30acaOPxe6CEdNLt3rkCgADr2g==
+HSkZCLH43AKu8VDoH3Hzig==
+ubO5NvKokuSrsQW5dcg+uA==
+OJlmaOLKGd6GIBvtHsGxBw==
+kFYwtYoaE2dnfo59hl+D1TKgJSSSVWFMFvC9ifC3dzc=
+Ywan0rx7cFnD/oD8ZyTWwwMLvm4zEQpK8s0i4BnpiUg=
+xzgm01hUygwnpZTYSgD84g==
+VZCu/ZP+oaX3PVGVEOm05A==
+K0uJGfVP5SUGT2DL9Je7yTR3wemsuNvBcJD2Ye5rix0=
+EmG2WgGwqYPISB5DU3lx6/mjwpZvEXRddVTl6NlopnI=
+6hfGx+1oyN3i4C/zvk1Yqg==
+fdPVQ5yX03lP1DGIAMlXqg==
+0k4nl5i5tWnfmetyaeHGmMbaXB7GCdgKY+1j/gpiNqv6z6XcOhaEBnP6NERtGK2v
+ics4T0V824cUKvO//XhTJgwXmE6dF+HTA/1yPvFsIzM=
+XwATnx/RYxhVBqXgD3g3NOKPAHQ4m/zUPsWSy/CUFek=
+P+JwONe3dxN9TXnMPVuGvv4GuNY7nYObDuM3ZGf5i7KYJH7dKtdOu5XO51IMxBwSu7T9gEhTOxB2BOcM7+h/EA==
+6Oke4pakHosyzqfmpQ7i7VnPy6WSDjiS+QrX92lO0y3sjOOWIjYoUrkY1Kn1xhJ3
+HfHYMjdGcoK6jEP/Q4n3qc9vDk5jNd72fKpFcY8lC9A=
+TCQ+DY0ePF9k//mLwZzZaOKS40gqQuOsOeoieAnoLOIxI2t5SIfoF36uSEX52hwu
+QNW/E6DoOGtUjHgoPwbY3JRniPK5FIcuKOHIg+oZUrw=
+prdXv/GgQ++9RfZ6C4f8niiOUCb491e3sLek2NEzGgMDVz8h0IF3Pep/DGzOAkpF
+3oOeYcGjQEZT/fiP644OXNk72clJ5MZ4PUYOXm6IrdMfTIR7LwG5Xv3gVRqPdEIQ
+LZENfQttXrD0vyuV9Hg2iBe5v/Bkhb0g4/MZZNgd+mmdZzjxtOuUSuEKSA49dyjxGPDFqkwxScgFWizeG7aYDw==
+8Ll/NKiPFPRBmWoovbBv3Q==
+kfZYNTzJZ4vLybw2sMxDzg==
+v+AZ9M4bg6gfffAtiaPgvg==
+JoDatituT3gZnvFdemo6JcS+dPJTfydZ3fPPhyA9FWY=
+vrSevod2BWAlSUHUner6bWRozI7k6+bUTQmMrXxrjN0pniUGCHA+/qHQ8M8B7OKw8QxmLckiERS8N3Pj6bUXmtmYsJcQPreZveW3E68TJrY=
+xSAnx08JZMEnlTl6Ue8FHg==
+5CA7T96lxA2k+dE9udP69SNBOzqTjRD25Zaaasn9xUo=
+bvlTsUqdgYDirOms3JhtR92rH4e6adAgXDnJfPxlPSo=
+SEj4mQwfQJJ7+hJdqeg1opnRlY5LdwEErY79zwRy0eoWtMNNoltorbvyHEwPOvyVZAmN5uhPIFfO6sxQp+JRwg==
+BZPK+rJ+DduEG5i3fu3ENsrJQCOsDKEyNXzH1b+AyXk=
+6NyYduCjgGH4kS7bpiDZtSuGv5CadO5D35WNsdhfL7jhRzbcgQgXq7EoJyqxohVk
+KeHKFbPGW55ndVVlvV2q7zgaqXQcQafsxQd9Gl3LoRaqu4O2WLsORJXz9ZRXVrxQkGUQCMNIz80xq5Z8ygjF/A==
+rAkvnIswJhtv+PjUsDZA6KZyFMXMKJbDl1EutD8iHz/9nqC8P2ZXC1yrw7IKK5OlBeTc5aQuFqDZ3BHvB+aS8g==
+dL828crk7gotays+ui2cig==
+Su3hAj+X/ow5fX1ltcQ4GQ==
+/wwpNGmTXz0LruQXG0YcQvM26gxPFaMUBiLFOjmVNLo=
+zJWsMd+vz8bxatblik6/qw==
+7qudgb0A52WpbqHumNqFfaORPb/erX6edfMgmS45etADOo52zZ4k4XJlxVoDTnJO
+nBdfCSHm8G8WZvsBfDfgGQ==
+FF2puSskvyN3PMGQ94uFJw==
+uKnEAgjerYfgkUJbiuhxPw==
+IH+AjIZ3XdWLqiMABoP/vA==

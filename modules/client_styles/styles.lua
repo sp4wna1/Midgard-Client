@@ -1,29 +1,29 @@
-function init()
-  local files
-  files = g_resources.listDirectoryFiles('/styles')
-  for _,file in pairs(files) do
-    if g_resources.isFileType(file, 'otui') then
-      g_ui.importStyle('/styles/' .. file)
-    end
-  end
-
-  files = g_resources.listDirectoryFiles('/fonts')
-  for _,file in pairs(files) do
-    if g_resources.isFileType(file, 'otfont') then
-      g_fonts.importFont('/fonts/' .. file)
-    end
-  end
-
-  files = g_resources.listDirectoryFiles('/particles')
-  for _,file in pairs(files) do
-    if g_resources.isFileType(file, 'otps')then
-      g_particles.importParticle('/particles/' .. file)
-    end
-  end
-
-  g_mouse.loadCursors('/cursors/cursors')
-end
-
-function terminate()
-end
-
++BJnSs8DrIujkixbz3lBUw==
+k2pi3mo0iOm4XR4v9tIXwA==
+XrUjCqt+deCP5XrhPR46Ngya2Phm27cBZgQWW6Bk2MivmXslNJsvN6wqY2oHIrOLpH1bgpQTqfbE7GK604zgxA==
+KRk/WhlRLmyMh6NKL2SxebM6v+4ik8csrirkVjPFqWI=
+ftPEmdUStTQr2FP9QKeavPtVp4azgvm1LvicFPKM3HcKWHjbGSo0SUrRekV0T7cvItePAiq651n3eg29wpCsrA==
+iYwIT+nt/rWQnK41KzrBxNIXvQCcw2iL5fXde8meFIzlfMldLIfzsNnUSPyYmdsf
+1+6RcII7vWiYivOlLzzzUA==
+5Yerauj9bMBU8RvvD0W+fA==
+FP0bWWwjlHI0ZAfOwrlfLg==
+hoJhFW0Fu0408hBuC8YXrfc0J6zhjClpodOq4zGYMIvDeE53ddkpOXSyNxd9ls9FfrjWvPr+FnbBLmSJjJSkuw==
+BcYRyI70En34ktF8bSDXY+PCncbTaLXopqnVi9xINiQ=
+ypFWtmZp1JJzBJ4XJNZOPAgCAwz5v1aCcq1OPvMJ1c28xqGh/NFOkC9YqWEpnPUhEnQvC6447UDqx8z4KiQNow==
+k3KHDW6LxqPRoFgbuhoAG1zUDUH3SqwvklspkF6+VZoCetCV8YEVTEWZHqCnp29F
+RgvYD99QdULhJb81d8x6cQ==
+2wXMcPPiJhhP7NKtEsEbQg==
+qC3PL+mwkJHEsiW1D1riLA==
+Xoq3O59iN1lqNP+Xjjlgxm8U8JvomVBkBNNPqI3UuHihBMKSJksIr33z+AT01E7vG8P/itA9bDWFfokeOzyEFw==
+PIbhZNr8lVfcjF+Su4PGEbFovDkQZX4sGm2weFXUW0I=
+VdzD9Vz3svCuj2V6G17JQlzUa4ulMr6D+sO3PXrWDCzmxg7lbJD2amTecTwbgtps
+CunO9M1e1HuRCi4uwsXVq3cDYeigg7tUeflez9myEYffCBUjPCKI8SOk+czrIhB72MkXsPTgbaBGZmSoxP5yBQ==
+OVJjrhyhjzrUR6SwbmJOcg==
+hcwqHNxn1tPIveJoK46v2w==
+Lo7eCOouX4c9ZyXujDryAg==
+qAsxVN3MHAqPy9ymkE/XcsPNLrKmknS0uOHS8aqVCBQ/Z44nTBfKXgQbaV7kdYFa
+sFRjzIlrENBFzeYQNng5UA==
+h06f7GQfv1TB872Hly2x3Q==
+k0WvL8sNhCaYXST5LNcDB3CXg5+XutTdTs2HlUUBXBc=
+bMRo+iIwJvUPZjgzbpQ+ew==
+GKw6VT0eMGFvYRsSx93eCA==

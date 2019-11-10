@@ -1,38 +1,38 @@
-AddServer = {}
-
--- private variables
-local addServerWindow = nil
-
--- public functions
-function AddServer.init()
-  addServerWindow = g_ui.displayUI('addserver')
-end
-
-function AddServer.terminate()
-  addServerWindow:destroy()
-end
-
-function AddServer.add()
-  local host = addServerWindow:getChildById('host'):getText()
-  local port = addServerWindow:getChildById('port'):getText()
-  local protocol = addServerWindow:getChildById('protocol'):getCurrentOption().text
-
-  local added, error = ServerList.add(host, port, protocol)
-  if not added then
-    displayErrorBox(tr('Error'), tr(error))
-  else
-    AddServer.hide()
-  end
-end
-
-function AddServer.show()
-  addServerWindow:show()
-  addServerWindow:raise()
-  addServerWindow:focus()
-  addServerWindow:lock()
-end
-
-function AddServer.hide()
-  addServerWindow:hide()
-  addServerWindow:unlock()
-end
+2xaCqK+KD7qKyMYbrLQX3g==
+eTzBIl37/yfImEWfLC/iAg==
+qbMsJlLvh2bgkfg85we1DQ5DXquajHXotRyJrqfxKnA=
+roTaat+TYHPbcU081oWX+JWQlm0dqRq5vPVqR2m+Fds=
+lfwRPWpVgAfIpeywKWD29g==
+1lhyls9T7hAaI+ONLpFCoxEcj8SqjWDU9mDp32vR00Q=
+80TlHvlo2gIJpU/fsYpL4KXisHsg8+D5FNW5XguXqnI=
+hWFV9xoJxWmGRmHhMjEZ6COTI1SLd2EekRq1aiezjqRhj/zC7QUmdjVZ4rzS3gPG
+vCGzp9MUOW2gNYv14G62qg==
+nMg93Xhu//h3824AyRVOEg==
+AuPvLhLyu7NVwXyEl87HIQtv5F9DfQI6aZ5EQj3vuvo=
+8CMmAG9w1jW/5Cbxh1igy6sbBBXLBRk6HDA2cmHC+mA=
+sTBxjxkb2mrKjHjt8Uo/9Q==
+p3OQ+wP9HIFbe4a6Z/30Rg==
+Obc9BX+AZ0vLFHndZiwiwfmZ2s6eDG6QgSjmB4oCzcg=
+Br3OzQZPUUd7Qt/sFwfxVXncvxyDGN3CAPTot5Ltw+repyPRwNwHiCFSxwMoR00lpgHxAeDXBhGm6nV5yqCyHw==
+HM/i94v4feici519/CkaWSsxP6SxXGTbEstjv044DRP94c1cjyuZA7cziVt/kD8avt0EwAhX50Sh5TWWzYGGhQ==
+bpkgQXvhMltIVLL0oSb/PNUVbx0gTM9wsh224803BAuBooBieFmlSxHssLrtg0+TZZ6CGqjXXhVw4adPRsiU5Q9YQruxYdiLOQcwILQLnHuqLwYVIMyhhb0Mgl8bUXdw
+ahTEfCCUH3/1Ikn0OoCr/g==
+hynPyVkXv8wAVK473t8mQgqid3VcdhHsKuOTrzOMwJ5MKIcoCgRq2zL8Mco3+KKDfefe2uuM2uZxepwtIDZXiw==
+tZ7gteThE4Xlz4Ei/qVNb7tMPBT/rDKxzB8iB/KLjF4=
+bcPwVJrK2nxFVhHmcFgcFIsLOQD4wjVYcyxIC/Mgr7SOynAcK1ONAtDmMktCCdB3
+LadSSFa0bb1f88dui1Mgpw==
+aGkJF+UigRQWY5u9FWC7Wjezv6DcUJuKEwASpoFjvcI=
+tBdwOxUcSLlDJyfca1S5gQ==
+YELvYh+XRS5SlFea6D6eKw==
+WMqcAxQvO44KIrP3uWuURg==
++TuI39TtPJ7igyztkODNMEADsG9EVliFymhsuIQ59Sc=
+tQXmoquiaKsimDYjONfMT53/ZPsuvqZ3Blvcl0sNy+E=
+pPc/3yP2q2XZDX9SUxZiVNyK0ls6Ebzhuv0pxWAQAso=
+iQHBMTY6yykzsNmMl0s45yoBXHdQxW/w9pKe7954A6U=
+vyaAR/rHfX9Mg6GhiSSBKOvly9YukolF1HzS4mEs680=
+SBTf930e/Guw6F/wudfqag==
+IX0WHY+qDK5oL8yP0ttibw==
+mKSo55gMPJNpbB9ZUCt0gGCykYqKLBEgfgRvtTvAmPA=
+hIjLAjL1oTHVwggxXvUFP0MgjgS6HSWWWINMQ3nQiro=
+mCDxVrsGa+Xuokt7MhXJXJ+SBkeUTpqmyI51TFZLUN4=
+MAcuyUtpixdVLHo0PKbopA==

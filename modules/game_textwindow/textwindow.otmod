@@ -1,10 +1,10 @@
-Module
-  name: game_textwindow
-  description: Allow to edit text books and lists
-  author: edubart, BeniS
-  website: https://github.com/edubart/otclient
-  sandboxed: true
-  dependencies: [ game_interface ]
-  scripts: [ textwindow ]
-  @onLoad: init()
-  @onUnload: terminate()
+92gLUDUwzwa6qltXdfHwMQ==
+WNmHDm7GnnhA771HcAfQ+69aLuDkGQ2Kp5fbGRKdkW8=
+CfUvNzbzQ0yfa8O+UgLfYgbSDjGRSifuf6Z6lQ6Rl5w8dqrJz/MuF4MSYzG5sKY9mmiyV/CGG/+dp0o1ndhExw==
+t/8VcCJ7AFLBIrWgj9OfqcyvF1FLQeCMyERCeirgtxo=
+wjk14M5TP1g6d7KbiYAyNIepNQADV2CJvkvotZUQ7yMjGRRv2T+S4B4WM52lbhi1
+zVJRpzo2EWmc/Udy962IrnEv/4MFr09e3CU5wEsrF3s=
+gdcvyzaT62EMb3oZAestPx0eETXBbu7YUT/33kCHOiOUytIzHTMkiXemnNZRTOpd
+DMylcJExzWoAYinIl1uwhQHVUvend9eFLr6uzkyOv3A=
+xAvmwdjIyiR6PQ8wNjgyuLYhbHH31acteIvkzuYlgJ4=
+TJeJD8rvd+Vsahf9Sp6QkcsxpnNETZsISMsMd1Uoi5g=

@@ -1,17 +1,17 @@
-Bit = {}
-
-function Bit.bit(p)
-  return 2 ^ p
-end
-
-function Bit.hasBit(x, p)
-  return x % (p + p) >= p
-end
-
-function Bit.setbit(x, p)
-  return Bit.hasBit(x, p) and x or x + p
-end
-
-function Bit.clearbit(x, p)
-  return Bit.hasBit(x, p) and x - p or x
-end
+t1RRaPAJVC5/29wdCTL1vA==
+eXsC1edhAsF+6kjII/7YVQ==
+cb2y5NOxrIkk9UkRXUEe8oSA7wxFK7PfsJheoDlNRhY=
+RSl7mp7o3/TA/AAdADnZLA==
+Tq+0AR1ozatjcRYJVlLUPw==
+/OadUojM7T1WoRkrp8cyLw==
+zUnk+OJLvcmcQ0+P24u2uLslK7Fiq6UGTzXgFfVQgOs=
+AQbqbR/hJrJWUmNBTaxj2MtqJeyQkysxPURxiBckG14=
+RuyZ41OcX78oFouvH7ihBA==
+J6tuuT4EOrUxeCMXTpqqqQ==
+fal4Sn3T+aI76srsdjZMH8QLuiCDNKT0WncpWDPXHzc=
+w4h4ZfRE3039iiUIikXNJVPGRlAkyUS9QGlMU4b88WCy+er/nZ/PJ0GhYCBzpxIV
+6kUmxf9FuAdtlGoYQ3CvVA==
+0qqcPzvvbQntuVohR9HKOg==
+dPEnxnIm1EzLgXgaroS11rskzrr4OeP7w1DrxskJIms=
+43mx5mRN5hXDFyWUoJoOEPylXkXXXObYq6uhF5Z2TupN14Zc9vZjEC59//VoPgPj
+kc3EImJScUaLNTzIob1ANg==
