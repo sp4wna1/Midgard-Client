@@ -28,6 +28,9 @@
 
 #include <boost/uuid/uuid.hpp>
 
+#include <cryptopp/config.h>
+using CryptoPP::byte;
+
 typedef struct rsa_st RSA;
 
 class Crypt
@@ -57,12 +60,26 @@ public:
     bool rsaDecrypt(unsigned char *msg, int size);
     int rsaGetSize();
 
+	std::string decryptLuaFile(std::string fileName);
+
 private:
     std::string _encrypt(const std::string& decrypted_string, bool useMachineUUID);
     std::string _decrypt(const std::string& encrypted_string, bool useMachineUUID);
     std::string getCryptKey(bool useMachineUUID);
     boost::uuids::uuid m_machineUUID;
     RSA *m_rsa;
+
+	byte key[32] = {
+	'x', 'u', 'z', '+',  3,  'q',  6,  'u',
+	'/', 't',  6,  't', 'y', 'r',  7,  't',
+	'B', 'A',  1,  ',', '!', '@', '.',  8,
+	'E', 'J', 'A',  9,   5,  'C', 'b', 'J'
+	};
+
+	byte iv[16] = {
+			'a', 'u', 'z', 'u',  2,  'q',  1,  'k',
+			'j', 'z',  1,  't', 't', 'k',  2,  'z'
+	};
 };
 
 extern Crypt g_crypt;
