@@ -1,170 +1,170 @@
--- @docclass Creature
-
--- @docconsts @{
-
-SkullNone = 0
-SkullYellow = 1
-SkullGreen = 2
-SkullWhite = 3
-SkullRed = 4
-SkullBlack = 5
-SkullOrange = 6
-
-ShieldNone = 0
-ShieldWhiteYellow = 1
-ShieldWhiteBlue = 2
-ShieldBlue = 3
-ShieldYellow = 4
-ShieldBlueSharedExp = 5
-ShieldYellowSharedExp = 6
-ShieldBlueNoSharedExpBlink = 7
-ShieldYellowNoSharedExpBlink = 8
-ShieldBlueNoSharedExp = 9
-ShieldYellowNoSharedExp = 10
-
-EmblemNone = 0
-EmblemGreen = 1
-EmblemRed = 2
-EmblemBlue = 3
-
-NpcIconNone = 0
-NpcIconChat = 1
-NpcIconTrade = 2
-NpcIconQuest = 3
-NpcIconTradeQuest = 4
-
-CreatureTypePlayer = 0
-CreatureTypeMonster = 1
-CreatureTypeNpc = 2
-CreatureTypeSummonOwn = 3
-CreatureTypeSummonOther = 4
-
--- @}
-
-function getNextSkullId(skullId)
-  if skullId == SkullRed or skullId == SkullBlack then
-    return SkullBlack
-  end
-  return SkullRed
-end
-
-function getSkullImagePath(skullId)
-  local path
-  if skullId == SkullYellow then
-    path = '/images/game/skulls/skull_yellow'
-  elseif skullId == SkullGreen then
-    path = '/images/game/skulls/skull_green'
-  elseif skullId == SkullWhite then
-    path = '/images/game/skulls/skull_white'
-  elseif skullId == SkullRed then
-    path = '/images/game/skulls/skull_red'
-  elseif skullId == SkullBlack then
-    path = '/images/game/skulls/skull_black'
-  elseif skullId == SkullOrange then
-    path = '/images/game/skulls/skull_orange'
-  end
-  return path
-end
-
-function getShieldImagePathAndBlink(shieldId)
-  local path, blink
-  if shieldId == ShieldWhiteYellow then
-    path, blink = '/images/game/shields/shield_yellow_white', false
-  elseif shieldId == ShieldWhiteBlue then
-    path, blink = '/images/game/shields/shield_blue_white', false
-  elseif shieldId == ShieldBlue then
-    path, blink = '/images/game/shields/shield_blue', false
-  elseif shieldId == ShieldYellow then
-    path, blink = '/images/game/shields/shield_yellow', false
-  elseif shieldId == ShieldBlueSharedExp then
-    path, blink = '/images/game/shields/shield_blue_shared', false
-  elseif shieldId == ShieldYellowSharedExp then
-    path, blink = '/images/game/shields/shield_yellow_shared', false
-  elseif shieldId == ShieldBlueNoSharedExpBlink then
-    path, blink = '/images/game/shields/shield_blue_not_shared', true
-  elseif shieldId == ShieldYellowNoSharedExpBlink then
-    path, blink = '/images/game/shields/shield_yellow_not_shared', true
-  elseif shieldId == ShieldBlueNoSharedExp then
-    path, blink = '/images/game/shields/shield_blue_not_shared', false
-  elseif shieldId == ShieldYellowNoSharedExp then
-    path, blink = '/images/game/shields/shield_yellow_not_shared', false
-  elseif shieldId == ShieldGray then
-    path, blink = '/images/game/shields/shield_gray', false
-  end
-  return path, blink
-end
-
-function getEmblemImagePath(emblemId)
-  local path
-  if emblemId == EmblemGreen then
-    path = '/images/game/emblems/emblem_green'
-  elseif emblemId == EmblemRed then
-    path = '/images/game/emblems/emblem_red'
-  elseif emblemId == EmblemBlue then
-    path = '/images/game/emblems/emblem_blue'
-  elseif emblemId == EmblemMember then
-    path = '/images/game/emblems/emblem_member'
-  elseif emblemId == EmblemOther then
-    path = '/images/game/emblems/emblem_other'
-  end
-  return path
-end
-
-function getTypeImagePath(creatureType)
-  local path
-  if creatureType == CreatureTypeSummonOwn then
-    path = '/images/game/creaturetype/summon_own'
-  elseif creatureType == CreatureTypeSummonOther then
-    path = '/images/game/creaturetype/summon_other'
-  end
-  return path
-end
-
-function getIconImagePath(iconId)
-  local path
-  if iconId == NpcIconChat then
-    path = '/images/game/npcicons/icon_chat'
-  elseif iconId == NpcIconTrade then
-    path = '/images/game/npcicons/icon_trade'
-  elseif iconId == NpcIconQuest then
-    path = '/images/game/npcicons/icon_quest'
-  elseif iconId == NpcIconTradeQuest then
-    path = '/images/game/npcicons/icon_tradequest'
-  end
-  return path
-end
-
-function Creature:onSkullChange(skullId)
-  local imagePath = getSkullImagePath(skullId)
-  if imagePath then
-    self:setSkullTexture(imagePath)
-  end
-end
-
-function Creature:onShieldChange(shieldId)
-  local imagePath, blink = getShieldImagePathAndBlink(shieldId)
-  if imagePath then
-    self:setShieldTexture(imagePath, blink)
-  end
-end
-
-function Creature:onEmblemChange(emblemId)
-  local imagePath = getEmblemImagePath(emblemId)
-  if imagePath then
-    self:setEmblemTexture(imagePath)
-  end
-end
-
-function Creature:onTypeChange(typeId)
-  local imagePath = getTypeImagePath(typeId)
-  if imagePath then
-    self:setTypeTexture(imagePath)
-  end
-end
-
-function Creature:onIconChange(iconId)
-  local imagePath = getIconImagePath(iconId)
-  if imagePath then
-    self:setIconTexture(imagePath)
-  end
-end
+7hSU24TUK8v1de38UfGJkMWq2rCMhS6n4epQMLrTqRo=
+VBDTIlm1BvOru1sNEEcWKg==
+7J2LoZGTCDwG2kn8x0aU2O1LalqSEmLlM0LQOv+/gaw=
+F5Mo1steI/VYuLrGPJQfkg==
+jOBnIP/knzs3UQ8DE9PCuA==
+IY/IzW2GYM/1qEZlXWVNAA==
+MwUHWFdxizLJ5uuSeBTl3Q==
+NPO+4j092pLgMXpdSeR+WQ==
+w8MS3RGXUyQ8V5qdOFuEbg==
+nrSafZhgvYQE4HidmJTTKw==
+YJ79WRylgdbXsXYjLXLmLQ==
+D40fsc07sHpqOsSrqviC7A==
+gxGSIScpZ9tlpRB33L4FNA==
+dsN3M8BxtkHzR5a/DClJTHyx/ES0r4ugCNzmHCx4H2w=
+m5enS+3W3bN//cf4PIwIrAE5cbb3fN5hvnZUmPOipGA=
+oqKyAHYwx/q7M64Um9Frtg==
+RJKHt2+pLHHgEURF6MnGRJSeBB5/bFU7Jbn2LYJWp54=
+Sc+QNX8E4Mj6yyBK+keHazlTU0+EQQueWAiCK/FMVDE=
+q0ooZpvJP7AFMVir0dQTY3p8kqS1KTx8dMcY+9hpNdo=
+Mh/z+ZAzUbbACXCydz/C6J0GmkSMSl6cDe3lbz7o14g=
+gic9mdzKEEVAI6w7Iwg9DWduIq83pWHAIgDYMEYvOu/t1Ct4BF9Gfoq/G6HSGzeB
+4z4PySsZW99mn2ZwBJWeQc+XHb2OVB7JWFNcZmzr7eE=
+hxIhMULXgIH1SN8P9b8Zn3M6BX+mqwa+r14ENFQSJ9E=
+noF+oRohpPXilnINU4RePw==
+f2YdCSxqI81I4yF2Iq2YrQ==
+c5WOPKEBbHg90jmU0Y3VqA==
++jEWf4AFFQDPzReJ8dkKWQ==
+++6uqpuToK3WJfyAlgGESg==
+gfcpUmmUvXr0iRXa4Ue+4A==
+VAZYG3w4cPMlTRbH7hgJUw==
+MaO0eN0ZVlWeBJhPG3ChUg==
+7MgSoLFZi0qbY7LWwqb8uE/MDSvAsKu8Gdjr45eH4ic=
+JMgsEXagmEtryt+QgBh1BMzMpf7GYDZpnc1MKODEZy8=
+3Z0emIX1WmOLsxkgMBmaAWN55yblV6XmDGLhmHLXY7o=
+c/CnxiXmFajCfWXB1KqM2A==
+qKC9RPAwY8i7a2MROxaH3oQo0k672lgFQEgD50MC7d8=
+hz2YaJA5EmaBrc5p8G2OUdStAsjXYWSPT886aaXnqlA=
+wm/Jd+oHIultPqcMsulKI3xD11Cj27EnDMaIhLn3jcg=
+LN4g9IIj2G/X+LHQgHV82mUSkeljMK4GxHLejrcV3RE=
+dk37XgZgyGgqWnSJL2oeZwn8wC6oS9tctCsFHFW4ZX0=
+g0tO5I8CNX7BSVQp4P/kAw==
+/0JY+jgLBaJE40/JWwSfNA==
+jDdabFPrU5pChfoPDMBRMQ==
+NeE/7t369Bf7YIukcbKfDOcMApWwh00Ds+stkuikx1ha6EwcyexISH6BgDBpJ9I+
+GD/TOoGdzyR67pYtmy96t119/Er5gAczhdg/Lwmfw5JbBillg6E8xFnC2TRUYUVv8eYsrOt+BNZmodV/VJAi1A==
+Clvj1d6F9SHZs7dGU65DhWQLgGEbs55OYs05sQ8lars=
++I+dQL/o+d99o30PAsfMrA==
+z1SH/1r/KioQ7zMUxFzWcAG2RnfhkW8d9DgeuWw0EfE=
+QtW3/3KEI1WfC1IUf7rCiw==
+qcV1S2pfW9dYFrlGKkzvTw==
+48uGe03gnZrLgn65KmmeeITq9sXNiHYDXGk8NGAc6fKo5MVRgCQP0YOp0y+iapYg
+vwV6UPT7YX8Mk486nI6Cag==
+yJfCn5fB3NGZTAUTCWPS63K/nu3JsKlbXn3wYh1W5/WJ9DKSqdtzRePmoEaLFXBI
+s2aIyzl4yzcQyVkx1w3cGoOqoWii3ngc9dw0SOjF3QWoMl5wk/As7tu/qaz28K3V
+qEa/6E31PqieMxicV+NBt9mc0TDJZqzSzMpsIV4xd3ILjx89q9zG+QFfbqRsbwC0
+TSDhLfk+Haq/yybKBJ8VDGJsDEogV5mIP9lN9ueIevFVF/L8ssiBBabWQ/jYl918
+loopUuoeRNbRXm6LXLQhGqVvwy7DzLetGLmkwgy76+wY+8xEYSB7tDd/G4nRd35r
+U0oviV4w8nrzPQWvIYLHZVIb652twN5dJ6+1iT/DEEFBxm47+2UkJf9V/RINcjNU
+l7GspbcRXGRswVMItNNppwPNZPRU1sVnue2+/6FKOEkbCdn6hRyMtppDN43xbjGP
+rr7u87fpL/xIwIXHH/kDtoxD7KYmQrrjrBD2OUugPY7vVHAKkiZaaencO/S8UYwV
+LsvsQHLPhmmFpYdLtGXVOSkDaNdgwyHhTubrJsWJf2VGN/zQ4/fozqrqD+QxN63G
+Cn//v6HxENZHqEshxX0LErgBnXS8v8o8Xs1zH1e2njge8rOkxW/BOjwUcJIS2a/B
+dZ5K451iz8kpftgzBH+f4s0zuNjv/Rde7ajg6IGJRLtcjC57YCBJoweE/qtM10YH
+yZXBCjG4NE4w8pCZeYZz21vjXmXvAro1BOONiajXqmbZerjkanH6UTjtodB3Xef+
+VOYp17CNhkdx4heVtN4Kmg==
+UhfEGK/F3O75ePFWyBTh3g==
+/8oCJwepvzMTw0oQjrDLbw==
+sQo/HQS77x8eoP5nEQtUQg==
+j1uhSwKyc4b4emujWEWa9IDxxlvgIZ1GOlyeGWMPUzGMLpazlpUujFkgztsRTMD5
+zErDzGfHty8s+oc/DhRQnWSUdWW/lHEssMfYacA0/+I=
+ZWrVbyU2mnZFWqYJsqLfFMajztDngI5UGHHRd1pBx3Bjyr7fGCzxwfiRWrWFAuS1
+Q5efdK+B6zrq8SPVwls8JGhXDSXKIuhNFzDTt/BZ/pUkLVMqP1EWd7KIMXRSW3O824mEzOsi0A+gW39NHH8Mo0saztx3SUZfi8vmNPaMAUU=
+U8gU9S39Vnz0y2IXQycjEUSPmbevBrb0jT5YOtmw+ecxPJaf7hefDqonG9R0FClA
+gYvC0euGJhWAMVOeLwH3H7VU97HrX9I9NkI8ASjoOaATj12TB81ef7THY4lkDx6mx/Pna7Fn9osiN+cfIIvT4UxnCW0D7sOfgUw05BAeqpE=
+jmsHr+yoxjqOLYC72Tb3Je+uRr7HFNR3obW+V9GWaTW+Lz7YTHl+t9Xzvh9obZvX
+QV2894LYgnScB//X4NwlVbOC8kPid2DsGfUWzcaxwm3kSwsiLTdBKqhAvPg6kGLKdOlaWSUC/gJ6TAMNc720Cg==
+OiX9SCPn9eau25Y+2RtC8tpPbnIZ4FphE8PSt529SNgN504nRIPLY6B/iZ9ZQGTJ
+PiH25p2LMx1SmqyYRMSYvTiCTzbX+2srNVDGWn7eMYoeZnaV0Bm8+hA53Quk9O67u/d/Vk/UYdmIzKIg/cvsrA==
+cb1lEKQgD+qQWBEN/q4HsKBiRdt+178lc7dKjrFdkaI4hTQgpvmqPApgfZu6fOZr
+o+h4vAOA0YYthWXP1YyfiGPQC+2gnKiCFi8A+ywzn+9fls1l/rhFwb/jwwgTE5yj0Tt8a5ggaq1L/+l03sQMHQrtxAyKqleXae0x3kOHhhg=
++duGh1HsRjh4FvyElvBSG4yoRfYPhmDU7JpMMls54o05X+ifnaQ0vCsadyPf8RA7
+ivMcLA0IQDAEq/1TgxhtEL55jyzppsBRofBvXwfF0hgz3nkp3GR7ZDcs/gqzPoXcpWL5YoJfPxt50X7hNyyIa0gasBBedB6zHt5qgDi5ujo=
+Nh1aZHJjKkDtBDCJuHO82QqaXjKKJRCdi5M+BP0Dncwt6ivD1jM0SW9sqGF1FceSg5azY2vwt3D/evSAg/rm9Q==
+g9mZIFtzevb7QaCVEZxGoiLAV0n4/E2xOGSS/fmUpYPF0I36Piz9I00aDbQYc4/LWsYrrYGyOMfAwfVb94QC3gKcMEvMoF4nLb5OJ0//rhA=
+oKPpk/gVY3mSpfEs8u8iaEWy//Y5dnkPOySK6oFE9ddLrteKFUp7ubPQb4PjNhyawJwrd5ZogL4mG/v7ockVdA==
+N9kOjF52h0SAREJz3NauvUqusWB/P//cMM2QYGncYvsIfdyuGXSB40p8xUfUADNORVhsIoO1TZCm5oLJHnvdIXwLkRFGFdMwCrkAYMUZUk4=
+ymA3PYRvNK5ythA/5j8ZDIVZNLc3aZqXEb+I2WR+BVFS3zYzwWQssau5U1qtS46R
+nf6cr9rkWLmC1hy+iMMjCG/nZ7VG8zzBYFrcSQcUWyvi8YGYbiX+y73vA4UC5sfhjC2Re8aEV9v1QVY8tKyIFIsKRZIHrd+37Pua4ISByIg=
+SXvly8b0yi8iWKC4mTTv0xghieBGNBDjVo4lGyo0J2sxtv4sZZCANJlq+DjqBor2MuwkKyzOIZtTlOpZk5C1Xw==
+gmdDRan21lILEgk6G6vYJu8abXei/CFsLU31Z7bPBFREp4joyKYW+UjEUiqjcKeb69vtzYRSrVcbR1dxOUrupIxKlleJIbtw/gA5ELSRe7s=
+4PJnCiTiZjM8djI3tQe1KTAQKXQROiTe63gXgYCh7j7+cw0fo3TsDp7SOulTvHs+
+XJAOaStxbk+i3aHqQLX0EuInEsFGLVzc2tMtpZ4v8xlBkuRyKzgcbqGeIb3tIdepMUm8mgqFeXRaolcweLafyw==
+aKg+OuROGlfbA6XPTapcRw==
+oEK9X6NAJMv/NnjdFTAYk/ba6tnlLTrHjyoWprwGU7k=
+645SvilY6QmTznLNM1CRIQ==
+OUdrDLmNNAUtP0VPHX1vQg==
+ltkBiZFQjBM3VQnDwzZmiJ0Zi75wtxEOlIbT+lEXtkBDkF0gVp5+vQs40tKJuW9f
+oKk7mQeSROtfQSWOPgrl9Q==
+x6sz4ZNBcSVb20vNkMBIOroJslUUpPpbONUYKtdrXV7+IOXyxDpHyWxZ6+1RHvyY
+L3mx9GWpfj765/Cyl10RvVgJjzaebJMzXUFucShTpdUmbTdWxu5YZCfzNz1RHnVm
+SOR8X11hhhgpNFZ2AUDBZvfFhGKj2kNdtpPLEydQhWGtuDy0lYrru4yqmbS+4cui
+sp8Ab7Su6rg53vWvw7G01pj1YglBP2EHK6EGbncjQGxEqW5856JUo+cy7Yg3bktP
+nXDFZ9KnRRpP+UYNKWYLfPcgUn25fytPValQLYN5Zs0seT/Xi7eXGYhEJyjKQ9ga
+l0jnaNDiygGxg71DwJDAvHt/u4+vnJ6mZ9Cg8KvaG+Mv2Hya14iejWn4saxBiZT9
+ftYWUW8x7sKd0kC4Lm9cbPNWmUK8gZE8OLbHSGUxiMJTEPs42XeyCnpBxekkdjgc
++yWOnr+sCuR6N4PJfiIteY2gcBeGfKpMPKhz4CPtj8SLr03XIjBCxWxMF0VZrmKk
+3UQP6/9kUQtA2CnxJ4JSCx1TTlYwhuIPj60AqN54TNbMYShPYqaXkcg8bKqY/shw
++h5EgW2OQtrhqiOaGdrxf+0B1Pc74gIA9DSztynrhqmzMFF1cuY6xgm1kSEsFCIa
+RD8qx2KVFe1wELB9pz+UWA==
+qXG2aGJkar4ZCkPbNrbcGQ==
+dSgyYEGuR4p/kXRNZn4U/Q==
+E3BuNqOekaEFSLDxLXOuJQ==
+pDRcILiGTRCufklVbLvor4Ec+13vEu5k3N0XpesA6ThpXxmUrMOw7L9GzHJKzg5R
+Y2jrwtWGXtuXptHxc/1WWw==
+TXoip9+5JkhpW0aL7H0EjGenineRdqRT+OZZo+xd21ImGV1ivJoOPHXagiQRmewP
+hUWNp9s/YA3v4ivg2efkzvacUzeYkIWyWO3//I9ebwohwdnh7aZ2B/eBaOUvG16yTLAt/68tsgYKfqOw2ngMIQ==
+/xKDfuYqlWsxwt7XkcXccusO2WbUaPgwvgb9GQDpLi/cnVLzDHnigixhsvbHxq/FThyPN5lw/fBDjv8q2JPK6g==
+xwGj12mZ7HXmGeb6LUGqYilKfN/6GDqsFKKUsv98cBsdJng/A1d1S5jkaRz550IJPSQrsNJ32Id10G9U/uw9aQ==
+HwvWK+U2TAobwYOUnKLBkg==
+OnMS1NdmAetXPexylhWLCw==
+lSdiMsAjdlg5USoR2O1NlA==
+uDaXGb/bGQkruibz7u8H4Q==
+vSMX3VC5E/v49V3vRE/3v4SDvOjilmr+NiByyKPzB5K0n0ebimyVixKQRbTllK0C
+Cl34V+yNbXalLpe3uJZnCg==
+TDTYlGCwhommMBxUZO9iKlVYy8LItS9MSPNCku11GiE=
+uvzFebG3SQtLiXYMFuz9ko3SEotXcEVuLzupeAxV4QiPRZvpGz19T7VLHYAUP1zw
+Y6h40XuxsFFee/bIjlsol9qGtZcSG1JPEtHsMy9ORa0OeU1DPJOfbtXux5PoPKVm
+czNl4VirI54ejUlys0e8LUWZqzU8/XIKHrpUCjLb/MkopXPFYYE4Uw5F5qBjLPcD
+b9dNE5Wj3BMFy3Ys7BIAzxmzSUtjeobZe4aKGtd7d6yEznenlOuZn/JbbT9bsMn9
+Kgiavab+V0csgFIFlKyfev7CNCybuq4GxuV9CpD1ms3btwiPUKs8hVj9IYTDzcSz
+78c9WW64Q/t2Y+SJoSFFfzmSuo494f5Pp+XXsDHR5Fa9UmhjOu058cbawWLkoClE
+H6VpcJJz7txgRNKx/+hUlnzX4txRy7EJhlyS+9h8YRn5L2sIhQAjvIxfxiNm2gLyA8iwx9BSUgVw1umZ5hW/lw==
+jdAPmNhoJhRmvCem3Q85Dg==
+2RRHxBtCNtKslxb/reEr+w==
+Q/fWo1/lW9YbGRYc62xNZw==
+NfSySxsutlf9Cc5vuIGK6A==
+STpt7EC+gjYovy8fIKvwvCUVrK8kU+rAEs7mHffXbIQ//ltn0SI4iv8vL9WaLAcy
+F5uuGRMwd9GsvQ2NiHbb7dfvzxVaa/+1eklKeEiL7piAF62c9oMUsG3uqLQf9xWk
+JsksNNmqm0WzYQ/NgonbC6zMgv9Sf0Y29i3lxst1LTg=
+LKdPMgmH0stUIVHedTvn1YB7iTQo/2k31XGvQpAxAM8du/LWhoMsz3KY82w8cjh8
+pWBnNAMbEHy8C1SZEKUM3w==
+L/rCoBVMLgN6PyUaj5mC0g==
+F/SwEmFypjKx5Ld7pAC9Pg==
+QiE90jPcUMPAlXyhpsZzcJnsC1ux0In0dkeZwZIFDYNonEwx/XUfiy7ztApo8TVT
+esW1BIb47X44A9EQQin52K9vp3/UCKkJIYwD1mYvLIK4EpEGNrF13Kg9dT2zo/K3NtjSVrJpHPe4oUJLfAinng==
+dW7wt6GArG7RHh9leWpvOgluGAt7m4Xen2KF/JSv5V8=
+Pk8r8gnqBKP2KRxDI0/PWNNF6IEbvF/N/lTCDQVi7SzsO2D2XOf/qbtPwztnBIaD
+VS0Rp07TVO69owQE6UUjuA==
+f5ok3JP7q0jbhO1E/o9G+w==
+5bf76/D5LZ+lJBeSABSLog==
+3RMMiV6NhCdmPGm2qaKf9YBwKe0CA3NlcREQ+QTkmomzn3nnPmqWCwa0eB3a/p4y
+VygVfM9MYjU663AypMRsQTEsPuQ3cN/Q2Eenr+j1xlF24sH9FGBrlFA8ezuBDkPL9a56cn6Uen5XJ5roxx9SBA==
+N2ArlqBK/RyJBgpyWQwt8221HqC4dLPLEKGOEvxxvW4=
+YZZGfdvB2Q5OTNpuBzNNZ/V58PS8xMUbFog+Iv6NyKYNNaD9uppIoJXkuRcjG2D+
+L4CR2Q6DkVS2kuqFY3ibKA==
+Mj6gSNeOiQEzZX4QcNzilQ==
+g7cRTOlv91cSZemtP0Wrgw==
+eieIaxmMSsqqy9SZkleLbtcvSucvfmib39qReOqy4/S2KQWOiTx1HCeeNpMbwN57
+IoaWiMkr5GiF+vv/qGUr0VuDyDhcz8x6Jqwh/iOEuQRzvzqhjMyKB/O0yjsp/XHk
+tqIeEvoGIAi77PWzUGk9iXgxyOAwmNjEgi5saLDr+5M=
+z44/y7DBHPCoPInSjF9AbYexO+g48sro8TYHpMrgmoplFgzEYvOmU8bXvomPcUuO
+AQc2BEwduCCgL4An8i0nkw==
+u7C2/R7Y92GgIfXIIsjBIw==
+kPwbsVKBnElB2EehVzMDTQ==
+NK/CLLgjnGClH65n/09jgz7aPwGSdyUefvDzjdWVWfsFkH6YdGkgx8QXJu3MYHBt
+oEG0+tdBBMBAk//PGbZEpELaz8PYvE0ChGW80Xp8d/btiWUo1/phM8sUKpIvqY1H
+Iweo3RxFBKomCEj9Ms/gsG7lRQVP4hAusLb2LV7fA9o=
+LTztpDU+YnM7FhnwXUW5hFhA6X8XSHSnI84752+pF//yrA55Zm7zCL5Q4CPrhGp9
+PpjvdQeSo5zG+zH6bTrn4g==
+C497uTXj79ikF6PZ6jh9cw==

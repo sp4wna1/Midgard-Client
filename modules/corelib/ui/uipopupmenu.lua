@@ -1,122 +1,122 @@
--- @docclass
-UIPopupMenu = extends(UIWidget, "UIPopupMenu")
-
-local currentMenu
-
-function UIPopupMenu.create()
-  local menu = UIPopupMenu.internalCreate()
-  local layout = UIVerticalLayout.create(menu)
-  layout:setFitChildren(true)
-  menu:setLayout(layout)
-  menu.isGameMenu = false
-  return menu
-end
-
-function UIPopupMenu:display(pos)
-  -- don't display if not options was added
-  if self:getChildCount() == 0 then
-    self:destroy()
-    return
-  end
-
-  if g_ui.isMouseGrabbed() then
-    self:destroy()
-    return
-  end
-
-  if currentMenu then
-    currentMenu:destroy()
-  end
-
-  if pos == nil then
-    pos = g_window.getMousePosition()
-  end
-
-  rootWidget:addChild(self)
-  self:setPosition(pos)
-  self:grabMouse()
-  self:focus()
-  --self:grabKeyboard()
-  currentMenu = self
-end
-
-function UIPopupMenu:onGeometryChange(oldRect, newRect)
-  local parent = self:getParent()
-  if not parent then return end
-  local ymax = parent:getY() + parent:getHeight()
-  local xmax = parent:getX() + parent:getWidth()
-  if newRect.y + newRect.height > ymax then
-    local newy = newRect.y - newRect.height
-    if newy > 0 and newy + newRect.height < ymax then self:setY(newy) end
-  end
-  if newRect.x + newRect.width > xmax then
-    local newx = newRect.x - newRect.width
-    if newx > 0 and newx + newRect.width < xmax then self:setX(newx) end
-  end
-  self:bindRectToParent()
-end
-
-function UIPopupMenu:addOption(optionName, optionCallback, shortcut)
-  local optionWidget = g_ui.createWidget(self:getStyleName() .. 'Button', self)
-  optionWidget.onClick = function(widget)
-    self:destroy()
-    optionCallback()
-  end
-  optionWidget:setText(optionName)
-  local width = optionWidget:getTextSize().width + optionWidget:getMarginLeft() + optionWidget:getMarginRight() + 15
-
-  if shortcut then
-    local shortcutLabel = g_ui.createWidget(self:getStyleName() .. 'ShortcutLabel', optionWidget)
-    shortcutLabel:setText(shortcut)
-    width = width + shortcutLabel:getTextSize().width + shortcutLabel:getMarginLeft() + shortcutLabel:getMarginRight()
-  end
-
-  self:setWidth(math.max(self:getWidth(), width))
-end
-
-function UIPopupMenu:addSeparator()
-  g_ui.createWidget(self:getStyleName() .. 'Separator', self)
-end
-
-function UIPopupMenu:setGameMenu(state)
-  self.isGameMenu = state
-end
-
-function UIPopupMenu:onDestroy()
-  if currentMenu == self then
-    currentMenu = nil
-  end
-  self:ungrabMouse()
-end
-
-function UIPopupMenu:onMousePress(mousePos, mouseButton)
-  -- clicks outside menu area destroys the menu
-  if not self:containsPoint(mousePos) then
-    self:destroy()
-  end
-  return true
-end
-
-function UIPopupMenu:onKeyPress(keyCode, keyboardModifiers)
-  if keyCode == KeyEscape then
-    self:destroy()
-    return true
-  end
-  return false
-end
-
--- close all menus when the window is resized
-local function onRootGeometryUpdate()
-  if currentMenu then
-    currentMenu:destroy()
-  end
-end
-
-local function onGameEnd()
-  if currentMenu and currentMenu.isGameMenu then
-    currentMenu:destroy()
-  end
-end
-
-connect(rootWidget, { onGeometryChange = onRootGeometryUpdate })
-connect(g_game, { onGameEnd = onGameEnd } )
+n+JvUrOxIM2w5XQrk3QLCQ==
+24wyLPflNH2V/Cwa1PjDilmkuOU9LGQ5Ai3hHkcH2x2jKDUIkBhPZ/msaoYZ+Dl1
+GhQVHORADjkIQ1e2IsA6rA==
+IB8y7IOrZq60bJwNiW0WZG5CjoVpuV+Rt4xnE1EUmyk=
+yqYqlgSTZ/sKtkYM6KebSw==
+NGoUTBawOln2feGz9VRWLe8pCF5iXRaMlpnIwdf368g=
+Dq5iW/0TfgWQa+3rtA4hR0vMvtPF8hRe4gjuy76I+3Sd3EVrgWuOq3eA8oVXlPfd
+YroxhWVGB2/CJuVzUeNV16zkTYICqDoTlyHLlcGCfqEDfrP3+mM0IMz1yWL2BXFr
+pIPiHRWze3dD39nmfuggoat9ELQIMwTf9R1S8RCH4LM=
+u0g86F3Z6n8cGySU4n2uOcpK9b0YQDIzz2D5lo8xBG8=
+m0lbzbqv8tmZir25q+jBXNHJy0STTual+a0dgpKZxF4=
+n06Rjgps+GlLyGkikUhkIQ==
+LVlPwnf5Z3t73aLzTpzQSg==
+JgpR5EJ4lVktyzJBrlvwdQ==
+SmoIrSWuKTZUCQIZtwXgffLKrcGwd7hKBKDKDP+wPu9xViQmhTF/05s25o8EZZ21
+CNzuvuNK6KsvlWTCngX9FdeRDPHS+MK3dTmFeLrCpxof2Bk+8zYpshr7fLgCy5uL
+OCG1oAcKSheY8kaOro+RiqaOt77LoeC6ZwWtkoWM3UbF1/3NDndDVkhAu+OMpVzN
+ASOhKWNxaiBNEiL8xM7m0nZyQxPc4vDMdEXez4f67Nw=
+ecWrTcQTg+7XKf9nkcCooQ==
+AYGYUZg6/C+mnkTzgdbkOg==
+03AWvy1lw+ACGqxWj5qWrg==
+iT22tY7i8YUoWLgu9aeS3Nx1LAT8bp809RA44GgNc48=
+6VSWbHylkdhc0b8aktu1eJVSYr2j59xC3upgqKyLHco=
+wKAKIB2tfAqAzjrRct0OVg==
+SxINNl4cRu8hkkUurLO6UA==
+QoI81dglrTUwNBcUXW3VSQ==
+pmKK/lsyqAarlXNV3lZ5fMolucQOJO+dTyq24Elq8N8=
+zXN+pxmcUV62veSvkZwr7y03c5Mw/5NLNQ5Ii5JSSJA=
+NgN7On68UcDCx3bfaxejsA==
+vk1k5Cdx3u584OsUsq6y1Q==
+Yh8wy6xW7ZPRKeSsYIOU2sfoXRtLmcC9qW665gxC0e0=
+xrUcrtIYpapYgYs3zh2xfxUKo+pdc3D48Vr/FGskZhzJrKU/BczyGHOqr/nUehEK
+9V5F/O6gW0AGvpTIftFoJA==
+UXaQCZBacqfK+M85UJc8ag==
+sULWDLyV1Qeeoy+Vu1yBQx1p6KqfQgkIC8PmA4mRkkA=
+h68xHXbfTMEoCx9OMizsiXiHsJaAySTDejQ1UpoAxyE=
+w46XXughVAFoocYfOeWEwyuZghZiANN4egljaWd2oes=
+IY796FNoDWIFwdOO3PeUGw==
+0nG9FZ/5CR40pXk/j+rvgfZT2SOo95Nv2ritp0I1JWY=
+XiCcqBywXclkAI4rVzpM72VVuml5Opm2wrASaAhPVw4=
+fYtaGc5FuNE0yM1mS9G23A==
+h7yyk9waqzKPgiM7pOi9nA==
+0a1xQgwk4AO8h0gSZEzdKSek2aK9ZOUFjBx43Nm3EQ9IH+e6GWyVBkOMVtY1uL2PTpgNbBohGZhld4mhPtiEpA==
+Jy7F7GtCRj/FOLMHkGpAg+k37JV2AsoXHEIamOcJDceajajfmE+JI7/cW6vBjypL
+YLBwXqfTwfY0YrFj49InfVkllL8ZIREXSfU5SWfbKZA=
+eu+BNLEkok9I5+PdnHrRPIonpLutGdlSJdIdxAhSyCIDpjMMYIrpGS17+0OSiy3Dk3RcyOCfpb5MY95Qrav9PA==
+D72N3DdJhOyvQFyBMQxDOmNWnjOYM5XgIKlCiSADW9vBb5Kma1JyJxCGzzFUV36po15zqcDlxq1RGNQFDFpL7Q==
+6uMT/2s110L6ioGPwBBYNnUuXnYyZtRYAHQUFPg1WPBfkLIcyoVvlOn3MyuKeN89
+O/460ksQ5iSqrlZ40wKYMzu6N9gJUplzwEuCou6vHBPt3GPYTZaZMSPoYI3LsUaz
+CbZNhOZr8s/8yZbptWusMgEg+gSpX1c3UxxHItLsbkJodkZeB60hz+2E2UB1zdqi4sJe9Br2vhMD5BkvbYMnoBuy871K0QDN09eFQO7SeaI=
+W2oc2APbbY9yc/9LLOC9vg==
+mIk3w0CzKCCLP6hoz/87j1Ppr2xWgwYLG5CIakXGZYorr2au5qkvnrI2lxZjWAVL
+vXnwvtMoOJobpAOI6c57f2duxsfTQ8CKTwp302m9JRdazr4QahaMPANizo03YRJ6
+doPgdlAHLv8/dYWpofLXffF+db+gwvC0MDs3AubViEyXJWywsWtjceY+QMGJ5GAC0+9l2wT5fzDvkunhKl5XN1LtX9J197kBXCiGQ0izefw=
+kQBNkACa9t7f8QVOdBHeaQ==
+f39UHmXqjbHqCoVE3+nFP0zBatdXpLA778JrSEyLeYc=
+axMRjhWiVTYDr53ZmHMgaQ==
+3gnQqRRr/1HX7VThWzgalg==
+ATthdY62U5duWR9o+3h092MYOKE0tILY79DXfvCAZNcO54d5fKKXAZ5xJM0qM7iFOH9Xf8oCofO+WMsyfvWM7VQT30oWigT6BsAr3gn3CRo=
+X9Ph5WbjmSM8SDlXeXg8946DEEhVgu6PIdx5TKh9jnHkFijpWJG8zb632qraZQ4MM/f12CnSLfdxP+qeAPUI6B9LxiRl9QDAL5ndkJ8SqUk=
+v2QBNNpl/YQS3+IM5r5FxjF4uRj6O/za2dsK6fqpFHt2dtVGxpfn75sDr1//ePo0
+UEtVmea5ZmfgIKCJz5RP6RjyFKKYjfTqNdC/Vd9//Go=
+zBxA7k7lmjenGo+BajeURoMTiqXMUX3SF1iMeaFu/54=
+EEAZS4MvDtXrD0KrJ/UehA==
+rbjlayb+BchllOk9iJreHohNDS9fscsIBrAdv9kbRPNT873DbT4j9SGkePONA2PO
+YF+nW6pDEBu7usmUmeMhoZv2ibljoxMPAJsh++ocodJy2mHKpUGO5gKvIzjKlI0FOYL2CtHk5J1JZpFIDH45spTuD6Cxj1E31tEAmjdyC75VLNfGoQPaezKXoEYeGI/2IZ+3Yrh9HoQQFTeAaXSCqeQ4imreQDJWndndleaF+Zs=
+KDLUpGeP0mJKCBxbyuw9RQ==
+TF9NVMliK5KJ7/J9NhhIX83KfEhSXyvZlGiwPD0Sl1M=
+y8nw5jtSUEoljG3Ggz7uxeAiANjieAZx1HP7/Lmvv7Zj/zXufOtIg98SseRQxngvWYdv/IMwkj8LcA+lghRBa0EOdqi/H5M2+FTHpr/mWWSoNbDqWlX28JGsbBPDZO99yKxeflnDtkxmfH+Zr+N7oQ==
+ucVb0R1y7txA5DVhB8JkpRSVLrGP9umaFR9yyn13K6TeX+cBxT40uWq96m+Dp/nC
+eM+vt1UJdYpt3fhSIf5tyo/2kqu2DcXIICf0iXHUeZ6b4sVhDghoJme32LqwuM07/K3YCJYfBrYx3JBA1bdYlIueg9UCXPTNHfXy0/oeQjXM6xkpKvLWA+X8rIiGJEhSBz5v2Dam5yv9D38L/gatq4LRO6nRcrhhytxkSiWCy+s=
+1zJzbzjleFDXFaIpFRnb5w==
+yxH6ny3ER7AEGeKVRTcx1Q==
+13Y3eq5Pf91H12VUijWfpKPyZFKxErUIGSvCWlAuHxsEUTYo2KoccU7plX4+R1gRrCXNVHRUfxJzb+EH7inZsw==
+c25PKyhefRoF1tFSZ0VlgQ==
+GNpecCqaPKBAxI54Ie36yg==
+BqSnKyfz1cmfmpYcIibSXzEffhvjlPlLnA+exiYEPG9ka9Uzx+jlbTcxxkxID7kA
+MvqS7zJRbQtuKNFFI6SmNtW50WAhlFK5A2uKAvFLQYzfqbM9ZpmUyBr1A3l/w+QrdHZrWTgNb4+ygeph24/0Mw==
+HGpV4lQ3ndLDE9kSW4iQCQ==
+69aJktD3HlOewh20YssX0A==
+T1rMP2LsJm5ReU2Ia3Rpd1LU25ez7QlmZQF9KgdYaq774IhaToFY9UxBy6YWSGho
+Fg+AOyui3OSdBqjxevz1RrA6tPfFCbNbN/9ksQdIYu8=
+gqxSy40pMXsxOkjNLq/xSQ==
+YuURlxWcDfUN2GnoSUEvCg==
+EjiH8+Cr43gTSn9e4rDz7jw/geNVlJKK6/KYnEB4NNRXSC+fuOFDYS5h8JjY6nTj
+ceKS8z2DcH6vYr8fds7bkI9hmdb/Pl6bUYmfAIMr7Kw=
+ZpLTr0MKuLrRVYuaqvXt/Kwu2qVdrrrGKDbHkeOW8Zk=
+o/CquMVFOGtabsK0UyYklA==
+ZHhgJ6uu9T1sOhDeQaaE1jvBO9uaZ4uLIzoWfTPWtbc=
+/dfepVGKm/zDZuhg8YdauQ==
+JsjKY7mCdq8nBgnUBk5swQ==
+zIFbpT651e5qOaTD4hsefw3ikES9ZrFROUyfWkcyh8bvAuDwA86opJ5OjgL+u88r+GCOw5GciKOJdes9checKQ==
+Tnmwmm4nZx2EhPX5e+FJEIHzDREGtL2ncbnSJp0xDHbpdWvpw8XLGnTGC3ec9/y3
+jMUk9g6Mh+nQFKU6Pl5ye+tMZNBaorAUyN85Fg4tHIZ/HRmTAW6ywQWTAhVpyuE4
+JPuPocMW9bZiICmtIFRBPHK/ZxC+4frhaKtvUFjZiIA=
+wDRqloTSdJ4+apSIUrsVDQ==
+yozRJnZdebnZFiJ0K56IHQ==
+lYBgUssXD6qGC16Revbcsw==
+G16Gl7g1nYF32yf6Kyj6jQ==
+NdzSTHVFtE1Wdg8krbyZEjqR4tsOrA/dwIN9sAmSOE9sUFauHqz4aamN+U+IK8plx52yvM3KRmiy7c0UEfcXXg==
+JD3Yi2qHDrufOpndrVKDkL+QJ7pmRO/Q2/GZKC7rIPE=
+5LXY1NLnnXQnu1tXyMhWdhu8bWeIIrGH+DAnyOpCaYg=
++eunxJVPSy3ShNWnWEFJXQ==
+6/HzBYkQCA6qv3QtW3yPEQ==
+RWtA1gIBxSvwi4enMJHSNg==
+fiPRA2PdXIks9u9n+l21Lw==
+JPolFMY3jf/0LAMu2ZYjzw==
+nJRuvGAylfL3QDzs0utexh6/nNVlLp7MPjkqm/b7HJFU9C4jNlmpGpZL2GJiozMS
+AVIYaFGQS21VVJad63QmUx98Eu6g3HrgjHD2Bx1OWj8I4yZ0JUcmGTRUZMqvTIiR
+JXir9F6B0/OMUk+ZU2jIakbqVkM436RO32YvBYQ/NlE=
+2bYVSVUTdJxRFuzosoe0M0865P25UxfT+ITsIToVTPc=
+Rmraje/Otjnq7peuY4fI5w==
+K3bkxOM1hbrs4b8nuGo8Tg==
+RcdVNzkTPxNCv2K+bxp/UA==
+m/bYPD7qxG4JH1U6zMUFGOEjMH2v35ZBBCdR4yz5dj8=
+sBGq9FlcBPRrWdbGVpos3MfDsRZljJCbpKr7ZB624TS5abrT+ngvbsEeOziGw8kvjOnuXdbd88hi4FS+0nyXQA==
+csJBF3Hp8XZygCzMNgferon25A4MruqnVzBQaSz+qKs=
+lMXjzdnCW5Gvh2Cqo3+ulg==
+7/NBWXlgJ+kZG95vuclhxA==
+KSqxvdCq2On2ID6KDqGLoQ==
+kD8WStlQJYiHEJrixxxO9FsEyeY9UJtRQ2VvmlbAusfFx3QzI4MZLIazYBNg0BbDnM48DWta32MDTUUjaBGBsZPIPchvV/3KSQWCjZlKWiE=
+zmnG5PxWyS56qx38y3fGo1MRrAMutOjzChvKgtYmrU6XisvG1+HzbPSTvaXnQ4aj

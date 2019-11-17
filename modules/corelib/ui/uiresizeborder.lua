@@ -1,132 +1,132 @@
--- @docclass
-UIResizeBorder = extends(UIWidget, "UIResizeBorder")
-
-function UIResizeBorder.create()
-  local resizeborder = UIResizeBorder.internalCreate()
-  resizeborder:setFocusable(false)
-  resizeborder.minimum = 0
-  resizeborder.maximum = 1000
-  return resizeborder
-end
-
-function UIResizeBorder:onSetup()
-  if self:getWidth() > self:getHeight() then
-    self.vertical = true
-  else
-    self.vertical = false
-  end
-end
-
-function UIResizeBorder:onDestroy()
-  if self.hovering then
-    g_mouse.popCursor(self.cursortype)
-  end
-end
-
-function UIResizeBorder:onHoverChange(hovered)
-  if hovered then
-    if g_mouse.isCursorChanged() or g_mouse.isPressed() then return end
-    if self:getWidth() > self:getHeight() then
-      self.vertical = true
-      self.cursortype = 'vertical'
-    else
-      self.vertical = false
-      self.cursortype = 'horizontal'
-    end
-    g_mouse.pushCursor(self.cursortype)
-    self.hovering = true
-    if not self:isPressed() then
-      g_effects.fadeIn(self)
-    end
-  else
-    if not self:isPressed() and self.hovering then
-      g_mouse.popCursor(self.cursortype)
-      g_effects.fadeOut(self)
-      self.hovering = false
-    end
-  end
-end
-
-function UIResizeBorder:onMouseMove(mousePos, mouseMoved)
-  if self:isPressed() then
-    local parent = self:getParent()
-    local newSize = 0
-    if self.vertical then
-      local delta = mousePos.y - self:getY() - self:getHeight()/2
-      newSize = math.min(math.max(parent:getHeight() + delta, self.minimum), self.maximum)
-      parent:setHeight(newSize)
-    else
-      local delta = mousePos.x - self:getX() - self:getWidth()/2
-      newSize = math.min(math.max(parent:getWidth() + delta, self.minimum), self.maximum)
-      parent:setWidth(newSize)
-    end
-
-    self:checkBoundary(newSize)
-    return true
-  end
-end
-
-function UIResizeBorder:onMouseRelease(mousePos, mouseButton)
-  if not self:isHovered() then
-    g_mouse.popCursor(self.cursortype)
-    g_effects.fadeOut(self)
-    self.hovering = false
-  end
-end
-
-function UIResizeBorder:onStyleApply(styleName, styleNode)
-  for name,value in pairs(styleNode) do
-    if name == 'maximum' then
-      self:setMaximum(tonumber(value))
-    elseif name == 'minimum' then
-      self:setMinimum(tonumber(value))
-    end
-  end
-end
-
-function UIResizeBorder:onVisibilityChange(visible)
-  if visible and self.maximum == self.minimum then
-    self:hide()
-  end
-end
-
-function UIResizeBorder:setMaximum(maximum)
-  self.maximum = maximum
-  self:checkBoundary()
-end
-
-function UIResizeBorder:setMinimum(minimum)
-  self.minimum = minimum
-  self:checkBoundary()
-end
-
-function UIResizeBorder:getMaximum() return self.maximum end
-function UIResizeBorder:getMinimum() return self.minimum end
-
-function UIResizeBorder:setParentSize(size)
-  local parent = self:getParent()
-  if self.vertical then
-    parent:setHeight(size)
-  else
-    parent:setWidth(size)
-  end
-  self:checkBoundary(size)
-end
-
-function UIResizeBorder:getParentSize()
-  local parent = self:getParent()
-  if self.vertical then
-    return parent:getHeight()
-  else
-    return parent:getWidth()
-  end
-end
-
-function UIResizeBorder:checkBoundary(size)
-  size = size or self:getParentSize()
-  if self.maximum == self.minimum and size == self.maximum then
-    self:hide()
-  else
-    self:show()
-  end
-end
+n+JvUrOxIM2w5XQrk3QLCQ==
+bIu1hXGkYpb7TBS2O39WgmRnBYUDKzzX/0Lc1bOdFjRtmjR6JjbNfAhpeMY0csUfIMK2Fr7N9R8HfCI2Oa9MzA==
+q7pNVSS6BgF+OYTfIyQSZw==
+6IhGi82HSwjY9MaEpInrkI239e1cqjZUT1vf1XzJL/rJHICq6lfFn8F4B0l57VRU
+dxravviXrCqMPridDvrj2YuD/g0iI1MARqZslTFBZb+FPGZxiSYXTsg8MUjHov6KTYlmJmR5SDsPN97ADTUXZA==
+YsTAZ0L9oNO/edkTs7daHj0MHO5Ua55r6twpZ4YPUxNZZKBY7w/ZEyux2W01Uvwl
+ED2GU2mhtyGrKtYCIr3gGi1bhpVWjPBqqoj0VyxjVks=
+Cb1R64WBBySyMrThnhlcYqEzIEN+yKp8qz0N1ZpC+1Y=
+IifMnNs5VXhgDbBUEh/0zOZlhALGTXiRBbMZ12wQFNs=
+pcTPcYAdUZkE2Y9NHXdt2g==
+SOjAfqDxreUjser2/7eahg==
+auY7IfBAp26SJt+OnIqGoqt6TK/n5lr0VWzNe13GBR8Z9pjato4hLy0qCSI8JDMp
+WihMXbILBRc4cSrAmo86/akpAe1xs4fRgOlh8MIr7KatiiKAldE3eL2ul6UivVEr
+Wt5OJOk/gZLp/+Li6ueluxnefdumxGWx/TdPK7X98fY=
+sb3/lHvl7RUbYKBT1+xlCg==
+nevzvG3QOnUZMWFdKqrTwFG2G9bb11p+jrkQti4pAH0=
+h3Yszc+esqt7V3Ukv4PGZg==
+MK2sMKsACSfM6EyOTKeGMQ==
+UvR+pOBvgf28CdaveJjnfQ==
+wpzrLmmDr3UsR9ab156PfDPC3V2xjIaLsW0hPypOjy18FSrGeV4e7u8Ta5NUefMT
+eYj3p9b0ibGQG91ipSIqEWbre8R1vZ6zFDn4hBYD+sY=
+zfp9g7XrzKlz0CJxcfMUAtNHBzyjuE3A2LagYQ05/A99TAx4s1Ur6QFLBIN6sQr8
+JuExZwTn5Cx/AjYUN9fP3A==
+wF9nuug97nmAFLsnJf4AWQ==
+ykxDWcvXWynRE8d7aXmEHg==
+NgDNFfvdOAcdS3dTNmYm4WDg8d0T2Ksj8X2FlL5qr8NlP4/YgrRyaXYrtFZuihLL
+4zKirtpD2a75hpvkCrAb56lgFGTPumi/Aluza8We2gg=
+wKxYYz8dtZ6MjhmHafbnx0N5iK7rm0Bb4puacRyN6n3Lj3yoWXzm4FiUI3aihnD3vGOtl5GmG41gL8lK+3tHPvNWhhjGXaYhAJktNxlZ6VY=
+pSgMFPy1olkRiZYKDQVimWdm2y8JaPCd+oUjiIohadI4Rsp22FUElb9WBBfARBFQ
+oQHBmS3WrFVE9mMTlJH2SOIspjsnhf86VzgMwzReRF8=
+T+KPdZ9gLiWgNKQMGdn5QWgHa24sfMFWX2P2HWhjIFmEn92qs7ZX25tN8EMHvOub
+7urKe4t6uEj2Po+dhQHAow==
+I4nYtIBaYECMy8rh/OgsO0DOg0uAx1vWJSLHjT4nqJE=
+SG9+H9uKoYp9fg9jsSHKGuA2kiDtzM2YyGWJcvT2mEW00TiGJG04AQJdEYNGBIhb
+l15BJZTRpiomAz+SyTikDA==
+WoWD3Yb7h6zlRR56C6TDCicguGC6HyAjtyM2UFytMeEvsAcJAFgm3dM1L0UyaR0E
+c+RZgt+6IAuaVWPngcXPVMsvSsdj7sF8VG+9UahFuag=
+sqjqBxQ+Tn109A9FlDGjLy3K89BPIvqWoLd0aavR7urXqKjRvw2gl/AOkTjQlHvA
+M1V4TWCq9TU8CzB+Ux/uuyAIEc4w4mkt69/hl2iB5FI=
+/mkvVUEicuQmzI3S9zum/w==
+Comp6ueXqe7Bowl1wXLDqw==
+Fe9RURpeWAOvds3M5Pbw3vsd66stKoaO0cQ4V2hbOjdqD/H/drgYWjbD25RolZ9hPNjC8Na1lj8Xw/ATqUKtww==
+gLvc014qNneN0ALL5hVfrmTJNgiyQsLbNxTDszZqn3SxqGWj5NBWbQwcNYhEyZBJ
+XuFftoTY1JCnueoqeYTIlzfTYWnC/Vr2BSz0b8TJOfc=
+k0Eb1qIF2hR5+X00lTO7O5sED2BtUBQ88n6Vb+s0BhE=
+aeqvmbF/xsduXU7WRZNEww==
+tIVC1GqgYoH/1L43L9aGvg==
+xis3Wfx/ObgQgfK2eKhyAw==
+ba7I08PsReR5qzpx5IIStQ==
+LbawpOAYSZg8d0l8lMMUbFFb4PnnnN6ytm2JPbM9Jmdib1JN+gjelkf9jxfZs7JLIL3toFFB4frKMEVPmEKUrw==
+KiLS2B8Tb1wQahlzHy6f12v9XGYzsjWO58k6CtjfIOA=
+SvuGue2JvjQRT1Il0l6Hbico3+g1Axs7seiMo/4qEy7OhYEQkco0PP86f1A6ujnH
+17CaPnf2pg3ohQEa39sRdPaZCI3gsMm+OdKw5KiCRWw=
+paJBDczzCDbCxLLXhIewKQ3l6d9KBzQVeInaM/2HmlM=
+1Q5C6Fj/rJbU902fk+aCqUW7y0ITADElmq0yX1bUvI9YgR5e8vz+OwhS1EEOHvjtHNg9NB9HWISfsfJxlzi3J0fxaV5RO1QVMtrq0YqEuMo=
+nNGrNvrEkeke7/J/+N5PtVI012bT00GwXZlpb9wyIZ7ZRMKWbfCBHsbi6wU4I6/53AJu3BpzGDwiYTzuVkrzBCVmwDJitGxoMeAhHfIH3m3lp4MO//HClijThGnqYIxl
+B2wk3/pl4U3ftlgCfoXblrddWhnL1NioEVLHBCOh6SQ=
+xxQcUlhrl0x0bSXgja2L+Q==
+6a2Vt3NSmoaiZq6v9+wAblcDYW5ElhUDLqsdek5q/IfuV8Yk/LHmM2c6pyoCGcbOupPFEVizJ145uB1n5UFerMvCmgIr1QNd6ltkVWYBM58=
+1oDiJHD4VCdoy9jlioCA8WVD0+YrRfR3dnMGaeUhD6zR9LmSFS09nMRoe9sDiF9TDXkBC1rtX7ijv2JNlbqyGuFIDEDi59m20e5Cd7zjR5p6ZHqJGmEDyiuM50Y7EbHx
+whMmfSlLH5KUTvbuf69+Kxk90trVGbpXGbSM2wXesOs=
+9X/oeEzxJtEOlrbxfyInww==
+xbB6Q0lSquVexH3fB6ZgZw==
+MSdaLr6LyMD0UFN0SJp5+i2W+2W+YbGWrWPg8abA2E8=
+NFb4YG5AJBytUDsXd/lvcw==
+F7xvrHlMSuPcaDsXmagWcg==
+DBBQj6TixxJzdC0i4L0I/A==
+3DY4oz26EY7qgW91/VItFQ==
+etVcYLBJfUv/uU53Eg00PEDYbPzyN2VV5ax7HvRhzzaeJU+JBBtK41RcCN0BgUNgbuUjte4ZNucuBVddfp/kTA==
+GxAUN+eaMyaa5mYHDvmbzCEVQYCALc/f1tJweUPZjrA=
+53oxW4b4zAjRt+ndhUYKAoJzDfeSuBwZpiMP3BKOq50YGoeaL6MNtlR8zCk+jkI7
+LH350vHhPkv8nbEsz9DPZVL7dpnkDVnUVHjswXGlZjo=
+7Pj/hJkUPk3iljqe2gCLS3l+bhjj7TOU9L/5E0+aPfs=
+jSBdAITwRuUVx0aNzsPZvA==
+BKEFAeEi8yibBbwszmHLEA==
+zqgGY3355qeaJpzk9AU8Mw==
+dflDKNa+LQdBG8+OkXM91C3flhfioZE831dVm6QfeU3ytzRZ1ZqkYMJFzqjwdZkFGOoRrnhn0rirO1d/bC6SgQ==
+264IDT/mODY7VQrInltf58vTYCRzKjKOXoyaWFHYuTuLoIl9TDjvmp5UVbXXKLLU
+Ncv9k5z6OHrNcXcoM0KlrCmLfWTdY7nDZUlZPD1+lCE=
+q267eBxPyypSkki9TFI9DZB6J81QSLVo6fgusOn5FesMHfX8fe5FpIQL6ogcnkD2
+BhfsoI01ZnxISc49Np+3osQ4JY7RidysR/6upn5jli6GYWTlv1uZU7B8NxYQ3VMd
+E+aJmYva2/JumlkPZc9b49/IGi1M5B5iKlEMtfzgb+GmtSCcKoEmxxDoX2ZlbmjF
+6eYJb5rLGcvrPbQQstjfgw==
+H8/2sadktEFyn+OU2gLd/w==
+W/eZs9bl5ONo6efaXm50DA==
+EXfhX2R7oVIJ+Xrc8LgroQ==
+EQ+G1csap2M5NOqG4vJyIwA7m4Zp8suPvzujnHDo9cQUkeFkrbYRyNdt0Jhr5A4sazIyufgYmE7QgUGLK0Jxqw==
+c1gSJe4CfPIJ9K9IXh/Bi7iFVsSwaXGM+XSzxl5EEFL1C7mnH7USkUgHCUeaysHvoovaZT9950YJ6sqa6eSgfA==
+esgRZIWE0ugxl8Khiwe/jA==
+buhhfJWo/5fQ3sT8x+LAZw==
+OFGVrZ+pzaQVZSB0GwoHGg==
+p68pg+eDgB9OjGbpxswbUw==
+T96dRtnxR8DaAOwQKrTFHh0gbpDcYuOzrpRWuFPkAZWC591F1Jo5W5MuWx1cE5Pu
+zZZhbcSXD/PwB12ovxZM2YLvfmwBL5ak8X3LFG8AOt4=
+hejIam63dmMXh8ZwQ44oGUM2y4cLcu+SMtcAAw2L2iI=
+ZhcBv/JfFKRYZpgVhKj0aw==
+0v3JqKFGZfoFLMvcWOwqKg==
+SewKRnAHFvhJrQFtXDAU4VfiHGT09Sw6bzvFGFzv2m1eOaSwkhVAxBRe9WbI7RHs
++oVh7WP+CvZHqvTslPoNMffMxtkTJIttFS7EwCW39Xc=
+hc4MLMR6BK5b6nm3xQWEPgneT95hctPXyWdNJaae7Sw=
+MYjg8AUBe0x7yU+VF/vtyw==
+IJ3CdJzgeJvziHXPiEWKIw==
+mcTaW4xGTayXvIv+fltanhUhGfy+BSQ9BN87HgWHVbMHCcLhsOuT3I0APG5Grjetp1RmrZ1oR0pa1Gwxrs5lTA==
+LDl92JrP8Iqf9KHbP19zNTq6OocMUCoINQyfn7WxBZLO92zUcNRV1vBLuNzCFQ1GDKSgEB05z0aG6qlAa0mEPg==
+DS8Eo4JKs6/jVsXHOHCmqg==
+gkXnfnnA1EINvD04g7vgsGfI8H3DPxe6ejpiloY66k+6EsiBViNxQC+nlZSHA0Wv
+EP06phNk1BcQ9d27cQo3pc1sVaR9i1LqK5eMRxlffR0oYwnUF7MPMOH0oHjctYN8
+06TEJcbEuZ1/ZLR7cuMAJLIiDZ0r/wnCEQRRoJgyB38=
+p9ZfCvTTw9rHWpM7euIQcf9Ex3AOdL0cTzICNoY7HYg=
+BW0bMdjOsNp22zj7hICmTA==
+Msps57mR5k4Ow64lbtlYGlkmP7kifGvodJODfnZdPws=
+GVvT4/TbyjyfoAMWWPTJOQ==
+X1MBvPJYvkAYTjbMhzY1wAn8rFGb1N52Pqlp3x8xbsQ=
+dSf93hvYaKsjCjzUZhyZCQ==
+GapcclwLEIm/j3olZAKx7w==
+eR22rBH8rhWoyN0DMFTHzL+v4WgiZXMDg5Ng70CzQzb28IDMupU3nfPcTslMI+qZ
+k3gkUz9p7b4cnkaKKGNsBVvwYd+Xq0GkXWKMksRHhEkpn75ul6GoRFFlis+G75Q1
+6A9C4SvDaz5TtEWgAVIdO/JxwEx6jNGTEDMEjPYIqsg=
+fEBiFqW72hGddXrvHsD6WZWa4UzcAk8MpssDqWbnuh8=
+sv1EgCjY/xViNL8pSRIACw==
+esVXIVmu4pRd6tS/mb/+Zb7XO5nH5l56jAkjUzg/3bQ=
+GEM2Bc7l1yWNTmwR+pbGsw==
+AIvu34H9s+jHrR4hxCoctw==
+12j4c5sMHDAUerUZ6Ii85w==
+dlwFMo6UcrkCdcmFxnpsSk1L7g+gLNMq1FjTTQ7jgedWBvePfdwH4yZqN28aIx1d
+WjUQP6kp/9NHfcsO3fQwDurOA5SLbChu+t7/+7Xd9M/HMoM/m4Fcl08F70kK64M3
+p5kO+5czkhYP6b0qJsgDyYf6gBPS9WXC7UeBqGy00/SnM7d2rmN7QwlGspuxtkG07b14RVB4o9QAhIWUgVPXyw==
+aQroW3qoJCdbpciXrU0kZA==
+ejAUBetnRfak4qHxqxXZcw==
+4YR9rH4Em1/0GYQGTQ8YAQ==
+jvSyfhtYXkVe5cV6j3u4uQ==
+DLriMrz7uJXtK7SSAQtAZA==

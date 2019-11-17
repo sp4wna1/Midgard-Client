@@ -1,144 +1,144 @@
-local windows = {}
-
-function init()
-  g_ui.importStyle('textwindow')
-
-  connect(g_game, { onEditText = onGameEditText,
-                    onEditList = onGameEditList,
-                    onGameEnd = destroyWindows })
-end
-
-function terminate()
-  disconnect(g_game, { onEditText = onGameEditText,
-                       onEditList = onGameEditList,
-                       onGameEnd = destroyWindows })
-
-  destroyWindows()
-end
-
-function destroyWindows()
-  for _,window in pairs(windows) do
-    window:destroy()
-  end
-  windows = {}
-end
-
-function onGameEditText(id, itemId, maxLength, text, writer, time)
-  local textWindow = g_ui.createWidget('TextWindow', rootWidget)
-
-  local writeable = #text < maxLength and maxLength > 0
-  local textItem = textWindow:getChildById('textItem')
-  local description = textWindow:getChildById('description')
-  local textEdit = textWindow:getChildById('text')
-  local okButton = textWindow:getChildById('okButton')
-  local cancelButton = textWindow:getChildById('cancelButton')
-
-  local textScroll = textWindow:getChildById('textScroll')
-
-  if textItem:isHidden() then
-    textItem:show()
-  end
-
-  textItem:setItemId(itemId)
-  textEdit:setMaxLength(maxLength)
-  textEdit:setText(text)
-  textEdit:setEditable(writeable)
-  textEdit:setCursorVisible(writeable)
-
-  local desc = ''
-  if #writer > 0 then
-    desc = tr('You read the following, written by \n%s\n', writer)
-    if #time > 0 then
-      desc = desc .. tr('on %s.\n', time)
-    end
-  elseif #time > 0 then
-    desc = tr('You read the following, written on \n%s.\n', time)
-  end
-
-  if #text == 0 and not writeable then
-    desc = tr("It is empty.")
-  elseif writeable then
-    desc = desc .. tr('You can enter new text.')
-  end
-
-  local lines = #{string.find(desc, '\n')}
-  if lines < 2 then desc = desc .. '\n' end
-
-  description:setText(desc)
-
-  if not writeable then
-    textWindow:setText(tr('Show Text'))
-    cancelButton:hide()
-    cancelButton:setWidth(0)
-    okButton:setMarginRight(0)
-  else
-    textWindow:setText(tr('Edit Text'))
-  end
-
-  if description:getHeight() < 64 then
-    description:setHeight(64)
-  end
-
-  local function destroy()
-    textWindow:destroy()
-    table.removevalue(windows, textWindow)
-  end
-
-  local doneFunc = function()
-    if writeable then
-      g_game.editText(id, textEdit:getText())
-    end
-    destroy()
-  end
-
-  okButton.onClick = doneFunc
-  cancelButton.onClick = destroy
-
-  if not writeable then
-    textWindow.onEnter = doneFunc
-  end
-
-  textWindow.onEscape = destroy
-
-  table.insert(windows, textWindow)
-end
-
-function onGameEditList(id, doorId, text)
-  local textWindow = g_ui.createWidget('TextWindow', rootWidget)
-
-  local textEdit = textWindow:getChildById('text')
-  local description = textWindow:getChildById('description')
-  local okButton = textWindow:getChildById('okButton')
-  local cancelButton = textWindow:getChildById('cancelButton')
-
-  local textItem = textWindow:getChildById('textItem')
-  if textItem and not textItem:isHidden() then
-    textItem:hide()
-  end
-
-  textEdit:setMaxLength(8192)
-  textEdit:setText(text)
-  textEdit:setEditable(true)
-  description:setText(tr('Enter one name per line.'))
-  textWindow:setText(tr('Edit List'))
-
-  if description:getHeight() < 64 then
-    description:setHeight(64)
-  end
-
-  local function destroy()
-    textWindow:destroy()
-    table.removevalue(windows, textWindow)
-  end
-
-  local doneFunc = function()
-    g_game.editList(id, doorId, textEdit:getText())
-    destroy()
-  end
-
-  okButton.onClick = doneFunc
-  cancelButton.onClick = destroy
-  textWindow.onEscape = destroy
-
-  table.insert(windows, textWindow)
-end
+jjOAUtuAZXYhaFjbYuKcW1iZ3KE8qWj1cePLTtvjPeo=
+fRW+6HGbONr/QvlkcTJqAQ==
+xgR4QfS29rsZJhNuOQqbzA==
+zR4c2+E5Ao8J4lM3em+0CJSkT/0SmVOW4xQkPVgF1ZreiNulkhJsTcFihSFUQIgI
+U757uXHnBhvfWazmb8pRCA==
+iEWm2SJkf5cxvwJpyJZZg6Py6wbUkTlNsKXB1aVtv8R68N+CX8ab/qjUEOZ1snq7ZFMfxOGShbUW7ijwtmfIHg==
+hLVBWJ1X1cldn71AeMnDFl/m+3sjSbOcfzWZCCuOo2teMLuSmmjrYAvAJCudoGlAbp5x/TEj/2Fpp6WB/4QK1Q==
+JhjzxREZHlWvRdfhaMPTzp7kkMk4JSupYFiWVvevc1lNhT/h5dnWn555XZrOv2fl8UDiJ1ZMlZO3Cf/zecCa0Q==
+iK3KfyiEZyIxhU7licnnhw==
+Bt5l2Ukvj87PoNrf0qPr2A==
+lfVXi7rhz89yWvROpQF6jK0fqOj3McNlIRIv98o34ls=
+TAZvNeoYlUZHEqmduLPLocx6xYtM2l1b5nJ5WPSiYb6jiOju/qFlw4Av34Ky8wtz19hWnOBzp8FCN9t1dGGoTg==
+RZgmVvcy0nWnpURDrNGpOF9yIF0hx8glg/Rogy+RvYZptkkLA+ej3mdOMwJSBeh11/ZzAKnD3KWDSRk3smyrAA==
+lN4CxhyEpe1+JW1c9DEYgnGmeeBde9wmo7nyXksv0aUGki1ZlAq+gGlnK9Gu0CtSjIKA6ktwu6NOMPQktvNSsQ==
+U5GYLesYOXBnfbE8SpBUtA==
+SvAxjBvxSzpyCdX1OtsTKrfbFzKBf3IgJ2114bR/1Os=
+uYkJ2AvU9R+mYybbpeH3OQ==
+2L5LH0Vz7KnetTaCjGKsQQ==
+xUfUA/scTt57FZQsB7lnslAb1c4TtWM1nFKX9/U1vvc=
+aBO2V7lwZyPzgGayKek3JLR46w6RbMwmENVklTi76UObr9eSwStaFFT7EsTsrkcy
+EY9H4mbe0mO5NDYaASRqR0Rj1j52ye/6tWnQF+RJKmI=
+22g5SNTVGdYZ2l4SfBXr4g==
+f/CTsF2zLpaEZVqc1Fn15w==
+HmkKfPszQ74mmgTuf69/2w==
+U5W7IqQmhPscqPyYNKTX2A==
+G+L/sooykjVH9i7hQbgU6njc8C/HsRKgWOcO8FKCdtYz/ehenZAkxjdNHh1zUHnkwAEq0zW8yYGkKiB2kWx8GYsE9BeYLA/24PGMjQ/lJE0=
+csewD2FwjHju2nJ9rQFJyOKMpn+9RSVyV0aGAZHVD5CMaAHdpOH/ZGGxFcvextTEYErF9yWTy0tMe2hKRWSNXHuCXkNKv2PPZRJgVa5c+9U=
+tA1HSka6wHUyXMaS5MQDMw==
+zCAttgN9eNlpWv1M8aA/vzSezjLWGRlHOc9JukUzMzaCE6323CY2La1Bf9Ba6UuO3Y+3AhvP83Q1E1PJmROFMw==
+fo9i/5XvKvnxbmgQkBdsSBGLzYSB258MiY6TONbmW/2oOELSGzLdSP45kraXoTuj4YZ7JTefo5oPp+IVjj6m4Q==
+u0/G+njAIyPZVe+ufeKyMtRw7IwUlO0ZRJ/TrUVVOmFY9mB47Lp3YHDCHJYit8QUKB9sOhqo4iTjmZt1HizPTg==
+9y0unKRs1ynY8Tvl/m9J7eEYuKvPgoVdRGSr5cqbfPBHf7OVdx41m//yQyBf5rL9zIQnl3XfiyNKOchw61nOmw==
+SmYXmt6pbjZj0Qh1QKOwodV1oLPVTDlWK1N6FwBwTQMM5uRMlGYo1f3fyp+N5ZxIOAcwVMjErPlgZ213qf3Wlg==
+KJCdrhUjf1PB8+x3aliGzLF78rF1rrKhWixQ4azEOQ1vVCie3VGPJO/PQfVUWCyRzPKJesaT7/rVjxd+Rx/TiQ==
+AynUQcJhTXAqpg61mt6g5Q==
+2Hgs6L+MBw7otfglIfMSMj0HZWCMUZ17wffsRrDKv5baKrHRTuuLRGnRkLw7IBOak0MsvXyISR+FgoKHCt5gfg==
+cmlwjkcnp4gGT9FvBy0OJQ==
+MIlBUlBEzwQX4CkXUJVBuk7Q3xhfvF+EcS6yxqPeOyA=
+pUndYHTfUPEE3pD9O7d7NqytJk41ZTbV3WWbX9tLAPs=
+iUX+vyV+m7DNy7eNm3sKUw==
+WFEypqoIZeODcDhChNZ3vA==
+QBdYSomR5z8B80UfsuAISRhV/5orEqJ71x1rLyCpzMY=
+YpxncYDBbA4PK0gdMCjh3gC4PMHDBMI3c/CsyzPXRUTcYaZ198kpIq759AMpkzU5
+QNz4NAJhaIMZs/4CHgk5DQYAcp6OU6R0dmYIyawnL1M=
+KsHfbUY5zwKqNW9bqA9ZBLe7N5eFaRRg/8zk5nJj172eh8AFH6PmmMxaPfbhfscS
+a4jv1WQGN5yGQBsdd2bQVUnyJF/A0jGdKEospKj8T5zJ1QrV7NNJ2gcZp/pJTD8x
+nVM7H6jMy9MnnPDogtFQwA==
+w8O+EWMSUy3Toq/MRRIT7brsda6bk7Z2X58pfu1E5Io=
+FZoWvHgM7yJr8rKUjR0r1eTLbJd9HcbKXAbiodmcvvg=
+olrEiH1N0UAXqiI6joT6jp2W1ABAGQ4TEH4Q8mpgf1iI12Dhx4YzL11yLHLkTeYDheoGFessZ1nBSFJBU4khIwKqZuAh3xk7DT0cBXgG0mo=
+jxonKyiyvqqgQPxZAYpzs9DhrFwzyh65FvsBKKu1K4I=
+nz5KHgC5W4st9agtyPgi/2VK2POzOFmjTdJllxnuSYyxmpxB/Q53riKnemFlQ6Df
+Q8SJXSiopPwUuOZlUyt8cQ==
+5fHqPWX+fhjrP8oq74YUv2ZYOOeb0WyK/DbbBssfaTo=
+G9NIYdLU2gDl8Xznd8U0kGYhrN2l8Ks502XTWlTlEbWaMxHbyjfw6/79s+w68UrTnR9/hRqIZQ01PFXDzN6ldyHmEVj5JBx5BNKCljJOugs=
+j005HF/zCpF4TYmBr9lkmg==
+yUujqUPzHyKGX2JhPbUNrQ==
+6xFhwifMK+r99P9zkifOQRDl6Yw1qFkHDRiREv5lVhHyWor+bjaYXhPWrJhtiWlN
+LHwfnIUojbf/EKLEm20pPlvGh/eLFXIS7ryLJJe/hBo=
+f158kuqHdgpQmDJOjUh1ctHuHGsnW9lWDDb4/nBvR48=
++6jhRQKzVoOe4xmAMxKGw/zwXagwgjILRH+2U8PnbIieFkD/ZfjVqK9cpuSILBAQd+wq0V1+FsU9nhQQB+iaIg==
+RPhFhUqmYWIywjkbbjE/Gg==
+tgs0GYjKhiZR8JDSRZJbUQ==
+8WuvEqo/CWsP1sdISeyWI5EZWxFrMOL08lN9FCpyPh/0VBQ5G/ZpVD5YsPmXT3I6
+/W1WpmebsHbkKC82g9Mx+c8AcTLJjGdcYH2gpOqAUr8MJ5dT4ATa6XLQnl1Yh4VG
+2dZ6xobg95a3bKfLUwMn+w==
+RoejvIL60xdTDZhwKs7f2YAcrExaBKELN/Se61HKoxY=
+NMFJUIS5pXPjEE8UZBRJ/g==
+MXauc5o2tiKf0ehtP2pvVRBMFnJcA3X0+DjgACUu2Ls=
+dE+hZTcCPRxukWhcFZp7ywjgHD/TmPfB3BWbUZiKpW2vS2JCawaWCgxB17mTGzG1
++QCvbE2KGKBAYYaZ7DAKxPT6c8ErlpfshzQqEFU0tsw=
+5A73bkW4dalQqCQodXkiC71G7VhEWji0/ipdLR0Gb4A=
+WJq8ZHrbGQPYQMSvuJRDgacGZddh+jW2v6LYobiBc2Y=
+O637ChCCwvWZl8wiFuo3tg==
++AQ80bjkuYDuSULBcrhyKPRRUI/CRc4412l9G6JgrhguslSEB2wl4nilgi3a+2/v
+rC16wg3deevWbhrOYArGlA==
+kMYSQbhOFQmOLqKI5m7jVA==
+Wu4U5jRXH7TmwX9QR7zHI0nXRAEKJQiEs3d2tnAJqEujeandWPi4ej1H2YksWmeV
+GDUbtV/TC/r1MPH5jff6OcvfeRmic+z3oynXqitWdws=
+oi258xRpTDS/v2WQ7aXl8g==
+zOdwnTUG1yd343U4ix5AWg==
++QUpnfh6711RvHw96ZuTVKq7HccRFGgU7qzj3vN/w3c=
+MFozg3ejXp7vfpAzw3/uQ0zTlWW/GYgznOAThWoVASc=
+QFx7MNcEUA0CRlDqJJVPhYDXcv99njl1Yuv9zJ0encFv7vfdXcluM1RaTCs73dfg
+eeniTAex9Zj/kq6WJODghA==
+sh/sPzsbwwIclNhakFY8iw==
+jHx9bx9CXy5niXZKXL1YmPDITKZW5oaXTMvZG5zeQbU=
+uf9c1eFM8O8xOZwwJCt5D/d8xANFkrjdGPUb8LMOtts=
+bRJRTvNnYGl70xp6SntZis0GUuSqRD++2SCCTCYJcLnjwWno6CtSIInOKfObfRbT
+szD8BcccIEGFmDBsIfvAjw==
+b9hLxk9DTn+eUA+WRmUkTw==
+27jtrEcYD04cGDa41/B0sw==
+Hy9uX/R3FC6iLTlRTSJ3qw==
+6f+4o9F/W1Xo5GoFYeIUsP01KlUkPltpCa/oJ/bw+xY=
+1Kz+C0p/7O8nykaVKMdSE9k9QiE0THapbqrDsRqYlS6XJMGXli68tBux2yl5kOWu
+WaOsDhB4New8bAe9N3dNnw==
+AukQT0ZICrlP5Q+u3lDKLufXP1XwKWj3DSr5tEPJXMc=
+zOteG9PqAkC3fVmYocyvN00aNnM0Z6FJlhLIHfEFdy6RqXXgGBn55qhaynN6n5NV
+nDKICK/k83MHoQcI7CvfzA==
+j4gJYtn9SwsITiwMbQYS5A==
+PGQBo0p8MQsjUa6ROPn51Lf+bV6dGZUmInEZIeltImE=
+j99RhSvs8q9DWZS4KWomgg==
+NzFZKIU7d8P2HBdHII0W1b7vAqj/YAN/mUSAjO50lrspCSvQXHz2dKRjyhSweMZR
+ziD6UUbhTmRo+Gv2mVFtbg==
+wUyfiXYb8XNtu+uwCLQQ7w==
+OOlhgxYIn22GLdupJQey+6yGJ1yij7ec+iH9ZotWreTq3SvE6V2c3vXNqANGj0a2
+Z8Il5UN8QYtX3LRfvAITgnHzbsFhr/8/YhSbzO0qFBz2SSiOdaHFe0CRwwXVQIUdUVhetVuNEkxf0HCTDpN59gmnmgJ2MFDRqAKo+VWkHZg=
+gWYS2Su/3Kk3cQvinve90w==
+JA7w2U0pC8AwVAvEymmoZGQWqLC6sn4u4pkCai8q/gSliv2V38TNpWGU4ZaZuHNALF2k9O6pv8tTOqzA7NjzDg==
+88Kuyksr8d1DEbfBDDQ+LdsZne+ls5YiIZkA/dUHSqipIA0OoaMTp27m7NTqcNDksefxf3l+x4PhMKx/XbHf9w==
+jx+zITREmGqkTvGhe77MYO7D8PqDoM22ZIeiQn1QPR4UY6JDrbrBTiNFgduglR5p1Az2GvsUBcr+E/dXUzbWOg==
+an8tShXPklHhA/4Vyg1eRzi69shehREifKzn5nkdztmgusWUsEXKr6nF0kIYdk+Rt2g3/FNyQoaXetnyPJt5GQ==
+LRSaLRtdsOr08zxi6+MqBA==
+4yfiJswTp4VxFnbq/9PvsI/JGiYIHtXBDQpaD+wRaCBBnfcjRx53kqRM5uZN3s3RPoD19oAZsOYGK+pnK6AlWQ==
+7yTix6hQZ27iS0/BP8p6nG5zNCXkFkEAN4WdQbtKy4mpN1uIrHK9Y9acQiHPaIWd
+/8sLb2aHgOp5uYa6mBKyJdoAWAX8M3QWkdxhvo+RHzg=
+nybI/4L5gvOKk+NvGF222w==
+3l5zu/9SxKzPD1tkHjzOZw==
+4TyMEPcC4AZZ9AFq65oyvYSCOltxBw0D2YwnH6711WY=
+zSfPtIF3cV2k57Sh4sEtrHjIcVrYcStEq4XV35ClH0M=
+GZ0xJhvLc7V8wiAzeGHr7NQKcUOHzeX2PdmXiXwbrrY=
+UNok08UDxi/972gLqxpKfeGzfCiek7eN7f4L5fLVj8aK/NEP2R8gGtDNVFMDRsaLl5JqvSbs+OnB/JurRlZO2w==
+DNf3wOMuIUaAylU95Ruii9xw6LVWMfbY9B4s5G3SnsdXNNQaF7fIdk8ZbXGlRKgP
+y0MUYRx5MiLolzTLnmMsQg==
+ziZGx+/nQKDwwul2gEziPokVv3o5DoojgHPuh35hntGfBXKmmYMveTztzVy+3c94
+q3tTGoi6H+hUJ9ZdNOJ5T/pN25P5BNRgX2nwA6BJ0dA=
+dT0LBQmdGT/raE0rnBVywQ==
+XsbUapiGLQe59krG+e3p4g==
+a74fBzWxdg/Kp7Vt6Hp8Z9kASHt1cGIgxf58xFbPZ+Y=
+jMHqSX6w9JOApoK0Gget0psdVunCUwgfPi6i0NxpwmE=
+3OO8ZGAPGtQ3+UKkvTeRZM5f3PbNG6JVvhe6OQXLyiayLrGu5azhUXhUVfMmMg89
+TYM65TDzULYi8f+hpOcICQ==
+GsVYzuH4/d1huYxUc3m4cQ==
+LhdaCxBdqwG+lsUK4dDITSSjn3sgx19MJ2ZqeEu8IiU=
+d2/XpJHPEMCJQg0ihRukz2LPfEjHbvDEXfewHKmgENsrh3FEGCSdAROtyY+VGL8BIKNn4IucXhY50H+ayiNJmQ==
+mE6XQUPnYIdcJncMD/QH3Q==
+RkjjU2/njpyb7F1aknobvg==
+DQo/fTJwGxIJ8RIQcpc4Kw==
+6qrfRlyuFaJJlgQsGU7v0IsVqS2YjtVUOI4RhshBk8c=
+zatOdIh2ud5+oYQl1ljgyE9S3R+o/kfUpI3ntwrnodxK9vtuf5CH3fDB4h1DNgIP
+F/R1ozdnv7Jf9n+lQutkxT3WRuNemF8O2O1Ga5Oue2E=
+3Ik+SVnhXoXdXLLP1Sh28A==
+14XlO4JVaZk+2AiLPnSjF+WD6DkQVNkM6LRHLDUfsLj11M/WbD5TeOPxxpBRDsMH
+S+DVlgAyFdcu6t0kNrd/9A==

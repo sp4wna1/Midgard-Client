@@ -1,40 +1,40 @@
--- @docclass
-UIWindow = extends(UIWidget, "UIWindow")
-
-function UIWindow.create()
-  local window = UIWindow.internalCreate()
-  window:setTextAlign(AlignTopCenter)
-  window:setDraggable(true)
-  window:setAutoFocusPolicy(AutoFocusFirst)
-  return window
-end
-
-function UIWindow:onKeyDown(keyCode, keyboardModifiers)
-  if keyboardModifiers == KeyboardNoModifier then
-    if keyCode == KeyEnter then
-      signalcall(self.onEnter, self)
-    elseif keyCode == KeyEscape then
-      signalcall(self.onEscape, self)
-    end
-  end
-end
-
-function UIWindow:onFocusChange(focused)
-  if focused then self:raise() end
-end
-
-function UIWindow:onDragEnter(mousePos)
-  self:breakAnchors()
-  self.movingReference = { x = mousePos.x - self:getX(), y = mousePos.y - self:getY() }
-  return true
-end
-
-function UIWindow:onDragLeave(droppedWidget, mousePos)
-  -- TODO: auto detect and reconnect anchors
-end
-
-function UIWindow:onDragMove(mousePos, mouseMoved)
-  local pos = { x = mousePos.x - self.movingReference.x, y = mousePos.y - self.movingReference.y }
-  self:setPosition(pos)
-  self:bindRectToParent()
-end
+n+JvUrOxIM2w5XQrk3QLCQ==
+sP8JsPoWtvr5BtW9DNdd53/KEI91q1amv96LzMHckiiqawYc8I7jsjjPDUUrZWps
+Qf+iULWySfKCiITMapdELA==
+k6JVlMWbVVnmleftJekI9/JXlwmA0//g5dS4BnJr3+0=
+4m0G+eWlKeFSl2a6RHb8P3zZ0locmB0fhVZ82s7LPh8atHNwo0glN8CSwfiUwHTn
+kXlb1aZhsqSxPvjhkShpZkwMhCWai5GtmXQkuf/okL/0E/bmosnjamQkwRQuWEPX
+CcsmHcrqbKocN2kjhyUt+Y9NYRAN8ZufsNn+bAOpOXU=
+5T6UP82jhc2w0zi0cQb3BlZ5EDqv/DgEfef657iBfX1Oh5giP9MG+Ng7pY4BBaA6
+34VbOsRIYBwfkP28cX6i3g==
+djQLkLqdJ/0npyHkE97o+w==
+QJX9LvDZN3ef9FTfiTIoqg==
+tRM1UhXBTcuodQ2HOH83vWFepkDVd8G6rssKwEDiuhKDJIkd4eWPZhvqNnyjdgvjnken/utMrcT+ys1vhyzQ7A==
+6fE2ACXU3O5aQIWnghxyhqqXhJRVne0i+t0Zqh7mEqA19lDTi8AHigsNh4odYfdVbQELTp5w8l6rDKql+lvXKA==
+Ys3pDLNX+2tp1EceZDQ3dp7RVJht6hhjhhustZvMPbA=
+rV6T1800jPtWgCOwFJuaCunHlGUz2zcQ63NpHwW5a7xrK0lhnQO02wMlulk+b0M1
+Npq89yFKWT2L1c4rEBAMoWlTkhX9A0tKWVQVyxePRBxwZBnR4el1gq6QCYcgifS1
+qfFHKElWpdi4Xx2M/wPvGQlLk4ICZ+6jlza6bnwWLMMYa2oFyW1w63ZlkZh8rZG2
++l0LybByCJw89hoIb/NUSg==
+ZmUsgIcdCx+aCPTdCOo9qw==
+tIiLTcfNDuAqQzkRX0+n0g==
+t7nbR4qJZmdUsGidaqo05g==
+dNcAY3ovMHF9h1bHyC3NtQ1skPNl3nFt5HaEuszNF64uLpDF7WrkoadHCwZRZAgT
+0oz6DuDs0NQjfq2urQJEroO8JlCH1LGYmKFPzhHEG7LKoyq4EeLse9o8n29TBiBd
+I0YAHTyLS1k+tw6tTQx+kw==
+1mpsE/GYVeLzAjPIfv4/oA==
+zXR29Uy5ezv8ruqYS42jBtQqRvwq647JcH6YcYDWjnwtJa5O8sjum7VcC3GkESy+
+j59UOiNtTf68dTzimBLd726ZqmtI6T4tMrxgFXvcA3k=
+lHcN1sfA0mANdNqzhji9DW+5D/8YbwgW92fu6tn4aj90YnvP9/2Gc5GN8GeXDy7YDE+JtAtYTsd0GGnUNkGUbiIH8CXsQtEzVYmAMvvFT17GHWk0Q8dK+jgDfXpXEN7T
+JT6pEIXJGeJJCg38YT9oDw==
+AvgBaZgO4y96YdvyC6L8Gw==
+jrgD94KQ+2ai0VJMNSq66A==
+oXT1CNCzCqMySDVIkI2pP7UP1YokfsjXUfN6ia27PD0Pg7ozbg7RHJnefrR+YViOi9wJEH8jZaEVfQqlJzlJQA==
+klUthreEqrn5kvEeLuxX9UoQpeTCcl7kk/9BdzdgX3CjGw7/F0vL4ZBo9frYDCU1
+U8ZuuFZelbMAMkJ6BClFMg==
+usUGU1+/CgI28nELmsEysw==
+Ednc6i3WLjBjpLOufyFYNkQyFBwtzZ4i8nrHr+/6qFtFFvpSifLG0Oly41OxNMnKcS/6eet+xtmeZ/y/giSM6Q==
+gozc4YuubtMPOHlrn7Ff1mWSTuOnJCH60eXNhAf4jnf1mQRIevqg1zNGIJka/AyaBsZvXvW3x9tPMn8uywRaO/aL1K79CJkUCv/0uiRJo9/Zc8kmME3ZboAoiAOkIcBzyINYMnQkGtrHlTUcyQFsLQ==
+v5yb5GB62yOkvn6763dHKVcdWa8JdTTM3pao3PQlBsE=
+/XWVhLdB6t3vg3hZOvkPMojlLdC/80qRaCT9eG19lDE=
+x6NuxN0NNpjA/JcOBLempg==

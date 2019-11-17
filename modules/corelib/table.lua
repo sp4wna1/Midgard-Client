@@ -1,192 +1,192 @@
--- @docclass table
-
-function table.dump(t, depth)
-  if not depth then depth = 0 end
-  for k,v in pairs(t) do
-    str = (' '):rep(depth * 2) .. k .. ': '
-    if type(v) ~= "table" then
-      print(str .. tostring(v))
-    else
-      print(str)
-      table.dump(v, depth+1)
-    end
-  end
-end
-
-function table.clear(t)
-  for k,v in pairs(t) do
-    t[k] = nil
-  end
-end
-
-function table.copy(t)
-  local res = {}
-  for k,v in pairs(t) do
-    res[k] = v
-  end
-  return res
-end
-
-function table.recursivecopy(t)
-  local res = {}
-  for k,v in pairs(t) do
-    if type(v) == "table" then
-      res[k] = table.recursivecopy(v)
-    else
-      res[k] = v
-    end
-  end
-  return res
-end
-
-function table.selectivecopy(t, keys)
-  local res = { }
-  for i,v in ipairs(keys) do
-    res[v] = t[v]
-  end
-  return res
-end
-
-function table.merge(t, src)
-  for k,v in pairs(src) do
-    t[k] = v
-  end
-end
-
-function table.find(t, value, lowercase)
-  for k,v in pairs(t) do
-    if lowercase and type(value) == 'string' and type(v) == 'string' then
-      if v:lower() == value:lower() then return k end
-    end
-    if v == value then return k end
-  end
-end
-
-function table.findbykey(t, key, lowercase)
-  for k,v in pairs(t) do
-    if lowercase and type(key) == 'string' and type(k) == 'string' then
-      if k:lower() == key:lower() then return v end
-    end
-    if k == key then return v end
-  end
-end
-
-function table.contains(t, value, lowercase)
-  return table.find(t, value, lowercase) ~= nil
-end
-
-function table.findkey(t, key)
-  if t and type(t) == 'table' then
-    for k,v in pairs(t) do
-      if k == key then return k end
-    end
-  end
-end
-
-function table.haskey(t, key)
-  return table.findkey(t, key) ~= nil
-end
-
-function table.removevalue(t, value)
-  for k,v in pairs(t) do
-    if v == value then
-      table.remove(t, k)
-      return true
-    end
-  end
-  return false
-end
-
-function table.popvalue(value)
-  local index = nil
-  for k,v in pairs(t) do
-    if v == value or not value then
-      index = k
-    end
-  end
-  if index then
-    table.remove(t, index)
-    return true
-  end
-  return false
-end
-
-function table.compare(t, other)
-  if #t ~= #other then return false end
-  for k,v in pairs(t) do
-    if v ~= other[k] then return false end
-  end
-  return true
-end
-
-function table.empty(t)
-  if t and type(t) == 'table' then
-    return next(t) == nil
-  end
-  return true
-end
-
-function table.permute(t, n, count)
-  n = n or #t
-  for i=1,count or n do
-    local j = math.random(i, n)
-    t[i], t[j] = t[j], t[i]
-  end
-  return t
-end
-
-function table.findbyfield(t, fieldname, fieldvalue)
-  for _i,subt in pairs(t) do
-    if subt[fieldname] == fieldvalue then
-      return subt
-    end
-  end
-  return nil
-end
-
-function table.size(t)
-  local size = 0
-  for i, n in pairs(t) do
-    size = size + 1
-  end
-
-  return size
-end
-
-function table.tostring(t)
-  local maxn = #t
-  local str = ""
-  for k,v in pairs(t) do
-    v = tostring(v)
-    if k == maxn and k ~= 1 then
-      str = str .. " and " .. v
-    elseif maxn > 1 and k ~= 1 then
-      str = str .. ", " .. v
-    else
-      str = str .. " " .. v
-    end
-  end
-  return str
-end
-
-function table.collect(t, func)
-  local res = {}
-  for k,v in pairs(t) do
-    local a,b = func(k,v)
-    if a and b then
-      res[a] = b
-    elseif a ~= nil then
-      table.insert(res,a)
-    end
-  end
-  return res
-end
-
-function table.equals(t, comp)
-  if type(t) == "table" and type(comp) == "table" then
-    for k,v in pairs(t) do
-      if v ~= comp[k] then return false end
-    end
-  end
-  return true
-end
+t6mr873x+hiqgmf9pBlRYVtuty4JuqG3hUR6TzfWCuI=
++9ZYRzn36wmvC/dz71f9uQ==
+GIkrOOlDm4pACWti/0vQL15Pc76Kl9QYKsqq4Gx0jNQ=
+3NgUR7T0E7UWwaUtKrtwU2gKFqhalZfsj3tyGt260xD8pNaUektKUFoUFXMchwiM
+696nFfGkdOufMZW/PbGxAou9izS7lN80ngakID3pTN8=
+twNUn+2RSENA2Gq4469mparakD1hMpOn4+ecuy5eWQ+iJUZdqUsoVy6DYDYbdJ+L
+eMdxK8f5AnxOOK2q3hMBx/v12ibcooDAzEpYIwmF+wA=
+fcjWkn9HDz7XCU075qj+EahBUKw/eXbxphh94qBJJ20=
+WtowukXZzvZoNDe0ARTCyg==
+vYc83b8uyN0Gj+jjI/X8+XRAWdi9NHP+RBJnvhOVzm8=
+0TSLQsquX0CcxOV6/+Ugyvo3gMtJXzF0iD809c5U9eA=
+E0kv+3srDURPln9Ak0ajQg==
+sAg/y5qvYkg0Z/C19HmYKQ==
+iia+Ulez3qwQOHJ9+me6yg==
+kHgezJC18RGJj1wFI/4ZbA==
+Oc6CoNo+AqBKtk4YqFK06vHBsX41AoXFGy4/7ALGlZ0=
+q8EPuWlh894ZTtugj6OG08QzL35HcJQygTYJ93FK3as=
+cw2oG47nc9usBbsxu3SorA==
+hOEQ6EY5hEdDi0HLpVG5/w==
+TefpPdrEG+xudOXVNgqtlw==
+5FrfQluxjflDmU1LaUlZDg==
+hvgri/eD3MzmI9nZPha5sxF/KzHTsyS0PeThfwJx2D0=
+eCX4rSKX5cPkfrEujcntWULbXL0MAk4SmTePt+J6/pM=
+gQLPDid+Do0UIytJ0Xl9DyL5tKa99wqg9iN6HS0Jxe4=
+tdoNbewq3BYM7NRyYiWcxw==
+Nr7KodwyxH1qqyXzDRJa6A==
+KPI4bdTDkdNsiaTC1blcTA==
+5SgFTVKp3w+FvfKa/iZ9xQ==
+xcgQTzXKUW2dIu2dZNZMUQ==
+YDV9dmnmQEdzEADpY3s4b5GcnwCnUotxANQRxVfIJrA=
+i/w1qiU8ZYDPpqbYse4hecC5SfDwb4U2dOFAwKwvReM=
+yIWoPVQRbPmgVj/1r5+ePn4WWHnVqxk43NNUhYtaltk=
+URMcR1qmyGypCHOrjyRpz3k7u5JsjiTmTPTVaW0HGMA=
+fAESl7OMbxXkzqD36f/NHTChzdhp/ZiIDp0GbvTj/hEX37MXqX/yEYhEt5DCLrHs
+p959+bZEWngZY+8Z2WdCMQ==
+m8Pm8bXP+qCcNzUHqd3pbZ2Dyzi5FAmMGHCRd1GPXc4=
+wVB5iNpwFPIr5VDuBnOC2g==
+GXpU8qVzZpb15kvhoG28Ug==
+8E9bPajhWCZk9yK/zXmPBA==
+7v6F2igezrOGWh0MT8NGGw==
+vfBUmA19PAEHy7/OV46Sug==
+I6eQ2AO1h8gXeSXWMzrC2bPxJihGlb79i/iFtix1GgcfN+yCpiMjSMUwTeigjv68
+IN0ug8dYs1M2HtWZert82tPjmXXJFMxH+GzG84CGXhU=
+hEonViQdMtAemsCLyZ8vyjPQ88gEqDUt7kvOcvG6e4o=
+LCg0TTTy0Ke6jCFwdALc3/vP1u9/AG55jep0AnwpXaM=
+l/VwLt7debayNacqutow1g==
+b/IK0xEUsw+EWgXOAiXujA==
+1jLQ0e/lPO7yUZ40fdjdfQ==
+p2he/JejlLnoX2yDibBNVw==
+3LVdm5dIsN5/q/3hMXTgWGeB5IPLhxsxiYQIBz0uhXQ=
+aPQ5HBecLuI3mScNfFr0lcFDQ9MJaTjoH084m18htKc=
+Ii4v/oRafWnv7GyPLKsq7Q==
+tsmoPoxndK3j931r+yZk2w==
+cLl4kUBtXlWpHWeTlJdwHw==
+S70Vcn+UJHjwtjq86WfioA==
+VOqYEPBEj4IV//FdC3QTvqf0QTezvLIN4KLItQ05f5T5NG2/z1zGhbfNl0yKKlFX
+X2DoWkLHfrlMS+BsA+NHS098+uFO8VkQhFybqrfDqug=
+gdiIDGxpQwg0ZrkFxnJzFS+xorOWBojOJOuDVOnLrq8R3O3t51Fwm+vAxZTAVqLYupBv3t9vMS/GLK7JbipkaJmcrTpm4UKia0D8gs6D4Yo=
+0jpavrqS6VrE6iMFzIj2aIoxcns8iXSGwmPw1ZRDUQbLwt5Fd87/Z5TDfNwXUVM8IvwiyO2hMxGue3lW066ICA==
+jqCyMxXfgLVQw4fuiQsLJw==
+Qm7oSlqMN5q/DSuYyz1X3CICekvDQKb6JACDfk7TwtmC4JpHmVtg/gkG2AEGr66Q
+ywRQcSYZ+IZxHT0Bd33zgA==
+S1botOmUDzmJefPuHEDBYA==
+nKdcp3PrTce61A6ci+6dXQ==
+emMUgus/OQVVSCmJVSqkTILoERjYEJ6tpypMKMqgSM0PeDq9JD55czOdmf2ZkP8M
+ORLIb2IN7oVLwv1GM36MD6sf6lvaEaLg1cVYIxVJw44=
+IsBou5Zjmd61futiVBthNt0H8os0mTsbUnbGeiWeAXJmO4jqTnWC6tNoYuyrAcnhKsqhiLBD3jnl6WAwnGotHslqMbxwn/Rrju09A8kIzN8=
+Ept5gYROKMea2Q37jyN7B4RZIWrzieDWjzQoMo71yrvlNws9Dx3KKKjdPDw0YqV1EVgx1Crji4gIPZGT+4d3fA==
+0sGYl49cOsfHEkQpbfGiCw==
++Z1A4dNZoeuUwymCnsUExMxNW+hw9pvqGFFweYl4opXLEMpRj6tS5letGhhTKziR
+qdgm/Z+rGu8DMbjOj2JZBA==
+rQE2zvgpcbOt5c6z+sFiEA==
+8Rf4cAivlH3pSm/j40Djyw==
+BABEOI4fYp9UYCjkeGyM0QmPrGZWd3mURGrMQhDgQ6ANE+ZCKX7UXAqcuU/6JTb9
+4pe/Ih958fTmfn2IcajsmttFCAMoLdPg1qUea7qGeP3LQU64y/zfAXGnp/qhXMA2
+NneLSwUEe30PQ2S89k+9Wg==
+VAeX8KxpMMC5lKu3wcceGQ==
+ZeXSKyqBfqviTL6IBjE3BHP2FqV/CIfO5qrfQPxrk1I=
+JegWLjj8iBWqYX8Hew0l4M0h3rTQluFE7CVy8LYYtsc6wUhFtb2jkk1jV3K4J8qT
+y+pdipKxul3LwTSZvOMnQKP92jPv43SIdSWPsVD4n+U=
+I00TbbX1Q5np6cHqWL4gs1pOZflc39tvzrrT3CW02O6DHpFH/Qs4uj92w75njVCp
+XXcb7rsqxAJZwlVvl6SFnA==
+BjoCNT0s9i6t0SYdj7L05w==
+GHv28FHMP2jrfuLSGw4w+w==
+8QODfDvOZoulg9B0B98v9g==
+BvfnOADE0quQfvtQmZAX/X/ksfjKvLD5+C0eE+ZCcDE=
+9IOZWLSSbKhMQ6H+oZcmGaqLpNzDr5Wfbc4nhM6+vbGvR5xOPq6aCr9cgbmYq3M7
+1hXZdvrDmimsfHexUzgWKg==
++NxlkHw9qnOF8l2O+DE4Tg==
+rh66p/Z0fDkRcmgJQu+PsbobjoYoTOAVsKMs6HPxiFVPidDVNoTbzRvC5nsX170E
+VJPaerCtvGyCev5C+VT0fQ98EjESBDat31zy7V3m3hg=
+Oa4VVDizjM5xAhMSSQAhBJA4w4WQkennRXOpejpmKU4=
+RrwxXFf81ls458F+ZJOeKnCRSmcv88aOs7MbUq7qD+Y=
+V9E7wWHvrxBLFwcKPPW7lWsMai74KKIHcvtynVHhLk4=
+PobvShGJ3wmlyJm0pA532Q==
+MKsF06Z2rINW+XYdCfKr3g==
+CnAht7YYZhWgTTHUMDxT6w==
+U3DzjIbrd3fLt2mmSk3dSQ==
+OltuU4Nybf0owWrHNpC8TQ==
+UV7NwI9I/9/eO1rQmYcI/sw8jOAiayKIVaNdKOWFtlg=
+cmJZ6eFxzBmoWhf12h/oMzjiaPH3pzNfSPVogNOXcjY=
+kez5M3dOuti9lwkJH1IAi3aTuqZb6ugcddfxU9tI1V0=
+NPGYt2Naq1DKeiMOLcPod8Yep9/a/WiCZ2qzM7tWHpEbG00E+4iZC/c4R+U5Nkvt
+5QG6WglD0P6x6esMPHiX4Q==
+AgHdl4RTsXrtu4t/51/RbQ==
+klyDhykkW3y+7T1waBAkDw==
+wBAkpxWmTy80RQ6PzODJFA==
+NFw35BVxGE8nsXFkvxQDpvB9CN5B3Ch8+CHVjBqAB1o=
+cVMANkDlgVQQpyAjgX4Qgw==
+qc6FCdNesJk4z0w+rEgqig==
+4DGT89suX9UQe8IsMzc+PQ==
+RVQ2JaH23vTipHYbPShvnw==
+OUhUuWJgr0Mbgyzzc1e6gQ==
+c82ZqXd+Zwq+mzauQMGX9zDVcrR9iF6QgiHqttt7TV9lI4WVJtLVv2fbCaVqvia8
+eSDmarW3LJQ25IBpQT4QrMruWYZBYoF6Z2vWpfGdknlVQXVryyYr+O9lbXh/xYe+
+CZ5cqNtnw+ifw7/CebbNJ80os3nblaKk69omD9D4Qsg=
+FfXspeORx0WthIsuWsgIpTewgk/3eHtutDXnCXG8d5q8wgpfP/SV7KhrG078z5PC
+tpkNCCj/9yyzTiVScc62XQ==
+RKgDmEg7sCyh4oBagl745w==
+4TfbEHz5+cVgRzm17olXUQ==
+/YD81RZiWs1nVEK8PYbeFQ==
+ugYDmZwCE4YDXRgTWPRZM1UqFZQ2tE7geOJ4a5fw4bk=
+pXLRtiganYX4vJaKbzebaP0zMJE4mnUWBPYIfhAsYqyq04nI0wHlzEwzmgq59F/j
+bjOIDxYMkMrG3b2dFiC5rLcsqQ0lIJnzeBdrjzVjV2E=
+uLojAaRHhWfXsMpOqT1BXQ==
++LODee7nd5VHW1evOoA/rw==
+zmGz+dX9wayuuumsC9RHIw==
+/Wkrtlfrem3yB6DN+LhaiQ==
+p4H9HKO9I4Sr2QM3jNeRO9L+8ifhAL7N+ESINfzIeWimsAXjn6smd2+EIh3hITre
+I1E3rSX4hU8vGCu2YcJVOw==
+Nhxlh6tUKqONpLmGQCstT0buw2lkAyxwHbRNKikwmUM=
+qsuq2YjLlJgyh51T1EGzX+48TSfPMv3ZEqCw0xVDFUM=
+USI7U65Q5v1qihecAD+H7Bg77lZ4lCvKAFujSBZbQXM=
+WryiWn/YXDrGMfuU8Vg3ww==
+vijPk5of3aG8e+xAJheRMw==
+byw1Sq36GWW41ZUTDEysig==
+gGqZr5I3g/WEjurrt1eeVg==
+UT/eJgj3p71/V1pxEnfMFKTMAJrR8IaeHsHncpeuP9uZFPyXSINtvk4XZEaLd1RHui155Bs661jt7O5ikBU1fg==
+Mgpq2GUlaEif/RkprEHQ7sxDWt3agq9EXmND8atbABw=
+oxTs+9EPEBNZpoBbN/qfCxPp6J+TCKgjErXgYGwt9BGUWkC3Op6BT20P0NtEYVST
+DxFXH6n/hN6ZkuLCFZ6Ru7M6MwHTRK1Ujqb10SM2B+8=
+wpHz3CHUFphwMXCRPjdcaw==
+xKPSWHtfpLbkcBLbg9S+rA==
+WavVbMmM6AnxxKhMLqtVXQ==
++6jDhUw+LwpEUEKo0elcAg==
+IwnrEEt+kVs/f8sHzgOwow==
+D4EPnOlVohOFPRku+FLzLv/RcG4u+Zoz9GezcfWQrJw=
+Ear1/pabggHilU8+Hl30hH1g6cgGc9n24j+Q1P77Ca8=
+x8N2gV9JiBJcyt6CwgfjEQPFGvAdcobu5n00VmqsNGg=
+N0rb/tBd1UkXUMq81aRwgWWuBQppJVIbPr6ddgmWhRU=
+KX9C/QLGpvv+h82IRcCCxA==
+sEXQD9jY4xBokKSOIlEidQ==
+4U7vDV8zB+IgYGBTPQsEbA==
+AaJLv8qP4yHhCBCBWkMtww==
+f0Z6KUgeMY1LV78Vs8Q5eg==
+Am4OWXoLqpsvZlpn+7Z145D/Ecrfc78T5V45WVWy+64=
+PWDU2qiqEOXUkkfUTO3ryp8Lt5Fiw/3Z6ZXpw9sBEPc=
+aLK+OLUN5S8NH6EiZwSHukxrKrB8Ls3hspOBvD3M4F8=
+Pqpwl3zCSylZcnjFf8BO9gHAzgwbwWulKbJTjcrF2Lw=
+3GU0D01Hwrmc8y+Fje8TBh72nC+1Y8lCBd6Klwe6Y9U=
+S0q3/yGqzhdHgWpjvwqhy/RhVfHzd1o1UpPtNYY/MZ6/xf3SMKytAKxhl0HyKOPo
+jw+tnztg7tTqMrXDkop3rs8a/SqJnOY5Jggrybm89w0=
+KRtkcT8W1i3OPAaypL9jSsalGxaL8K2zcxB4Q/+Yv6Zlqhq13FG7GQGANqBi3rXw
+kSfxtszwEIsOiEJ1mGGBJMKvt5mu/hVXoz9aMdAxKKo=
+yVeHc+PYgxt5fQXzV1+4Fw==
+XgnTYv8PfAPXTIT5vPvFKskjDbPBBqGszaWC++y2VcU=
+HpRQf7n1T7wf19wkK0634Q==
+nWcnNFFR7R5wkGtqf8CFSw==
+eaQyyvI/o0o0A8v9l8Y2Ew==
++5PH4yY4BpfRIAbnNvbi5Q==
+ye2lkrgujEEA0p3HoqXwHg==
+XlQFvSnVuC6YXLmiT9UmtBi55qgMIsQGrMM7MTYTjys=
+SOMCZzrVgetegGv/OR3BH4Q1ZkIvGIUbLXTtEy+N7P4=
+R3/vVW9ICGoRaJaGHmIj2CCnO7qVfniEB/gEP8XLvOg=
+V1DdIol+Y9CSTqbRvfrsk7IEfTZ51PWh/h4I/ffpZeo=
+sga1MvPKaDyWqaSYlf86EU5qY6PMT4qGsH5KxTgMYeM=
+m3mK9o57cFm6/K169CklR5mot7V/mNDZT+Mx6zv3faI=
+MoZ9usyhf4YLThYsiZM1VC5vprN0W4P32NPR5BotA+o=
+exndZUC1e+2Ds1PInIwdDQsrpavt2WKzZ4MgoTmZcmw=
+1XDzThTv4TZNH2el2dZIxw==
+bKMu1umxdSkRIFX3IPZbZw==
+BfNAe6ZG3EOphNje+S58IA==
+ddPnh/b/BxDAkdWGDuLjxg==
+wrQ2AO2JD+pm6mj+dwgG8w==
+HPBxWereVWQbq31XN96EmWWAmKZUKrJUOeaB3//Evq4=
+PFJ/6w79lSH7F5fD37NXAxCdgv21NXHO0M95DNn+iOH5rpHza2PaKYBvkWHzTV0AN5r0+vfGl54RhNiTtQX6RA==
+ClbRjySCbLbVO4WScwFpJXLGzb/Rtu8t24M7r1gXn38=
+FiImWSIc8HzGmDalAQ87RS2I+koo3mQnM/Iu+dkU3kuwTt8kEx8Xw/59fNF0YjDR
+bUAH9OgZtnDMpr48kRfbpg==
+jnD368ABfblVHhPoxTvlvQ==
+puf4VglJXo1UgUM3u3wLdg==
+gvY4YVBRPJ9pxT+sNrWi8A==

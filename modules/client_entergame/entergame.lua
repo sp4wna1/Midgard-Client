@@ -1,424 +1,424 @@
-EnterGame = { }
-
--- private variables
-local loadBox
-local enterGame
-local motdWindow
-local motdButton
-local enterGameButton
-local clientBox
-local protocolLogin
-local motdEnabled = true
-
--- private functions
-local function onError(protocol, message, errorCode)
-  if loadBox then
-    loadBox:destroy()
-    loadBox = nil
-  end
-
-  if not errorCode then
-    EnterGame.clearAccountFields()
-  end
-
-  local errorBox = displayErrorBox(tr('Login Error'), message)
-  connect(errorBox, { onOk = EnterGame.show })
-end
-
-local function onMotd(protocol, motd)
-  G.motdNumber = tonumber(motd:sub(0, motd:find("\n")))
-  G.motdMessage = motd:sub(motd:find("\n") + 1, #motd)
-  if motdEnabled then
-    motdButton:show()
-  end
-end
-
-local function onSessionKey(protocol, sessionKey)
-  G.sessionKey = sessionKey
-end
-
-local function onCharacterList(protocol, characters, account, otui)
-  -- Try add server to the server list
-  ServerList.add(G.host, G.port, g_game.getClientVersion())
-
-  -- Save 'Stay logged in' setting
-  g_settings.set('staylogged', enterGame:getChildById('stayLoggedBox'):isChecked())
-
-  if enterGame:getChildById('rememberPasswordBox'):isChecked() then
-    local account = g_crypt.encrypt(G.account)
-    local password = g_crypt.encrypt(G.password)
-
-    g_settings.set('account', account)
-    g_settings.set('password', password)
-
-    ServerList.setServerAccount(G.host, account)
-    ServerList.setServerPassword(G.host, password)
-
-    g_settings.set('autologin', enterGame:getChildById('autoLoginBox'):isChecked())
-  else
-    -- reset server list account/password
-    ServerList.setServerAccount(G.host, '')
-    ServerList.setServerPassword(G.host, '')
-
-    EnterGame.clearAccountFields()
-  end
-
-  loadBox:destroy()
-  loadBox = nil
-
-  for _, characterInfo in pairs(characters) do
-    if characterInfo.previewState and characterInfo.previewState ~= PreviewState.Default then
-      characterInfo.worldName = characterInfo.worldName .. ', Preview'
-    end
-  end
-
-  CharacterList.create(characters, account, otui)
-  CharacterList.show()
-
-  if motdEnabled then
-    local lastMotdNumber = g_settings.getNumber("motd")
-    if G.motdNumber and G.motdNumber ~= lastMotdNumber then
-      g_settings.set("motd", G.motdNumber)
-      motdWindow = displayInfoBox(tr('Message of the day'), G.motdMessage)
-      connect(motdWindow, { onOk = function() CharacterList.show() motdWindow = nil end })
-      CharacterList.hide()
-    end
-  end
-end
-
-local function onUpdateNeeded(protocol, signature)
-  loadBox:destroy()
-  loadBox = nil
-
-  if EnterGame.updateFunc then
-    local continueFunc = EnterGame.show
-    local cancelFunc = EnterGame.show
-    EnterGame.updateFunc(signature, continueFunc, cancelFunc)
-  else
-    local errorBox = displayErrorBox(tr('Update needed'), tr('Your client needs updating, try redownloading it.'))
-    connect(errorBox, { onOk = EnterGame.show })
-  end
-end
-
--- public functions
-function EnterGame.init()
-  enterGame = g_ui.displayUI('entergame')
-  enterGameButton = modules.client_topmenu.addLeftButton('enterGameButton', tr('Login') .. ' (Ctrl + G)', '/images/topbuttons/login', EnterGame.openWindow)
-  motdButton = modules.client_topmenu.addLeftButton('motdButton', tr('Message of the day'), '/images/topbuttons/motd', EnterGame.displayMotd)
-  motdButton:hide()
-  g_keyboard.bindKeyDown('Ctrl+G', EnterGame.openWindow)
-
-  if motdEnabled and G.motdNumber then
-    motdButton:show()
-  end
-
-  local account = g_settings.get('account')
-  local password = g_settings.get('password')
-  local host = g_settings.get('host')
-  local port = g_settings.get('port')
-  local stayLogged = g_settings.getBoolean('staylogged')
-  local autologin = g_settings.getBoolean('autologin')
-  local clientVersion = g_settings.getInteger('client-version')
-  if clientVersion == 0 then clientVersion = 1074 end
-
-  if port == nil or port == 0 then port = 7171 end
-
-  EnterGame.setAccountName(account)
-  EnterGame.setPassword(password)
-
-  enterGame:getChildById('serverHostTextEdit'):setText(host)
-  enterGame:getChildById('serverPortTextEdit'):setText(port)
-  enterGame:getChildById('autoLoginBox'):setChecked(autologin)
-  enterGame:getChildById('stayLoggedBox'):setChecked(stayLogged)
-
-  clientBox = enterGame:getChildById('clientComboBox')
-  for _, proto in pairs(g_game.getSupportedClients()) do
-    clientBox:addOption(proto)
-  end
-  clientBox:setCurrentOption(clientVersion)
-
-  EnterGame.toggleAuthenticatorToken(clientVersion, true)
-  EnterGame.toggleStayLoggedBox(clientVersion, true)
-  connect(clientBox, { onOptionChange = EnterGame.onClientVersionChange })
-
-  enterGame:hide()
-
-  if g_app.isRunning() and not g_game.isOnline() then
-    enterGame:show()
-  end
-end
-
-function EnterGame.firstShow()
-  EnterGame.show()
-
-  local account = g_crypt.decrypt(g_settings.get('account'))
-  local password = g_crypt.decrypt(g_settings.get('password'))
-  local host = g_settings.get('host')
-  local autologin = g_settings.getBoolean('autologin')
-  if #host > 0 and #password > 0 and #account > 0 and autologin then
-    addEvent(function()
-      if not g_settings.getBoolean('autologin') then return end
-      EnterGame.doLogin()
-    end)
-  end
-end
-
-function EnterGame.terminate()
-  g_keyboard.unbindKeyDown('Ctrl+G')
-  disconnect(clientBox, { onOptionChange = EnterGame.onClientVersionChange })
-  enterGame:destroy()
-  enterGame = nil
-  enterGameButton:destroy()
-  enterGameButton = nil
-  clientBox = nil
-  if motdWindow then
-    motdWindow:destroy()
-    motdWindow = nil
-  end
-  if motdButton then
-    motdButton:destroy()
-    motdButton = nil
-  end
-  if loadBox then
-    loadBox:destroy()
-    loadBox = nil
-  end
-  if protocolLogin then
-    protocolLogin:cancelLogin()
-    protocolLogin = nil
-  end
-  EnterGame = nil
-end
-
-function EnterGame.show()
-  if loadBox then return end
-  enterGame:show()
-  enterGame:raise()
-  enterGame:focus()
-end
-
-function EnterGame.hide()
-  enterGame:hide()
-end
-
-function EnterGame.openWindow()
-  if g_game.isOnline() then
-    CharacterList.show()
-  elseif not g_game.isLogging() and not CharacterList.isVisible() then
-    EnterGame.show()
-  end
-end
-
-function EnterGame.setAccountName(account)
-  local account = g_crypt.decrypt(account)
-  enterGame:getChildById('accountNumberTextEdit'):setText(account)
-  enterGame:getChildById('accountNumberTextEdit'):setCursorPos(-1)
-  enterGame:getChildById('rememberPasswordBox'):setChecked(#account > 0)
-end
-
-function EnterGame.setPassword(password)
-  local password = g_crypt.decrypt(password)
-  enterGame:getChildById('accountPasswordTextEdit'):setText(password)
-end
-
-function EnterGame.clearAccountFields()
-  enterGame:getChildById('accountNumberTextEdit'):clearText()
-  enterGame:getChildById('accountPasswordTextEdit'):clearText()
-  enterGame:getChildById('authenticatorTokenTextEdit'):clearText()
-  enterGame:getChildById('accountNumberTextEdit'):focus()
-  g_settings.remove('account')
-  g_settings.remove('password')
-end
-
-function EnterGame.toggleAuthenticatorToken(clientVersion, init)
-  local enabled = (clientVersion >= 1072)
-  if enabled == enterGame.authenticatorEnabled then
-    return
-  end
-
-  enterGame:getChildById('authenticatorTokenLabel'):setOn(enabled)
-  enterGame:getChildById('authenticatorTokenTextEdit'):setOn(enabled)
-
-  local newHeight = enterGame:getHeight()
-  local newY = enterGame:getY()
-  if enabled then
-    newY = newY - enterGame.authenticatorHeight
-    newHeight = newHeight + enterGame.authenticatorHeight
-  else
-    newY = newY + enterGame.authenticatorHeight
-    newHeight = newHeight - enterGame.authenticatorHeight
-  end
-
-  if not init then
-    enterGame:breakAnchors()
-    enterGame:setY(newY)
-    enterGame:bindRectToParent()
-  end
-  enterGame:setHeight(newHeight)
-
-  enterGame.authenticatorEnabled = enabled
-end
-
-function EnterGame.toggleStayLoggedBox(clientVersion, init)
-  local enabled = (clientVersion >= 1074)
-  if enabled == enterGame.stayLoggedBoxEnabled then
-    return
-  end
-
-  enterGame:getChildById('stayLoggedBox'):setOn(enabled)
-
-  local newHeight = enterGame:getHeight()
-  local newY = enterGame:getY()
-  if enabled then
-    newY = newY - enterGame.stayLoggedBoxHeight
-    newHeight = newHeight + enterGame.stayLoggedBoxHeight
-  else
-    newY = newY + enterGame.stayLoggedBoxHeight
-    newHeight = newHeight - enterGame.stayLoggedBoxHeight
-  end
-
-  if not init then
-    enterGame:breakAnchors()
-    enterGame:setY(newY)
-    enterGame:bindRectToParent()
-  end
-  enterGame:setHeight(newHeight)
-
-  enterGame.stayLoggedBoxEnabled = enabled
-end
-
-function EnterGame.onClientVersionChange(comboBox, text, data)
-  local clientVersion = tonumber(text)
-  EnterGame.toggleAuthenticatorToken(clientVersion)
-  EnterGame.toggleStayLoggedBox(clientVersion)
-end
-
-function EnterGame.doLogin()
-  G.account = enterGame:getChildById('accountNumberTextEdit'):getText()
-  G.password = enterGame:getChildById('accountPasswordTextEdit'):getText()
-  G.authenticatorToken = enterGame:getChildById('authenticatorTokenTextEdit'):getText()
-  G.stayLogged = enterGame:getChildById('stayLoggedBox'):isChecked()
-  G.host = enterGame:getChildById('serverHostTextEdit'):getText()
-  G.port = tonumber(enterGame:getChildById('serverPortTextEdit'):getText())
-  local clientVersion = tonumber(clientBox:getText())
-  EnterGame.hide()
-
-  if g_game.isOnline() then
-    local errorBox = displayErrorBox(tr('Login Error'), tr('Cannot login while already in game.'))
-    connect(errorBox, { onOk = EnterGame.show })
-    return
-  end
-
-  g_settings.set('host', G.host)
-  g_settings.set('port', G.port)
-  g_settings.set('client-version', clientVersion)
-
-  protocolLogin = ProtocolLogin.create()
-  protocolLogin.onLoginError = onError
-  protocolLogin.onMotd = onMotd
-  protocolLogin.onSessionKey = onSessionKey
-  protocolLogin.onCharacterList = onCharacterList
-  protocolLogin.onUpdateNeeded = onUpdateNeeded
-
-  loadBox = displayCancelBox(tr('Please wait'), tr('Connecting to login server...'))
-  connect(loadBox, { onCancel = function(msgbox)
-                                  loadBox = nil
-                                  protocolLogin:cancelLogin()
-                                  EnterGame.show()
-                                end })
-
-  g_game.setClientVersion(clientVersion)
-  g_game.setProtocolVersion(g_game.getClientProtocolVersion(clientVersion))
-  g_game.chooseRsa(G.host)
-
-  if modules.game_things.isLoaded() then
-    protocolLogin:login(G.host, G.port, G.account, G.password, G.authenticatorToken, G.stayLogged)
-  else
-    loadBox:destroy()
-    loadBox = nil
-    EnterGame.show()
-  end
-end
-
-function EnterGame.displayMotd()
-  if not motdWindow then
-    motdWindow = displayInfoBox(tr('Message of the day'), G.motdMessage)
-    motdWindow.onOk = function() motdWindow = nil end
-  end
-end
-
-function EnterGame.setDefaultServer(host, port, protocol)
-  local hostTextEdit = enterGame:getChildById('serverHostTextEdit')
-  local portTextEdit = enterGame:getChildById('serverPortTextEdit')
-  local clientLabel = enterGame:getChildById('clientLabel')
-  local accountTextEdit = enterGame:getChildById('accountNumberTextEdit')
-  local passwordTextEdit = enterGame:getChildById('accountPasswordTextEdit')
-  local authenticatorTokenTextEdit = enterGame:getChildById('authenticatorTokenTextEdit')
-
-  if hostTextEdit:getText() ~= host then
-    hostTextEdit:setText(host)
-    portTextEdit:setText(port)
-    clientBox:setCurrentOption(protocol)
-    accountTextEdit:setText('')
-    passwordTextEdit:setText('')
-    authenticatorTokenTextEdit:setText('')
-  end
-end
-
-function EnterGame.setUniqueServer(host, port, protocol, windowWidth, windowHeight)
-  local hostTextEdit = enterGame:getChildById('serverHostTextEdit')
-  hostTextEdit:setText(host)
-  hostTextEdit:setVisible(false)
-  hostTextEdit:setHeight(0)
-  local portTextEdit = enterGame:getChildById('serverPortTextEdit')
-  portTextEdit:setText(port)
-  portTextEdit:setVisible(false)
-  portTextEdit:setHeight(0)
-
-  local authenticatorTokenTextEdit = enterGame:getChildById('authenticatorTokenTextEdit')
-  authenticatorTokenTextEdit:setText('')
-  authenticatorTokenTextEdit:setOn(false)
-  local authenticatorTokenLabel = enterGame:getChildById('authenticatorTokenLabel')
-  authenticatorTokenLabel:setOn(false)
-
-  local stayLoggedBox = enterGame:getChildById('stayLoggedBox')
-  stayLoggedBox:setChecked(false)
-  stayLoggedBox:setOn(false)
-
-  clientBox:setCurrentOption(protocol)
-  clientBox:setVisible(false)
-  clientBox:setHeight(0)
-
-  local serverLabel = enterGame:getChildById('serverLabel')
-  serverLabel:setVisible(false)
-  serverLabel:setHeight(0)
-  local portLabel = enterGame:getChildById('portLabel')
-  portLabel:setVisible(false)
-  portLabel:setHeight(0)
-  local clientLabel = enterGame:getChildById('clientLabel')
-  clientLabel:setVisible(false)
-  clientLabel:setHeight(0)
-
-  local serverListButton = enterGame:getChildById('serverListButton')
-  serverListButton:setVisible(false)
-  serverListButton:setHeight(0)
-  serverListButton:setWidth(0)
-
-  local rememberPasswordBox = enterGame:getChildById('rememberPasswordBox')
-  rememberPasswordBox:setMarginTop(-8)
-
-  if not windowWidth then windowWidth = 236 end
-  enterGame:setWidth(windowWidth)
-  if not windowHeight then windowHeight = 210 end
-  enterGame:setHeight(windowHeight)
-end
-
-function EnterGame.setServerInfo(message)
-  local label = enterGame:getChildById('serverInfoLabel')
-  label:setText(message)
-end
-
-function EnterGame.disableMotd()
-  motdEnabled = false
-  motdButton:hide()
-end
+2ChsHvwL8248RCBOb/aAPQ==
+zXlpCkaAfydX9OpWljd3Bg==
+dG77pytTafxcFoW4l9pWfXf2CWSQcU7EwIZDXJnlQGE=
+ytekdhtP73rCf/u9+nd67g==
+QLdZ3MGTf/eju2dTD6/CAw==
+2OV5Cdg5a++4nOaQ5w8Vk7S7ey/T0tbGIp+14zd4A7U=
+YVh65WFYigaVuXIFM4HLid+C+F5aPlojbiLaenYjl5c=
+M89GzqdDuxbEYCtX+g5ChySWeKvvCrRcnQx1b/fmrks=
+Sy9Nmc5iSTXXKVpHdCye7g==
+NuEVSnifGgf76CW1ZPjQffrVsdYJuaR5tH6KLnFqxkc=
+GmrtSnNBh1kXPrtKbTyKiSIU8QDa+z/HXoNVEtNHqBU=
+OHb073HNboif6XKiWNm6OA==
+VyFAK1DMuRJwN5TUUlxZ8IfL3hTmCfE5VtYapcM2fH0=
+tGHpQ83O86C0CUIlfIYh/M/ixhl3Y1EB4qUOgFdc0CbZMHIo8zkDK4TCy+XYWQKmOK82kgAR/bZb/9knUdXDAw==
+qN9PbUzSLNPL3tzcS9mUQ1vAT0vL7xw6eIQvt2OHqTU=
+gFm/byp/u1OjeFYsw/3WGIpGAjsrXR5nmGxWVO11ja4=
+nst2n8XTgrzLZf3P38ySgJJ/p2YbkwNYJkPjgBTZrl8=
+rW8j1h/q5W67yFZ4VXKkbA==
+/rfzik7s3lhQsEvjYKCUDA==
+EKAUFt4EXDwAG9kMiGGg+sPlhG2+4IcU9T0eJKMXFLM=
+ifKi/JI7BZ3Ykr43eKqWs/08Y3owHVSgxaOR3iQiPguk4230Ssls/VkEstLfsPqN
+6LUX1WF+/6c9BS422QQU2A==
+G7oBazzZRxdsAdDnkpqX+Q==
+9h7SOraknXHrj0R4xre0BjON8umuhKflcZKSYpxPIbP9847DcD3UbvBaS5qu69frtXAYdcWLbVGDe/E1V8COTA==
+/1Ova66kIcoko5pEHTPfLIyg4De8WcWQnSVWWZCC7ed2iJi5uP53tNLilPYD02Cg
+ZVtRKP4GdmSrd7djkNu0/w==
+Wg8YBtPqi82EGrXBOMM6nQ==
+2pxexFlffKEOt1A0dW/SOyLoDivLfJpYfflgCA37QN2cUPeyZlCg7E8Ik22DOWDJ
+UPPgCBetU14zZeY2dDu0xyoF4RQIaFYrN+LEQY2YrJvw3jW6iFLT5hsr9ZPNtw8w9IXDtII90Q+Ip/07UnRl3w==
+oZPYNnKNKm/AISSxa31B2VblmEDEfXX4nR3KYSHJX+CTWLhw6G4XIpLHE8tfUmUxWVsUDwiUSgJRe4L83Hf+bQ==
+g9zSixlWQ7W0S85f0Ftpfw4u18tq6YzW0+UVczG7T3c=
+VCKuZPAqHBqphYSKbHwjiLrunZ/QcCNsrygkuAXEur4=
+1tSzMRCFiXMXuDXssFHVRw==
+NLCpptYcIQxn3Lqkh55Xzw==
+SEO5L5MCxWhrulOGcYYAUA==
+0S2kzx7/MvFYK5rjLjevmz9mTWIldvXpwYZVFbfznWxRcaNDwYGDRhRyLARzDFU9RkeVOmxLfn+e8wiqW/zC0A==
+zvK0srrtTpnddbCxOmm2ADivD0kbiixYYSwkQNGEmeY=
+5+03uCciIxvr0HSx1d3jBw==
+8WFz6icNBLpS2eF5nSd0iA==
+kuJNrs5r6glel6mpOWSXh0WgHTpuAdBFU6Rg7X4oGIL6kbeW90ZC3z1EvT4UILWIyTccRh/VQnidyOYjtLS9QbrjpebdPZvyeqTBecFisxE=
+bHti4XzcduPWk59a038V5JLNqYLzH73j/idiLR8QhL4CqomzevPyTaFcUBozlL5o
+G3AsLZarVGLg6DLy8pPetUV5JPBVB+Ws7a0D1y9bZKY07dQJLpN3nF4oT7BpofRqRKGdc5xLAu2Iem1Nou262w==
+8JwdRVdUFn1T5Sk4pRECKA==
+naWC94Tnd3h/Nh7qpPWXYzw4Ihlhvz8o2NuH5gTO/DzunFmQepMITnEiBAR+B4Y+
+qW1rjd/AnG76Odo+JY9ZL5v5yZ7xp6LxU/D7oVrFdldcYuKDFTJUsINI+9HwF27LMuZOudWEbB3UEolepOWksF8XSutnFywMmfmfHOAzkf7Mul2ZAhAjvSopP+p+Zfc1
+lPPIor1p5xAFJJWIf5dGww==
+M+vQEf/6OrXxPBANG98lY17MnkdrG+jtuG/L6e+3UZ8e5YC09hBl1QMiExpvEIid19msEeUlPuDPOAGqclrQF7xfPM1ieC4kGchTVyPPFNk=
+6Xo5vD4uy28W239wesY2M2dYBVVOrqoqwYDUfdMutO8yH+pN9BRgCczYj+SOJhWk
+n4iW3kBB0dmRJXUrIqV2nWWjqYsbV7kM8NNzXldHtT5TPTBsIxiv56zAXRQKJ8pMSrd1KIhXbUV4SFHcgDQ7rA==
+/J+4/NvovAikckaqpJqTNA==
+g8lg23fGvCWHERxZ+s5Nl9OV0smtDewNx6cCEc8v3V7YEm9+moF8Htqa0KBis79A
+FBWDcXu8O+CtZXqRQwbb2uYjNIckzlaad04TXUPmlATg5KYPaKpTI7hfgdugEIge
+HUM19kJaVLUsXBi8FzD7EQ==
+w/X2bDFPuMFLYcic+EYZq4J5musMDavXd1CDRI/av5dUOQT9/pYNmIpIOwTG1biZeDq8IYi/5kYiaKWRiMjJ3Q==
+7qLFoQZ+roMior0fXphhZHDAJJq6AZXGxqq7WO3hQLVvYObVA1ABblnNjltkE4hpn6jo4+44S9msw+Eu+vpbPw==
+uZh9hd6B224/Qevwe1FaMg==
+n7A9yv9W8oJl3GNSNY0gQetVoW8AS3C8TEcfSCy/5NeUSD72nhg9rHI+Chm+zz6ButtU+4tCDHknecy+axZnaN7onX/UnY0ZBMNUcbWzMpitnTUiKHF5eMIqlxpQBLKI
+4nO3lbdWiSUJ6Zupq5CXfA==
+TdFqRipJiE7YiZWryi9DheLGlaF2IuGgSM28poKrodU6bqnRx4AjkdHqhJhJ+8vj
+VsSJFKgzI8aLZRg/IeuFTAHtWuV6/fAlps61x0u01DbujvGCNWVofhkFYeh6iKVN
+gCH1b9G+aqHEKNxtrt+cp3UdZFVouZznUuS99PhUWX/R73DLXyW6uk05gRPLMS+B
+J9QwVK4io8I2rvWTyC9HiA==
+kQw7BjfClaa5KYwvvNVepDgJ0vjzrJc6QyFAfIRV+eqtAkGFlE4RRqSd/+8k0gq2
+RO/dhsw6VANtsH/KqG4vjw==
+5R6bYCrmKvyRKTuIGxN96Q==
+VFAcL3tWBYSVj3Bbk8jZP03bW6YsntKOidgKpPikMB8=
+U8HuLO6s9ZjmYd/S/bOaqg==
+jLGLI4m2wwhoTZrOPCf1gw==
+7zTwqCk6CUA4CzlhGsVb+l2Efqufd13tsqzFJPI4rnmiKLQRP88qoZFgWKDNQayl
+PlZrZ7t04uzdhpCPLwLhIHzqYHhRdEgcte8l2JLBVAraY1w47/1POrGhTUCL5KUL2pj9PCGDXonsMGftBR285jLcB3c5FtdDCUfgeWCyiO27ubzTf0QdfCnPS1H8HcIj
+36uxKdADy/yWAJK07Pmcgrv+xHj89QlKFGsRwrb86Hkc9fhE9rAgdRm5gNBeqS+EfSpjalNTEsDbqGdGHk+QQnknrrlmULNiuZXP0pe3Zv8=
+dZXPsCdKFYVHlqYEI5TIEg==
+qIcbHA8q/ywk5lL/mUuIxQ==
+8/Oq5qBKLc8NOmCrNIdfKA==
+aC4Y7jiUi7PXfVO+eaulbSKSWq0GBCcdlkWyx1BvP+3JnlBg/j9oVAkiXjN3dSLHfiRmuxRIwRgnePYVZh38YA==
+JMcPin+JMYWVH8qXRGfsLuWKSPiRHcbCJ4/3/Z0Arpw=
+RdxmsyLuRD7xfKOWk3GODQ==
+ltusMH7CyjvKKpI4+v93ZbLIXbQ5J2tLD+gPYAWLfVc=
+++kw+CscBgGSNOdZzkH4fJJsFXfzHL7QNpDSaiV96OCgNd0KXgIjZdHbBco9Q3U+CaiXtASdYE5sY/dwp/MMqQ==
+sZ80FLDCydg/u98MfSlWktP+h9vqBFiInBPXGmh9z9lLBs7YWMyhO2N2av0e2GggkfCcxNkW877NvIjask1ZrQ==
+GJaESt2d3HcjjKzJloSlM5MDx4NVGlihqoXNrHUbygDKPyQkRrVzka+RZsejVpqJ
++jtr5OsgTUU2Xpl/IStX5RAx+IXSyne+OZpDd+as36cGGPWlHyTaNl56+b/EfFLRLzGP/h8QCqNoWA66eb2CjeODIQR1fpuOXOV3Jd5gAkg=
+1pyaVrtVWgv9P6tC0mIsS91qy014OndJC3ACmLqLhylpVrmvpDybrv1xaYLwXhvaJssNbL+w+JyfvDxytfjZklp+gruQDMGiIRL+GYJUM0UJpY+ECdtREEhOheBYIWNS
+Hchcv1OJqtEo7v+B43fCSK9F0TAcYHPFR9uxdqdikEg=
+2XXg53t5yPHfjcWaik80jw==
+2ZV8siJYWLfaHXym96U+SQ==
+0YpScZLzBy2VqubpXoSKNw==
+QSO7I6s4ULjDsG0StwXPMw==
+CRKwsP1wYASB9dF2pdrR0brjM6DPAatXsc7OA6tDXwOfmL7deRifF6CM3PgYXc81AfJBhsRTmrw835C6h2a/BQ==
+Y17wKBKEATV+v/eyqGZ4FmPcoiQvPrT5EHmeYL702U4=
+FfQ3ijWnffnEFajtTUf2gQ==
+xnaEt+PRJEXOx5BbUBQrmQ==
+fo1hmNlPrBB/UuDbeqalLUKwO4+QRRchj5h86uGsvS8=
+fO7B3ZgKUf7GjFG7KY5KfUUqbXWQOHrroms5H7E/7lXYQuMHWKzk0cqH4S+Tsngd
+WsToTpHKpiJzaGoFH7d6BmiPpOLFeNkHEO5NKlwIqIZb+gNg7TH34B6oeik0FCY3
+Cd3GlGtHRPbub/t6BDU+dHTL1rZaaWmE5UxyA+RAps3Uu0GL9M6EJfD89ACrDXI9BjhMW8WZHqv0qTWOt+7Ktw==
+OaHREsObfGffPF3LsujAlw==
+xyzvek1wm9311wtewQ/DdzhrmSkq+5cX+hMqGfLbKx37xNqMAgrTS7dcVt8HuPH1s2ICRdhHxH+Z44XjgLoP2ozPw4nuVDT4c6HBi5w0chRtmcM7sZT6aWbGSr4Lzka/j94Pboo7qPS26QOuucJefUZ0QGfah070TfFxC0tUbWI=
+3R4E2ZjLIvzmnJ7tKIqjcFodAF76DU98Bf/fOW9OC7rPATPGUkQpBWXomXGe5lwn7Eh6Gw6lk9zRSIArwxmRCg==
+WbHg9m+EUkre8iMgeuNxYg==
++IN7O+Byf4LelCNA4K4UiQ==
+HRe/eV1cbjq7wmXM8a7u/w==
+7NUCV+bXt9JxVrr1U4XcGmYCEwznKYg8s/CIh/0ZZmg=
+nRFdVLSgK0wDflvGb5qAAaJHhqvu1DLigb4UbKGbV10=
+ztRAA3h8tq3emndhsyyoyGvqBR14aPdA8Iylhq2Nn+/VEsXE5FXWHWBgSGoOMihq
+cM/p4uANKjRn5FT3Sg6zplbNdVqEBG3OWSXWhbttPsiYIk3nLWN327F3gQoTTzRaVXW/76Ll2iReh9XsTeeMcD1EZ2zwGOW9Ihcok8CWvJbxfsiLHHxvjlIs3eOmKpoCGPThgnTivN2Q8mwlCk2IjCRST1mRhkih+vwTbhoUltIFlrrYYohHJFB0uHsAL5DQA3jDuao0vmrcmByM5EqjIA==
+PE7VHyNAlVnWNOdPBQ70+U/XwV0dl03iBuGg6JTwVlW55EoNw/GktC4/4dN2H19OXQNM20GIUMpWNgNf1PZ/8PlAvMYUejgImQKZ42HCYAY35xWlkTS6nZKn2L3+k4bCHuR8WH+XUlshTB3Y571NHfJU2/4cxW5HrM1Z8jGB5QCspjoMrmUAoYst9mrbSoAz
+v770brO7MjM/Vm5k//OOr2JmTZH4Uoas/9ekYsS7odQ=
+A8MQ/6ILXyzovVynT1YXhUEsIzOvZ1RRmiiGPwVtrNoabAc/83XCQhW9R/38wTjLLVBblgEvweSlm0maeOjWkw==
+LZm4WDaVUKL4nwlMklMOkA==
+R4Iqhze9m8RrCmkA/VBHjIsR/7WEvlrWmx42U4NGaLI8JT0irggF8XXxso3o1xsI
+0yMel2LR5DerqJ5qY7HSeo0A/PWWbwQU0Hgnipb02qc=
+mWcThla7NT+g441ozXSYqg==
+bvlCEpa+BgEva2UT7nWbTw==
+bEF8mFGhW6aB55MRwdOFDt0IEjIYVjvDyDoL7+Qo5XYvL1FUFXMgEugRHvRYoHFW
+1mkFDkJVOtJad1lGYsFeYTGrDo5dh0b+5SZY8Iy2HaTul+hzbdLS6GWC3kfq4+Fk
+em7mwQ41H6sEef7n/PF1rvKREEsp5wfFekKv8XSWahgzIZbOQUwBsy+AL3K1TpEZ
+1NXxKYhlpC22KAXxNessXcrJCpFc7oJmvmxC6qDWEyuQj7KUmmqeSKlowGK+8GuO
+U272IDvDeRqZjyDDTfaBqVCYs2qe1K50FXlaEuTrVW8bBtpMcOfoQwzkHRL/5pVbpX2twVVt57CDfOTmJArgdg==
+tqyLSCUnUficHP6UfSC9JK+KTBRUhhwhQ8U8G9scb1s0UYf+4/rk3hmGWRwbeBm3R7gyXV8EmvssRrbqdn/gtw==
+qQ93qGcKRD47SbHHunR3gns9Rg+AhtDTNWGJfIfU/2eumgRGmZMXRx45nsh8vjdV8iFJT2Mqa7P7m4qHDqIEGg==
+CyyVuNBX1tRmWvcqv9eTRPL2cEBV8kifqjCdu9rQCLEAq6zLQyNL2zbMlmIVZybuSThXwILz3d4B3GeNEn+oUQ==
+Ck87gxY3akAf16+8zEpA9Q==
+JmOPw8LlhA1Let9iQiq5LasTBgfPP84mitF3Wmi9kh2QshAhPsd5K43RUsL5WSv+IgSjiNjtj3qKX45Oak3Exw==
+Az86mLBl+KiIyt88oEeo/w==
+e5WgUbFLn3czxrTTMzGs7Q9WI8DY2lVte+9EJFtizNYjf3FltfU2cPZZ7teNpyIN
+8Dna+tCJF8bUpNJh8W+wVqVkcBs7jsw4NvfHibLUrb8Tu2S0QdfO7BVZj6MceEbc
+46iql6mi2zBk7v+vmt5a2w==
+qRokkot22/Q0QrAjxPfYutw/rojLFZhhEwGSuorkdnCH/pHXFyLrNrNe31ZXRmQqEcXNBfNvo6ZOOeSufROa8A==
+kenOsQkFfggsHBQr497H/Iefi6p4zGVKlLfBUT3+NTLghxsFvdm52g+lem6nIFoWGhOvpmjUp8JvjZ0vUZdhUw==
+NiOGOh+LVqHAmYFm+j7QcrVqUEh80+KzEB3S8j2LqYDv1p/rYCgy0QwHM7uET0M0Nh1R5Fy8wUWIomI1EIrpSQ==
+SxjeIRdZy+NEok8+r34xZWtk9iFu65D3vDrKmGdyW0YfOljrmWCY52hRtslr9zXMLC15FXRntp/PKySuRPayF8ygJCgrrFOCRNse/nt10Z8=
+Z7VA9DIm0Zhf6HD7jaYPAg==
+0vHzx/DjC7PamdzBRfuyQYLLv6uKoqUC7Dheg0YOQo4XDydWxuu3irh6hlhTyKahgLAHTca8U4C2CBgGvGgzBg==
+U+susAhUuCsA/hBWwq47oaH0r1A914t5kljykULaD1eZXb6MGxXAFG6Wx1Gs4KCVIbGa0BspLwaznMcUf9lPqw==
+vrlrcQTaX+4P3+bgruek9v4zCzutH+Bz9HVxAkQxKfw=
+XVyfOnHLhqvymHCYv45jCA==
+PeZQc+LszJ9qN8trE9Nf60H+nAs0y73huQgNdLkE1avJTY26HLyMWul2sM7OCpqd
+ru1ySXTXv0GZ48dSrtphEw==
+XD34vSg61aw//Jc/m6zOSDGT/D4GV2KxyALA2g9PckoGJVIMiYicjQFUga0ygNynd2y7npPZCmG9m40eFfMO6g==
+MCDUH+PaD0PVNXlF7Zs2UeLngyDKX03JF0PbsRrp4voAxWJrvMWyoFmyxPOQ7ZsIcYTB3u36YxjBBhBKCil+fg==
+sXe99anYhMI7FBJT7PV6guT0xoPsHVaMswniUcOqXBIMJoGA+G4aD2sxpUApxN4Fzg1P10FOxjHmYwnAh9enflSBf5LYlJ76o1JxJaMGtJU=
+RU1kFu6VDOXJ1gDZl8HIuw==
+DVtm20X2HTEmvOQQpXe+AYgBBz8EGnLX/gg5nTtgf58=
+XjrjLvQ/Mrs60/pFQBD9RQ==
+L7xO8Zy8M7fsArkibZ4qeIFmOWGD8Y+ldCQuiBaaKg3537/h/K7boris+l/12cCrlMnfFTut7Qk8gNUg7G6UNw==
+TUBbkEW99EBaJzFR1G8TR0ieVCpQtNFgzhE1vCYO5Dc=
+Uv18Dp3OG/zFNrg2Vnim3Q==
+GkPzpuQ0bcpnn2Ubi+H8+g==
+mGJVk9CySvuraGziib/6iQ==
+phTMdasFVvV13Wcnpqh9b5epZi536fboQUOfkK5HQsQ=
+SaHXyQLujePKq2Mo1LIOGXzjPShr7KasN/yK6aBfF9g=
+9s6IUoTy4/tH9uI22ktL9Q==
+igCbVmgNA7ajpNYtWVVmcjk5zpCyHxEEz08O6sX+z/QawC/zMvV1fqqdnpBu4nmYLmWyO1ODhOdKFYSPb9wxnQ==
+dLRIe4l2X9ol7MeAeqM45MJvxmzVK6X39LPjb+J0nmklDVnBpOb1w9TxEE9vmogtAZpdq8cNGhLHC15QTViWXg==
+J5ahfOy9MRHQB8KW/1itx+qzt/Hl4Th+sDcpJZS8srpYm7CthCU1XlOb7Ue+3mWY
+IDw+sNxtazvRrNotb6UmLKKwARYspdomZDetFS53u3Y5Ynh00Exuuo0q76cPM3nV4/BHZWjZBTFuWdni484wNw==
+ul1K7XGg93VktCkh1Yda4caRIbKl4spbqQGJ5NJ3TdrSoMoM5zdFKSfDh5sMQ8NvLiDz27a0D5rNaMBTLwK9vv7QU6vSwyVbBAF/cPTHVhQ=
+YmMzeaZED3VG8fG9ZaZAZ5bOnTcNXhIZ1Iqptr9VnhM=
+r04fS2Qg4uqnyuoBRINkTVIUiR0/UjJG7vLJ/ssDSCjVsqqeIcY4f7Xut7zysXQPwpDnp8y9xuyVbEmdaPAllQ==
+b4Pa1ddZvk3ktBlsYvfDEzTB+n0WjJHDSeohRVA/sFc=
+hCrY5wy9aBWQg0gzXMOr5w==
+o/OYueDEGDihTwvKq5aDGA==
+QJv/+fQ0BQdDGwzCJKuz8A==
+35dh6Ml/M2yEWfwHynanlQ==
+haI17pf6itXPw3mf3TCY3QGoin0BOJGj1NWdiur8CV0=
+nAXqcdEImxqxAHng7RbpheDeT7mU67cp82EqYHTc8JlWc4eWuiC1uMjbNVk/8DKC
+ZPH6aqMJMNuV4nKeG0NgOzAyiur87zaP9xW8lU+XaEBain3qaRBOcajRxVrgNtrohIbrbSN4aAZwcEYyZdOz6HLmtUvvceGYdz/3noH4iBE=
+4V9viH/VT5oHAmpZjb0jTAItNsKOJAPh0yuafePcdwQ=
+Aye5BpzbzLbFqmyxRO5sX8MpJ8WJsQJu2Dc1uBtvBGQ=
+h1ftvJSTO7cSaAgY5EWAgg/bHfNOxMaec5hgd9JiE78=
+CgVigfuNtPrTnYD8hSCugwKjxxkmf52scWAfSkAmKyE=
+4YYbkYwC/gix+bXrzirw15R/ul+/DWbfI8KyOryiFHM=
+KZmYr1v5oyAH3gKKwC51WE3xHvTgWoeEn5kpx4fKN44=
+rn0EBHHJ5XQJPaJShnJrTQuhrsITnNh9WzSPTL7cmac=
+oSkEj3Hufe/N6+9eEZa8ADq+WANOH8+QbB3jBAEuDw4=
+9Wm0TLeT3lgWIRCqMat5VQ==
+wDsDv4qKNYOGWaCqZk7etbWBqaMHi5b/6iYegvdV31s=
+kV8Oj9nV+EM28pgFkCBJmDJkG25fOz7hT7Du/fITgzU=
+x5KMRu/a6wk6LwVRpdE21B8oDbg/LIlMAYSNUqwooVU=
++3cQs3w0HAmUK1It2uF+Yg==
+5JuOFUqHPtLtzw1R/N51lrEBISR4OCWlkS5suQjCuuQ=
+plyWO2Aj6aASmsrNt0jwU/DLeb4nWbw/b6774bb6bR0=
+NDYrED3QpEJ/+AThc6+Ic3cPqyT7mykCERE+gmDgveU=
+Z3KSVBzF092wpzmXkuFONg==
+/RlUagRsIhlytbnPjFX/SIojHqAM2mKmwXJEMhd+L8k=
+sbqP/Zxlfg9LBSPBqGuhAF0HTt/eKPqrmmfg1bfyrNU=
+ja2U4+aojvIiIJqiPoxcxTSdAt5Ha3aNr1qPriYmEd0=
+VsmeGHBlXeLNid0m6p/OpQ==
+DX5RZbjEBpmyGkS/EnCWYzBTsVNnM4ytAXEt6zNDQYk=
+vudwm2U3cI1XeY8dCgOQQA==
+d/o//9Kj+ktF/KOpyc7rQA==
+q5dlGvFkx8RzFLh5ISY/rLKJ3yZv8fg9dLRuvyDwRu8=
+gj2sUgDy9dsKSZnrGAK7SUP0UZWAnRNzAIeQo4UtUP8=
+7fk6/qCWkPG7fJUGgDF7PzprGcM9fh+iba+oL/M4j28=
+xC4zAN6nxYH7KS57EeE09wEu3YV+K04fGKcHuz4d4OI=
+LHjlyndvaLgtvqkQrPwRBuBenResTiiMvrtLt0T1LXM=
+zTQghGBT77iu0/ASfANeEw==
+Jx1V978xXQKMfkBxRAxaEQ==
+f9oombcrRq0cd5+I2NCGySLVr3C8LqWmOHnPjXJ6z58=
+2tokVE8b3az1luVmAh/OCfhtG/BL7cN1NJVIOKxQ5nc=
+YDdrNRwUEKz1uMD6aTlIGQ==
+Ws7uNrGo3oq6qBqx5cHqvw==
+ov+/KXltJeG3JzX542pHQgifQ1e5NT8NkD4/Z7XBijg=
+ghGjOSsYNilA639Jh+pByEtxSmWQqRAh0Yy7IUmplgU=
+OiAVl4O1ULr2yqZ1qdHjvA3BqNYiHm+LghhYFQFHGd0=
+iTzypqfD9i8ZX/4qbZW18eZDv97CQxbCudAilkGP89cE6bkmYb4U371gSa7I07dLPo31gmnEc8xDKaYY71JtDAfibgPFZ57aTigN8hGGs3s=
+Hc7tquN3EfGoaDDQ8GUHrSjZP+E+/W+zu3EH7qWG5bU=
+TsokNbV78/J3insXX4p/pA==
+DNXrKTrgksZFtLsTS2rDBQ==
+TcW1vhLLf2G/0lCpjMwmUA==
+ypiQPbsfz42HFE4yfHCOnTY+51NqHynRvy0zPCKxdoTgfmi1Rz9Mitf5D0NAsTJT
+BmaYKYmYPTNKl4OS1+KBZSuBxVLFGqEL14whmTM+T7pQ2i/T5EwKT0d9IZR9NZxJ
+9sxNiNfAzs+3EnRKTwH15ERklD+jd0Ksljn8DiX1xqlWPiCX09ZSeixRljYjy0tpb6AlEd4DsPh58lZPMNwj48efU203aXBqFLTnhn8WnDE=
+NUM9Ka6aQh6f1Eb5mgzjFchbo4wT38CPaTsE+SjGbu4WvfNmRW2x+tUmQpleSuwU88pMkGa6FnjxY/ksyZIBPrONszhqtx+1kzTrm4WaEfI=
+QaVg3N/kPdnk/TECcgXR9Dl0268oPPKIjsZj8mNxI8Xy2lmN/NNqJwzyi7UUbIelz6Z3ozZrH+RlyirAcBu294V0et1hZbkLbjRzOytyerc=
+VItncj9wKsb/37qIgHZhQw==
+mRDkmfgiqmsRTmqltils4g==
+4fC2ukUYbRtYjcf9Qq8DGgjWencVjIUAxDqcdgxRcBjVKT8MGgZuq1E31g9cYp1R
+oxZpLDf3v/M3dsIFIwc8Szyd/KF2tShedsqmedo4KhOGMPT5XubDgi1LfYGmT6vy
+JYbgQomQxIXb4evNvry3fq9uTLfs3yfNGdXyEgyGHF8ts6jUgTGoZbjtFDaAbHM/jH5HGzN9uXebU+/8zLM0R+C5nrAGpcojoFmPZTFgeHQ=
+0nEY/B4O2maMcUgpyjGMqg==
+FzNtrvs0p7iG0eSuryRAFw==
+dsnvTE/xLKfAiBzQCPcS72xgbXd9P9VTuFZnwpcxx4O5PmRxoOkX4lVQE/O+JwTe
+e1NuhENXt8Dsi6m/o3kgJgDpq0NtuO0X8Dh3v6LTbROP4JxQi7VD2Oo3b6M40ps0C86fgP7RdU8ptfN9TqGXyg==
+Xjfq7SfSNI6Yg04i+I1sliyjx+b43VyqNUdco8a3vk9B2XbOdeEnKpYYrwvrkFf+9/hLgoKyFn9UGDKldgeceQ==
+v1CTOUTW0NX01R7GEbXw6wOButbijM7piyvsMrgcZMqXntz6TF4CUHSwF/W45ajqXKzqlbA2J0RSeM0gS6cK5wk98pR9MAheK/WZ0VslWdk=
+MQ8E/tOtaHNgqWBecsKiG85cOeajaT9/VdK7lonxha1ARo5OHw1xjlzu0xc4VigR1sColM4DgqMXnFXXM0TEyg==
+b+tF30xEJ+dus00APzA70jYKHAPjSkOFi8UaLT5X9y4=
+wwgQLrmG6stCN/TxZyz6JPlWCKoeSyUY5Pmfk8yM1FA=
+KXxgBIAIfJLLA3WYHPOY1g==
+COejRp4Hoh5j/0aaMstBxA==
+iaDqahn2VCcEaMw3D8noO5ettqwN+phuRnvGY0jNvFxYHO/hRRDQ0eN0j8RIIRm+eLjOm1GgskbfOjRZOO7QiTO2i1SqqAtfzgAuqMFHoxk=
+vZtT9lha9N1s3i+2J/w4iBVFqmyH3q6vwONLJroeNs6DBvlReulDIn1CV7CCph1W
+TK2A8olRiqy3y3DxWRRitAbbFWNQhd6sFiQr1XRlbeqWtSSDb4yxfwt4Zogx8xpK0sUIUJzOT52b0MVNixJUnw==
+T/mMf4MvFpkj1yAnnenYbg==
+FRQqaV1rQfmPpXmVr1inoQ==
+CHA5k04F/S3W4qxv8gNV1w==
+BLxkwq9KjtnG/coC+bbBR27M+7S9umru0rbvMf90FrDvZm199JKXF8PXpIclWJTUswVOMeQS94MSN0RODzb/nInRnw1kTC56n81hUZ2m8NY=
+mygY3cmR011snD4ezMNWQiDGqNUFL4HCXdF/7XPc+lbUywe5+8/RyurUrcTcHnlFKNQxaHHSGJCsTz4XYxRTxGsmLEBuVSUnF6OxBp2LirQ=
+MbFVm1wDZ5tfZnNzpB6bYQ==
+WDV2Fog8799c1UzwhEmfhoHYDKi+0Rp9aJGwZL+40PwoCdSY2ysK0u3hqT1ZeTzN
+eEdM0iB2K2s7JkVVfaGIXldSoJuAxXznL8jWQhGPjYg=
+2AknmQV2pp9a0YYu/J9nH9+04IBwBXYtPCLXRVaJ+Jw=
+2SgpHhWGLAW+vVa863SZtlxf25OKZhY3bz947VRr3dVRVx32l+aFWquf8j/OfhM/
+759nD7YX9taPbQ7y022DfW9o1W5SlQKBfDeyz4O0hMed7y63Y/qZyARsVgT+gSVyoTB1LB5Bw7vVoGvgs4L0ow==
+n9qQG9esbfqIS6vsVkgpFA==
+KLwvmH8I4k3YZv0A0HEyWY0o1rXCSJLoQnQtFfUsvlKkiWOlV6LTVgEn2v0BD4ux
+YVyvhYyX/PsTPfjIrfPxikHxgzXdvsbRyV5OsMJFHYvU/j3dDddR2A+l/aSBAX4VVsebt4dUT6mAoo2sbGM2Qw==
+E+YzJroe8bBaRcSDac5zNA==
+kZlgcyh5NTF0Fwg5LCqk0Q==
+5F2SpS66E1/CSYaV7xC0UqNNgscfAdYdo54RPA1VJJE=
+FzxEp0EJGu52xea/6o9Rs69gEoYeXbJUoRCZ+Hto6jQ=
+JBc/up9qrSFz3EjR6tnU84Sn3KhmWL+EshIjlB1ZB08=
+3G+pIhxc4/fIpC3YgFgqz38ObIWroRMqTO2GLgj2hb44wpiGMBpqBQEbryIPTP10
+H1jg/iDdxiBjhVSa6ucNsg==
+JXiKiQrPzch0x0+OtqjtFpW5/XSNV6Ov+d9jWqmRkfHiTgyg7Fw930PaVjTxLKcf
+QR9iCvHqT2fNOxjOAh6TIg==
+Q6Db8M3Rvr9THrKiWIiwi7nfh3+ZDPrgKcjc4xY3A+TM8lRVryx3TnOTvxpOtHpr
+1eBM6dYxvni+IppKV3vPrg==
+kyjs8p0C0pyEhABsYxr4tw==
+SKq2rCIfkO0ZJUQA91XdnCo9OWw/QrcpWf8Eau3kFFXMI8cs3Pnb5OjNdEdzro8i4Ek1ixr1aHiTGu0EPoE1+Q==
+jD9vNLuQTfs8JUUrCXAwJ6onY7GZBAEZue7LeXaxcX23sGM5VeF7g5vZDXUWsu4c
+11Dn5bVI5x/4m3DrZOJu/OpJLpAsp+nndTSWssJlRoiHv+GTKFkGQREybcqH7bHVnfun6uvA3/R2cmgLh9aXJg==
+jJ30EupzIBwxr+Abb5XhcA==
+dCyFEwVlHzUUsnnfoe/KEA==
+SJePVHdBtMdpM9zEfeQRjA==
+k7wk3Kb51tiLrTxGYp5NjUDtBm2n9Fh8PB1eWb60WIs6IQXNZc2zh5qHA8FmLk2kwGFE/U2dAKX66M1ITy4cSA==
+NzpHAb8er5ed++MjADrfng==
+kMbowthkbDmfI5XbZSBNQGYa1wfppD99yYDXZ/mF3E2mNKOLEgiOa2Rw6M5A0sIq
+mTG6W1Bi1mhpX1cgku3/BnPkDDVEtxDBp6VYKC4yx3U=
+QFikdbbA6Y5rPO20ETqfeMBLOp3gg8vBpVz+Yfao/HA=
+YzKakDaqgyq3jK+gSe4UKmMj+oKL0n2P+IzAT2GklvPDubt8tyDIkJt8BcAnRDkd
+7RxwEgHWHqOqfOxnCc77AvIfjoiyoNZFNmAFwud9RmPzKM8SpikIlUDiKlhmQDuqNtWIoYGzfrwwWQDFO/xlUw==
+zRFK8Lq2wQu9ntJR5uwJjQ==
+IXtJT8rpN62v2aXsvJgi0aIG8mtw4M7z0eWH9kzssOrw/NU137siVyELl4v2Yrd+
+1gdzDPKVv50o2J9oWfdm56HjgvZax2UTqqNqnz9A7+r6J401DbZleaASCVoUo06CQepJWPaB+uSpRZcGclOV8w==
+6ydGcvcWydgZ2Q6iIYiFYw==
+cvJ8dHLLmlQbM9B4sLMfQQ==
+wyhdSVL02SV/O98rZ3NJ9IJGdhNKVhrvEoAjOAbIHBk=
+6sLJCafxEdBU5O88lndtayrBia7mOVm0IzY+SpcQRIs=
+Hpi6QylD01mpskGv9bpYQZjfD5ezJly9drYIogUYek0=
+qMHLKTSCIyEB6T4WXkhBCrWgc20lAscNcKmcjIEs7l8ZkM20BmQhU+v4LMHYgJ1y
+rWbqMu37+XYdqnOCvWwC1Q==
+eZJhqVGiUgAsdQIuJWr3gXNrNDhNjMIanBwS/NvTILQezK2R1csUfyWlMMSKUzH3
+gipCM0bxso2ZM+ayK3FNPg==
+twjGXXJ3szcMD2cTz4L5Y7oyecmpCnjP8LIGb9zON0Kopt06uw4D+us90QJs7p1h
+1IlXlitr4j11uHWZD4TpMw==
+KPWZMuBALvz2dZIO4rToBg==
+V5o+JC6/+OxONK8OuaqxHwpZSByiDu4I+rOpmagH1JMhuNAEzEHqSpj6nvh2gFPK+YIX0QCYOTwLHQSp7p2bKw==
+b/HvPDkMG40ZaH7hH/JJzTnjFXaXd4Ym17K4K4xHnsrmpm54dpN83YC4XUO743sx
+0Ig/OCkxqpG6v3KJxBW1vPNnVZvitZwpNsWFumTNRMrFPqb742LtjFrsYgqNcj32QGXRGaapyAqqw2zuH3MfBg==
+Gu4kLttxNA6OvecRae3L1us1AZljG6DsBsYgrLRR5VFp7zoKInUyLPrkGAeSOdWI
+8KSfmr2VUWRqQ2+JHSrZSg==
+npjU3hpDY3Vux4e2BPIgSA==
+nqwXnnlDXLciY5AwFirwRi/0o4EhovGrJmT4jrKphGQ=
+582ieqyQHaQXW7dkUhkjyeywcWLwLyyAeKI8fG2Are/pXNunLq8Ld4Vl2sFuvvDPempkgC82+23aKmICHRpoCqLZH4g0iD3yb8d3SlCqLGo=
+BWGKp5sPwHbhUysQWKxk2IfRfAj9VT+rY6Z0MfX31qSN8DNybXtbfNTgf7EurBMpdETZ+vxqEO7TNJ26vk+gio7nNf1x9yLsvbcGZckUOAE=
+2qJBtR0WP3Bu6m/1nxGQOrNClhwTueMUIVGtitLm1TXV6y4zP8SmflZ+tQ7HZbrcYCW2Ng5xrsO4hf8hWoIzFLJ0qIYC6bMbzV3mUWRW6GKbkXaeHEJT2cJEjX6cLQOm
+AbSBukFbQ1mpc5iGWK8KkopaWvDBJ5VMRT90VdYvI6YV9icoOdZ1letA1uYUXh8Y4z2yA/QFfLEg8IPmZrFxHP/TmddEkZuM+lX4xAWjfEY=
+erUa1GJZU+l8LBuEYStmyDl0fLX/Nk5TbRpbsY2BDOVhMz5nrFXC2PfyYsTAvkJrAiFJ0KhqEJ5Rud/RrjKhjPgqpHbEQrm0wCg2QKNPmZs=
+y0w0UtdhTYKn6YIYRlyAY+3wsRCem0V53wELndI0uGjf+DoU+FVvewP++xfTjGQlFNvB0GOPQ85Ss3iV0u0lHVDfwYj6uw/XglEjGOfmF4Q=
+2mk/3QopO5jHIUh2xOECNihY/HO2266B2+bLOlXbPMnwxKo9AFgCeSlBVQklaD4w0s8txssnIr5jhfENEuTb6A==
+boqRqtMqPRfB+K007xUxoBiPRNV1rk+QJoo/cm/1ySU=
+n7DfBoycMHFPOdixz0nt3w==
+AFR2ka7dQ4S6GsmX7fiei3yw8SZDnMA+AQAbp3ovcTk=
+fhaAzvsRjuDaFuHW6jqV2GfSvc/I3d13FuKAYR/NrhnZiA3gdZb56T6/XGvsXDOjgMsUQUwkGVZpwwQYnNBsZ+gTH7pn4XoLmRd0vfC0FcZFexRYGF5JP3jbyrqq7fHKy38W4vYVFoYHKsX/9eMUJw==
+FI+PEH8/iuDBH/RWSGgConCbdThtCRhAjZVkr42ACx3nua82mC+a8k1XRUy6844xznzcePN5H1gP0hPGiS1Z8w==
+mRKbnays5rwEtitbWJncpQ==
+V1Aorvso9pKGPlvoiIFHSg==
+4WtNIUbMxLrJ13Ts/kqBsw==
+T62U8dPtDyX8g15KZ37XgdCoX6dHQ8GJdmBCp0nG7jALLvzWh9tABsNKgnLSEs/G
+9MPhoWzUK8SDhnPdudJlazZptFsbqLWbxQrs7AUuob/PSdTdKlLgBng0XELs4Nov
+epl4pDwuZy82TwKHltawGwa/CL3zP+IYlHtFBRdb3a+JCd+MRphMn4e3AvNFhgs49qQxpXtum4gMMtq+XGhyQg==
+zNH1FVV0vRYrVjpwkqMSZw==
+USsmPdV736rHAGet88ZLwh6wvJDNk0qihRNBqxxdLfz2fd+l+978JbNTI32Kyqfq
+Xs5Tzm3PB/M8FYVzLlKocjeUtpJmJhwqOVDDBKL89kiWIK7tO1sTscLL3YTJVf+C
+4Va9lSczvDnWxxpv5NvS62/MP17Zny8meu82xEwJjrs=
+PuKe0fogLb9nTMRqyzyCVHCKNtyzJjPYbiQxBElvewloN+5QB4fD9pWOHFvggr62
++oHWxHx1XA+FYvpbaLx7SyIINJH5Qe2+Uz/+O+5HeKmHNEYxm25RjeGv+8V668cDHlWXyGHX7tdwMjJcdS5swg==
+QjTF8oCnoPqJyym4Le36n7ozu6l5GoLr4QSZnzXSX2xd7Y4M27wr38WK9VfRFqb8
+svEJmcMXfvA7A2g2aWGIbA==
+ljL8WfTVX8YniWTEvjGjLCNQMcX70kgII4NTc5k+sYG1vNWq+AgXsS9y+gTmBnbrLreUiqD2MhgO1BlkPy+uQZXXPEbn9f75kmKWcBnJmyXxxqvtnvQn5/4rLRxTkwYo
+vPuxvBGO7cERfwxEFyvr5ZYo2feP8FwjCXc906PX+ldvTs8vBucPDyIN0wJI/WXHMhKhj1urwj9rmXbtllkiSw==
+wwlulcIYqzNFiE8F8TWjTACaK/ckWV6Zk5Voz7pRXHrH3eTWG/fgd1HZ3Std9JWZ
+zDNxcuMc5BqLo5CBTnMEHwgA58Cg3nXK2u2HK+aDqoIyQb2Y7IeWb/f9FXaUY34omFrZXqXvJR3aNHLTpbhELw==
+sMUllJSC+UGgxjOZN78FZKAsxwMysaVct+DVl7iRnfmO264trH3jpZB7uTsKqd2uyr/U4og61sqHtVpdoY+0PA==
+hFszCUHraZmGOWK8lFRDu6w1BHLSUqW5gYtxnxSPg5dEXaEp96NpVzRMPdO4WnM7
+P+e85ceziUHxzCs71DxM+Q==
+546dLHp1gKmmpN7SOt3a61nuRDQ4b2aHzuJP0V2AFSOpoEQ24rByXIcLwd+7i5RG
+LTtOo/QHY4rEYPVC+0G9qY/TKy+jsMlu/qgXxmbzkDAiua16mNxThOrzbnm4WfgSxvdfs0g2QHDkMiNfU1ruf+ak+sijurO2l2u7mUdVzPo=
+IdTL7Kexj5O7KTeI/uiKGhCZ/II8PbzEI0vxF7BebBY=
+KbEq/YvkBkfNQ7Ud4g06XA==
+azNR6wb6L3xWmjKdEeSDJkW+G/yDZM1pap1fOUmsakhviO2GIJq3UdJveg4M9Pr2
+RXbhfCii1S3QPwJhtB8Sq2WqPl7rvBTGMK/mDDHIUD1QQ79VJ/9Oq54bqRrsy5BX7Yjjy5Uk9BORWLctX3v7WprtoTwp3k52KO9G4eByYEx4eFORfPJjGls8nR3OZZ7AIjs+XorHfSafxK5wgKDIdg==
+Bm6X9NHX1Ksce2aLcd+QoA==
+ZSAmo0NxJwoX/jPLJGoMMvEvq9m+FIUKb1KXI83mLOM=
+9FXOXL8I+PEaRL1qRxnbTMO8qvt7FYxSxhj9Z01UqGI=
+L8I0QjgfWvRSaIYheS8CRw4iVC5mwh/aJ2oNO6SaGF0=
+iY6vX0t359ATh6+Or4iD9w==
+C07E0IzaObCXvRHCo7DvqQ==
+SquMKYM/mP6M9lwPWVpKqw==
+s5XCIImExH6YR1OAINfcz8RKc03E1WbKqNu/rmNYTtSJEpA5c0WxEJcV364NiiAw
+iTy9WGLXQmwjVJX0GQE1Aby0GeL/mKJmeohq38nSWCM=
+tMvPxg9psTuonQ867+rh60R6kvdD8DZFCptSSetCBMMJKq4NcE2fS9FmDHVflQVQhSpp8HR9X6u5QwWFkibKllWMaMRBIvz5xE4TyvJ4PjY=
+7ARGPIMHuzHdOJjMuU58oV8d1txh0dq04YMiyFP62bbWlNFvfU+26pA6KATUGlULTnLYj40/nj9+CPYh95zHbA==
+FkuuRgF+INybY1LpF4gLlw==
+iIcwRWi6h6OPXcC4dNHA4g==
+StvL19nU58hCL4N2cMNGbQ==
+8XoYwkIPO3gBsD1Mzvl3opiv8QRwQ5FuJH2PJLtUmTyh+ihxInOBbahGfbj458UErHkKCMxyCiF+hihXu8hxdg==
+KqgVhMUzGLfrhV+Eb0FnKLyjh6A4ipdBO/Uwy/Vu4koGekNjUBsHwtqTf4C4/ivgkhigUV7qPd/dApY2TJ3DfRJYUsH0jfdsoHDCSfJYi2c=
+lxM06LP6ynfxAVm7VeeAg33prVWZFh8bGLCCedtl/VRrzARJVTXtWNyDDseDcofw8w7RhJfe23B4SuC7+6FC+E6XAFaazq7HM/5MKQoXy2k=
+UUQT/poKYv4qoT2gX4uManPvSa55KGg+Eik+ym1yI56W/YJh1bXvc4s1FtLJ0/CjyNl6MhYI1q/2yshDKFrrJQ==
+FoHhZDVWuN4wvVGhdnUmiIpKS/KiDCbJLDLEVCniKR45SgbV4fuDK6SojPakXqCJFFZXx51XhJ7fiqFo/tAPpnbIGAbTt43jcql1BiBHIWY=
+SSJZKA6a7q87ROtbjhNGC1Ko9bwQYI9iYe9uHQmW5bAM8WGyJs59gh2u/LhYO2WAsXnkPHzR8f+V02nLeEtQuN97tY3Ho77dkDTJcbxeIlY=
+L59VWSf1aRdKvBRi/ZHXjAq79Y8eH1UABLGIyJCg5IczJIMdeXMM5ODkG/X2kykwoigO9g7FSKVyJ1qlyzY4/BZNzWH+SEj8qfkNUc51jfzeqOLTC5+LnKcZxPZkctZh
+1+pyvM4ZN5AuaZmqxbXJiw==
+g3DWDU2CY586gfj18DTIf+9PQou/P5lh4AdYDDLRL0oTQ+vnoJoJ+NdkQvtiOHdW
+Az1Ofc0LpYrK2fQu6/OG1JVKnSx2zGVZXXnxOt4Qo8Q=
+me+WDdFBVZhSJ2Pjf5E7l4JnvHq/Mar9enqHI/HZvns=
+bScbq8jCe1jEpPGnYhadxj+4hj0L/o1lLGN4zJPRr/27GVqWMP4a9Kx1ZmxkeVBU
+Zrvm6NhTMTZ2xkCPGbFCEST6ft0+mKy5CHaP7jHFGbU=
+HOidsZYlKaIJv+k6r3Df+wN5/wDZbxJ0obQT4S6j8lBAnzrl8TJrqHGfIpHDHANM
+OhmcWgp9DkoQV9Xu//6rB3FVzfQsb0D6rhNh1w9WgVRPVY1UpAHe4dPHP5w6yTNf
+j/+Di9T0nU1ldebxZmgeSA==
+/x8Os3BpgZXOQQIazcx9dw==
+WVMG4LR5DRDa//neR8RV8g==
+hNFhZVqhxBGjkesEpzQszSZOxMfnWXycqTjJsav/EkcpEqcME4fB/yTZlKtBkE2FKnhxa0JcJgaQuI6hLApIdd7yFJTm4S8TdxeWR9VbzvMIqfv+AtwxzYx2+33WoCKE
+zSdL3CDhXrDA+3gdepOiM8L81CSnusGCIZTBqU1F63ugvi3m5g5ti9waKedhqrOtYSqcR2VKUuL+SloygzVkd7+WvW/X4tE1GtAlaNbetgg=
+FoeHBAuegyNML4y6+Edqr+Bhtt8DAMIPIxqOa6nsSWY=
+XR2boUAHig+hg1ya0IV0jw30IyP7cZ2gNueKjYobXTEFEpcnobfZq9troWn/hvJn
+BEpzhkoTLMLUoxHZxMMzum26VKbFb0LNlwljq8mvidY=
+B4KwIjQvZOKNzaouZCcMwxvu9Y+Ebhl6KEUzpmgMbiE0ZtYeau5SOgaiheK3jTkvpAQtPAGkGyLtXxp96WbZhUv2HDD4v+8PVrHleEFW28o=
+MwK6Job12+4AhnKPQIJqnP2p9722EKJqeOles9uUD4A=
+xi/gebADnUOIHxGqTW8Nz3NwHg6/9RANXE8oRiCGgLPsuKGgQx4HO4h/Fau9TqS+
+xpRBlAjBRMUH6nFpeyL7h/WXSaN13eJSYCNb4Iin+vc=
+uD6y5HBMBEih09PjNgHnBg==
+SBv+MVUdgwIMZf/VETF5i9m2cYQOgWWYdWGGp3OvlcYiayl6KiX+DsR6Ppx2mdesyrORJn/aYYftwQrNjiPqjU0fRimh+twVHOWGLrKN6KCxnPkpcAF07KM+n3Blcv0y
+zQAtW7sanxlKAQVgkQPMTuPZ7VAKEW/Mu8TcCylFnKPGHgyuTWbThVslpyS4BRwL
+On1fbDA1eJ4E1VkjgCZmCUyxXNZoyoQMJ0T0Xdoyl3+yPwvvrfRtLYZajE+ZFzUE
+8YxN5Zp2iO/M9wnyByE3X882dRzy+lKPONt2ip6tYjVUJcsywn65MXUPYd5/rSqs4jU3PmEx05rU3YIAM6ULpqSIY3NWH+P1b/sa0+GH7YlX5W5ucjxjSkHq4jPdfnQU
+gUFalVz3aiDRZNQ+3pmjeFMcg+LaNrb20NDu71pXe8RalBuetI6BmaErGLHIx1Gn
+C9LgAHrEJ3t6peV2SPVWaQ==
++G/d0Pb6DcCqF3Sn+jONrLEblY4gRjDfAv292wnVoA9+o/A7B3tc0G6S+cDWziVbZPGDHjymsc40uHmWFGfLhw==
+fe4gpOS85TGQqt6t+2+Q3RuVGi4tZPOPmp7yUVn+O7tRjmbNVm8DyrJNnz2TcSk7
+mYcFCKD5b9KTkaVAY41r2+UIrBlDUoSwd54tCKDc+/M=
+pV18tR0OAw8K4yKLOvd2VQ==
+Qz06qd56eY25jpD+3g02n7LLFm+Ojw4dHdaxY5RIrs6x4DqcS2fPsmOW0LYZ79h2
+FIKWUzh0mHNAF7BQyeu8rHlLG/8fwifG+wau04bA2W4=
+12R3jWwgUYy5UihsuFfdTrJatg+vU8B5Hlt25Sao1CU=
+ALeqJ6rEiNZRJS7y9e0XIg==
+4UewTkxEpMqbvQ0Z20ilm+HIznBXwCjrpomMk1+sZnqW33vryGsAXMibb+TqcKFyDtLXslVT+Ukki0HJy4VEHw==
+Ckw9+fk0b99g9aKna9RPvV7ISQw9fUX+hYZJmM9P5F4=
+i4etTbaZkLLberoZIQWi19kW5Ktbtq99mmZAjjMs3l0=
+r2D+dQAFVBWdDmR1et1L7LBlcEMoL/5+QW9pDagAqYvwE/M24eNp7IFuNlUc/YKgtirnpeCA6f0Zm4HSKIMLxg==
+2FegrBA8x5ICtsU7QnD9B2ajRXZUxUZEDrA63pCGjCg=
+hJ6iJa7CypSi1vE9tJcrSWolLFjADR5h49GaH3TasdQ=
+nry3bW/BRUMTEeytK+9DBkBM9qaHpAzJyzNRwtj0ycnA6V6p4RbG4DCblecWSJDRzrYISBIHNITwf15r+Jl/Zw==
+quAxuAv8lL4l5WPrcABkOmxFpEITvFMiY4zb0a5np0k=
+E3bAZ1YXgWCJSrcPt/hyF3CF6tA7Yvog6AQBLfVhGCA=
+LeE7eKxxYmM+ltYdb1VnGA==
+jn21nnJMX7gtkViv6rA4MbAO6/bKVyHicTFrGf/rSZzZ89IgT4i6n1lYQzk4u8ZxCtlaUansjF48gLGqJYf1w+BW0LLThO5RC39fLf2ujM4=
+DDd5iCL880THAVQHmOhdMmFlH36m4+k2yauI9IZyK40R3Jf+kTNucI2Ym4DCMaQx
+SADc9h3SHiSpEknfyMph4AOuRA0ayD7AphXBe49KwkY=
+i4NL1rjPlsAXDj7hdUBGxoEo+JruxSdnl6EuCckXh1w=
+JgHWz66IGvs5phvBGwG/rA==
+g+WgIUz5lujpzIQ9JCGFI2vDxxj00Xg4xcChpU3uijmCNl5vnEJnepPW8ZoVP8j7y9fV1NRUSSvcuXljSSUELLJbXaUCZWaZsinKCIjLb1o=
+4JiU80Ujg8Bpum5cvoxJiD7aUJePiIV3pmyWZ2EwzpyLxGy6JsfvejCjkkzZeNI3
+7qlfm/lj3ZpVSx5Kt3BMUQ==
+wuICowHQAqdNsbRJfeYO736Z0c1L1HwpTF1WZQm2UZLX7I8TTF0/pm9qZ33tw8DR
+W4MI6jNYVXPxN51F54lnfCRL03yNUvoYGySZ2ks5013qpEwx7fhhm/tjLM9L2Qm/
+ihjUeE2z4z3/ss6SJIaJvpohafFcm4UZz79YkA0qhiQ79AKqaOzztYWtggh40i0NrhByzJ7oKIgVdU2dvDYKqg==
+dOhg2DRbS2JFBmImRDJUr7AP7nAl1afbytkqkp+R04tVuoriCN9pxvUXKL73EDCt
+oPK/1ga+73iwPvCDewdszg==
+MgbV+z20X1w1cFiLXgogpw==
+YFGzlPBVu61kG976Fuevr3/JbCH4rK4quilC5cvGXDHDnLffA0kBct9iRVYG5gZH
+KoPlmy8OA0zV/1uHDzPUpCf7iZIfDfkuEC+zHlzpA8TzQRFv/fWZ9nKUE3b5yKHtJgx+MXYMAWExqlSYre5fIg==
+A8gM6r/NgFIJXuEu4q+hARy7hQP+WoeLFZIa89yjo5s=
+Aa3tEaLFUgM3EUGK8817nw==
+4PlU0sdBLK/KpN9mqLPkcA==
+ifPgW3bWvlDxfeisaiIg/ZUpc5O6tyXkNJ7vjVr8RFNxj9PN0E6kWr8T4m2jVxJI
+Pt2L9BBV1sq9FlSrFuHqSyi1cOyY5AavwI2QPv3Php8=
+0221GkJWg4iOzQDL0m9wEUMvn3hjkf8lpWEIzyZ/V0E=
+HlOJjnobg4z3dJhUP+7vgg==

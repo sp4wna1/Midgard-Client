@@ -1,19 +1,19 @@
-Module
-  name: client_entergame
-  description: Manages enter game and character list windows
-  author: edubart
-  website: https://github.com/edubart/otclient
-
-  dependencies:
-    - client_topmenu
-
-  @onLoad: |
-    dofile 'entergame'
-    dofile 'characterlist'
-    EnterGame.init()
-    CharacterList.init()
-    EnterGame.setUniqueServer("54.94.135.178", 7171, 772)
-
-  @onUnload: |
-    EnterGame.terminate()
-    CharacterList.terminate()
+92gLUDUwzwa6qltXdfHwMQ==
+0/GrzjIsorDUJAPRyEnLSH2orbOb8Oox4jndNtS7GeQ=
+g7jE3qCOurNZrvG0XUJOqQhbxaJ3jrMceHzeSBfdB9f5hDRTH1C5+JbBNLw+op7afWyp7qnQZwF3q2ELcsv73g==
+8LO6/lw9pGl5eNBhEc2agTntfbcVEooIOCLida5devw=
+eBMSCzOWYlp1qOU45T7++jtPZvQfFzh8M9JJO4cgKRfiSpbX7Udj0cG2vGG0a6PT
+atsGphT2pXgATzXNiqYwCA==
+T/LShRIzLo6WzW9/eKFw5g==
+Nui+tWDGFQDrsyK1BgOFv+1Ibuyk3g4JMsJqqUYuGUU=
+nkosUoa/tU730MEqXcuBlA==
+K2Caxu+dlY1o2A74bWjgZQ==
+qvtTLUM/0CBRMDbygkBN09Wk2DoKdFUAnWHg7i7x5A0=
+6stNhzp0GqilbO4lL/qs9/di2LD7HmFJur7EA/Voeio=
+J+9KzODrwwcXNfuBsfkU92zjVMl1+eV2+p8wMiSp3XM=
+i6AlUc4gjUtVNtPDzU0D3VvH9RxY4GHv30lDLhEWO2E=
+l1uLXTjAuffs64TIZLc+aSiJOXlZFYIDdVZ/ZoUiAmIsFbPRlds1H7gDHDivDmHKEpFnq1SpXmGF+yJQ6G+wMA==
+/81g7JSWjqectzxB1C7uUw==
+br3mSmb6CjlBEOF9b4pyfQ==
+LCVlr9Kw8ZmoQVOCl7iF8jgJciKxlzVufDjCGdVVjHI=
+83ac3lhBBo61mSfFvrH3IIJPyU/E/c+Mlv0VSUPGLgU=

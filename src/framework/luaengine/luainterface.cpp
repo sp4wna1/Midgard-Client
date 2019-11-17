@@ -24,17 +24,11 @@
 #include "luaobject.h"
 
 #include <framework/core/resourcemanager.h>
+#include <framework/util/crypt.h>
+
 #include <luajit/lua.hpp>
 
 #include "lbitlib.h"
-
-#include "client/CustomCipher.h"
-
-#include <cryptopp/secblock.h>
-using CryptoPP::SecByteBlock;
-
-#include <cryptopp/config.h>
-using CryptoPP::byte;
 
 
 
@@ -319,18 +313,6 @@ bool LuaInterface::safeRunScript(const std::string& fileName)
     }
 }
 
-byte key[32] = {
-        'x', 'u', 'z', '+',  3,  'q',  6,  'u',
-        '/', 't',  6,  't', 'y', 'r',  7,  't',
-        'B', 'A',  1,  ',', '!', '@', '.',  8,
-        'E', 'J', 'A',  9,   5,  'C', 'b', 'J'
-};
-
-byte iv[16] = {
-        'a', 'u', 'z', 'u',  2,  'q',  1,  'k',
-        'j', 'z',  1,  't', 't', 'k',  2,  'z'
-};
-
 void LuaInterface::runScript(const std::string& fileName)
 {
     loadScript(fileName);
@@ -345,16 +327,33 @@ void LuaInterface::runBuffer(const std::string& buffer, const std::string& sourc
 
 void LuaInterface::loadScript(const std::string& fileName)
 {
-    // resolve file full path
-    std::string filePath = fileName;
-    if(!stdext::starts_with(fileName, "/"))
-        filePath = getCurrentSourcePath() + "/" + filePath;
+	// resolve file full path
+	std::string filePath = fileName;
+	if (!stdext::starts_with(fileName, "/"))
+		filePath = getCurrentSourcePath() + "/" + filePath;
 
-    filePath = g_resources.guessFilePath(filePath, "lua");
+	filePath = g_resources.guessFilePath(filePath, "lua");
 
-    std::string buffer = g_resources.readFileContents(filePath);
-    std::string source = "@" + filePath;
-    loadBuffer(buffer, source);
+	std::string source = "@" + filePath;
+
+	if (fileName != "/locales/de.lua" && 
+		fileName != "/locales/en.lua" && 
+		fileName != "/locales/es.lua" && 
+		fileName != "/locales/pl.lua" && 
+		fileName != "/locales/pt.lua" &&
+		fileName != "/locales/sv.lua") {
+		
+		if (fileName != "init.lua") {
+			filePath = "/modules" + filePath;
+		}
+
+	std::string decryptedFile = g_crypt.decryptLuaFile(filePath);
+	loadBuffer(decryptedFile, source);
+	}
+	else {
+		std::string buffer = g_resources.readFileContents(filePath);
+		loadBuffer(buffer, source);
+	}
 }
 
 void LuaInterface::loadFunction(const std::string& buffer, const std::string& source)

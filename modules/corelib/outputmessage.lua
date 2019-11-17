@@ -1,69 +1,69 @@
-function OutputMessage:addData(data)
-  if type(data) == 'boolean' then
-    self:addU8(NetworkMessageTypes.Boolean)
-    self:addU8(booleantonumber(data))
-  elseif type(data) == 'number' then
-    if math.isu8(data) then
-      self:addU8(NetworkMessageTypes.U8)
-      self:addU8(data)
-    elseif math.isu16(data) then
-      self:addU8(NetworkMessageTypes.U16)
-      self:addU16(data)
-    elseif math.isu32(data) then
-      self:addU8(NetworkMessageTypes.U32)
-      self:addU32(data)
-    elseif math.isu64(data) then
-      self:addU8(NetworkMessageTypes.U64)
-      self:addU64(data)
-    else -- negative or non integer numbers
-      self:addU8(NetworkMessageTypes.NumberString)
-      self:addString(tostring(data))
-    end
-  elseif type(data) == 'string' then
-    self:addU8(NetworkMessageTypes.String)
-    self:addString(data)
-  elseif type(data) == 'table' then
-    self:addU8(NetworkMessageTypes.Table)
-    self:addTable(data)
-  else
-    perror('Invalid data type '  .. type(data))
-  end
-end
-
-function OutputMessage:addTable(data)
-  local size = 0
-
-  -- reserve for size (should be addData, find a way to use it further)
-  local sizePos = self:getWritePos()
-  self:addU16(size)
-  local sizeSize = self:getWritePos() - sizePos
-
-  -- add values
-  for key,value in pairs(data) do
-    self:addData(key)
-    self:addData(value)
-    size = size + 1
-  end
-
-  -- write size
-  local currentPos = self:getWritePos()
-  self:setWritePos(sizePos)
-  self:addU16(size)
-
-  -- fix msg size and go back to end
-  self:setMessageSize(self:getMessageSize() - sizeSize)
-  self:setWritePos(currentPos)
-end
-
-function OutputMessage:addColor(color)
-  self:addU8(color.r)
-  self:addU8(color.g)
-  self:addU8(color.b)
-  self:addU8(color.a)
-end
-
-function OutputMessage:addPosition(position)
-  self:addU16(position.x)
-  self:addU16(position.y)
-  self:addU8(position.z)
-end
+DYs9bHsniIwFrBlwuEWnuSiOkR2AslzMSSnp7/yGgvcKn3FZ9I2WJS/s+0I+14QM
+BeVB/xG6rvkcqWUuCQ+mkqETZ1MHzbyQ+1Jhw1wa+4vrADp8f50ARnRDkv+Fg+xm
+2F/18OfiBiAUUn4GwCOg07ngbxsrpKcdkwgum0zxF71kNSbqW0zHYlDzQCLZJ1/L
+U0yGN3Mc1lyIrZsSWhJj+lUpHa948nX7TAg7VKHbQIs7ydcZlyf/CJveniHD8VTg
+VR2WkYRXSdJ5xutCA3jCNxIN0uhWdrgr96KQZy4HxyD8xF6/rWputuiuovxlg02Q
+70emT3upka6Ow6gXasM2kwLHAHWCF542a6aoUeyv/M8=
+paDyfFezZE0vmi6RRhd3uokALwN5PIkof89rTT/mJsd2CeXx9AV2EUWEepJengJO
+lvAadx8LBy5WwrgWf+Q92p7TGjWiZXblSXB1r0VWy3I=
+wjS7KYbwwTsGSC9nz0ALgC0p/pn+PD2xNPtuGI8mJUq8/o0ZKGoBRVJbJjee+vqK
+GJmp0wfTb+eRAgLb1y7OBZoUGF5CzIjmblRGC6VI4SB7kCXNw5A5yIhABc6i82+7
+LErl7K3YF9Ck5mULXCLHcX2NejM6tE7Qb6Tl/lDtCe8=
+gvz+Ix50DOPKLCXEngOUtY41fOc88Bo80MDdkC9YFtMqFg5gwZd0C3ajbJOsSi/V
+1+5v8trbx41nPBqtOfnYLQWu9bkXjBCZ7M96lPIMzIcrFCArdJDqs3IFlgbrgyqI
+2PZgb/nENbJW6SdaWTyISubVizjaHbMZD/Ie4I/xL1w=
+Vw0bQjawzIr4+8zWpsrTEnBTxx9Eekxl7RkjVwHEfeSiDdRyD/SHbd9BMAspTN5t
+0y5zOebLj7uXcyOCl1qnOhcxEKvl6H7AMJN0Pd7Bths6GTix5gh1Fau2rXVNTh46
+lxCU0mKzPM67zxL5pwZOShcRJrntnZG0rVmIFuToOaQ=
+ccXy5cfV2Y5kziVlz1vXElRGeTaI2uoYF2/yWx7X1X7T9ZXdSlf4eEM3tPrPcYge
+kKMMrxNcM1T/+PKsbqEtVoka1bybqFK7p80s3jXvOLVw83ujWiwwL/CSwFMxt6lB86fU3BF6sCPigclpD1ymLQ==
+W7CpOuZPWiZNWUEyAIqlhDG54KE4WCgPinpYlAwduoY/YA6hVhZo+coLFJ1QKzak
+LWnrNKz2fUHm7F7OFSNXNA==
++CateCG7o3e1PeuzWAc02wpJJz/bYKobJPflu5r/OImZLCdUoUbPpFJF14t6IKJS
+7tmFro2QX5jyFTnXuSRluhfzpiKBa1vXUHFwLRv9TuBQTetMWUh2Fp2aFLsfN3YT
+pjUPuRehmHt5mRf2/uPHeo9L5yyE95dIHB9WUvj2qgQ=
+mnFR9NWB+J8KcjyVjMU3cEleSSD+DvCo0eFCGGB2HegrgLpG0WdkK4wTA4F0w12R
+gf5pM1JxhJzNZTBe5SBWcNiX+E6cbqr1qTI8+6BlUJARWYN0vF5QCG51vA8XLKIr
+gxDGcSHj8XyXNAtBhigNaVykyJJwdf+c3Vw/bTPQH0c=
+14plzbAvmgUAXqSfBiOuWw==
+1LUO1sP8tW5PbL85Scq7lVX/OrECo6QUnfD14aGmhOOJ+kdA7DpYsIkpipdWYUIV
+H515GUH1yZm1V8DnPXUunQ==
+8y8fUbJbT/XbSk/yHuNaBg==
+QvgF8lPrUTHJRdX74USAhQ==
+nqs6xeVGZlAmShK/HWRu3lf+ms/eO33N53YOIn7J4NUqLlnQz1d/BFHZxnNAdJKF
+07hZxIRjQH083GTOnSfM+33lgvKBCPAWykyW1LQj7U0=
+5hA0AKVw3NpH6O5dTMR0UA==
+r3GEr3QQCBa47Fj7xz11nPm84O/SCJfURZL8GK7c3hBuHv6dv+w4akHABoDZIzOaouXSF5x26PjUyCVY+d8rtXGJUjYkSKazx/ySOXfRXgk=
+xpCUtGDo8dyclofa1Bm1/Lf2rsXTArHh1EqLJ3OPFzonOdlHjMeK6nHRhP+vALNx
+ten0TjgZrfZeVVrUwhErqYjetBeYQcY7yp3Z0rFtvnc=
+PLOjkemq6oH5SMxlUREBwV81Psz/f9wuqzzx5SnndcQzlW9fztp+jXP2GM1aXz4N
+Qelr/BTF9R10fty/xYHO+g==
+Lk7Bc0zxb2WFp50R9dcKvA==
+n7LxZJj+d9yJ1On47Sw6fXut31gEDP+tmW5kprb+jVj9fhKYxh44QzweojYdySki
+J51rBLxSxaiYfI/MrSf3lHl+ou517M/3WxUIiZZU8KI=
+lQMjumkoAmnrM7ZlJwKfdQAqY7sWkNOFo6pMWZi60sA=
+r+Nhl+a4LmLQwawynXikOlDAuxugPi92cXhFjOAF36g=
+MslHnnUMqAOqg6Gj5arbvw==
+CdKY186LTNORhXUA87c1ZA==
+KLIzgM6ghSE7iGE46t1Lsw==
+DOmtr6MxgAd/4Q1Z7IYpwzqxy5ml6E9xUtK6DLd/HaNS9qZBiRuGhcKl/Dggsctv
+XXLVg634ByhaqCHYXzkRY5BOdcAlsaBs7Np5gMTwjpU=
+is7hegchFmppWfeF82oo5LrCZpgZkgc49/HNNL843rU=
+HcVHrqyEsNDAtWI/ITSbLQ==
+C7xNSHQSmfKx69ZjL+jDwYt5Q0dDm+2EpInGFK9Sxwt5zTnzLLOjYJoUuDgY0GVZ
+a3SPrHAWSemm7xA4Xhm/uFOG5HrDqY1IPL9ggiMx3oVkm306pJUUfsRvzWB+DWJhtfpPXKveLbOb3Bdswh+puQ==
+0/mlw0pC+DPPu/90mQg40PmrvZW4ZNRI49m2beZ0ifM=
+CipwdIe2Il4yb7qCpfMBxQ==
+tUCDE9NMzL5UV+Woba6IqA==
+0LpiKTmJR2wWs63MuNxLg3F2keeO+WqMs+qhXbfXi02wOSp2/GmQ8ooVj6ja3Fuz
+M+ksNf2yAohk3tHjjGjNa4Nc1tcRUnK2bAFxUnslYpY=
+18DO8i3asxOryIp5vvhzOORF2JTyfkREZWCOOWEv3m8=
+3bmAWPWg0DqBi44myZfhzyiUvrW2T6CeKmoikg3kuok=
+celMhBjOWXsb8Ke18Fl28zHSJPVRBs4QNq0txpjPSkQ=
+rZjjzBjJRUjgKc57djfoXw==
+jVqfFRb/h7JafyZb63FFjg==
+cqiQcf7xoXgnPnMaxSa3s8pGCNbG0egF49MH1trlbSBZPakDapV4XJe/GVl3F017
+HnCnZVEdXlVV7e1HI0bjRhpnt2zI6jVOjUiZAmNQ9u8=
+qdvHqc668B0omusC8yanUFNlHK77n515yM1N1ppeVP0=
+SrnFeprR0VAqb972rxVy6rMSWtSctdqSI1ZV9kBXfjc=
+9tpOya4+gt1JqFATfDp4Kg==

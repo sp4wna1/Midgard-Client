@@ -1,153 +1,153 @@
-local moduleManagerWindow
-local moduleManagerButton
-local moduleList
-
-function init()
-  moduleManagerWindow = g_ui.displayUI('modulemanager')
-  moduleManagerWindow:hide()
-  moduleList = moduleManagerWindow:getChildById('moduleList')
-  connect(moduleList, { onChildFocusChange = function(self, focusedChild)
-                          if focusedChild == nil then return end
-                          updateModuleInfo(focusedChild:getText())
-                        end })
-
-  g_keyboard.bindKeyPress('Up', function() moduleList:focusPreviousChild(KeyboardFocusReason) end, moduleManagerWindow)
-  g_keyboard.bindKeyPress('Down', function() moduleList:focusNextChild(KeyboardFocusReason) end, moduleManagerWindow)
-
-  moduleManagerButton = modules.client_topmenu.addLeftButton('moduleManagerButton', 
-    tr('Module Manager'), '/images/topbuttons/modulemanager', toggle)
-
-  -- refresh modules only after all modules are loaded
-  addEvent(listModules)
-end
-
-function terminate()
-  moduleManagerWindow:destroy()
-  moduleManagerButton:destroy()
-  moduleList = nil
-end
-
-function disable()
-  moduleManagerButton:hide()
-end
-
-function hide()
-  moduleManagerWindow:hide()
-end
-
-function show()
-  moduleManagerWindow:show()
-  moduleManagerWindow:raise()
-  moduleManagerWindow:focus()
-end
-
-function toggle()
-  if moduleManagerWindow:isVisible() then
-    hide()
-  else
-    show()
-  end
-end
-
-function refreshModules()
-  g_modules.discoverModules()
-  listModules()
-end
-
-function listModules()
-  if not moduleManagerWindow then return end
-
-  moduleList:destroyChildren()
-
-  local modules = g_modules.getModules()
-  for i,module in ipairs(modules) do
-    local label = g_ui.createWidget('ModuleListLabel', moduleList)
-    label:setText(module:getName())
-    label:setOn(module:isLoaded())
-  end
-
-  moduleList:focusChild(moduleList:getFirstChild(), ActiveFocusReason)
-end
-
-function refreshLoadedModules()
-  if not moduleManagerWindow then return end
-
-  for i,child in ipairs(moduleList:getChildren()) do
-    local module = g_modules.getModule(child:getText())
-    child:setOn(module:isLoaded())
-  end
-end
-
-function updateModuleInfo(moduleName)
-  if not moduleManagerWindow then return end
-
-  local name = ''
-  local description = ''
-  local autoLoad = ''
-  local author = ''
-  local website = ''
-  local version = ''
-  local loaded = false
-  local canReload = false
-  local canUnload = false
-
-  local module = g_modules.getModule(moduleName)
-  if module then
-    name = module:getName()
-    description = module:getDescription()
-    author = module:getAuthor()
-    website = module:getWebsite()
-    version = module:getVersion()
-    loaded = module:isLoaded()
-    canReload = module:canReload()
-    canUnload = module:canUnload()
-  end
-
-  moduleManagerWindow:recursiveGetChildById('moduleName'):setText(name)
-  moduleManagerWindow:recursiveGetChildById('moduleDescription'):setText(description)
-  moduleManagerWindow:recursiveGetChildById('moduleAuthor'):setText(author)
-  moduleManagerWindow:recursiveGetChildById('moduleWebsite'):setText(website)
-  moduleManagerWindow:recursiveGetChildById('moduleVersion'):setText(version)
-
-  local reloadButton = moduleManagerWindow:recursiveGetChildById('moduleReloadButton')
-  reloadButton:setEnabled(canReload)
-  if loaded then reloadButton:setText('Reload')
-  else reloadButton:setText('Load') end
-
-  local unloadButton = moduleManagerWindow:recursiveGetChildById('moduleUnloadButton')
-  unloadButton:setEnabled(canUnload)
-end
-
-function reloadCurrentModule()
-  local focusedChild = moduleList:getFocusedChild()
-  if focusedChild then
-    local module = g_modules.getModule(focusedChild:getText())
-    if module then
-      module:reload()
-      if modules.client_modulemanager == nil then return end
-      updateModuleInfo(module:getName())
-      refreshLoadedModules()
-      show()
-    end
-  end
-end
-
-function unloadCurrentModule()
-  local focusedChild = moduleList:getFocusedChild()
-  if focusedChild then
-    local module = g_modules.getModule(focusedChild:getText())
-    if module then
-      module:unload()
-      if modules.client_modulemanager == nil then return end
-      updateModuleInfo(module:getName())
-      refreshLoadedModules()
-    end
-  end
-end
-
-function reloadAllModules()
-  g_modules.reloadModules()
-  refreshLoadedModules()
-  show()
-end
-
+aeYD52JCfA0EeCMtMaNGvfulXsn8IS/Q9I2PXn8LaMg=
+ybFbUQL4Xmuuv3FwneINOq8xLpcso+3f+dsl1ILe4kA=
+lnDR9FKLkMo+VPynyZDwZQFeh4Lk8t5Hpv1PJgZnblg=
+cpHkjV5VpLVExVdq+WX+JQ==
+QR16sP/UoGjIGUPxedPHMg==
+R8hmpGbHPbbsKZvCP7GaOTT+PpAIa9fD/OK8xKUBWqjfFwIK1Al7iwwcQleNnc87g7+logNsVAhH/qwBeESGeg==
+RrQJq1hwThOBPBpJm1iRjz+77wyTNC2KWnelHaiQRmw=
+lisKTRZ7voqT1jevBkvp+/BYo65rOJ7JJX3css/6C4V+VtPKWY5bTpBH02A3XTLYiNGQriLWds0YDkHEmio8aA==
+5afN3512NGFjJ0wsp7WMzl91hUqrp4KXUu4jf4R2orY9Y8AIPQ678twd7EucVeSpasKMJTkshyzB17gMXSNhOyrYFsoXEw2EA4CjAzn5K00=
+cYvq3QcECvCxuytHON8/cjoRUN2S5oaWX+g6pEUecy2nyX69J3BlXq6O0IjVNPvxSINeG20vaZDRXhWtjz+vjkhRz5THFZEzrzw7l3suNzg=
+xf3UHp055RRKaIkDy/5fEbRYmbJ+mJjvxd0XUdRr45DOK57JfURz7t1t0wn+2cXP1fBzJFvIiKhElO3K5CLcUmzBhm6JhlmIkYgzvYz0rvk=
+J2ZV+ryuIK4Pz3KNscLo/o3hEYcAKHjjiGNzJvN6eGU=
+s59jMCh06KK2A/NeWWs15A==
+nwSNY+au4u+D74SEh3Z7jNBNeqaffB+yGO8zfHalJFI+UAcZvX7Bb9Ho7+qYcac9E9PTHGSxSD/qYhJL1cdPuQ7ai2lwtn3+eoE7VRc6tHaeRPyeBI/YZDCnJriXk5gqY2vNQFJJRMlS3fpoQkGFuti1ZWLi9rvlnXFvihX7P0c=
+xQL44t6pfp8vQGmHdcofJqBx8759joP6DMklcQlEJAE3DcNJ/Wlgn2/bsXp42/YLmhbOtQ5uo+k9mlE7ilfZMmO1eST/RuQFNG/5NkLgIA6UJFMmRtNDKI9eQiAYpP7HgFAT8EW3Q7Nv70aY11vEAV46QgZY6VR86q1TSTMATnQ=
+6UJAiMT7Iux7pIqyUvi2kg==
+i+XgBWxNsLW3+ldfYy+5s11hoFGgmPhkTmJ6dJJAS1wkCKW7oCPxZQlRwsnPQidYk7NlRY1vSNTkMPDALRUxZUPTkiXE9SzTC8mx1HbOeg9jKXtEDdJ+pgJkllrQyuy/
+ChxMijYZ0R6QzcwG9T5+mV4MjeysRZRYeahBSo2t69rG4xBpBUme2tNb8KiExJpA4K9gU1biv/sOYTfCwGEoNDiqMdlujwJvOhCGJGgaWFg=
+htp5nQPQmoxwW8mrN4B1Iw==
+Dubwm5IUqh21TBMEVjLea0pm8d/MI14R2Oe9bnCD1ZV2/R6gBF5JykUP7/BdX/RSBn/L3FcF/1LFJ3vmaoYeGA==
+ty51wHJ8tJJ0GTgx+WtXDwfl6VZNhLrUaXLP2XFDiXc=
+AHfzrn3D/fFQA/Sx87xc3g==
+n+GFHhF1nm6iUhvzIks8uw==
+D29Z8znD5Esl7nVnRAtyhUZD/poqpG7BBfb+0X0Dp/A=
+LkBKth/AQTGOsszwfmk1mbzNXmSfdxO6oTlS2HDiX8U=
+MsIpRyg3z/2odFroBijd5teEq47ScIRYGIfMYoArvmM=
+eobK6qrbjoxRqCd3jc44kRmDOws7UGusz5C5NSiLBto=
+/LlJMyDiaNbPz1bCPI2iXw==
+kA24l4HkV5hFv9unmKGbSQ==
+0cb9Vo3hM3xs0vD6iaTgsDfrXMYL6bfeYVatcVOvJU4=
+jQtGH8gbmMhah7O3RTK/g9r2N5D4Y0Nq4wpzz78K0Zk=
+xfXeZQGMurHyAS4nnx/MYQ==
+aC1AFhohVPX7/aui3ICSKw==
+uNLbymnUu4Ujl3dCXGSp/A==
+3I52Rf/5aN+ORLadHRLEs6t/HxCubX8i/fK7H96hfpQ=
+1JIjHJ6oCaQ9ZawvzCMHaw==
+58YHt1S4QcWixvqaLN2apA==
+xAPk21FLlRLahRoqxf5+eg==
+wMxl3ZDVO936cdFntLRScNzv5v8su2uCehLnem6vVvc=
+RwofLGV2KzpsrG+i3ghvJgRHJjqyA0A0Lxmd2sMr0w0=
+RBDCsFGeiS1I4Adh/c4bNdE3/kSCqYKU4tXo+rCWByk=
+/VvUuKXzxRVJNZnC9M90HQ==
+XUTp8pbuSq08+MSpcGvNVw==
+PUWkhYamD+fLtnjcJ5/rVZ3OiRVM+CQtFBou+xB+Lms=
+S0OZZOoBMyszss+oJzoP2ZNVhNe0oz5HguYeonA8BTEw2rg9UmMhjZPzP2FqRxuj
+2zTiandOaUeN26ZoefHJYw==
+xD7SpOCYawhOmjgo5bhtMw==
+9pnprDVwBZNAaQ1X1l8XwA==
+XJrpgF4odl4B+hnDasliLQ==
+aEMHHWPP9F1XHhSRDpJ53w==
+mtp7ilxEgdj48exvWGTy1A==
+WOazORcLA5gVvB494IFogSBRfKaEqV/qmI1RfjB1OcI=
+wU0LPoXyjTjeGEwGLXZ36sVaW+pNNWw8GPsc09GefKg=
+dQgg0PckJw3CxETIOU/BzQ==
+XQteISY00t02Umc37kdFUg==
+N8tjwNEz8TQpuNKQJV9a0w==
+ooPUpq+dDkvp8rrUZYSb+dd6l0cCNXBPsu21lT6vcSE=
+02bdWfcHqtpRDU9DH88Pu6NPwa4AKXpMphpXnRa47gyF5bLk78iXCg/xtF1FrMj0
+kzQ7bnXePQCIxZc4p5LQBw==
+0JBHRf4yF4gmn7EXWAoZBxrlzQL+bitflwXF18JOPsA=
+e2CNQGb1J3GvLik9bmjUHA==
+/qm8/Y/iN6sTTehcIxLWJWUpu/jv4sqFSk/oeN/5x7pL7YphKXosTHZrb6vd/SF6
+4ZLydHEm1b+ZEZSduJc/8el5lKSjStK27OZy9XtjBWSlwKpL7fEuSIi99Bgh3B6T
+hVpUDZJO6yENpr3wXvVGL2cEKkaZlJhWoHxOVfYFI4mvIudRZr5Z0esqtz+ypKfsNUbelPBC+9NNDcWtzgbi3U/49fHLj8iQMpIa66k9zfY=
+6G8dZWLbXXt5MvWcoaP/6FHfmda+c3hnHR7rtiEfXbOCzci7NbezTQ9kK1S/oC50
+2wIogg9cGnfv6Z7MIpZ+ewjG3uU2wwQIXBKJJbldEGTr63UgR68zEOOFtg06nMzw
+VZM53wUAwYtK26togCZSpA==
+Mh97sabTPJRN+HHEub9BQw==
+dtNFweeaX7GA4voYNVJ6zEhoq6ABpfhPZI8RwkrWTLcInZaNwHRDb+c9BCRJWyHlOWs2HonnsG68XQ0x+WeLT0wTGm4rYtqo4W8SjLSpKAQ=
+ehdpouVMPWlMUAzTMGt6rg==
++kV7saC/V8QpLhNg+8bo9A==
+/LY4kPeSzOYZj9Luqiza645zSJheLX6LoIlPMyCTyCo=
+Ele5HSaA0d+BvmMtCBAt+u41J4xLcPCbcb7NeTL/Xzc0IbKQgW94EyAnQBgmW+tM
+EknJ97dpDid/uJdv8addSQ==
+3f3z+4L8TgPUWT+ehU33w7Vssyqr37f0i88YoPvrkygdiAOuve6Y6h+1iZDbtFka1JAvgbRQSVnSIBg+DlUIfA==
+0+gDzqzaSeLCGXF5ML5jHPMvlHmLoo98dvmom9FVOqvjizdHXz8+ambEuj4lT7lKvU1Hp65OY0a4mFumzPMVgw==
+81PprKu8njFe0IzuwGcLm09wr89ul++BarERsmwRd2n06hjU2KG/CbeAsbU6bbze
+UoJbOZqeE/BkyQYRlZrckQ==
+ATahnO2sdkE9pE6EEvNcOQ==
+/BAC3Bf8pMZWuVhewJR+Uw==
+gBi2L/e5HtMcc+C0/yOFbschXWDGdnLPmx0rDOsdB5T2etlZQ+S+XESyH0plWkbe
+y/0wqMXtoKbG7jsL69fd4e/MdxiaGbTpHQla2GLvQ9ZuWQmbhautTncT6e3Mw71m
+jHFoAn4GVLREHOktIZry3g==
++yfJss4eoL4S7sC1yOs1McE5JKBouqmqYLIuQDx5l0o=
+3A9U9rbQV2HksBtsSD3EjyEjO2gyOfG4uTC7G9nmCkI=
+PP6VtayeeNFsnR0cedNH2iReS9IeVIoZg60nzB/6JVQ=
+F2wg23zpUvAUashNfDU7juTg6M5kGJ3nRe20GX9IYC8=
+tDzj5NiyQXQyA/FhnkZTp9VtRpYAbiFfdt+3lxG1Y40=
+NXLRROmOFiTRHJUOqKWQaeCR6haQtCxbvZRuHRCj32w=
+XZEz04kK8pSD6lXN5Z1P73Q1gkkBKNpFCdKfTSU2dCY=
+n5SLR1qrsP1JZ0XvtMH0SrNTCEkyJy8N4wc1PogFJ7Y=
+TYyLnic6a/BQ0KdUgAkL4Fe2Cltkz5rFwGT7OLRlfz8=
+m+bMacfzOfnITATLROuSnQ==
+gc7W5XZYaE/FdVZfIl3YIQ99XxkcDuRLh99MCDI8qcphexU1N4P1JOY3PsWj16ToQXCKrJfz7l2eoV7irTr3tQ==
+etLKjuovWY3sjWoPTTxUhQDOysSmawKa0n89aDBVPKE=
+ihh9asJDnzaQc7kmrjcX/E5l8sqr0Fkhs34LVmamxtw=
+KRVlREpo/YntrE44eK4SAXSTeHOrW3w3ecO/58GVOuoZSB07rgEQpt7wbPhYcIEP
++jDbwYMU6jJbICz11a/yeGaaMSwXn7WIeRn87E2yLMA=
+8BVfJzwOBjKqQZBNCxC4pXZV6dvKungdy8oBA8nd+HrDhbo7dUvYmoYItRUZEiSf
+GEyx7DeY+GrqBH1lc0Q4Afg739S4L6AH0QsNtBwWPwrQmBU/onvAf63yhqMH83Vc
+cH7Z9KS3ffjBW8vUeZ7xV0IOqcK5DDuK5cEkpw5AhV4=
+dkSaGYCTQtkElyq5lE25cycKP5L/dN558ykMfuRq9cLVhJ+ESJ0yH8DfqJa2+aOB
+2MyjitzeLrUFdxA18qFsmuYrkQPoMq9+sPlO7XUsulXuuPjBcTHLvIHdguARhNag
+f8+JgYPFryf5gjaf0CDnJA==
+HXWkLpJDqSL2JlXoSEfJNQ==
+/FNXhNPM1trKBs3BGJqsjpHG1Ng/3ObuOAIsxRPWGSmO1E0QABYGvq75IKFB8pF4pKABgVOPHv+t85C572EwoTKOWX0Xu807aJUr5XvnHyc=
+i7DnZsxOqU/bvMZeX1Nu8Mpn1722d3KjWRDDQUoMZcg9S7b/VyuAyupv5CIP3a6i20H6QVnkgxuLNQE1S1J3BScDv5iteykMDPKIK8D9tFIlFM7FR1jOqIIMOwCDwump
+bc7X53MtuON/bEaQf3RB4y7DaxVS+qDtXq509BMxgAFxs1Chj1Ot3n8toTvn92djh2JFDdm3drUFMHpV5uAMJR8EhqOoDDVTkWMaofa+7uc=
+tArM4EbHuQQfIlsaqa9W3NPu9DNb0IlsRX4UbtlcxRaM9p2bEIvE0GHUgjIDAPV7re/Mz2wMaX3ZyfgZU2v2brF9EW9ie2I7NBBt6OpdEwY=
+WH4x22Ym728xo0goWsmfR7+uTPqc8e7J3dVz8G8HDPc/hdnm5y2TI3VBWq4hsC+wC/PhKcNceld4KV+qblAAoyz9n6ZnhnJr+zgi2PO3ztg=
+psnk6tJPOPZA2yh4z+zFDg==
+TwFGUZ/vcoBtIrefvB8BejFomIRb/LTH+eFZvfzr6hrKSJPGsnD1b8PaeZ9NiAdRBLra2NVe3u7vBBx7VRXs4l5TA5Qlli42+6sI9GahDfjObqO6ge/2KLwxpPHAKwtg
+OzbT0G/bKhXza74BmY85R2uSezADGAwGK0nsoAyTuNwbfmXuKqoigX4fywY6eC4H
+n9K+wf9mPGXF+JeM/XoVouXcWNzDrT4t3qLXqRMz18Sqy/i9Ng8FgWd3I/AefUYO
+1xjR+8gcyE/fL0VBwIKLM74tGcFLKEwX4Gt+6kLmLv7EVzOn7eC1kt6b3DP6r4zA
+X+wgINuIvD8TSOc9Q/7HWg==
+SXpGdR/hZAtuFjx3L70J3FLoF4oZRrfL2BwmV3DMZXeEGzfT38AlMGhoerCf6Ms72Hds18xwdYNpgFizw3Nphvswdj/Gl8GNAk/X5R81+GKef9YL1j823eoBvWaZf7w9
+J2kMExqWBHMji0Dvm5JvkJL7wXtAsXJfSt37qrvLdDyImJXkKyr1NXNGQUsSfz/+
+5uKp0LIY0OoQCmFM/FxpHQ==
+m7f2Tzbl7bDAbILwWrM85A==
+Bjk6wqhLPGMSBp6q8dubULOtOHcxvcT72Et+s+kNl+o=
+Q0/GX1c9i2zlLjrY10LNFSpvpr9wJ/+2y0oNe7sXfOpIpf2LvnJviCI33xhJHnVMw9Ows0o7HDBM2pzVyf1j3g==
+/vTvfW8fkahSG3UJVbnJa39FGHm+mpAcjdy/GQo2qr0=
+F9nnEVO63ecwbtfbyThZ4og+z1eHYnwsN6KJf0TYKoDf4Nl3fwHacAzfSTKzsEkhKUeR8o+ctCC/BoTn8gCn7Q==
+NvWkqKEeQochVh7KzCDp7t1Ulju1BKdTdy0kDsnDpjs=
+K6q1oPgvGBfjBs4CTL5mkBXMHtLvJoX+SsjntOW6byY=
+npnY9cj95oYCAmfAJIllHXMyFWlOD8rGdfM+CCIz0hC/t1BruHT3/x9W38MeW+DaK0wDA+5YTsWbPY7uWppXtA==
+0qLR+Yxdp7Opm23Xy5p5vF6/ApJ2S2Hxi7d5LL2qxj6KMfbw+t1h1VKRU0dlT3+l
+po+53wMkCBo9x0nQVDI3GlKXgz6c0ivuQLbvBxhmzSE=
+X2tG5z/Ax4pXhY71ed6pGw==
+OiZrtohXyrKQXzwDaFlmaw==
+XB/HZn6MB4ckdNfIelytQQ==
+E15k0wqWeRsuQfLfSMiFRg==
+zoOeVUhdi+E1boC65dQOuA==
+LGh7TbsYEU20iaPIdMSGaQ/PQKqWyFCHofiRi+OQtQs=
+uF4NK3HifTCdRLpoQGMkZ6UtQ1I/B8EnHhivkul8yAfTNHVKYoS4YVXqILlSKJP03zJeSXSk5LDaBA50THsUcw==
+9gDoVqs8FdBpVD4DXSd8ZzW6QhEua9QM+UTlK4L5Zbw=
+SHzCbMTR8+UI3Gj1ViHiLphRmXhQx0KJpZwOkJjuvlHaNjfRNufzNqGP2lw58VpufXtOUIwL4E/kNZYbVZvwNg==
+VtPY+G0hMSRpq9/mCWiOPeUmjktUF0GsQmspSRkPqk4=
+5MGlQbFuijD1dcXV+ZFWvfSd533pfh/jKWJgVsJ7ASE=
+3oCqFdP4S+vjGR8haHgWS+DGfVTiyKKv2KpNqJ9e/e/4o+w7ufRf+0vfCdgy/x7I+B2wA7Kld6K8e40Lp5cOug==
+tA6S5W/uF4hzpremXUe/H7ZVhuaBTm4+3JWMaWGN5DAqW02/AeGz9X9FUTxT6sO+
+CTu2weO6jwdYxfNJdL/ar9yGHl5cEl6WD22RQSlalcU=
+iKBK9vBnACcJovFcM368Ag==
+5Iu0Vs7vgv6noZvAs62r3w==
+IGn8Vny2Pnmwo2Yypl5pNA==
+GWAsr6XfRK/P1VzZysWUIw==
+MYgyarfi8gYoa9oSNJpczwDOd9hgGAsIzPIlfz9+g0w=
+PcxJn/S5txPXb7j1s7ZV6QP00Z7JKTxlS5C2JbQJ2vw=
+1oHfFDeCIczeps2EcOFqgZ7yaQTp4LYgOsVQmqSIV14=
+x44Xh/vJcVw1+kqBFxMxPQ==
+GxSvaOsGHEN/tTyUJrmx5g==
+PlsjTese076zpyXx0wnKLg==

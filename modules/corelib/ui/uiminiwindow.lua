@@ -1,386 +1,386 @@
--- @docclass
-UIMiniWindow = extends(UIWindow, "UIMiniWindow")
-
-function UIMiniWindow.create()
-  local miniwindow = UIMiniWindow.internalCreate()
-  miniwindow.UIMiniWindowContainer = true
-  return miniwindow
-end
-
-function UIMiniWindow:open(dontSave)
-  self:setVisible(true)
-
-  if not dontSave then
-    self:setSettings({closed = false})
-  end
-
-  signalcall(self.onOpen, self)
-end
-
-function UIMiniWindow:close(dontSave)
-  if not self:isExplicitlyVisible() then return end
-  self:setVisible(false)
-
-  if not dontSave then
-    self:setSettings({closed = true})
-  end
-
-  signalcall(self.onClose, self)
-end
-
-function UIMiniWindow:minimize(dontSave)
-  self:setOn(true)
-  self:getChildById('contentsPanel'):hide()
-  self:getChildById('miniwindowScrollBar'):hide()
-  self:getChildById('bottomResizeBorder'):hide()
-  self:getChildById('minimizeButton'):setOn(true)
-  self.maximizedHeight = self:getHeight()
-  self:setHeight(self.minimizedHeight)
-
-  if not dontSave then
-    self:setSettings({minimized = true})
-  end
-
-  signalcall(self.onMinimize, self)
-end
-
-function UIMiniWindow:maximize(dontSave)
-  self:setOn(false)
-  self:getChildById('contentsPanel'):show()
-  self:getChildById('miniwindowScrollBar'):show()
-  self:getChildById('bottomResizeBorder'):show()
-  self:getChildById('minimizeButton'):setOn(false)
-  self:setHeight(self:getSettings('height') or self.maximizedHeight)
-
-  if not dontSave then
-    self:setSettings({minimized = false})
-  end
-
-  local parent = self:getParent()
-  if parent and parent:getClassName() == 'UIMiniWindowContainer' then
-    parent:fitAll(self)
-  end
-
-  signalcall(self.onMaximize, self)
-end
-
-function UIMiniWindow:setup()
-  self:getChildById('closeButton').onClick =
-    function()
-      self:close()
-    end
-
-  self:getChildById('minimizeButton').onClick =
-    function()
-      if self:isOn() then
-        self:maximize()
-      else
-        self:minimize()
-      end
-    end
-
-  self:getChildById('miniwindowTopBar').onDoubleClick =
-    function()
-      if self:isOn() then
-        self:maximize()
-      else
-        self:minimize()
-      end
-    end
-
-  local oldParent = self:getParent()
-
-  local settings = g_settings.getNode('MiniWindows')
-  if settings then
-    local selfSettings = settings[self:getId()]
-    if selfSettings then
-      if selfSettings.parentId then
-        local parent = rootWidget:recursiveGetChildById(selfSettings.parentId)
-        if parent then
-          if parent:getClassName() == 'UIMiniWindowContainer' and selfSettings.index and parent:isOn() then
-            self.miniIndex = selfSettings.index
-            parent:scheduleInsert(self, selfSettings.index)
-          elseif selfSettings.position then
-            self:setParent(parent, true)
-            self:setPosition(topoint(selfSettings.position))
-          end
-        end
-      end
-
-      if selfSettings.minimized then
-        self:minimize(true)
-      else
-        if selfSettings.height and self:isResizeable() then
-          self:setHeight(selfSettings.height)
-        elseif selfSettings.height and not self:isResizeable() then
-          self:eraseSettings({height = true})
-        end
-      end
-
-      if selfSettings.closed then
-        self:close(true)
-      end
-    end
-  end
-
-  local newParent = self:getParent()
-
-  self.miniLoaded = true
-
-  if self.save then
-    if oldParent and oldParent:getClassName() == 'UIMiniWindowContainer' then
-      addEvent(function() oldParent:order() end)
-    end
-    if newParent and newParent:getClassName() == 'UIMiniWindowContainer' and newParent ~= oldParent then
-      addEvent(function() newParent:order() end)
-    end
-  end
-
-  self:fitOnParent()
-end
-
-function UIMiniWindow:onVisibilityChange(visible)
-  self:fitOnParent()
-end
-
-function UIMiniWindow:onDragEnter(mousePos)
-  local parent = self:getParent()
-  if not parent then return false end
-
-  if parent:getClassName() == 'UIMiniWindowContainer' then
-    local containerParent = parent:getParent()
-    parent:removeChild(self)
-    containerParent:addChild(self)
-    parent:saveChildren()
-  end
-
-  local oldPos = self:getPosition()
-  self.movingReference = { x = mousePos.x - oldPos.x, y = mousePos.y - oldPos.y }
-  self:setPosition(oldPos)
-  self.free = true
-  return true
-end
-
-function UIMiniWindow:onDragLeave(droppedWidget, mousePos)
-  if self.movedWidget then
-    self.setMovedChildMargin(self.movedOldMargin or 0)
-    self.movedWidget = nil
-    self.setMovedChildMargin = nil
-    self.movedOldMargin = nil
-    self.movedIndex = nil
-  end
-
-  self:saveParent(self:getParent())
-end
-
-function UIMiniWindow:onDragMove(mousePos, mouseMoved)
-  local oldMousePosY = mousePos.y - mouseMoved.y
-  local children = rootWidget:recursiveGetChildrenByMarginPos(mousePos)
-  local overAnyWidget = false
-  for i=1,#children do
-    local child = children[i]
-    if child:getParent():getClassName() == 'UIMiniWindowContainer' then
-      overAnyWidget = true
-
-      local childCenterY = child:getY() + child:getHeight() / 2
-      if child == self.movedWidget and mousePos.y < childCenterY and oldMousePosY < childCenterY then
-        break
-      end
-
-      if self.movedWidget then
-        self.setMovedChildMargin(self.movedOldMargin or 0)
-        self.setMovedChildMargin = nil
-      end
-
-      if mousePos.y < childCenterY then
-        self.movedOldMargin = child:getMarginTop()
-        self.setMovedChildMargin = function(v) child:setMarginTop(v) end
-        self.movedIndex = 0
-      else
-        self.movedOldMargin = child:getMarginBottom()
-        self.setMovedChildMargin = function(v) child:setMarginBottom(v) end
-        self.movedIndex = 1
-      end
-
-      self.movedWidget = child
-      self.setMovedChildMargin(self:getHeight())
-      break
-    end
-  end
-
-  if not overAnyWidget and self.movedWidget then
-    self.setMovedChildMargin(self.movedOldMargin or 0)
-    self.movedWidget = nil
-  end
-
-  return UIWindow.onDragMove(self, mousePos, mouseMoved)
-end
-
-function UIMiniWindow:onMousePress()
-  local parent = self:getParent()
-  if not parent then return false end
-  if parent:getClassName() ~= 'UIMiniWindowContainer' then
-    self:raise()
-    return true
-  end
-end
-
-function UIMiniWindow:onFocusChange(focused)
-  if not focused then return end
-  local parent = self:getParent()
-  if parent and parent:getClassName() ~= 'UIMiniWindowContainer' then
-    self:raise()
-  end
-end
-
-function UIMiniWindow:onHeightChange(height)
-  if not self:isOn() then
-    self:setSettings({height = height})
-  end
-  self:fitOnParent()
-end
-
-function UIMiniWindow:getSettings(name)
-  if not self.save then return nil end
-  local settings = g_settings.getNode('MiniWindows')
-  if settings then
-    local selfSettings = settings[self:getId()]
-    if selfSettings then
-      return selfSettings[name]
-    end
-  end
-  return nil
-end
-
-function UIMiniWindow:setSettings(data)
-  if not self.save then return end
-
-  local settings = g_settings.getNode('MiniWindows')
-  if not settings then
-    settings = {}
-  end
-
-  local id = self:getId()
-  if not settings[id] then
-    settings[id] = {}
-  end
-
-  for key,value in pairs(data) do
-    settings[id][key] = value
-  end
-
-  g_settings.setNode('MiniWindows', settings)
-end
-
-function UIMiniWindow:eraseSettings(data)
-  if not self.save then return end
-
-  local settings = g_settings.getNode('MiniWindows')
-  if not settings then
-    settings = {}
-  end
-
-  local id = self:getId()
-  if not settings[id] then
-    settings[id] = {}
-  end
-
-  for key,value in pairs(data) do
-    settings[id][key] = nil
-  end
-
-  g_settings.setNode('MiniWindows', settings)
-end
-
-function UIMiniWindow:saveParent(parent)
-  local parent = self:getParent()
-  if parent then
-    if parent:getClassName() == 'UIMiniWindowContainer' then
-      parent:saveChildren()
-    else
-      self:saveParentPosition(parent:getId(), self:getPosition())
-    end
-  end
-end
-
-function UIMiniWindow:saveParentPosition(parentId, position)
-  local selfSettings = {}
-  selfSettings.parentId = parentId
-  selfSettings.position = pointtostring(position)
-  self:setSettings(selfSettings)
-end
-
-function UIMiniWindow:saveParentIndex(parentId, index)
-  local selfSettings = {}
-  selfSettings.parentId = parentId
-  selfSettings.index = index
-  self:setSettings(selfSettings)
-  self.miniIndex = index
-end
-
-function UIMiniWindow:disableResize()
-  self:getChildById('bottomResizeBorder'):disable()
-end
-
-function UIMiniWindow:enableResize()
-  self:getChildById('bottomResizeBorder'):enable()
-end
-
-function UIMiniWindow:fitOnParent()
-  local parent = self:getParent()
-  if self:isVisible() and parent and parent:getClassName() == 'UIMiniWindowContainer' then
-    parent:fitAll(self)
-  end
-end
-
-function UIMiniWindow:setParent(parent, dontsave)
-  UIWidget.setParent(self, parent)
-  if not dontsave then
-    self:saveParent(parent)
-  end
-  self:fitOnParent()
-end
-
-function UIMiniWindow:setHeight(height)
-  UIWidget.setHeight(self, height)
-  signalcall(self.onHeightChange, self, height)
-end
-
-function UIMiniWindow:setContentHeight(height)
-  local contentsPanel = self:getChildById('contentsPanel')
-  local minHeight = contentsPanel:getMarginTop() + contentsPanel:getMarginBottom() + contentsPanel:getPaddingTop() + contentsPanel:getPaddingBottom()
-
-  local resizeBorder = self:getChildById('bottomResizeBorder')
-  resizeBorder:setParentSize(minHeight + height)
-end
-
-function UIMiniWindow:setContentMinimumHeight(height)
-  local contentsPanel = self:getChildById('contentsPanel')
-  local minHeight = contentsPanel:getMarginTop() + contentsPanel:getMarginBottom() + contentsPanel:getPaddingTop() + contentsPanel:getPaddingBottom()
-
-  local resizeBorder = self:getChildById('bottomResizeBorder')
-  resizeBorder:setMinimum(minHeight + height)
-end
-
-function UIMiniWindow:setContentMaximumHeight(height)
-  local contentsPanel = self:getChildById('contentsPanel')
-  local minHeight = contentsPanel:getMarginTop() + contentsPanel:getMarginBottom() + contentsPanel:getPaddingTop() + contentsPanel:getPaddingBottom()
-
-  local resizeBorder = self:getChildById('bottomResizeBorder')
-  resizeBorder:setMaximum(minHeight + height)
-end
-
-function UIMiniWindow:getMinimumHeight()
-  local resizeBorder = self:getChildById('bottomResizeBorder')
-  return resizeBorder:getMinimum()
-end
-
-function UIMiniWindow:getMaximumHeight()
-  local resizeBorder = self:getChildById('bottomResizeBorder')
-  return resizeBorder:getMaximum()
-end
-
-function UIMiniWindow:isResizeable()
-  local resizeBorder = self:getChildById('bottomResizeBorder')
-  return resizeBorder:isExplicitlyVisible() and resizeBorder:isEnabled()
-end
+n+JvUrOxIM2w5XQrk3QLCQ==
+dawqmeeEtT1AjsZwxzcr9kdkOOYVvRSN/y/2p2qCBvqzs5WzX1MFNsT35EFHmn4wKYzParRDJ1RdGfciH9cgGA==
+nRhmhLi33pStBxhS5oZ8Rg==
+J1nDlN5IbIku7xTOLPWdMxqHjwjtPA6BbE+nAYSv9Ao=
+Zqygm/2rgh6qV0RLqcaqLVRu13s18yDYKPvpmXUyOqC9vQyCPCHp2X777bi2Xjqjknj8Hz2tHBYoINvqAdLjjA==
+Ws39/T5s5QeuQpI06ARLtaj7n7a9i8QOJfKk5U3lLpa8q9ysFlbvJGoPk2YmtZDe
+2A/PC+1dKD6yB0ZWldWVwg86+G4SuwrqWuD/E2Xq8AU=
+zL8EiNC7WtBCTSq/hDLilA==
+mFZXTrdtaALoJ3Ncjo46yw==
+QFlVPNwX1l8VnyYIXI5CtaeT0Ygz2IVv4sPiM0zs++3X9vgJqf8HyJkX5Q/ya9kh
++5ZwwJgjDnU0BZ/VcTQd8bcSN1bBzVxLlde91l3d0Pk=
+yd3kp2y39Q2qHl8u9pdYtw==
+F1Xt69xAlwRPcplYI953u97CHRI1R9li2i/VdWK77t0=
+ltsXjuEJTUAwt0GCCPd8Tg9T7aho6vnfp0Z0kdd1snSJddvNBfbt9ntFWPd7pvwM
+F9kIu3udbYb/yHJBu0DGSA==
+wae9G8DQHMY95xS3kUFHhQ==
+aB4OTqf1V829M1ayqIDHt0pt6Q3JbSbPS5Y7MCQ4a4g=
+GYCqRdA2naaq072/ic5nRA==
+PT9Oki2nVqWCjCY9XyZQ4w==
+79WpqOcTvNSBdcgKecWn6Yyk1eCUynhKa0DxCpHmHb/cmz58B1Nam4LqtitfeU/c
+YxTD0pDqnJ3TWYg3RNGGJI9eyecCJAw2NXjr0tLPlPsTY0IPnXTjnsIrotJexdaSrd7TkS/ohu7vx1pti+eFxQ==
+mG/lvduXRUhF6FGTcf5IdEss5DR5u4J1vsUn4wxUfAk=
+gOvb6W79SYEwA3ZTbIuA4g==
+lHmwfezXUy1lJzvEU52IAkHeP7ABVWAsVfQxu41U7z8=
+FsCPgjg74y9KIH5RumEfdAGzJX4y5OHt7BHL/iMV8qo9CF2I7eu0S0QdXH8Vyxd3
+EsLhvuMEEUwrL+O51x+z7A==
+PUFgMyoLAybxdU3lXcQPNw==
+n9thejK40bIoJepje9WJcWAApufIGXtMscq/t3m/TBnq3HiG9Y8DjgxRSpDee3f5
+5++OklBZuT7x3f4IEO9hWg==
+iaoJ4KyzCv+8jOVveEG+qQ==
+Jw+9W9Yb/LrTe+UfUZRs3Fz4ivNPWBHk8I3dY5ensyYYZvN2Wi9R/CZOl1lqo51V
+CsqXd03wh+mH013unyhWPIH8324k20jD3X53Z90mbvw=
+cQqWaymL5ih4EqjGnhI7ek/F3EeBtiO1kqikoTbfzeKIDu+qlSCdx1wpL75d95/c
+RRm54Vkn7lGZpTGWqivayN1L7o25ruKAxcYz8XEdWsSgAb/OUs1LmOJbupiZHjuKuyWSnfLNWmigi4QOGLqyhA==
+VwAx1eIp0SEeyiYo+CdyjWU1Y85XZwz5Tu6xZiFpsV/11eys3IlPTwLBojDtEK4eTPaOyVL/Y/RdsShROmJDjA==
+PVHUUTRZPhKTWeXNAxxDmldc8y9yOuM2Zm2fm9D1KlbSc7bD1xd4qK/CNL1iGi5sCp0ghgMINZo3JyeMtF/QtQ==
+Jm8GchMGgtKDXa3WKljtGolswevtBXo0HEKfT+zgLqW4G3dEcCJ8zAi6KDmqjYDV
+73e1ISDu0aj0Gm4OUB/XKdHITilo7S0OSVY0pNFgDhmS+yIT47aPXQzDt7rX7Cmv
+rmmkIPOYBI91KvJb3cEaew==
+I2PUijgdTQ37v1qjkADlzPKTUnsOPoSx+FV0jfJMzYk=
+gI6dYSNrYdMFqR5dnd8YGGNZU0GRka+Md2+x8jugTqUytQxlrgw1uBs18b+MyiES
+Ku+QnA1WVd5pdpks3DnnoA==
+syPYl7bFTKleJxG13qmiZQ==
+esBHi8u9qoSs6OSQxQ2fMFgv4VTvrsCPDQC3MzSZ36LjHxRrw/qsFk7nFl88BM3K
+dP53OTL4quz8H+M5vdpgoQ==
+mdsUFLzvOSQgacmAdEl0xQ==
+RoSgQSO6a0AH83Xi2Ywo9CKTgMCvgo6aZdJF7hb3uM8VmhZXT9orUPw0iX9qUyRM
+pbQw9SbpMbWS+DPfyGGk1IFUx/85qmPru7Qx6srWAzY=
+xGOOrMqZ+WDowrrasaBgsL5PTohMKfVgvib0Q5LAFFsbDERe5zNRQ3IngcF6NAJa
+uK29EdLlLrP8KbQb0TfJzyfwCOdnVQBZGv6DX/3lpW6gVYOmz5fQujGbopHcFoSX2LpRlkglUkmFeXpwp0FvrQ==
+T77s7ygD72v64wNG7fUdsS46I1Xp3ESqxYKKG2LJNS5LtEoWmJWFtArW8Wn0o06SwB2uWedHnmJe4O6Tr+iWBA==
+isCj9J3Y1lORFTIw9EGX9wprgRVP800UJsx0Vr6KEL2fJGjpHMEUZxI/mFM8iS+8t6hx3asTHBUwhTkXVr8fDw==
+odYYLIh0BvPT/5UcIaIKpJ5l/wDCKak6/+HBss2NL02LOqXWeP95Nq1KGJgxVUcnq/OkImd7RPY3v2FlPWt9BT5nInMFg4dyPd10ItgOTXw=
+p+xQxRJW1dIWQmGLDg1Gyg==
+yeEZSEotZV/BHy3ScLlAtMGk+ltIhyHb4+eFS5rI16w=
+u5u7JCK1pMSQadwYzXIBtzPsFi003XmmtfUgpyOExIFihUijpX+/+3KIUkPFyPWm
+WOjasYkAjL5Y5m13SixyLw==
+gkLPjlsq2WreNnI2Cq0j2g==
+E60pWUlckW1QQjYHxqjTm+5YC5f4GeiEcCpKDEP342NfIuJ2upCD90J4NUoXeDfl
+h6yoe7Bf1O4uZ7FCh9SfyxjdR5Zvn0t3ARE4NTkC/f+m+ok0qsQGqh23htdurAl58uCl8EKwA4XCpHhTP0uT6+luhboA1hr1e+Vljclu5cU=
+zvAcgUqqc49gvZXEIc+T8sRe6LlOjgKaXBWy15mdlyI=
++KcSknQKpGDuga0Sipt3Cw==
+9RuSp26I6lJPfkhhmB0GaQ==
+/+EKhdxbYiosB2/yIeQuGMHxAfZDVR4fdgHtqH8ls/NKni7KJ3oI2a0CQh0IL38b
+7pa/nYbfdirjCb6TTkDHLQ==
+lgML1HgW8Ts/D6aM+ulbxg==
+8LhZeF0FQhzv0/WiEyq6dassxqb6jGQtA00B9it8cbw=
+5N2YMFc43yPZXNKx+iu6lLrDUiiZX5uMalm+sXyj8x1/Py9tLq+aXFQYd0+ZhpYJ
+AiYgz9e4qUsCNpnuoTLErg==
+5un/bUxcT8/ZqLeDMZvp4qvd7pGDHovA0NeAhZgJXbw=
+MNxi4nLCPL5dRQiJdMz0bw==
+eSh4Oyg0XNGtUXzjKE/2bA==
+A+LxWV94GcgpO31I0cAN9pTKSkHi0ew0ZbuJOL5kMX2kLrN5iwTwumY6MbDXIdJm
+QuCe9osOr1b0CsBieoUPAA==
+dX9DJXnRSGb7zf5G9ZTC57o8UGgW7oPs2ryeMe+U09k=
+4+GCpoIgECre54r/osRPJA7QM5R2zo+0+OjDsbE7jhs=
+A9FXgcpxBPP/0rhrW1Ta6g==
+rAWININZ9hWPT4mPE4ly1SBgdOFVbSgkixwx6tzSEI8=
+rOjEBc8NYu+POx0kUpVVow==
+uh+ih7FWP7OWo44ctF92Gg==
+aw6Uvg98TyXYwLZcohYGBg==
+I2LxqxR1rBOcJrF8bvTXN/u3/ijzKCTh7ibHQJY0SxquZ7SEO3CWwE5wbBtHX8A5egA4qAQiRF5vHcKuxKmgjA==
+08twD5UMf/gHOsAye82MUQ==
+RGmZd/eI0YgnioaIP7f1PnOqzSPGJ/DyYQ2oAPYP0Fs=
+l7zLgKKH5o+oIAqz7LYrTHwhDxhm4OuICLrUR411we0=
+O35Vo/ntfMcBFifaiDKhjA==
+3vl7zgrl/zCw0t1OPPz6aN/tot7E13W1wFVhnBgtb5c=
+rr0qh89jVsUCHYhtuEanxw==
+WHWtjr1V4klS3WykEJBgEg==
+nLVgVz+/Fh9AUn2eTNcKKg==
+YbWory751nnPUOGlgQFz3Je+FB0GLHzQG+wTNdu3tHQ1aUZeAhN9J2zbbHfyTEH0
+xRe8g0XFYgrnW3lAmQRN4g==
+oppaEQ9CLG+H906h9yVwfvxWnsfykDb3xi6jfaW4HiOz8RmSqJmR/rteI8yiySqrebYisjAiGxQDmh1hGYPI4w==
+GueS95ol8Kou0BIQGpIhg6SUsktz/MDAw4EnGXHKrjI=
+6/EMPj74vGeIE1mj2eX8B1ipx0w51peYd9+Se8abBUzlnS4ZdrcQstVXPuFfCONR
+5NlgsL8Ai8O2M+UPJsx6MhDP3t/eEROzdKjirEpUalo=
+N67c8Qa9saAT4i331ztVSKpjjLf5+7SyBtwQqAgsEXxZHhOq0pKZaL9PtJuEmhEx
+uVMOs4tjNgTS0SkGTnhOy3vKMPrN2fTj49rskEsD31y7BkdYIhNBRUlye8j2GjKjuL0S9V+KBAi8xfSdOGvulnR53MOc6QvMbhk7FdlZdjQ=
+IXqymfZMKk1msHX/geKX4NueUVGJZhafzRWU8h1N1jw=
+0xTzR1T1TKABzoLOgMBA9azSOJh7b01lXcYK6L/yrdxqXR9pjRk70g/RRDa+CrJNqkF3fogFxBTBHyVq3W2jW7Ryit8ybWbZ+WeWsoWuYl/H3LWll5eqqzuEi1XKrmfMaGl0GB+XUMeY3D0bgGXRsg==
+CIGh/Tg7ubSdGgNpORK9kpovAsij64M9Eggmouxw42nNpO5jZxD83uKoBUEMBJMn
+wnoPH97rjL1TmtDmixbZ5khAp8binJNDWX4FtG5py1QoFf655kWcIvuz6H2PgLn9fQeTII4m6bdNvy0N6KrYhA==
+eqxvq+7SMj6WzRtKHIHpcRJ5p6HEW6aHeDQiN7J+8zlTO+ZgAcQEFcnQxMLbjRji
+QWsKO+eeKVAAdYYpFRT6eP3FWvCef9niEq2JNRwGixtv7byPTdkR+my1XL5zxoi/
+M8ur2ozV7WrUAu6c+HvZObwTKdKpJqoHlY/L/P+JX0P+wlIaWjGa6jozVbk92NUEYCX1aQHkG7JGuTgELBn5Fg==
+63geRjo/tUyVw3T9XUVBuQ==
+C6+fx6WxKO0p8cXpPmWvuA==
++uvpRUxdvyP75tRw2lMIDw==
+ssWjj603szfm1q1f0DeceQ==
+29uKdrHh/9kM7Uw5w3SYRpvFSCN0Abau+W7R8/ZQUxayHsEbA5tDbeerXpHI20hE
+jkmFbuBP1S23bv4JurqOzvo5zC9eMoNLUuhdDRbsDcQ=
+2h3BW9XmYS9O4ejLYsJkSQ==
+f9aLjUVEir1D1rutyDuBpJcXWJ1hhMUzCFG2+hylHC7Wz/MGtRI6F752OneF2Q0fiW8Y6B3kn81muBVSDC+zVA==
+u1iB23ew2DkJeUNHkRhGJjCXQ3Jbr2dOue367hDkaWQYT/bIYFu9e7ylBuf13qiZ
+EXshS9VFiaDu+/DWl9/vX6DXSlDpN4+pJ//OynOOTTfXh7PgZBNqu9n1iKFCNryjJ41pO6ELk2X7s8Gjrq30qml0ORo+y5NkqdLAhMCl7CE=
+CZBdy1Gx9BNw3i+KURVydNX6qrSezmyBP9VEfMnuXuj1sQyPkc4sny3Q+XvcFPbp
+kDcsk7WV4yweRBdFNyEvjA==
+SufO73uQS4PjP2pQEMdMXw==
+yO/dxL6GHmtQOCZsi4uCgQ==
+UtFKJ48XcMRMqLC48eAN+uqEg8lC953odH5FXFr80ziSTBLoMaLh3XRfjxBRp+33
+aDXd+RZgwyRQkHqtgNTo/lZk0juVLYIByEWz8nFe4Gc=
+MwJOazdOI0qs/KKc1BNi3g==
+MJJGcmkRxRKvlbUpJ2QekQ==
+bZMIaz1uYChDASut8BhFPg==
+uT1cTo8CfC0dCV0GNoeOmg==
+SvbOCct7R/vToHmJs/UlaixJ0T/P2qaC8lD0SlhYaPTUjxb+GvNubVIZpSfgnKxD
+RrIBtgIy+2M4k5zcShttVQ==
+v0EVMPZ/k9bgoqGh7y84YBoQrEfzGkig+j8OxpUGtD8=
+ympbQtAErPh3IfYV8FLauw==
+3flHTchxv9mjLAcS7xbbUMmRXKcDdoRL3M8sPiOA8W8=
+Gt4XnUcEtwCj3bzW1gsKcC0wpw7lPnYc9LCCoeptIKBDu2R4CnH0tNeChsyFnQn2Pj94OFjklPNdGZCkBLgKvxAKaZVj0DKltTihX1XgkdY=
+v49SeJlb612oKSqzE7ER/dYHH6hIS1rkZsjlppoJMvsdobuobfPf9B5ccY4l4sNpONd0t+CFhYCvESY3v9oD8A==
+MUrYUlrykwIzpDBfOVmmjA==
+C9P6jQPIPor6P2aFPDTYxswt+WczyVmw4ogGo2V71H6taJT4Gls2Vt0YYYha+bdQzk5uy93dll8ivXyEgj/nQasaVD2bdq8/oLvNtQdfr5Sq4B9VVuoqFquWA1CRehgcI14eVnoQU3RWtUWsfMhStg==
+pbsr0Wztbe84RcZhffxdamCgMZFpnMvPDcT2KcewhbxvLNRxDYPKL+WpPApHklRuw8+Gfuvqm1MJBFAJYe/tHw==
+l4y2thBl1hbDFry1c83DJA==
+xsZL+llrhvE9/Mk7PDM4jQ==
+QBII50ErIrbC18NnILl3UQ==
+7NHpTaJFgeX5MD2QezczFgJL3FM3137sfEvtT9CE5bg=
+rz7HBoWKL1ewmNTY2MBtYg==
+NcxYQQ1lTZwWxbcbZjnCHQ==
+IwAXYS8FzLLmdtriSoBWPv2B8kKyohD0r6Kv+cfrwS4pa7NknBDuJiezGrvm5VlfX7xXApvwBgOH/ZZDUb0eNA==
+oDYKR+SNKpL8Ht2oEAU1W0kRyHh1B+YnPX8RahdkDL8=
+bcLB6+dDiSQTujXgHxZC9Q==
+Or/Y0MtS4VY3rPp+yxK+DA==
+tWcQxEnOwVTeguxgRx9FAVH5YN33pjXBApEKb0fvXJVkKoiPU/OTC1fmgyEcvdJh
+/MgqfyGpDYo/a8KyltwoWRs0B3naRd2eiIT3YYg0wyPcaff44NrvijOqOc5UJmAF
+ZjA6OFt8i7r+RK2cAExA8+x2kbQtaf5B9EW+OeuB3Er0pUCWPzRQCuUbjXB10eOH
+VzYLgSAZSb5Gz/18ZxFMTQ==
+/5BihO2INt4thaWFtIahYNNAuGbo7xGukd+Ta9SZNYQ7yg+Bw6rOAsGPW8CqcWOI173ixnXQ82E0aE/ZGOghUA==
+RQa/DF5Rvz3fBk5btxMpwXqg9v1+X/LOlvNgzLOqsEl/C2ozmU5wvfWET+Nf27Kg
+Ldi7CgL8Ff/VUf9aZe8jwN5bHVEuIkc/4AE2y/CvpKQ=
+HTdZjL9/e6ckVjtoIyqTnHdTtc4lTB/OA8OOTPa+FcUvVDJGNtHTLe4VOuFJe8Zv
+vIxXF/EYvWzY4TuQ6Xon8eWx24qKXJMfRlzXdHsEWEQ=
+LA5OGNx6jVBXNQFom3mQvA==
+vpjTKDehTvGVbbuTe9kDXQ==
+fhCPzXB9jW3J4CTztbh776A3hHbJBGd8NHApL+hZZYcdrz5GtXv4vi13a0rXqVTu
+5oG+ImRqe/35JKULM59RfunNTCajEXL0xcO8f09z1zhqYTO7/RTNYsixCH6JF96Q6MzHF+ddhonwbNFjqhgvQXdM9eeNM1NrNB6Y5C+u2WVsCRYYzl09nBGJW+ZD6gM1
+ZK3QUoq5YG9JBXFXvtdDqmbTVV8W1C7x1vUyCHMmKeY=
+6ZWajDArZSGO6CcB71Ctg1yRjRpj7QoRsTkz0pNBKmk=
+LicFfq038WjtPHNWvtiDbg==
+3OKZzSsF0QkQnSXR+2ZWkQ==
+ceH3myhcQfNyPhkLng1qmA==
+pVWd6gCPesu20p0QyPyt6M4k0o5qwO5EvIsY5gzeN0gV4dVOY5Ax5LRgRdsnu8jjZ5ElpOeq3O+uihugsNf6SA==
++k8FfrE6JwlGvSosUaMlh8HLW9IVbGY8c18GOxudxAU=
+2JJAzMj/tU5ZO+g558OQBJGXdcdvGe1/N5kIGK4f8o8oglp/jftzC28cAo7ekKUoG6Qn5Y3EbBxhWRBn2xWs7w==
+YbBHtN7beh/vIztMHjJLnHIc9gS59gRiIK9HNbW+uSs=
+mJb/o8De9Jgp1RIKNldVQgVDtHY4qzw5I33YI0ON6OIGz1sEyVBELSjeeEIWBQXe
+YD8bK274b/zkPvfYnm8j5z8tuoTwmnCC6Ojzr7vAwcc=
+uqxKHZlJytvSPFGl9IgSd5D96cmwRsoGRc9GYjUry8g=
+QZhcWPH26Ay+45nb32Yvqw==
+7g9EoeaFZD4OeVsUguNQ5A==
+xh4FVYq4zuVDX3H0PE7fNNZg4tykmQxnyht1Pysn7eph/9mUJTaGTpSMmlbLDNCR
+dJixYUW4PAxzmkUXrvYrDw==
+NRW1RRNjmOd6EFQO0l6BGA==
+qDXC4VjNtkaGsBd5nPMJnNGRkw6AXWyTO1+SuwxYUWi3xX2GuMTCgAjowAOGmIFF9yo/kG9V8biXOFVstaALDA==
+XWcyPbjJm+FahnljeSNWV9gEQydYF6mJYgJCs6szP3CZtaydTU9SzbeZ1Gnm84mbScwoxzlmjo3/Lg/9RS4lpQ==
+QBL28/xym5oBRCTfcr3ljHy1fJycxpmp2W+129jzkQxZK4OZUy9HkOnaNw+SiJDPHhUKo0hWBsy7mrdfB5dcSjzLw5KZTvuVQ7XXmyUBd94=
+MNq+BcGp372K8l2cdGNZwu3xyNT7vOcz0c2AqhvusK8=
+zt+irv/jgi5ivTySye0acuX7Uc9tRzv+9zu12DUw0tI=
+wWnmfabtWiv30pa9/LCM9hkF/Q1+RYKB2Q9TO+kqXvY=
+w58J2KMwsr8j9+DQefsQcZla+H7iJ4szhV6HggNwwMk23yYqweoGi7gGAmUbGznnkfhFqt7jbarUAYKDMDiqW3txXZKKDd3Mgd8OzNPpcOo=
++vo+zij8um11Tb09i64TT7dGLnD3M08/AnJ1vNAG3HE=
+cqEknEknhRQdkCN1nsDhqg==
+mXWcnZ0sQYVdOpk7fekLb8BLkHMBQ/w4OELO5YyxULYaWQ4/Wgy1bvJMS7bv4PFiUgLyPRFdnE/tl/JNLe1IyA==
+mJPtmRFSWrcYiSb1SjXV5GyFysPgj/BaRgoMf9vzdBZmjPzDxlRpAgupvyED+jpyz4E2Z1vDzN1ow5HhX3AHROooBib716wybSANRnpDxQpEPa6VX6itZLmv6tNYBw/SkWa3ZJOfzResWLv1r1+XGQ==
+serKw5NwwNplRPki4SFtdA==
+ILNi+wmDLa6c0c3gISSqYg==
+VUp+4KRPuYHqwZNBCf/xNA==
+TSadoQrPG8nS5827pagonACIPGIBmZ5bKQTU8ZWbMuQ=
+TKnh/8HOUeczdy1NsbYb4zUXbyqRAVG76MUKT14v9wVdQMxETGYlc4vo8zHL8I1n0He46XFacvJlnF3Jj3KQeA==
+XgfGg77PVqG/I3Oi3yKcIvunHGH+zCNyfeHfXdM9IrT5ePT2m7fEFghXnGw8Rf+k
+DxPmNng7sRN53N1yOu4tHg==
+w0w/Ysx6Ql1O2FvsFskyDA==
+unQR+FE/dWnEPATb9QIiO5fkGc2pcqWX3BBYlG5pDs00cbAx5a5YwHiOgZW4CS1X
+52GvAtGog4LKSbPFi6bXpsVegun5GWjmY6ZJmtGvy54yBKh4QiTnlMRb82MMOhXkvgkoPhw4Jg5XzOh+L7BSbA==
+sOB8ZCTfr1c3zQIR6zQEWA6q/NmJaHi8bprZYbPpyztuFl8Uh+5sPyVI+s7elb96HXdibmqZomJbF1kgTt1bxnXC0juU3SNwgoKEtHW++4I=
+InzL6OhcfmH2yCp7SJoXZNDmBDPxiyZAM0CiJuS5fwc=
+3psv6mWFPNE0v5zQQMchSQ==
+LPyqzYz9L+qqf8ECw4TBgRQqot4MbPrYIVqTwOZVfXICktxrpbQLcSEqzfzO/J/sLN7qMdxAtYIDQxfas/p46Q==
+uhh4TP70fqIsZB2uB1R41QSOlIEZRdr7OWM4aEZpVzgI7xuaMldef36nSIQ8pIV8moVqCM71+IgdFRC3VOYXsv1pROAGo+kC7BFxTg+jNCA=
+aDIw6/Zl6rOSyfRgIYKTeoxPsSM+q5P0QRl9tkbcSvc=
+PT6Ekhl7HAIbv1MxauXkGA==
+vTmobLz3IzvwrFc1JrMpPQ==
+hGhE4KnQwrrTqdZQ4jWoj6hX++ZGgmehndZCFPPHrGE=
++bKtJDuOO8saWqXXUcGTIxtMmUUZIPvl0dAX2LAPHdvpH3Y7LCxsEnpLDg9ZwDkKb5rjfud2qPFcRqtHIXzaTA==
+EW9afsA+EKERCb2XlEzCjg==
+iGN5Zj5gj0FYPIvqPstY6w==
+L5lzh9A3LCkTVdX+6jdkkg==
+YXI/exyuF6B6Me1TPVrpVA==
+8Qd62DCkAeg7v6Lyaq2AC8q9gQBKHQbQgVSEfVAZjh/ryhzK4B+xFSpAWTz6/Q9U5O52gj1hKjCn9CSJza5xxA==
+zPZNn9Ryav7dGUDlwUI41Yq4C7UvuNnT6NRulUg2UaxaLhK1Izp6oG8S8XtA3a3xixEd1lPKQXumGQA6pE4oFg==
+vo0P/Vk1278QvgniB+PSumvKZ7dy0IQ1rk/DZsE8E0g=
+XYAQ+Ufi7iuuF03DP1TmkQ==
+AXc8/UkWUAIUIEE//cnROg==
+39wO8xO518aFMaxilYGSuDjqm9OimcIV259ahm6n0WuV2zQZK/KmSwAygTRfRUUBh3FPIwdiEfy1pgY1Jnfrcg==
+bcOy+abgOl3/pT2rBhdKtg==
+NWakcC9d5t0DQE2OY5EHTw==
+zVdqjO4yViR+ehE49d0JhgUnI7LHcI/8J+T3hf0r/nIXg74UcOiWtsscrQjuDfAK
+90n20mqnWbKVKoGy+F8dVRZCZW4FUoabcLe5NT6o5s3nt7k9svEp9IiODGWLNf93
+sDT5TT7NZZPyHrQvkIrJFiaXfefEJw3oM2HEoIhtjxQFrzDThsgTu9p9hjNAosE7
+joEBWsnyuekZj7HvcfISlxBIy46O12GbyWLDf9oR7RWQfSTIUFv/iUgsp4/6Opk91NxNY0ryqe0QwCk9MTtHUg==
+mET27PL43dUD6VhcizemG4jxSdcGo4wjb1hq/AeYh+E=
+fplE/AntHKl6fSlEfR+nPA==
+J4inws61y8AbYwInGY6zSQ==
+t0Jlp82hRAMWXc9XJUhNpQ==
+E/y18Ehocnnkg6flmEmlfw==
+3X5W+qMQfoiQrgNBdvOVvFwV2w6zApdUAnABBHtIXddkwxQgi8iKwZ2UQ4Z/kUcm
+YL58m6lBofxuFF+zbxeeqwrTDAi8g1RT2gRwyPr+/uyuTCOB1HuhrgqQ5Xv6nBEo
+qCr2K+ZTN/oiXo8x4d5F4bExygUSJDUmsbd9kqZOO+bsw2L1Q04uUay31Noor2uk
+dR9eQ8e5m3zJ1juNgJF2AvK+YKzSX/i/+ruNzfz3PgfP5xmBTMGU7NNAOUJZVpwIssrWRP6E7OFPO0fuOXg1bhj4vdnrmwAnmGmjapTFTAA=
+mPu+qEap8E6ySj1+Ldf2X53rR9teTagwYDZHd886VGs=
+/Rv5/uKByBH/HeAoWofXIQ==
+7eMTNkKenHfY7ULNmXS1Mw==
+Dwj/Ic3hHwmAW4YfRzCdYw==
+kyMoIjysfjHQeZ+h3uIOrBGi+o/9j42pzPe9sN9zMF0wLUt0ZlrtBzQc8FQm40QX
+JiwiCszaxvvpocq1TyTrExB2Te4n9ASHGtUiPZ4Uobw=
+UdDyDs6JfvHkncKVhURUNi+fy0UnPdj2D+lSWNW4W/y1fBNhkWxWYGvKHdEcbFXC
+46d+IZtThWQYmhMCdxC9gA==
+Ywcas5w12QtHuIBh3GwyyY6BIOjEQg0f9v6L0dMm8LE=
+BLAuVz1BCzSUaG6k06xm1w==
+ai6sFb/1Ng5TJ7p0IKh9cw==
+gLzXws9P4TzOnLgrDAgbsqxMnonZXBLB3qfJZ6WXYT5xkOhGaAnHwjw6jSyOF/kp
+Hthgs+AKRMKG5jN/vQBT1KAGSEgBLAqApwoVuzog7g7ZEwXMFm+bS4d8RLsGO3Rs
+V5brPyIvSe6lyGLkWeSNGBitoJvGwcCfuSzO55ZPscWs3z+gtyqNmg5IzJj3aVw1Fnv6XyQ8FY6gJXod1e0NOA==
+kMylm1tjF5CMDrtwu+wL1MGnF+6rD+manbYz03mQcz8=
+FVw1jFwbkgO5arhqmCtvJEdQvQY9jusUS4Hs3J8K9LfeMgn64hD2GH0lyd00GsKE
+VvZk3BANL0YSBxy0iB2w2boaKxh2CTfegL6/9gbruAA=
+drlH9e5QNJqGczZX9JoSk48bqa1g+FYVPcarVK+2XVg=
+BAgS1hN+4JZsmqVXZ35W3A==
+ZptL/PbiENcQCqT7Kc1e5Q==
+Q6k0klTAlVw0OoNRJJisjw==
+ae1e7hnlJ28Bl7uV9Q1YKQ==
+sHzgGDdeHrO4juAX3FKJ7g==
+A7csqWVrXnc91c/SvVLdouu2Qg4dOZ1vzWYY3FayKj8aNUEkxc5KrHDzVqpKomdv
+7oUTvbE5OtkbdRhjjC51jRm1lAYrrydtjrKcLTqqP2f2sOho8wT5BWb5Ql18Mi9s
+fS33diok69KzF+M5QWy5eg==
+JnnnwVQtX/qYzcwITdu5oUYlwpVySxA3WARkZBa3JTK49/gMluyZo4SIZJNOhJDJ/aaEmOEYbQfGu0QMiypq+A==
+NdUXbnMZHkrJWnv/1xL2MosrYpHPNcVSfCJQdB0ZFPc=
+6fAUe/QctvBHvgcdx3FKW1egvhSEIthl7fcvwwYXIRA=
+dp6G+6VaE88O1Vxokp6TJg==
+HkmWf89oCGEhya8nSn03Og==
+F2leP1XsTHAYhvIUC7WMfgtEW7Hgm7z0GppX8ORqrGE=
+zgJi4dE7EprZ5mBbb3/JhA+wULBjW3xkjkFwznF61p4=
+eJv/oDetJMNFnvFW3OWEx9niXvh3XeoLuRhI3uZ9AUg=
+RnVOLq6Q1AYgAqG/1iOMeQ==
+Kqc+FE2AiTMTw6i5j4rc4g==
+B2ovv7xMDAXVnm8VKaZ2qY9DhdEKpYFNV9xvbdCuKfj7i0KJd1UsuHYzs9KXsw/+
+V4ZF72+oZ1hLqje2RmbVwU9weKXcceV+s7QCuWBgN+0=
+lwEvBwv6Em8HoJmENwonKw==
+SaiN91qytbrLQRL14EnUig==
+X1jL5FXa2boXeRVk6RjUEOGHCgQ4C004fKupj7KqfGqEeMkH9IqfnPdmalWPSnqm
+8b5JTA41dsLVnZaRuiWdnw==
+zgqNCzACHC7pwGuy5kEvVg==
+Kia/9cV13Iu/hKpQ12K5vxq8yrXJgok8NAXxo2xz7MAahFWv4JpayxUj/8mr8nF5
+0tLkOrRRF8dCs87VOqsqFF4WrnjWDUA7Z3n7A+NG0/9xMhUnpUDeILX/YplgyWDf
+XRQsqUIytupVvFPW6krH4w==
+rLMJSJVd9gYkM3YNgnKdhlw8AKI7NDDrBKe9UotQ7biVhXp5nw9xIjKFE8xQTc0DBBmSiZ2NOvf38dOX+K9x8Q==
+Iv8Q6/Tg70cOwql6smLV/oTzNq2iPMOlH8OFFIzym6c=
+oGdw40mxn3TnUXk9gPRzT/f4C5N0Wm7J82HwSM+zFI8=
+uVUFBtN3hl83ezb/LfpN3g==
+GtMX66WDXWrqPYZYgpQxbg==
+kVlUNPU/CzhjmlvKWpnS6fPMM0/0qzhLGP04goQ31Yw=
+RryvgihE+Bl+RJtLfY/PA9Xq+1qiVvzsl/rnP5tW4/k=
++JeVZotzX50vRGFcD7CqstYXlVUPEEEVaElxOGJ+x5c=
+P+dXdD+0IA5dy3g59nJKeA==
+si77ggJb/qucb88Gd7Eh+g==
+Z/4XnI37JrYJG2kegYORlR3v2XbUGXdZWZaYZ2AZjky8xhQF0tpNBpaEs1WviINW
+9QGuf8fpJMMhQsIVwTTjKEq+EFSb23o7xj/LN11zs1Y=
+2jHiWgdlp7hBou+imec7og==
+Jd+cX2XatmlN9lyC4fL8SQ==
+pcuAD2mn7+I9ESqXOBUFOYOCi0CgGDjUUZL1YgieZIGW9Y54r8tseUlH6z56BsSl
+IT0TbHa+NiT3QyX/Kk8XnA==
+oEldNpHri8Ev3teLvd1XOg==
+SXYV4lyAiWMv16zVcqA6IR005GkGCF1oYmhePTKqkHnV8kwQaXnymE+pW6ZboUX/
+x5qQtKnVA5H5Epx0GrLEnkb5hk3NMlpFPV2/Nh2RhlD59JVyEGzuUJUxDBC3cy81
+rGuYD6ecvYdL6BbmKORBZ2XlTXsG7gedXZL3Oklrjpw=
+Uh4PnMvk7z/GkENnfCz5uD3VYoPUVJSYs2qr4ENirkPFm7sxcPkHErqlJmdunmp/Mzy0RNJSerMvTZTgYHDMUA==
+/7jmKxiVNhCsuSNhx4cva/wUwPoh1AI36cxHW/nDzbM=
+8pVt7fERcYVXk1fmPBG/Jw==
+uT9evb16BtpfGiruqgCOo8WVThReIrXbCW8j6kNeBtfWBPLMsP4mZpB7cGgMOIGmebyrdTsEq6w7C43HDKEED6+8+p/fMTchhPKN9Vt/reg=
+JDESkge3Y9Sdo2uUj30y9g==
+nlTNvt42q8UcLm058sbkWw==
+FerFriUgOEmG8kTGFFsY1g==
+FrL3run0flYTtpefTb9eqQ==
+xElGS3yteyj0LrHkGlDUwq6ZD+iMTQ7TRhI0S335EvgCDd3+17xDOGpjasvoYYhTCcxtCKEkNLJB5p5zYdfBcw==
+zxzWtl7WST+qMdyLQtAf1PaVI6dAt2wL3tLuWhGvI18=
++kp9FGC2GM14yQd2s9aGsGLJYzLEHx8mu/jxud6IlUEt6QwepAHCMAnpEsBDSlbT
+idMn7rgAELWABFqATor1brFjn+dJmUoe3TxY7Qu3o40h9GSaLmo7DXwZ+7ggxhjvalFrn7y5QjVFQ5TJdju5jg==
+Yr2iwzlCAfoaCYJWXo4kc0iXN4/b3RBWElZWe/edByfapFfJ3OO//CmuMehLjINe
+c4uIWahNQtXAmJZOYHEelg==
+N6xnk0pfSPewEAM/v8l2Sw==
+GwUQ6PrLuQOeTgo8dfK0gPf/hEP6vCsxEUfBBnarfccwcNqSYjV68/UDR27ayBeyVwc3F5OmaV9M1RS3eWbuYw==
+woNi/BrzV2/DMIzO1ehHz9Q/4UVvzO19/+GTBFNnEYc=
+aIkKXloOHyruRIhOLll1dLNKSc1E/ocSCK/sRxy6PXfMrDQeNFbv92oy+9MI1TIQ
+UsQXI24NXp5a3prZIQsyjB9UQsTfeMIqt1/x53L+Rm8=
+Jf6/BWm1yEoZOMHRvOZPecoAiNNvV9wSVJ2y57FuxA3dHZL76BgMqgjC6CjMSe+T
+UiAHGeSjK4QLO4sXXJFSlVAiv8q/ZaX03/UmeGUCBm4=
+CtXpZWWn+ap3W1ufwpuqyQ==
+ywpOApEbjAzQ6GNCRkWdSA==
+b2ZMMFFn/jRV9G30n1yvHWY3ww8wVIMwxkZECLN/PCEtYHLkoh1E8oO2Omyxmkyd
+n9EvnRbUvTaohbWHpoRQ79Ure56WYbdWarq27ABjV8VUFBA5zEnxXyGlwgSW5IhACXrtjNDtCMhx3C8O9In7Ww==
+d6FkYQYWeP16SQndL0tHeQ==
+9OYbcBfqJBHHeQo6zhdj/g==
+7fANM+z1kaWgiJh+NCo/qR4lONaQ8I0trD4wBcT0xmkC2TLr80ZEDZnt7CgAVRGh
+fr7IGCTCK5gC+f6EwmBo7AdFBPXhVE62TYXdocK2a//t2D0qU0/twQgxfX1BHcHN5z0Mjl+MPvrA8HIwqJJnzA==
+ffEr0B/NhL0ssWk4nevbhQ==
+fDsMNJql+glXvG4Sy9zIIg==
+4+gQ5Rbhdr6wHjnmTi4baj7PN1fQ8GDJt/vMFJzwme7okCvaQVeMMb36SoHGGitL
+SMHNv3ADtKTa4p2640vQU/d+5zqXExHPLkY5757Sf/n04amBXuEtM0PUqLHHUSPB
+OwIx6ZTSeK5V2lP0ou2EJisReJOW1D51pnThxAMg6Z1xcYvRH4S0AyXemhmG+4qOFR7DjZPNwnjlQNtNMVSXjJ2VXZepd/9bjz4tEDoA9G7khLuTl3+d7ZOZYqAJraZn
+Vawhes/Bkft7in2cyPCUNBQ8jPNNnc7hbV83CaClKWo=
+OnveTJISnCr1C+YAmRRn8A==
+uyH882hkSXXyf0qxNNq8rw==
+6y7x4j8V4R43l9EroHj7OQ==
+/sfosuQajVMifHZMxTcGQEvnXac2l8x19AQPMMlC2iCxk70ADlXfCwU427/zSSVwl3lw4jhzFHKQNitFpiBOBQ==
+/p9kQYlR9TuO6v8emll9ziW599G/EjPdd+I5cZkmv6f2ZtPgdDvOoWDm3Nx51Nr5
+Lzaoz+GXWXQ4NW3LKR/bitiZiuostN4D46nPb8h/F8A=
+O0DLsGoOl9IN4dTRdJdwAQQVubOwOVmTWrM5FGuKF/8=
+4XnRh8ijRfCZcEqCUlJnGw==
+PmgALEordYCaYxktCLTSFMFaVTbKDcq1DD7FSBlo4tU=
+yPROoF12YnliHu2H/QC8vw==
+7sjr19ihTw+ybb4JjpdkTg==
+Fs/dNa4kdxNrpQRg+zNrdJmGoFGe6GqchlK/YcPp3AbQBohuKnzROHJM6GY3eq5e
+P5v5O0TJL+MQltGdxx2BwJ4+HgxMSCK/U0UbGuzJqUtGHTNUidSgRMpoevbs6dkz
+Try6nqmlzkawiIxrB/r0IcCz2zXJ1fFRocdC3+K6v4fhaANhq3yOaHD7MqFCHgyK
+ndeQsYmiiVBwXuVFx2qEQA==
+NbJeG6pz9gf3UsyoNEDQ0w==
+6wWI8BIlI4Cpp0/8d4JieRzEwOvfVr6UfBpTQpWLIKys43NlwIzeOJuCYeha6S+g
+OgP6K+KEJuiPKbvdzBt7eEiyMTZQ4AqbpG1bYPmknyJvMVZVsuBRwCszVRi254P2GiFe9e/2xb/y3GDYFHWvzw==
+18dgdKY1Sa8fbQebyh2LnIRqsNAY0f7no/5BHMFTSO2kh7C1UjJSyUu3+GDJeEUGYJvj41ElV4qwhJjFPf6e4FT586K3ssBk8vpPTITSqt+EBjsT89iUWSfCXN4G8LbHSN+axpRVrxsZBmarD/xjzkzibdnQR+qLRkB/c2lVtNBaGh4rE4JRxNk8m1/ieBYpvjZji+7g/7hCCWSGxrLXKw==
+CdFk4B3Zy56s9pNPgs2TiA==
+xHGo5ouFfWdOuv578a60HzFlLjQWdaBZlahqCAF7FhmaJnFlqwJYHAV5GMcMUJy3DBjsmEg0sqCakQSl5un5hA==
+fszfuHJq1pd1dJGRWePO9FepKO/VS32dWWzXOsT/8M/iLNUL/KZr3JHGR1S+BrmhZCRCQy2dgqdmy18xNLavoQ==
+R9q39xEZeRtaKx5zV7wARg==
+gltWp+EkZZkDJDfTfKeTdQ==
+t6f7p1blLTDfrEBUtpCvoIrFa24LT6WBUv2wT8LYrX2dQJJ1/KA9WbROiH9xqfOBuzHF5aLyV0F3u4d1I7S6mA==
+Uxpi9sxxUTZOBJj7GtRKuOdQlJY/noeBelhpiQ4TwTcohf9UCf7HU5gKP57I7Qxd50rUWHJifGY5MrtTCGIJow==
+80/X3YnaC1NGdYWRk7P5azSRyWDLX+1l52qTDKtYmJ5qR+P1qGRdV2prX45jMEP3FMlhjrnnJ3Bu2M+atm96uB7do7OcgETnphZ2kmfVTBrOHj2PmoMfQs357/TVcsf1KqymdhMhspzFNi2xO5gjwX46Vno448PlyJokgLo6oUgLI3dwqZLPwBpeozeWr3ieTeQ78RqpVr3xqV2U0ojkOg==
+KITm+TP3ksT6vvdXZiBIKw==
+UnnRYJP/2/fTczdtGw1WpTICp9kc/RJBPgDMHZf930/aSDzMXFxB5RJWR+7KXZL4bTSBXoSWimmkL/7lkgjVrg==
+/2Twco9vfNSRt4O5jfdCeHaRui6i8sz3cy8A1pRJfcUeB2DBnA9LMj5AhcHi9Urd
+NCpQZyIERxt3fRFzlHc2nA==
+uXlu5w9MjHqZQuMvfg6XLg==
+hNHJx4P0c7heoSXLnSmsObAHE52t61HgA1q8X42rpLH9SjMFmdgYv0VplhpIfcEGKJ08cBsgUixMOQbVx7mZTQ==
++abU7pf4h/V+KvDKt4E3yl+CJCHnpPoNkZcW5/mX81pbFrKQQp2FiNv3wpe/AMBcdkcD4wa5iHltBRTdjtGGxg==
+qXn29gKhzE7g/h0qz+4jImVq0cHYxpjjYoNBMhyW/XuLlTTQdr+W+x+cbrNvFFzpZ1gJ2dPOb5wZkEvPiYMKT4UWozCbu+M/VYREb2QwayGIMV3bkw93d28qf5u4xpHvoCn5wCiZGHDL9T8O0GU4J/rSTTORCwxfq3nOz890qjZlc7V0JL+QDaqH/NGVE0skPSIi2HqN5363492D6ZzLWw==
+znv+e/4PBXLEORsLap/dDg==
+fLnRRqu96VfU54mS4mtBLMU5mLsWZaSVbkJCC1e3nqsGWijx0CRlhYLx7sX8yiiQt8vi/icwOXFbvpYb2+iEKQ==
+H3oRBnVnjQs1me+0O3OiD9EY1o98EJLW8X2bElv3cG7uzXl/F7+Fbhwt0Nlipxh9
+KWli3PdQ/X2gBiNUqNyGlQ==
+MgtnOEXYqQYkm4gA5JtXgA==
+OnmM+2+YB4Y9m50GEFmKdAGTNmcz1cmWRf4yx3Za2d0kQWT2D0KwGo+sW0ybSghw
+DCDTKx/O7jo/xrasFL7TiXS5fG6fTzfnjJiHa0KEbSdpnnNsLmWaiZpdY/t649ilbaQ2jGNS2hWWkzAu4AwzgQ==
+XoM/T5VsDQUm/9FJh2XB5u73acjqeaIJcVA8m0ar8QMBVRIhvr99/cazAjuEoc1X
+Q1wJvJsmMf4VPsAs+6rGDQ==
+Tb/N+KBH3VGxLf1s1qNX2g==
+u+9OnrJj5g1lMe6BgnLLVU2rc/gMSirlNipzGl32psPjnCSVmupvVG7jsMJwOyBp
+9FEWGHtFtSvvufjII83S9cr8O4wdmhomEn0DFF3uVr0EiqRG3pEAPIN6c2CbAm3yj5y04/5qqCfdz2cWIO+2tA==
+X1aZKbALYNN45B2ajaOQ4F1dlh0kHFYHqGq3ca7kSt7ciQZ53ro6JDVcrfWoRVEG
+HPfyfFdtzJOLqTdkX97sdw==
+yiCjYGvLm5U1skzseS6udw==
+dlMhmoNv5KXwUAJye8YgaIJU++AzTBNQSzhcH+cfkJvKLLAIIatMNRA6XQQ8lRsh
+5sT/hLgRKd6U+/NZrDqbgCtdxnjm2weGbXbUrqsgt+pxcDLR5VnH5XRn0DdNRtMqV8MVCRzAyrKHD3mzdrhWJw==
+NkaY8ZRzjPuBW/iWFGJBnqvmAiZnwTh7dxRVd0gfAa1zE7x+/6XEMkHM1YuhG7D4pJtWslkfw1sC73tGi7Ah01vA577hl+zHb7Zjn8ePJdA=
+qcxj/mSNAVnVdQouCuQ7iA==

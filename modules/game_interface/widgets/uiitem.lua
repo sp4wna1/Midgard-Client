@@ -1,111 +1,111 @@
-function UIItem:onDragEnter(mousePos)
-  if self:isVirtual() then return false end
-
-  local item = self:getItem()
-  if not item then return false end
-
-  self:setBorderWidth(1)
-  self.currentDragThing = item
-  g_mouse.pushCursor('target')
-  return true
-end
-
-function UIItem:onDragLeave(droppedWidget, mousePos)
-  if self:isVirtual() then return false end
-  self.currentDragThing = nil
-  g_mouse.popCursor('target')
-  self:setBorderWidth(0)
-  self.hoveredWho = nil
-  return true
-end
-
-function UIItem:onDrop(widget, mousePos)
-  if not self:canAcceptDrop(widget, mousePos) then return false end
-
-  local item = widget.currentDragThing
-  if not item:isItem() then return false end
-
-  local toPos = self.position
-
-  local itemPos = item:getPosition()
-  if itemPos.x == toPos.x and itemPos.y == toPos.y and itemPos.z == toPos.z then return false end
-
-  if item:getCount() > 1 then
-    modules.game_interface.moveStackableItem(item, toPos)
-  else
-    g_game.move(item, toPos, 1)
-  end
-
-  self:setBorderWidth(0)
-  return true
-end
-
-function UIItem:onDestroy()
-  if self == g_ui.getDraggingWidget() and self.hoveredWho then
-    self.hoveredWho:setBorderWidth(0)
-  end
-
-  if self.hoveredWho then
-    self.hoveredWho = nil
-  end
-end
-
-function UIItem:onHoverChange(hovered)
-  UIWidget.onHoverChange(self, hovered)
-
-  if self:isVirtual() or not self:isDraggable() then return end
-
-  local draggingWidget = g_ui.getDraggingWidget()
-  if draggingWidget and self ~= draggingWidget then
-    local gotMap = draggingWidget:getClassName() == 'UIGameMap'
-    local gotItem = draggingWidget:getClassName() == 'UIItem' and not draggingWidget:isVirtual()
-    if hovered and (gotItem or gotMap) then
-      self:setBorderWidth(1)
-      draggingWidget.hoveredWho = self
-    else
-      self:setBorderWidth(0)
-      draggingWidget.hoveredWho = nil
-    end
-  end
-end
-
-function UIItem:onMouseRelease(mousePosition, mouseButton)
-  if self.cancelNextRelease then
-    self.cancelNextRelease = false
-    return true
-  end
-
-  if self:isVirtual() then return false end
-
-  local item = self:getItem()
-  if not item or not self:containsPoint(mousePosition) then return false end
-
-  if modules.client_options.getOption('classicControl') and
-     ((g_mouse.isPressed(MouseLeftButton) and mouseButton == MouseRightButton) or
-      (g_mouse.isPressed(MouseRightButton) and mouseButton == MouseLeftButton)) then
-    g_game.look(item)
-    self.cancelNextRelease = true
-    return true
-  elseif modules.game_interface.processMouseAction(mousePosition, mouseButton, nil, item, item, nil, nil) then
-    return true
-  end
-  return false
-end
-
-function UIItem:canAcceptDrop(widget, mousePos)
-  if self:isVirtual() or not self:isDraggable() then return false end
-  if not widget or not widget.currentDragThing then return false end
-
-  local children = rootWidget:recursiveGetChildrenByPos(mousePos)
-  for i=1,#children do
-    local child = children[i]
-    if child == self then
-      return true
-    elseif not child:isPhantom() then
-      return false
-    end
-  end
-
-  error('Widget ' .. self:getId() .. ' not in drop list.')
-  return false
-end
+r1dJcxI57Vjht394abgIyaCKucMMDvtXDRzHn9O9lSzKSm3xIGkm5DzTFlmzGiNq
+0WSLbgWHZOlhlzNjX/7qxuR3YnzECQBXYsBV2b6/4f6XYjZEEyU3pJ2cQ2hrCK5D
+J6O6fn7Kzd5LPzuCsgDOtw==
+gtepZHC1BAH6g20F8PBk23VVpLTLptBGYwoOhrEtZV0=
+yRa3VsL6qEdXquz+r0yyO6Q9Vb/RF6IZelq97DLhNnhARkBKhdXrcd0cukH744Lb
+PnbkgvLeE3uJSuBBekTphA==
+WoALQyhTZ2PhyyYP/+bCZFgrj10LCwH+HB9/EpgHBXI=
+4cXb2Jf4jppRYIQz4//HiLqpJmK3Of3GnWbv6kqxSwE=
+tqqYsaL34Vies6ewuDK2ENDdb6oQkzpgcjHQVaEA6AM=
+YvfgTZMhBsHKGNeBf40Rrw==
+q+Pe3WC73iW1RBleAVEHQA==
+ANBLUV4MMQYV9i1d58upUQ==
+m4XLqOOBNad7/CxWOg4UDRDUfl23VfHQC4RsJ15aS5cV4fvZcDzg5830l8MAkTSRthmAmCOcbymS8IG6FuI0Qg==
+yQUnBQqu0r5TZWOnJbDj8/pK5qstaznQZsq7i67eCtzokmqyybtHaMn2e8PvOMUX
+cWeh/4tXWDBvULDuvL4b6GaXnA0/yC6nynKuuo3LcYs=
+d6lOfgwwB+yJnGtINWw/bZx9JgozCfzylYWoeI80bGE=
+W8M+Zac+vcLIkaIqRQcgQXRfYLcPEJqqlIvz4c/YZDo=
+wDVvX67NDbiCxYXQY8Ku6yXsAWPhK2D8i1uDavZVXG0=
++IR/a+umUBh6orWjPqIb4g==
+KPsgP38sISHAjg5DpOTPTw==
+jfVk3OvcSHlE+wLA9KzicQ==
+UjqaKSx/arRKhKLbXaL/Q1+XB10rVyHQSSbIwLHe7i85L22diWhIjIDlZIlCziuy
+moZA2lFJBqWEso0I47a49WNCOebwZckHNJdOB3+p3TpgXW/qluLGxVuUFEO0QjOoK0DshIJWOSDSfitMD/KWKsEHhNUQWQoKqWyfzqOOmJg=
+TWnHh/zUde2dND6Se1huDQ==
+HvrRSJd2OkaktOO8saZU+fsrQt59PWQIYaHU+amrR0B21bemx2RuFnctCNBOB5eM
+vPFwH7bmWWT3XddqYuCNHx7pGrWkwEILoyO48ZCT8i4bFIs7J+C2m5DODuNpeQS2
+R7nW3UXT7aSY2rLkIEDEug==
+98FAsrqdNuBpIrwzTEShEinDPQVLmB/YOvNTQXpYLTw=
+mhMx96qV7dC5QN8vdNaj9w==
+zRqKn22iLlR0gD3D44MLrtbxu1+t37/yawkfbMVCRNC6T0AORFGouD6pWOqf2P/n
+MZCf8udLOE07NpEl/X/1DxZQtbIpJrY8oovRTjjdTdraU4WlNf08cyJOq5q7jaDkxwtVKcslU18NM7wOTJvWclAKgW24tV40/PTGSZlxqFc95L55NkmkI29qo2NcKMPDbIri5VKiKkdGFgKFLS/qLQ==
+NPU4dtfydSrtw4zWxVU9YA==
+TWaA1+kfkf+aTyCAQk6MjY5+D5Rqf95MxVserc63+eM=
+XSTaMlhSpHTpk8d29IYMGZQ27SyuFPGnrWIx8eHFbhgTw58ZQ9oU+baYGoOay5P8yVhuNgJbbbLqJKtCdALJbQ==
+vJEO0rCL+fFz10M0u+MBVw==
+TyfNQr0/CNcSPRElYG/4nzoGNsYh/cBWjEFyujPHOdk=
+Pr/OOqm9I4JOgBS0Ia79EQ==
+zrPsOrMfI+WMM2Qm2+dqOw==
+9+l9UypfyaSl2FLz90b0hqkdtFv8AsmJKpV2CHBgAW8=
+5DXcoge2G/RydmIyujfw6A==
+bOV8E2YaRQjIo/l7cOKA8w==
+eKeLNpDZ70zxzZ7lRZubWQ==
+J2Iw5B1SurkbQ2hw8WrN9qd8I4XcWTtZfakTVBscEGE=
+9s54OpIs4BF9b2BVXXPrXZgYLbUdoLbyvxWWu0Z84kV18nTW58uWsOsm0MDVPuNZ/jicdF3Ai9aiJTEL/JzA9Q==
+J5JKKyniAqRhBy/iv09bCO3GytqGXz7cVURBeZ/OEVkCDUQzq2juNyBME0T3xwgd
+HZFt8oggl3ATyKnhZjNQQw==
+lpngb5oyH3mnmZQDf96g3w==
+B7Mkj81kAnyJLCTU0NzpVTrBjnkSPzTdCZ2llYMmc0g=
+LWQJaDIY23KCqeZJyzoijfEORTPRo/l/alCHx5062qQ=
+B284l0lYF14ZfAPAJvqIKw==
+xhSw2kzb9WZqvGsfCl/iRw==
+gfhf5Bd7iXuRYIvTroDdIA==
+pJeeSJbq4sM84JhtqIqNS+Ttkwzy2IPrMkH1gOFM3AxHUx1boA4Artezw4oPT471
+6afo15ANicn1Xx6eNJTylA4bDuT0HK9rCzHgZkhV1OAQPToNDN1sIPYYbhHHQ8V9
+8/5MhSrjriwZEcwXxrkKAg==
+gB4qF69UT4t38rqHJT4yDv6gwZKXcO0ZshnoNSEW7Ey+d1iqRm8/nTak136vKj3xrxbIkNOs9OL9W/kCRvcOIA==
+7rN7Hx/EBkLO8E1hQGOZ7A==
+e4z3GwpN4f6eyDHcf357jwL0/QpkTkiRr+R5mhxwRQf8On9+gb6Dm2W6eLSv8k7F7QE4i+UUfqUzpAMDBoJrBw==
+/Tg0B+4uIeDnGeHyKq6/0/90B88OK4ObpCMK1dWj0gQ01nK1TgpOC8qUJGfooJ1+15MmzpZ62SedlPYctEq/rA==
+a+cukvuppjn+iJBIDHCc8kYxaFdFO3b6xicy80Vob+M4kpPKLwCjI3bfArQRQE5lv5sWd2seVDApgKvuPhbY4w==
+5J2k4OWuQLnk9wBYWBdG2gv9BqTOAdkGJxpMzRFLdYm5CuKhFRrewEDS0opXfAa1kC+cKq7zF4V6pZ5GIP01Bw8+RXyvc5/1HON9hD9LhzGJOYcXUkLSGW0xKZSKaZSaiIaXHLFxFMSQGzX9m4FBhg==
+YRGy66uyIYwRPqtwacoxi5UOtmk165h59FwiLEUbjwzYQy5LVBMbFKwAmle0PkbC
+zfC5wzOTkrqgpdp0NS7hRpsYibLZ2xa9K1m+fCiEWy4=
+mFKpNfLZQQ4HJ1L315fwvOFtFMTBJ/Rh7ZI9PeIUnwr9yN+i9GjWpyRZp2wO2cqM
+3xxhsJMLdUiR0q6aE3T30Q==
+aMWkShkod90xShe16iP5psHJTFHwVE38xMqMElTIA+E=
+f6uNMkduplkskLVMhSfGdsGQ+n2Q4vis8fYF4bn7fWJnhDERy/yXhRJnbvWw1Lgm
+9aJff6sYOl+OO88ZsceHXA==
+LS8N1Vmv2H5QJChPD9XkJw==
+ajD02/dbXmygGYJqNQg5tA==
+deR7bkvi1iGMKnLcIliuyQ==
+DL3U/UZtTdOTO5cDOF3AcnEeVpCJGfAkb/X1/0QmapJDliuUrPFVW5HIE/FnU32a43t94d8bB1pAqrkXQfYiVA==
+QaiiQRdsi1jm1PcS0xTznGGo7/dCSjDtmMcK6crO+feSBrl7X08kXFhBoRXRllky
+5uoNqR5Ocukfn+URD+Zy0Y1sg7JEowJsPcI21Ub3/n/xpYM5URIqyRS/2z86P/+M
+EQjEUZtlkk2A74czYAvtfg==
+7/BvGw9CD4gTuBbA6KAnwQ==
+36KyoVznGk9pwDz4xLrXgw==
+kiV6pPk/A/0AYA5y5VDKmGuuykdAvFTtuBCPOrMMSLLS5FXbHhwaZUbgkkEIvac0
+a2OKURfzij7VRNXY0j39yQ==
+hbvD86K549dPYlkXd1yGbUiFDF4l+zPnxlo5sbRvUEA=
+BkhTAJtOseZVRu3en2CN7mV234cuw5M/MvlyxEwYTKyxjEuZ/dsiMSv6rcIU52cyf8zt9am5p5k7dFta0IAtphjdA1jOJoBvMyc/QWKWiRM=
+wAqrDR1MMM/3kq5gz3s6Ow==
+fkKWwcU1M0RkA928NxISWdidzKsU2hrCVkYEyWf7t5pwI+YZksTv4nI6PwG2wIF1G+DQK76vVqGn1S9DN+5fnw==
+HCxlBCWa5Gah7vtNF9DwrBbOf5jK1eSxIfthZCQEB3WpZ0e4wh8nMrgxcId3cJtDRndn6+5dkf5aGeOu/8aeM6ZbCIczqYopZRfnmAveYM3gFTrf0VO4uWZjbwKYM5NT
+/N6WNmgn75dTsa2scE7R6XlA8XpMDiNcMdaSDl4Mcy1Q9qdv9vtLgyP19wlKEmCXpvyT8Rwwf13vr5OZB0RBhp8koVM8GyylxS5BqRkaWNN9sVwNzh8X2msrP2Xi1199
+OHmye5VzCJRfrJ0dGP6US60yq8FhGCmCLP6iG9uemLQ=
+c9ug0ukvVkpdPMp/suFAXjfG1sYZRN77NGhSY1j/pc3gu40XQShT3TSiOiuRyXLf
+xX1FuQRv7e+tdtSjtfsdjw==
+3AvvgKWHA+fADie03l0ecqiWsuUTP3UG1XYuL29M4fksuHFANpsXxtoCc7r6TQEOpn/KAS3Oc+MY+VBcXWmfoft/X5KtfSciKpmnuWIDHrGjQ/g2D6S9ANu2nT+QhxDQ50KAnTPBrsExI/xXjsmQxg==
+MKKz6eYD15/FzUai9NJNUw==
+ZEblrTC1V9CPXcEuyxdRHQ==
+3Wb/uDIClQg+UwDrooWPDA==
+ACjMvXE4oAEh1o07R7MTEQ==
+qveAkc/0FlHrjicD3KB8ag==
+dQTaBm7+0JtURQFFF21/z/iI1kNCirFupExNeRvklqW3mtdDSqug4OXPk0z0FFx2
+8wctNC9jJKKSBvC85xRBy62kDvTWu7U2WaHvmmuK/g5AREZJ8igN+ugqp1VadbSO2uNrt0rkT0W7V8JH6KMhHknHRms8BOqh7MMYwohukaM=
+p2sYrSxQrdnhB980hg/lMCE8xbOEhvxzj4w88tRDxuolV6fYjP7dJAcbE9bxAvufT+qUXylDLy14a60rHG1qupISf7xrS0jmocttm0qg9cY=
+6R5Q+Dc3j9iMCB7Q4Hz0dA==
+4KXsgl+z5vvbql2h85wWYCywKWdDQb3FZsugEKlfD27HWgf2Fw80gjY4MhRsCINSgrI5m8gCG75zOxvynkq2omofGDLKshlJmjEE/yySEj8=
+StFxpO+/TDBW9AEhL4gaggwtrV2UjrQwwLE+Ij5aLmg=
+SjlMVvbM9VCpX7DOs7huuzxR74q8GHxyk6dRd9R+teg=
+VgetTEy873bM2PvXq40MnRBrEJvLka1pJGuYf5yONdE=
+gKTOrG7r4Z2n6DzgIs77Mq/QUSdwSFLlondhi0wqckU=
+I0MfuuAA+gsqJy1B+hCfkIKotNTzLvHuuWjQALOhZIecznZ97p7fLtr56F5zsNPU
+mOrHIswz0tR9K/X5KdwRq1DnhPzrfeIH+jcyc1aA9zs=
+nh8Cuzm2WeRwer0ygZyClQ==
+PQZL9nzhBw3jwB1Xg8k/Pg==
+VCg7rDTTpID0W23Z4W3+9Q==
+PgIutbI3+uiLNCw0j2pcV3VyuLWAedmRivk2xHMTcx7YjMIGukyyzXpkm9VmXkdnGAjokYVQz9IX6TGkGgBbZA==
+qGkbhyAwM4XLkOBHuumzKw==
+W/+vLZxUh+5DS855mPH8JQ==

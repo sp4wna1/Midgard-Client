@@ -1,114 +1,114 @@
-if not UIWindow then dofile 'uiwindow' end
-
--- @docclass
-UIInputBox = extends(UIWindow, "UIInputBox")
-
-function UIInputBox.create(title, okCallback, cancelCallback)
-  local inputBox = UIInputBox.internalCreate()
-
-  inputBox:setText(title)
-  inputBox.inputs = {}
-  inputBox.onEnter = function()
-    local results = {}
-    for _,func in pairs(inputBox.inputs) do
-      table.insert(results, func())
-    end
-    okCallback(unpack(results))
-    inputBox:destroy()
-  end
-  inputBox.onEscape = function()
-    if cancelCallback then
-      cancelCallback()
-    end
-    inputBox:destroy()
-  end
-
-  return inputBox
-end
-
-function UIInputBox:addLabel(text)
-  local label = g_ui.createWidget('InputBoxLabel', self)
-  label:setText(text)
-  return label
-end
-
-function UIInputBox:addLineEdit(labelText, defaultText, maxLength)
-  if labelText then self:addLabel(labelText) end
-  local lineEdit = g_ui.createWidget('InputBoxLineEdit', self)
-  if defaultText then lineEdit:setText(defaultText) end
-  if maxLength then lineEdit:setMaxLength(maxLength) end
-  table.insert(self.inputs, function() return lineEdit:getText() end)
-  return lineEdit
-end
-
-function UIInputBox:addTextEdit(labelText, defaultText, maxLength, visibleLines)
-  if labelText then self:addLabel(labelText) end
-  local textEdit = g_ui.createWidget('InputBoxTextEdit', self)
-  if defaultText then textEdit:setText(defaultText) end
-  if maxLength then textEdit:setMaxLength(maxLength) end
-  visibleLines = visibleLines or 1
-  textEdit:setHeight(textEdit:getHeight() * visibleLines)
-  table.insert(self.inputs, function() return textEdit:getText() end)
-  return textEdit
-end
-
-function UIInputBox:addCheckBox(text, checked)
-  local checkBox = g_ui.createWidget('InputBoxCheckBox', self)
-  checkBox:setText(text)
-  checkBox:setChecked(checked)
-  table.insert(self.inputs, function() return checkBox:isChecked() end)
-  return checkBox
-end
-
-function UIInputBox:addComboBox(labelText, ...)
-  if labelText then self:addLabel(labelText) end
-  local comboBox = g_ui.createWidget('InputBoxComboBox', self)
-  local options = {...}
-  for i=1,#options do
-    comboBox:addOption(options[i])
-  end
-  table.insert(self.inputs, function() return comboBox:getCurrentOption() end)
-  return comboBox
-end
-
-function UIInputBox:addSpinBox(labelText, minimum, maximum, value, step)
-  if labelText then self:addLabel(labelText) end
-  local spinBox = g_ui.createWidget('InputBoxSpinBox', self)
-  spinBox:setMinimum(minimum)
-  spinBox:setMaximum(maximum)
-  spinBox:setValue(value)
-  spinBox:setStep(step)
-  table.insert(self.inputs, function() return spinBox:getValue() end)
-  return spinBox
-end
-
-function UIInputBox:display(okButtonText, cancelButtonText)
-  okButtonText = okButtonText or tr('Ok')
-  cancelButtonText = cancelButtonText or tr('Cancel')
-
-  local buttonsWidget = g_ui.createWidget('InputBoxButtonsPanel', self)
-  local okButton = g_ui.createWidget('InputBoxButton', buttonsWidget)
-  okButton:setText(okButtonText)
-  okButton.onClick = self.onEnter
-
-  local cancelButton = g_ui.createWidget('InputBoxButton', buttonsWidget)
-  cancelButton:setText(cancelButtonText)
-  cancelButton.onClick = self.onEscape
-
-  buttonsWidget:setHeight(okButton:getHeight())
-
-  rootWidget:addChild(self)
-  self:setStyle('InputBoxWindow')
-end
-
-function displayTextInputBox(title, label, okCallback, cancelCallback)
-  local inputBox = UIInputBox.create(title, okCallback, cancelCallback)
-  inputBox:addLineEdit(label)
-  inputBox:display()
-end
-
-function displayNumberInputBox(title, label, okCallback, cancelCallback, min, max, value, step)
-  local inputBox = UIInputBox.create(title, okCallback, cancelCallback)
-  inputBox:addSpinBox(label, min, max, value, step)
-  inputBox:display()
-end
+MyuSENyGDxGVLd8dW8UKi2T71A9G09979eoAKR97SHLWKz8Smv8aXMMweHgKdldm
+4MJxG4AlkJc54jnhFGinOQ==
+zOa+XumW0fGajjdswkGVgw==
+8YXr5JEQk6ypiRZKjJGTsfd7FDID7DDKIMiZzRknzuskeTt+A0ibmM6CIdqEaBeD
+XgHBxwHREflybgmjt3XjCA==
+6lrap6HoPqf7fqu4i/PlgXRrel8BXWr3LkgziJeBGBaHEfK7dwCNDiXnTvIB3Y/sYsnGSoyThu3j4gBSq+jTUQ==
+DuoOUmTpF0RsQOQEQPbcDiTwU5PAobYTU2ByMoXUETjDuZAjUNkdnMCvlDio3z20
+LV+wRRdpqFifPaNX0Iww5w==
+5I663ARS+9+KEswcQ8IteWSG/whuPXekXZAHEyFF0T8=
+a+QT1GFEUmJBZlYNuG+hTDGDMGFTJu+C06wJ1/NoYjg=
++1q4msUfBXFc4U26T3MWQaZk0VppBHjwkAoEixLd4fE=
+oQbXXsd3ZwzadlL13A9CXk8fLYFrjALgAEwCObyTQ4Y=
+jcyt8e9z0UnEr6BrvhVB6levregGQ72xtJlP5Q0mDBd0GplYD+V7HDShYH0SHfKS
+qHYTGMMUT2A0bYh2oNPxURsbT4PT+6mf4znOcSZ6XTdYqTxzuo6VHBN7GOsLMv14
+QahSZWo0sEJ8C1X6ATFAWg==
+2UnusC08rSKMa6D4L18JXY2tdwIpREOhYH5WjKRbMP8=
+IPODk8sI9cedAA8uRWxsBAPXrlTcM7Rs+aVAXWOjuuQ=
+gQt7liHbVSUN4e6YTLAJWA==
+vUn8rXHtp/hg5PUFSB+SYbVj1Chc8vWd9/sjZtvYSVGba+nN1LTbr0cZI0ZM4H53
+MWHwkgEioWo9ovs+25JGxVHaCCbVoPXLMB+27/LX7HY=
+Dhsn6ODk2eVXBN6N2BVgvhJq/ItxSspxgMTWO5aMxSc=
+8Y27qi4LpI86hKkSc81gOA==
+nI4j2vs602nra8yDXcnqvY7J0RM+TKLopSBsAXnDEeI=
+phTtIe3p0/UB+ptKTwzqog==
++za/zedgfuVMnuHziMLeMQ==
+VK8MK0RNYvz9b/bwn9TBwiLkcimXDtWu6ge1KHTYHDc=
+aKCAhpJk5lBVjOaVhjfE2w==
+lQ0yNLZVaq9CHNtC4wBTQA==
+rGmfKYbmc3zLhR7+C15tafDX5NwpRW7abqmy6/CkVEcGXkgjGTkK3JhI/foNwvac
+fJOQe3069pam42FlkhOzLV5bmz/QcRVHdE1ZiH77FAoZ3xIKMQvHyFBawmaB2pDm8aMNS+Ob5Br0e6e7F7qXwA==
++Y+Ly6DQr0gJCxGJqpHW3XE/ufBJAPmE+DXRtcrppA8=
+g9ZncAwJDb3aRdvioO1+ZA==
+rXvZDJ9CEgpBtXgBPpeUfA==
+Gjwtw4WnYv6b8zLC2kYw0A==
+ZmxbinECJVG4afYTYM+YjKUNeLUt31fdyXiqA36U37IamirNFPugkfmC89U4an2JF7iMNaF/T421LcZN83R7fGD7Sr1GSPEPQW54Z+YmSKU=
+jh+8yzj2m7zaq5GPQT1+znAfNfoQC0GjSiytVFchDcUOPT/GgLCauxGRm8ebHrPjfwtO45WJQOAEse0UlxYtsg==
+oebeWUzmD8dmBpFoIMrCCP8kpEVrjbyWV0LqMDsZSTVMnD1SXxKJEPz2xBq3TxHp6Mb9mgecaVyci6h06qxvOg==
+46l7ucY10ABWiBn0ljP+1u/zOLLHAuX+gY6557DBQrbPH8Asc8Jtdrl1viPxdlrtdVZhlm9mXIWOLFDJqR5xUg==
+9pMGHi0wLv8TuWVSBpnM2VN4dlTLh5rNjBXwfpQ0t03dTpoh/gflArKwe8v1kYZt9aaY4/Bpt2MZV+P3WZVsUQ==
+wyBE9pgh689N3wVpFn6+Bw14Ebg7c2eJ9/tFfDPJ5bq4+/Vg4vpQcPaVMxPFAUfSpk4AyywxzllGrYhIG122ijubWDEDeJ4Y8TE9DdOaJlk=
+tNwPWb2DygRmYwXALuf7y+duXt/lo8U17YWc6++wdVk=
+iZI9uYExxOGnY9CVved9uQ==
+aj4BNDJMey5pnrQUJ+z4UQ==
+fUoM3HIfTD3/wNN18a/4vtyISUvc4fU2RMzmwxZB2sCTizOZYSb1t2mXD2aRQkc/ZNk98HueIQ0NDxAVaZuAnKYGxZD18HaTQvNBH6IJSocC/iGRg1DX0Am8zrqL9t0/
+b8TMVWRY+cx+SJaCq0K9hFLEBEd0lf/AhMuQe8PXPk8L+WWqQDSqZ1yBBcyrBWhkTJP/m4q9+0cdluw2LFg2Ug==
+De/5HNHSOppxCJb3d+9VQafkYGcKpmMB+r1e3IsXxizRlfQih5LP7t41pCsoH6tvBBvfzimAvrAz6kDiYzrzvg==
+nq6A3aov9oD53rZsoCxWzK6yU4dkj0nnfbHQBp+L8jGNoGLyMyUo0QF9yKHAxixpEnGV6pDCuJduXITkEey5Mw==
+3/vCk26ZCclMJHmy5jAkzzF4qtNJYXtPgzg5VwFQ5LwuZuKAMh7kTltsxX8uiJOpKOuS7sD+Ruj9LOGNZ/4gEA==
+/oeW9E+hVlr8/a074BKLtFgq9EkhOLJgkZOOo0shdTQCJONEnw004YD3Kh17ghc5
+2V/EGlLwEYgklrAh6tR3tKb2FinirXoNgEyqE7qur/jvhPyWHxzFj5iGJUn90gJTh40GSik/ODuqAPd3y/ESpw==
+Dz9wfpHeorudWDV0onYFVkHw3SQQKFPV8ErD0CVXwOXcVWjPUoOnFNItQ7ECVnPak1a1m62uVCwbC2cnUCl6e4BLH0rZJ0lOIHRIKPTxy3c=
+Ts9+21e3wwklzcavMXV7uD2Jg+45tm/4KAmMfdZCagM=
+Z4O+1UCp1NFVKXbO3ltlOA==
+GKrixPS3BE0/iDUmSA6x5g==
+3M4HT7TGXJeEj7li9GY+RMux59YIkGN4pS4HdH2Lgw8ho3npnGFUI/WPHZy6LRh4
+Oq5ExmYoF/PipzQRMWydjje3R/SBL+STZltmQCcJKqyTj66ejOnuYIYeXSd+6wI9aisRFljRsDqhGUkhY55iLg==
+OsEDCG7vkvKu0ZFvNthHr1lT7srq8DTOJjEqRXyZy5k=
+y1oZd9gG0e4dSDr5nnVnO1s+CYvWoPkpUXT9V9bACJY=
+5R1RNx7o9q9/vWBWyGkV1K0LQwTHcRG72OqiSq4L189i+UIg8pwo6WRpiyl3sHr+XhKPlPeKQtUMg+VPj2NB1BWrDgYdMTmNv/wQVVHkErQ=
+Wr197aOIJLyuuqXd7x2FZ4k4x5eHtu/7hmt3y024d84=
+Rj+F3iMSJJbTN4/jvvCsag==
+iFW/8xaCS0dy9RfXP/SOPg==
+oWAEOGGx9qqpJTRCSA4bNvDcVbaAs0vUAymUbknptSNfSgbnn/MptNWPKpPOPPgb
+0K2QyXvDq+0dqfJSGcFtufPUy3X/wdas4w5XazdN12RbMcqvkum+i8gnF2eu9mc4iytCrvCLKKJwfsCLSZ2fRA==
+Kl+ci2++uw+QhK/ClJ8hCPmTPhca9jtl6qOr/Y/Yi5+D40BwytqFxYJVWLtZuxP+zrjbmdlumTSVpY1SMk+I1A==
+RcgzpmIsCAMZjcg1s2S6uzKbZt/30+I4q2pwUu3g2TA=
+AXBeLbdyfIH0OgTeFjHjOkvFhzWPyTKATE8azL8PATo=
+hwRT8n3MMhxSrtMtv4NaOkgGZm+u9/KWxaj8pOVEKO9T6MuRlmv6veYQyKW/EUxM
+dYlzA8vCzgO/q3g9Ehj/uQ==
+ZLcJsK7YaesO6Vvd2Iy0HS3SI4oQYW5/tC+kcCgPn0WGMP/Qa3Szmwbje19wAHO9iOoIvYU5dYkPNkIeJlkxl/8GzCQuVdvYnIE6CcrcQvc=
+/Zgf92LATSil8vsi/DFqx0a8o8ooR8G3OX5O1wRZhwU=
+kShjEGNo8C9EhUiAVhG7vA==
+lx59N9rejMEn++6lr8EvdA==
+S4rTNkIQwfCxSkq0K5W65K5MEG83QFUhDxhtiH2yr2WytcV0FIEClkBDhzmN2ZeVlSXxCLhY1gud0H0bclRpNBUTEQK/hFIbHDseS6/C16U=
+1kYLqmlGdQFdTBekR8Bv11n7pzaEFu7zBfHW8VZO+8YF1xkzwap+x0/vx+KNuGq0pigIEBqIpkp4klMtCXCtfA==
+q2xMETSjHVAMoBNaYTjpVaQQV3EAYNLGGVBrbDq8uAVQx+uUraDLOpspw6tWHxH2zcqsULIdXSpRBBAV+cfmTg==
+AZ3Ldt2cogsEh0TwFjEimMf38ULo9GWJvdMSVGXLZpE=
+gTDF4AUGE3WmkWuvPflX5urv8p/Z3zcLq5VXCaSWLRo=
+F00w29SSz1/gnHe6RyRd7cHB+vJoQMDdbUwe/oKQyPs=
+TcLQShyckBbR9wG11L8fLiFEASWB/adUCcGEfrhaWFk=
+ah6HDuHFNQq5aKdcAUv6JBxOGeCqIj+N3wGY+XrWJk4Z+r+KfE/XQ2N3M4175CRvHXoBUSrGFjAsP5jlCIgjv4HChhNkxfq6wCNTYI2atmo=
+KWBXU61e3X0JOboa+KevD5uVVQMDVU4/GCOf68hh/GU=
+p8R+gcRB52B8TZzHSNquHg==
+AiLAVBj73RVL6+j9g2Q1Kg==
+cwbhN1yraEVxth4KW2f98G21tQRTHpTyo9saqIHsML9b4DH6msMGvTZftG4GX8AquJf6Xq5XmZ8vPvKxEsB9jQ==
+2T73Tn5tP6dSFNUHRVGUtzr7g62dwelc+Im0x6YIUH9XXnLXGV1ONK9QQlosVcUJ
+cCnnkIyBAPopbwXQ1ekUTyeJ+OLDu9EzmPNUV21fKZP91yzOu6Aaf47FXNY9WjbzXInyXvEK37wzCkl7Lc0wUw==
+Ep1IpbByRPmGVcCYfRfnRQ==
+Ujbx9yhQX4VDs0XsInv0nsoDetOfs5eUL6YXJN/EULnSzesUwoWdV1oJuuR9d5ioBklUVxMsdPncW9l14W/6F8qRXetN8uc4zL2NriDPGI8=
+JoSV8cWreAZRxDui6moqWgnTDqayaQWITgvLz3lcxlSB66tWM2rMkvJm3eovKSzlEAmWYPBVUeTjXPBPw6VXdMIqvmtdzIFZG10BJ1kpeUM=
+nT4Eiu2JsaRnKMsIwD4/F9kEkASW0aU0W22iay7+tKfXUp7f1VjndhgCesTDdxS8
++eHnm+yMa6kuRz13wBHvB5GZVPAvSKWKvsU4n62TvgFB72ltxen04dOTRjVP6f2Y
+Q2/9Me+yLXf/YVNbASB2JA==
+W6T/Q1zHr8tcBQGQ3hfDaWTSdlUUg7vSfo+zwekpo/pe4KkxbDJSpywICdtCZLqDAgh+oZ0k2sZdWKokcUqWCsOjMlJukc8MTQvC7eN5AdE=
+3APm+p28j2xeuG5thzepulgfNo3h/Kpl4ErswGxjpVetB64uJt4DUiUzArvKHZmI
+bfNXx7s6ls3RWcI4HaRPAjWl/f+JC9FQkXu8HVF9jdt1X2L8bXIZth/8ExhjuZ/e
+oBRCE8UCZUtTX/utBArJvQ==
+Is/lbgD84SFYKdsaopb4OHY5WGvQbljBhdI6+tsXS+WCU2t2SydYUXIF2SLv/0IE
+iaOJwLJNc1ASWFZrgdWetw==
+8oHjF/jH4wnn26WsuKI+EexexdHOtrsrNF07CMMIr6U=
+PGclCEoCkB3XpfddIVj8PJmf6ElHFu0ZqiUIAbCPFOvr9PjBBuNNVcRcROC78xrC
+b4LWwOwS39AaHKw/4XZX8w==
+PSx4yPQxQ67Z6sg2tFSUBA==
+UuSx72XBWfo5Spuk8NSvjOAlUFC0rI7wAh9ZeU78X2kyZD+/ea0ELdz2qR7pf1wiNxcpSK6INS+ZHkBG1a75VlqXEQ4hkCOqCM79/g82cyk=
+rSdYK39EqiWAl6EaXcKZZ4BeQd+8P0SFOZG4LDhknhnY8+KVd/EGrP8oaZBonrE3YLeqjFad+Q0dr51Hg9RTZ68us4P71Ipabjw/83mkSuw=
+xra/gvS19sVM+7dLt73wwto36cBSMI2oUjzV1fTM3y4=
+7s0WS9YXYiweSd3eWsjLKX9lyJ+QkaJDsYVwVsXVO7s=
+Old4XESsdQqTdE1jetQ+jg==
+7DR2r/HL9dmVPJKNX8yFuA==
+5LE7LfG8GHmAMc3pgtPSBnja28o4S0sqv8lp/t7roM+FH/kDUKTaB0Tyskm/MLmeJdKc1U0NNR2JLKjUJ91XNz4hMxmj4EwQkNdqigl/abxB5VufIxdmF5+yfugZAw30
+RGJ/giIIEw/kxQweTzStH1JtO62S4d03AXRynXEXmVAdr0sruPDv9dCAbJd0GI9XTLOkZd/3tZkysBqYHr318asl75xlVGhKxHYuOHps7Qg=
+fuUxI4kDIaPK7z9lOmLRDMBqCpZYiUqN2MdVT040f2TI89TtOYb2n/Ib2c3JGqUOxH6cVe0Zu4TWjLGEDx6ctQ==
+v62PHhihzMuA6QnIaCFEwPxviWmPaxejCeHpEsFeC64=
+jB9ANzAVAPPS01nKvtKD/g==

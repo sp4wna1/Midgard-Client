@@ -1,177 +1,177 @@
--- @docclass
-UIMiniWindowContainer = extends(UIWidget, "UIMiniWindowContainer")
-
-function UIMiniWindowContainer.create()
-  local container = UIMiniWindowContainer.internalCreate()
-  container.scheduledWidgets = {}
-  container:setFocusable(false)
-  container:setPhantom(true)
-  return container
-end
-
--- TODO: connect to window onResize event
--- TODO: try to resize another widget?
--- TODO: try to find another panel?
-function UIMiniWindowContainer:fitAll(noRemoveChild)
-  if not self:isVisible() then
-    return
-  end
-
-  if not noRemoveChild then
-    local children = self:getChildren()
-    if #children > 0 then
-      noRemoveChild = children[#children]
-    else
-      return
-    end
-  end
-
-  local sumHeight = 0
-  local children = self:getChildren()
-  for i=1,#children do
-    if children[i]:isVisible() then
-      sumHeight = sumHeight + children[i]:getHeight()
-    end
-  end
-
-  local selfHeight = self:getHeight() - (self:getPaddingTop() + self:getPaddingBottom())
-  if sumHeight <= selfHeight then
-    return
-  end
-
-  local removeChildren = {}
-
-  -- try to resize noRemoveChild
-  local maximumHeight = selfHeight - (sumHeight - noRemoveChild:getHeight())
-  if noRemoveChild:isResizeable() and noRemoveChild:getMinimumHeight() <= maximumHeight then
-    sumHeight = sumHeight - noRemoveChild:getHeight() + maximumHeight
-    addEvent(function() noRemoveChild:setHeight(maximumHeight) end)
-  end
-
-  -- try to remove no-save widget
-  for i=#children,1,-1 do
-    if sumHeight <= selfHeight then
-      break
-    end
-
-    local child = children[i]
-    if child ~= noRemoveChild and not child.save then
-      local childHeight = child:getHeight()
-      sumHeight = sumHeight - childHeight
-      table.insert(removeChildren, child)
-    end
-  end
-
-  -- try to remove save widget
-  for i=#children,1,-1 do
-    if sumHeight <= selfHeight then
-      break
-    end
-
-    local child = children[i]
-    if child ~= noRemoveChild and child:isVisible() then
-      local childHeight = child:getHeight()
-      sumHeight = sumHeight - childHeight
-      table.insert(removeChildren, child)
-    end
-  end
-
-  -- close widgets
-  for i=1,#removeChildren do
-    removeChildren[i]:close()
-  end
-end
-
-function UIMiniWindowContainer:onDrop(widget, mousePos)
-  if widget.UIMiniWindowContainer then
-    local oldParent = widget:getParent()
-    if oldParent == self then
-      return true
-    end
-
-    if oldParent then
-      oldParent:removeChild(widget)
-    end
-
-    if widget.movedWidget then
-      local index = self:getChildIndex(widget.movedWidget)
-      self:insertChild(index + widget.movedIndex, widget)
-    else
-      self:addChild(widget)
-    end
-
-    self:fitAll(widget)
-    return true
-  end
-end
-
-function UIMiniWindowContainer:swapInsert(widget, index)
-  local oldParent = widget:getParent()
-  local oldIndex = self:getChildIndex(widget)
-
-  if oldParent == self and oldIndex ~= index then
-    local oldWidget = self:getChildByIndex(index)
-    if oldWidget then
-      self:removeChild(oldWidget)
-      self:insertChild(oldIndex, oldWidget)
-    end
-    self:removeChild(widget)
-    self:insertChild(index, widget)
-  end
-end
-
-function UIMiniWindowContainer:scheduleInsert(widget, index)
-  if index - 1 > self:getChildCount() then
-    if self.scheduledWidgets[index] then
-      pdebug('replacing scheduled widget id ' .. widget:getId())
-    end
-    self.scheduledWidgets[index] = widget
-  else
-    local oldParent = widget:getParent()
-    if oldParent ~= self then
-      if oldParent then
-        oldParent:removeChild(widget)
-      end
-      self:insertChild(index, widget)
-
-      while true do
-        local placed = false
-        for nIndex,nWidget in pairs(self.scheduledWidgets) do
-          if nIndex - 1 <= self:getChildCount() then
-            self:insertChild(nIndex, nWidget)
-            self.scheduledWidgets[nIndex] = nil
-            placed = true
-            break
-          end
-        end
-        if not placed then break end
-      end
-
-    end
-  end
-end
-
-function UIMiniWindowContainer:order()
-  local children = self:getChildren()
-  for i=1,#children do
-    if not children[i].miniLoaded then return end
-  end
-
-  for i=1,#children do
-    if children[i].miniIndex then
-      self:swapInsert(children[i], children[i].miniIndex)
-    end
-  end
-end
-
-function UIMiniWindowContainer:saveChildren()
-  local children = self:getChildren()
-  local ignoreIndex = 0
-  for i=1,#children do
-    if children[i].save then
-      children[i]:saveParentIndex(self:getId(), i - ignoreIndex)
-    else
-      ignoreIndex = ignoreIndex + 1
-    end
-  end
-end
+n+JvUrOxIM2w5XQrk3QLCQ==
+0zi7rEcD/bOnNthnPEQJMAd2Gu3QaM7QrHZPxvpVRHq1OV1i9dVzywNhXoC0bXECZaaVlGsJc0IntaU816IOHwH4zFQxdtgXIp0V4iay5bQ=
+zm05mqZObD5UyZP3AIYqIA==
+7w5TLfN39zZTbDaWuAVwbuZGVw2cg3aPzzhXtlvWX1OinxWMu+igOrBKJp5dVwqu
+n08cfRBAYwyrrUpbJORCYOgXF4Cfh9Q7oMGu9xKuebDf3CfOuRTdv4MFtUcbdXGe34teBKZ7tVSvIEpX9zksuw==
+eww5yCqsXmAr9JbPgUAq/PbE7+Jy7LQeOuyWD3lsYPaSfl0upKjlyCfhz9K+UecK
+z1HR271XJzY4zjCByjORj8JA2xApaeXlY8eUautVExM=
+38pXWpCrq/lc35JeG7f7nNsW8KcJ8ZSJ6zzqf8tG60k=
+u+yth/qFRqKL8EBALRKDexj7Y+Rh2NlQ6eGFoDVpuqA=
+octV8+81Co6hrxtFhcjbFw==
+GvLcSfW2lbo+iFww78GsgQ==
+JUgQEghcuBnQPbCn3YcYxQFAK+HWDDvuY0D3JNm08KJXrXZhvEGk7Sp3gBbBzWO8
+x6n9y05o/wcYirBA3sy5KdFaspy6rJlDHs39imNNYJR+pOHYRL0+Cf4mTK39NyDq
+wOQuw8DOcheTYkfvMVQzqlDVWIrJwOJ9Ax+IUNyOoEBeF1Xxhx3ZSJUFKYkldYfp
+UrBixl89uKAAAR26PIcrnv0jYxPxmJ7uxEooV5aUWQH8q8JDWSvfcaCq1zIq4BUd1ynQz2KbxpZ0+J5Uvsitpg==
+7xLjWFvTPNAxvQWT3P3Dl4FxHBc2ASXyYE55jrLZdeM=
+wSSOsZ3Aoh1KAbVBil1jJw==
+Vn6lQ0MnwLqTFTIm8xm7WA==
+IuPlPL81S7LlzwfV9Qtc5Q==
+qY8dUJTtP/2Lv2DZXNt0HRqTYaKrtuqcuhhAqrTyAPg=
+dK2DI5f8H3QFUNU0hjU5CaqgaWiv/eTKRZTCbfGb28dqrbKiNqYlvPPA8HzP6pbr
+G9SQ4tqUW/S6xeZXyYssL4jAvA2aHIQPbuMuypDt3OU=
+/EAMH1esth91WIa0+vnFOABS1Zdd4bWwYGrYnfKWsmgJk+r1kvBHetgo2msrFXcQ
+v8OSUEJHU6KuK4DIdyMy0A==
+IJNDNN7R6HeX8IcN+di4Yg==
+GiFCaoy1RBPWO34CopukgA==
+tJVci5WppBkgGIu1VL4rmg==
+f31At/vP+AwoppqqIG+RjQ==
+heYcCaX85iOigi/mSb9IUxZTsMUmPqnIrZOsW9ubSLc=
+WCDHU4Pt1A+fUuK3rJjhbJSMuGPjxI2J0QuNPYmgZN4i30lvFE5XczGTQq7+puG+
+Qq648qXGAOkhXqU9cuKH/kfH5EDuDYkz6BPhiGHhoeg=
+CqlzfUZ+SHq1NZC7f7fDjLBGc9mP4zqR32mwjlYg/70agk1SfHm4+NutPDWrSSSH
+dTrc/iUwQqcaHDGYOakNsgUa196Zj2ZPfAY/9yu8SQakZOVBwVsTEtuCvv3o2iX0Irc0OTmcdMFUH7Q50rm8qQ==
++qM+1hSZRdsVEqAPFkqfLQ==
+JKMuI1kOUx/NJkduhN8q/g==
+FdsNh73JK5m0UyslXQLWSg==
+tJ9gCwtm7JXW1M0BCld3soPS4OMShhkaljw0ZTEFiJSkEjFYzS3aPMNZMd4fdJugN9wq3G8C9CYRwjL7Oe0HodTgFdJZJV8vjBDgqSrRgKcjiV87vrGkkaVLH3Kp+pwP
+qEznekFNTqFHt56AkcgdoROxsz73AVadfWfQ3wKG3AG/mEWaaeh5MMppMR3w/2K9
+K1DsF3Ca6/upCUji5mXdcg==
+cBawaW6zWHlffjtjHfxB7A==
+l/WipAlsMUTvxsgRic67fg==
+wsScmqPS+1KKrexJAKIH1kfH6hSg2KqK8Y1NBmc3IWA=
+RNR64TlIzmr0eA2vAEh1kw==
+F3v+JdB4o0XZmcWTOHZWIdIL9VauD57MDZ/fiqiNGtctoTN0jGB5rxnOFHtNnUqT
+o8GwZVcmoFbmWP+TOZ/VEvr/R5hAkzEWr1/E1qaBwm3zXlRVz+g6y2PooNIpnAwA8oKyZETsmQpqxX6zZf6+mJY34BciuwmflJ6ai/7K7rE=
+ZrNLiuaj3/Knf+x1zPeJGTzmB+/tGpk1Cl20kAjVC/51/PURR+P50HTrWFd8v61NAmGPXxnrXz7VFo3TyeFSRLuATVpDDjO5xl35hjhBa6w1yI/CPYvCYSLuyD/cp615
+OQQeUCSKCl3iLp5wBs55N7fMQMZcC0B36aAfjd2cJ3VzKg/V3eC616K6giN/ZQgQ/MW/8utUNFZwp8oPL4XLsO+H+OkYy1qIakLI+U61qnc=
+sAaI6kUFn9tV/Y2hqD0gvrKcf6E+yHh2uusBMqo9NQKkkb3L/OlFcjeJafq4W/NpIEcSYrwE0a3QY/wgMmwT4eG06+rbTd/MEaaOOWwAm6E=
+zAM4Xz0onrtCO8TIv9kKqg==
+rmmliYwVdHpcjV8lg45y2Q==
+I7NfeaobPW889xQa4BSqM1lRh8htidF5LyVhCGRbnvseEdkoab47pkrTTba30Htl
+FmoJ/8d47wXMFZBfNe3vJNKjmgl2eMSNA5VD+1Ny6ck=
+dYbhR4N0WrKSEISTrLDYZ/nRd75Ufrjcjt8fBej9NvufmBSVfU7BCyLrrclq0cuO
+7MftruYa62P7YpvEWuv/2A==
+Bjd1kO+hrgipvCbpSQ+Dxg==
+7Z4e/216UbBkBJYqHpvBhQ==
+6JXdxqGc5GjF5CraiXNG9RsFGhKX2FqGw9v6p5C1wRI=
+NLWLdJbHkZx1quhvaHoAmOzufOGiaG0vCES2y5ItIpUMZjTJ1ONI7RDoMt54Q+BXJXglSmPdrBcPUr2Klw8byw==
+iMEmmLzx0gFaPBlR2GswoGsvgLzB+TIdcy6/aKypBA3Uc6AQLA8iWJ7dH2eSWYEs
+pKr/KN+XvCvTLX197hmCUBV5xAdF92gI1iZBks9IkY6eIbp7fIFgTWQv84foDXva
+16iUcXkG20jDLdMUdiQ3tGB/wxaUQSg3zKtCv2/BtKuMZ/vzrFqxsBqFGL5GjIlN
+dT2PUKqnLmabn1PHRsHJXA==
+HaKlPzydsO/SmfiGndUIjw==
+LVqILTP8g9kpnOLZJSUFKA==
+VLOkxUIp75F4mc4VnTEtLKu9O7s1jN4NLouUXMKblyc=
+RgGAprCNkiM2fWkqQmN4Uo7stoZs/iWcHL0dA1gictE=
+DeSSsiYcU68T2zBWxEhVaXY4b7HsZBQNpWLAhb5An8bXSaTxq+6rGSGSJG+JXAlx
+ASDolVockawl9zb7e4POOg==
+6Wv/CGd6qEw4Kk9sZ4NHqA==
+nXfnkX2vDmP12Q8uGzeZFA==
+/Vc4k2Ef1mcZagmo/EgFE3GCOQIhvcIRM2Pml2g3Cqw=
+p+/Jx6yfV5b29fMYXAQGpbqPS13QiPBl6IxiGulUnlH9Ov8rgB3g4EmzF4bxURhaUNp3pgFAAEJTLIcyl8Hg8Q==
+QIMcqEueYXYL3s4eBflKY/BaCFIitVS2E0lCPHXEmOKj2xA+mCCMj+PNpdkOaYfV
+B4J4ZLH4Q7Oz0VRi8mJYUJxRTDufs2/zcRV/B8i2j9ayBGrG62u3hFuOfokqY2jB
+Wgj80GGNj9+zLnC2+iR6S97iPJBbghiEb7WiLxWH8oaSH1LlkdF/txlYleI7gMn2
+GqXzN7eI2xT/Nx7xUWxLrw==
+wtE+9xhvZPAD6ims1y6MDg==
+spplvNUmae94K03o77VqVA==
+jOZ4cTQyqdE8AO6J/iPl3Vj0og+L22/ZSC0m6pZYNh8=
+4l/FKSWikmtjG+chVSHBNWi/ZXhPIzspZiegERcdSGI=
+PQRv+xJ9pcEQ3QLLQmYh+g0UD8NEZV6fQl9Wx94/9z8=
+mOBLDatZmNJ+DocuzCpc0A==
+qe6PnRJwpHrflSBFchSzdA==
+iuiGgzF0ja2JxlVdN41BhA==
+fDx8+xkhmPs++A2CFrGHav24vlkGBRXSd8pZcqBG+bTE+UsMt/4rHf9bFVbkmYp8vFHz6uh0BJ/+vPj8yatuPw==
+NQYb+cVCXkVGrxjaSGbwj6qoAOO47ZWoQRuzofYNkFYlqled7GDz/u3uVCIgu1sh
+L1RNAJ2SiZK5GDb4JYO/A/nKxkXMHmcaZJpoM/Lp14K5JeKKRh5lsEQyBO/mQud4
+CzONiQWKEMyzn6kxIKveOYH2Anq8HRpQJFJkpzTnee0=
+6oZRWpDpWFekIYeSdozfyqDVM8kGJByrkHjWJtS4AWI=
+RIm6VRbaCEf+4Ib6sMO8Rw==
+Er0gQ52ipDKb5BX40ZyWuw==
+TD2iJ1Kpf2B8zFJwH3+ZVROwt4c7yWMNu9XNuh6QGlI=
+cBMr3S4AbuIJfw8sZxolJfgz4uDX0LNN+u6LQ84f3PZ1ClJEDbrJkjiT54cmHgkG
+Cm6luDEzjtXp3tFVU/5CpQ==
+gflRSKPwWe6zwwJ/i4USmA==
+anh6EBNdZgXowobxXdBWiH6kguU++FgxepQsXh+1rRI=
+js0KmjvBOmgQAcllb8S4mVJIROVI60lHVyHhpaI2ybMwmtBKIIgYh0SZgRZNYW5xfZxYt5euu459kAlew31C7w==
+z+AzKoZBmcI5h0A+9N4KjVr8IvIb97WxnsXfQo/EEeHwFnYO5ZOR68/OPMRyQkn4S5jfhKNGMJ2ZHicNEHyzBg==
+og7YSyDa87iXQ278mUbkDw==
+p0YjRIilt/k+kos5vJVyCP+coZTr198/GDv79/iIFIc=
+jE+n7IbhP7HGXjbau1Ng9Q==
+aDS4TDAXBdESXX+FZQCWPA==
+mVJwT15TOnQ/FQ+a5Q/4f022vSiXR5DzTQBDq+CanTA=
+AUV9/fmWU+a6rrnFzBXRVA==
+jLxtdmMvjQICX13eOA/MuQ==
+5Jm3xBgtWZ+2F9Tq51ZoXQ==
+VAXQJHT5DZKZAidqtJo7Pg==
+g+bM9uxJNmowTRjwyt06RBa/Kk4PDUdDo2ngWzsID8sBHu9qu9oLtRCVQtvwpju+kpdnI4znrtOsGGrWRspWlQ==
++2XoPNm7Sv1i6DGf3iuGMelB4IcqEyQbOYsreteUp6PHES/btxdvlz7pIJL5oCq6
+M2pt44Nct8He97LQqN3YQKrTpTpIEaTmk0/5WogIixJpPY25jXNxThhjqVieNxQ3
+X4n66fEBcnp+kMk+aVwrMQ==
+e9vbqmmfRVaAaLX9+EQUeLqMSrq7YzMe/23mrUcUZ9DqSM8+FmtjL/tAONbYMJr/xkuUNnR8+KA3rZZu+V/luA==
+AFy7Dv82c0SfxC0h+iFq5LCZoDuFhYkgib6YuzxUA1OIziBs0+89Mjq/fXjGO+s6IOXptLUdUox8x+17fpiFZg==
+Fd/zGtIQjSwNuEtLTckph9G3dCwIIqbFOWNMUwbVm+0=
+wEaNu1wtvfOv/QEjvy9q5vzoipLwFKYd8L3bBToDhwOOcrmvHfwKFIDDPT3B5tWW
+SMqXg5ZfHFmkNRv9Xk1dLF2Q2SiQhnQSipFnlRYQqp62JVqO9zzS8FEd12v+U1js
+5u6pLfAIl5vl2OgdIl8W0Q==
+ID+C7ZB0R50JO03s0+agP58UpFlblzu1D3hu33IcOK0=
+AJGNEg+vM3Q2rhh4d7GC25i+Ca3FNBV7jbDY5exEIrb6AfFiAaGG6hE4oNvKACOl
+eb25YSZTTHe27raB48I1xw==
+5mvmwPSHzD9kfsj9Qrw2CA==
++fyZagZ6naNNxlPnWDZ+rw==
+PG+elGHG6S7EarCuFmnLMKBQv5iJTNbPmJW1NJ+CebEJJuJF1Ti34PUHu03qgE+Y6VHWYN0IZD2lWIMn3I3GmA==
+O+mvNDsi8JqeWOBpd2T6Xbb/C/J4RI3Qy7YlUGHDrv/czZNckO1d8b6gRMGO8RWr
+Gi8HiI3i6wboFJebrKYqGa2/57Kn+rH+sUylpm8V/Ii8FHScnRDFbBZsgWFARk9k
+Bpd8OxTkOUDAfhf5HtHh/HHEKkalEPWj12n/s6V8Y2WH6XJHtSq+dXnkzoKLigvkhdI7lYGdtNf4Dpe5LVRZro3fjYNKH6kJN3zIxIl24QQ=
+q79LliA4aNtC8VgPD0xYbg==
+LylclyUraWbAYlR6O5JNhq5dr+hu/Sa03TmSS7ObKpr0hzzFtp7/phuJVfmfs1I+
+Qk7wtbOGCy32wtQIR0WMOg==
+ZmQTVrxM+i6RlHc3ZRobtdeVa239N7l64lEuAxJg6ZPVfINsLTvG6C3hJDpytaJR
+6+3Bmn+IbeNFlo+c7Pt3GlSgYHzO69jmmKdxesoOl4Q=
+0kEcAVNTs6YzmwMdCaZjxW7GDsuXmXEHaIc9WBh5T7g=
+f84F7ASTrZT5RICPjksHWqgY4e6eQtBvG40RG2U5brcI3LUh3HPua9QlmnHkth4v
+MP9afbEG/Hk4+mQeWPzzlQ==
+3ROgWzjazwawu4rgPKLZj0uad7gcKYzu080EFntb7CX+ezEPMxt1Lwj0W3Qlv0G5
+oi0BFANtPdKCdUMI4hZI/g==
+Dq6p+1ZrGFPD5P+PXIz504ehhJDBeJlwiPo8g6fFfyQ=
+D/KI8ZergzaYND/AwoVldLArmtB64/PN2ktAfLccQwQ=
+zIrvMZQxIb0ARvlZQJ7BkrCFRPP5c2n1ZoPocZ1O23uNTW2EDsguqXxH7HZPSM8FDFMh1Tsn6KxJ2EXUqHfU1A==
+TZVUG7ZLcy9v8u2DxCq6DKkoSyGR52v7ZfQCCSB052NLZxDc61yp1M6NCQ/CfykQjrh76Ffsh8/ZNvw4jWNCZw==
+EP+QBodPr8qKLpIdAfwUdNaQXgGjYEsdV+cyTIefIp6RAqcRwXPDlZFx6aQErjqr
+SeWfEIYLVpcs69NW5bH8V5rgTlosx/MnFOGAYraWmbk80miJa/n7E58KySYFtAxx
+nnmAntE3kpdQe1UEXF+OIjPXk8TiUP2BstCfIKtj0dA=
+aKaLhlFiXP/1wsVrt3kz+75JqcX0iv4/ve9TdmCptPc=
+0GheZsITf5ayvpf01l6f/w==
+T1H9QIA+r4a8SK+gPkR/2A==
+oDbxeWfJgRNi14CEamCicZSc1lSb/9gaILGX055lACZuLo8/0PI6GD9sswk9/jrt
+psbHr+dpeUp/Ljk1JkUYPg==
+gdQJhQQlUVjuN4aje6+MZg==
+q+MTf7GySms3YL5GzNAEVg==
+68lUUAPjoDbasD+9WEl/yQ==
+NgQDUFpMCU1MpDHY0yne7A==
+XnmAb86gQUlooh+5K8qHcw==
+QIl7oAsgPIOOImdIv9Y7cB9Ml+lBmAiryBYVByHIsuyWTyaahFcZdRvr8Ps1NGrt
+WcMzVuCjv6dojruYH0VGdGXkkY0WdUf0OEBu69VPaAiv5ANkKhZ66UXXs/ZD1ZZA
+dV7DoHmV3FCXoKqCUa4WvlMiKq8Zx63T9Bufzv+cCts=
+XxgqzaMx5pm6taHRktKPZeEs9fkgw7OiAHA9zTVgiTFI3f31ecfNKWau/ZAyoarUspmBQTKz8QVZRUy1b3mPxA==
+A9rrc2i7jYaDe+NeOiV/Sg==
+9vg7pLYfyWR1WwWXYdcseA==
+1S1j73pS4Mq+s4ws/Q0++wzauHTRoOyuZEI/ktj5Pyk=
+DJHKEqdzrJiNtrxXReXPtOdgC/GwbMZP6mZxT6+6b9USr1d+Ao1EcilRtbv097Ca
+Mwh4bhhd0KbqgRokxThp4HRUbxi+g3WpwbApYFjO2JsC/d+4rDj7Uai/yFCzNJtxHfDCdhh92cnw6Dyzn6gz8Q==
+BpTCb15BAK7TZW/BYpWXvQ==
+t63igAi1z4RHOFrH2SpUGg==
+nYALUiJy71LElc8873LQ4w==
+kiJWA/BDHm+UVf3y3IP97g==
+5OwGwOQtT8JkeBQRJCmRoELXTgDPyVF+0KFUiwwHPqap3cGOOrxzcHbFCUb37T4z
+ng7ki22zDkUXdhAFWU/KvmMsP8PgGRj4s4yHNBLrH/Y+baIoikJU2+ywFlwsgrrz
+fXi4r9rDKUny5ZODgeCuvAvX6aNMOn11ZDNMNdPBRnY=
+/t6eLK5zPOczBTEFqHlyNzmDOYjFPFZBMZvn5AD7rnM=
+uIXfwsEmEPXVVLnMbPqzCQZA4S47+BsAwFNllQun8dU=
+E+IhOEu+W2nMnLU6HanzVsxd6/+0XJlhZFgVHj7ZB9x2EGgD92ypG/+lG/Yjx4SgHPGJf3GAyUz6P+sYz2A47JO47BxG3d5Ght3SgNSbQnc=
+ZEZP6t+O/5wLeKnVMHUpTQ==
+iuf7PBxLpmnOWRQtbjSWeRka/aHZeZhPR9Z0HsLwqUEGCDksZ8d+FCv0jkR7bPQC
+XqPxqP/K56OT906H2u6yAg==
+F++gABCeVMteX2xYZr9DDQ==
+X96rrXJJn8uJO9kyCF1vMg==

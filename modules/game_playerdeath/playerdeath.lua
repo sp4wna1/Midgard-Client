@@ -1,86 +1,86 @@
-deathWindow = nil
-
-local deathTexts = {
-  regular = {text = 'Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!', height = 140, width = 0},
-  unfair = {text = 'Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nThis death penalty has been reduced by %i%%\nbecause it was an unfair fight.\n\nSimply click on Ok to resume your journeys!', height = 185, width = 0},
-  blessed = {text = 'Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back into this world\n\nThis death penalty has been reduced by 100%\nbecause you are blessed with the Adventurer\'s Blessing\n\nSimply click on Ok to resume your journeys!', height = 170, width = 90}
-}
-
-function init()
-  g_ui.importStyle('deathwindow')
-
-  connect(g_game, { onDeath = display,
-                    onGameEnd = reset })
-end
-
-function terminate()
-  disconnect(g_game, { onDeath = display,
-                       onGameEnd = reset })
-
-  reset()
-end
-
-function reset()
-  if deathWindow then
-    deathWindow:destroy()
-    deathWindow = nil
-  end
-end
-
-function display(deathType, penalty)
-  displayDeadMessage()
-  openWindow(deathType, penalty)
-end
-
-function displayDeadMessage()
-  local advanceLabel = modules.game_interface.getRootPanel():recursiveGetChildById('middleCenterLabel')
-  if advanceLabel:isVisible() then return end
-
-  modules.game_textmessage.displayGameMessage(tr('You are dead.'))
-end
-
-function openWindow(deathType, penalty)
-  if deathWindow then
-    deathWindow:destroy()
-    return
-  end
-
-  deathWindow = g_ui.createWidget('DeathWindow', rootWidget)
-
-  local textLabel = deathWindow:getChildById('labelText')
-  if deathType == DeathType.Regular then
-    if penalty == 100 then
-      textLabel:setText(deathTexts.regular.text)
-      deathWindow:setHeight(deathWindow.baseHeight + deathTexts.regular.height)
-      deathWindow:setWidth(deathWindow.baseWidth + deathTexts.regular.width)
-    else
-      textLabel:setText(string.format(deathTexts.unfair.text, 100 - penalty))
-      deathWindow:setHeight(deathWindow.baseHeight + deathTexts.unfair.height)
-      deathWindow:setWidth(deathWindow.baseWidth + deathTexts.unfair.width)
-    end
-  elseif deathType == DeathType.Blessed then
-    textLabel:setText(deathTexts.blessed.text)
-    deathWindow:setHeight(deathWindow.baseHeight + deathTexts.blessed.height)
-    deathWindow:setWidth(deathWindow.baseWidth + deathTexts.blessed.width)
-  end
-
-  local okButton = deathWindow:getChildById('buttonOk')
-  local cancelButton = deathWindow:getChildById('buttonCancel')
-
-  local okFunc = function()
-    CharacterList.doLogin()
-    okButton:getParent():destroy()
-    deathWindow = nil
-  end
-  local cancelFunc = function()
-    g_game.safeLogout()
-    cancelButton:getParent():destroy()
-    deathWindow = nil
-  end
-
-  deathWindow.onEnter = okFunc
-  deathWindow.onEscape = cancelFunc
-
-  okButton.onClick = okFunc
-  cancelButton.onClick = cancelFunc
-end
+U4RchTkH65n01Ae4xIMdSQgNw1DHg7ZA8BYeg02KTWU=
+f4zpP1mJRu+dZrGQDWQuJA==
+dQeE2D3Xks9JP7/XExZw1rYY/u5mlwMOIuaWzvkU7hg=
+sYhJ6EbeEU+XvTSg/E3l3rDEhtsWCLA1VpKWBIeozUbBBN7bOuHL7Hzb9ywtfMq7u/5ok6VZmQ84qrLY/mWYuAML6os0V8M2cEkL+q65T/Sn19lltMsMvTASimTJmK9qT5yUJocIoevp9C+AQhnMREWQpZ1xm/fxkstxjgWdoM2iogOHZqEbyLAyh+rUpIxMrxKcyud12jPuJY7jgpXQhc+KHIwaOTpYj+Qio7VRMSMuLGapVNzKZx/1lGS6ay38HKEfaqSJ9B/foUcUNK4CF8wjUBRn+9weIgh3z+2BNPmtQ1FvIq8T+D/wXnL9pH7tdex2KRZcnFMGEFVGgnmvyw==
+bUFYSQb48iRdx1+R47chCWgD7F5jbTu21a4x7UaF/FdgFwmu3qozCd8pBE99a5OnDR9MWZNYy25BcIBwzIKYlw78jrFBTKsFuVsNzce7I3Ol7MlzX4+9T+DDCQjVwBk2vAq+dHtqzRN1K419kEoI6MOLqsldJMMR0YYwz/NpiIPNAvbmM9zWkefTQ6oq1WPBbjG6uKV2EH9HXYLgGNcvjvSqmYSfK2YG6dIivE2brdvU5qRdBWb/pnpG850tJ823FaTIOLSaquUILmvJUHdtIlyCd5FY74rBSJUiWPauYXF1pq5b6lAVw7EN+oGXFiQAeLgBzH+Z5ZY+lUZt7VqSD5f9NtqHovVe/IpsO2MPdz0NfBXrz+Up/Dv91OC6NW8MxXvmtkbzC965UdjrJAa/BAyKCWK5oWKti82KFemkCMtexET1GUuhunjQ3R+62Y3J
+amIJNdIcP5KwcyoqZzUhYWpRXZP1w0S684MirS1MdZhjncC8vMauMftNvnVecqj0gx3cfBx+dkMekEqU5VrJWeQu5XL7j80OudtlDFRcxp/g4/yO+HqwL/eh9K13KrurIQD74f+LTcftVgHIhJnH2wXFqjiNIB9sgROvNUjKts+Wux+Ww5yE4ruqVLr6ARppgDVQmzGnae6F2Wh2U6OMlcN4jX3ScchsnebPeFHv3X6ow7chHFHUGHWqW2r2z9IWlLDNlECDNdjrvpWw10exOUBzppe2WbdcoDrgCUEqL950Vfo707xdeVu3gq5v4RgfqmVqSGa8AjEoQQ5hD+VFwPq+OCzeE4zaR0z4Wcjn9Po+zqRK5oOCOgGZ+buTTXdpjhJwBsMOPFJlIcbl3OONpdHB3JsKdsGM7Qy2N2hs+mA=
+Tu+JS1r2E25H3f/JDq72MQ==
+OqugjSD2eQ+ZibFwpZhXhw==
+pzrFaQK8yvH4ze1334kGmQ==
+By81ubsuH7Bth2HpbUglRpE/BhaoiMHh3RPyvcb7/cdtnc2NRjo1aWzhMAnlpCtu
+QCNoRGp4lU7EADcMU3T4Ig==
+Ck1z8g8yoO3WaoAbpFW9tAVPmI7qxzIiYNQMhsuFE4AAU8K525TzB5/rCYmtC/t9
+l0PI5vj7LbnJBOmu/bFOKtgWd0EgywEn7voWGiP6tCLK/MGeG5qfzAXyy9D03a0N
++59el69lWrdU8M4HDZoG8A==
+rnTKkUmjHcSXA5ubIo/NuA==
+Ajzp2sYk8IFtY5Q2VkhG5IhUtcKo0yMfbbgg/0kvfZU=
+yOHb1x7uDQwmPEBfbpJPI67+LhWaxCCLGeXcqFNZZGHF+iEqW+ZSyjczKMdFIOcG
+lqB3DsQld0XtTKgGpWNBEyHM4YCpeup8pt70GHLf4GHrKNqYYXILVMVMTZXGt3ED
+cf/luJGtoUmAyQFsD5BjIw==
+uTGEajdr6hTZjJdvPUZEFA==
+tpv7rN6mh5HyD3QacPD+oA==
+5UjkwD2LleFUF7diyrovrA==
+vHxrjGM/hYzBU/jnUWxOJH1hWeLMlTzWT8X8nGjY0s4=
+UfB+6pJjqOtPHYv2XSMBQXEvFzzBuP4EzVKIRpxP8RM=
+RtE2PNI8Nb3qOlTEutwoYnyrUl8h4e0NHfp0g70Yppw=
+0GUPf1Kk2NvtsYPXoyLljEfXP0XAH7Llh5W6Hife4CU=
+lgJiliWXqSVXlz5oY8pwIw==
+gt2L6Q638p3cNZaSQtKaQg==
+XsJ6aL7KajOVHewgoI7MJw==
+9AupM+wVBVkVtMAYFrCP0G63dZB86wO2qpSwuzGcH55ZgkCtdO0UmPCGEK4RL+69
+z67AIj4DxPvwAkGEmh/gegmJtZR9pNpSHOS0TB7Xi/c=
+WxFu53t8BDTrc9Slfo7RUNKHb1MpXHqZshfvrBJQWZ3p4PLYFkT54S63xS4skvwz
+Muscdg4lGneKec1diRTWCg==
+087+LKMZ6UFzEmmjHG45kA==
+etoGHJiSLlD+dYOBnf1ytMLcqIryqY1jaCZXBWYVMjI=
+f/6Zse8qi1XG+TVYNUacdhKtQlDhLxE57NT/3AnBPSaMr1Dy2hhmLmKRo39/fw9UNAhQKbKTXDh9RHt/6tt92R7esOTBlsLQLpEyciWwVv6YktZdrY1oTrKQ+LaufB0yKXlmfeBAVKkuCH7adtAoKA==
+8jxvAdYKcW+FCmxvV7eSUkv1mOEfhZ2gTe4A7WgzqC9exJoiisjAASI0XMCzYK5t
+mtgQUFZMxHxGQPwqGCG8zw==
+ylaaYcYMfZ2i8CPD7uMjk0uY0zSMn28c6U7M1SK4V9Ox+KOurbHOxfiFqDwogdGNVqmzH0o5qfMHSVm/uxXDEOvzg7cPcWePKS7UhXOpu38=
+R+m8jFdG4bMnCY3DXOA98A==
+9yUlnQnx86vZtpzQbat8JA==
+OahbvuUpaNCIiXoJlPdvloU5sEj5N0rAg2GrUabq9fkfuEqNf04FJGFIrwYb4WJg
+OJXFElAVAP81WTh5hGfQdHDVGo4jw20vvvyjqcamCUQ=
+R/TWWG1y/hBYWTswRJ5jauiY8bGp8kWq7+A+NjnGz2k=
+QYoaGhd+VF+HixZ1MLTFCQ==
+R0UPeDFDU2YfkVlvV8rjMw==
+X04zDRpEVpshAiQPCc5TXw==
+2x+lvpyPg2dqPlgWVpdcIS16XCG8UWkRvKOQyZMDf6KgZS9LyGLulJQFmECkkszR4c6FN0aPAb3Tsy69vB6i5Q==
+n7CsgX7JgxcVbA/1ttbEJA==
+Y+dp1isVctHTjZrZKY5cN6U7b+YM4va23NMEaZP5Ebl9WhRKZ1lCFZfXN/5HSFy92eywLeAWEMptlmw9oj+5pw==
+6MJxbZxGmmw0YvxcsVzoRJd9qLopN5yBW7B8gCfHBO6tcgxhyJNdtJgUS1WYd0P7
++9jdztw6avcT2gkf/UNul+t4RXrZdp/EaWKhWG9vi70=
+MvEGbAEXeHwqS3cM+DflIws1zyDXBWVjLc8AbZaNFTrBb/5UUBJWlesCN8HFVs/US9koipI96MKejg07GmBkNQ==
+OUD0gNGSZbiXE+9El6WSFeRFBavT9kYiDuPIHggZohrpPPLfWPY4Khrq0GjLAxPHAbqwXwXveje7Y/kPVSH96a7eitossT2YYAZCiqQ7McY=
+KGVFyCf0sOIbCKWH3kkqIYJSDmls1XpJDv2npvHh8019FAId09wJ8U+h9k1bLE/plRDRPUgH8MBwD7PJV0LbXX4kUly74Nr1JmstUyyVVXc=
+tkS6W7vvlJicnYepXKz9vQ==
+BkWYU2V7Spw7IaV5anKPu5dv1uQ4gVVfmAmd0PCOXZ4gJSlS6THYEsqyY/B8eBlEQjyTY30kb44C8XwQslPKmtM7OM+DkSvVw5vfJL8e2GE=
+NPdYZVYMxbmqrb7vhXiHx/K3xH3BQBWtzUWDOcSRBS/WKarcqEuhHps6Il4+oZ8Ifw2nXjDe5hPsyjyIR3r54auaSdysYCv8CEism/MWqHQ=
+FAnX4giETnZUwxv9HJpmGiS/tM8eQxP2seDHxTrqqd/Ns4raf4LGCMuhjhNPGPSqmb1ca/DbyGkb7vom++w+lLif8+DM0sqJSnc9ClMnvxA=
+D+p4wLq1PeDilLZiLX/b1w==
+mgUNwRcn/TC7GezU63v9vO6zr+6jZj+yX4qiwIBcKZgaDhhn2giWtC1IHV0vnM+Y
+I8mU2/sKSE75FKn31d+s23mgv/jken1Fn9wwJ+dIvcu9XI+dxAFo8rzxI6Bg5/gQ
+LRFltUuNsoIXYWxkC+uQOw/iEeCrLqMWrPfwyv2MHLIu972ugGBgBODlL34865PEE/OTDqi30FY7gwcKfPF5qMI/ijQGOowJUTkuLVG09m0=
+xpJLB0/Wqmp9ku1StWGTNP1AbALO/5+IEsID2KDOUvhF0SMGl0674mzKb3dzHSOTlK9VenfpSVA2k6CEDEqU7UlBcjUW97keBjBRcgTo7dQ=
+mTr9ny7pdU6zh90n69ZWSA==
+3pmMJJ9rv5CYGzXsD28n1w==
+N8eT6tzW9PBqCagGlYlcXLdb6aBlXerGOQVvqVe5HyInCj0B16X/t8lv1fkYCybEwOCSZ6l9/q6S0IrxmO7OAA==
+QUJl32L40uaWMlWVaflMwfxAvfvnjFWahY6opkXRqFmtdeG/SNCq2L9bDk/QSnhZiljFxg5m39KwQ7zl0+SDdw==
+lNY1v/tm921ZLn2rDeXI+A==
+fzsCZx2NDSk5CetSUwSzBY5ZQoShY+LNXvtGQTNtrDI=
+nWyGo5/2sytWxaPqsKNXT03DLEa/+yXvoBJFav7oZc4=
+FbZAKjZ7+Smyg/I/QxZf8YosQ7d3uQmwI1qDextQqLM7L8wAo5wcIYxEMEF5fPNx
+bOkUiN9i1aRhzYNwsgu/kticHCbtpz7TRrZsi7muhAc=
+hs2urd8NVmNJRBzLisyZPw==
+W3lNIB12Ly0Ec52vzAKm0lq0Zj7RGLw/7mEpMgEs78o=
+GRoJzjnpaslR7AJDy6Q30fJL8/mvoLeHXDWeoRU0/90=
+N8/thm3maJZ9VZn+UYiDEqvjTYjmKcxVpenq4xBI1Pp8dQ32yi/Ul0Wco3iuNXxq
+CiNfuYtmpWVjrG/coVzfo3NxdcbHOy2fVzp8wNJaOo0=
+1SU6i+DKUZH3B9XJOFLPuA==
+BmGpyCoH+D6pH6WrTbk+gw==
+/75IS5icWrBw/EqYtSnKfjMdGc/PH/sIvFhJG6Cqksw=
+lJl15o6smcbL445PPqk0gy8Ku3PPDNicEax/v8f6Yp0UTHgEjuRPLRDeqWyBAzp2
+j2JWDzte2xBsagmy+ZL3DA==
+PODUqs+5znt9cvqGc/WM0U5xuOGymnJy4atBIJaVDqQ=
+rutBsGX0W+QPV0IvlWgk+yR5ciROYgnawLwm0g/hgVk/CHROI/nFPqZxMMrB8R/i
+y4hB3fBzWLiNlLtht4hw8w==

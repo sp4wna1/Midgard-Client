@@ -1,226 +1,226 @@
--- @docclass
-g_keyboard = {}
-
--- private functions
-function translateKeyCombo(keyCombo)
-  if not keyCombo or #keyCombo == 0 then return nil end
-  local keyComboDesc = ''
-  for k,v in pairs(keyCombo) do
-    local keyDesc = KeyCodeDescs[v]
-    if keyDesc == nil then return nil end
-    keyComboDesc = keyComboDesc .. '+' .. keyDesc
-  end
-  keyComboDesc = keyComboDesc:sub(2)
-  return keyComboDesc
-end
-
-local function getKeyCode(key)
-  for keyCode, keyDesc in pairs(KeyCodeDescs) do
-    if keyDesc:lower() == key:trim():lower() then
-      return keyCode
-    end
-  end
-end
-
-local function retranslateKeyComboDesc(keyComboDesc)
-  if keyComboDesc == nil then
-    error('Unable to translate key combo \'' .. keyComboDesc .. '\'')
-  end
-
-  if type(keyComboDesc) == 'number' then
-    keyComboDesc = tostring(keyComboDesc)
-  end
-
-  local keyCombo = {}
-  for i,currentKeyDesc in ipairs(keyComboDesc:split('+')) do
-    for keyCode, keyDesc in pairs(KeyCodeDescs) do
-      if keyDesc:lower() == currentKeyDesc:trim():lower() then
-        table.insert(keyCombo, keyCode)
-      end
-    end
-  end
-  return translateKeyCombo(keyCombo)
-end
-
-function determineKeyComboDesc(keyCode, keyboardModifiers)
-  local keyCombo = {}
-  if keyCode == KeyCtrl or keyCode == KeyShift or keyCode == KeyAlt then
-    table.insert(keyCombo, keyCode)
-  elseif KeyCodeDescs[keyCode] ~= nil then
-    if keyboardModifiers == KeyboardCtrlModifier then
-      table.insert(keyCombo, KeyCtrl)
-    elseif keyboardModifiers == KeyboardAltModifier then
-      table.insert(keyCombo, KeyAlt)
-    elseif keyboardModifiers == KeyboardCtrlAltModifier then
-      table.insert(keyCombo, KeyCtrl)
-      table.insert(keyCombo, KeyAlt)
-    elseif keyboardModifiers == KeyboardShiftModifier then
-      table.insert(keyCombo, KeyShift)
-    elseif keyboardModifiers == KeyboardCtrlShiftModifier then
-      table.insert(keyCombo, KeyCtrl)
-      table.insert(keyCombo, KeyShift)
-    elseif keyboardModifiers == KeyboardAltShiftModifier then
-      table.insert(keyCombo, KeyAlt)
-      table.insert(keyCombo, KeyShift)
-    elseif keyboardModifiers == KeyboardCtrlAltShiftModifier then
-      table.insert(keyCombo, KeyCtrl)
-      table.insert(keyCombo, KeyAlt)
-      table.insert(keyCombo, KeyShift)
-    end
-    table.insert(keyCombo, keyCode)
-  end
-  return translateKeyCombo(keyCombo)
-end
-
-local function onWidgetKeyDown(widget, keyCode, keyboardModifiers)
-  if keyCode == KeyUnknown then return false end
-  local callback = widget.boundAloneKeyDownCombos[determineKeyComboDesc(keyCode, KeyboardNoModifier)]
-  signalcall(callback, widget, keyCode)
-  callback = widget.boundKeyDownCombos[determineKeyComboDesc(keyCode, keyboardModifiers)]
-  return signalcall(callback, widget, keyCode)
-end
-
-local function onWidgetKeyUp(widget, keyCode, keyboardModifiers)
-  if keyCode == KeyUnknown then return false end
-  local callback = widget.boundAloneKeyUpCombos[determineKeyComboDesc(keyCode, KeyboardNoModifier)]
-  signalcall(callback, widget, keyCode)
-  callback = widget.boundKeyUpCombos[determineKeyComboDesc(keyCode, keyboardModifiers)]
-  return signalcall(callback, widget, keyCode)
-end
-
-local function onWidgetKeyPress(widget, keyCode, keyboardModifiers, autoRepeatTicks)
-  if keyCode == KeyUnknown then return false end
-  local callback = widget.boundKeyPressCombos[determineKeyComboDesc(keyCode, keyboardModifiers)]
-  return signalcall(callback, widget, keyCode, autoRepeatTicks)
-end
-
-local function connectKeyDownEvent(widget)
-  if widget.boundKeyDownCombos then return end
-  connect(widget, { onKeyDown = onWidgetKeyDown })
-  widget.boundKeyDownCombos = {}
-  widget.boundAloneKeyDownCombos = {}
-end
-
-local function connectKeyUpEvent(widget)
-  if widget.boundKeyUpCombos then return end
-  connect(widget, { onKeyUp = onWidgetKeyUp })
-  widget.boundKeyUpCombos = {}
-  widget.boundAloneKeyUpCombos = {}
-end
-
-local function connectKeyPressEvent(widget)
-  if widget.boundKeyPressCombos then return end
-  connect(widget, { onKeyPress = onWidgetKeyPress })
-  widget.boundKeyPressCombos = {}
-end
-
--- public functions
-function g_keyboard.bindKeyDown(keyComboDesc, callback, widget, alone)
-  widget = widget or rootWidget
-  connectKeyDownEvent(widget)
-  local keyComboDesc = retranslateKeyComboDesc(keyComboDesc)
-  if alone then
-    connect(widget.boundAloneKeyDownCombos, keyComboDesc, callback)
-  else
-    connect(widget.boundKeyDownCombos, keyComboDesc, callback)
-  end
-end
-
-function g_keyboard.bindKeyUp(keyComboDesc, callback, widget, alone)
-  widget = widget or rootWidget
-  connectKeyUpEvent(widget)
-  local keyComboDesc = retranslateKeyComboDesc(keyComboDesc)
-  if alone then
-    connect(widget.boundAloneKeyUpCombos, keyComboDesc, callback)
-  else
-    connect(widget.boundKeyUpCombos, keyComboDesc, callback)
-  end
-end
-
-function g_keyboard.bindKeyPress(keyComboDesc, callback, widget)
-  widget = widget or rootWidget
-  connectKeyPressEvent(widget)
-  local keyComboDesc = retranslateKeyComboDesc(keyComboDesc)
-  connect(widget.boundKeyPressCombos, keyComboDesc, callback)
-end
-
-local function getUnbindArgs(arg1, arg2)
-  local callback
-  local widget
-  if type(arg1) == 'function' then callback = arg1
-  elseif type(arg2) == 'function' then callback = arg2 end
-  if type(arg1) == 'userdata' then widget = arg1
-  elseif type(arg2) == 'userdata' then widget = arg2 end
-  widget = widget or rootWidget
-  return callback, widget
-end
-
-function g_keyboard.unbindKeyDown(keyComboDesc, arg1, arg2)
-  local callback, widget = getUnbindArgs(arg1, arg2)
-  if widget.boundKeyDownCombos == nil then return end
-  local keyComboDesc = retranslateKeyComboDesc(keyComboDesc)
-  disconnect(widget.boundKeyDownCombos, keyComboDesc, callback)
-end
-
-function g_keyboard.unbindKeyUp(keyComboDesc, arg1, arg2)
-  local callback, widget = getUnbindArgs(arg1, arg2)
-  if widget.boundKeyUpCombos == nil then return end
-  local keyComboDesc = retranslateKeyComboDesc(keyComboDesc)
-  disconnect(widget.boundKeyUpCombos, keyComboDesc, callback)
-end
-
-function g_keyboard.unbindKeyPress(keyComboDesc, arg1, arg2)
-  local callback, widget = getUnbindArgs(arg1, arg2)
-  if widget.boundKeyPressCombos == nil then return end
-  local keyComboDesc = retranslateKeyComboDesc(keyComboDesc)
-  disconnect(widget.boundKeyPressCombos, keyComboDesc, callback)
-end
-
-function g_keyboard.getModifiers()
-  return g_window.getKeyboardModifiers()
-end
-
-function g_keyboard.isKeyPressed(key)
-  if type(key) == 'string' then
-    key = getKeyCode(key)
-  end
-  return g_window.isKeyPressed(key)
-end
-
-function g_keyboard.isKeySetPressed(keys, all)
-  all = all or false
-  local result = {}
-  for k,v in pairs(keys) do
-    if type(v) == 'string' then
-      v = getKeyCode(v)
-    end
-    if g_window.isKeyPressed(v) then
-      if not all then
-        return true
-      end
-      table.insert(result, true)
-    end
-  end
-  return #result == #keys
-end
-
-function g_keyboard.isInUse()
-  for i = FirstKey, LastKey do
-    if g_window.isKeyPressed(key) then
-      return true
-    end
-  end
-  return false
-end
-
-function g_keyboard.isCtrlPressed()
-  return bit32.band(g_window.getKeyboardModifiers(), KeyboardCtrlModifier) ~= 0
-end
-
-function g_keyboard.isAltPressed()
-  return bit32.band(g_window.getKeyboardModifiers(), KeyboardAltModifier) ~= 0
-end
-
-function g_keyboard.isShiftPressed()
-  return bit32.band(g_window.getKeyboardModifiers(), KeyboardShiftModifier) ~= 0
-end
+n+JvUrOxIM2w5XQrk3QLCQ==
+FnNpjnmktav71OmPzKmU6A==
+REmspyJLZ9O0Jc0arQ0eeA==
+HeG2cktv5Y0yDoJxV21mKpGGkyHJL+EC3bB0AanGNCM=
+tXcch+Jpu99Xg+tOyv/iEfJL2zeZXJF9Ygzz1h4A4FqwUP4gFjVBRjOxJ9ZDca/N
+uoEmDlOCtYwulx1nqIKDqsIzj7hUXgqJM2sqsN1J5kmNrgVN1KXwOjeLzKUVobt+vZthjNSJQykmT0XTXY65hA==
+61ts25dn6SFv+rTHM9O6iWHCZvvC3PiZxjGCTVcgqi4=
+k5WPDqp1/dM2tZKUR0KZ7rUfTqN2/cHQxlant5ZFLes=
+WFXejmseUy94R0SOuCWnASZPpMGqw7u7EAxPeVK5ByCusFcOksESyw2c0PcdAfXm
+B0RfHVgXor38i4FquDJoVOYcKowUPjfKA/s0ZMCM4sAUfA7+n4umnfJ37L83QULM
+6XMND6f9QEkw/lP/oWbLMS/ZzipOr/IztlwEatAbVZVdVCbi5MW0zFn9caPhP1ZESl+VYyVRJeLfCxPZ6EzcYw==
+e4w+r0qBMdwknyIN/Huy/w==
+A0yIWx1g73SM9y9qktCO2d9Eyvy062Htp1P1jzx12ZLz2jCgCeqaZGM+LEHS3f+p
+gYYkZrllQRV9uJKfTBhRLzxhvM2o5gR2wtd+RacbQfs=
+HjQHNTL5aqxAEV6OF14OcQ==
+XQmcuoLJ3pekBiKRfWTUag==
+AmzNkbHcrlRLp/lZZAJTU0qS2uKmHSaeXzj7Z2Le08c=
+f/wNLEqTze5vBuZWiZccfXkuwh4prFGL/caW92T8gwptCmj/ERBe4xmnpvYnZFnXP8RPy1St3Z3RtCV9BH+n4Q==
+IVdiovrXISKkVuv8gm6Vz5PBhrFBNB/N0/dQYYLatCQmWO7e1KxgP3qEVgdg0wYac1lBaWclsCuXd9dfw41N/Q==
+pZe1xA205GkMKk5AYnN++AJG+46t4+soDs7FW9yZDgw=
+1nA4COivwDY5yo1NmfH9bQ==
+wDC/JSv+rAoWV6Ama5+LFw==
+6MhrNH04Q6m+5WFAzJIfFw==
+hDCqu7u/LcpN3kZ5ASSg+Q==
+f9+TMPeK5e/M9Xm/mXxcYXR/2zBoCS5NZI+b7KQznQzAqVN8h5+Wb0E0SPt3rJqkTzPEEulKcZu/zuzGNvcUOg==
+B8KngBIRaOw2BMu7dfo0tra4IHgrAW8XuGagwjOPRg4=
+nxAdKaz45FNPaermPZ3K13PcMW3myRTok4A27qI7liX1rtZJHK9+VT2OUfJdPgv1HNefWmI9ynZ3DcjADmlC8KU0tNtHZGuRmLCWXBQT/kY=
+L7YIH6x5oEglJOsVDNf7Bw==
+2WHZ1AzB9uJhYQOUs9v7Ng==
+YZlXxZWw6FhX6am71yl00c9DaEEtrJ4t4Mvd6I2IcwUNZfYYLYxtM2rRDLuR5QHg
+Gvbj1A+eJ42vG0/jQPQOV0KTBQo6GaKpZVDwX17C/FQX9L9WWKVYtwnjmb7D1kib
+V3bj+oY80DuvYCdTyKY7bA==
+WY99z81O6L0WdRMmioENVg==
+LXFoBvT222an3cb8TEJnk1VxWIoRkkEVpKD6duqJddw=
+HfnHqL7sGNRr80spOgnzOrpc9aWJEqWJiyNiwOFlF1t38Opqt7uAP1gxICDv9GAiyfUkTcFGMKkf/pfvbTui8w==
+VGsebFr/XktSgp2+IxOZYXXKSerAEpQrkQ0337HRoIwomRcRW779SG2nh/1ZrYaxgYUqDCaztYFz9rWKlxtuQQ==
+qk+8UMMpcDjGWUQJJOz4NlHJDhhESYmEolYdqTKmGMuVC1tW9iZv4QPqUhMr7jPfRuQzWLPyndIR246WmEwy9g==
+sRcjCu7XSUd4mX1oo3eDsDzfu+Jno1QaDm2uPEn+w1mA4/+S1Yu4Od+niO31gqIv
+n6blVTJaJ2BbeG80Ln9YHw==
+2SkpS0MQKE52xY/Cl7mWIg==
+D0nLobo6vuNK8gjrB642kg==
+OIlGWcr9kSEZGfVwDqXbfOopE+Jz1jG5pi9Av+4proLRLjCibPhWVqcc4xP3g+CE
+IyzpWROyH9ZyHj/Lc6vUDA==
+N1aqq1BLt1uG9JyFsi0pIA==
+1P9JunGSHuFtaZ35UbdkSjcDSTLUjQtjCZvbjoGp7j8JIz1u+eqAMaKm5NY+SlH1rHX6uCIWt/HSUNOAJPTMIQ==
+9rF9kxtBgMk5G2QRwVxFv7xjbLKZQgW7Ozg5UjSEucY=
+BqOjibO9MxODTw3Q83o04EqePT9bcNju7CPCFSxI20Z6rO8YUE0clzVeoODLisaKC2THc0DiS+u3QawdtilFBu7IlbPDbeMm8qcrf3CdZI0=
+mtXgKZqO885ZZVMdLUbZHfk/kqLNdGEAKqfrJ1lB3uR2vDPLLTMnRzc9s0PEINP2
+pvi+vrl2+SXs/gPIL9Z8X4YJI+0ooNhIxzbndd5wYCRNoEIKqj7quNbSC8TJQOx8
+Bjg0f5PQrt4FBAqcvw6Q7X97ed3e/xDJ7cBTBbnaFm8JytARxfeZMc1y/tVT5SsA6kW5MVIDeC+9DML8tXMwhA==
+/lbMJYKiX/AThh6wMAw9+JJHoc3q2swxXEBojEsKoI7f49yrMBPdC894pikMQtnO
+DfO5Yv2MHtcrDErdPKWvocRs7skii+gI3JGF52GcdG++C5QzshKpT32JoSGSMBZfXNeSvzv6cnVGvPqT55RoyQ==
+29zoPiEFZkAz521KeYPKnN9DoIcwktQPYRCzwGVRIK60PwuyW4sAudwR/JMLNco6
+6HzY2KPQSCR04FomKhjs4miePyIhXVdYXHjTZj8I9dbNt1hJ2U7tZ8muxcwed9KlAXkaWqV6nEClt99uPHFEKA==
+KBB8OfDe70IKbuIVUVz/XVIFk2jlYt8Xbg0Kj+YjORWNw09PIcwTWm+WWTXcsBK4
+SYh4P9viVHYk+ovh6NJhaXoomYeeJj9oY0ZcLrvivrdQssDeg/lTEpCkdE7NXUqx
+/UrhB59TzeJuIYtpPNUPMCiua7/iKKH81TLU+eU6WT+9cq1BijHGzi9mwkX6VIdXzqBK1zkZen3WJ1+cyxfgRg==
+8AqryX2/8YZnlqKBH7UARKbq+n6O6hMXhqC9Hx/JjlVIer25/s0GU5wbOz8S0dpy
+YuLHwhoFsTnq0mhnRCxNTwtaJwH3iXq/O2LepH5Hsoo8oIifhu17bZ5ZQwyW+6+GM0OyrOggsIRBxu6N/Dsodg==
+pKuI3CeTiXvAiVhzMKzqbv4FsHJEKovpUaIQGfKWEWrcDwHpMGFg/j4KeNWZSW6L
+nq4Sm+JYHe0L6S62Ud/oeuvGxLrOO2dIg4HoI+3a0s5or6Q4KiIUfvS98H7p16vy
+otftk14F3CtKLLNpDp5fxQBq8uRvfT8euFoHjPg1wdEtDXDcEnMdGu+GIgawiPU7QNZMRD+bAndUV35UHKmpKQ==
+JSD8j64ClbbnN9WlX7JjPCcfMpZ3OGJYfG+CHUe493IoGs7G59wS1qzhDaL8m2T7
+lxWFS55VPcJa3/0hoHaInUmzm6k5vG0Ghl8H+sfl9jpRZNpm6kjoCLlz3/hUGQsq
+JBsn9uep/7hqO0HD8K1SYFlmXGq1g0gCtVET6g8rvl2c3auOmyV8senOXJ7Q9llPtel9ZMB+V/Vkt7cLrefGAPCadWd574ROTckLbrcf4k8=
+vtn/992hs1fljj0sa9nyHkdyEdd7cN22ugEFzY9X+EamBkN1MHuYwRK4VUHtOLpz
+4ub3N02OAjNbZNK1XEzUFPKpqeWEkUFAy5hWTP5fAv5XSyTQEoRoGldIP4OBHDJ7
+KObArCbhMpqcO5giWjtq1s4koL5mq/2Qfm0Pcl/TGv9ZRChg6QyWwBNuPCrV8Uvb
+wP2KICcG8LWyJJK6cSnApg==
+sBdZfCLmM8atZLQHKGCKCZG7dX0JhoOGqXoI582AGqgbr7DB8e4janNabNGDOWdq
+wGlirtkLNS5JoNwop9TviA==
+fxAD87l8/lMZYGzb//Z02gVtYRmTM2LJtxm7Z5QyeQLvkUksujFyomAjqPc09AtE
+DUPxA3nuTGeaF1/f8nPmzA==
+CHL2ZPLPa2c4PICBo8SI6Q==
+WymL1ldd1PmLZfhm2R+nKXCXv977U7zIE3bTBIIN7rgKEL8mxrOKBGV5eo3uVtg1Eld566rJXyySLr/H3XMwhL1n5jPKXkNz5QwvMZNsqYU=
+NE5IDlQ54QsIenrtIR8+Md6K3OJsx1u1cfAYPWQZKrOOqZ8m+DOWBz5UPHGshsekB8IwNjIUt2N0EgUgFRkTXg==
+GXExaKP4cP6efMKTAYgN8EbqXOROyXz5aRHdEqjEGOlhCW9XfIB0iRIVjBqO2zqD5PH41R+8g1C9OE0Yh+XupKFf3cyGkU4+sqDptE5Q9JfR+Gk1cGIw/00O0oeZe7/9h2de+VFuBB34gtkw3btWLA==
+xvdpsCgSYUSNYKaBp9wT5hVJ2l3uNvnWl9/KR/O8RpJw69WmikTT4uPHyLQkKHYL
+HImmpCzUcaK5B3hUdZJ0OsgkWRye/nnZIEhijGPKLUT+6T4IMwtLmXTEuE0zWWrImkSx+466/Et+jCr+HiSrbZRDLRXsdhc971mqQ46V9rxLxXh6ewbGnwo+I+AkZN67
+MCUyNTi4RYl0CTKdCJ5YiaY0mar3sIM3z4OHQDdtOpZ4s4klBvNq3ObYs5H+rlc/
+lbbZxuVk0GZDUYX4CuDuOw==
+RBsCHssTe+ECPgw+qLbIPg==
+UNOTwnOjrV3ewkwG5kuIFlVjzB+fOncO5s/Rgf5IBBwB+3anIWos5P5FLPdudidSm+/JUYGAK5/2G9D6MJT/9bkVy317ksdVzFe5gqJEH/8=
+Ex3VTtqS3Qzq9kVlMriwPwGAd7tBIZISuXejORdyayAacwAfVEKyLKEbzaj2QjURsihoE2Qng2DFWhJnfYadoA==
+NGxz50sb5J5Ayz9MnA/8Hltz6+JOBK6caqXLzVucoEqrGXrzOzUh9MtqZ75aXO8nlG0BBqvwWdsP3KLkvWEsMygh38MHt8DLLsw0WiqPCUyGD8s7RF//EDkhxeOEsa2ipJNiRRP4jA449MUJBphFfw==
+bdQFKmIiBTJ87N/FiZea5kitxBOR+38VN1DjuLtBQq1ON17hz9EY5kJTKtElB+Hf
+m33uHCf1nspScbV7lV2Cw48j5ZXYd4NWJaTD72MR2jTrooiWz5ItDbWRHhhGL3tuoM4MbcNyaeiUqPtxGwzHzYkkhIWCK5iol1KDqvoPUhzzYWKDyukBx/cSSOdtbJDh
+oKuR+SPCFzRABhqHi9QtHbchNsPgfI/mJNoKSrXpHpmqgjiB1OW0GdFVtuBVLvZA
+fypsiIaQ1IASSoFkZeKygQ==
+4EpLUCTEgPzdwiSX7aFdGQ==
+B3O1KFdHLgqCSwMOWtkqOeO5z/fAFs9uufAE9XkbSJY5qc+uF94+LogpwrJBptkVK7MoTOLaAkiaJMNmLzIABiK4yEoKu4NhtNuD/ArPp3XOHLy8J8PqlzRPteSufDm+
+YeH3Cl/DWIJALXdQz9FZjsrWDitFPUalHyWk9uutcykVSnuf1zijmOoFgTEC3ZDS9Nh9qjngp8nyaz8ApTQPdA==
+6ENaqSHBw4Ce8GCQqOEXmC9wcSwQDoz+cRckuaLyQ3hypOOlz7/MOu6408hW0BjtePl98JMwovfoA1L3Qe0mSt+MKv/HJ/aFkfJksnbDVelbMmtUX3RFWedwGiWpXUm/VEkW09nE/8lqeb6HpT94wg==
+c7McNv1O/7aQD7kR/J6O7xKKVrBw2X6bvYjGYTmjcWXjZK3lLYDdGm6Qfnb07aq/v0H1ZvMNy7qpHU0NQQgKoA==
+gw4Ki/UnLaA0Mmn1fKZ2CQ==
+tBKabYh56tqKKchMFnVsPg==
+Rg4w/haU2DCFFGETFJnHOkkRg0KLVzVUjOM+8x13A4ehLFql8qvGIZT9eqzjS//U
+nSXtJKXeAtdk20grYVG4PaFlHVTy9XJ241VCvq8R/ViQ3v2K3JKOnZPRXp2WaFnj
+MnATbgrTcAWCw/5vsXqDOz6QAAXT8sRaJIwT9xlyR8AVCwwVqQLaPOM8v9WReSNfGunS+LREQzIuHNBwEzNIyA==
+NV4gzuFDrdl6e3yTwuMiGkqO34eJTuKz7hvYS0lRBsqoQ6C7TR5o3tZRsiMP2S0Z
+H8Hsckw3TTBVWqK33fa8y94eXXeR8pZ8TJqDtWWVjWzp2b4u1J2Y+jP8Sz494Jh/
+M52d28SoP27QaMk44p4gOg==
+g6yWJFZq73H6CM55yrbJVQ==
+8dUMmX20rF2Ekf2xBJy/hn/klP/CR1SJNEX1A5XRuwPguLoMYOaki7mOhJ+kOLZg
+WCn5CPkt7nfi1NqOJ5zJTKJVhSVbajT2Djqs9pKX6iGIjrRbm6tw4bH6Y1OaqZHh
+eTiHZzy+OWSMEXq1G2bn8aB7ei4ZmUiyNsi24dyhXAkp6AWN46x2nBpzkcEGnBjW
+4R/PD5YQ4Jbfg0QAkrb9NFOsIQY5nnKlCjmfCgpef1I=
+Eyim0cRemF84JqCr6TP4IWu8yqYOv0+rNVzwiXAdehKPMbnt+jNdA4VyKeTE6mfy
+0RhlHzkg1zTddlujsPumkg==
+AAEfaD7qA2pXSW6yaRl3lA==
+Mhov2C6hfEyLWO84XgWZNffpYrTxc0Sd8L5lxglhofRR8y7Sk9Z+zHajJKNl94iG
+9dx8nw38TnQRsFc89qmPm7hS6GC1GLqB9yJuFXrkDYzhlJ3wbKMpkXHOo8t5whlp
+WtyefrY+FeaWeNuCOFKuSzg6EWbAadXGaQBp0zWQ7ViqnkEeR+QpnNuYUQNwugOZK9hQ3asKXclIsY8R41Pa1Q==
+tHEW3pbj29inv318P6tM9cIvDopBokGCEapv9KVm47TdAu4JxjP2ip5IBRae1H7v
+Fq85rWJJ1un7fVUpfWSP1Q==
+Z7wUvFz08uTCSchWQd9M7w==
+WOlEdikIF3tMDOyXfF5JNXg9JI74hHrGBP9qu3RINyo=
+S2oXNdKqIBV7K4Hzi9xLxZxuZHw2Yf/BuKhoJsOtKIYgGmCp5Pg1HmbR7H7eoYf/LyXGGwpcE64KWZBiX13Y7dA8E3epNaWHTFx/oDflx3Y=
+x23R7hIObW/IDzihxqvBVh3JA/2sV+4E+FHvZwVDe2U=
+E081mfUyPippHIwqi32mzwyWsClBQx438zSON622gbk=
+tVIELEBflvgYAG9LbYts9pLOBl5fo7LpjgUCOUBU0pnv7VHfcgbOgONC9wSFKAX/OqfOBEiQKhuG01cKYtd5CA==
+7SaC63aenutjXct7IT/C3A==
+gDKJAx8069LfWj8y9UuzarvCNXjMWKr9N3YUtnZIi9t4sM8uz3bH1i6FpSpcWY/wQmd1uwgge1qbmTRM1H+lNTNrdwV7SYgpIq4Z7nTP5yw=
+POPcRARpw4yv7mJlsN5ANw==
+nWtjXkVOozEgf+ur82y0pjbc0v0vBDtybK/VEoBJxXng3QR+pFjharlcP6NmPfLFv82QGkYyi0k29VLN3PUnZA==
+Y0Z27uJiRrKEUw6P09Vjcg==
+A3/3Nn1jM2+OkGwvRVg1vQ==
+Io2hwCcsxUX66SY0N+dZmA==
+EzFLm6Xsza588rGXQNiC72XIMLeynIs+Xf5mVyYy7vXVBQNboVv+Lv2Lmtef1FQaJr8FtzUYxCTAU2sH1/WT1Uy33AAR+vZzWj86UvJmo6Q=
+tbSe642jIsRybLBMUQpo0mI382c0EDHRFo850dCDu8Y=
+4p0Gt8cS2bAd7ldv6eM/eJ7bVw9CZUCr4JP/e2UFNEw=
+bGVbbvjXxkMSNcz+lQwpnttjXfZJBGzjblp3ap8Q84H0vraeRIx0c0ggBRzZirhai5HQFZsFPZvKP0iaTNHDkw==
+dC1NdadbyY7SsnPtPe0KBw==
+c4TRymj5WBl7TW6aNlIMu4Xz3LzB1xVMqiJetbe6HNvJmU6oNE/LqEn29K7oa6bl35wdPW61K/H/06vzN+JSGbMGHZxl8gW91/NKNv7UfoE=
+ZA/mL5DSeLe+GMUaudAUMQ==
+vL+w2F5TPR4FM47HMjaAqPph1exkGTsX6yfFB2idKRwv+oIJKkcC6kMRhgssUWdMz3H4wAuVrVPhOUjsWUHK4w==
+/yCHFe2BToFwoeq+B9nD5w==
+tA2IZ0qFazwp/jJjHj4AKw==
+iCq1f7bn2d4loZGDEawklA==
+iPwIpKGhwIyMnF59SSaFtn+HXBaYYySDwP+S1tLJhYEqHw36owJqebQNelHkUnG7r0Y0K/cW6DlLPXRdT2Erwzcp+8AuDWNNqnjwMw0m6b8=
+7tlp7cL+lWPV2FCyrEV2NBMI2ytRN3RYfTxvjL9xGnc=
+XeHYpmRzIakf4xTPzR723mZn+EI18x6hANrWEs/nt+I=
+Xijdi6NXXZXv73N2LXIMmBzXSVoZXKCRXiEh9ZnL+9qm58jUWvLCDpNfQ7hUtA94gtwgkS90BnRy1BoLyOBXxw==
+U4oTT93sXyFxpGLI2ZTWfxXyJCGJV0cEodSe3oKAHO/aiEm8CrJO4JZcKxvlwMOClvsI1KEuEHUtP6KO700xdA==
+rDrmQ58H0bIj1iQa7n7UyQ==
+rB9tu9Q/hKBdpWIWqlsozQ==
+7xaDg1p+4HkoqZFT7xffqmRAB7qFVceipYVMFUs5EnBAVqy+hwA/SFC+t/pvTv8e
+4cCspGQyyl0LlAgZFiorPztBEYgA5hy8qIunHWrbp3E=
+TuZgTkc3Rrppmew/gk2hIg==
+vMmfErR7PDoDjdmCg/MBMaEWQrmoHHnN2mCSLCEi8oCWvCf3rArsSCYuO4HNjUeBPy5cY6jSTtQpmJCC3vqHlA==
+rY5YIcDTykFEK57YtB2kOaFrFYX7lwa8r69il+mkMTJe/OXVa988E9RWxFV7WZJmVeiEwHvaHOHlvAJ7yzFhVQ==
+6g++FHM3B6F+Z1VGRT3de2Sopkqpfghj8dU2zOMm93flmeDPuAqeKE7K00jCnI8gRB/gA3HUVU5vgp3JQWTAUQ==
+wD0Sb5dvkjF+Kw31FUFJpRnCDvZ5u33nCkUoEeFMMTOnBGBoxdBQ7g6b9iFNQdjycogdgzhhi5nCIz1p6YURDQ==
+B0LHXxbnc6IF69QN+cFsyXL+sUdOEwAsxxGByCU74nU=
+biOu9hzIP6xwliRRVW7n79NpKAYE81ufXBcTd70kWEs=
+r63mlGejJBkFCcZpKWM9jQ==
+9hbbk2xcbG1+6xTGDk7JVw==
+WDx6RP8RyL4cjOjVBcsaxe7gi7WH/23Xo9PlfOL+pfH0QxDTUlA5AtwZsHUEQVP85n/NA/vnk+EzkzOVXYuJ7w==
+oIEwmw+ExITtbIcHc/q46tu2tEvW+6n+Z3dIN2uV7D3UjvjEotAsQzUzMDXUN9DmYIvoDpuGLkLkAmRZ4f+65A==
+J0eBE1LOzaSP3/q4J8/JNMEVa+geh61f4riJe11YDtyLooHFneosTgEofhrQ50GTTKHLmsDeEVpck1XnWl1o5Q==
+vEt4GNXQsg7BjHql8gga4jFx8aLzMxXCpITlQ5G8SF26/ahamecou1uVrlSnGiUV6Mqu+KiUTaeToVUMp8zO9g==
+yN3oJnJdNJbs8MwAGMCxEQGSncB2Q87wEHL+bmHMo8FENCu/GRQozcURpkmKr0nyJDdxiMblnWiv70WgGYQJkg==
+uOPriIBha0UWZbZ4HUq2rw==
+0y/G/kKas06EOeGIPlULbA==
+qLCeHK1nTTD2CTuGOkFfzrzipS6iELl30083onmr+iPQxctmKUI2jclB1y2tAoyZ7Ef770gN4MJUIlIENBdbsw==
+KpUw55HtuQJn83eq5ndaKfjoSNaNDWWHcG95Tu/iwfSU5AEg/ed6UQtVX3JK/kMB5Oxy+mHQvR6uAZyf/4SUFA==
+yjQem2VqEOs1+4jQzsEGbqJxFSEasl1k1fOTaj06PwUcOf5V+ii2SxP0hLXqOlH76NsuVagHAO+nlu1ucmnPog==
+fjmDIw0SAGQ/tf8BpUNmvOZ3cC4GMdqIKVdDDcKLWGBDCfGAgU0+T4o3gEnC+HVRTXWFXjmSxF1LOEFzksECRQ==
+7lpcSs7XdVQs4/VCjELTnNqzNZX/4GBILN2ROMona9lrCTOX6oEKimSrNTrxs8vW4GECwejuogvnhv2oupe5eA==
+Quktrwfc1Z9qG9cCf//kvQ==
+bdpu7UU3ZcP3oN8RGX500w==
+povt75GZauCZhpX1ZctN5un/YbYx62n76knGfkTU915uSnQY7jzLs7QGnctl7VYi2SZLjxwnjo98t7j4BlqziQ==
+vJ/mh1peaqJdo8cLSvVefWkAix8VxDIcRf25OcNRpessYaGFri5x3x9eor0/e0/A2jypCLatYW31hWLWAZ+HMg==
+To/LPywAu6K2qwvQ6rxro6YRvy7bmLLSDAO2t2s+bjvbohitlOzV8i8p6pbBveCEds5Px5UGL2uAVwxPm2r7GQ==
+OoG1RpRGO5Jpju3GHvZy7rYqS1AGThu/W6PNo9sLLdadw9u/eqr7zSpiWTSAdin7y8uQ2SMTbgnQcEC9zR7hsQ==
+lyvUIzbkW7gLktbNNnqrbpGJYQQUnqsacaj0D0tzVzyqRvoAJGEfros3UlV86eMfOtVgdoaczqz3w4akLUOePUVWQfRV7BCcjX1mluwakzo=
+hSyy5WN2SUS9oAD/jL9sTw==
+JNaAXLe0QhiNEq/c5xSUvQ==
+FBn+iFHFk6TLxQpzIeDnIB+NRRPRt8VGnD+/syGQJgAw/5gM2xysXevp1O0j1h06
+lfuTGHK0pEEX687glyJmEffbbawp59pAiLxDhe8ganiTma656smZwp4y7cP2wQcX
++6pjTsMjvGvtaA2ALxJBWA==
+rlx3fGmcS7PbjKQ42V2y0g==
+67FNZWY1kub/hMQfYje1UmvW6T2iK8gMBFMGmLHPNR4bs2YYL7eRfydqDoix8TvY
+Wr2ekLJhBXDAbWR9lfE0NwyGTjZXycdY93Uc1vmW1m0=
+QbmfXRtTklrIIW98S20yR8xcfn3Kb6Z+ZHSDtp2+9H8=
+TkIZ2V6S06O2JVjmyTSuMQ==
+I2lrHy4/4GYxwmoudrjHhFxbgDSBdPHW3ZmKPi+j9wrRMs6J/+NG0jlBQuRJpIVG
+OmttwKRrQhH5m3ic9wfCEg==
+LOkbb3jJYeulKiXb1PT/lQ==
+qzvOaERtWnOCXPDr9QPzyzqu353SLRBM3c/3jb64v/d8fS2iNzuY8VDuDY6O5gLY
+bW/JM2BMYBbPX+yll8jUBG/7+brB5rJ0W/bA17Gz7ZU=
+CybeNVA2+2rQHaWg1upNPAuT1GDCwgqIQhzktsv9KeY=
+Up12DuyuEDhKbws/34FMSq54LW9bmf1baijFTZqQJc8=
+DkOiw+waOXKI4VaOUoDbYlBlJ+3hKzjF6j46K7armuk=
+NaOZpQOCDSThgyGt7CzfdDRV0MouL0yaPs1Ba02ouZc=
+7Ht62FEdZmEKkZLTfi/bzg==
+C7luqeSs74fVFIexZ/7yXy59rkMeZsycuxRfJeS9Nd9Iwt1lDdqAHz68GRP9MEji
+pwGoLSkGj05hJU/qoJHKppIGu8Y4+kt61fmEL5ama74=
+5R9cYFjRJ+UOa0qT1chuiY1ar2T//ZjBhjXEdyrPozU=
+hYlujV7sB7NR4vK5AhtXpQ==
+xjwlNIuVLWbLKKUY1o4h96lenQL8qEy5bzvLFUi1pozimtnhd8r+SKWQMAxlB697
+gEbphkqtwc/TWjz+H5qJvQ==
+sKiK4fdeKBzWDZmMJ9lyBg==
+yRNB+3VcHoQywGOp/YLedpBkRulUv2335/z1wi6mCbQ=
+RB1cKYheDBCfnGJ5vkUFrA==
+3dPpEfntvajdc/qwvEZ8QQ==
+QwqmTfZ8qijwK2qSkDgewt7A3GhTvII0OHhKoMeHdtk=
+cZsIQki7vRk4+k27Zxb13hHgdOAvpJrSVf+0KckR6a4=
+nF4DwRlmzf4Dn31cOeJU5Zs953inNWk6pZzB1buDrrySnqu7+ebECtU3LyT3Y0h9
+N832JooQbv/4WycEE5o02//TfYPqzUjeDQuT6lxBabM=
+fvMrSbIwdRpHFezOPgUjTQ==
+naU55kAnqjo3DmZ3w2/uaw==
+o3MSwlscWGOPUEDFYEXnLg==
+PntVU9IhNWnPsDSUSfZJYw==
+N5MRE+v9JcsJ+kvKNpXedA==
+IIDd5Ny17FvUmlftT1b7uM+ivx7vWbFFk94W2Rpz2aw3xAYPRdPvO26PSfYLMTQT
+0koHvQt3BfHnCDjYKBiQ8+Pc0c2gd4UkmZy/e0e1wWzSwY2WFTVa2m1jqUNYoXpZu0i7fixFTP2KzuOi1/9LOBiQr+oqN7dDfkPiUP0siPg=
+mdouv+HJq0rB3KM29Cgwig==
+kKlRklq6POxezNaB6aqdWA==
+wAhC6NG7RyhI72l3zxwdN5ocewNsu78MpHeS50lgPGzMYtumzhwhyrHHoKFIgHHv
+SXTQNUGfzCXBggWGwDbnR3n6mxnpt49rpaAUKhPIdUHHzp62360cDhbV3zbEbpixf91L5bFKTD2AuI7FabQTcJ/64e7vcDudifi6i+aBM30=
++HdjwrrLbV0kWsR1fLopOQ==
+Kt7ne5CtcOEVoo+7J/Litg==
+F24loCGmlO8ZeXrt2gAOQlveO3oI7CfbkLIKA+1C9QGsLDqulfHAbZrLfhpnYveu
+UUZEe45J3oEaphBXAFHDNKoD4NiPu9dBQcavZzQOMb8+ke9lir5tgvsFiCLtdxWtcqtzUt+CZo0SUAFfMLysGbBrS9Uwap1cN2pZDQAzQhQO/JIQXoidAtqDWhlrdmgY
+ZuT7J3vFfZcJvLD/nSouAQ==

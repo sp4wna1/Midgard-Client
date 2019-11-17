@@ -1,21 +1,21 @@
--- @docclass UIWidget
-
-function UIWidget:setMargin(...)
-  local params = {...}
-  if #params == 1 then
-    self:setMarginTop(params[1])
-    self:setMarginRight(params[1])
-    self:setMarginBottom(params[1])
-    self:setMarginLeft(params[1])
-  elseif #params == 2 then
-    self:setMarginTop(params[1])
-    self:setMarginRight(params[2])
-    self:setMarginBottom(params[1])
-    self:setMarginLeft(params[2])
-  elseif #params == 4 then
-    self:setMarginTop(params[1])
-    self:setMarginRight(params[2])
-    self:setMarginBottom(params[3])
-    self:setMarginLeft(params[4])
-  end
-end
+2JLNMSzBR0j8o7pu9zq/369rKjIfYzcmGKQk+7c8HRA=
+AgI9oZSRlBaBI7iX1xFogQ==
+RlaiQLRlTh771BYmQRTsVihbVBnwNnu+Hl3RscPjE6wcZOdCHytfx0yvC+1eM9Y3
+q8hPxMuDhi3tM9/pvLRP9IHtuguv4XD/7puRVP0fc+8=
+mIw4jWdWEDhC0ETagzhLrmFHLD94z6T+ebvI0op9Dus=
+ZtY30e4Iu5GqwAXp31GVysaw5vziCmDFsp+2NgJuE4aBPsok/gaqWjuaYgSduEcO
+xCquW6jRTClGOYSNyBsJwX4j+8GpIddiLG+R0h7XfD6t806BFpHtTmnZDcc205+n
+NKd0a6lzdpAOaBmR3+ozBbXzpq7QLL6U/MRvfASBfAPJW90H4BmUQVxdK9QeuPAM
+L1U28oW7sSKiRvhFsz6Ewgmuje9ZBf/aqlX41rbz4bT0k5fQ5llbYawMElwVdJv+
+O/aP6GEd1pc+5U7NCzWeGj/BPQY/C8WQuPBdF65pj3U=
+nEZ+zO+AP0S5cLVjf3KbVAgeTKRmVq0QNlyh/bKzN8vGOQ8c7IGs4Le8Os4drROD
+mEGlb8l4p+oCfukTQqxC0eO1aXIGlBPWWksuuvX3XuIewXkVQHMmBv2glqk2smRH
+zmQtoXgWfK2PX7tNgsMO3meh5N8GAinR2qvPhBiWfhotv0J24iPWoDtctQXJNdDr
+weSErxOuTzhxA551b4JFV+GUFm26Labmsy9zW0uM0Ufw8z8JDs+DX/Y1H7TLJQPy
+WSX5//FPHbkRStug7I9B6hGK2XIHv+09w0pWiOQJE0E=
+cSlrGWeumQVt2wgSEy9JQIb18JU7vSRkCM93DPRw5VjTD3O+ZmBihYrjobdG1Ebw
+3tj8iVJbkZj0r1AEeKWSzXJlID6KtOo12zd6UfmHTxkHKHZi4ltcYJymmNByFPEN
+6dXqcKn43BGraM1SRpQfkkQ2KGomwzgKnfBpeVdPcuh1tPkJiuV8jrIc9iV9bZIM
+LFIimtrKryj5T7htMV7bgeSVXc0WmZu9LgDZBSPknKTTVmLYGYVUCS6+aXqZdSPH
+7O+ISsviuK4JR+XNTbc3ug==
+cAR+Y7whuBHY+ti8HNocvw==

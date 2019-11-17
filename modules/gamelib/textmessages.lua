@@ -1,30 +1,30 @@
-local messageModeCallbacks = {}
-
-function g_game.onTextMessage(messageMode, message)
-  local callbacks = messageModeCallbacks[messageMode]
-  if not callbacks or #callbacks == 0 then
-    perror(string.format('Unhandled onTextMessage message mode %i: %s', messageMode, message))
-    return
-  end
-
-  for _, callback in pairs(callbacks) do
-    callback(messageMode, message)
-  end
-end
-
-function registerMessageMode(messageMode, callback)
-  if not messageModeCallbacks[messageMode] then
-    messageModeCallbacks[messageMode] = {}
-  end
-
-  table.insert(messageModeCallbacks[messageMode], callback)
-  return true
-end
-
-function unregisterMessageMode(messageMode, callback)
-  if not messageModeCallbacks[messageMode] then
-    return false
-  end
-
-  return table.removevalue(messageModeCallbacks[messageMode], callback)
-end
+UhBO0a3vlt5bbWOWbfPPdwcNuInGZ/Ur01QLOLm/2Bs=
+1diXAVtowQy6n5ZSxE3E/w==
+0mACu+mFb5oiMgLjt+boyGra/r0nI7/wvPYjP8bEbuJLFEG29R4KMAy9gK9q7+BYkw3ZgSkizX+CaBVyvb2Vbg==
+//HKkaF8/bRExWJ228zda+HMfIzto0/IoQ3YBWl3oDmgT0osnxkq+Rx78K1QFMDfzBqEMJycMxqS4X+acUyDBA==
+55ZIkeveBmBKcrzAicdEl9OaQR4GwTamJ5bXgeSTNPUsiskTld6eNXX7LwfaoSC9
+N696h8Z/VFkhqKQqiSo1nNEOd9L05G7eDnMQkYijoKEfF8W9K5KCjhitURrq4hisIU1hJmpIWnayT5YkM2TPT4gbJ2cYwCYVNcc1Mz6dWeEM0ts79/KhdY3H9FeJQRlj
+WhJEAWfp6CpFJzeU9bkFWQ==
+SlUd2cvKgn9eWUX2hYTMnw==
+Bkf26k/tf0YNeHtCOqJe1Q==
+Yy5J29p32GkNPsfWhUu/XE8MnRBXQaLGXdMqiPhh7R9Mozyuie1ugTsUpJTTdX+P
+Vfi32XU7uWFIO2tpd8BPHfAonKWqHsqiLf+2By2cj/+TFnMwMfSXewuX4rsJGA6S
+0DwuUEEXmSrS2Fq090rtuw==
+RugI4CIrFio2t6qCjoheHQ==
+wf+1xiB772j0wNpR3OzIYQ==
+G3JeLaPiUrPseYjaC/ueiFAMrwTkVdNYIx3dEmAG2OenWENTgxeCKYx1ltPiiSyaJdXzxTh0Av3RQD97r8WdDw==
+8ZebEaOFKUUyAsryrQmcdOx66ymgSWcy+K+3vHrni9JjZ4xvclToeuSi7DMHyepD
+k2T2ZcJyO4Oqma9CrSzpuJM2iskNixvf10w9Sv+OE0i1xqH8Rarizhtobr3c3Jya
+i6/4NWSa+4QsXzFXoXMxTg==
+OHIC6RxVpQX2fqHKsQ2+oA==
+eozUPZm0/L20+4IIpTABwS9Ifjjcss4LQ+d74i/mJBHG01lldJ/yDcf2VPf9jw/z/g3Q0d96VNVSSHVGOb1NIw==
+W+xWFtENGypdmakuEpFNNg==
+YBrDz788Me/E5R4zqQiWLg==
+sVI8vAXZUcHmH0z1h/Sukg==
+7haOnNKX0R9TGk2UJ4bs0EmHxP2aPwyV1GROcGrD2mhw5GGzx6ikNo4GH9qfTRFUNZ3b/PXgLa1kdYfb9MXnEQ==
+uKyZpgB9ULO7H46KllNUsgAWU5emJJQwFackWJzUZh1DxFs4yhakj4udsgduRULD
+ElEo5UYQv3flnc8eHC03ZjJM/O38KspMbnu3J61BU/E=
+gl1FmD0hSdeDYGGj+jp/2A==
+EvnzgPtKofJkeH4MxTv9YQ==
+oMtAwvLQXnVwVYzlswO4qlGj+ppZCEj+ac3KkLDjVDHhLTynX2EDqdFJIFSnLxk8BaqShHyDb/8p2WmtFkS8F1tgTSGcVffPBzfZ6H3uRXc=
+eaLdm/sMMbsfwVR7U0I5eA==

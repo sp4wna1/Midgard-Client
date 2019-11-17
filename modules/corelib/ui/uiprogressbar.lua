@@ -1,99 +1,99 @@
--- @docclass
-UIProgressBar = extends(UIWidget, "UIProgressBar")
-
-function UIProgressBar.create()
-  local progressbar = UIProgressBar.internalCreate()
-  progressbar:setFocusable(false)
-  progressbar:setOn(true)
-  progressbar.min = 0
-  progressbar.max = 100
-  progressbar.value = 0
-  progressbar.bgBorderLeft = 0
-  progressbar.bgBorderRight = 0
-  progressbar.bgBorderTop = 0
-  progressbar.bgBorderBottom = 0
-  return progressbar
-end
-
-function UIProgressBar:setMinimum(minimum)
-  self.minimum = minimum
-  if self.value < minimum then
-    self:setValue(minimum)
-  end
-end
-
-function UIProgressBar:setMaximum(maximum)
-  self.maximum = maximum
-  if self.value > maximum then
-    self:setValue(maximum)
-  end
-end
-
-function UIProgressBar:setValue(value, minimum, maximum)
-  if minimum then
-    self:setMinimum(minimum)
-  end
-
-  if maximum then
-    self:setMaximum(maximum)
-  end
-
-  self.value = math.max(math.min(value, self.maximum), self.minimum)
-  self:updateBackground()
-end
-
-function UIProgressBar:setPercent(percent)
-  self:setValue(percent, 0, 100)
-end
-
-function UIProgressBar:getPercent()
-  return self.value
-end
-
-function UIProgressBar:getPercentPixels()
-  return (self.maximum - self.minimum) / self:getWidth()
-end
-
-function UIProgressBar:getProgress()
-  if self.minimum == self.maximum then return 1 end
-  return (self.value - self.minimum) / (self.maximum - self.minimum)
-end
-
-function UIProgressBar:updateBackground()
-  if self:isOn() then
-    local width = math.round(math.max((self:getProgress() * (self:getWidth() - self.bgBorderLeft - self.bgBorderRight)), 1))
-    local height = self:getHeight() - self.bgBorderTop - self.bgBorderBottom
-    local rect = { x = self.bgBorderLeft, y = self.bgBorderTop, width = width, height = height }
-    self:setBackgroundRect(rect)
-  end
-end
-
-function UIProgressBar:onSetup()
-  self:updateBackground()
-end
-
-function UIProgressBar:onStyleApply(name, node)
-  for name,value in pairs(node) do
-    if name == 'background-border-left' then
-      self.bgBorderLeft = tonumber(value)
-    elseif name == 'background-border-right' then
-      self.bgBorderRight = tonumber(value)
-    elseif name == 'background-border-top' then
-      self.bgBorderTop = tonumber(value)
-    elseif name == 'background-border-bottom' then
-      self.bgBorderBottom = tonumber(value)
-    elseif name == 'background-border' then
-      self.bgBorderLeft = tonumber(value)
-      self.bgBorderRight = tonumber(value)
-      self.bgBorderTop = tonumber(value)
-      self.bgBorderBottom = tonumber(value)
-    end
-  end
-end
-
-function UIProgressBar:onGeometryChange(oldRect, newRect)
-  if not self:isOn() then
-    self:setHeight(0)
-  end
-  self:updateBackground()
-end
+n+JvUrOxIM2w5XQrk3QLCQ==
+xUs9inuUizoSk8FQD4PEnDS9bqabgo1Kr9BhzmU8y61cnIHSaVuyjKo/faVTo6xBAD1zRbHWTNLbd1kWt8xSxQ==
+e5Q9uSGxibdnu+6GIQhVcg==
+0trs/yFUydtMXzMUt8QBySgFvBNx15fdVYIXTPvIK0U=
+rADCDtzHQ1Fh/DD4XD7/mi1D3y+nqNwyLQFYwq+Y6rTZQ+M3MlRJ96Ru94z5tICOnVVB1elSsp5QYSv3q7L/KQ==
+TmZ9da+YjI6zQnv/dSL43l0tJJIIvKMubf9h2IzsA952Ov+8Npxdl6IT0vDwjIJq
+Xx6XavqlztIKd/VPoGYuzcd4dtIzqY0o6wgDb1NSSxs=
+E5u5P5L3Wyb8gVQBZ/g/xFSilZH94jKygxHamB9QEMs=
+vUX4ZdlbxJ/H10psnU0SviED9MwJ4SNc+Roa09kMmjA=
+IONLUOj4F5dIwP1Of18nTyT+Z4JgRhF0J9EhaXMGWjc=
+SQThvh9OAqGsgdePHMN9c3pKNbep1vKp/ULeWkBpBkw=
+Deq0wjiT+8gw3f253L89Xl7oinCabaHrs/pJTf0xn4c=
+SSzEn4iEm5vaKzgZTybKh6J60Jz7YAOvWT6Lq4wcrsA=
+SUNKFlJH+emZKdHrHDOczLJEASke35ZVKs3e7MCPNmoQ7gpfQgKyt+gIMtlnTnqr
+z+pAJwCms7tb2pkJDTB6V+lqwJXoc09+2CUsnMlH8c8=
+vqQel3Fcdf/ZUN1Jh70FMw==
+kTFkwEqGGBZDZOEMoYX5Bg==
+SkhW0Y1aSEOybzcgt7QU3VNe+gq+j+flyI5M6LgQeLcmll36U7tL3o5p7Qq1LjSh
+4/wARfBFcrD3RJOpH2i5NMGNk5WqI7iYc4OwGVfcqs8=
+slMlUvk9WT2NQRKaWJQ2YcZrZ37ecI3cuwBbd79RBRE=
+EKN/Fsctvr0mBXVx97/Swf8k0Du/kwwve0BZXY2TXeQ=
+tAi8KZX+jpMy/H365ADNuw==
+n1efTJq2UdptSvQJQLvTFg==
+ywNdCUiyet5MCbbu3UqJ6A==
+0dy+iTDQbdmpbe5REPUrdfoHKaeW1S8utzeJ8L8fS4suyqqCH6arqNOOv2KpZuMm
+gL//g1oIqHdqBIN9dgwlTEPqsNSD8fgl5nFDMk3l/ig=
+2PKZzsdvx8/x++SPIrc+RPQQ2e55FranD9DDp/nO94w=
+Hc0NRrHxZjmadz/an5TistC5oyPhJ9ANTw/TQznYgbk=
+63lixKtaEtBNVZNhtn1WNw==
+Z8qcDGhtfqi4CTmdFHllNA==
+oN32KpnjcdHXaQWv4LYKEQ==
+GtlzM4qIBX/yudnNaf2JRPJxEFCW72A6azCXo8pB8ZmnR4p0ofPxdWZ31SkXffF/XPab7f30KG9o6JoKmbjHnw==
+6ZRQcn0gn51Qx29sH/6PooE/UA/1csa/czEI2fSL8Lg=
+aNGVyH/WqWVa3ebPLSDCmjO5LXjfrcELRFQ5L4TDG3A=
+hQs5x5Wfbg1Ftbn4entM4w==
+1qZ1c8YR9RVkPSAjV1M+KQ==
+jBjV6j/9RXIdUiaDjsy4vsXqLtG++iSEm4LfxD25Nzw=
+IYbxsWwUfgw47jP1LALjeDpZH3F0XTNjpMyiQ/FHonI=
+GJvyJnZPsKKarN5V/3A+Kw==
+pXFHjQEwrMzCkBw149nrJw==
+YWSAMsH1DaPC8g+3s7kfOddsRxNRC2CCfkGZZmhrehJvRHkwOWhM6TdkJnJoTWIBY0QHqjHwpngbRbb/mRBGrB1sMGNu54o87cXqOsF/Fjk=
+fLUQKgUgJtg8fQtf//CYRtQONRhAb3168v9dg0nD9UA=
+JdU/ieLWf8/4TZnV54my9A==
+oSIO+ZtyII7jqGBUleupSw==
+xwNfIQJ8W9nn50ptZPyKSA3vVCCU22JHX6zZFLO9Cb3+fl57vLjKnZJIYD5sFzKd
+V5a0123vKVlFl0sb9ZkigRjbJmLeRvRCBNe8UEHaWikXD9jjOLm1ZQ4NtQhhqmF5
+HVuqe/LawpJTu8elWWYJMA==
+PT8vL4BzRS/gmk+yjKPV1A==
+q1HCzMnHg6smcAsh8riBLsExYHd7SexULX2hVr+oj2+ct4hBjH0YLy/sSRf5SjXe
+aUH63Koi3f1VCTUEwnQn+joWBJ7RmY9zw6i/UALwas0=
+xLs0kvG+ZZaAWPMby+H6LQ==
+9sRXuby/ZeEJxElF5WTDhg==
+HnHjGWSvSfOnsbENe/biyPFOPQQrqCRTqd34BQNXNV2QX+JPCXm2OqgLfrmrKMUn
+iEMKtJQouXseweBVNCqy7lnUSiD8cp8JUleW+FN650I7LIYd1h0Wr3YHyAXnmg6NmMU0FsmlfgpVWhVwgBQylQ==
+CrCV/NQp0WL0jW0SGHEx6w==
+a00m7qFIY6FNfN5Fyqv6Qg==
+XZrF0u8Um6yVGgNTAxnOoOJzV8SyQ8y38hvJjMIxjuTcUnoKl8AIyCeHx1FQZ+sV
+H2j1OBegBcoBGEZ3plexmmjSmQJIRwbC2+biJZaPUidyRFNuasbYNr8xfQEjB6TTjcLXGaIn4IplDDwOIbKHIg==
+NVyRRiDf9SijZagjp4lm+6jeqpRyuyjz28izJoWJbKzweia2FDJCGnUZW1m1kqBnbG3YY4PbPPpxpJNY4FCex2kQ9KwneHTx7A7uLpQ0fzI=
+SWVcmXk0bTFq5JcMPsb/4A==
+378liDZJqwwgn6QDJN+/DA==
+RpjCbdHEhnGlILqC35gcntYQzfHHhnDMCQ3iXwSKc/qzi8DLPgNCmCvLXOuqYC5i
+HPvzg4IukzJE+oOnz/xjDOOQ++GkgFsTUMvF9pFYFIA=
+nIYtTksOmbLsEUHQT0xA5aW8tTh6l/0oPF+r5mGpaGrhNOYpaQrG6vBKG9jqhIVtL02X/vORBnh/QMZn5B4y2/X7rwIXkvWBfDkhP25TuaCvLdC9QEPf/L2A49Rgnl7hgUBdOG5S+OK2iYqtm3Z0od8vE1btsPDVMKIDpqSC91E=
+6bjm5nmnnvmt/Cppxa/+tAKoPzd0cV4ILKaV0X+NXzRx+CY8b4wUw23lcDocCBNIECgBUT2VSUmavAaviIK/qIyOjBbacHkjWrxD7xRQdLI=
+c1R80QU2OdiybJO/nxA+IB5Y3lsOJZXDG6CUP8vr/jfmhD5p+QlnH9/bHnFl3LOY+NsjsQsm9LcJUMclw5JPariyvT0FhgqZ4FQJ8gM6xBwHe/CMVChGNWAVMRmZjdPYA7eFbUhcKO75GFCUEZZPBA==
+VAT3M0EgEbaFwb5y1rH814kBBdd7rP9ntDtu25OYNziADNm/aD3swLAgC2MHY/gn
+p8p7SuePOq4DiOPaVYB9Sg==
+kl6XU76NlD0L66QZZFjuOw==
+d1Pxbe9+mSehbGzb7exMsQ==
+x/T0p7LAVqWzt3iIqmbHmNsCrMwzZ65g9fsbb1E4LBgLVoiM+SBXs/5pMcvLAz4t
+C1hX6UpVdorVGieSqnJGtMvV4ew8tVFccPy7BFDgKFk=
+uKQGUWozlcvi7ES2aEOgDQ==
+WJwz7XV6XI/iUwPMqVnOsg==
+Fom3uuoZ444H2fgUOQMrdbD++TAlZvkzA6Qu5KRUZwmiYEW55uO5Eqv+JqKGPN0Q
+0kutlzhG3yOwgsAXYFpMjVjIAObQxTuswheYQxDy+/ag0FuVM7DFDM0JGUOyC0j+
+Lnv568hyTFlDSZN2PEdNNQiRZZ2PkkJYMgkdHabxxi4T8pUm7i6rMjuCkVMCqV5I
+DaW0uQdAar4J9N7atK6xKLgJ04ENYLn46PeoG97MBsTyPygkGBVdsdFiR0UQxShn
+ESLoUeySZaJIAGccKYV/RGfHq3XtK6I3oy7YZ5JLgqAK1SNM+tVArgFaVG05EwB5oJtcyPiOEPUcUSHtlXPblw==
+BvPUfYRFXG4RVsWGEymgCC1GrkAK7GG5xQgPmRHqC+8inHunhZ2hFWdczYSsX1xA
+QAa9BzTCS+jZsgdN67QLv7ElIxJzG0PeOemAH2ooGHET/bEis08LclHE+c2IGdKm
+ohHGUcVKCvESHtUp7MenVv5TXwJtCFnM4oOonSTzH4uP0NrfB7A7mBjUq6vyE5Sr
+6/l81I1xDXc/aiAIXh3ds5qrfrt1+PJYfgmNvWw50DzoUAtHQcNfZPtNR5xSpMKhtmO38yYWGJz487nONq+0Gw==
+zENOnPE15MLOgXX5eH/3dYDfJh/HTVfP7wQtA9EKu0CTKNQaBS1BLpbwR4dBwFtC
+QJU+ldZWCbgiIhlW72eP5tuOniotYf7TSF1pgPCT2VG0+JLIUVBg/x4Xmkid3Kne
+xEKcAZLwELKBGDBZV6ZIfXbnpaMAksXqvIX64usQi/J5KZWvJDHcbnyr6sipVkmG
+vGa9igBHvm8z2zR0IOVrQZNWQIrgx+wGmOqQNVi7f7TbLR05Wc1IXtRkWpDQrcCU
+cDvFQYDrxWDU28nanIV4Nx3Uhf/QUV4uP+Lsft194KHBR5g5pBEYt0JtUymvifmD
+LWjra9vn1TSiqe3a3TfsLxNgYAJIOMbZC0l0dSoU4/+SnHhmhAVtE5ISZ97xfkfB
+G53q78aQ730oicBtmA3H6Q==
+1BPw71ndt+pZxNIMsgCVvg==
+LZriE0YV1DwXCRsNC/7p2w==
+8J2nKZp1zl1vUCIgR2ZfXA==
+m3f6sV1q5PZnwS+7tQy9eTFEPeYm51JEbGXtas4f6ef943JEy9gl5cvIqDzgggCZkc7JuFLnW1lIGjtaABzFAg==
+qkfOYS1Ts1Egfka6d01chHHxxcvC5fpI8AMq1szp6gs=
+q/sPv7fFkh7TlkOK3z+hIk1PZGjoU7Y4jBr/qZPddLs=
+XfZCpZ2qvq2DR/Kfbym/9w==
+NLFg0c2Fzbf/Ar6PDx3KfVN2sS6oNZqlHHlO/mX3P4c=
+Zg4spGHBKIOEv08mddwpSg==

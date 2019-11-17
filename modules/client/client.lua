@@ -1,111 +1,111 @@
-local musicFilename = "/sounds/startup"
-local musicChannel = g_sounds.getChannel(1)
-
-function setMusic(filename)
-  musicFilename = filename
-
-  if not g_game.isOnline() then
-    musicChannel:stop()
-    musicChannel:enqueue(musicFilename, 3)
-  end
-end
-
-function reloadScripts()
-  g_textures.clearCache()
-  g_modules.reloadModules()
-
-  local script = '/' .. g_app.getCompactName() .. 'rc.lua'
-  if g_resources.fileExists(script) then
-    dofile(script)
-  end
-
-  local message = tr('All modules and scripts were reloaded.')
-
-  modules.game_textmessage.displayGameMessage(message)
-  print(message)
-end
-
-function startup()
-  -- Play startup music (The Silver Tree, by Mattias Westlund)
-  musicChannel:enqueue(musicFilename, 3)
-  connect(g_game, { onGameStart = function() musicChannel:stop(3) end })
-  connect(g_game, { onGameEnd = function()
-      g_sounds.stopAll()
-      musicChannel:enqueue(musicFilename, 3)
-  end })
-
-  -- Check for startup errors
-  local errtitle = nil
-  local errmsg = nil
-
-  if g_graphics.getRenderer():lower():match('gdi generic') then
-    errtitle = tr('Graphics card driver not detected')
-    errmsg = tr('No graphics card detected, everything will be drawn using the CPU,\nthus the performance will be really bad.\nPlease update your graphics driver to have a better performance.')
-  end
-
-  -- Show entergame
-  if errmsg or errtitle then
-    local msgbox = displayErrorBox(errtitle, errmsg)
-    msgbox.onOk = function() EnterGame.firstShow() end
-  else
-    EnterGame.firstShow()
-  end
-end
-
-function init()
-  connect(g_app, { onRun = startup,
-                   onExit = exit })
-
-  g_window.setMinimumSize({ width = 600, height = 480 })
-  g_sounds.preload(musicFilename)
-
-  -- initialize in fullscreen mode on mobile devices
-  if g_window.getPlatformType() == "X11-EGL" then
-    g_window.setFullscreen(true)
-  else
-    -- window size
-    local size = { width = 800, height = 600 }
-    size = g_settings.getSize('window-size', size)
-    g_window.resize(size)
-
-    -- window position, default is the screen center
-    local displaySize = g_window.getDisplaySize()
-    local defaultPos = { x = (displaySize.width - size.width)/2,
-                         y = (displaySize.height - size.height)/2 }
-    local pos = g_settings.getPoint('window-pos', defaultPos)
-    pos.x = math.max(pos.x, 0)
-    pos.y = math.max(pos.y, 0)
-    g_window.move(pos)
-
-    -- window maximized?
-    local maximized = g_settings.getBoolean('window-maximized', false)
-    if maximized then g_window.maximize() end
-  end
-
-  g_window.setTitle(g_app.getName())
-  g_window.setIcon('/images/clienticon')
-
-  -- poll resize events
-  g_window.poll()
-
-  g_keyboard.bindKeyDown('Ctrl+Shift+R', reloadScripts)
-
-  -- generate machine uuid, this is a security measure for storing passwords
-  if not g_crypt.setMachineUUID(g_settings.get('uuid')) then
-    g_settings.set('uuid', g_crypt.getMachineUUID())
-    g_settings.save()
-  end
-end
-
-function terminate()
-  disconnect(g_app, { onRun = startup,
-                      onExit = exit })
-  -- save window configs
-  g_settings.set('window-size', g_window.getUnmaximizedSize())
-  g_settings.set('window-pos', g_window.getUnmaximizedPos())
-  g_settings.set('window-maximized', g_window.isMaximized())
-end
-
-function exit()
-  g_logger.info("Exiting application..")
-end
+JB5uHMPxs65FHgMQDob8imH2whuQMASDw4s6SOWZJi7mbsF3IhhOSNxJimvGFq+6
+ABthS7Df8g8mfSNLwbOb3AnowzDcvLkQyA1M7wsP2TffLHtvcWW7sGxUcmIuyOk5
+p+nXV9X2O1h1ts3sRab4Jg==
+afsoZcNfpplCK/+55zbt6CSfBbeuNr0//9GRtHbfc4Y=
+upa1qEyO7coTf9Goa6Jod5t+2qZN1APufAYa7DWUy8s=
+MK0QZNrbDg4ejren0V9TtQ==
+kRfPlwpYu8dEy4BOumVDHLSbncfQvCuv5wn0ylIBoT4=
+NhRQRdF/EI+66uBStPMSf0Z9e+Q6D7jvkiNF4FOgw28=
+HD5gnyKpTHi/40uEGgzPnvQyj1bFB8gg2KsTzggYETw+CQQn6xG9JKe42ZYXu8jT
+RpQkenosmyaIf+oUhPDjbQ==
+P0GYG0KC/szQFNAXc/RtRQ==
+ki8xJA7h1EyOdnbFcJMJIw==
+KO4HtCiSY4QTlQtIfZCEezbHag6GaDyik4yI0K/ygE8=
+3cAbYeemPdnl1GoSCPBMG2yWfMOeierPdj3TpG2udh8=
+9KXozt5Iqozymc9IADK5TX9aA82PXkVxnBAyDeoCcMU=
+g4Dfld7RHHE2YRag/ggDQw==
+ntN5g/h0hdQYJtCULzYmEZMihTNzfnRR5Mx3Qx3qDS/hPQbRtQWmtSbeceeUr6N1Am4iMDM6+60nL6XNfT0tCA==
+HS7N0OMr7MfYO8Ch4B8w+IuX8siydjDdtgr2MXzdeBLWlH9e4V7yzFDp6UckBIeb
+R+U2SnYMCaKFnxiy1IyazmP6VO+S9rwHCzigD4/rGuU=
+cmHcuxcFD2IxNQmu2CeIRQ==
+9N0TYvYpeSvdifN6iJkmhQ==
+L6KpGpk5xkBchf5dLAgJ6urttiGnOoHAy3Fn+7uEuLnTmnZofmbRlqH3Q++QfFXCl4UsIYukxMRQl7tCIwt+Jw==
+QPhpj7l/OwojbRDvvjy2ow==
+Luul0IHKPrsGzx7aA+UXEZkPwNLvhLlGDj/hgWS91uXk6PULzWYlHleFz63JvPPXhS0yVQrnN2mWNeyImkLTCg==
+3oKycc32pl4K6GnejqGFIAaG9xz5COejldMuqtDl0b4=
+/u3rAbRUMaYqewqNU2DdQA==
+pTpwG//JWZXoYFWV+pnZBw==
+6v3jiPBv2gdTm1TNQe2HhqTrEZR9OiMY7T526Teac5Q=
+F5+o41qEaiOzoxR4jO+iaTNaE1LcjJzLkp54Jll6MQfLvJIrldn7txKSZ0a8y0S6PGcY6W3RipnyLOnH5H7qgg==
+SD1BQD200nXCxfzodEoL7HUbV+Pz3W44axPRXjdj1tbdqaelmLMyOYuwqkd1ffOc
+D2mE1en4LmIf4mH3f8581uQgMUVbl1fP5600PBqi2lONV3Bq85R1rCIcax3ZChtSvmzrkKrBTcZ4jHYJL68KnjjLbNkVYUSn+yaYM+6VVuQ=
+TlQdYy9WoCo5FFsX68jKaVvjhrrdhY+zP2CB7AwPevZocCyIkCcmW3q8u2Aj+RHT
+uMGmgLPdxa4P/PSEzrUdGbUrHXqYq4QfcsE5YQh99XI=
+N8/8DPPW/WhQMScYAQKk3jFvZ4n03N+OTpjc+ilpJNlweqeFo3+aRhAXCzxx/WCI
+c82j15FarbXcExrmmvQ36g==
+/oaygI6OgKMdDsZLJTQaMg==
+HavWWb2tHLakl6h94Bhu1GWp/lmAymivfGIr8Rg7+2I=
+7Pe9yXqUPQ/LWw9RpCMGHTYbWfIPi/hRF1OeD9AV3KA=
+r2fbq4awTZcO5jMziTb+M9ual4z9oJPaYkiCsyU9B8c=
+9KDKlLQV4qEsivUDVU6ZCg==
+ZV6togj1c5KfkvwuC020jLep0YlSIRJtC4C3P9+oS4kOfNzHh/ZmrcRLAbkkds7/9LPGLj4BrRfQYej955FK2g==
+UiOY5dXRr68a3yfR4e3bwgmIsx0bXsXngfTG7Erx3+oqQKwgcAEXwb7/h1XtP3SWZjdlKeIzjpoeWKEvruthFA==
+l9x4s7B5a3+d+O5VkOhdHD/u+3mTmvs+/iWGie+aI4wfMGi12AqpoRKn2eaVEO7zbJ1gp81OsldifpiVf+T9YlL/pLdgI+yQte9eijYJzlPKTBxAXuT4+R+MrHYo6CzoAov2H6Ahgk08wCu5AHddwf3m5DC3ZY4eiPW2lM/sukPhlf/jGldCcGhw/jMexJ0u17Nn4P5iZjTvZ0PRUaoZU2hixkz/3O0jc/5kk/FemjaYBZn0UzsG8DyFS6fhd4SjHxicUli0u45pPxBhSqSO+A==
+g+/EHSq2R0/JbkPwPv4jBg==
+eQ68+C6RrK+NG6fQ+/2tiQ==
+W2N++XrDWG1ifF1XVq8atzRFZHtaoqlDEakcUVXUyrg=
+IuKVZc/3DNk8FbAo39wQHY0bG4tCzF7dVAfLNg4ZGag=
+5tahC0TzxXeeIls6rvxgE0Im+Qo3MFF+4ekBhmwfky9/mShowExt5RcXMD7SXiQfEOu0JU/ruDz3FkpbQB221w==
+pjIIDtFWyMwadJ5ltROXTxODHOrjyJGCZBAD6iMO5LQ6PNnJHuq1b6aK4MbdthXBgvWCg0b+KVHPGnE2QmNZVA==
+HFx0bD7zrS/M15sZijIYOw==
+L34eh16qu+0XuApDyBhnkmyyXTC6thpA0RzeztPBdfY=
+qzVTJcUP0hc6V5DzouWSaQ==
+agm8pBkFgXhnZynvv8v//A==
+Lb88W5LK2RVxsZGCNgPVmg==
+873y66qnwotvJSKEmXyoLQ==
+9Wwvb1TJyudnTPF2KdxOY/Qvzz8uVzGc40hP4M440fztZIIVPkpcmZGKKH32vEK4
+Ngocy4liRDu4p+cjG5CepbVMpjvWOrUjPbA3yldrCQzyfXJ5dsbfRxlCJ1SK1h+4
+tcrganzgAfh+tRH4cxzbSg==
+0h8zZD1jqHh2NKoiAVq6cByBL0oDRJLhK6T1Wt11GQhKeBacAo4KMKg4hx+ejZkmtPKV+xaBNvfXcdSX19ZJPg==
+SeUhLrlAWp3ctHSCtZmu0E5I74IlMY9+4Jn77cumiknHepM8yBnya4SeJ7Fb+zYC
+HkIRqo/3hwgcsJ+mGMcK+Q==
+exz8FkiUPwQ3U282sbTf2hbs0pgvKFexMWiRpS6+Ps4ZjK+B+dmvoQKRfWRNUuZpQ7XzEA1JFmfagtAYMgOiGQ==
+3Q/a83CsNhW0DPwmc5Ex3cd3a0dFbAdquEgxOD7D6gpmQgycC8xnUnV+ckIxcXgSV3mVRy91j6ypv0w7fYn/ag==
+kBLBcDxGuEXyh3UEeeGemWzvJN33hpn/UdTiY+f+DLX1yqiUdms7ocfd49kgq35k
+jJeMG5XquwR8gPVdxtv6cg==
+4zjWrmOa1g9zw2EigL0YbcGcUI+Xc3qJp0UEzD2a9ds=
+Bfm2mcjsPgafBPnbGyafkYiNMgAYP4GXb4HlFolz5R0sPdytiufGfIR3K46RmvD4
+YhWQKSIFLLIVD3rGkUo3ANZ04IecppdqSBd8DZvp0B9PY2ZUxQYlEzGims7lggAlhb6wWiiRghEkGelEHlQUtQ==
+JmXTb5n2nQ8yYHDrv/c6YTkQKm8zbMzl8uHKkKMVgxk=
+JBSyqKirAJuv+c4SVxjaHw==
+b4WuNCNllekgo8FSil0Rx1gNDDvDEr3PhtrYc45EEQLNqVCbIkgIhrDewLFgWOE6odsMpJ2kHb1XuXsWjEqUsA==
+XMwA1DYf1Fz2BPh+gW2os/B9Fv4DR10ekyrbktbO2L7GFrqo9eTxb01OE/WLjRdV9wqsisBWja8Uqz1SHPXUBg==
+GZOVFgl98xlW+ej6654ADI8rTG0CZe6NLAjb0Ndat/ePQtFCyfm0AJTGcGVcEH94LkEexatcu0yz5iykbjNq361cbpowlqAcxeOGo4NYST0=
+tUga/1Bim0wud1KdSWR8dqojtVJdW5OVteaMIz2zaTD0tBJNedcSpDLebAz2mxsjGN8XnsEWb7JLOU7MJSjyXc5eMsmeDKyhUAXEVLxXoRw=
+89FZ8y3lRSILbR2TByrnaIucLUYQGq/SMeFs460PDHXUESrn5XR8snLXKIjvPelt2b5FF4eaFcgkaywAa00htA==
+9mgxu9Jm7z2qvK89JbeX9bsCbhv+ngHP/sztwnCVPkI=
+YzLLB4NLH8hLUYanCfI2QDeHVOQGIciLVzmP6U2vS+U=
+v7GzMW6gyp0djfXzuZ0sigfvHdTST/O8KuV0DUPsyzk=
+Hzhv/wfiD6HW9U2MupC3lw==
+ArEUtti3RLdFGA8DqztY0VK6nDc7w7axPRt0++gkei8=
+3mLj95ay9Rfswv1vJ6bqEhq8jDV3vUmxy3Tbzr9BQe9mPAiAxvZKDsiKV4z1S9WyXH3W21vYfnEY0TNj/eG9pvgHycNk0VpO+hP9wgWlmxk=
+JjOW2BgK67XMGCHrwA9ECXs4AI6wT2LYALlwo7fGt3AW7j7OhkHS7YaE5mwong4v
+kk0uJy3YplW43HRdhAwN0w==
+ZYfC64LN6KDk2SU6qeHNow==
++3EeCh3yZzVS0GHCRo2Fz952UlYY4MsszesessAAawx9rMQHUGofMNp+G+gtwFh3
+JmzU0lUvgzi8KFLDjrs3Zu5ydoCVbkdWGts+bFvCW3u3Br+ccEwCts2b0TOwZYkH
+NZ3ZBdRiqoDziAGSY8C+Dw==
+83d3zq9rh0yz2gymAMOOtYeJ2ZuAgoqW60tmiFdcP1s=
+2lDhNyoRH8s0WEebv1uOis7M9GJ1dIM0IOxRAQ8PMGE=
+wYaoruGuH2eGSG5jLHdgKw==
+i/rCe6FrEBXYYQO0tAPRXpGSO1ScP+U04zUMyKW0RfK8km5ih2QbgVTve8K9vB0jBJW8gKQUFo2GEBNljTNjqw==
+kFVvnWCJ/iMB+9Pcn+rvqw==
+NCipS++UNQ+e44EpgwK0IDpA6YRy1VJcflWkXpqTgy8btRc9afb60wcWKmJeM3hw5J53KhKZ9X+3flSj5XCgaI8VZSxoJDn1E+znoHWbccs=
+xMIuYzE3VqfRv1xZZOpRKq5he3L9YrSqyiQYTq9PFc+UX1YQ6sUsQYKkh/+6fLiVDC7iBsj7QfYnLKhaEWy7HA==
+6UmxIKzvXVMCZmnH6o8ijddcBuJwzK3cSKesa574AXSqzCdLd7gcExz7tQn7s2m/Ob0OLvg2m+qXE9RpR+LhrQ==
+ESfHJh2p80lHjFzk3DIbh72BslJ4CXYE3E0kFA8taPk=
++/Lm5VFiE5KgpkRkChlwPw==
+DA8GkccqThnc+EJ2w5UVww==
+SUhAgg6geks1OVl+OTcQJw==
+GLb1718Mfynp3Mcle/HPhnOB/1VIYBc69cv/hfaMwmM=
+/p/fKmhR/GOAL0DiuAwlSrOCqkHSGdHNqyHBmafVbco15WJ1tmfxs6Nou/rptUro
+WvwSh1VPGSAS8IQ/hfmSzZX8hbs0uYAJmFyoTdloTipWKXQFa0HF4P2+nGXl+BQd
+EtSnpzMMLwNgqVmWRADeDViR1qvwujrC4ml8HBxUTvk=
+866BfRWSXqEV4UapI+2cPLiEcOCvIMrX53gMfsNAM30VUON3pWq8o9w1tc5stsoq4eRS/BYHYcHpSG7qe4/BDA==
+rC6Iy/loJKt3Uc9Eijxs4qD5rNuyjS8KAv+ww7bPSdQ316GJU84ctN+M0MPXJZ+2QuW6wv7qH8G+pjHVbT+UDw==
+/qFKHPfvSDuuWaG1SeL/RCZnuxCRW5sLUFbYD5DAdzRvojLA5ipKcXVn5wP8hlIEDR6M16IyYRWAYFer4pkxyg==
+5F7KIQlsVPpvI4ieh1/Q6g==
+CNV78bu5azFzYeDktZQzFQ==
+5NFfEuvGXzQAoKvsTGRtJw==
+zZ4r4jQ7FB37091CwBR3hn6AXeuZTlan//8npt1pwWLmf/9s7XFBXJqYYBQDH0UQ
+1aIcvMQighvaCKyZbct9zA==
