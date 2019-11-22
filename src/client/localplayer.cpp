@@ -50,7 +50,6 @@ LocalPlayer::LocalPlayer()
     m_magicLevelPercent = -1;
     m_baseMagicLevel = -1;
     m_soul = -1;
-    m_stamina = -1;
     m_baseSpeed = -1;
     m_offlineTrainingTime = -1;
     m_totalCapacity = -1;
@@ -462,16 +461,6 @@ void LocalPlayer::setSoul(double soul)
         m_soul = soul;
 
         callLuaField("onSoulChange", soul, oldSoul);
-    }
-}
-
-void LocalPlayer::setStamina(double stamina)
-{
-    if(m_stamina != stamina) {
-        double oldStamina = m_stamina;
-        m_stamina = stamina;
-
-        callLuaField("onStaminaChange", stamina, oldStamina);
     }
 }
 

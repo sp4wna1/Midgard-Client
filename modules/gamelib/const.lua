@@ -121,7 +121,6 @@ GameDoubleShopSellAmount = 39
 GameContainerPagination = 40
 GameThingMarks = 41
 GameLooktypeU16 = 42
-GamePlayerStamina = 43
 GamePlayerAddons = 44
 GameMessageStatements = 45
 GameMesssageLevel = 46

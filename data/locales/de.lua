@@ -303,7 +303,6 @@ locale = {
     ["Speed"] = false,
     ["Spell Cooldowns"] = false,
     ["Spell List"] = false,
-    ["Stamina"] = "Ausdauer",
     ["Statement:"] = false,
     ["Statement Report"] = false,
     ["Statistics"] = "Statistiken",

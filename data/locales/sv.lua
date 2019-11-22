@@ -304,7 +304,6 @@ locale = {
     ["Speed"] = false,
     ["Spell Cooldowns"] = false,
     ["Spell List"] = false,
-    ["Stamina"] = "Uth�llighet",
     ["Statement:"] = "P�st�ende:",
     ["Statement Report"] = "P�st�enderapport",
     ["Statistics"] = "Statistik",

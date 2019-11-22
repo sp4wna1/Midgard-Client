@@ -356,7 +356,6 @@ locale = {
     ["Speed"] = "Velocidade",
     ["Spell Cooldowns"] = "",
     ["Spell List"] = "Lista de Feitiços",
-    ["Stamina"] = "Vigor",
     ["Statement Report"] = "Afirmar Relato",
     ["Statement"] = "Afirmação",
     ["Statistics"] = "Estatísticas",

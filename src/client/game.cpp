@@ -1520,7 +1520,6 @@ void Game::setClientVersion(int version)
 
     if(version >= 780) {
         enableFeature(Otc::GamePlayerAddons);
-        enableFeature(Otc::GamePlayerStamina);
         enableFeature(Otc::GameNewFluids);
         enableFeature(Otc::GameMessageLevel);
         enableFeature(Otc::GamePlayerStateU16);

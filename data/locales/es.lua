@@ -306,7 +306,6 @@ locale = {
     ["Speed"] = "Velocidad",
     ["Spell Cooldowns"] = "Spells Cooldowns", --Could be "Tiempo de recarga para los hechizos".
     ["Spell List"] = "Lista de hechizos",
-    ["Stamina"] = "Resistencia",
     ["Statement:"] = "Comentario:",
     ["Statement Report"] = "Statement Report", --Could be "reporte del comentario"
     ["Statistics"] = "Estad�sticas",
