@@ -1,55 +1,55 @@
-66xKMahpa6eTKgF9GIedsNLm0Giz8NwJ6/461tdTnc4Ddh7ZzrdrbhIZ/LCSziwlC+e69QF8xRqqGNWCq1W5wg==
-xLDUkL5EIzHUj8vqu7EEYtpjOJt4IjW0Ay1vqFl4qK+XPDzYvqLTFdo9fo3QE8Zo
-Wq7TlxHrz3lT7mKKK4Sn9w==
-+i8DFME8f6di1LG0GDhWOQ==
-M2PcluDEIhsOaphV/yMGwhw/Hx8pAuRZ5Kpb3+KB0NeokhIyF0L50IR9emOAOssemvnoDVyTZnHxKaQjb0/Jd9QeWOC7kTZM6JVlG3tD9U6+gA3T5ZDwDU/hi6vPSmCq
-0fYnxJZOw8mhTZ+z11IDtu6ujDJ8Fi54533tkoM78khGsNf2rmcfU8adTkoA7RsiXibwipAPONwkmH3PRLUJzA==
-JMjV+tdBxMbR/brtCueDww==
-cAtuxYYylJXPj79rRzp1BSDVsdGNLCBcwYXrlxehJ70=
-re7SSI9Ow2FcBuKQA+0ziECo2kdBORXG5M3iYPMHLXrPTcZLM+NBL2PhX/tIF1O2gmhkWK+RFXXK6RqwctHYP2qjOvFMnbHjdYngnCVr+DC3WW0a7k8+iuQ+H+vu4TntAIfU6c/OCn0quou0L+AmGIbOo2d8eqKFrK5jfvkrtST3eDrmyco7lhJgCXE+04xRPUZjj52mjRdR9pWU2Kt5iDiGnHNwKseGDxwB0r1d8wU3Qz/yjvNMPbuhlOZ+SsQiLszXAhVpSl010PjLGZOpnjnpWgXvmDdC+Zsj5bM+rhM=
-oncenEAtaSj4ciO6OsgXmQ==
-4uy9eR+uzDD4dvniaUNap3nncoRIv/KWmvkaQBztb7vSMVu5+OYnNAP8Ks87UrXU
-Yn1HUfP3cm7xaVJlI52nkeTXnWGxFQZcnrXe5O2L/LNmCaA+veufyrWbgCoSdqGdYPU8VhYYcUDwlT+QQf+gisyaHA6wA5MJ/co3vOhol+8=
-awkEFOlc17yYoDtXtDTbqLlxY2tsVKCEgCza7sI6hkBlbrFStcoTsvqE9gWEoAfjbkzF+xK6ymjc1vx3i83PuWSdyNEvjGE9+LbwWJKFFk8=
-3ERbS4JJQZHtRUIpLKuMZA==
-qRobHzGoMhMYg0EZwBFpbQ==
-ndDk2dtQ8oAfREta3OHrDZFd8EwQ3TUtutUPynlr0EGvg5VP7sQW6UEb37V5nTrf
-Ev/Llua8FDYu717SbZWorQQYvQIDhJ0TQfwZiHyqmjUwJfRxCDLjtb5jPl1Hw0SV9kSypkYizq08tZtHcYNvZtYTWZNu6Gpeh3GgxnYAAHzI6WwKJOdHbnSKudpJaY2j
-6qlECFzY2HDwF2m8sgX24N+1XIgzshGeNpqN4ppD7Q9dijdXG/wfG+Ig7E929NweuB4my2d+OZehS8+fZ+X1bK2ceob4vYQEcZYiuolL6rE=
-XAnVFGCHigoj5DgWOewpTQ==
-3HpN6jhuOuNGAZLKXIKD1g==
-ZY5UFEbpRttbWZJ/fzL/C8D2w4qS2QaMPUWOz5vPdxI=
-fEZPPGu1HGaW4HGE4XFxRmzkVVt0iy/qgSkIwG99CJWkjompLJCNsbgsx6zi8QeHHDZ9DxxtuasD1I1fXz43PgO1mJngaKnJgQMBjSHsMU4=
-8ECNXZbe4f4XGNp4p175gw==
-fITXcCdypgvqwg2LBLrQGCDj4sLlW19uUalUYSApb+rVU3EIp6JfW8NFn4Op7NBq
-iB+2nPiSW8Wxhjz/yW/GGkzpivWUh0kJXfmmvzvHDyuDmykXg64kOy3gus+aj4/HZ14d0ySVeTqfdqNCc3BoE+cFVmbCT0uyLFKsBtmiymg=
-/z/qWP8CpfuKikmZVrPrAA==
-TC1L3CS3Z626URIAu5zwku/mVt7gfzYlpwNS8Rkc/MI=
-UFZeW4daWeK3aapw6SWgJreWirL5ypdjJ8JZXVz69R6kGGBilQ7xDnnPbtvmwMIFsNtk+2IkkblAfuACD0PbkA==
-rcqAGku6iRJLVEba7vdVoA==
-nGwdG3pWeodgIWsNhX/6S/tUpZy3XwEEgQif3Pon3tI=
-ITILdSoEG0uwuzFxJhBtJXG1AJwUejsyj7ade931wK2Ke1PAB7wxYL8KnTKe/O1C
-fpnkrb7jsFNZT7ES+WSpeA==
-Q06aRG++g7mUwS5gNU1z4A3fjgfWllAAPr4Oz9X7gzI=
-IQ9V2Gl938E/4R1nlCXnDQ==
-P+SXlwLOWO/lqNyIEjSkl540Tp5OOOzQP/JTV9wt5rQ=
-aJNVlppHvzy0Wk2uQ9IiAypL5hSTvg3kZ5Ux+Q+ZX3g=
-/3x3xGY2LGFRqk6NDHfnFqBrAJw5yRFw5mcZeTGjwAEPZZDSKcy/y+CcFLUkZXrd
-Bt7sUJG2a1DeJu1gIHBVF3wr3Gz3L4w6eX9rUCDAts5Ege9E/NZFYYaU1gYZcI/d
-RzJCSABo/TeZ2Sqrp1wiTw==
-rJ2bOYxmn1M2DoV26VCDgTBO7lM1aeN7CMNlrRlVKwA=
-I35uoBMhr/iRMdoNmMqE0g2/s4g+xnZ+QAO/p7ffLBY=
-hfYjXoZdKdi6xLVKieQ48VYqEZ5oSJRR03uZDK3QMKgXYLJ4gvBXwa4WjwjtK1qS
-G5TY2EUS9kXoKlp5UQae6A==
-fWkDLii1ANEPdSFIgtEMc+me7ip2dWuB5ZofgZSSpsM=
-x4eE3uTALLF5/x6VhqeykJDzAmHr/zrHM6/jywUftWI=
-i5jVvjhc0uSwOaXEO7f5ga6l6lsgRPJvH/1lxiUMAujyPPHyX2yBOLdrVv19XQ/q
-PBysq/Uc9ioyFIrAI5rQvg==
-ms/gvZzssfTMdGy/aGnKJbIpaI70l3Lj4zncRoEd08M=
-ZA9Dofh/hcJiYQZqJ+6E9iESC/HaAqQYXbV9ihaUoFc=
-su5/hlxMgEbX20kJ3cHjWA==
-sUg6UVVaBExji5z1Jb5v0VH/pJ6ThgPr8G1isB7N9G7TzOYeike4iuBZcBLY9sTuZc/7B9RwB7YJGGPOZf9csA==
-IuRqnDAsQ1ZHEmzWkduqnQ==
-mhOhDEh79eXip0KTsUPokq+7Tb7qY1Z/ZS3I3JfUN0hy/NYsVjaVjZwS3YCV++Yg
-sDfCEcPZzWZWyAaoc4xUC5+Vsl2vTCG2hsQObuQ3WDI=
-Kf43SHiE6t+f0h8DSyA1hg==
+-- this is the first file executed when the application starts
+-- we have to load the first modules form here
+
+-- setup logger
+g_logger.setLogFile(g_resources.getWorkDir() .. g_app.getCompactName() .. ".log")
+g_logger.info(os.date("== application started at %b %d %Y %X"))
+
+-- print first terminal message
+g_logger.info(g_app.getName() .. ' ' .. g_app.getVersion() .. ' rev ' .. g_app.getBuildRevision() .. ' (' .. g_app.getBuildCommit() .. ') built on ' .. g_app.getBuildDate() .. ' for arch ' .. g_app.getBuildArch())
+
+-- add data directory to the search path
+if not g_resources.addSearchPath(g_resources.getWorkDir() .. "data", true) then
+  g_logger.fatal("Unable to add data directory to the search path.")
+end
+
+-- add modules directory to the search path
+if not g_resources.addSearchPath(g_resources.getWorkDir() .. "modules", true) then
+  g_logger.fatal("Unable to add modules directory to the search path.")
+end
+
+-- try to add mods path too
+g_resources.addSearchPath(g_resources.getWorkDir() .. "mods", true)
+
+-- setup directory for saving configurations
+g_resources.setupUserWriteDir(('%s/'):format(g_app.getCompactName()))
+
+-- search all packages
+g_resources.searchAndAddPackages('/', '.otpkg', true)
+
+-- load settings
+g_configs.loadSettings("/config.otml")
+
+g_modules.discoverModules()
+
+-- libraries modules 0-99
+g_modules.autoLoadModules(99)
+g_modules.ensureModuleLoaded("corelib")
+g_modules.ensureModuleLoaded("gamelib")
+
+-- client modules 100-499
+g_modules.autoLoadModules(499)
+g_modules.ensureModuleLoaded("client")
+
+-- game modules 500-999
+g_modules.autoLoadModules(999)
+g_modules.ensureModuleLoaded("game_interface")
+
+-- mods 1000-9999
+g_modules.autoLoadModules(9999)
+
+local script = '/' .. g_app.getCompactName() .. 'rc.lua'
+
+if g_resources.fileExists(script) then
+  dofile(script)
+end
