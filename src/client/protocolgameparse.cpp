@@ -1446,12 +1446,7 @@ void ProtocolGame::parsePlayerSkills(const InputMessagePtr& msg)
 
 void ProtocolGame::parsePlayerState(const InputMessagePtr& msg)
 {
-    int states;
-    if(g_game.getFeature(Otc::GamePlayerStateU16))
-        states = msg->getU16();
-    else
-        states = msg->getU8();
-
+    int states = msg->getU8();
     m_localPlayer->setStates(states);
 }
 

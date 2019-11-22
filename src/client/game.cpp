@@ -1522,7 +1522,6 @@ void Game::setClientVersion(int version)
         enableFeature(Otc::GamePlayerAddons);
         enableFeature(Otc::GameNewFluids);
         enableFeature(Otc::GameMessageLevel);
-        enableFeature(Otc::GamePlayerStateU16);
         enableFeature(Otc::GameNewOutfitProtocol);
     }
 

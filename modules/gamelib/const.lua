@@ -125,7 +125,6 @@ GamePlayerAddons = 44
 GameMessageStatements = 45
 GameMesssageLevel = 46
 GameNewFluids = 47
-GamePlayerStateU16 = 48
 GameNewOutfitProtocol = 49
 GamePVPMode = 50
 GameWritableDate = 51

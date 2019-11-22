@@ -385,7 +385,6 @@ namespace Otc
         GameMessageStatements = 45,
         GameMessageLevel = 46,
         GameNewFluids = 47,
-        GamePlayerStateU16 = 48,
         GameNewOutfitProtocol = 49,
         GamePVPMode = 50,
         GameWritableDate = 51,
