@@ -26,7 +26,6 @@ function reloadScripts()
 end
 
 function startup()
-  -- Play startup music (The Silver Tree, by Mattias Westlund)
   musicChannel:enqueue(musicFilename, 3)
   connect(g_game, { onGameStart = function() musicChannel:stop(3) end })
   connect(g_game, { onGameEnd = function()
