@@ -1,7 +1,6 @@
 minimapWidget = nil
 minimapButton = nil
 minimapWindow = nil
-otmm = true
 preloaded = false
 fullmapView = false
 oldZoom = nil
@@ -96,35 +95,22 @@ function offline()
 end
 
 function loadMap(clean)
-  local clientVersion = g_game.getClientVersion()
-
   if clean then
     g_minimap.clean()
   end
 
-  if otmm then
-    local minimapFile = '/minimap.otmm'
-    if g_resources.fileExists(minimapFile) then
-      g_minimap.loadOtmm(minimapFile)
-    end
-  else
-    local minimapFile = '/minimap_' .. clientVersion .. '.otcm'
-    if g_resources.fileExists(minimapFile) then
-      g_map.loadOtcm(minimapFile)
-    end
+  local minimapFile = '/minimap.otmm'
+  if g_resources.fileExists(minimapFile) then
+    g_minimap.loadOtmm(minimapFile)
   end
+
   minimapWidget:load()
 end
 
 function saveMap()
-  local clientVersion = g_game.getClientVersion()
-  if otmm then
-    local minimapFile = '/minimap.otmm'
-    g_minimap.saveOtmm(minimapFile)
-  else
-    local minimapFile = '/minimap_' .. clientVersion .. '.otcm'
-    g_map.saveOtcm(minimapFile)
-  end
+  local minimapFile = '/minimap.otmm'
+  g_minimap.saveOtmm(minimapFile)
+
   minimapWidget:save()
 end
 
