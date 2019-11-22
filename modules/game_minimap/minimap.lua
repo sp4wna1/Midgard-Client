@@ -38,6 +38,8 @@ function init()
   if g_game.isOnline() then
     online()
   end
+
+  loadMap()
 end
 
 function terminate()
@@ -101,7 +103,7 @@ function loadMap(clean)
 
   local minimapFile = '/minimap.otmm'
   if g_resources.fileExists(minimapFile) then
-    g_minimap.loadOtmm(minimapFile)
+     g_minimap.loadOtmm(minimapFile)
   end
 
   minimapWidget:load()
