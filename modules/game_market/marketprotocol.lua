@@ -1,247 +1,247 @@
-uh8ax7nudeBruSAg0je3ug71WjVwx7TRR+A1yAqJYBQ=
-tqw7c37ldeNGW7zlGOngFg==
-R9ZDbYchA6YwkEGevM4ejJlUFBFLciiq4S1SSVGvNVY=
-K9CTlRbjhjDaAISxUZ0g4Q==
-oMaknA5KCJPDMwTKLs5QfA==
-QtsHLIpruNoxXTtHVoWFKw==
-2Zh435bzJJ+a8YAAgrWTS7uFjYyB37H/dRy1hrQxt2aUX65LdgZxpTkABlkLfz1+PyQct49d/D3uZT+YEVvzGw==
-I4SeJ/UDCAKd8HGQlj903Q==
-mN9pPKlccFyXG+bMQMqMxb9Um8Vew1Ml0TPNvCyaKGM=
-SlyV6dzNotr71QuQ8sMW4fQOG3eP+G/wOtGeagiL8gwY2EkjB8J2zi2oEB8JrS/v
-GThPqi3g9Vd+iBj/1zZBbTxngI6PkAufzRTnOpOFZzM=
-3dZ7LIYttmCbY7DFN5k5jg==
-IIzrH50VcVN6cYPDd/O5ZA==
-QkuF4JqvcCslqvJ0z5qtzA==
-hrT5BHAxDqmhhFYKVXNk+kHIWSMxpgZBlpUcyoA6vOicrzotD2SjD9nmpZOd3+UHCVx0OZcPqLxuGVSK7f2Cvw==
-8UOF4poqkZKu8rykZPTU0uFcO8lifKX92F50jqw5YQ09z6H6X6N2mwnv7pwq2oEe
-SGBFvYkA03HO//BuRyGXNHg7qtu5FHaFOLlhfrG88m4=
-SNSJ5n06ffnvQTK0D9gcqw==
-2WPYIuElkk8/g2EOBSnRC+NOxsuAQdHqshBoobWHzik=
-hCRqdVqPD5VJSGoRRMaL+zZFYMNlAX11COgtYF+fuVa8BkaKJ/p3QM5KLeE3kaA8+nHyz/bePXRth3Vr7WibkaeBynBv0UNm/Sk5HxYkc9Q=
-FjfrMrOcukOmmADZnDWqp7jum6ThCydvOfhaOGTTuAc=
-niYCcX1t4JzGS6cl5aiw3g==
-5cEBl67MXvsKxvFRduTRj51eWksGtFniaeaF9B0bdRs=
-ffyJcCmqx0S56a6H+QV3kQ==
-W3YhjM325xLY1+MHvtUH3Q==
-/TaEX8ODYHr4kFykcJSWHWzzA4QnMVpql6nZ495NsSw=
-01M4avQlRhNgGDvhG7ogsAZNeh0ieqdVG6jwnD0cEGs=
-43TeuZpU2uTXCRYd9ihUDK2gujSwUXosofTCLNmSYRE=
-3gpyI33O/Mw0gVY3RtPVzzv2pYPaWYTeLK2KMtcHjJ/V6JoQ5qCkmy3M2eJQZzwM
-OQwHdp0IuW9WoTlrKGHVj03tH/qeoCUTCwbw4T+D639ZiupSHHoZPD3BwBcJYnDC
-/7qPzI8hRIS2JEObTymiEN6goDdWFmsCOZzJ2X72JT8=
-95yZnlZjySalJAVBbBqW+o/b0VybfnFeA3ich6MAbyHSvTbs71pCuoDzCgyvlaOh
-6S5HwjbYwW1RUylRqhZQqQ==
-A9f3hNAUO6NtdEIl3fQQivgtRQ8++2BtX1HctogW1lt1LijCdELR2nSJ2v0Ek8ap
-Q740O6SIM/b1HZZ9eN1SxQ==
-f6FImc0TJFo4bovZndGPrg==
-L82TaDgkq0r5QZjFn7AQxYsGftMNgP+POc1vnCkV4buA3Ce4A8ejF4cS793b6z5zidcn/17J1pKsOy70qK5qsQK2mPvBKXUKncYKsYOJI9hiq81XfBXyOJ2IZ7VjGWFNDX9mAfuA4T8/NuC6HmHw2PvJafuq6qR3u/iCsNXqpfM=
-E18TjfxeK4MfAHKivS75tg==
-rO8IgtQYyEXNBSimNynIKg==
-LvjEI9z6uq8n2FKktGW3KymsEcodhdu5is10gpvS6UY=
-9R+3eWScQ6abNM/IVXh6dp8xjkXaH/MuO8zRWgYIk2WYYvJBRdhZ98yPMKVIJI4U
-SRLo/h00H/imBxwlNiwMvg==
-lZkX75AScMwtBg5/xGjcCrIPJG2yiSq16oYYP9VnulkP6aRiTFM1pBqVCUFCBMIa
-0Kd+Vwbx7uhdeyoVjUd8P3dvH3zALQ14DUH2bKaZwtw=
-DJzjDWy0cHykXawOGNKV+Q==
-WbfyL+IEP8m2EIfp09MCfNTH/EzsBSCJiRoQKal2DE0=
-rSBUPSBpjEEqa6KQ+7rpTw==
-ItzFca+es2iLU/WpByrWig==
-2B+WDsB3hSYrE6838x6FBjCXljyflePTouCDJdQ4/NA=
-fv2gXOvig365tYIDMupUXlbAehr7LAVAZi1+JmeP6h0lnVLv67Ilyd6yBmA7ePQf
-sQYLw1gasngYZiEVgaVJFmWd4ZMJ9o9yFbl40SfX0SuFk10bWiA1NGHkjFwBmZqX
-TAL7HYiEnZR6L2pp6LH2WQ==
-BxubuO7B0XtQwhCg2+KLtfLkNHCcbiGB56tDop42bkY=
-PKXoMUI6ifO4f+FwJTb76Q==
-QImfFXHKl8DjCz3QLZEaGm/rd4jjdBgGUsFQKyIvhv8=
-BJ8LTU4X0VMOQ5yLwg66BgAYGO6VCNAhwhSKKMftPUcBfjNQiUu0TFMtKIxJn2dB
-d6Qj7gEhaR7lfjdY2R1fD4wC0rgJdocbUCG8geoJZps=
-iBIlBULCwIQYWRf+4EWTglHC0Z0zEuHS9hVucs7/8GsUpPCgcy92aoVUsD7AuDjv
-Y+W2jXpt9idb44IYm0tYny8PNO535jNgtiHUHt5DxVgtYe6yxslYIR0iMOds53aRRw0wx6KIUq8gd2ejQLJhMQ==
-LYEyU+NBZmN9TydbEFb2Cg==
-ZBztPgoCHoZx5epv/mSFZphjk7PCYDK6hxo3B8vlRKrL8x4l2EK9nsDkkYN1eLZ6
-CvXN/TvSbERrc8J6hV5Ggw==
-9UtFufJGSSjbAPxQqfhBGA==
-/AcFNStizHwILyg97BSSv5xd4E2DYbC6x6O+fUBXdQ0MfgJKKMcDc3GlIDv1dUtIM/GfnwYx+IlaeKU5MtpeUubcAW4OV34eoX1pYw8mqJ0=
-RhLoiPqyJ5uyWtbRxNNIlA==
-mDv/AC9zqawvULTgR56fQg==
-jK+avPuRzncLzjWensF1EQ==
-axwEFA/bxXdc2d1t+4sujDS4eajBAHVXswQ7UaO7p8adqiWSgVN1rLYvaw5Eru2q
-e31/pGyAkXveEgo33+2kRl/s7z2AK32WTyxTgx9877k=
-rjqKzXWUPyLPWEligklw3w==
-8zVNTrFhmB/tozAKBVAkzA==
-v8uaKlQfjUvp5Dyj40rrkw==
-53n2mVmrpnps/jV2AJnQq6JS0uWSlWONfUs3a3KWZExgdbnFJdy0L4oxRsaOg1mR
-g0vUTIO2oZUDM7r3nQsbEyAn69yhCcEJDcGaCnLVfjA=
-0rUoOo0RfSWXsTGYOq4wAQ==
-KFyVV+xlHzUEFgqvB5lexoerDTiBxaPBiZnxzJdGYJQ=
-tfLfPHj+v4hv0YmH/vDuayBjq+fgF55p57jR/RbkEK6yGLv4ZKiQjrW91rD6Q5WLaNuC+wPwAcefDsT8JOunRVLpfxXypTB6K6tRYPfbXpc=
-X/Mpyfw2Eor0SD01gu4/GqddtbwIffHfJYmdNfZvrmn8zbwOTnoj6FGIbUPE+8Hm
-RzCr4yUkMKOgGwZp0JamNy51RPPD0IYGORVnqZGpk2/5cW5q6wJ2+T6PGN2S9dWkjAwA+tkGBVKuDroB1exc+H8IERG6r2LzjhLuuVtsb4Q=
-Dd8BLj6Sf8lHBQ+cDWbV1g==
-aJlP7zfJ4WM+ZwWDue64ugZ7guf0PF2LTxlaawcalUs=
-NPK+UuaKec0K5Z6OETuFmA==
-afHirkjMh82yjwukdvUoYA==
-ows3q44QC40PzRHBDD2+paBu88/Y53+ZFapyg2U7iUwwskwl1nC+AWuSvkxzfzBrTnPT8p0vCK/cGE06hANLqQ==
-8HfVa2H392CwBwvJHoObqA==
-/88Je6H+Tvj9XI0G36g+D9BY0QwcLF6OKHwcug7Hq9s=
-xc//BmaqXwjtM+E6PU3dJnVqSVzZztFOlQVeP5giQ/M=
-+g9vHSOdzV02q8pRex7qO7D/D6kXN8UUjW7/ZN0bd9M=
-i3caMGuBLg428GrXTHByDhjgBV+G9JMYGfMyGv1t9RGlAvVdUNlCBkh1+FBIDZSE5RlTfkblapxtJgTpwdOMIQ==
-5NN2IIC4XgW34O8w2u5QFtDk9NVsrBzC5CAKmPTBdrDK9mPODfSSqCtKzkvd4boHUEXHO8GYgtCC1zS1RK5e7Q==
-bbGr7tKrdT09Oc1mqJJ3g+2u8QglA6bEl3gjumRg+YQK7IILLrAGyDrPgOhmt3+K7LwustCMZ3JuHu6H56Pfkg==
-6NOxf7OJoOyIpQmGzWLZy93uameyz116GKd8Qc4X1L9BpOhO9xALZP6EmR2+D8eSdtqQojr+tGhpUy364/S54g==
-VjxhWg9Vhau/T5bnrjNOgQ==
-z/zE9VWrwtC3H2jSFzgZRvG+2QBH1XnXWyHsGE9Pwnsqnui6j6BAckhb/VIV42cKz22p0e53ujjI6DQijg5XpQ==
-klTFNU1CGqeD/UheI9eZdATvlPfNMNM525LCLtJqovi50OkQ/uPWBuuTz35oVsptF2iNDSqtSG40z3EF5rNK/YaOr/NzUeA57RfCNcUhIT2lEqXZS2xuXUQVSR5l2NZZQx1apSYm8gvYy7x5kihgW/EAxF7U9maRZz5IlmJHvKQ=
-TUMw9ulri/gF8iJ96ZZeLQ==
-2wIYxppi74nxB2u5TRhgKQ==
-jEz5fW/HFV0nB6VyLl85NeE3/AyOvoS0Tf+RYxXB/mk=
-+K7xPRxkCxjumWbOr40mGLFUWEoOZpIsJlWnFRznK/I=
-GAZ3CnRXk10oK679ZfZxWsXom+dGxIIydiVwuok/99U=
-6/cBk75HtVix4m8rEEDHgZkcyBMK/wFNoElUHd+NNr7qZOZaTXacgrIp/XOP4MgJ5zXKrwn8rTDkVuCL8s9QIw==
-chZpIUSPusPiCcEWw29no76lWWPUXc15ZtnLG2pBzMWDwRbthCLmpJFXioEcMnS8PMhhC2dLrTzmJ7dewJYwWQ==
-ZG7syUQiukz364dGl5siiwB6zJoeRK8OGm8WsxYTEqqAZB41HhVXsz/Hm8t+j5U+/u37SC6Jqj+5HEcgZus+LA==
-NSrceby+ChhG1jNz7/dyOMw2SWtUhlh+2fGV/8f9EbZxd+v/kUvlzi3Nk95CC1nk0QJcWrD0S5/u3q/0Wcir+w==
-kR9X+Ib+MChHMwpf/AZXLA==
-hPhRbaBBfHUmKwQfaT7peBrZ4Kt4B1qeMM75QnhJfg/i9u0ihavkb7WQ0GqDSlYdi/wuS6la98rlc3rk0iNnpQ==
-i9jMBMk2VLtGT7mOVuaaHybpbVBbn7KzxOv0GdIII2q9NoDvB0vPgt/2kcUJyzO+t3JO8RRnK4DbBg8NWwJQMGkxnOnz1+oxF3HJh9N8DJl/32jy/dNGW2fRLe5dEKQDCng1MvQwWbM2NleS7SltgZwulQtksnlT7dLSRcM/zOU=
-oUvl02YY8bqZFdya7eEF5g==
-TV6vd0ZFn8Bh30CeF2W7RQ==
-loJUquiUrXMHjXL+q8hvB9pr2EaA+9zDyLcObFgXKWSAY0HtD/ddcLZE5CJj4gtcNE/EZMRaGN7uKjlBIXVlOjZJGWK22vMWWuDG8aC8Kp8urHEtj4oqutgGmhdQHFK2
-ny0j/+SsRrBZbBH3CJ0y6g==
-NxepgWnyPb2p6ysGtyHbOA==
-oz8Mft96HXoDMe96Okcn3w==
-5hlNym1Pwqc//u8WgYP3QiQl0tvsKhN+puam5YvQgO4CBcXPj+3RX0xzryCzyyZg
-iGhaA1xaHZH8HzfkKSpT8E6cYkxSfUBHytYkV8DJJ+Q=
-HD0XM3qxQvGraBIY9J/zbDk01X6XGBCcFMLr7/Zxpbc=
-BudtpHXqRNL9w/xTvYP5DQ==
-lit+7ItvNU0pR2Vm+lzKistoESmW3WeNaDxUackFkIfXlTNkKKH8dRcNKdMsn+gn
-T7CIGRmoHV9kiLH02oifWFfdJFhEolaAWqFm/xiRDOY=
-qrxVDPwpzNQ6d4p857roPR+5jAh1dAzETbMxEfutGRdBYp7WGvJuHXebOy2aHn9GEzZSnF5zKClrRB5VtdXqwRYJS2RAF+WUAZePjdRnnqs=
-IrF0tgufWFnhs7zNRuJpoA==
-ao1H2DzSejTSLQ7yGtk+sA==
-x/4XQYp+Htokd3kbCI/DiTrOq6NdP7tOnxmY3ywzIFD1mZeBiRGU5A+8SgGfI1qo
-LNDYJKiqOURKPe3TjlBEOkienmhPfkjXk89Hz60ulkk=
-EffdOfMcSppaR7raYY3vG8bN4qlRYL1hFBW3vtIZXRWr6dTM80COnKbluKO6BzTYpC++vYkW2QqBsdoaEYiOBLDQW3FY4YYIbi3KTHDWTwU=
-Dx8oBq07pxVgu0apfCOEZA==
-dAy1YFuwL0kq6UFhLpEuuQ==
-sm7/LKchtNu4Y708rvJpg5QvwNzNfdMgGLFEAQcbKgh35mNr5VGfoisdN8TpCLrN
-+JQ+sSRAlEnSsk44R2r03g==
-YWzQNnQBP8S4glEyiNlPjw==
-rRixrVOTnrvmNwOCxOvhTA==
-1kp7VwEERG2LqFjdVHUUeidPFfVpiNiE1ocX71BgLeo=
-dHu8waisGS69nDw8oj5AMpGEcho1cuPLzPcSbDjZy90=
-OA2/JNPWiXFpiW5mqeEl3cSI9OnuiwZkSxz6g+MkhjHQl7pq4TmbYMMC+039Ox5OCmvLOLusR5GKiCtHhO7xssNCXK+1DU2bJkZ+9nL4iQ0=
-BYFKbUbmBEXZHY52OViFbm5eu3gfLbEJ6kBveRmZp5BbFQ7TfQYOXgCqR7qG+QBH2TmXLgppLrUe9wmxBTQ8393KU3PxgHIcAw1/fFygur0=
-8bbuurk+hXjiz0vuLyzZJA==
-PGN9lS2LtN8L0/GexYpQFt0nPmSqFvWkrpHQCZbmBLU=
-yjqWm3WU+iB+Wm5V38y/YC6HV3tnv2a0gihCI2+ghxE=
-k6GTULeEzddbnYLdExfEejcCu4JQpUHGYokPQg0C6hKxGqOS5hPNzFqwLHbHkLK5
-LbbE4rlrt613196/E/uS0Q==
-+XE1RsTtanvowb60I2NhnQ==
-+tUjwlowSORqhxAw1ZKCsKitJjYvLeIJ/tMt/cF+4DE=
-SNqaoN9jnYSBMDkgsaGuxw==
-DlGGo7YL38BRcxyVCMamZQ==
-eMOWWTLnJIUhSAtMkTBvvnfRORbQAHrnSJe4JGeRne4=
-svBvLgA5vE4r1HglCGDH0LODR2NfYkDOPX+cVrTXe2u+3Bin4NC3tEcEN+HusMYqNq3RigGA7vS0jmjbKtAWn+V4cjMojD4xyU8LclobbGU=
-BhWEwcMV87hX6B+Kmyk5ibN5KFVKxfGWtatkKnjTFXiRO4ig3N7mJHgrv3RwOiYP19bwfCX4vnbkwPHwZkQUv3NxiD1dDkcdTldTs3bAbbo=
-iiZMaHt/EvOsLHjGCl17fw==
-SSXjTFJwEvhnaxHlLNPb/bzNT29uxs9vIZyL4h5ixjU=
-6s8sdUfn+EFaegk65iaa/+qS4VwkTStjQCYWrjCR9q1siJckZ5qKfmbbjQ9gUIlx
-mSCzgObQJHCXQIoJUx1C1L/icNEZD+ziQaglR/ytgVg=
-+9+2ZEw3Tphmy/SBEXsjbQ==
-w4kfkkMwDNczLG+55YCOkQ==
-UejzHDkcRzHmIlIn6duury3E4YQHJle36zPEE8fa0m4uDxvCu2t6KpLrr4wyU4bF0L+xkVnyJA4JnxCAAf275g==
-65pxEFOLZOqgQKALwFsro6qTlelQSKJFd5HQ5pRkTjE=
-82qS7GhqctFltbreQh+iVg==
-2F+jeFyx8zy833rYkHcbBw==
-0ZGdyhT57Y5NKl+D24A3kVsjIjw99XEbF3rDroNVaBBEhPNOmHYhUxTWTTTjs6+H
-YKtU5gKKMdvtG4DZYHX0toNOR8hczfJ9jVTxGfbP2skfYqC/nK2YplKHEStZoTx3
-F8jG/0YV2tzrnwrCW+7Gq9LEDOI+tOWNZZRqU6rwq/SS0Jls0yCiA7dlxo25aofPRrb8Awcth4ZmM3+PMsXRGiKwjf459HtpUMG264v8p3g+ycE8IwXqdF/J/HgMkR84
-YTmv1uxAbDZbkQFtZRUGoBVkw3UhKs7o8nsnzSnrNRnreY04MnlzskM4FlwLbrFPV1Pns1sCySZta4+chKCBFsPO7VSa33dvs59oc5kRWwp1wtzk3FXVIkbWSCtXrUXW
-0vRn/ueYUbEZXOUbp1iGkEMsGZ6B5M1OLkawJeTbgvX3bcFXghuYGrwuvxHS+inXptgOHVhSYLbaJSR1LXNqZbSS2K9FlyOgv+ZQY+atxQ1/MMtg3bMz56oA9diSp154
-MJlDzgfpDlA5+ADKfiqX+Gvny0mzCCzBzPzueiPEMtLLlTShis2+TEVafye5mw8GKc0eNawOTrJ3VcEaLFAnPDmZ9OmhjMr294MRYiwM6rQcvBXiQPwnTQe99Nma1Pgl
-f3fcPylWc225pj4Il4UW0Q==
-AvZqo6eMri05bThaaAsaWyrgeCb7qX3Y4oh8qQ8iisLwoFq52Hm5t0jN+JfQQWErAvVLULaZNi8vhEwNP2EjZA==
-QzOEbAbfpIcKGqVzi4NaHg==
-i+3LeIp7yDujR5mxwSM/xQ==
-7O0D23rpTpKmiBLvNZ8AJYPfpSzarj8pSXTaQG+keXqWEgJsvatPksKn5tJ6/K9G
-tLYFUuSkwWUmjWDeiv1OTdebqMUuJLxT0hFVMR9xTfHw2TB7MjFeSnWEb2e+bGUk
-jQX0yMoaXy6KSRmci5PVfXS+6wpm8u/7AgqI8nIMIeHEg7orZsL/L2rABW/rhw/kdZIS2rMxYPztqnQxARV072fO+2Si4Wora8XqWbAU3NigPjSxIGqH6saWD4Cmz/4p
-1vAfIXT6ndiQELwAXz7Xj0xr+Veb+VJP3MmcsSKpGcGLme5fKL7CzOvooACqt8ES2S7ENEjn1Lhu+zPn0WuMwVfXVt0VSJR5zd5hwa52d37lMv3EtUG10fcAZcS4+AZL
-e7U2ODK+p/PXHX/JRzBKccrz2vLQx+DZ9twUgP5EseqWogEI50mhNUmNM35pvN46/dyZKIfONEq8oKe8UGZulsTaALxMxArBoyiAxxN6eHGh/leIEfAKEZYSgT4YAx39
-IJrxgZdb8GhuI8olML2a8k79xWfLVsb58qyFbPPZZS31qTxasZb2wPdpMwBpFo5l8DudAr7WQTvP+S9XVUlCVnOJEGamOtzoHlZH28d/CwQE1jZkiIA1KG8urVXmPJrx
-6OfxpwfQTLbqqRdcTNIIZw==
-fq9ADLAjVFKc+Ibpn8CGsGmDzzD17IpX7ibO4xnJ603F0WJQ+H43jZBvRK/1ttTT
-jQbLFzo/E2qAhlKxSQP1+w==
-Uoa1FdaCDE3tAZAIKXSMUg==
-spp8EVCW0SefgwkzTGG2fPDpNV6UkrdQt7+l9zn9MZoXWH0Fwbb/ue5jw4zMO+Oj
-JeAeEKRU/qcLeoSwR0a44Q==
-PLo8IwZGSHm7Fwav+htNlw==
-wYsWRqmJaN3pfuLHw33IZA==
-WFkiIZfSi0UaspHM86ijV8CB6LGhDtnIVec/rxiUeSA=
-/bprPnWyrgIlx+dyVoPK1Q==
-c9cVC2zdLij4yYOsPBo40Cf+EP0bZWAcElHiYd3U5S9GRM+x17+SdSTKoOYuZ5FY
-th7qs2ckhpcwENHvB95Xwn7K/xp17wSHcC3WSNIh302OMHIU0Qc1P2I+wtEUMMq0
-sXNox5lkiPp2b1zd0Jv2GRtrQfm0w12bqc6PAJYGjOyP006k6UtDbyjieDdNh8o4
-uSB85WNMW+9J+5Zv0qtQqkBRlZZRRcKg7Sftoo9xvtzr4GoHROA3dKfUCxjZWWLh
-ASOFFbksXrNtfQdTm3hU9Q==
-Wj46ZeHK1ymnsI+BCShikA==
-cRpuNdUzmjqOYQo9BZ7pAOWoFr8JJNKKWJrAnBF8AeE3EOuwfhgBmJldt+XLATMAjWYKlVuGUp5LZZ0yyHfMXVN+08UW7KI/4BNSaHrT3oS7jHuZ8F/08/xDnEluYvDF
-N03R9j3nIinWRqAg+3bxvQ==
-r4NzA7sFJ8kI62qxOOnVSQ==
-eNrWtiS1XDHAUP2Y4MDnQQ==
-ccM64n0M6X/CqSAFNjTqkBvWQdsHrKZxmqFLmR1NMPA2zdEBNoZrvtIavmrlZfd8sLpnUmXaXz4WfkGcpYHKpQ==
-hgUhvhb5tw1q/x8mVTJjkjDbajn4CXzaPvdWiu/todY790VJj3YC2ReQGTZGnZxl
-FxJAY8uhwUBaf45XrLGZpZVlNbFzmdBRc+KazIlSl4YeRxV2Yg7wTDgwkdt7s8Sg
-3lK9CQqseXSLx4lNuapm2ADLmqHbHwAhleTEGXCvzbPag6PerRAo3qAIkYUYxNAh
-4NaL153YKmYTahISiUDwmCP1pWxKExUUextneP/viB0=
-iQPRWuLfIy+1cxbUuGZ4Lw==
-y4XjDPS5hVEKbDcMMVx/1g==
-+6gELmmAqiziWdX4SLpNWtfeV3e5Xmu4y0euocuF1WWOdesZEHZJuzS2bu2zpkbjCX10FSd7ZpNOgg6InFEiiWsJRuy2gjS5Nw7vLodxeSk1YmCLc8CJjnnX70wJi6L2
-xXnWGHSSQfFjBfwxFRtjsQ==
-HkOO7mDq+jxBLHU1qVhKvg==
-QmX7yYu//4mvqXJ3Z7qCdw==
-Cs+maDhQtFwXQW4pAPVA6uBLtEbJoi1RaOZmmMC3H8DtLhROouhHFSX1ABtbv8y+O6yRLuaJaJ17CPg087Q3yQ==
-BxCJtxAqS5xz6nacFu6QUDq+IMEMK7HHZpsuEbKzOLXCEIz6YH/EL5natSXtFbL5CxwSsfYfDjbEyfzVP5AgZQ==
-FrKaYSLdqzmIu+7h7ndfDg==
-4gJbT0uZXHsBYdoOSGgoLA==
-DUjZZIkn4pLvRmbMzQ2BOma24Ce4xMQhJiGjP6dDHf3C+5iEwFKX8p+Mq3QLveRy7sbywed+piH6fnEE7fq+VgW+H/zwijgtKQcot4wpImzGcozbq76QgUFp4ac6Goh+
-7GgWQhFWNAbk+LGPLLJ444QmM4Er6m9Qho6g8yxZPxOCgkQhl/ty2f2SGIimIbew
-pu2RBU7SflLvlwpT3NCbjjqwXsTrH9xC7y3vrqZ49yWgdbNavXA4+VQQ+eDPn3eq
-QXOlN+53FHd6bVtRh3Iv1CzKNW0P5yX7wGVyV0l/ktKpf2g/C4P84nqP2rLUN17f
-a8aeJSz6jQOT5wqaCB05OMBU6+9dzMuPd3sMi3oLHts=
-n4oEoUo8yXHVh5DaGfFevGWdAUILycKlb8Ci6sifUm8=
-ZIlRg4VfBtV7e4Y2ScrKV4yusgjoP+hlvq0VgF4EQl0=
-ECroi9CtEX8Le2MMa/eRnoboPFLZ998wnURZV3zCJPc=
-j2cVj2k0f3XiAINgc/zEM4ZVDPz8fLhtGgQTBZkOOA0=
-bRRYTA7Je4aO7tynTARmbQ==
-DdJqDh48jVpdJD699rufKw==
-GdSMAPAqHSpIDhhLB4QOqzw7AlR+ODcZdW/uvAelxYfb1DN4D1Ne2KR0muKEbuyLV9xTpI6uDTakZG5PFUghPgTPBjbamRppYtW7fv+UEylJRtFmZbp9rW0GfjNIvYJlvBgAQNxBrfQd1awo/DWHyA==
-PUQsEqeSdEclIhBAaoadmA==
-c2Ie4mg03vBlDtYZZ3aa5A==
-+a5ioNqxSP9R/G2lqndgmA==
-tHQyEta96CEV/83tAJ8fDN6/vSoQbs/SIlgLcod1b62fU83dTlSac5pLnEg3X175jCicsg4ghVXErPpyanCsZlzASm9qtByPM36kq2O6qmM=
-xfPiiATJ0lVLyB0y6tZSWtwB6T10fSDpNDud4gArjOyiRWNpNN/Ax7pmyD/eEi7d
-O69JNP8fDL3t6kDhTAMes/PEKuggWo3ILExe0P6sJ9ruWJ60nY86SmNTNood+s81
-tzUTEWtKfNqe/f5M+mdDDSd3UZb5O3eNHsgf4wVdGFGl9Ac67kf8QCLf2aDmAtHm
-eciqPkbwWjipW3HXkMeuILOtrDkGbIGnXF1vme7+zZ4=
-MvIZqnk5IsawDEORS0CIZeTZoYtJ+nLrYPUARJZO4x8=
-fIQZaI8oqAbbrynBKQ3V9A==
-pvZk5JSX5ZEnQpk7Zs8Syg==
-4GDtdKIMd6HOA48WdJ8wjp3ZC0iJC57lA0/f/cj6vAQwggfdW1AWITzVHZ4UJsn5riMR3giYSSSZxWjzWxw84GzuoAmf1hBhYxKptd5+fftiVoo5D2t5nstV7AQYEObc/7adz3IOMrcx4PZxAHcqVg==
-f9CPaO+sZidVXC/tYPPSyQ==
-Le+uHQ9cUstxboSUJJjRpQ==
-OFZ7YRsHd/Tl4YOYeUVyRg==
-OEDF7wMza2whdtvnrO+v5on676eoPwI4Tb1wHFEFVRLAyvaAXnaKHjPpVSBlJxCDqJf00A0hG1ckt0R/pFDIglz9B3yeMZN99bMhlwkUMo0=
-HmESaEORhSwwH08RycviGBrE2ybf6N16QbwE43SfNL+c4r6cnql03gwYX71/jGP/
-Kx1YaG8CLw5GIuKYu9uZD0jFe68bfPEE7AQIz4Sty7nqnsROpz92Ke24asZlMMwx
-CWb1uRbZuEin36Ofl5dnc0/Ko5U6I7lpRsPNlo2qrx7dJzBJoXtJZ0KQDOLTQDLO
-ltJwNtjuPmxQH9UzXFhHxxQQou0u1kHd81RSejQyHz4=
-AMGAb/RzXf8pBHyS2Y5CH69BvIoTTM+PD5sTzRIkULk=
-57vMi10aQpYjoEHCFGvBeiV3O8bGFYF+eegfcWuLWq4=
-tJoc2cTEvoSJixHH+BpHDg==
-1Eno/5qGLrOqJSb5/AEIvQ==
-tIppeCwBS9tQ0eG1VEn3gFlgQyJiKrn8ZHyGNpGwsbFGg11B5Wj15qBa/eQ0o7stxGEHKkQpZ/ZAhR9OJncHWH3blmDHKS0yFUolO5+5b5xzUmntguPLEhFu2IzEloEs1IZePikzkMNG/dffMEGdPg==
-dw4RPXw8V1vy81h/beidew==
-5uF6QaXkV3phbvZEA/r0mg==
+MarketProtocol = {}
+
+-- private functions
+
+local silent
+local protocol
+local statistics = runinsandbox('offerstatistic')
+
+local function send(msg)
+  if protocol and not silent then
+    protocol:send(msg)
+  end
+end
+
+local function readMarketOffer(msg, action, var)
+  local timestamp = msg:getU32()
+  local counter = msg:getU16()
+
+  local itemId = 0
+  if var == MarketRequest.MyOffers or var == MarketRequest.MyHistory then
+    itemId = msg:getU16()
+  else
+    itemId = var
+  end
+
+  local amount = msg:getU16()
+  local price = msg:getU32()
+  local playerName
+  local state = MarketOfferState.Active
+  if var == MarketRequest.MyHistory then
+    state = msg:getU8()
+  elseif var == MarketRequest.MyOffers then
+  else
+    playerName = msg:getString()
+  end
+
+  return MarketOffer.new({timestamp, counter}, action, Item.create(itemId), amount, price, playerName, state, var)
+end
+
+-- parsing protocols
+local function parseMarketEnter(protocol, msg)
+  local balance
+  if g_game.getClientVersion() >= 981 then
+    balance = msg:getU64()
+  else
+    balance = msg:getU32()
+  end
+
+  local vocation = -1
+  if g_game.getClientVersion() < 950 then
+    vocation = msg:getU8() -- get vocation id
+  end
+  local offers = msg:getU8()
+
+  local depotItems = {}
+  local depotCount = msg:getU16()
+  for i = 1, depotCount do
+    local itemId = msg:getU16() -- item id
+    local itemCount = msg:getU16() -- item count
+
+    depotItems[itemId] = itemCount
+  end
+
+  signalcall(Market.onMarketEnter, depotItems, offers, balance, vocation)
+  return true
+end
+
+local function parseMarketLeave(protocol, msg)
+  Market.onMarketLeave()
+  return true
+end
+
+local function parseMarketDetail(protocol, msg)
+  local itemId = msg:getU16()
+
+  local descriptions = {}
+  for i = MarketItemDescription.First, MarketItemDescription.Last do
+    if msg:peekU16() ~= 0x00 then
+      table.insert(descriptions, {i, msg:getString()}) -- item descriptions
+    else
+      msg:getU16()
+    end
+  end
+  local time = (os.time() / 1000) * statistics.SECONDS_PER_DAY;
+
+  local purchaseStats = {}
+  local count = msg:getU8()
+  for i=1, count do
+    local transactions = msg:getU32() -- transaction count
+    local totalPrice = msg:getU32() -- total price
+    local highestPrice = msg:getU32() -- highest price
+    local lowestPrice = msg:getU32() -- lowest price
+
+    local tmp = time - statistics.SECONDS_PER_DAY
+    table.insert(purchaseStats, OfferStatistic.new(tmp, MarketAction.Buy, transactions, totalPrice, highestPrice, lowestPrice))
+  end
+
+  local saleStats = {}
+  count = msg:getU8()
+  for i=1, count do
+    local transactions = msg:getU32() -- transaction count
+    local totalPrice = msg:getU32() -- total price
+    local highestPrice = msg:getU32() -- highest price
+    local lowestPrice = msg:getU32() -- lowest price
+
+    local tmp = time - statistics.SECONDS_PER_DAY
+    table.insert(saleStats, OfferStatistic.new(tmp, MarketAction.Sell, transactions, totalPrice, highestPrice, lowestPrice))
+  end
+
+  signalcall(Market.onMarketDetail, itemId, descriptions, purchaseStats, saleStats)
+  return true
+end
+
+local function parseMarketBrowse(protocol, msg)
+  local var = msg:getU16()
+  local offers = {}
+
+  local buyOfferCount = msg:getU32()
+  for i = 1, buyOfferCount do
+    table.insert(offers, readMarketOffer(msg, MarketAction.Buy, var))
+  end
+
+  local sellOfferCount = msg:getU32()
+  for i = 1, sellOfferCount do
+    table.insert(offers, readMarketOffer(msg, MarketAction.Sell, var))
+  end
+
+  signalcall(Market.onMarketBrowse, offers)
+  return true
+end
+
+-- public functions
+function initProtocol()
+  connect(g_game, { onGameStart = MarketProtocol.registerProtocol,
+                    onGameEnd = MarketProtocol.unregisterProtocol })
+
+  -- reloading module
+  if g_game.isOnline() then
+    MarketProtocol.registerProtocol()
+  end
+
+  MarketProtocol.silent(false)
+end
+
+function terminateProtocol()
+  disconnect(g_game, { onGameStart = MarketProtocol.registerProtocol,
+                       onGameEnd = MarketProtocol.unregisterProtocol })
+
+  -- reloading module
+  MarketProtocol.unregisterProtocol()
+  MarketProtocol = nil
+end
+
+function MarketProtocol.updateProtocol(_protocol)
+  protocol = _protocol
+end
+
+function MarketProtocol.registerProtocol()
+  if g_game.getFeature(GamePlayerMarket) then
+    ProtocolGame.registerOpcode(GameServerOpcodes.GameServerMarketEnter, parseMarketEnter)
+    ProtocolGame.registerOpcode(GameServerOpcodes.GameServerMarketLeave, parseMarketLeave)
+    ProtocolGame.registerOpcode(GameServerOpcodes.GameServerMarketDetail, parseMarketDetail)
+    ProtocolGame.registerOpcode(GameServerOpcodes.GameServerMarketBrowse, parseMarketBrowse)
+  end
+  MarketProtocol.updateProtocol(g_game.getProtocolGame())
+end
+
+function MarketProtocol.unregisterProtocol()
+  if g_game.getFeature(GamePlayerMarket) then
+    ProtocolGame.unregisterOpcode(GameServerOpcodes.GameServerMarketEnter, parseMarketEnter)
+    ProtocolGame.unregisterOpcode(GameServerOpcodes.GameServerMarketLeave, parseMarketLeave)
+    ProtocolGame.unregisterOpcode(GameServerOpcodes.GameServerMarketDetail, parseMarketDetail)
+    ProtocolGame.unregisterOpcode(GameServerOpcodes.GameServerMarketBrowse, parseMarketBrowse)
+  end
+  MarketProtocol.updateProtocol(nil)
+end
+
+function MarketProtocol.silent(mode)
+  silent = mode
+end
+
+-- sending protocols
+
+function MarketProtocol.sendMarketLeave()
+  if g_game.getFeature(GamePlayerMarket) then
+    local msg = OutputMessage.create()
+    msg:addU8(ClientOpcodes.ClientMarketLeave)
+    send(msg)
+  else
+    g_logger.error('MarketProtocol.sendMarketLeave does not support the current protocol.')
+  end
+end
+
+function MarketProtocol.sendMarketBrowse(browseId)
+  if g_game.getFeature(GamePlayerMarket) then
+    local msg = OutputMessage.create()
+    msg:addU8(ClientOpcodes.ClientMarketBrowse)
+    msg:addU16(browseId)
+    send(msg)
+  else
+    g_logger.error('MarketProtocol.sendMarketBrowse does not support the current protocol.')
+  end
+end
+
+function MarketProtocol.sendMarketBrowseMyOffers()
+  MarketProtocol.sendMarketBrowse(MarketRequest.MyOffers)
+end
+
+function MarketProtocol.sendMarketCreateOffer(type, spriteId, amount, price, anonymous)
+  if g_game.getFeature(GamePlayerMarket) then
+    local msg = OutputMessage.create()
+    msg:addU8(ClientOpcodes.ClientMarketCreate)
+    msg:addU8(type)
+    msg:addU16(spriteId)
+    msg:addU16(amount)
+    msg:addU32(price)
+    msg:addU8(anonymous)
+    send(msg)
+  else
+    g_logger.error('MarketProtocol.sendMarketCreateOffer does not support the current protocol.')
+  end
+end
+
+function MarketProtocol.sendMarketCancelOffer(timestamp, counter)
+  if g_game.getFeature(GamePlayerMarket) then
+    local msg = OutputMessage.create()
+    msg:addU8(ClientOpcodes.ClientMarketCancel)
+    msg:addU32(timestamp)
+    msg:addU16(counter)
+    send(msg)
+  else
+    g_logger.error('MarketProtocol.sendMarketCancelOffer does not support the current protocol.')
+  end
+end
+
+function MarketProtocol.sendMarketAcceptOffer(timestamp, counter, amount)
+  if g_game.getFeature(GamePlayerMarket) then
+    local msg = OutputMessage.create()
+    msg:addU8(ClientOpcodes.ClientMarketAccept)
+    msg:addU32(timestamp)
+    msg:addU16(counter)
+    msg:addU16(amount)
+    send(msg)
+  else
+    g_logger.error('MarketProtocol.sendMarketAcceptOffer does not support the current protocol.')
+  end
+end

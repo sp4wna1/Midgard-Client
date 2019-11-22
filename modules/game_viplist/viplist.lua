@@ -1,412 +1,412 @@
-IJ7wcBDDKdkr6sn5B8R6tw==
-wYJBo8U1+zyNZj02bA2SHQ==
-ddyHmzF6b4lapUsbxU/Ie4a0z6eONjBAMipbCvGduJo=
-VC2up7xX2Pr1C0pAldZowyvxPvHBEZIs5D7p9/5cmL4=
-I8OAo0OiESpfJDsw1q18/Q==
-CuE575VUCfKSvO6iK2n5oQ==
-GtdmsKaJPP2bhzsffhKgew==
-vUmGf7pmt5ZtuIGxJknkN3/Db95nU50ZGQxmtKcPjIdDTi9Kek4h6muUVe6IaHJX
-W70MjbZFZbvB7blsT+XfDMlYulHowizAIaRK90uKeYo2fKgMOnqbgmNZWqbY3AR1
-mDsQk1BqzdydtGY7HINpazfuSUtaOHJUHLet+qvx38LcCDYczgEJ88pwIM/ym7LE
-USUvVea9QrFdyxf3kEsHaMTqfJqjcp1n9hJ8FZzYrAvDh7XWRvfrSCuVKfhLzbnTPN59kYzEAocfTs+z29PCUg==
-WfEd2LvMDrz6OCGeqsaXMA==
-vRzCD4dl8uP8QosHL0n/6Q==
-/eOjKlePWHJUmRVfkb08OcAgXJpg1u78wgyaRX+caU4I+L3Xd6NtonploDz7FdPX
-xOUFHheb+RPUIDa04WPzvw==
-FAcVj06lJ6ecYwPN7xGn2qLOqYk8VBmbq6jxDEuhbR4DHZ2jmM408+/H+kV4u9igPVdJBsgSOrZgpdL/ZMQvxpg1moySkbCYYN1d24WMdF5JhVGKOWZNXV8Xu0bmRkLt2Zh4/ngQurG5QDP48zbUkHb1sz6VC+Bff7mvME//uAk7tCCULfWrMmvNNuXHPLBhEc9XIxE4+D3+oXZ7ixe+jA==
-hHZJKNm1VqZjL3ui9J1F3qqDd7A/aBJZe0C/CRN5kT8=
-DEpunGtRriGeeO9toTR2ilUDkINppWrUufBbdHBBgSskSPLx2u1BhphWYCJUukHZkyNvYcNQK1ieAjtM8oe24sD4Kdkp/M7H6X456HkLP04=
-YzMl2KEywiyxbor/LJHKhw==
-h1O+DXS5jMJ5e1zEOJYa4NJZ3WB/4fxl1MEI3c0kuLyIkgKurWGsZ1fNVpj1UaclyK4z5JYd37LUGN2YWOGRxQ==
-30uobm12Kili75br6nupipQhqjwbpVerwpBu3Bx73Ls=
-KvlT+TG/uq/waaky3XLOag==
-NJqr0Zc59ru76R6jyM79lA==
-jPC4V+4bPobgJuc8qbCHSAB4ThSzUvIYkGMY0FgFqOQ=
-1vhhvq8q51dwebEvcrPndQ==
-n929nhpNkDtw9XvZqgK3nw==
-QpKb+xaJU4TWxzfftCBZnCKbCjBv8Qo8ZcJdJPna8gk=
-HSV8WJT0gzWCpUuFbe/63AvL4DqR2TieAqtZ4H1L44Z2qL9XUH0aBq0sR1sdol7r
-cHmxJ/MqlDSw08Bque78NYXzI3Dct2ra0wAQ8b5U53u4t2PuvmYxUqSMWvI1pFnp
-9ZzoyIqS6i47Mwb4+Oz0B+NoMJDyWVyE5F8Fd08sZQrHarkl5A+I62S4kv64jCVK
-2z1lLcokU+1DcrZNbTVOiImqquWNH+HRPBC+KUwNB4YJu18kb183JhV3Xgn2sH0h
-mLOA5guDr+DDdgb3WsOtX1/fB5N97/dlvv35TUc0XbPNuyTEPBxK/PT+UWgko1No8DAapIWYANuArqxGmcwIlA==
-Y0hq4304tWtV9mblPEqlrw==
-KSky3Iice/gCJNqFWtBGmcwtUHnFO/ntBCakeSeESfni6cJbp5mNEJs1IzTrmaZQuKgDEGdEIMoUEru9LQgjbw==
-V6yttK+gP7MvZ0Aexv0c+wvsFWh+7H9QhqL1HmUkvnY=
-wt8AxNKVU5uGPDUQBJOgug==
-X7gqPdUgPVQhVf/58ylrig==
-EFs3e7LuSWG+lZ0a3unc8s84TpZTHiXciXJ71sZ5eAo=
-7uoOcgwnxZaCtHBFuiE77g8vYlq5vckADiDhk8ga0xY=
-MYKA0pOgM97hHELiN0wt1g==
-cI+eGutI8auhuAkaswB5uQ==
-2p1RB2Olv6VMSXGcuGpiDHz9SWs77mnqNlb2Yzg0ZUU=
-j0qO9wuVgYgCKTd4vdxBhEQV5mv1DKiSmmT+CqGW5sI=
-HR6vKdFcl9MrRfp2jt/FLg==
-uu4wZ5YH51nphwofsa3OMw==
-cNkNoKKG51uITPvqpKBG++i0bSqEkXLHphwq5q48xNA=
-Wx8OEllacVr7mL5jvDZI5grl4Phd7Tb35+uGwIIg0zQ=
-dkUNWBWzJmG6y1ISdrCf6w==
-EN/QGMDYFe40iLpCi+I/QQ==
-t6XqyH77S/L1yttAbzChcB7rZ4mFGcfx2EV8cCAZYic=
-UfRhlHB9492yhf9t74jbJgwtPyRu7AoE5tE1Un4k2zsOLdUBc5dtxsAt8S2VAOAy0hh2Crxj7DqndsHIDHVyiw==
-bVJcfvTOYzEPRRJyqf6yP4R7+RJy04G0yudKAc4rSj0=
-Kt8LQSqB5+5EN7D6Y+E9HYpovST0M0TGGUeKHN8TpRc=
-3B7NpPxkZb1/sLBRZEo77w==
-uVA57d0VppEmfhw0GXRoGg==
-RfJyJ0QebLwVVPe3MJYQU+0C1WMmG+3pEajJNNbiFEI6ltAxqolrqFgejB0o+uhU
-C0v+l4ep/z4RWXR1oaheeQ==
-6N2O4ClIVmHzTh8omdIFQA==
-lHmqTX9Q9vG2tlWWbN91kum0TeCaVRrxoPHrvlt8ASA=
-uBChmyZuS3HGKTMI5oes8A==
-0jtFqt1htIM6gfVjUgtfZF3SXLKNliMEk1nqwv8YpWc=
-FzEOyrCHSgzu8+ZAq4WTfNR5bulmqaoCRHu68GymUIG31Zm4qNy2xlx/x4KoChzp
-K1+YyJJu+d30ATHx2bacog==
-W0muQ5Ro3l6fT4HYdWVSFQ==
-Sh7iATRhDkl+hmR99HD1iA==
-zBh8nu9SNp+Xl8Re04hMRJBAkrpSbK+PnJqZpX5+EBI=
-mffIADAOtzk2qCqxZaVg6g==
-htPvD0yBYqjQ3+594bY+L+h3LqDZhV1FOvOeWMwudzAmr7d/n5mn/SSXItkFqmjR
-UnPz5xxvPY5UyTrVfVn18sMNeoUdgsewxoxscRB1ZYM=
-91sITCSeEhwDabZIbNR22g==
-WecBQM/n8Notu4Iwofq6VA==
-8sXsl+zzBe1OU9XCJvbTENqfrsTapavI+kIrWkwr8MbPQNAUwT4/6n0DvERp4St8
-8wy1wGJyuYbQihdZOJOpIg==
-UekQ5NIaVaiqCbhh52Kaiw==
-U61geQVNsfx+KPRHlD6u6GYa1vm2zOhzTNVDJRo7ZDc=
-deSKasqbfPKcM9eQL/UBZD0B1IdzFLG3y0l3ul7TNtSibS07/HjFIEocpUQKg+6c+A6Hq+E4WQiCuek2iNf9Og==
-AOVEbSGiiUbDcpOJ7NE1z99QcEptCXeg7Lznn0NaTEg=
-O8Rj+PWEhffgrjTj6A0zrg==
-+Hpfc2vJ5GGzsnG8cVntew==
-TdzU5Xpk7q8DsGv9qEYiEg4etkp5LZ1ka9883cLcsC0=
-z3Kw+oN7irdfWQF5lDB3wpljDU6D5013ZV4k7PEGIP4=
-smWP0UVsGqhOJqLJnb3NoibmZb0Btvt1C61Ckg1ky0E=
-HDdC5kQtgyaR/S5EmKWFziCwc+cJ5W9jn6e8T23f6TA=
-uud77zR8qR+ScHxgKlcFrg==
-mNBRDzp+9OagirKjE3Mapket/toGcEsBCXr6XQalhow=
-UOlQyj3swoy6uM4GjfeFsYmB0itf2yAIDB0fe2YkQ7A=
-2a6lC20Vk7cIKd3XguGOQw==
-herkld58wsYd5JJmrVXVDw==
-PwppjJoy6XmDdHmg6E33eQ==
-qTawNP+BcuhFsehuyyi3yq8fm9kKOrmO9i6keQTcX0Y=
-iRP7H1q8jBnurpBZl1TL/CIxinymHBHHmfJs9QWRCWQ=
-O0sfd4IwmCFWuJ5T0+xMPQ==
-IapWfYR3O5YfC0kZbAGYJg==
-eP1ApViLrWHuPJPro4Io8AUrX4/E9eUm5pEtYQEYW7U=
-7Hz2ntY7zFlE06nUyCJtfwvOZbW9YB3ZWYP4+5Z2YDA=
-1ZSL4uX4pOROQgVStQ58dkR+zUA38rTXbODYqCfUcE507+07riCvi4KduiOkc7c9
-66ZlNjq6VGKsz8IokzWVcw==
-FVSffzsPZDsf8Z3lfLmVXg==
-FuK0owRmDq92Esn1MWyn5g==
-y2yPMy2CwkT527a+HSjtVd2i8PguksuorcMaHtShTx6eX3PorcT2fRVQXvLzFyxP
-Nvp39SJaHeQ8fpMTC/0R977W3p+Cpp5elvXMFkLG8co=
-xFW+rGdQ8h4D+WdaMDNbvQ==
-2eg2Oazb4HzO1x3g4eKIYQ==
-RZ/huwb5vCqLZjgdV45yHw==
-Dq1zRrrpaeFh3JM3rJ2VNf9Ph98hNkKT9bf94dZwpTJqgoybiSzYtb92vc1/kbiy
-5DYznF8rr1TPE4S5Zk+bPA==
-7zxrm1CZNF4BOFm/bu3LrBPb0w5C6wrfAl6rr2vsK+8=
-3fu/Xoam7WNiwybNEEM/EjKvOeuhq/GxImKgaR1Xn/p9PiIn8HQLZB9+Tm2Xq1m2
-v7kSvWDAJ9w/JReM1g3JgQ==
-hAkz1rB+4jiitTG1+wE9hl/R65nNRpdpwz+YS21eG33OCc7suhoCj52pyV6Xe/KAkWjv3CVO1py3gvgUVlq+xA==
-ryimFWK4OY5yaNC88z+cIjOi9jboebNrn/cd0zT0RKgwOsP55kVV7Sq/AegOFFvN9ujwm5t3o9jX5kOj03/7QC4CBVTYu8LA17pC0wVKe6w=
-PDHSiRIx8bofFSqgAb1Dlw==
-f2QhkLm4qlDDquO5ivgzSWBSGpkNqPYeL9drAH04QWRHisRYvNx98HKkp+1TpnpL5z8Wt5C2SGvNfjrmJXj6Qg==
-YCJx20ExX649cSlGyyCy5IpE/nKvI3/oE+Wz4HIiMoY=
-F7dVfCy/kSR4C8C5cmWqfw==
-gzVoOf6q/tBr3N3t59Bf/swgug1VP02xomx6fqIeLYgIRhOtEsQddOndKiCR8MCgcJShoRSNTzT7fw9tpmXO9g2G48G/R4NEUnVYvMSv/YE=
-3j9yoLTTvvLvuvagxAB+QW6oynelY0OsyAaeHSowfwjCmvOizAMaG88YKfCGSIRbskBwxjnHRF9i287/xlNTkg==
-+Pajd6icidsXVL2r65Vc0Q==
-Bf7ilUfiLacCUZfmytg1z7kBEYQA1DVqmAnBMhMO8tMtg6wAZZfZ38tB8+9aUzoIMS78PTzP9ZgpxnK4bJus7HNlIXZe4rXZh9Hy9ktIjQA=
-KHanBHcutcsN3MsWxUtciyDdId7bBdLHHov5RR9ivcYgzNMkkzsqh16boQmeGDpj
-8OKxIUWGCrETQzRZlPUukA==
-IDq7x5/0hOYYmDw4oiarqqssCqhBrkJ4jekAaqxBFKGcgI+BeJOxdUcLkBW/e+nU
-4INtz33o9HhRrELqHX6vnw7D67Id38IaBQ3gowjA4GFwVZ9nZB2hjDM3e/YLMNKi
-hgx/I39qLc0zIClZh0qZ7Bt0+RUMsLr85UrwhpqjHV8KUvVXeo1Qzr9EXlwLzEhT3v8Eqj/niRGkcObfaBgSkG7Ce0Kn6o2t/ccdeQLHRCU=
-H4padztD58ZA0TTe+YY3Yw==
-2DgSp+Gr0Aw8GB1tpryFZ16gV0JaN49pNDPYuqxD8koUrbDze2JxwyICCKbxxk2xMVC6ZF1PBMocbYFJPQWa2B5RZufqip6Yp3f6eWpFugCPDSrmqS400PSJrVW8BPo5
-pjaLOBsyCv8Gc0mm4M738A==
-bgizo2d9DxhQOOF2B7CWFHmFwciAbhnnHGuXHnSXr7jdrgXhC784TUmrWvi76ptd
-2V/P25+x/jBkiZveKt0QTm08snJWti9a96MM6x544QQ=
-dZa4YF3440Rco+O/bPhTU4kMGPRj0ti4p/QHyi9hbfY=
-iK1l/0TrJfSK3Egn/GaVCsyyIvzVetZObo9Bt7f6cO8=
-z0e4xKkktB8EbFXJqqzy3w==
-zcEo2K5CzwpCAiJT/h6OBg==
-mNRdZjFWcaapXkvF+A60Z6qo6icZBJ+k6VyOwPUfIWhT4+39xWnNC+tltiUO8esm
-c5yrY1YQOZi3u+c44Bdl2zEO3MvewfNqCVQ0OC2Brr1fZDbIvf+SwfYCMy7P47G9l52H+hbeGPzjdkCSQTUVrA==
-Z+EJgy0GetSWEJscyUrRUCGIVGt8HlqNTX9OnFYCwjIOXqN8O9O0OFGr2bnbHY9WmHgt3FmWT/I7Dd57A47HnQ==
-u552+xH093W24oQDCploGEng4P3+BgQ7UObFC2o+umo=
-4DYQOCbQXpz2QfyCn26TIA==
-Ij8ECpEn30gC2822it2c8w==
-CMYORxmFVB4yHOkJNONxzg==
-lDxzNhvwa7V5hsD8Rb6fkEX/DAOw1N+3L86ts+7/CO0ZphT8GDI/CaGh8pX8MCu1
-DIkWFzfjJJ4THLipjFI0B3wPFoGZTbZCF4RgdMIxzOh6luXiQXG5e4qhg9wV3AK+
-Kt2sAYwm3wwe2A/zMHtsAR5MTPZkSg5jwLzHnzhQHyYaPocpt3u7RDQBrhcv73ATczGQG0olrqbYuOf9d2zcZA==
-uWVMoKGvI0e5ej91mNyWd96QPsPphSGpveQkb3xVh1Oyzs6BaGX6T+wpmKiO4rzvBJMM5xr6/qsl0xV33s6j+9pNMUqWFy4hvQMTTL9Geck=
-CSpHB50fUsKcMFpvC2sN83ceLqf2G5SymMGqRW9ZOXe15I1lc4pbdvIB+37BD+lR
-NedKypZ8Fa5DvvtuuLq3WQ==
-vNTEXTFCGFH3VaA2DHdqgU6TFi2Gl0DNXMaVwvBere5agqwC4kG8r8OffGV7z5skKTCY0Ed4uB7nyNX7NzvVng==
-cwbTh6zAua0WO4dIZTMd6+KT2DwDHth6sPhG/3TCXk9B/LckUAJ0dQSqwO6SzTh+nClljZGYY0lzbP18dyNu8A==
-DyV2BuYQO3sWgaZfS8e7AA==
-ZGabyoq8oMK/Z1kIcyNz4A9Hfq2g66GCKO51DAc0FYisxF0dNi4ly0IHvAbKyXQLJk6q0uTuNpYJcR5LjqlKRw==
-wg9PIdl+/yEhDI07nzt44OcUuU8oyYskO4ZHPbnND7CT6DksiCZvf8twUXJszjUxIjh6C35mCgetEy3OU26XtHURUZBKhDNKVa6jZ5M2Akgr55ltl69MJo2HD8XhvSFD
-JLhcWlUXCfXCR0ONiv5hdw==
-o9e0XykPgWYI+Y1E2QGNnvZgEl16zGy8tc0yD+hVGhs=
-a/c6U05PAl2bF/OoMV0IIg==
-IFadb4SURYzLIqkYhGoQFw==
-JMNBVcY12J2aa0WzdqPJBA==
-SSx5KB5RKX9bJh2tmjKK6E2RboLtDTslrdA9prwOqQg=
-YAN7SlUep0wTP8mXszqE27/0f+ixlzZd/1+v1LPYSMRMFyYp2rppH6lmIj9U7admRLVUqwC3l4dubUMIAP9vSQ==
-e+e2m+H92gx8b8mBXoVa1Q==
-r0LMiF5O0/O9AgxFdPjgwmAGPvsaiYFUVUN0xdesSKc=
-ngnHkdLUANuiMpZwFKQWWzm2i4VpvbW0rgdVV+sGnCY=
-GHkPn0xHllWJ/er8Lsf22ciKmTlZcNyx2hTtZp3/IrY=
-eS0uJ7dhVwPG+ZFRI6QyIg==
-/b+S/5yFxW71dySWXinDIA==
-PrtVLqxo0L6gwTR470K5U+q+9ASz+Gd+sW1V9AyK92NOYUCkoIT1ECJu6hW9QrY8
-4uNggxIzl6Mbh3OKiXbTjIBWMBh6kjxPOfuIA5Thl7r48N9BXddaapxfBYqQNWCF
-Xyz4Sm+xoyRIhM4cSqq4Ag==
-s3SKs1CLauwp0JeiObV9vlSmyB5ddCzueQt8c+5UR6QupBbBPWUKxK/ClWEE5CSL
-bvx6VAlnr33inohylh2xEV6eoQg00nPPIPcEWi3Nt4Kot9CrGH1caEwdFl0MMbdP
-jBnf34DHzbwoUyCJGzKOHw==
-H9fz6bdnS4x5dfCbZBmDZQ==
-iwfBBKBvONOOA0i4Uht0d7ZzmA5nkbm0OfvjZSqkBm0=
-bWzaZvAkDpOaJNan9hozDjDK4EYaH/eIAMm8zV6wKWM=
-mTvlJy6AjmEw/zGbEZwT/b7riBoL+Htu+hYiSU/8w/c=
-EhHV9Sr8TaLK2/zR/B+98Q==
-5uDtXjRPHw9261yKfUPGWg==
-H7wpEgadGaEN3YJocfoo0TJZ7J6Hk6ee/KtDhWQgOlw=
-htXyKUNweA08PhqLB/q0XoQNEoE638XZt32V/98ieNtNrrTT1WdGS+NKHApbe7FhyorwSRIKQgkWGh/1urS3Hg==
-xT9rBQ5RBv85XjcXGPgvDMgzF5ZzC2wZdNgYcoZ3EOQ=
-xPE+dn1IBT2c98FMwx3iGQ==
-uflSmqUWdcb5AU1OgZ5ygQ==
-REsgEa3Vp3WchEoqubzYL2EV+tQ2NSns93Vg+NA9NO0V9NxCbvkex1ibzekVVFu4
-VZHpBJiYrud+Qo4OHd06vd8JfIaHmbgd6VLZlGvPxEo=
-0RUCWWUyuk6H8KOj724Mkw==
-QDDnTp3q1TyCXEKIb+UW8g==
-0HNi+0JKYlTqjmSu2NZa4Q==
-3x31zwO8ger1DFJMYH9rKQ==
-rtY3WJTfUOHmjO3wz2UX6ft6VrC2W4JE5r46awV2zpVmezNiZQmBxWOsYpIowIgN6hZnZU9SwH2G7e/AxdXIfw==
-8M40c0i3356xe21WGh+0GjDEHvdbb3y2yZnNn+XjGc1lMiolF6ZknoT6oC/5TYmQ
-MIXAc3xchseBI1yp/lCf+y5gefMFrr4xq4RcAtUhapQS/5ynHr8HYbb+nZIBsHaM
-yv0XJ/v/miOxSEGy5faSJxjBg1RHlKhEpLU0Yb0U1wE=
-pVlpK2vo2scPNr/Jsf5ROEopPU41lkE1JhGrGPClNzIn+RlFwocZCMh36LaXEHCI6YvHHhY93A8tc2K8Hg8Z9uuCo1EVrXQlBS6aG0gDzRw=
-PMb5EpGjO63CPX26uAd8b184oIT2LUKQwYHvcK+GWG0=
-R/aK+e4xuGGpPdYef4mHrw==
-hA0xivfvWHXyQo5atsEuJw==
-Hh+ixVYqqBXof//oEtRgDg==
-MUzpZ+baDwVEjRyTQqeJTWi8ql9wk2M/MY1SeyKa1j4=
-sICNTXDhKjowxknPqG7gkg==
-dNwwsWgRH+rlmonoh9b4+g==
-KAr38offLyxrmOVk3vfXuQ==
-7s1PqaBQUyAnZ6uPLZ95ogqQJKBdcnv0nN5MuKZhNXk=
-7V94DPFV0q4xcP/PW7V1ug==
-BRiwcU9rY1lcjKFqDzCe5g==
-6slMHUVsTIcj0LHQuqSTN+ULG/Gj40M5tYk/owCGgA4=
-uzj5wErldQi8jB+S4T07bekCIoScgtNzINk/jWAAZsZlZm7jdobjRgxq9bs4x3HM
-shBC1Kgau1gyezjzBA6HPN5NQatgFqZCVadL2Q5UJc8=
-SJwMKcwbuknT74koR27gBuclxkzmJNG+2FBrmX6//jw=
-yaS1SZCFvLLgnMoYuKErYm2B7lHy1VIJhAKZYlTB68gx18M6HnEhWeFX/hh/nHkvN4xqoUFyrzkPHohgDl+sTs250ZYnoLPX3rq9ZGN5dY4=
-+pn7wSDz894akvKNH4fs50gtuTGQE5LvbIZ8ueOyaJk=
-5RvdnkRY2AkJkL+K8PIWvQ==
-OGSjTq4l28jvfbIhwN2g5w==
-7KoAWJz2ylI0ww+408HYhA==
-98d12a+P5GbJR5YnKglZbQ==
-0Qm3chol8dRQp/qXExKon/MImdiKLqw8ykKV+lrQeG0=
-YlTHzlUZpMjzvwOKi2xqBg==
-jJyw5S2xXa1EseoipFmkMHWEpVATIIY9hsjubiFQKX0EwDWy4PP0oxh2qoTKdsHX
-FfCJ/u7G3ru1jweZGgsSkVj/Ib/VhSGAWWxMZ65KA8ISFWZWhqLi0fBaypAnQDXm
-4pTbY2yEcBduyMNcExugHA==
-/9/RHIAWHjKHGofp3+LoYQ==
-kZczzdkp03uXFtnTj+1L8Q==
-REtxrWQE2qjQaQR+6OpSoA==
-Id3WWgqywLfX4fudEBFzvsILKzain8PaiZrBUeX1Tn8=
-CkRcnIvxThk4GGhIpWMtPXgCwwe6ckQ/9S5M33QuCkcY5+7v2QYxwoa0RKWv/U35GsN3N6o2Jp1WdJugl4MsNQ==
-ygBVRjfgcJL/qsmTJ9UOt7CPCAdo8QGIoSYdOJ393LA=
-u3W1G/QtFaxt2j/R9Xe4j2qq4ETQS1NXR9bC0gAYI40=
-jBLH9/YsZqQXlYfK9XJagA==
-aABz7bYcP5e+2H868bFKqM18e9UMhm2C8Z4SjMYJGq0dVdE1AqBGwSuEZ4/BdGgR
-Xa3oizPoN4pM6BZZ9NSgHQ==
-KRG4iPgw/fKE4F4ubILzbQ==
-1upt27Z2G5AjCw4Daq5b3oTrOflZBQzeRh7HC+BOqNI=
-BuCIad8gKX8Cw70IxH3eprKqvUIL078cuPD9ysBbOZaAmolu3MNAoW4OAde1FJjxno3tfzRXOUphVU4OMcpKLQ==
-XzOvWYuEQkfCfFjdw/6bsKiskhTz7JZeqQqnJ2ZrWhexZq4qBymYrJ2hbB7qxmkWjmacjpNXNaVKzpOl6l29Gg==
-gPINh+knjhN4MdxbXH6NXn5f9bmtZbXzjeYqnJoHCd8=
-zgEYVIpJE7w8vbOlB3QmOQ==
-Swve3st3A5u2/fINpqxsRf7cQFpnhS23mIDqvRfpr/k=
-ViomTuvK9Ftsdktji5/NMA==
-CYPNNS/9vHpedc7c+HOuXQ==
-6O6BfOVZ9M1BmnWkpuyWErZFrJkOKnKQg6y4P6DDl60=
-FKhBiURyN7gAOBBeNCnbpQ==
-uqSnR5gXkV/tKJTtAlOHqRGmubJIZL74/s4zHmbSILI=
-cCSc6wAX1vfch/e/E5vVycFs+3nrJPacG7Xh0i2a8krFmGhptwtqKMiupx5MzNwf
-mAvI9hpRwvvCy5aaNRTDrw==
-/yhYnEPto+VNuZJMnD5Ylw==
-SzMv6+012wRf2whKo4k38w==
-D0lgqCaOnFi0fE/ypeo8tA==
-FlQqXUgD0liIOVPsX4bPxqkd62/P1UZWECNoa623UYCxYVXSRTvUZSRyqBvR6wqhZSAAQ6+WtOL3XxX9MBIVSA==
-CwJGw0YiL9d90kbs6PnXe3eMloD4IHTuqvMWsuqp6XcC9tSBs9m4OVzkJQR6zije8VVltb/GZt2BrZSQwl4Xhw==
-YHCO8RivnKQTU76CMWqV9w==
-3yaz60XAbCwqerFZUz1aq8lYBaBndbUWpwAtaJBk02YhlE+LZpu3q7o2hbeXVXS4a2dzP0Ar5d7gn2VkU7X3MA==
-J1wOiiQzfeUrhBN7SpBVF/6GmN9R8Mxi9H2iq8q+FCR70Vc6F3jylVwXAhhrp+Wr
-/1aQpgEmEaVkWAx7+MkD+7YETfuaBrAfKJe/mMEWh1w=
-0cNYQlHfqNG8afcUoQZuidesPegM6XDiC/J9bZ9VQ+M=
-5qDHRLX5HN3nM+MK8a3/mQ==
-TL+Wp1WIw9s5/Y3TNNcCrFIvzTxoj+rV34h8O8Z1LKGEIzyRigJuhLSE0UX4PG8vVgMj3LTuM9NR95jb40AgDg==
-WdoaJhsQ7yP0Wd1N8rpcP8geQpA2RogP338QEQ7NOwC2Bi0G1RsqygdOJqUZeBkk
-WW53tz3UXQwWtp6V3dRYbaFxI842/IZuKsn3xZ4UQuk=
-nHBmAw5G1UduWldWCKxPWaiAbFfeNWVz2LCikqNaCdA=
-58kQRVOtSnv89ygAWJTXwFpwAkGtTlPNY72i28cngfA=
-OyQBfRd+A2jcj+O4Qv16sCdPEKa6qD8tisJymMvdjoQ=
-PCUokzlUVHlPaE1keJmpBEyK/R6IzIhGB6EkkJ0w94GGJ4gIThCxIB5Hd3XO5mQYs/1QB0ZmkaJBDhtBkHYvoZ8y2X9W3OSqJ0qz4jvdL7M=
-PcrGr3HZWhx8XUvy79vL7H7FH6M4z1BmA5foaYol9wmLexiZCbI+VoZUdob21/Na
-fM4no+dijRYhTAwCajBJTA==
-M8uE8qiZbVd3RkbkSyC4K4oWScW3UDlg4Ktrza6yQXCpNBBNGiJ8POUVJIYuRoYK
-zGrHjnf4aDmM3K0QNnrdPKvL5gR3VIEYmA6Zqc+GOzGbewePfdkaCgeEyANCTzDAEP/RKs8rKI0pfivfzqdU/g==
-JI5nefizgRvLFN/LA0Mbow==
-wD+JRHe13uLgDvlHUIolxGy+2kgHN3La9RTPo9PlTyyMw9bwnw//lPxFCZCgVDqsjduK8KAv1mm260DNEZhJtQ==
-W4rvTKRe6SJZ4qwWmtK3Ag==
-GIrVk8oDsxTSZJJ2sT9TNg==
-3lC/J5qFwvBKp+mDha5aDdhRuEulXiep5xFme06qsm3q6OVeveUFJbBrPQAzChMm
-cTM6WY6btyifwZh4R67uQKQW60tXRLlWY4b1/mJOz7EdMlfAWOJSDm1bDPZvvB4VvUdA5jlaunH3Sr7/dyQh5A==
-KjfcIOxfafaC7I1GJ8FDCiEDWRv8hBPE+LX3cKDEXzM=
-6LKlfpYJDG0bzF1Oo8+tiLQNI091B7A0pYUgii9rZYc=
-fvetYbQa9HcgsLI3siw/7A==
-0HeK4jqWy7qby+zsq1OZ2w==
-nm6FtqfHexHRHbZUrMPzJx+x63aZeEu1lViQ8S0XlwFHMfMDoXojdlwyrDyb4d77
-wHzTBTGvGfX/StVSeftP4fE9cM+9VZZkjF0nLWn48Ao=
-EyR3cUbRMlbtRQx/YmGZYwDUJmE+5rMMwyMN5//QV7QVa8QS55uRvK1eqFul+U0n
-epkko9HnrYFs5sS54CY6YXRtNBIwMSHOilaeiKeVIqs=
-XRtO2X3tbMItC3PpbHn75w==
-DLJ4RsOZ+effwdkAvKZM3Zm+dEfARV5Mt5w3PSzsOds=
-2DGfg5lWo6rTJwcxWPTVJQ==
-tp6wKGG61VI81lhsxUsyjQ==
-LJUXxRhx9mMFRhZmQjkCdznlR0jA2o6RRqzV/FEuMlI=
-UaBlUHN0UPVTZ1cPg3To3A==
-ttwxLVR4288cdeGpOZHYf7qKUEYslO7p4M/BDrIiLnI=
-t2VTtclc4NYP5kPo/xXZIR312YX1tx4uXjB280txegPNRxws0441baFPLQiOBjTmY58MLnoGXZoUnQ8bByBVdz2tFMCgfdRTpiIlbUtIBtqyPRL0NgO10tulR7rKXvrBtzLchtojgvnfR4C0aMnT8w==
-84AnZemstbvvnwdZxIs8Cw==
-Q03J2+QzuPXaVrjRbT9lmFq1n2wOl1OxjbyyyiGURKmG/qczLZOLJTXpfXqu7+eMYwbFgoQONb6pPfphd5iihg==
-xWQJwMKIRnLCyi7XgRhah5G1S3LuWyXAhgaarVbJIs0=
-CjLvo2XN/Pu+AcBIBLzARQ==
-+I1IpdRQ44Vb9AuL1QOF3Q==
-cegnbPc90sPy6ir6FY8CSE2jP16ytn9oFUc0WcimhXRC6Q2EAhVijdwSrnrA4JTs
-MR423ZMpxA9qqfbf/ZpRjCru0t6ZrjmQzn2D/ru3n/h3wU9SLpdiIuCTG5BKNVVl
-B4lQO9HnYYCBGwzcMF9OVg==
-SnzdcBfgOXbVNRrpFuLZfGqnxSF6MZn/7ki7DURkags=
-rUaVIpR02OMXcY8LtnKb9RlfYcsTxTUFS44RIxoe0gwoEY3Ou9KlN4AfdfyCztnY
-WBQbZBgYgpWlWp/a7YbuZq9h8TcBjxGfKUvh9uaywJGC4tO/fe7bcOnYW33DaB2qD5BLQlSu1cqge1WoXkFP923s+lhYBQoyIKMf1ouuxpyz6QmAznpDSgKeLaZeGgb++nhe5UvzuAmIDffIjUeDhg==
-smSX3ZjqN9//MBokMHPAROGQxTD9kX2N7AChhRp4rY2/zmWttfuFAqRbnVaUJrzZ4rEHR/8de6y8oo7LXUdFsAWcZqepwxsC9QUvWzB1ybU=
-xPX/vgGdHX6F4JL5m08VjdggYWDONe2YpNjcZ3TLUXiF4ydzAxBQaEhQWD9ohHP1
-HyR3G9Drp/dC73oZb764+Q==
-mQWgdO3NgT6Aip+clfV4fg==
-pkpiPreOSnvcksebqI8CJA==
-aSEDE3pz3ZdzUDEigLDzWMgOHqwG04u5tcjSINK10uAgEEnQkPTmYMLjTMkLaFEd67ryq9uMFBsZ9QxFLrIRPfq2dMsA5lK5pHzqwZSjPpf2Ezu8FojeTMu2lIVbShEXf7cub2yQCMPaow9eG/JaReFed33FqCWE8jfe9ePXuBD/5z1MoyLZvhLstpfapueF7kxADWgoQ1jS+hnLzdWboJO+e7ru+ysfSb/94rxwNMY=
-P1/E/Lngn3h13wQebOdUgdiX/HYpLtLtof4vkctvBy9D3SGfjbSjnS/Tz4SBmd2P1V3s3kpBMEBJaVj+jQPIffXrLxAUCVwNSn8K8jStzpceJlZcai1wW4gUHHMocne12w212azihaCketLC0z+GTg==
-Z6QjQgCuPGl92Ie2qmGT3A==
-COHsMNF3Klj5PHFH5lxvV1Vz/3vh65o5pG0SbxP+nvxTZ8z4LbVzWXmoi+VXiekh
-kWsUO8szSN61e8qAoC7DvLFkD/+7gEpny9SNWQAYRKSnd20VHv/TzAxJmzXNmImTWBxLzZMAO4QHaw5AAYLRAw==
-DNonu/IybGwD89RMw81P1Q==
-LzJxfTRBZ0qJiYoSS6im00BCqsLwHV0CLcYlj5zINxw=
-CVMe5KgBhrDxsVz5mM941WTYxfTeeYsgv8A+hbdoig6tDYQn8r7JV/TfKsJaBKtY5ckaF4cUzT8YeK7KvAr+gg==
-g2yMFxQH8E9nDL97c8YaLMTBPLJ5Bm6gTLSSXPAV7ZAOTCvMR2YS31nD/KbXvfQt
-hgVVjWBXWLwUsve8qOSEzWqfHCJdkY6wWlfaJUdxjqI=
-+DszC9qPVKAQa9py51sMqakEQZrnyY7CiA+Y9sWpvxq8zEU5aoTcHV239KKZzb/Rz/7lg5ZIZK/jl7JKWj3GWQ==
-cRJIOeU7A74fJQj+eaJMMg==
-fkH+TN4purdPzVuT+chQuFUQH+nZ8PksjnQFh6HYkLPKJNS2c80LV/BBJWh1JoK8UrrhBn3OeiNfRw3DfjEZjWck/jflEsVw2YIm0I78qVgc1N3Wij3xgHUOVf7HtDt+Abz9SjM0FI0fOxu3/SmnhAP9W2YX/V/CYGMhkV2baPE=
-bjuj8XyiXmMjlnd4gKStALiZW6dejBWlapllm8y01miPQ+w+i/9di1qYFSRyHGyH
-ItUKFnLZmz2fNe4vjW8qI+q1rH/eiFBAcYLdcJRUIWA=
-Z9FLHgG65S4tQLPhzZhQWg==
-I1y0eyGlLFSbJxrZWw1fcw==
-7iaf7uKF4aq86jhsJeQB+w==
-RpouizOeLmP4Wj8hU7tSzw==
-l86sJE+2CniG9wlFQ1VgCw==
-C+NjuzcKLYGDpJtRsm6tm+L6HHMJ29VQ6z3WbQqoDi1U7/WJP0SQ3bVrfIulHMCK
-1BmN57w3nAocKtVONmo96g==
-04QhsxgSzqSPXv93QU902g==
-0TyfKFU14hPR335dbiEYW5vCK/UFXxHwn6eAlQB5yHPZiKJgybgR0ngYqDhHmWwf
-hzd6E49zMlyYNXQIBxb+mhqmvxypY6ARVoCy3ByWYMMT2P+5YGujbLqma2tSwuVK75xnuonR2IUOO3XNmm+Izw==
-WR7nZoydN4+OHUP5k5n7cfab787V5cZ8vt/LRalHTId+GlDItYZgRf6735Hq/fPU2+gNCmy04f/ya7AN+XyZiQ==
-GxBOmPlKbQt9UhJi09N5EtovS7/W2KTIzSyYIoM05y4=
-8MU+SLV1Owm+nj09F3LeanGu6YLF4UVq1c8Z114WWsR1B9hr00EaUX5Z1fDNnEeU
-+gHB+gGR9kfis1aqCdaSd4b7wwOlDnsqxmvbtBSxQdA=
-i762B1BbaTbhiTb0LRHnKdFITK/CP+vACvYUS6+3jtwXN66DPW2tyNruxA8r2cW4
-DqtPQR+73yBW0PWu6+IktbHwda4MdjzohKzjvIqRlEg=
-Slqt/mCcecuZKpW6lSsnRQ==
-gjIwFRxNZUOLcHu9/OWPP6T4lbAiUOU5LRasGY+CCt63kUGeozXMcyDVj1A3KVjvnLZRXEuj4fy4rZEUuTTkOg==
-aRC/zUAtFUB1k91ep0WOIQ==
-txaAPLKcz4pSdnZ2yUnEQdIdZk2ubAK4nhc81Td5dpT79aPH86RjQKeYDgFaXilS
-EakxFSdd/rMc0XQB8VHCCunzwHMT5pknb8eIK4QI2QvDmp9rm9AGCTEzCGw3pmdz86q9HGKryfGQubmOLjz+yOalQ6jbxHatL5+7Zb/9dj/EbWQZmDJxSwARIjigcJX0ISJVyrjOFKB1v25df7il9sa6ll0HwIvdJD65SVXCM7RDaVgmCdxRqDQe/lyW6fn52+RqivFLVyhD7D7Q7xUFEA==
-fHkPnlS65Z6rAUEPltjQOw==
-leedNtchpJ+Rl2TXdZ7pNA==
-iKIRdPcT2HxGj1NcUY2D3g==
-A5VbSrXMZb3ef7SUBfYH75md9UCuiuN68PIAemdtpDtHy5t62450m0LVg2mkmqhzupzFtXcFLP6B6RZ5FhbEkg==
-y1GezgWk9yWjerhVTxZlFzDlAgFyNgFRZSQ6MgTKrKlWTgIvh73AYh+YhEr0iB9VSgbrHWFkLewc3OGbszqq+g==
-/ospDQy7Yub/dTrSDg+KiQ==
-eyHSHVqc/egbQfYHsDl8WY7TeTe71IMnKxZJKt5ONKKYVn4eBr7NS14xt0p0tLwRVCJPBP8rsZYA5HfX5muflw==
-Fv/2jlHAhlAOUuaMRmhRfw==
-Y29KnS8aTxqTP1RjctHryuDkGNldw7DBxb+4CH/rKXKj+PQzuq9j4d4Lx9E9hkVg
-8r8G98SoP6Ah1rQ6lZFW3M1U1Tutj2oRsUGEBHjhIlA=
-QvHnT6c1zmLLmSAgC5nCSEy+2YkLLidFqLeqb4VJIEe67Nl1W8ALGrnMkfxQZeYuhd9gIyNhOohTpCPnbdSH/nJu77yTiLqCGzMQacy88oQ=
-IojlBwb4HMgfdiCLOr+ePQ==
-BVM6XjKWqUnb/11nPRH10kOy4/lqS6ED8aYF2NbNwrY=
-A07XwJyd1xTr8dgfGCkxXk+6ty1ekH0I80NH4KZZdKTf6N6EwiazKMY5H1QdTeQU
-iQ/k1ABYMe1keQefPYGZlPRTXCZRNlD+QFdMSwsN89bS8LZoL8adK32TG7xpR6cMUB4lrrC2BvtOgYIJqUKhW0E88AqhYMWhT88TKSMM8kk=
-q2iAiUgL2P41XvKVHuSogg==
-EzoD3NlA8V92iH36S7lKV/XuxSquu3lwcTyyzULdAl7yQZzQM22hN9sf7y1VERTeJP/rgovzT5LObVFcouGCmrwzMW9AfO5DBs7gaoR/hww=
-AvSOckFLkMHTZ4EzSGgUIg==
-9FfFX6wIdLis1m6ct2GucQ==
-3k2y1vij7vLhrCTMGgnKPyiY7X+lxrQzQxGrCtuPWDnvCgYoQFniTN7fml2Hk0rx
-mlXLSu4+b0avVRNsiIgsjRYMknlO9g3ztDN6WjL88WMWiQVaGfDvuURyF9tbR26TfYznQRfRpSegftSpUqQlK1KLqYlvIomq/EWM4Ul7Jp0=
-YYAQ4zb7u2aXJcsY3qZpJQ==
-kGfoAamvPRqmb4/eCHK16w==
-5euKr8Q61WsMtF4Bjqv2gFkAD3B/7my80CTUZN1xD3BY3tfKZhpa5M5WxUur/7bJ
-S79WZgLeEtHuMVgAEuZR620j9zRAJ1oLnMJuDVXUCpxftZV/cPmVMzQeYrnqzf2VsT1uRfdM8YiAFQVU2ghSZC8dottLk/7sDjDfLpzLKdI=
-ksVcQHpbuCo0H5/zP6tPFQ==
-NlnEqf8KmSwOSlv2BGH8ew==
-LbK3fwz18dbczBA2EwTTYLXW6E7oWj9MtiDu6Nd/yKK1BgB0kUaV2tlL1gvzhqEt
-Fa6X9jdAgxz1m/iy0fXS7sQzfG59cp9sxxwp7ut2XLPBrck21wK7dGpU1Hu9TRbEKET98Z2F3DKv1iN/M9eHNtQfS7UVVjMwySyAOTuHYpg=
-6GH+TfV9WhK/uHvwqwfZ2Q==
-OVr1EBRZGQCGwGcvES8y2Q==
-nuQ3VjU8bVa83xkomY6ABrqZ1aYwyKCDdzUeyVcQpj4=
-PW7kwyUCAmlVop4jHOh60g==
-dmapOih0o7CBhyBQjVHjDA==
-Kb4D8K1cULOHH4Nqpn7kAQ==
-trSVehcK3hoFhfSpAb2TDg==
-McxeVt+YpdcYqEOB9eReEhKraRdsS9KdofA7o99Aa92MGOK45VOUdv/FVZ+/ftA4xfyHTDnQEpT0tUhQupBCSF3BV0CxcKK0V2HrNIduoJU=
-XGrSWJxxkcJKYrcMFsP0QOn5QT9JBxpMjmIFBGe0oeyvKmYR0356Iy9U2PCrFNHYckaAdtD3OUGxpv6a3iwnZg==
-idF20uNYwU5e+92HNQweiA==
-7EsHcIF08hE3iSRRkkipJ6X9ZvYc4lb9bpTflACaQcMUEtevei16yxFczzZ2lXIZgLzLjIA3xdjCE+CjuB4sdA==
-skXWYcKh5io/EX7r+zCZQw==
-37VgiywG+8JfzZ+DcTr4z1dMIEtrL8lw9g6rXXzd35xV9ExdV/jTQR/poS4MmZ0K
-IRrN9KRiDkht8HICcy8/u5Rtg80Affcg+KscwgqDpV0=
-5oUxINgbhoaFJ9Ed6CgrV57Am0gZrO6/s0AISsm5lH6f+GgILHz11JpFUEKdXtby0X19OscdmcGGPCUGxQQczKfgW9uLpzUEVxQhMha+39Ob9VUtloqlHZvqke5w2QlzZOQIumz7SFRv1/tqsZy46Q==
-e+fGO4ysHWPDnZ+VRr5lXI1LFKdpGgTyyaotSu5HiTMrHtA7OHV3gBaG6Smt7f893j1M8lAE69tw+i1+VQzjP0C/YJalvW1O18WAu51udsU=
-xuDuWs2b8bvd+6qbGH2JujFYs3cxq/ZH1g5MkLyvjWplxq0TSzNNoUNzJe6QyBYI2JK7+vvZSOC4Ol/UUxctJFZnOvEUw3sh/fc3nzSaBrIP0zkBhGWLc24Q+J0RpVWFSGj/ytFF/ovr3OJu04TMbg==
-iUDaeqFIUu/kkAyInjpUl/L9iHLr98HcJtNscEub+qWtgFOIArPC0PnvD/bjocAy9yxLP47GSzzsMjn8sQNABu+MElmacQnoMJ0F7liT4bCmztjWiOQpZ4jALBj2iqM7yuUqgKilkfxi6eWtVZvCXA==
-vb82HMPG1U5CCszOMmqeTGpYAEJVjgda762nAPSC5jU=
-T2pfOZHSr0qj0Y47Ttxvc5ZJT7lun7VluUaqJOjxyaAWx8268sDtQtxl7aKGpQhyJXpRdrUJglblx8Swa8kdUv+tK0YSuuxdhbGr3Zv+WRXbtdhvtDmgkVvo9UXPGadN
-2Rk7fX8Gtj9YTeOFlZCAPQ==
-BioXS/uHvPX32F4kffcyrRz2dCuGFNe7TLNhSmF/Xjpc4w5LKZ9g8NixLKKpIgCOsexKCrXeRjpGy/LPuBsdJw==
-RTM/g3bkoOqTNYRXnpc7o6ZiuQKjPyxBO6QlVMBT1w4=
-A7PgG6wL3cWxWLtCaHnQ1Odd9RWhG7oZRsmDdFY3gFjfqPNxwNOvQPznshR/yuH6u4WORTL8Of9Z5TKVr4obpqFnzWpMknEiUyZuhKMSB93QgQsn0sjJkjh+zhnp535A8vpD7acSBM6NOEInG2modQ==
-qU7+S/P7Kl/yHRygWHFp/f3Z1HinRVs6Rpa651kgy1utKgLmgmutVHX+472lRW2SYyu4ecI7kLy2sbTbyulXHjmW3M2XgHcHP3LTzNZ3E6EgHQTD8g9DABWqR0QQkdvJeWRARYhh4wnENGhre9+zxSpfJ6F+Dt4PX5wbKZhZgUA=
-xbeoMFZ4M/07TJiMqfB+Yw==
-18XoZH34LR2J0d7HmBJg+g==
-25G68Qu1kTIFz2ql9JatKx+eKt1bmYBsfHzIozXw1sr7FEUl7OLfcsl/y4LZGkwf
-zBeNyd7TvdK3gMAvVH6Rn+PlYPUpiGBiUoxjlMt8zEdJpv81liIBKjFOkx0gV4WTW/sSwuIKUrGQe6ZkIOEI4grwHtrJiLRdmQnzPLgmTyw=
-cVB8W+kc6XFXR/1DhzjNBQ==
-fsz1KiV5tb28k0NuIrtZSPTYnou3zTpv7RzPcptCANRFE/dEUYSSjw/m7LVYjMhHmvU5ojFAO/tccYR/vYg4NdH68t+t3X1hngweA6fCOkA=
-AkgfirnEnKjgFoMQJJ6dEw==
-uRnRcW32sCLSvG4Y5XVFAQ==
-hngRPj+wXRVfcaCLu/axG5BpAnjrzCWiRpPNudT46oZjbB7r7UUNkrR1Ynay99TS
-bVgU8stUVLLkgzI41IU/bvihy1lw2qOhKAMqXDABRuRIIyrH3mrYhopOVAH+o+xR1xFCeC0j6i55nGPY3PVJMK3ch8wWnfG+YZbtCdbRITQ=
-kOyLgHGO27N17+sid7qd0w==
-l/gLN2CriMdumczfooAZTQ==
-4AQvl7/hB9OVdgjkAPj+3X/5P9fknwgq5P3XdSVTQflRBTeNeEO6UZ2EOWVGesnx
-0+k14mj5VQr5dEdaJPpx+kHM2jJR3kYeHEecbkvs8NhFaL6Wqp4Ibr2ijkbaWdiFILV23IX1Si7263v0iKz/k5tY0ACs8Q839LM1iKts+VM=
-zsnS+zPzjsFyBJ3x5U1WCA==
-0Uw94efr5XNh9jHqUq2cJw==
-UmgWmetn/IGb8/VJt36aJIrr0GUEMaMQJaIzj+RpjhM=
-TGd4OAkgiqfJ+Mne7p5rIQ==
-7c31eTiZ1dpux8e4ARJ1Jw==
-EBEqno5qFDnKkmyqjf4KOg==
+vipWindow = nil
+vipButton = nil
+addVipWindow = nil
+editVipWindow = nil
+vipInfo = {}
+
+function init()
+  connect(g_game, { onGameStart = refresh,
+                    onGameEnd = clear,
+                    onAddVip = onAddVip,
+                    onVipStateChange = onVipStateChange })
+
+
+  g_keyboard.bindKeyDown('Ctrl+P', toggle)
+
+  vipButton = modules.client_topmenu.addRightGameToggleButton('vipListButton', tr('VIP List') .. ' (Ctrl+P)', '/images/topbuttons/viplist', toggle)
+  vipButton:setOn(true)
+  vipWindow = g_ui.loadUI('viplist', modules.game_interface.getRightPanel())
+
+  if not g_game.getFeature(GameAdditionalVipInfo) then
+    loadVipInfo()
+  end
+  refresh()
+  vipWindow:setup()
+end
+
+function terminate()
+  g_keyboard.unbindKeyDown('Ctrl+P')
+  disconnect(g_game, { onGameStart = refresh,
+                       onGameEnd = clear,
+                       onAddVip = onAddVip,
+                       onVipStateChange = onVipStateChange })
+
+  if not g_game.getFeature(GameAdditionalVipInfo) then
+    saveVipInfo()
+  end
+
+  if addVipWindow then
+    addVipWindow:destroy()
+  end
+
+  if editVipWindow then
+    editVipWindow:destroy()
+  end
+
+  vipWindow:destroy()
+  vipButton:destroy()
+end
+
+function loadVipInfo()
+  local settings = g_settings.getNode('VipList')
+  if not settings then
+    vipInfo = {}
+    return
+  end
+  vipInfo = settings['VipInfo'] or {}
+end
+
+function saveVipInfo()
+  settings = {}
+  settings['VipInfo'] = vipInfo
+  g_settings.mergeNode('VipList', settings)
+end
+
+
+function refresh()
+  clear()
+  for id,vip in pairs(g_game.getVips()) do
+    onAddVip(id, unpack(vip))
+  end
+
+  vipWindow:setContentMinimumHeight(38)
+end
+
+function clear()
+  local vipList = vipWindow:getChildById('contentsPanel')
+  vipList:destroyChildren()
+end
+
+function toggle()
+  if vipButton:isOn() then
+    vipWindow:close()
+    vipButton:setOn(false)
+  else
+    vipWindow:open()
+    vipButton:setOn(true)
+  end
+end
+
+function onMiniWindowClose()
+  vipButton:setOn(false)
+end
+
+function createAddWindow()
+  if not addVipWindow then
+    addVipWindow = g_ui.displayUI('addvip')
+  end
+end
+
+function createEditWindow(widget)
+  if editVipWindow then
+    return
+  end
+
+  editVipWindow = g_ui.displayUI('editvip')
+
+  local name = widget:getText()
+  local id = widget:getId():sub(4)
+
+  local okButton = editVipWindow:getChildById('buttonOK')
+  local cancelButton = editVipWindow:getChildById('buttonCancel')
+
+  local nameLabel = editVipWindow:getChildById('nameLabel')
+  nameLabel:setText(name)
+
+  local descriptionText = editVipWindow:getChildById('descriptionText')
+  descriptionText:appendText(widget:getTooltip())
+
+  local notifyCheckBox = editVipWindow:getChildById('checkBoxNotify')
+  notifyCheckBox:setChecked(widget.notifyLogin)
+
+  local iconRadioGroup = UIRadioGroup.create()
+  for i = VipIconFirst, VipIconLast do
+    iconRadioGroup:addWidget(editVipWindow:recursiveGetChildById('icon' .. i))
+  end
+  iconRadioGroup:selectWidget(editVipWindow:recursiveGetChildById('icon' .. widget.iconId))
+
+  local cancelFunction = function()
+    editVipWindow:destroy()
+    iconRadioGroup:destroy()
+    editVipWindow = nil
+  end
+
+  local saveFunction = function()
+    local vipList = vipWindow:getChildById('contentsPanel')
+    if not widget or not vipList:hasChild(widget) then
+      cancelFunction()
+      return
+    end
+
+    local name = widget:getText()
+    local state = widget.vipState
+    local description = descriptionText:getText()
+    local iconId = tonumber(iconRadioGroup:getSelectedWidget():getId():sub(5))
+    local notify = notifyCheckBox:isChecked()
+
+    if g_game.getFeature(GameAdditionalVipInfo) then
+      g_game.editVip(id, description, iconId, notify)
+    else
+      if notify ~= false or #description > 0 or iconId > 0 then
+        vipInfo[id] = {description = description, iconId = iconId, notifyLogin = notify}
+      else
+        vipInfo[id] = nil
+      end
+    end
+
+    widget:destroy()
+    onAddVip(id, name, state, description, iconId, notify)
+
+    editVipWindow:destroy()
+    iconRadioGroup:destroy()
+    editVipWindow = nil
+  end
+
+  cancelButton.onClick = cancelFunction
+  okButton.onClick = saveFunction
+
+  editVipWindow.onEscape = cancelFunction
+  editVipWindow.onEnter = saveFunction
+end
+
+function destroyAddWindow()
+  addVipWindow:destroy()
+  addVipWindow = nil
+end
+
+function addVip()
+  g_game.addVip(addVipWindow:getChildById('name'):getText())
+  destroyAddWindow()
+end
+
+function removeVip(widgetOrName)
+  if not widgetOrName then
+    return
+  end
+
+  local widget
+  local vipList = vipWindow:getChildById('contentsPanel')
+  if type(widgetOrName) == 'string' then
+    local entries = vipList:getChildren()
+    for i = 1, #entries do
+      if entries[i]:getText():lower() == widgetOrName:lower() then
+        widget = entries[i]
+        break
+      end
+    end
+    if not widget then
+      return
+    end
+  else
+    widget = widgetOrName
+  end
+
+  if widget then
+    local id = widget:getId():sub(4)
+    g_game.removeVip(id)
+    vipList:removeChild(widget)
+    if vipInfo[id] and g_game.getFeature(GameAdditionalVipInfo) then
+      vipInfo[id] = nil
+    end
+  end
+end
+
+function hideOffline(state)
+  settings = {}
+  settings['hideOffline'] = state
+  g_settings.mergeNode('VipList', settings)
+
+  refresh()
+end
+
+function isHiddingOffline()
+  local settings = g_settings.getNode('VipList')
+  if not settings then
+    return false
+  end
+  return settings['hideOffline']
+end
+
+function getSortedBy()
+  local settings = g_settings.getNode('VipList')
+  if not settings or not settings['sortedBy'] then
+    return 'status'
+  end
+  return settings['sortedBy']
+end
+
+function sortBy(state)
+  settings = {}
+  settings['sortedBy'] = state
+  g_settings.mergeNode('VipList', settings)
+
+  refresh()
+end
+
+function onAddVip(id, name, state, description, iconId, notify)
+  local vipList = vipWindow:getChildById('contentsPanel')
+
+  local label = g_ui.createWidget('VipListLabel')
+  label.onMousePress = onVipListLabelMousePress
+  label:setId('vip' .. id)
+  label:setText(name)
+
+  if not g_game.getFeature(GameAdditionalVipInfo) then
+    local tmpVipInfo = vipInfo[tostring(id)]
+    label.iconId = 0
+    label.notifyLogin = false
+    if tmpVipInfo then
+      if tmpVipInfo.iconId then
+        label:setImageClip(torect((tmpVipInfo.iconId * 12) .. ' 0 12 12'))
+        label.iconId = tmpVipInfo.iconId
+      end
+      if tmpVipInfo.description then
+        label:setTooltip(tmpVipInfo.description)
+      end
+      label.notifyLogin = tmpVipInfo.notifyLogin or false
+    end
+  else
+    label:setTooltip(description)
+    label:setImageClip(torect((iconId * 12) .. ' 0 12 12'))
+    label.iconId = iconId
+    label.notifyLogin = notify
+  end
+
+  if state == VipState.Online then
+    label:setColor('#00ff00')
+  elseif state == VipState.Pending then
+    label:setColor('#ffca38')
+  else
+    label:setColor('#ff0000')
+  end
+
+  label.vipState = state
+
+  label:setPhantom(false)
+  connect(label, { onDoubleClick = function () g_game.openPrivateChannel(label:getText()) return true end } )
+
+  if state == VipState.Offline and isHiddingOffline() then
+    label:setVisible(false)
+  end
+
+  local nameLower = name:lower()
+  local childrenCount = vipList:getChildCount()
+
+  for i=1,childrenCount do
+    local child = vipList:getChildByIndex(i)
+    if (state == VipState.Online and child.vipState ~= VipState.Online and getSortedBy() == 'status')
+        or (label.iconId > child.iconId and getSortedBy() == 'type') then
+      vipList:insertChild(i, label)
+      return
+    end
+
+    if (((state ~= VipState.Online and child.vipState ~= VipState.Online) or (state == VipState.Online and child.vipState == VipState.Online)) and getSortedBy() == 'status')
+        or (label.iconId == child.iconId and getSortedBy() == 'type') or getSortedBy() == 'name' then
+
+      local childText = child:getText():lower()
+      local length = math.min(childText:len(), nameLower:len())
+
+      for j=1,length do
+        if nameLower:byte(j) < childText:byte(j) then
+          vipList:insertChild(i, label)
+          return
+        elseif nameLower:byte(j) > childText:byte(j) then
+          break
+        elseif j == nameLower:len() then -- We are at the end of nameLower, and its shorter than childText, thus insert before
+          vipList:insertChild(i, label)
+          return
+        end
+      end
+    end
+  end
+
+  vipList:insertChild(childrenCount+1, label)
+end
+
+function onVipStateChange(id, state)
+  local vipList = vipWindow:getChildById('contentsPanel')
+  local label = vipList:getChildById('vip' .. id)
+  local name = label:getText()
+  local description = label:getTooltip()
+  local iconId = label.iconId
+  local notify = label.notifyLogin
+  label:destroy()
+
+  onAddVip(id, name, state, description, iconId, notify)
+
+  if notify and state ~= VipState.Pending then
+    modules.game_textmessage.displayFailureMessage(state == VipState.Online and tr('%s has logged in.', name) or tr('%s has logged out.', name))
+  end
+end
+
+function onVipListMousePress(widget, mousePos, mouseButton)
+  if mouseButton ~= MouseRightButton then return end
+
+  local vipList = vipWindow:getChildById('contentsPanel')
+
+  local menu = g_ui.createWidget('PopupMenu')
+  menu:setGameMenu(true)
+  menu:addOption(tr('Add new VIP'), function() createAddWindow() end)
+
+  menu:addSeparator()
+  if not isHiddingOffline() then
+    menu:addOption(tr('Hide Offline'), function() hideOffline(true) end)
+  else
+    menu:addOption(tr('Show Offline'), function() hideOffline(false) end)
+  end
+
+  if not(getSortedBy() == 'name') then
+    menu:addOption(tr('Sort by name'), function() sortBy('name') end)
+  end
+
+  if not(getSortedBy() == 'status') then
+    menu:addOption(tr('Sort by status'), function() sortBy('status') end)
+  end
+
+  if not(getSortedBy() == 'type') then
+    menu:addOption(tr('Sort by type'), function() sortBy('type') end)
+  end
+
+  menu:display(mousePos)
+
+  return true
+end
+
+function onVipListLabelMousePress(widget, mousePos, mouseButton)
+  if mouseButton ~= MouseRightButton then return end
+
+  local vipList = vipWindow:getChildById('contentsPanel')
+
+  local menu = g_ui.createWidget('PopupMenu')
+  menu:setGameMenu(true)
+  menu:addOption(tr('Send Message'), function() g_game.openPrivateChannel(widget:getText()) end)
+  menu:addOption(tr('Add new VIP'), function() createAddWindow() end)
+  menu:addOption(tr('Edit %s', widget:getText()), function() if widget then createEditWindow(widget) end end)
+  menu:addOption(tr('Remove %s', widget:getText()), function() if widget then removeVip(widget) end end)
+  menu:addSeparator()
+  menu:addOption(tr('Copy Name'), function() g_window.setClipboardText(widget:getText()) end)
+
+  if modules.game_console.getOwnPrivateTab() then
+    menu:addSeparator()
+    menu:addOption(tr('Invite to private chat'), function() g_game.inviteToOwnChannel(widget:getText()) end)
+    menu:addOption(tr('Exclude from private chat'), function() g_game.excludeFromOwnChannel(widget:getText()) end)
+  end
+
+  if not isHiddingOffline() then
+    menu:addOption(tr('Hide Offline'), function() hideOffline(true) end)
+  else
+    menu:addOption(tr('Show Offline'), function() hideOffline(false) end)
+  end
+
+  if not(getSortedBy() == 'name') then
+    menu:addOption(tr('Sort by name'), function() sortBy('name') end)
+  end
+
+  if not(getSortedBy() == 'status') then
+    menu:addOption(tr('Sort by status'), function() sortBy('status') end)
+  end
+
+  menu:display(mousePos)
+
+  return true
+end

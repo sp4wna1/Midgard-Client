@@ -1,187 +1,187 @@
-KXreL3SQhdTiJMpcQOEXdZfZcw9BimWvcD5CSyWPjas=
-lHOlHLCikQlhJb3EYSPj4EvAwLRF5ddO4OV7Qwm8NmI=
-BPpPWUL1jqidTpfpxd2A+cF3iH2aPRyfFxgmCF4+nQI=
-rZ/eMweax8aA4COrx86ZXJ75liytfs9k+hl0mO7jHy0=
-oNtRO2gGRkqZXz+VCZFyUM3kTZGP0HD8eqtv3ER2Zik=
-/TR6Tb6V9NMNCpurxVzQ3Mck0oixWJbGQZGbCDwB2m8=
-Thjoegs7a6PtM8oxboRlX5s7wOH0MOsQFP9CsYyKqf8=
-eN41wDRV/OybAAlfjxVYOR5DqZUIUMx2u00QGPi7lZo=
-T53I3I7sASNwLuOTpCYzajU/3LhTlkhCPwSVyHeFfuM=
-U9CRis/shnD3vXJlqsSB/A==
-6RgHdiyFdPCqAbm/gHKrRA==
-zj88qBNCRpgfWZ9P5B92yccKOW2c2DwjA6HAMm6Ih6xSZ5mYSb8E2YGDMe51BxyZIM3XMFPi9f1XLJgIkjr1d4ui+MbazjIPPmnPz1w8bB5SYSCosIcb5MFz6R27gjOJAfeDb3G0h7HP1r2/F9AzGw==
-sRplI5haC8PEoXTxW2mDK6IubiUQ2sd7vncxI99CPLZNMFHwqrauG6439zIEHOZ4+RSihsRUa0eeJs7trNeatRXyykaVncXPx1JV6FWig1I=
-mM7DWbCpw/ZOjFHVWtQ7q3xBYrTWtCvRn7//DBqCTiuJP6hhLO92114w9YPyzXYf
-s+TObHvNP9moKtb3A2fi5mMmmzwhgnw/wCqNo89sBx/AYmIhWlZHieU0XDT3jtsh1BLWbduwNoW6stq3+qQz/5mjzvep8euP3g5hH+INgPgJQ35lo0oZBuSjPv/gF/2x
-lYgvfWyG2l/m1C1oVWHP84k1amtgIr0A/MRcWRNr+Me5tVAsN/MOQRoMMiM+/AcW
-5znAOzAh7+pl8PadWJ60LQ==
-lSvsS8/GgfW8B0U2kVL+eGHcbGkDWSiJ2as6gYwSAqg0GGeWwkYS21e38n3MXODND5ihHU54HkuHPmvw7Ttp3s5KioNy1rzdh7nSec09Fywlr4nZRKsbkVqFiZGj2Ea7
-WXIiYmYKdgD6Nkpk6N5QDjXEXly+3oh8IhdEHRF4OzQcqgssHNGNDEggveu6DWbAQSQDvcQU0uVWwvHCzFXp397JtAY8MVexEAUdGdNvgrmoWzZhI7t4T+Q31tk2zFzA
-c2THIaGHmqshoqNBK+DBx4RjE0z3OJ5dZbov1XOpFZDD9irT6wtZgFBioIhxNbdzNGzJy99vDJSJc2vi4v1znlci3OSw5KvLL4ZsGJyT244H9ADYzXGh9nFBbXx2Oyg3
-IKIXw9UCjvfnTuDYu4qhIg==
-AmXCkIqFbluA1NCreJhVYjjD2/Qc3KiK9UBGmsyYpG2b5rfCvb3ajl0/AeHo+5dMv7+LwYFp52zZih/Gkzb05sE4uPASmXHsY1k61GKYKsI=
-++8IHiPhfS+OLwtHQWG4wnFNVc+CXh91id2U+CuM+c7J4+uuv20XPxfkkk3cq6tDKXh8gYfZpZ+abxlTZfzhhC4Zisa4mJe+wvwuCMU85Iw=
-jKB75gAQX0+J9Z8loXWcOA==
-tso5mAixRXUhr0Mvd1f3/uv0hE1lReLEshgPPoZ/uJ3iJovNzrk7CD0ygm6Ap9aq
-W3xTdnZ19w3bYshWWbGDuzD1Fb5ONXeAp/DDqvmHBDei9CihAOuCIenrFnFoOWYFEPRfTrhqxQ3MH8sowvVlCg==
-IroBzauC61JEGmUl5uMqX6Uak8pSbxZeVqSwFESDsTsWkkD1e2C5lcYadOc5XmfYdeI4Uwq3BZ2JV4xgpdHEWw==
-YOMJe8pavZ0s7AblFGlSVDSojfDhnXfuyDIUA8PVl/mBGYiqjCRjwwf5yjJBJ+xCq8l77p96MWOy8B2lB+gZlw==
-QtbTdhLzdaUSNNPi4iIPwQ==
-jUjiXzxmaLoZV+cSdkutGtNIK24eckJ2PwphGMJhNDwBeUM35IP7laiDCn6S+Fx1OIO5Pj0QlDUH+SVWMoTDkROM07jHN94Jse7NVb5nx9s=
-a5s0V/EAmbR7Im8248WyYlCgM+9P+688YdDNUuSthb3FtSs2eflaJIyjcFA8gEQ1wMpq168zmu5MFvCCMV2WcA==
-dD8xNvkcNPOdH2b89yY3WppTkbFwypZRqkJi7dtTwsBX3nz1HkNXThogjr7xSc43Z0qt3X9jo8VG9F0wJ4OUcw==
-ChQQBbEyHrJ91GQPAznGYuGqHbnCCBaw1eb9t9jcV2U=
-lhZbQVd9mHwG5bo1ib0f/b2IxeEHaQrBNzKwEy/UEw0=
-u7HzW00b5a9XO+RwRniUPx1Lj8d9gzENEh+ZTCdsGYE=
-k15hEXKU/3Lz6GpQMC0MMHrrKpjtwnUgXygys1hLDxIjDXX4VH0gDXM02RxvP3v0
-DyhleaBKUiqp3LhsXbQaG3JYO+nbpgDs8vRh2emC79opsorDFsELrh/oSkWG8u3I
-SLHRhnnT/Ky7GgYyNofBXjHfmnT5op8lNq1cUdAOMxf/E6oyyyu9gWHPuHM0Klgn
-Xy5crgBieVQ+UrsNDuyYmaQTIN+sYssVxjoufBocpuU=
-Tpa+iBZYaqRSYYr4/hC9/OgKA/GrnJhrt/eSIObmung=
-OtXeASsle1MMIZL0SE+HJQ==
-sfdoI1h1py71p8jt9QofCg==
-3knlzbiVGkvG+ttpCfq33a093XcYEtNyfIinV75HCSg/jfUXYPTl5aHk/HlF7Zj3usjgEtb0Yd+I4oL81tt39Q==
-kP8E+lK3JigNrLsEqyJbOg==
-YZ5JZwYr1CE64k9kIiuCFXqmiNwv7m3Na29sHT11toc=
-sKuYRRbbHvYmO+SKJSlOjw==
-SkWbQx41DDM5u+KS+xv1Nw==
-Xfu5xR2kVILhxeQveUwZyg==
-4yOwUQjCilajEcIyIZQkx8W7Bissf5Bm+mAw5XeTpGc=
-wF+ColEI9pkIPff32x3uRA==
-RkhaFJ3v0OoGlndVftMYew==
-9mocYzPJWxdRdw2zjLT5GF9eF0Rr47bdeV/VvXTJqs0=
-RpPrjZmFHE8bXoQ6uAQeRGpeMWFDx9F1xt5+VybVQTw=
-8n8sBZTJ5WlIALuYU/DQag==
-QmtFLz8OFMAjdhThTaTlew==
-049gsnP5iOUHlGUMDnLTXw==
-lR1Eo2J1leSSH7XaQrviikNyP80mXlqZnnri71FDryg=
-izAMfBRTzlqReViTlMf76NIZCnn5PfqTA/743mVKmx8=
-lbcp9FJQshBC9rFKK/ERTK2alS8MDyDoM4hOwZfhygbwh4JUyb6ct5RIRSaMZR5k
-BNru8Ucyyqlkq8YppKHcvwOtM7NK848p4GKqUqWPWczHaeWD/R2+EjcsGopijdJr
-9+UnpqQzalZ2/MayZXChaw==
-EO1TufWwE9MrxN2mwCb0qEsujezqE/AEdH0/yLrTv84=
-Wsjlgoy/7bCBhSLK0BpyZdJzS4Ugn30w35SxjGZzFIM=
-+QVb0cenCTlTs49+gxxx0VWBdxxA2YdK6nJZeMGfYig=
-3CkIrH/xTNOvv2K9cDlXBNBBUfRG0xyVZOlhHA442OqUK+lyE6Zl7mwYmlh0dTJS
-ZKUOIf/3V8q5izS131j/V6XoD1RhZZznXqkA7UsQaiyvMo0baKuVlQOdzfefEGIt
-9jh1DKPzr4/Sggu1gVSvBXntT7AtTuij9ufrCMHHpVAl3UY1o6MGS3lmekZsoYjb
-mQ56J7uHXQzA0FLSZd5UMQxxH+2NH8PLeJIb6clHafc=
-m/uMSzTmBOOMWVAnUl4o/73DRPHPpUQawAagzowkKIY=
-IHY6IjVpV2YdohgcBDhjOA==
-c7GMt8sdwYNN1eYLPVsOMg==
-QgcLBCo6/J/jIqJjxrcL4o4C8RU0uOFsBadNT0OSa1RWTFhREUK7dO5tI3pPTMhP7Y64P3UeFXedlcsqq9kHNA==
-ncSh7OCcmWc3mLX9UUywcQ==
-GVWP7zc981dx8u2zU5S0iA==
-gQ9cyYje+Cmn4dIJG8+SIuhHy9X0CMJmy0CCyT0ywYo=
-f8QhznOyoqXC4+8hHk7ooVP+fP7c65+nrvpY2sNGgoAeDmNjBYEP8PAYweqchlBm
-RQ1kuYoPOLF0KCPhymhBZK81J6S/oa+4Jhd/3anTjP87Wg/7cwZIek9TjLiirBc2
-Jm2gjr1KKTkcjgk1MZfH82j+k7bXZKu23AucDZuQx20gz8RWxHLRzDuVZ64T2FzJlInsqHFgtWDU2ucPAfd3kg==
-GFAxFHEZwdmSGTq40iUUbuJcOytTN4PL3R2Fj3o7TfADrYkTJh9yPuf20GMq2eXF
-WKtXyu3z8Ppfkh2TtLgxW5lxf15q88GA5D8d4ZuBNvO2dOHcfF9x6SYFnSY7GWW9UjQHPv5549YuGTBeyhKiTA==
-/8ZqImWQpEWAkqF5hStU/g==
-wdNia6UG1okIpC350ckybwuu8nj36pxC4fL9Q+gNx5FoTo2VAPNAHSTvSNtXOZ7Oqsl2Y0QCn/BbKwuzau/crQ==
-SWIqk2cUrG+or9NtPmzU2g==
-a5Gn0Kp7eT3Tb3ELk19v6A==
-tR/xp7zUjp/+eKUeHjpvWA==
-CewIjU2zNp6zNtBwVRkZ2dydchw0Z4URjW90DzOP3yE=
-/MGxSlxFALNYgB3kP+vPcfwOvDedOqwfdvjrtyPo5hSxl6JsM+JsjvIeuwapc8iz
-asTBet/qUISM4RXe5vpcicd0JFEWo8JxIre0sSvoqPFkcRpj37zFRcET++vjKEF8KXgKv3mzCO/pGoPRNdXZbQ==
-18A1DqnEUR4ixJHUBRxu+Q==
-eOs2SlNbLUWg7z53N90Wdw==
-3qe501d5iP89Zex4iFVR3FPTOuCl99jLj14jBtpI0yQ=
-v5t55V3rNz5IdEPBqFlTb9oznu0ZA8UHgZ+gCh0sPCqczuUfgYnIPB2hJ67qyRMw
-OOcEYTpbDygdP3GRVSd0IDqDZ+5KiBGSl1Sr6zWO3nocajwlcvC8GwZ6GUP11x4z
-3NZLVwrMcHiaQkAejeHr7w==
-gl1XwRuuFlZ5fCElA5SFiA==
-MjkU5lI5eJvZJV0DA/YWXiR/PgQolXqpofOmxSqDMWQ=
-souI6gs03vS1CSfyuInot+UgCD5Y3w2eA555HMuqmnt5ZJDUYBfW8MTNjqOFMrsovJKBd1+BNZaRzkEYYWQYfg==
-3sVqaQVTQzlW9W9USZD2/L6PeuUF+oFEq8Ybs8aTMLk1q1mnq9PRF3APNsPDBotFiYzE6u6elWy31666BXfVSuwcyC0B/1FXr7BoSSsNzTU=
-dewHBrvfUp2VmwIeyjcxrOaWVc0QDyfJh29O/L0ogCLFKmSbDBIZIH7f65pWq8v4
-I4cIexpLEJI4zvTOYUMHMw==
-TJ8Po0Prl9E3NutPxT4iGA==
-UWbaPGwmzcslrtLN5EFCBQ==
-ismcHCziKtaLAfdl9PnksA==
-/IuY4Hy2eZyInchXEBdczCvldPdOXmUWGhTAfVbmNVE=
-Q0Bcnw8Ef88EG5Cn8PkMvakuiv67mMDTLqecz7hJ6eP8wGQpcH1D/mwc3pFJCXn/
-TlLhgUFiAKMWkVnV79t4pE/BPG7wHxMPmteuSRbnYrM=
-ydtmRxrjWC90+14rC2YBe1w67GPqN3ISMWX2CGWpK09JijHyXRyVc9LG8+oNKnxk
-h9xA2U6CTSUonqYc5JK7Rg==
-BDnXypkJDNunl+iQpHyLnucOPRdJqeyO26cV6+Po9d3UYJMEYhlbFPe/g9ttROfa6wgz64D8iDdk5eRWK3c/+pXQURBvF1mNuYF7hdDKhvk=
-/Nbr6LAGcwro8o1BONN+bQ==
-yn0S32kh3ZEScFf1aqj5q3g6VFRSsjVgDIDmJg3VOLk1MnGHZeLnnb+0erTvHjtm
-eVSmcc8/iCfBpnY5IJpC42vp5SfVo05mr34usdAPDFxJv4VzK+Nv0v/guE3I2Bu3
-E93JTabBENoUSJJysVfOHATjdKYc/bEqdiqK7X75jzB2hPSYxbWSPDpzDfbuIlsb5L28frEilXLQWDEEZNavWQ==
-sZGj6Nzy3/SlJYLqQHbW6jz4rlMCq4VbifUUkWdgFsp5hON5kn0uraSLVj/B4fjn2YNeWXITGwSHC9a3JIvx5g==
-+Gf+Lgu9f3qV6sbHj4QF5u0qJSgzxIEpSdEd5WrE5Kc9CXvVl6MF4UJbEk1BhG7qDCmHKc5M/CQQor0UlYvAkg==
-2ndqfWAiMSU5MKnNTrmPVw==
-CqU6OFeCq6IYJs2Kzt7FqQ==
-73rtGpf/OlPl7HgcgHDaIw==
-JtDS08QfHAmk7Yiqh6h1IXrDN1OPzh0W8ZQrkU2kIgJLy7ZFeL6JHQ2FPKgMK0Ax8TayhOzAbQDsjgZF/LCN9WS1mXD1FzRhNGaVZrVwnu8=
-G+myq4x0pXTn9GGxzZNsyg==
-5TUPsamixL+UqtodzBKYog==
-BcnpDj8YpROOO5UliRuCJkCW6o+ZeQUmFWf1fwUXU2c=
-3bzrpP76H6BASTjWuMSvIUJdiEK3VRVlR4TLBz7AwMM=
-E0FEtB/ivd4mGtAsM+fU+NHG2WZAqBvL7O1Vh1joj0E=
-eFw0MmkcnD+rWNhmc7HMDw==
-ZUxRCUalxoxtvEAclhIlQA==
-xkmlHkdmPeY0RewH5OmCzGStzIs1qZVstiz1gr9Qd7A=
-evPdXU20aXqEaOZ7i/NQU/JI8Mpg/jgV9FR95EKgf8yH0Dj1qFdBrOKwKNuZAyDzZusWEPF6c8ZGoOezhYGnWik+aUlE+RDqJ5SevF2StvQ=
-TLGs+UINwPqTHva3CtVLsu43e8BVp9FIJ4NftqRt/KOHS1uoew8vMkuyOwBWWSRB
-lsVOpOoC/vI0UDPtYKqRgaiES92dNsNrIUG/HLGyJ84=
-gv+mw7EWZUJWAWtdosovdw==
-almKeVTRLI6cY7ZODTGEYA==
-MG+sazllsVGWmKpWumNXQ1c4W9bPADX1jT4tnl8+YHoRqPieNy6Z+w2mjMQeDJ9l
-DrnyMZH5tuk1Lje9E4aDlG0SIuTlOBP8QMX1gOMOujQ=
-RCZcQv1CibCnpTB75gZUQNJ3kjef5k+liR4SwUA0Jtb94DrIbxDXFW76zy/vHTD0
-awp1K52FSaK1e4O9tzuTtZfJqAbGyCV4w0WHj0kLEnpP2wykm4VuOQGebPg1Fvot
-1hvKevjshVD7aSXIgsab22IIntjXWADMiDRLKz2mkKi4t+OCIAtn4l7kzSJd15l9
-zhvtlTwD6kouQjc3MFVGhLdeLEJXLBDwW4RgnXDVv2QRoxoQGx1w9AWHht5pSOlz
-q9anyCpxfsAMDEVFszUJ8tEQDrZ2dZBbdNufUm0hw/qcEFIrjGAZMU/kpctoW0IF
-IkYQyzqcAVf8OSUcsLWPDQ==
-sBLBUBbiI5dtLOx3QfU73g==
-zEjorFu49Y8JvWXjf72dysPMKJgsGEO6VilTqPBPTwuOHarJb84/ZiuotXhnlAWd
-iQ/I5DZ3VBeiciUJzeP40aTvNM06TjT0MwOIXpZuWs8E0l9pldEkZT2iJZSmERxQNXk87Yk7ztdthYbUqkTJwGXv0R9x2rlfHQd4tL/5aJQ=
-eZhTf5SXEdLdmXosbBYEMQ==
-MwpqjKU7s1dR6Vfoc3ly0Q==
-+cS8OqxBo3KwxGoo6MjTIQ==
-3sjm7w47BjD8sy8flsxPsdyNTEvnZYi9l4BoNs/79RA=
-zr+RwAYcIwSH3ea8e10RgAFBNvF8qBUTSI60/S22Dp6obV16C9tf2ct+aXrMSnFS
-RJyThD8HqbDvF0aU0K2KghvCiwKdCgi4sJ27F53cOpW1DfbNmAqZtdJDcm4gjJa2
-j1gYbTwbvhUaGKFnFqu4xEp+fhE1lc02KTLZ22J3Hc5HKHjJZ3CDh0gqPNKTACEC
-SIiNmjN0HWHO4zWQh0TQww==
-1xAwz5AfJJbuaiZo9QDEN8E65VR0W6soDCex9UgP/sI=
-hHtY2yVwvpUr60B6EhH1+IB8SzWjMONb2MNwGJNz23hS3mheYgwUvzD18HyMNhvr
-EogDaRBfeofIKfx5Y4dxBw==
-6Pll2gQk8iJAGDD7Sa9Wtg==
-1+TLyjOiXTwrokO/uimH5A==
-KYQlVqo+3mwkc3CEDk71FVplD8ZT2C56ZMjg/H8AwAbJ1KFZf25J6rr3ePsXIJoAl/FG2xu+bX1eGROWacoaSA==
-lruzUAN+5/PA13SqXQNpB+aAKNmyzYHg4ungqyn+IqKD3lc75nSf8YJ9Jdf88XnW
-EU6817jal92NT6wxBkr1Dvlo0IZbKFoOrhkTl3tS2JAXlA0dxV6yiBSZf/OOn0ua
-JGPgkXvj4W13XoZcHzu93TliyDU/EgnPmmwzz3MAhpE=
-klCbW3DpuIAhYO72+iUR4ZX7LaIXE32qcbuwwyj1862/WsAEEEUR2pYwio5rGRfP
-Jj9NtavyEfEyk+prp/Qo92nc5nWWJK+QqusC01xnhf0=
-9vzla25iPmVgJnrHvZ/1o7coWu1rH8VPvO01FcOVbJ/S5EWqg91wfGkCR+K0AMqI
-W3vSzTV0OJAihLE8pH8FxnQBxfcK7Gsn2uPbWxxu3dg=
-U80jpy6CD4CRFMg2c5k2dg==
-6ww7lQPWAMwa4RTf3fRNKJ99RAXhsFktJr6BfbOZCTU=
-/TLv2mulfg5lAzEyXDg4Nw==
-4lQ+bMP51qiA8bBw7SWnU5o2DqFLBa/6NHsz1pRri6188Un827Z7kVmTIG3L91UX
-RypYhq2B/2UTRgye8TmvFg==
-uARUgiuHstuAETlkomwEzQ==
-d+YMhdGt6SUFJq6893/slTAW9zBqU/geav7qTlgG7+q6ATbfusTKRyVs6+VMKe4X
-5+ZMLx2cBJDwdW1vsoNkgMsoT7agkvzoptY2X1k+mKQ=
-JYrX65EenucVbHB6puc7MwWnmhpG6RpfbW7/0vi6XsY=
-RL7/1eQ/pZALVOj3CDizVwunx2cQ1rRNMrkJry7sUqk=
-d4Cb+PoystyVvgVAkkjw0w==
-YBO2QQrYAJRS0plqLms6QqGvsYCgiNUQp6Fu9oNpzBE=
-k2aVFq9jdGEqxx/SkshQQg==
-PbwUrRqK0YTHTSZtbQkcD8oV9Ks5suQA5heOI7l2ukR76yP5Wn8QhWchaQsO0AEX
-p7Eofw7i+j7X4+8qIEctGw==
-oBeloedpLsXIrBmSupNOpg==
-WCMIHk1NrO1jliyTK+qEdrNZPac23tbHmBpYPHGyY39EjmVklpEm0d15A7DakinL
-+1cpX4ox4Q0RdetaFoIhni/cdksxgm9QKyTS8v5IoX4ly9KX13J/CtlTWS2u3lbT
-SOfMRYUCbNbQdUeNmm6Agg==
-35C76RbOxJ28sjzE68JWPQ==
-pgGep+2OvXne/f5K31zCQqyDfYhHwEQYfCVrVdlja48=
-Zk2a8X3K7o+Fx3z/MEHzYzIqkGGe5XCFTDxCYoAT83gHAHiNgUDbI5d1CFlBkqG+
-s1szAgHhh38zy6qBGdBqHQ==
+combatControlsButton = nil
+combatControlsWindow = nil
+fightOffensiveBox = nil
+fightBalancedBox = nil
+fightDefensiveBox = nil
+chaseModeButton = nil
+safeFightButton = nil
+fightModeRadioGroup = nil
+pvpModeRadioGroup = nil
+
+function init()
+  combatControlsButton = modules.client_topmenu.addRightGameToggleButton('combatControlsButton', 
+    tr('Combat Controls'), '/images/topbuttons/combatcontrols', toggle)
+  combatControlsButton:setOn(true)
+  combatControlsWindow = g_ui.loadUI('combatcontrols', modules.game_interface.getRightPanel())
+  combatControlsWindow:disableResize()
+
+  fightOffensiveBox = combatControlsWindow:recursiveGetChildById('fightOffensiveBox')
+  fightBalancedBox = combatControlsWindow:recursiveGetChildById('fightBalancedBox')
+  fightDefensiveBox = combatControlsWindow:recursiveGetChildById('fightDefensiveBox')
+
+  chaseModeButton = combatControlsWindow:recursiveGetChildById('chaseModeBox')
+  safeFightButton = combatControlsWindow:recursiveGetChildById('safeFightBox')
+
+  fightModeRadioGroup = UIRadioGroup.create()
+  fightModeRadioGroup:addWidget(fightOffensiveBox)
+  fightModeRadioGroup:addWidget(fightBalancedBox)
+  fightModeRadioGroup:addWidget(fightDefensiveBox)
+
+  connect(fightModeRadioGroup, { onSelectionChange = onSetFightMode })
+  connect(chaseModeButton, { onCheckChange = onSetChaseMode })
+  connect(safeFightButton, { onCheckChange = onSetSafeFight })
+  connect(g_game, {
+    onGameStart = online,
+    onGameEnd = offline,
+    onFightModeChange = updateFightMode,
+    onChaseModeChange = updateChaseMode,
+    onSafeFightChange = updatePvpMode,
+    onWalk = check,
+    onAutoWalk = check
+  })
+
+  connect(LocalPlayer, { onOutfitChange = onOutfitChange })
+
+  if g_game.isOnline() then
+    online()
+  end
+
+  combatControlsWindow:setup()
+end
+
+function terminate()
+  if g_game.isOnline() then
+    offline()
+  end
+
+  fightModeRadioGroup:destroy()
+  pvpModeRadioGroup:destroy()
+  combatControlsWindow:destroy()
+  combatControlsButton:destroy()
+
+  disconnect(g_game, {
+    onGameStart = online,
+    onGameEnd = offline,
+    onFightModeChange = updateFightMode,
+    onChaseModeChange = updateChaseMode,
+    onSafeFightChange = updatePvpMode,
+    onWalk = check,
+    onAutoWalk = check
+  })
+
+  disconnect(LocalPlayer, { onOutfitChange = onOutfitChange })
+end
+
+function updateFightMode()
+  local fightMode = g_game.getFightMode()
+  if fightMode == FightOffensive then
+    fightModeRadioGroup:selectWidget(fightOffensiveBox)
+  elseif fightMode == FightBalanced then
+    fightModeRadioGroup:selectWidget(fightBalancedBox)
+  else
+    fightModeRadioGroup:selectWidget(fightDefensiveBox)
+  end
+end
+
+function updateChaseMode()
+  local chaseMode = g_game.getChaseMode()
+  chaseModeButton:setChecked(chaseMode == ChaseOpponent)
+end
+
+function updatePvpMode()
+  local safeFight = g_game.isSafeFight()
+  safeFightButton:setChecked(not safeFight)
+end
+
+function check()
+  if modules.client_options.getOption('autoChaseOverride') then
+    if g_game.isAttacking() and g_game.getChaseMode() == ChaseOpponent then
+      g_game.setChaseMode(DontChase)
+    end
+  end
+end
+
+function online()
+  local player = g_game.getLocalPlayer()
+  if player then
+    local char = g_game.getCharacterName()
+
+    local lastCombatControls = g_settings.getNode('LastCombatControls')
+
+    if not table.empty(lastCombatControls) then
+      if lastCombatControls[char] then
+        g_game.setFightMode(lastCombatControls[char].fightMode)
+        g_game.setChaseMode(lastCombatControls[char].chaseMode)
+        g_game.setSafeFight(lastCombatControls[char].safeFight)
+      end
+    end
+
+  combatControlsWindow:setHeight(combatControlsWindow.simpleControlsHeight)
+  end
+
+  updateFightMode()
+  updateChaseMode()
+  updatePvpMode()
+end
+
+function offline()
+  local lastCombatControls = g_settings.getNode('LastCombatControls')
+  if not lastCombatControls then
+    lastCombatControls = {}
+  end
+
+  local player = g_game.getLocalPlayer()
+  if player then
+    local char = g_game.getCharacterName()
+    lastCombatControls[char] = {
+      fightMode = g_game.getFightMode(),
+      chaseMode = g_game.getChaseMode(),
+      safeFight = g_game.isSafeFight()
+    }
+
+    -- save last combat control settings
+    g_settings.setNode('LastCombatControls', lastCombatControls)
+  end
+end
+
+function toggle()
+  if combatControlsButton:isOn() then
+    combatControlsWindow:close()
+    combatControlsButton:setOn(false)
+  else
+    combatControlsWindow:open()
+    combatControlsButton:setOn(true)
+  end
+end
+
+function onSetFightMode(self, selectedFightButton)
+  if selectedFightButton == nil then return end
+  local buttonId = selectedFightButton:getId()
+  local fightMode
+  if buttonId == 'fightOffensiveBox' then
+    fightMode = FightOffensive
+  elseif buttonId == 'fightBalancedBox' then
+    fightMode = FightBalanced
+  else
+    fightMode = FightDefensive
+  end
+  g_game.setFightMode(fightMode)
+end
+
+function onSetChaseMode(self, checked)
+  local chaseMode
+  if checked then
+    chaseMode = ChaseOpponent
+  else
+    chaseMode = DontChase
+  end
+  g_game.setChaseMode(chaseMode)
+end
+
+function onSetSafeFight(self, checked)
+  g_game.setSafeFight(not checked)
+end
+
+function onMiniWindowClose()
+  combatControlsButton:setOn(false)
+end

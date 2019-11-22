@@ -1,36 +1,36 @@
-n+JvUrOxIM2w5XQrk3QLCQ==
-EDTxWg32BlBLXrpZdwsZHyAQaqvaQ7mMSsS5tWXxNgmS4KMgs95m1cosfmsEMGwCX+TrEO52VpPTsFNV4jj2wQ==
-qpsAOkEl8M6zTNnCRAAFGBMsUW+ZN4y57X9qVJUThVi/SwDZ5MJ4xb65okqngOjC
-OHaUBxeHewwwvjbUGy9ilbNevN3wanzE7nvPk2z5bew25F+Yiv3bwagXGlXeT9ivYiioHQWKM1tdD2OxGE39k7gznNXnm1xlrGZj85mbu4o=
-jGarbxi8pxgim9eMW6L3Jg/itZSMPJ5iFrN7Zf3VnWnrtQ4xU/4BbxMY5UrDaC0o
-flI9JZkvra1CmFr2pnJctcU8leuzV3wBonlqO5SvZv4=
-QWmVZhoJ56ipIXOeywZXOQ==
-V4LepOJ69WDiyDU5MD2dq794h5591qxs5FAO05No+nTQ9SeD4fCajDd0wMRXCWd4
-8IwAOcabpNEznS440JhP0qgZwQVWkjVEYWEIu3a0K7TeCQXRFvDRbZG4sVd+hn5l
-LoWyOHfBcK0qdk3CIpgmvoJBFlLc5IBeLjjh1U4+ifQ=
-wqYH+GaOBTULk8Q1z7OeYyJqfZ9bSLrLgq9qQ/tBnJiQjs4X4v5Vy3I8D7Swqhio7tR9Riq9WmJ2x8TNsZ4Vsp2TLIF5zbTzjZLwxn7EvSbNJbY3bVSe5fwXyTUo1Csk
-veT/jjXvl+nL0XtBuHilJ/mLsoW5wKwev1lyz6h0RUw=
-VXJ40kx6t3VcXFKGeeOMUinotfieGcZYjkKCCGLDxZzbaWHVCQKRlnHEhGPx3QbE
-oRp5UVT68Xb1eI+Dby6xpAkoAw91pxBoBM0E/IDbDDk=
-zzfbMH9hpB/7HsWTSJcuug==
-gTufBDtI4vSx2lUem0vc/w==
-mPMyJ6dua4HuAjCZzFaxDQ==
-3ho37kOdpy17AG/nIpE3VA==
-betXQLMqtReKjhx9fCMPM8sBABY5q+ydsrng4G9JFjp3EhPsJFN0GBTZIJHcBGqasqWHsy4m9RLyEt5S+IjWrQ==
-RxvhSwb0R7RLIjNCDafcZHNaWKCmTRim9IY2DHJc9sEf+4LHQ57qFhnIWXkuI1omcOlGtjqxL/QfhUE+6pRS7Yt3gQteY0R9JVXNqmzIq2Q=
-/9XBTEu92jRUAOj4XxYjPWYWWAUDQuIxyp475tAiO8Y=
-5Ch8zNCId8Z6aUrmAwWOz7IqqdcLEV6yIxjDuv2XTtOqqODDJ2YrWc2yrRmupoCk
-cNB2EixD9D/ikT7cF6yekiZF9Z/Q4QQPgGEEdgCPJI8=
-tMUY/Fm0v6sAMlIARdmpfw==
-bdSqr/4B/mPGIPSvcyeyfA==
-INXaPNdk7t8D1XA06DY6zg==
-ZsSjSq2FKJCL7lHtVPfk9Q==
-676Jm8xAOuRp7qDbAoN953g+61gz3RhMMAS9Iv3uRW3gqU8RGvsKtRwE01HocmaCEg2yMu0LCiYir+j7rP6/CQ==
-/xakBeIkAW82hqeP/F13d8dJJQL/al/+ztF3Ps4npDyKXfhBzhJlT/8Ki/EJZ6XC/yJXHhtoQVHm94rpe6r/I1wpp/1OtWvGj66cxMraPj0=
-R9MkFGRVTiclL3fEy9PGaxCM8ECNU2m2AJYVlJWVv1zVOJd7pz1F4aWnWb/0ebvr
-Rc5uaDS5hMANan17FLhpq0BiS6inSLgqT3jYajn0G39vPVxDY0L8IGMWbs/1PwvU
-IdPcJ/7ANoUMIizTZd/hHfiaGtw+pivfukPW05p0slA=
-IWQKTUj0+5xSYnFFHay4uA==
-E+wTimyTGhelQbswVzBQBANuSYjvfq2HZnIkA6s+zhI=
-YpYynpO07EzCFW8L1eor+w==
-2FFM9MSH1FKCPFrmTs/eiA==
+-- @docclass
+function g_mouse.bindAutoPress(widget, callback, delay, button)
+  local button = button or MouseLeftButton
+  connect(widget, { onMousePress = function(widget, mousePos, mouseButton)
+    if mouseButton ~= button then
+      return false
+    end
+    local startTime = g_clock.millis()
+    callback(widget, mousePos, mouseButton, 0)
+    periodicalEvent(function()
+      callback(widget, g_window.getMousePosition(), mouseButton, g_clock.millis() - startTime)
+    end, function()
+      return g_mouse.isPressed(mouseButton)
+    end, 30, delay)
+    return true
+  end })
+end
+
+function g_mouse.bindPressMove(widget, callback)
+  connect(widget, { onMouseMove = function(widget, mousePos, mouseMoved)
+    if widget:isPressed() then
+      callback(mousePos, mouseMoved)
+      return true
+    end
+  end })
+end
+
+function g_mouse.bindPress(widget, callback, button)
+  connect(widget, { onMousePress = function(widget, mousePos, mouseButton)
+    if not button or button == mouseButton then
+      callback(mousePos, mouseButton)
+      return true
+    end
+    return false
+  end })
+end

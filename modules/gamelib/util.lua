@@ -1,11 +1,11 @@
-5iYfhX5mgOF5nUNDGBiJRNmKetpOf7bQXBP73d3yowM=
-ndOvcya0x22Q4J0eoTM+HhuYy2AW9/hSt8jCXPRETxIbmbMBo3WTns0L8vV506J/
-H3qjkzlSPhCVmYjVZIWw8g==
-Rswp5tMh8Zdm2YM7lp0pZw==
-B6DBplYNiJpu0P/OoYMtgoPfHJuOU1vzWO6Qovox8s0=
-WeRDVjqjnFxhwsElf5KBB5V93UCSrNF9LpaeS8RQRLRoXDDkcBp9W3gLWbKgfhxN
-zxwhIX5TQ/IRTs7GoEhyWYu0wWJObIJAuoYieDw/9vg=
-WBnaZMq/CMP89q9dmKg2vg==
-AgEg0hkbNGDwfg2euKhu4A==
-pNXHpwo21Q5T0Lyipz8VfA==
-hHZp13C5OrA0AUYS4MmvBA==
+function postostring(pos)
+  return pos.x .. " " .. pos.y .. " " .. pos.z
+end
+
+function dirtostring(dir)
+  for k,v in pairs(Directions) do
+    if v == dir then
+      return k
+    end
+  end
+end

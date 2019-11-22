@@ -1,59 +1,59 @@
-6p5liaiQrqFyEb7Bef1+k068WgIkRnFdoOiV2bZEFRA=
-pcp4zPPd77oYljepnvw5Wlt2uxmNZBlhzfTqzTtYecc=
-U/9AxdKNh9PKo92GXBsvlA==
-E25u4d9J7mhaNWo3TyNhNNVkYRCOuLJilESj7EzZC5JZeNJjO1m2HGhDbKFepRp6
-9FaS50Dn0/CrVFgvpuQsW7+rVMRoKABBxmtRw4zq2vp1gE2wKGjdlRQzZWvGMrV+
-0a/JRtPPN34MrNi1rHUFYP5WAY7FgB6JcmeLjW7n1QE=
-0mgTX3LDSwYQE7lsBiT1Gtb2t+8+n+EqMTB7TTBNTD4=
-96jLR2utSzQ3x5uTha9ACX83ITBArIx6j9uwjVmZ/wk=
-WFrumySP3xbxROqU/q4lXQ==
-TJVa4rvHdKNgFaT7yned8Q==
-9XE7tYcejDtFRz4n4vR84A==
-T+PBXPbMmd5YK3QCne62dg==
-JmL+dlXDNYR1gYyV225DmA==
-0E3GoYzXtsiLkvYFtkLJvVLDAsGouw3CUozxpeaVk93HJKAKm2TJiuzUyp5i70MMv+7xE+3cHm3uDsi26psTVg==
-Hv/X6Hc3rEZdUv2f6FSM4Y9/JOVCGs5kPvQ1t5vPyG4ArbVqoYz7e8atEV/Trv34
-p1RJ09+UgIdnBz133qCVdcdEtLkutOyLpk7tUInthDk=
-Zp6UFee/1/KP1lEV00stHwM29Onb7kkrcc8A4ZJVUL0Gyl3R6ic4uqrg/oQCF4lD
-3xPNgXA7HHcmFQJEs88YBA==
-85wamJKkbvfANtM0g1AQwQ==
-YeL6+XE+Wp44xmhbD9kIuQ==
-z1Y9J0mIrKPMt2O0kLFF/E2VLbLGvKYZX8C70MGzL7hgFK7qCGQE7Oqon3w0CamliiA52lxv+dOXAeLOk7ZnPA==
-tB12WeZmiXoEp4XBIyjm8lWjXnS/lcIh+dAboLWoy1GI9DDu2De46NUnFHGXYI69
-TV75FZBD/Ozr1xs3gOTPbVrh6j+Fv+D18p8yYYaOhoTFvylGPaVhzruZyGRxo44Y4d04M7w6RPFZHuCYV+hl11jePcnENROWeL2ONWl6l6Q=
-DhGm5cXrRAYW2dDUirJYoA==
-hbhX5MMX8rbmC7jKDUgQVQ==
-XRES+5z7nA4InkEfhuXecy27WnsIGDwaaH286idSbODluYyuC1jXKHeqW3AZU2Qv
-Tfq/thn+Tos9KhoFnC2Mxw==
-r9JrxiffM8VTLxCFbehNGQ==
-xAt6uPHKPJPxcz4ABDUKn/VAZZwtXMBS56l2MwUGt4xqmIdmEtl+m7OVnv0Vg0+1
-PQ9k1RZD7ID7c+BkS8+b6yvPLyZAa9wtEM5O420Q/zE=
-wHZt7paPN/Bo/HqjayDLkg==
-13tdqmJXtUAL0pImh8ujbg==
-MhJWd5mcNlL1Iit6StgnIK8XXwEmhJ6z31MUZEhBdFRz6TqdP3MPbjD6T1lw7LjzAdTkWU7/M+DedBKtY6WQ8w==
-0XmhoSZzRdqH1wNS+M6HIPlaKn0DKUZThBWKp9onHbQosVIzOTzS2nhVMr+95lPEwbRT7qRatP3YwQi9BrQr5Q==
-yBn48XyInusY4eS9E/94Ay/RTRk0jKOXHkiAwYLPTB8=
-tZMHRUKSPsCRHICs4LF6ZQ==
-YDTrkRarK8nkZV+ODszuhg==
-69RUOsk3dGk9HvCwhyMs1xsdFL4h+17r1TOu4xMWl6fE1C3JhqVrxP+GwnQpfnMt
-8UuIUrHnulBOvsZgCW6qq9MhX4BzU6pW86KBuAYkk+vXn1FdtAlaSW+JUI4cvHgm
-cLrsPYfEyEvG/xkv34TZHQ==
-7HTxfhV87CSRz3DXGpVH1g==
-FT4VmpsdcZYAAUKEZOc68DtyStG+kn9f1Tfjj88sMGhqa43lsrq7z+owewu/0rAi
-UO3GFjg3ntiHRQ4RIwZvIDZyfStfQAlyG/OASbCHgwFgBsHvku401BbEiCcXP7iv
-3Mq0hQg5GVZCRUsKJTD+cw==
-Uv/fi8r2qxFA66/FDl/JGw==
-i9AoDLIGF6/EvZKhqIJLGU+Xbb7IkJu51S63MNvWSCXloFquxAh8veCSv6408E+p
-ebsj5N3UXVGsAEgkwMW94A==
-p6y7DQcsvkAt3V7jSk6m7A==
-+U9f2rGILPc7YM1gXh1YIocmdkkI3sg86r4/2mPjDW+OoA39ZBsmKi+LWAbHfGJxTmOwB34Jy63ejc+TChz6nQ==
-4pmFLr+Ais1LK1hVS1lVRIfj6ovLsPOpWh5a0GORGmbGV6Xx9aW0jyy2LFUD3eeZ
-v+3Z7xC+Ydd4REVwFPBWNki/0AwKwQbGrzMq+E3BaPY5nkTwu8CkNYFFUuByMWgW
-WF9G21ytTeog4vPGu6CPJQ==
-IgFMNKZFEoF3MzN0o7OnZA==
-1xPo2OQM24yHxTu/xR/xR55sqCg1sCd42OX8Bd7hZaXqacCHVdUbSp9EDAKYUyOI
-TASpEIR4mKvat0RKdDzGitFe0pCOy5G2/TYbobPEmPAWhs8h49qRH3cADG5ZnpYa
-J0qtySdxseVk08OBb5ypSg==
-6ccNFV/9UFwanOT8lwLOfA==
-3LMBRDA3wiM9j6KmknoDZj13SysNSXNsID+oyXzpvF++XsQ4bHT4vvkWcL/pLmvZ
-J+lubelV3TVU7Wx8TXh6pQ==
+local opcodeCallbacks = {}
+local extendedCallbacks = {}
+
+function ProtocolGame:onOpcode(opcode, msg)
+  for i, callback in pairs(opcodeCallbacks) do
+    if i == opcode then
+      callback(self, msg)
+      return true
+    end
+  end
+  return false
+end
+
+function ProtocolGame:onExtendedOpcode(opcode, buffer)
+  local callback = extendedCallbacks[opcode]
+  if callback then
+    callback(self, opcode, buffer)
+  end
+end
+
+function ProtocolGame.registerOpcode(opcode, callback)
+  if opcodeCallbacks[opcode] then
+    error('opcode ' .. opcode .. ' already registered will be overriden')
+  end
+
+  opcodeCallbacks[opcode] = callback
+end
+
+function ProtocolGame.unregisterOpcode(opcode)
+  opcodeCallbacks[opcode] = nil
+end
+
+function ProtocolGame.registerExtendedOpcode(opcode, callback)
+  if not callback or type(callback) ~= 'function' then
+    error('Invalid callback.')
+  end
+
+  if opcode < 0 or opcode > 255 then
+    error('Invalid opcode. Range: 0-255')
+  end
+
+  if extendedCallbacks[opcode] then
+    error('Opcode is already taken.')
+  end
+
+  extendedCallbacks[opcode] = callback
+end
+
+function ProtocolGame.unregisterExtendedOpcode(opcode)
+  if opcode < 0 or opcode > 255 then
+    error('Invalid opcode. Range: 0-255')
+  end
+
+  if not extendedCallbacks[opcode] then
+    error('Opcode is not registered.')
+  end
+
+  extendedCallbacks[opcode] = nil
+end

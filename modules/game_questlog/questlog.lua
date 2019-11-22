@@ -1,88 +1,88 @@
-T3njwODo47l0HXdyhYNgHo9wmDoybsAEyP9K3J9Vugk=
-Ts1/DOHkp/VuDwBZKmYfGwPKpWgr502npKgkJFBnGNY=
-Kh+9Cu1UsARd0nJtZTqH4Q==
-22avZ7HQpw4aYswTz3d93A==
-3oFfv+nTuTHSJdPQNYHpMoHfXETmaJjgvEczrKkbs77tKCn9dr2e9JCU1Lj1Xeqx
-W5bDGklmauB8HyCH0n2ojIDuymiKJSW8Qfzs9p/nqThJNonbvYCUOQSiho2zbacU
-/Fwb8h/4H1RJz9xndNDRwg==
-U5A0eOQgQy6/E+l1ZKbqUyHIbfUyID3CU8TSJCK/Io/OYeNJn4umdAfLHsTfyPpqbi7+YLvgmCEfP2qIWMOOTYm0/XyS0lS11/iij52/NUA7NmvG8zXHwIfQQ6s5AQsiwWw1sIV0SMERaul1UaSiS3mrzcl4yxGNub0QISFyDvmeFoKzyBIIpnvshkvigUmpP0Z7tvH+AAcKSoX4pD8wXtmCQA84NczQBts3yHK+RAg=
-Ts3pg5J5iqQDGn46eVj/Zw==
-Fg/Ln2U3oDJKb6TJL+L2DOJGsQ8JniUJZ+HcvkvbCYr/JoJN/93ncn3jXmB8ED8YiMf7Ii7JFfDKFtgJjTCiEQ==
-Wo/75SjKKLRC+W152wt9oyBPuMmN8CmiPyDHv73J6DITojqrCoy6Mk3K3WTuPyT+/b8KXVIfZdba/6kwvRHnmw==
-SvjkRqZLwcj35t2isNd2E2Hmqca2BJdul0A2FxC0tnuDTFHs+ylPqr1VtVTQxlH3/89YwCzIO5u5OurbBGuHYA==
-iheeHUrOVFZFFYpUnoMwvw==
-i+anF/t34FMK9ORTslEXHQ==
-6v57py90Q1QDkQrb4YdgC70xKGuI4LiHzv4mnpS9t6o=
-nF/rUKZP9lIeWIoff0TsGaLla+yiOdsFWN2ujowlCHUVaXpsyotwQc8d5hexssehl+naMviqXDNEMaTHEFT8nQ==
-spsH1gD2CBbIGBHcUWk6/Zm0PAJDHxpaM2dyBkBX+LDK24Pu/f9AebnoQ32aHfXbBT1N6Wg1TAssb83aAr4iVA==
-yrYOKxyxUBnDOhYATe3Rr0LAuB30snV/0N79lVq7hHSO6QYye8FdMqtWz0nxPgzaB6oEj51NfI8gHlj43Et9Dw==
-m4264bI23r2+NzC74P4Btw==
-JvHWhohiuL9Yd2kdbzPnIK7RdQXGalQH2CLBmid3Pqs=
-HYsj7qYn/mc8BT202i3FOHAlS52C6WuwJbnFAHdxkqs=
-rGuI786kwtk1nPhTNUOWQw==
-ecuTE9Us+gYbR3StyJzguQ==
-FZHHqgLnjQbrnoPx3Brmb8xHzQj1ZoHHwJRwktNb6Hk=
-8QTuVS2kZwMbIF/d1Fxgm/X8OHeJHStr2F/sCXgdlCY=
-4Rbl6fFLtMLOO6fGDJskeC7J5uRDkKxIP9cvsF+vxC8=
-841LjjEiy0Vonp7S+eg2eg==
-KbFFDYeYOm2t88NSXRu6dw==
-ITUpwcISl17WX6X9eV3iYdtqgSX7ZnYujznQdfPHeBI=
-leamM+HZTfQJW8G+I2YeZ9ze7ah9NFhUCrA74tze/b8=
-sbBORhohHZCmwPg4EvdZhw==
-A12xfwnaBLxX62825cF3kw==
-qn+JGnxfpmakjP9lmbFf3Q==
-QEMkDdYgmVyB+lQK/TaTNn7pDcV6YWbjUFXw4PAgJ9w=
-ncnGxnkGU9nEoZ6z18kN7EToJTdwaOf6NaMR1hsvzek=
-3APgM4/+JOQL75jE1BV21w==
-b4EhcDq4AauqQVNdCXIpO1gITkGe9NAnnV4TxJF2c2zaDg7sAr+fB0CYI6MwZTFBZT1+w4SahU2os664OwNj7pIPIcOaN6JfWr0v0PI4q2U=
-vAa7Z51BBgNv5hH0KBpxcuoTNQ2YrklN8i5lSKPn/j8TVlDmPB6N6zYt7PArrvJth+S/ekhVmak2DWujO1mE5A==
-mneSU6SyWeO56Jpa+T5gEg==
-QIfdyKTyX++Q6iV3UBjYbSd2C1vUfNN16eZXlls8jH/boXa6+sxwLD3c+Xu4nbdJ
-9AhkHjsn1hdaTC0XayIKXvyoU1/STQ71OO9b/4/CN6d3Fs72Xwww2/jOXB2npQa/tqeHJ3hgyZSRTqE1y0YY0g==
-Ux69SeMsQTlYJWAq1P6AsQ==
-fJnsKRhNYtitxZul6JJkzErnwcPoSQZlvONkH7sh06ZfOKPiSGjzTm9fDdaO/CVpXf84vd4LByb6I8N2gZcosnr09S3qRDBuFrLcTVHRcM4=
-VFTZyxOUlV8wgDjQaRC3ymrdXHbxENsp0anOBKK8DdU=
-R6vjAjbcR2JSf2VBUpjMeDyiJAp52T6/cEe5bwjp2eM=
-K2bubkMHmVymuYJHT4pTSMXyGmQoxN5NV89yiiUopK5eUNvtunyWkC2fwHQArA3U
-dsKbgfZ3zHoqLemTzDZG42ACqUaqFqWer2/BvMksoHI=
-Yan45aKEjha8Nz4SfP/GGFhFb0hL9XeGrWrJOjEngrgTEpuXely9ADWANVbwjg33
-c1hZrzQbflCRFyOkv7kvFQ==
-BYdkbwYU3wwd2+93psV4gQ==
-2aUpSk0t1SzKAMZMc7iGgQ==
-4Va/d6eGXOC7nu9NFtsWtW6z0EamDm5uhccvqDKMqs/bts27Zj0zdjouUpBB3DY+
-tCal8u4o/2HIoVA922ynf+CVlkX932rKb8WajsfJDh4=
-Q70eMAS4ZHa5WBqNxlEguA==
-sbgQFlgNEeGf5XZpyVYyLw==
-6wk4Gg6m1ddNN3PLu8yw73AlnZ6AaaqPUhkXtfy6/gNZryZLE8gLf0mtRDadBI/Avese5xlWes+vO3zf8aSpzg==
-2hHsVOHKvV0rVI5kXPz6KQ==
-ZiILLkeSahfUBwBKZCfJEw==
-YB3/WshRLIGx2qJfLtcTaBNTGGu++3aQReH2ZU44TmBRpw8Y9+TQCjb6aLIK1K/9gqZXdNzN1RN0Wn21lug0yw==
-U82yKCOnI9LM3kzOhogbHsAqlTklLiDLxX6uDi+hTHyFDfgXKEvf0zYpK3/Cf+Dt7z331yXE206T53otWrpQrA==
-CPP79DWDJFeMcImZfn801PMaY0JjNNcOpyH69er3R80CS7q767gb2zcSQQ0Bi8KfIRjU+LbuJZjq51dAbw+RCw==
-eXuZy7dBrJzsfNOkq1KbDQ==
-gVXBB73Fs20xI+QjKRXJFL45MzrkEcxBg718uhUn+HPcCbO9v1zEbxoNtz9MD67iwZhyKG2JcEcrHplA51wkmDQGtcD7S+ODRpL4vlEHP6Y=
-gF8X8TXWO2bW25Pt9uYEnHzNe/e632Li9mMv9RNFXhtvW/UbzpDxt1BCb0rUAIiHYPCrOkJDHtZMcx9d9RGMqfO1xQCWBz0sAUU/4m2/Olg=
-qugvhdlP1w8sqBBkTcpVn0S0siB0OPvhiLxORRa7/A8kjPdzfYBTIQfnxA4VoS1g3tWHSjWIn2wVLkDPld7/lq86ORMLc7dcWnT9irArQ+8=
-oxDitwJd+2UFss5pg0Il+Q==
-WOOgtMLTMnJ20lbkDBAdtj7VEB/fM2zeaSWUtwz233uFqRvxeR9RvDypc05oLxEOUFbGKKiMu0HJ4l6irOE3CEcJf8rfkXhvzdn+ShLew+k=
-/kYGI68OttN9kbISh9UNXAKr11vZcvnF3ihKoAFhBc4XDdAEs2BwltgD6xvMcjhm
-uz91ZvWey9YP9kH996ZHvMY8NVgHKHMwj2cse0lF063ZgyZrpYfnnFasoNXFG7srcQJ5+9s+S56Dp5rYLg5OZw==
-kAqsZIuyx7TjzL31TAShpg==
-k5uOfL85Cewb48xc9+EpFQ==
-pBiYE/8KGsnXiXSltHvi6IbSRf0QYO0Otz7GCINkgElLyU0jGeiEQY09l6IBAUvh
-XU5ZoICAVd2VZ4ZWcBiS3l0RAA8kCAaBGDAhu+EsOb+OdBYPPnQwu/ctE9O9i0BcnN67JqUoUI7qLh9j9TsmKA==
-8E4DowD01Yj/IxtDCmcH0Q==
-BQYiFBpjePdlQR8LB8omAu6RxhgoClVEjDEeXgYnTrGe3CRyciAIn6jMJUZOmb4gKScLwpi7Cn81fvU7X3r7Ew==
-mnJuptivkuLnSpeJy2k9RMaiqBZ8Al7/7VgMSJXhbpo=
-tymC3e8CBHyyHe25DbLZSDnaEDblF66Zo/ZOSnhqnhBy4f/EB2XKMa+thtKv8dzo
-pxSKSLllJLn64ohkgpqpy+0OmkgxPUoOhG288hws4H9yVRAZTLXY9iixDltxgDR7
-A16tUoDEHzmG82TjFt3g2Q==
-hlRiyWlYFEgcqkEG+SkNEQ==
-iNbM0QG9IOh1fydjlvCPpl4SHBGqawrwk6NKjFZC+nxKMtwwTPqg6JWpEEaHb/lQ
-VNbI6RAfuMA+Y21gDUmmIawAoXF5jILaxnC5LXWbx+EhXS9RjYWT8wsuomE7yyCJspHPKtfyDks7zIEAv/OjoA==
-nuPCHC91Sb3xijqwq04uoDpuvX1efZLRYJ9/miGuqP0=
-lo8dIJYaZQm5cIfsTpuwTA==
-llx/aqYrS7JUy/fiFfvDSg==
-nHAcwydx4Xg54/pESdnhfVSm8oOBKkd4jvlZDfO7wmg8ZawDI8p2e4bmNMY9A/rgIpTEYRd0iPrYGUSGRt1CEw==
-2XcsF4YOtzR1C53pmIokLA==
-wz/dYRLefXUZ8SH7x30/og==
+questLogButton = nil
+questLineWindow = nil
+
+function init()
+  g_ui.importStyle('questlogwindow')
+  g_ui.importStyle('questlinewindow')
+
+  questLogButton = modules.client_topmenu.addLeftGameButton('questLogButton', tr('Quest Log'), '/images/topbuttons/questlog', function() g_game.requestQuestLog() end)
+
+  connect(g_game, { onQuestLog = onGameQuestLog,
+                    onQuestLine = onGameQuestLine,
+                    onGameEnd = destroyWindows})
+end
+
+function terminate()
+  disconnect(g_game, { onQuestLog = onGameQuestLog,
+                       onQuestLine = onGameQuestLine,
+                       onGameEnd = destroyWindows})
+
+  destroyWindows()
+  questLogButton:destroy()
+end
+
+function destroyWindows()
+  if questLogWindow then
+    questLogWindow:destroy()
+  end
+
+  if questLineWindow then
+    questLineWindow:destroy()
+  end
+end
+
+function onGameQuestLog(quests)
+  destroyWindows()
+
+  questLogWindow = g_ui.createWidget('QuestLogWindow', rootWidget)
+  local questList = questLogWindow:getChildById('questList')
+
+  for i,questEntry in pairs(quests) do
+    local id, name, completed = unpack(questEntry)
+
+    local questLabel = g_ui.createWidget('QuestLabel', questList)
+    questLabel:setOn(completed)
+    questLabel:setText(name)
+    questLabel.onDoubleClick = function()
+      questLogWindow:hide()
+      g_game.requestQuestLine(id)
+    end
+  end
+
+  questLogWindow.onDestroy = function()
+    questLogWindow = nil
+  end
+
+  questList:focusChild(questList:getFirstChild())
+end
+
+function onGameQuestLine(questId, questMissions)
+  if questLogWindow then questLogWindow:hide() end
+  if questLineWindow then questLineWindow:destroy() end
+
+  questLineWindow = g_ui.createWidget('QuestLineWindow', rootWidget)
+  local missionList = questLineWindow:getChildById('missionList')
+  local missionDescription = questLineWindow:getChildById('missionDescription')
+
+  connect(missionList, { onChildFocusChange = function(self, focusedChild)
+    if focusedChild == nil then return end
+    missionDescription:setText(focusedChild.description)
+  end })
+
+  for i,questMission in pairs(questMissions) do
+    local name, description = unpack(questMission)
+
+    local missionLabel = g_ui.createWidget('MissionLabel')
+    missionLabel:setText(name)
+    missionLabel.description = description
+    missionList:addChild(missionLabel)
+  end
+
+  questLineWindow.onDestroy = function()
+    if questLogWindow then questLogWindow:show() end
+    questLineWindow = nil
+  end
+
+  missionList:focusChild(missionList:getFirstChild())
+end
+

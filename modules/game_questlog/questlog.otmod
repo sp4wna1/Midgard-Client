@@ -1,9 +1,9 @@
-92gLUDUwzwa6qltXdfHwMQ==
-78aFJUw5oAeXDfIa5TatTcdZEBDWyoaTNWJ5uyJcrUg=
-YSO9Qnrvpl2V9l+m2GE0iujE8X2/vsgDONCE3VK9fsiSt1aQu+xMS/Bb9FVfAdap
-G6EXci9G3DofbGHek+e4hgJ+qPNCarQJ9Yv6X//7XXY=
-+U8JhBO2t6eb61f1M24Et29E/1oYQiMz+AV8SBUOvvzoW1CXxYc2RYBet1twGi6O
-RzbVcKk+ew414yUkjKIl9w8Q0H33U4ae9qQ76OizyXU=
-ChqulXYFNIv/1Ql5t8Pp/VrOCeYAzajxFXXg56x329g=
-ptOeoR3DkqPF1Yu53+JYTyWABCbSTQh4e9I4PWPJC4E=
-hibUz9ojNu80llyw2FoVStYZ/gz2y6WqAvderDw7X64=
+Module
+  name: game_questlog
+  description: View game quests status
+  author: edubart
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ questlog ]
+  @onLoad: init()
+  @onUnload: terminate()

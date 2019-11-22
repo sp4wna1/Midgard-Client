@@ -1,184 +1,184 @@
-A98gKzQNo3Gk+4iZOYrFdNKNtgfoFHZ3spY2YZoO9EE=
-UcV+1bC1lGENS3+U8Qbm0/iUElCpGZ5btC0LYy4VvX+Zx8er6k8Oh9ysJTWoVWBg
-2i9HUnPidawl1gDDeZ0hj+byOrEtlPKgGjCAU1lB53E=
-45dQhQ3Cb56Ktdk4cEe8owv6eBS4PRbp6bM0ev+afjo=
-SLdO/iYFcu3b1KDtohFE9A==
-3CwLK6CU1nNaZQJnrpXTS+1nkDs+ZjpjrxtRYIICFI8=
-zpPAbfJQxUPHN4UCoYeJ0g==
-vUOrEZWFmEstzsm8p8jHsQ==
-7WCvZEf1cHzlzuZS0rRpmw==
-FI+Bcw8k/1Ms0yhBD72JFw==
-2bm8BH4GO9bDErIHTET+JG/tIOvgqXJr1UnS37Cmd0Y=
-NsTy5APiJbA8SdQtgbN7G3Ek4v+n1C4l+h5zJo7lLUo=
-eM0DK2ALz4dKlMIw19/2zfnkjq5yXC8iP1/OYZa9G6Q=
-58nSYhGlrB+6EQsuPJGb3Q==
-zo19YiXDKh1f67ElwiAFUA==
-e0b7ME7tCaDxtOr2WU5Fyv4G05/gWY5tSeGpVD8BqJY=
-YS7RYhgbcgO72XESksN3Iw==
-dIg5TbJO5Y90tp6pgDcnejPqHKc/Hfu2ulA7T071Vu8=
-eNEzHMplkOYe46i7dA27Lg==
-Ms2O4sIc7Z2aqJALoEnOXg==
-zTjBuz2jd90gHg1BNY9kndlGWam+hl03xZ+Wo826iFw=
-WkmtSf5ThTE4qj6dHUfZKw==
-zoEuUOPH+z+zp2UWNl8knQ==
-QsX8TvKqqLeyuqFlG9y53RLloo5t0mDLWeWVNL57oHY=
-t3KJJscNQXCgex1GIod9wg==
-UpHAuWmN6WT2T6IfsgDSHw==
-DcSV8yym6WjTfC74k24aEA==
-KtgBLMmi6mujS6PqceVwMw==
-1d+Vqc6AIjQ9J3N6jPF7wHhVcvh/P1uoN2vo6ymD5lM=
-Fc0zdOIXkmf/dmC2WOxuTp0a1QSXfFxcL01jqXTUOvA=
-2Epu1u8kenCthJmi581zMw==
-HNL1+BGo0yIqRBLSfgmTR2GRb9/lyKWHFYkJ/jQthlI=
-wJgtC189SpTHJJ7KkM9VgQ==
-oQMzDSj10S5o4UKHtLrB+Q==
-NV7elwsrEhDC4ZkznN8qPg==
-pppyYzEwfotIEDpx3l4sDw==
-njiY5qy/pACspw0Ir7p+Eg==
-7c9vnGjnSwSgZPFoK//50A==
-8qJCM/9LpiievUXDfJJIcw==
-supI8aqRduB24YWwaRESCuzVbAFdU2DTFqy6cEhgP00=
-s4HAeiTqWAhJ1HQ3Tb4d/fKyw3lgTvSIzJYqJVYJjLY=
-nMetL8HukyC+TfnT2HhGTg==
-Ehx/tq5T4rWpYMW9JAjR2A==
-51664oMelgwzRC32qKUWx0QKmnbfS8INgyHvHYUGC8Q=
-s+fLPBEsqPFu9h92mxa44Q==
-6itMQBKwZECpfNX8F7dEJJxXPOJ23jhq724Ba7NhU+0=
-Icab60tm9yIijTOjIfoJPYVM9lWXC73OJWp2nVhzCoc=
-Ekfr3Byucmkz3mVcyXdrXrfX3LKDH5fP8j/uk6la4G4=
-l+RsSdRKBnkwnozHlzH1FJJ7YWXRt0dy49Jxo1O8epI=
-RZFHBxFXglVomF2e3L3Tfw==
-t2FiWYnbLYL5avVS4RoDag==
-4awxXkIrZu5s2f4F1gnga50y6hNVp8t729kS8fFevSnG3SeIHl7YhEgxiUxnrbw1
-rF9yPnr58axN7j+tarpMLr1i5Vr0ysd2jRWs5v1ISblp2KOpwfQHZY9URG+aFKB+
-3yeIgL6kOriT8jNkvbJFrA==
-BGnhD8eYkEexEQiGUPp9v/pZpTiB3IxJzsxbWk4tp1o=
-YwP0o8k0NTv2Aufd+Iw8ruZKn01lK+ItGcu9iRP8iFJDTcmhZKv34MxyBohw9NdiWWEYvGP1WglkESk/RnxbKg==
-8Z0FTQw+4GL7vidiXjB9d1VdchJyJHc9lbYF4pawTlGxfIqNuMDrhy0nFXj9R/qpOz8cTkht9X87jEvcoWFh7OKYXu8FkCvUnSWhUBuYL1fIeAv9snEOgNxb0O3rpM8A
-2YcsGUEkiLv4RU/YvaLLoAGf/OZzTX8s678O/99Y9Uu0rKjmejXEeTCgmBPF77PKIjZO4zqFk+YYY590NGFnJ+LEKuZOd0Fn9XeBkplemhu0dd7VIvVc1a6URhzNCm0q
-0HDf07KValNsrKsejYFdyBSGpnGaO7f1fdaq7TjnUu0quaEY7dp3RhPZ9Q1jGW9UjGZa358oGIvWZlQVkDRfb29b/qfsZwt7nrJWz3/B2E20j++cwNfdgpKcFnyX6fRK
-F8DdnM/Z7Dp7AAzXgaMEf+LGPYJnEHbu80j71mgxcdfCkVwonMhVsbiLV3vNrGUuLEFZAD1l0bpCpWajlXrEFbfRnAfWppoJxbicpiVPErTy3BGRUr8Kep/rCzeRn3bc
-ogO69iUCcZzZCy+ytvRVrcZukGiVyRY1g+7ktI510P4IHqs13rGP1fhH6CU99rGz9ir0HWdCqaZFeCO/2Ftk/n/B2mSzFZlEHUdFbsCxsXNphiWJ1ayu1ujy8HpTsCAI
-xH+dJoh9g+uB3iucS0Oevw==
-Ng/8xDEJrzPQvbGbduntZQ==
-/3IkY/SIr7IvCmZjIyRiCQYb5DRJnpCnzkoiSgU0Lo4=
-2iwJWHM4eVxHaTxHCwPQ2A==
-KBNvocexfIwb5td9cgmQloBgWID6nMXFGICP5rgPE9E=
-n2aznprkGJSBCjwF1FRUedric29v6kj79Fg6X2Q3beQ=
-slyoRTCxnHQ3dsQA5nwmgWdfsmYuxS1VqYDLSRoTk40=
-Vu6QJrjO25kyKRXN4yu7PUn/FL1B4/YSkR2QZ0arsM4=
-5fLC7QXiyfUf0BVX5aDhj26C7JLj0+/MYRbts0qfV1Y=
-+X6jjLEccpVbRGAMglYH0A==
-ClYLUKrD0G+ohqCmFTfEfIhZ9gWwGWBk6IkVq3CEUvU=
-vBCZfj3mFhUdrsJrqLN7Sg==
-Jzx4h4dbP0dmfQKYwwoGuQfg7/CbxLk2M6b5QLyrcto=
-UCKG5/tGG7uKfTtIx35IMU5VvT2F9+zZz9vKJLbvYAA=
-GiXOApG530lwyjUWxlPtoxQfm4zIClb8EEfYx3tjgdQ=
-vrdWgGAfQdSyodDBaiK8IaqhS+zy5Q5P8sR2BUHZlyY=
-WnW7mNmes8uIsfwdILreFYSHpu7f3DCpgKQcGFJeAJ0=
-Vsc/G3tY5BwTUZJOaVqXNIirTgi60LuCQbqFHv4kkPU=
-+wJ71QROtj0clMlHKzMRFdol+27kma/5n7vCDbF8BfA=
-OoUQADDMQfmYDMVmceJMSZ/DC4yKXumdvr2iPpNPAz8=
-JLHrywm8pllVr3pWiKPJ7gYNVHU1M1tvejuag1GaGOs=
-7VTwNDnnZNp9+tROeGuSvWbgCfhGYGB5DDgMYNrEJI8=
-3ZSloB9sMDP6Var1PoKWwMVh207HWeq42f/hu+JVLEI=
-xLx82ebws9eB9nJyLkRybfFlY4h4WbKbhGLu3MisKWM=
-8s9DQft6FTFPV8TTRYq+glEUs5BNcFtp8MFuVxm2ros=
-efkk2AuaKMBgRmSPDcSbz0xw4VIyb84kn+3CohpM33E=
-XNvT6GZZCsz0Wu1je2nkLcxM8nHJ4lcNcLiYXsLuSVQ=
-giQHzL8IgcJMb7gMT73ve08viWjNGlH8hcnGMKpY8d8=
-GhWalwpD7d9GGs1y676+Ng==
-+d8h9zqHe12K6zmo8cPtyQ==
-alrQcY0G+1tSy+go4CnXL6gT6actzGegNpQhXqusBdvl8zIiTVlWDyPJBv4Vf2Gg
-RweNONRquSNWt7z/CzqH67Ht/uYVS/TtmEy4nBT3jLI5yEy5CpUoFj2jKuv5+rE1WVsiW0jjI563CO57QSGDLw==
-A3gK06nsWNtnuUUT1equ5GjZYkU/ZnpM16JHQcVHH/R+J6jYxoTYw/7kcV/G1YKO
-/mf8MU1mQkjrgobxny+JVw==
-OE/4fiGWozf61JW39iSX4Q==
-qJmOPN07p4IMbXqL4xz3NQ==
-AB9cNOuUGheySI1YxCyCYmQi0sROSRcjk3XaKkr+HrTHxylrrGMNIGCStoR0ab0J
-7l2O6wVuTiZRPEzeCsHavBcgpf7yeDn0DXJre5sudkVBuOS0tlHCU8lHD1rZOEruOB1x+SS9Ve/m4KTqcdT8LQ==
-tl9kaJmQZJAajHH8/I9HLQ==
-GhA/GlBehzLA+wNPWrvjWw==
-vO0i+y9XmxyMNF/8r8KhlA==
-K+kmRvWCJq4D2uTfoSYzwA==
-Ju23cmFuXaCfCxql+DvvYA==
-Vy/ZtrVwMii99Tbgf4ysCdVb7Yjc57LHCOu7ueN/gek=
-3VhuNc6f8Y6OJwCdoguc0A==
-Nqo4awdKaJ90TVgBdCnnag==
-XtMVyoFv9uFtVQJgS5/wFk41K6mR5IiTcedocNVT+pc=
-s10qgxwFWwuXUImaUp2QOg==
-h+CdZ5vhbONDuEltSqdmOA==
-VRc+vOFAPTwJlUbm+felWJ9gTcY0ZTH/0v1NiLP/8JU=
-PtpLRvG0kp2AkLXLeT1G6Q==
-sR8UG8trMEFNf74MVHQ6UA==
-Eiq6EYzU/m49Kuy/aQXecB6jCoaDvgFelUoGEoIUMc4=
-nfLnWDe3JbZTmf1yk/eHRPPeAEw5R4HAmc7sOLq50JQ=
-0ig7qfJhriWccQ4zBCAnGw==
-CNLOvczgylqoW1ZA3UHKnw==
-WN9E0Ou2DSYhFAmZSt6l7A==
-8xadT4c0l7yJwXoTB4aaY9lmMfJ5R7IDMVzA/JhZDtk=
-Pyt5BB6ggvKQJKGsnRibDQ==
-h5Wfe4s8CQZk0JishdT7mA==
-zTmu3Av6b2DzGzYo1soXMQ==
-I7E4ykThKplVw8pMzsWEnjkK2puJdiYQcK5a+sq6/OKJLRLMzKsAx8MgzJiKc67Y0WsBq5A6aOleUIPx8lxByg==
-Aa8O1j9YRcWHb8ADriGsfA/rkHYu69W6Fh/66I0eu5rJHcTj3iWYtIkAcF7UBgbml94vCzd+uLONLXNgz0LfDQ==
-hlMXSlKgQW/fOLoJYA0eZg==
-TtNvJJ5cMuf6+uM8bm5e0qrhC0964A90jUclf+BB93LkxPqGxZKnkhBaXaxr82RY
-Wi+jSh9PzWsMP17dnLOVfpP4xwJl4s5OM6M2SRcMdyE=
-yA1OCwcS+GDbk43OZNVl6ycHzCEWbeS6cPBUI5Gt1GY=
-WzpUsrsCD46FURDUkuw8PIa+rn2MLnH4i7LY097FZd0=
-5ebAb4xQ1wuKdH17FAQ0kJyxJNFpiyyoaWylHDw/CGg=
-vjlYZB74SkWctU1a5Epd/GWi3ugB4spr6lvEz8+OEhY=
-Imb0V4r0Hy8dqpWsrJp2WJVgyWpCqZsFPDKL1ZQiC8w=
-9+vtecM1LzPJ8FO8gftObPF4r4h3Tv6iTWzQftIrd38=
-Esq6B/gkE1hblZNkBLWX700iz455MBRXe90jFM7wO/o=
-1TcLw+IphwlnZwFHwxXjSdy/jtVRwxyAvmh86wjpbJc=
-7r+8yRPpWg3QDy+KnDtVSZvpE1wMoq7ZnNciZo9SpxM=
-aQMYsdFfeCk1w9QJlEjcH+ZY32TxDKb4a+bWWAmqtnI=
-WfsWhAY0hBit8q1xCa1pzGXs08I2cwIkSLhvOZ/9hOA=
-CyBsy/0RAVrA9LfhlyFCWxQ+spy9gjESMdPoGQzFkvY=
-l4cEN/F0f4II+76xFmdicLiN637bwrKIfiTl9o0IAZI=
-UjUWTgFGsufnZBw6FmmvrQO5H6GneS6ibM5G1cpfs9Y=
-sRZyzOjlHbi/58KMf6Af8g==
-G4iDgBibsHncuD9ZnaefTw==
-TcP0mTYKkzsGbH8jxvjWCWML52khFm+I3EyYTeDdpDS6Qz2lKkq/UTZX3YI0OSiC
-uOVdTDhCUeG+ziCfq2fgtgLaJJLsj78gygXUuSpIe4P9SDjCUEqt+wUAINrQu0FDQV0r36QW4WNyTIT4rRW39A==
-Do8/B9IyOyctxyMZeJ2IrOjGi031dIVyvjyR2UcmO9QaYQbK7nBIBfAR5Eiuk3hL
-StcI8hgvl4EpZMreRD4Q6A==
-+nxRneMfRNNKhWPKFj0TPw==
-n0jF0mKAOBRTXTKclOm75g==
-3OZIiVibsC0qhXfqwk2iV2hRqynW76SmOa+m4T2lz19Gv/ErbpcHNpMbxnWS0f3Y
-SiwAJoJLWPB96x/cnCDm6TgMh/lrTRb5zhQrPie4jzRVl1XTRJuiQ1nVlLPZYAUsT3H9wkC0Pg2yJfNrk6mMbg==
-aHB5CWiYJ7HqfKx1+j0OrA==
-WhN02iuKpco/LvDQAEa85w==
-xA8H4MD9ZT98yhNE3/xqgQ==
-c8IhmR0oqvRIjtOL/7DOHg==
-Gw3el9batS8R0MFp0gVxjw==
-qQEoW9tJKgTFj5pGEWeZ1/moxHQDt450WrgkKwAJosY=
-Ge68g9R3ucOGIk3exosY8yEhmmfF9T/0wKKcsmu2FAq2jBSt+mbCwjrItPjYwg9v
-cvuhY+YkO8+HoFXVnoETQBfxxgaTmyH84H1/eCOQep6tnyQJXSfw3W6+wUoP0F9p
-winNIsCZZdxDADgvObHVnA==
-MN/VQeo4D6nTbZeWYelL8Q==
-CgY6qp+jY/B5LaFzb8gsaw==
-l7jOWqY1eL30a8rpQeBZwq8BHQ+HHoChdgH43BSbbhI=
-7lvcB+Kg30V7yRbnvcDAWg==
-TorzeCCz9X1Jl/hgWTKdzA==
-BQFxBA9g/fCd73pK0Ig+sQ==
-uVBhQctVyLXf17GjFBaqbQ==
-puwUmOIH0XcbVBBfeohlaA==
-tkDR7d7Hs6bgjJpEpApSYw==
-lW7Sl4AF17beRVQCIekYkjEPEcqY2p6LPqzosuF2QpJev5W29UDq1odqxMOtTNFs
-g41XTNY8fhYjJq+TbeJxiks9HKgAMVR49FqjaxQbPHs16cOjUY84vxCGVanfk0SI
-XXvRZG1R2ojz5M3K+KTiTQ==
-CQe3e/1o8hwsmPgdlM5fsY2/udjEjrApVyFz447twejwlBYY3PxFb2tRyHumTVqe
-3Jv7yCHPNsg5ncrGqsQpVKIObPGJnmAltT+L6N4d1CuLGuZV/XdAPoVJphul2lXz1iJbxSgjB7lKxl9x5LKPiA==
-QMn0xwQEHAbXWx7wanWpiw==
-NN95TqDAKKHZ2MTBt5uSbg==
-/+xmYKT+NhiYbLVXayyv0w==
-HWeFv8ZXkyqIfpB9yJdZfQ==
-9G3kCltanhE+MDVr9jwGmQ==
-/lPwt6qOsQg2SN/HX5gpT7GPDq5XjXNWawkiy/ZzmiJhYVdAYZcOBZ5aml/61O95
-uKaemjzCvYM2mvUjXFXww+v9lyuAHurZivt8GaFd783Dj7cKVKn39w/yrKWNLcYE
-i0qogZT1ONGPnpEYEu8AhPP7O4mAXBJD5bZu177hSqFxh0OAJjDrkC9/QZOCsD3j
-Ir7USYKXy5zQrso3Eovf/w==
-OpiLamUptXl+sz8Fyztxpw==
+MarketMaxAmount = 2000
+MarketMaxAmountStackable = 64000
+MarketMaxPrice = 999999999
+MarketMaxOffers = 100
+
+MarketAction = {
+  Buy = 0,
+  Sell = 1
+}
+
+MarketRequest = {
+  MyOffers = 0xFFFE,
+  MyHistory = 0xFFFF
+}
+
+MarketOfferState = {
+  Active = 0,
+  Cancelled = 1,
+  Expired = 2,
+  Accepted = 3,
+  AcceptedEx = 255
+}
+
+MarketCategory = {
+  All = 0,
+  Armors = 1,
+  Amulets = 2,
+  Boots = 3,
+  Containers = 4,
+  Decoration = 5,
+  Food = 6,
+  HelmetsHats = 7,
+  Legs = 8,
+  Others = 9,
+  Potions = 10,
+  Rings = 11,
+  Runes = 12,
+  Shields = 13,
+  Tools = 14,
+  Valuables = 15,
+  Ammunition = 16,
+  Axes = 17,
+  Clubs = 18,
+  DistanceWeapons = 19,
+  Swords = 20,
+  WandsRods = 21,
+  PremiumScrolls = 22,
+  TibiaCoins = 23,
+  MetaWeapons = 255
+}
+
+MarketCategory.First = MarketCategory.Armors
+MarketCategory.Last = MarketCategory.TibiaCoins
+
+MarketCategoryWeapons = {
+  [MarketCategory.Ammunition] = { slots = {255} },
+  [MarketCategory.Axes] = { slots = {255, InventorySlotOther, InventorySlotLeft} },
+  [MarketCategory.Clubs] = { slots = {255, InventorySlotOther, InventorySlotLeft} },
+  [MarketCategory.DistanceWeapons] = { slots = {255, InventorySlotOther, InventorySlotLeft} },
+  [MarketCategory.Swords] = { slots = {255, InventorySlotOther, InventorySlotLeft} },
+  [MarketCategory.WandsRods] = { slots = {255, InventorySlotOther, InventorySlotLeft} }
+}
+
+MarketCategoryStrings = {
+  [0] = 'All',
+  [1] = 'Armors',
+  [2] = 'Amulets',
+  [3] = 'Boots',
+  [4] = 'Containers',
+  [5] = 'Decoration',
+  [6] = 'Food',
+  [7] = 'Helmets and Hats',
+  [8] = 'Legs',
+  [9] = 'Others',
+  [10] = 'Potions',
+  [11] = 'Rings',
+  [12] = 'Runes',
+  [13] = 'Shields',
+  [14] = 'Tools',
+  [15] = 'Valuables',
+  [16] = 'Ammunition',
+  [17] = 'Axes',
+  [18] = 'Clubs',
+  [19] = 'Distance Weapons',
+  [20] = 'Swords',
+  [21] = 'Wands and Rods',
+  [22] = 'Premium Scrolls',
+  [23] = 'Tibia Coins',
+  [255] = 'Weapons'
+}
+
+function getMarketCategoryName(id)
+  if table.haskey(MarketCategoryStrings, id) then
+    return MarketCategoryStrings[id]
+  end
+end
+
+function getMarketCategoryId(name)
+  local id = table.find(MarketCategoryStrings, name)
+  if id then
+    return id
+  end
+end
+
+MarketItemDescription = {
+  Armor = 1,
+  Attack = 2,
+  Container = 3,
+  Defense = 4,
+  General = 5,
+  DecayTime = 6,
+  Combat = 7,
+  MinLevel = 8,
+  MinMagicLevel = 9,
+  Vocation = 10,
+  Rune = 11,
+  Ability = 12,
+  Charges = 13,
+  WeaponName = 14,
+  Weight = 15
+}
+
+MarketItemDescription.First = MarketItemDescription.Armor
+MarketItemDescription.Last = MarketItemDescription.Weight
+
+MarketItemDescriptionStrings = {
+  [1] = 'Armor',
+  [2] = 'Attack',
+  [3] = 'Container',
+  [4] = 'Defense',
+  [5] = 'Description',
+  [6] = 'Use Time',
+  [7] = 'Combat',
+  [8] = 'Min Level',
+  [9] = 'Min Magic Level',
+  [10] = 'Vocation',
+  [11] = 'Rune',
+  [12] = 'Ability',
+  [13] = 'Charges',
+  [14] = 'Weapon Type',
+  [15] = 'Weight'
+}
+
+function getMarketDescriptionName(id)
+  if table.haskey(MarketItemDescriptionStrings, id) then
+    return MarketItemDescriptionStrings[id]
+  end
+end
+
+function getMarketDescriptionId(name)
+  local id = table.find(MarketItemDescriptionStrings, name)
+  if id then
+    return id
+  end
+end
+
+MarketSlotFilters = {
+  [InventorySlotOther] = "Two-Handed",
+  [InventorySlotLeft] = "One-Handed",
+  [255] = "Any"
+}
+
+MarketFilters = {
+  Vocation = 1,
+  Level = 2,
+  Depot = 3,
+  SearchAll = 4
+}
+
+MarketFilters.First = MarketFilters.Vocation
+MarketFilters.Last = MarketFilters.Depot
+
+function getMarketSlotFilterId(name)
+  local id = table.find(MarketSlotFilters, name)
+  if id then
+    return id
+  end
+end
+
+function getMarketSlotFilterName(id)
+  if table.haskey(MarketSlotFilters, id) then
+    return MarketSlotFilters[id]
+  end
+end

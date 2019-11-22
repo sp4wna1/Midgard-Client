@@ -1,173 +1,173 @@
-TbF8u/HRpSLibenk3WMkQQ==
-/KjX/NOQxnquMJpyA+buuQ==
-WI0uzoI/UiBuW3mpgdd2D7abwVZ+8H4kbf+q+tBU/HsVI5w79HPznwPjl9iL2dYb
-O6DOABNGoV5EuVmYlaKSjr01DrtAXWzrUo/gQsm2mu8=
-84bQlTSzMl3uRP8ZU0ldvaeCtaD1cf0LBERPm2gP+tM=
-Wmp4rcvrv+DQJf9R0EtxZnapgRbH9QJT61JLX7CHQPY=
-JBLkTvxx1T1Vd5PZO5f24g==
-jz1gf7X+L+PFH8ieMxTm6omqLOl+XQVezKh+THofVTM=
-xeuliS7TgN9K5FZ6dkv7mfY8DzE/ZWBvTyeT/E8UGgs8DzrGlqLhrRkDYpfB1aBC
-Imj7ZTz6G0AIwxwUdeUzdA==
-gX9nDgjqXh/ngyS7uGRHrz9cW0spY0Gpypy8ZHe1cBU=
-2/N5UGoG1LNdR+AS5KbSUdnPZc89EXvkCeiKIKpQh58=
-WN3VmD5SQQATJETea8kJAj8NYgnqKP77hhVSEmREhBuz7vW4Bc1AHvhCmeNL68G9
-rOe70a0c8ULAtHxs+hTO4jqlkyi4oOvKWlFpiom2TEgJg+//1mbUOGSTwMXNLDO8Oli/YiUr7AnfPbBvBDOMOzAppzQv3Gm1UEfNSIow3YJC+nOrwzGKL9HX+aiPnfQL
-dj8IGu9LIauuoQXmfkWNOWqL6mP5yG+3fvuJjBfxYKQvrN5m0vSmK2cnjUxPudJNXGGtc15ZVC1KWKXF/vJYYQ==
-a2W3m+Z/syWgOTBaq4ZIyQ==
-R4j/eStwE4Uj4iRadDuVuQcTIgRUlV1HpWELYNT5hJ8=
-Z1k7lN0kSqn1/LYGh7eMl5WMPXDvsrL8qdy08Wm0ql7kqemN+pje7a4xdXeKrkDq
-NFN4ythzWDdFZyE1/10aRg==
-gZabJ6HvVk10oUJs8nHvIw==
-u83h50j588HczkFpJlJWhKgN0BSIcbr3hgeWzfI3smA=
-95K2Xv6X9E58k4BOdz0aGdFu7hijyCQS0WPs0LQnBGc=
-veYTnFTNX+YHbiiYRGMMaBykzP10xU2LjSWcMY/hgqzmcq9avcrflabty+ur4zx3nV4rM1942jqJU6ergALmbg==
-2EzkH1WWax4PdOgOTUAFB3YdNEvqczqJ+49xU5J/dnQYhcNk62GzRFS5Uv4lM0B1
-Q27+C899FCZPXVhlNuNyjQ==
-tmD4DHE1zsGz2f40EWUF5A==
-Lw4iC9wDexIEOiLQwKb7lyuucL6WUOxcEE2EANMxkMA=
-l3KbQMYuA7UcsxrZkZTmp64EidXBk5KP8Nklki88eKczCFt8kn1GwssMDMYIVbHH4bQ8YCCXulkeSswZ/NJqZ11WEDT4JXcVtdhIR1I+NvI=
-bqDNlWBIyqsrukJyFqmTFA==
-aKQ9NxAFXW5bPlkt573m47lhUSTxipA9xK3Js45v5o6QNq4+W7xAfROJUsb+afcLdh0qQCHdyk/0z9qZ8LjQVA==
-dFrfnt19Hxap+svBRGyppA==
-aumA6WZadEbYUoZsYCtcZR/DabH/AWxQen2NqzKXJfV224BUnMraxMOSB6xW4d6t
-vd9K1OAKsB3ZhNFXtwf6Y26QcL65g2xm9SekSLMvG0dYHMqd9v7mqVZM1SL91Q+xx7pte+sQSyvCLQKMNpXFGw==
-pgiKilGZzkCu0XNt7jK/5aIT9x7RG5YvbtWSOmFLVes=
-dp+liny6cGINp7gQ5BxbfA==
-BuhEuUjMoUukz71c8bnAP8bWMDg+uz1DwzjUJYzD2pg=
-N8SooB7XWyz1vPO2FsHQuE/HWnmcI4Rukd3+korS3aY=
-HsLD9o7zi41+fZoXS/qejGNjwMvqPpDS0GkiTCk7SCI=
-rRsOKajAdqtOB/eHY//aHA==
-fNphKUIIiwuo73J71ucQFQ==
-3q2K9cS4XTAnSzbzSz0MKZc8ALRXFIESTAEm7VUjUSdGaw1ejONW9kwpXqTcgMFEG+kkKPrZmb0QxIMFTnhDCA==
-MBxpds0PoLqYUL4pmnrugGl0rX7OrGyYkONnX0pJjAQ=
-OWh4Krcm69memxWqfPKy6WEfd46xu2rGtSGZwP0YeXY=
-F39nnSmVDcTUeLmvuxDG6Z/BcoUbgjp7ew/K1/OqvGg=
-RZcqhWxZtQImBB+2a0yz5w==
-iJVmLrD8Nz99HA1j3p/OB0hOvnB+qre7VEfclMuX3BXNbtE68naQfcRNmttOnYT2W8MSYG6R+XXxg7aP8Ty8ePyyaptj7Xj0u9fdfFfk3aSsBkYQa9v3kIa1ME47TKhq
-Y64BUfihS6CUZ7PDinL8zkzpRRSSxc5x04QBzfm4HiKjf6nKaWHWbuP7LbEWdRIEUrOqm3rYgBgvAqRJExVBCw==
-RtGUolmcRvlGOM0MzgfZVg==
-Epwy3Af80sbaDe6uAAt9sQ==
-gZ7aG54Hycx48J+6JmB/rG30eqc+fPJTTZr77ZAXj/Y=
-OnvR+g2JLDZ9MsgrTx/tvttKHglKzG5eSG5ufOTJYQs=
-TiVG699tCuWu2cIEc57aM0UHb6YTygg8eHvXMVpiQmA=
-vBz934ku9wn7TFW1aaB8kcYQtcWX88JrhnDnF+ETsqc=
-JeR2YVNIncV4RGxGrQoKDYn7qQ1Ng8Z2FX5CN1ZECKRq4ny1lfsKFvXatQet1S4No+Po8SzHU0qtnAA/TwOmWIM9D2w6dH6hyyQUyvD/Ewg=
-a2UiRibI1GC501CQBqP1Jk8WwysuBpMP5J5RjqBXWrjTqYvD1WzhY7UCaQFRaT5c
-8i7CF1ypFqBU4YUT/NOEiw==
-jEJNyw/sCJrLIEEzZ8xGsg==
-QZ2bQ+4nUOPwImnUtOYKCaiq2SXIalXjPvVBTAbaKOs5gjRXGS6QBmim8COAEVZ2nOjH7qOvYZfv3/BoaK3rU37YZaPKJf2C5D5Ilrli0uY=
-HrjNwOzAruFwcFZcsmwKpQNdu+EA3mjaqmqJSP5pFGjwSm4LdONXTPHdaJb/V9I0
-V4NB//5q2l0Els8dOyoyS6Meq9IPGgRZEbtIHUjd9/ESLxzkJoXaLDpvL61nXm9xwSeZc8XeHEBeAqoxaXMuJ9ANs7vtSgr6909pixxfubU=
-iL1syrFOPl7i4qTBpwYRtFAsBeNcLZiioUMSXtGwNEEyfeT3FdQJjNEJbN1psD6Z
-xjTLobjcYOYNvi1+SMzR3w==
-ZljAIZ3I1wJ7UCOO/jnlpg==
-9dALPaOVSl+xcOZ+MJgKc0p0KHZIWwwmJhefQ+ZxL6/uWpKmDGWTYja2z1owuUV27vyg69+CRibFbOn4yOTOePDAQ/nMjsQyTUoNH33matzHQPe9lRZkdq13fh+fzmoiFDjp5FjU6ofUBeMMYCzSYQ==
-ELTpCYMIJ8f0E346HU+aKALfP/Va7RR7CZUaC++mzoqZ6B8IogeYOn/E/e1LSdNQS6090zodHUX+c1GIoBJ03sC63DjDp2hC62ABRcfytHyRzepNaGwY/iko5rfVkDGN
-Q7wOHIpaTrWTZvxJCiU9BrVHaYJjr6+mB+sxDLHD2EY6n4PfcrbdpTy9BBPv5uajiQNmrPPPzx5+9WlGjhoA7t/lvxPF61lsUopJ1tmpK8c=
-zbT96RZOELd93owRMoPZywvjLd/qMnWg9/tCoL3KmiwXREw3Lgn05CNZNQXZln1PtJVpgtIvNGeNy1ezsXk1cw==
-73+r+VKyf1uFWOwiwnJijQ==
-BjpSt2cAO1YIu6GEQo3FQfo9WDYX/F2eAgeKUCqmmrU=
-VUGQG8ZEl8OKHjrrqwz68FapAZeEDAkBc+zRCyx0kjwWca3RVvbUC9z2LC1nKAIbGQs+ys+MYNhXLge1yl5S4OZK53Q6HEhzLh57cPz/IYY=
-Jmy65GL4hA7PcbI5AfQVvg==
-TtzcH8jyeH2sBKjQBkBKL0biNEpG0COcCS5uwkVgknmLbxOu+O6qqt+8BN16qFcbfryfIZXxPySSGceRRbVxZw==
-IzFeZOwvawXTUMc2nMUljQ==
-02SJSJJbJ0GtgiTDqNYhuFBpc66W1oNVUApz85RY/Fs=
-0huJhEPM7UGUXGNq89LE/kNRbrnGuoGOeI7iJYRjhYGs36hROuHcKfQaW5H1/wncRQhIu9CBctojlUQW7yOuRQ==
-Bs+hVBBE0Qkv7auC3+/tNS1+QL7TeDlYmhie/7x08PUjj0izZmHq576iTgoAcG47
-0bdJg8yDCmygizXCWOJ7F4lO4fsD1087iPGQc1k/mAc=
-zuriq/NekR8sJyhTspynFk9LwwDCl8HKdyA6KZkps69jHkzo1ejI4V4OVG3d0I6T
-FOUvEEZ9oMlWrAaopPkYFWAYJfmhLkLbU3ikaAcUav+Tb8xx78SWy6yNzGPGIhNS
-x5yJUtKPR821G+D2c3tJ1A==
-9m7TlM/5CvqiT7iEC2rz3+o6bV6UcW4JAHKY7h//eHY=
-mQe49lIavyAul5JqVGa+v/XCH0UsZUwhkvym0DeUK9YHycteIF19CIv4xweU1OIWlhKFaIxg+rrc9HfaUY00IQ==
-y2KDxM02MFyxcYfShdZcPGbBq7xI+YMxsgr9PpRkopJX8tE7s5Yh6tzuhX9yrwvg
-OgtCWNh83jtTA+7ChnEMmafgE6QXdQ8OsI3bh1CobM9thBzkaUvh2SsEJ7gMgUcTZZuTuqid4+inZPNhcgzTPg==
-C2v4rhek/eUIqRh9l2xasA==
-Gc11TZkQlT6Zd2d3WgttRAkcAbhAMiODkMZERf5kGENJRQ+xHlMyx13sNRsvBa//s4TmjL65gylQ1FYIGH2Ruw==
-yfeC4EFuCdJoi/MQA2R1KA==
-8I3QF99Rtjlm3GmYj+gwfFb1icKWorbYihb99PX2Oho=
-qeCqa9k21bm8VC+2UiU+iA==
-3X9rQj+zseRgvHEGUN3z1A==
-eaRpy5UYAeNqjctnSKfTzA==
-pspSxuPmFX4Zokp2eoqzGSWkMMZbVuSxuQO6dR1qEMA=
-0jXqyb4Zxk/V4UegBXKipQ==
-2o1du3NNkOKsq29KvJhjsg==
-JJ4ZMfzCfulPb09pK8YaXphliXE0s9lzs48lgv2gHjmFww2iCGaOKqQ49/jLszV+
-oX/OFduB0ClWn7E7qXGK4N6juYvKZZj9MeX2dHKOuio=
-9XgvBmjJPX+HNa6IBS/0AbKPPG2+FKiADVR+FN3s/Q4=
-NF545czp62FAu+NpAvFkPJJjKc69jSfRcqmu5akTzwk=
-wRtyFDcYZbGMFe+dvh5U4w==
-/SYJffVAgm5TnMhY5pG93ko5XFqYT38o7vaqng68TtE=
-8OI7uyA/CmZz8wnJXgniqAl7aKYIQGVvDgsrUMMmh5rw+TnispTgVRD1L7w0I9al
-sR7CdZhNyhL2gTnsuPfH7g==
-boMU7UZqlDGFC3aeACZnCj7MrWlZA7SiTRXU9J4r5q8=
-R4QIc3/ULhV56eE6nc8C9c4WkOkFRdoKc7EZkikxdCo=
-aSQ666hfgXTdCXADsDVuzvh7kiU/FY5cVFdE0kGeOXGfr4Mn+QQJHeLOhMQG2O1Z
-cS5Bvc3jFht5FT4OD4Ww2Ey/aAPSibhYqfL2zsA47cnmzg16FKW97jVGkxVTc3hV8ew/2+VDybaYtm1MtKRwVux1Gxcux56cXe2ufPd2lnem8qu/VTPfA1TaJ28Yp5HR
-Qa/kT3ngs2UXM06nvsdAnE/vHVlmvkAtLhyWGPa9+MH1SkdFlHF773lwZsrqwLh7
-jltfAkOFT7nqxvcb3XwIQA==
-UySFpJqW/Rz/Eyz5ub2I4t/NZIvOn3kqMaU8o3uU4nM=
-A6bvTWDdhbxTdcNnsWforVC9O4peuq9MmA/FCzbkp/Q=
-9BKn0Dgjswyb+ev52BYbc33W/0z99oSsfF68OjcvxQTqsrbbLendqpZK1reUsTj4Puwbl72veAYhqNyf8kOHmsDh4U/VAuDWBIW+NCUI5pk=
-fQ0BZbD+Uk05lHQ/9Ay86c4u0vEYj+Z/rv0q5Phjkls=
-bwZW7d2Nb/pmnw6GuKUsSLgHhqafDkvle6Z46wLHL/s2GVjahJpmWbJMBX94AHGws7KJfu60LCv+lbv7iuPncA==
-WNhBDA90Phc7yUlhjlld+w==
-shHxJANbUod0QbDTmv3b/2O9YzJ4TCRoPG4X4LHpzs9WsxfLnwMVBoJTKqkMW82NgD0KVupRtxqDe0CcJDCzpw==
-iOpwU/eggzTYlgFSiuJFbQ==
-PZc+kLqVUX1pVOTADtU93GRw+kg2+LpEzwRiywhXBN4=
-+I9Qf5Trgb4Utc4lUyho2A==
-lDdpannC7Nb7cC97Ww5FMw==
-sD9IQjKJsd3XfdJPpFkPitRoTY26lNH5rfUEQUHF+eU=
-zF3Yw8Zub/zGcY3Wd8v9bngW1TNWqiYm3gczIHKuDIT4fZoHMCbUKYs61zNbxtfn
-lX/8o9rzyI9PZxTTOtY1HA==
-BfravbMOJKpAUnAha24O6g==
-QBQqobiMevO8Yiaix6IqD4EleHE7MlxHZ8n+vCZt/fc=
-GlRiVHP2wum9RBP+0mqtHkDW0GBx5523g+gTP4aNgYd4abEasPPyhrKzpv18zcd/
-Gt6/kN4pj/qXyPh9Q/sBVMgCR0GATVsxW9FOmLeuFXFgGKrDFf+7hhNi9b3YHRik
-9uNydsrPjWB6hQzoOqvkHcfrrX6SFunK3ffsM6sNubU/pKtqSZrjUSTZwg7DCiDERZJjvkicvLcJjDJQrCyLEA==
-+T3sNsp1CDO7Sja0DPZcQoS1I26Hbg5Pqm8G8FI6WLk=
-5RxE29VvCQfs9NfmExTmXg==
-V4fjXGJXET0SMxx4JDk6QKdOnz2LKsGhMVPxW+RSkk0=
-gJt+yblAhRWZErrNdWZq4yLekhjxFXyZwBppMuOFQa4=
-l8y5A8rUCpGzvlbqHydJGA==
-wUuA1vzxzn8sZpZpYxM6Bg==
-owl7bAMaquwB73VQBviOzTN9Tm5QDg0aU2yrnTeVKjo=
-hBFwawFnpoKfn0RRkoQoTjexc9sounz6XtCmVnjoNk/bdD6aOK05eP6qdBjLd/l65PZRxV6Aw42HHeOs2FMoXIHiCvCCL/GX45eiCTNdfGL4OhMrM9MV4o0dr+67D4zO
-Y5wmljritMT1llxYxVXq5nKoDMQjgQS8FFX1bb8MyBA=
-yTiIx5D1UcfrbxIIW8o/mjehEF2CfYfbZO+EVTWSRnDHFGZIlMUx1+2LUZi4/b7FdX8Klhti8dNAKB0O0GNU1A==
-qQdgHaxrSl4Oab/CECHHHw==
-Jma6cYP8b0U+XxSyKhsSgg==
-P0hOOGQ5vaejTtBhm0WL84nkIl9zy2pK8PZwzKSZy+zd0Ky4v8nPfvZ3+uM5Nqai
-4/0p5f/RQjwVa+h4D/NBcxw3UKg47lfW15sWzsLw4No=
-h3HSw2+S+JEmvx1JqdswNg==
-2bJk8WnrbF6NE63axSHeXg==
-4EGvsztD442VNGviMy6hwMzj4g9zeBo+Z47tYAfOKMY+RSboWWKTs69muczzg+fX431O6CW5O++ydI88lDV+VsvIjNN3ENc52FGjyITz3WfNNVJu4ieYFWSfvtJskFTD8gWzyO6v+odNDp0LeAtCuobWQ3ft8ZaddU5Zq2idhlm3uJAVRHf7qIX72nfp1Gk+EGm1i7OMBjMYG2/l0qaFeA==
-wN0CDN3Z1BElAoeRQmN4E7uE+IHzf+cRJEvaTr4bewA=
-t332Evmt7QZeEi0m4QIaY5tPKNn0uuulvoZ3U31TUoo=
-gRRpGukFRp2RDUhG/YJklA==
-Pl4lBxVDu0l2yvcJeXdumJu5csv/WbRdMecx2q6VLF3Ar1V/06qlVzqmkKsGadIOQ79Ku4sEPUdW/F+SlfBg+uAePKTIIWUqhFY/uJj61VwVeNMznw6SWJ9O857+AGRp
-c4BwO2vagHJvvqc67wE3LPME043kWPcLvVP+TCgAqhknEx+BfelzzvJ0wsl8BtG4c8YWnbbf74sAHdPmKchBdylJCDeZnwEcFTcxHU7JPfHgC4WMykMMtoW4j6weyDWd
-lfSWZ/ceS3s/eMJPQ9GzUA==
-vE6nqsg8Iil5jzW9QfXD//8RciLw1748wPcMtkKUY8Y=
-Q6mMxnaDnlAYFiZN3pWaCK0G/K0tmU6GR2MVP4Z9SBY=
-mCoT8eBwr6TXDM+16+jcKaFu9i8EfegPPW2l2/gY/9dk+AnP+BYpmqLzanV2bPHr
-WVHdAXOR+yO/Vz1s2wxKYqhZ5SilmzBK+meRg8rzyPkrlpsV5MwNCFUfVqprgGpEGmLAGm38GglBwy5+JcLgqA==
-nU1iG2ZTycRiWYqZyNb4kA==
-90yeA06dACcsL2ozr97i1g==
-sqYV0+uFzE2qSZAdbw8qPQ==
-ksBkZy7NftqIhIRrRMaNBgQ6/EEboPtcCSnt7EYwvLkad/SjlT2o3CcsbZzAAf95
-8B/F8sm/cYb/4MbmV9Usgg==
-0RNfx+3KIUYZY3qQ9RmoPw==
-oGShYlAil78d9fwFoUKKRU5CDkfTb0MgbySWaUI8GqDQXBNIy8NfBy0VxNayl+dd
-PHHAGQdm2I7o84/wRvUWcyPJez4LQ3Bsb0MzSNFGxm29EQw/jYU7ZNa3hTn84Iz5
-oCejRNHNyIgqKNv460DMq183h5bjM7f4ufXPis5uiRQ=
-F+AKEaQVZkFTEs2Y38EMhA26hy+uOQAobqBJx2C6bQY=
-q6jvSlNNy/1wMFscPU+kBluNfUIyev8mHQkHy8NphqBBqSnQi8CJP4wc5IiUKS0I
-vnOOa/uzZNSPq1niUBDvN3Y6Wfewji1zt7ISFvTxgfln9cfO7aiG+CvIMh6/15iva/oEfBR01j8iUyhpZ13NNWh9EyMG+srCr+Mfvou6obo=
-oCJjmJrMnfGfSbjSZ0dKyKJZMj803aIH1njMUfoDHZJ6VKG4AeECWtdQQuwz8axQ
-U43Dt57Es22tGs/xyTJC5jUTxk5nkocGnAUCbvxdWw8=
-4R95BsRZLXchKxtlYdXcDw==
-uH0INMvze3f41PHXPMvnbA==
-njHVDTmWUKtYSwIzV7BQaw==
-D6TnYJgyHu3wHcz7olYtTdAPZ37ov93TU0pWoQRxWuU=
-QOBicFNJ8M+TT8vWcvnWfQ==
+Struct = {}
+
+function Struct.pack(format, ...)
+  local stream = {}
+  local vars = {...}
+  local endianness = true
+
+  for i = 1, format:len() do
+    local opt = format:sub(i, i)
+
+    if opt == '>' then
+      endianness = false
+    elseif opt:find('[bBhHiIlL]') then
+      local n = opt:find('[hH]') and 2 or opt:find('[iI]') and 4 or opt:find('[lL]') and 8 or 1
+      local val = tonumber(table.remove(vars, 1))
+
+      if val < 0 then
+        val = val + 2 ^ (n * 8 - 1)
+      end
+
+      local bytes = {}
+      for j = 1, n do
+        table.insert(bytes, string.char(val % (2 ^ 8)))
+        val = math.floor(val / (2 ^ 8))
+      end
+
+      if not endianness then
+        table.insert(stream, string.reverse(table.concat(bytes)))
+      else
+        table.insert(stream, table.concat(bytes))
+      end
+    elseif opt:find('[fd]') then
+      local val = tonumber(table.remove(vars, 1))
+      local sign = 0
+
+      if val < 0 then
+        sign = 1 
+        val = -val 
+      end
+
+      local mantissa, exponent = math.frexp(val)
+      if val == 0 then
+        mantissa = 0
+        exponent = 0
+      else
+        mantissa = (mantissa * 2 - 1) * math.ldexp(0.5, (opt == 'd') and 53 or 24)
+        exponent = exponent + ((opt == 'd') and 1022 or 126)
+      end
+
+      local bytes = {}
+      if opt == 'd' then
+        val = mantissa
+        for i = 1, 6 do
+          table.insert(bytes, string.char(math.floor(val) % (2 ^ 8)))
+          val = math.floor(val / (2 ^ 8))
+        end
+      else
+        table.insert(bytes, string.char(math.floor(mantissa) % (2 ^ 8)))
+        val = math.floor(mantissa / (2 ^ 8))
+        table.insert(bytes, string.char(math.floor(val) % (2 ^ 8)))
+        val = math.floor(val / (2 ^ 8))
+      end
+
+      table.insert(bytes, string.char(math.floor(exponent * ((opt == 'd') and 16 or 128) + val) % (2 ^ 8)))
+      val = math.floor((exponent * ((opt == 'd') and 16 or 128) + val) / (2 ^ 8))
+      table.insert(bytes, string.char(math.floor(sign * 128 + val) % (2 ^ 8)))
+      val = math.floor((sign * 128 + val) / (2 ^ 8))
+
+      if not endianness then
+        table.insert(stream, string.reverse(table.concat(bytes)))
+      else
+        table.insert(stream, table.concat(bytes))
+      end
+    elseif opt == 's' then
+      table.insert(stream, tostring(table.remove(vars, 1)))
+      table.insert(stream, string.char(0))
+    elseif opt == 'c' then
+      local n = format:sub(i + 1):match('%d+')
+      local length = tonumber(n)
+
+      if length > 0 then
+        local str = tostring(table.remove(vars, 1))
+        if length - str:len() > 0 then
+          str = str .. string.rep(' ', length - str:len())
+        end
+        table.insert(stream, str:sub(1, length))
+      end
+      i = i + n:len()
+    end
+  end
+
+  return table.concat(stream)
+end
+
+function Struct.unpack(format, stream)
+  local vars = {}
+  local iterator = 1
+  local endianness = true
+
+  for i = 1, format:len() do
+    local opt = format:sub(i, i)
+
+    if opt == '>' then
+      endianness = false
+    elseif opt:find('[bBhHiIlL]') then
+      local n = opt:find('[hH]') and 2 or opt:find('[iI]') and 4 or opt:find('[lL]') and 8 or 1
+      local signed = opt:lower() == opt
+
+      local val = 0
+      for j = 1, n do
+        local byte = string.byte(stream:sub(iterator, iterator))
+        if endianness then
+          val = val + byte * (2 ^ ((j - 1) * 8))
+        else
+          val = val + byte * (2 ^ ((n - j) * 8))
+        end
+        iterator = iterator + 1
+      end
+
+      if signed then
+        val = val - 2 ^ (n * 8 - 1)
+      end
+
+      table.insert(vars, val)
+    elseif opt:find('[fd]') then
+      local n = (opt == 'd') and 8 or 4
+      local x = stream:sub(iterator, iterator + n - 1)
+      iterator = iterator + n
+
+      if not endianness then
+        x = string.reverse(x)
+      end
+
+      local sign = 1
+      local mantissa = string.byte(x, (opt == 'd') and 7 or 3) % ((opt == 'd') and 16 or 128)
+      for i = n - 2, 1, -1 do
+        mantissa = mantissa * (2 ^ 8) + string.byte(x, i)
+      end
+
+      if string.byte(x, n) > 127 then
+        sign = -1
+      end
+
+      local exponent = (string.byte(x, n) % 128) * ((opt == 'd') and 16 or 2) + math.floor(string.byte(x, n - 1) / ((opt == 'd') and 16 or 128))
+      if exponent == 0 then
+        table.insert(vars, 0.0)
+      else
+        mantissa = (math.ldexp(mantissa, (opt == 'd') and -52 or -23) + 1) * sign
+        table.insert(vars, math.ldexp(mantissa, exponent - ((opt == 'd') and 1023 or 127)))
+      end
+    elseif opt == 's' then
+      local bytes = {}
+      for j = iterator, stream:len() do
+        if stream:sub(j, j) == string.char(0) then
+          break
+        end
+
+        table.insert(bytes, stream:sub(j, j))
+      end
+
+      local str = table.concat(bytes)
+      iterator = iterator + str:len() + 1
+      table.insert(vars, str)
+    elseif opt == 'c' then
+      local n = format:sub(i + 1):match('%d+')
+      table.insert(vars, stream:sub(iterator, iterator + tonumber(n)))
+      iterator = iterator + tonumber(n)
+      i = i + n:len()
+    end
+  end
+
+  return unpack(vars)
+end

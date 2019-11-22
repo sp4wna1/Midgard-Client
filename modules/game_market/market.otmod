@@ -1,9 +1,9 @@
-92gLUDUwzwa6qltXdfHwMQ==
-jWi2/ZNm0iW9vub2uzOYPiIy7y2WdMV2hm3C1DV95Xw=
-d7szbn+VFA/EjFvekBN5MMTGogqd/Q43J2cdFt72RHi6B3zxvFP1uFJS3emPAr+e
-vwt2BYLuXSrUpXUBSgsZXQ==
-iEXgMm1H205/Yx3HAzAGb3yvH+986UO9StcuoCFq2dZ+PdRzRyR2LwEMaIGv7UEC
-P3bj39pN4YmwFYZ3gvetM6xJR7ygkFE98RxvPmw6S9Q=
-Aky0xqyg+1h3GPouJ00GaLdRhy6mJXLuVaYOUmZcts68WE/Y5GPq+BnYM4hiCPzFPEcupvHUgkdLvvwZYujLrjsWB2AxCS9oyuGNSx+Wnz0=
-NhptlOXlkD4JH4LICZY+tMkAH3B/Cb80udY+IiMYaD4=
-FDSrT8RxVFodwKvrNehSyBaYI3uRBaBI2q+moICBMSs=
+Module
+  name: game_market
+  description: Global item market system
+  author: BeniS
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ offerstatistic, marketoffer, marketprotocol, market ]
+  @onLoad: init()
+  @onUnload: terminate()

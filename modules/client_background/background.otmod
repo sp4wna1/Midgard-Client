@@ -1,10 +1,10 @@
-92gLUDUwzwa6qltXdfHwMQ==
-p9AJSMc3ES1RrzeFbfPovkBepGd53aZT3nylfQE2wCY=
-pR4zMjvTvuT44SgeOAKkmSa9gWBJjcuhEX155j0CG3RTg9auI6fgyT6o+mEr+ttQ3SJdJtHkcpA5wt4mHSn/sA==
-moD3uK3u1WkCT+ISYwt/JaStnlD5pf3qetsI/V84npM=
-c5GOQWUrG6P4N8JQ2AwyQCc3Twur6QPYn9RIU1R3yPtgu9sElJEsxfUhnVo5gxza
-yC4LkpchQpU/XvVTxWNxK+vqqYeJOIBqlwbgN2O8ytk=
-SI5WbhsROmLpgU6A9Q09m3vfesx7muXeoSBqQe74nLw=
-sgZOaZdnixBRy7o8eKwS1ArhmrkGiN7FSVJAxhoXA7WzHkrhA/ix7rT/NfGpGdy+
-PNg32MaHgBvHmYmS7e+7482TQth9WXFPHsE544EWpd8=
-/xKmLDApdllPY2AHQ2kA725TcN3I/7onRhUMwgozmdE=
+Module
+  name: client_background
+  description: Handles the background of the login screen
+  author: edubart
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ background ]
+  dependencies: [ client_topmenu ]
+  @onLoad: init()
+  @onUnload: terminate()

@@ -1,73 +1,73 @@
-n+JvUrOxIM2w5XQrk3QLCQ==
-RKB7jomDxirlc2okaN2/jA==
-ZKYfZMeO4bLmYory2BzjbZX6OgtLtRMcZAL5zr+XPJedfwbUvmEM45EFPvX5GBFZ
-SBg2P0FJ4hCZ4xAJQTl2+OyCVC2PvjqqbYEp0P5HCSscWS4/ElElJBo30fWnkJYL
-J293k24x9hNgHTVC6J0QEqFKegJ+XNYhaHq/aJnhkMLij7f5GvxTBIpoQM323IXw
-Ol5Z7puoIUf2qDfNRPqe8nJ/NwxZc1Hc60DkU9z5x+rXrGABXjGgxEkdrV6CJ+mm
-RMvEGkvtsQVq+WBQHwxn/RxIcQR6dmgGa6NhzhL8HxY=
-nVSXkuDg7CYBvNzyaObozQbiwc1tFrxJeqLFm/GpigMagIqGx2MXjwYgYYMed+6g
-86IELZ2s0VSf6Flj9nzxyUr/ph9JL7FMDukrws8PKS4=
-RuoZZu6JTZxOPySFgpoOh2EJ9w3qUbd6SEwjUgu3KnztVMSvzP3lXy3dB6iYVoYx
-LjdGAD9j4kHsJeqqr8GlY6NvoEInpOsw0z+p7PaDUzA=
-5ze85Nlz7dbiSW40NJz5tC5iRmXVjvUebYvbC0k+Dm0oRqTB3GpfW416BoarKTh0
-x1d1VAA6NURjRPBgMpQn1Q==
-vJbFCm6lsp56rPDh10/mvtwwOyxwIP0V+UT9NwnusAo=
-ckNl42jxRc3+EkiSsOWECg==
-OYBjqEO7HcqpuZuN/0ZCyh7UJsEVjW+YBRvN0yYxi3M=
-+ThsgYLN7BCdbm9RVXoxGQ==
-uhEgD5EiPc7S0Nhr/uOTbA==
-mDYtLWiRjfoxMDHuDtIz6gU4pfve6fqdiZmQzSWzrGw=
-JcEQgvRiiUihwJ9KVJ02Xg==
-NdaKeXqlQkvePREyEOpb1Q==
-NuepHmllV6OE8EEcYqb9FA==
-hcT797TjQepILjomoPUn+JOrn5il6jErbNfugU/qTbg=
-wNZNYoRv023EYI9dkzXMtdSTrmCBU1Zbk6hgpM4TB5/m2QttGJJ+Dw4/SXaO5+IslN1rNdGd4p38lY29PWbYeg==
-z2uvADRA8VIAZ3zFP+QZCg==
-gNb1sbe4WQJ7G27XHENlkQ==
-ZVUJ1vSjU3UoB+KrOgw9b6Er6ArfrqFzeiMohc/76I4flBPp1X1GZPp1zfzfbGbz
-bHDuKAkrq940Fg/sROaZ7Ebe+vwQOBxLnDB9Pyf1PFd7+CQHyUj0bS1ro2Gdofko
-dhIAZ8Q6BdHTPKNhbwY9ewbWc62chwjIx9tPxRHpAJM=
-jSQMVd/cVCEXgKuV2vBNMg==
-/znmK31Eo+sRrP55U2sRJQ==
-VTN1RyQNUuqyWtBsbpV/HQ==
-t65ZFYHzWB4IDbqSJxMYk/Su3RdzLyqO9pKHYWYq3N5nr2SHko15g446VG/kcWdS
-nb7FVCqPI9qOePd+MMFEgnUhYPbj2+mABK1viW+ksU7gbchwVWdEMo3bDr5rxnToeZmV5A2jqTnPgqY8J6Y2xQ==
-Ifh97yacxFx0SDh6xbGWvFiM0bUYoT6vfTj3Lqfd9lE=
-AelEDf8UXxpvg5K/Qps+fw==
-vSv35mzxez1RMM2DTPwGb2FklBQd8TEFwsyRvuUYMi4=
-9Xq0Wf74xImRzrgpIDKLHg==
-Y3332Xdq+cWyqCrNLoyY4Q==
-mrcmsMYT0OkMLioRp2hlSksgT7+g2I3tNuePgAs5xJsSB0Va/B5MgaRNmN5MHC7X
-DzUCmCbGSpU2Ug93pNfgqX22I8/ByRYhEQDCPJpa2oc=
-4HsJp1PzAPlOoCybhBN/uA==
-NeUQlkRg7Bfz7pCJ4fPDTQ==
-atqFWidlhLwjWFgU58C8y8OEPXcQ4S/aiMK5BRHA7hV4HrjKvdGx8weL9+euKXOK
-61nBewfkpx8sHni4C4UN1j+S6Iub0QusdN1bSv/86n1tXfFEbBPhtYTDeqInduhIKBkXz5aTlzJ0y8wVF3GdzQ==
-f/ZTKfFiCjGcUoTbyfGJiQ==
-/CvcMmbc6UnyLOMybw+Zmw==
-V10yM1H9aLLv834EK1r3kA==
-WEOgXsTB1NK+4jijFYId7mJwz9Nlqdbl09oUUhALVSGoFjRJv/3r5D5bqJfevLwS
-XqavQvUJZORR099AQWcVNXDPTtl3u4ifTTZXluatFkNtjJh33T1hZhDJj6/TNsTUQPww6S/DhBxBaLGMM5miGQ==
-pqWp9srxNF6XUPhyiZ8NCg==
-GYwouOFE92I8DOdhBF+wwA==
-PBpAdJlQdwGWPfV1BVxL6g==
-guiGBu0lWuYiRoEAuDtFK/o9yaChEr/cpxJ+15RmKAe5I/Ty83ljdndwgLdj4dGW
-Thg2BBa6hDiqEhh6yQT4q59dlGz/pTvdmlcCtTKNz0DKXsxAHUI60WI6eb8cSSNn
-X+F3CfHpMBIA1U4q5C0AEQ==
-nL6YjhfDKVWfTEDk0sTN4A==
-dRBHmancCpwSbaauyTSZRa+P/Zt5ERTCTe3Vs/OyUZr7n5VWV9MXrbAdk3YzmCr/
-xY5k6n02jgif9WQI0SU1FI6zG07/DivXgkR++Tm79qz6JObcGZbDTt6qmwuW/Jxa
-PAlTHwFBdeYRMv2WrB7YPw==
-sQaFvl6gMzvd8JjVT1s9Bw==
-8vB+8nalisSXnQo5MFEL6nIPYcVM1pMl+X+MoC01qVepNKEgIxoQYmldPOCxf38U
-0DqjV8nHiUb/25ZLgrbdHoJSAfWU2hSQ2lQLvSraUMj/bWkF3uaKqQ7Oyg60xUY4
-/ehwnBBpfEtD7FErPQux+Q==
-aXdtUEnCiNeH9mxetMrgaQ==
-Blx5tdhHI5CamrlqPPYMAmL5UXKxO3ClnwwxkC9v/EX+PWTnkZDbYxvSyJ049pLr
-XovMPNv6IRGzEypGO43j+W5ourYfonGHwAvLHWXsMHMXmqfjj2gukRXEMgv+1lXr
-zTj7aApviaFqGvl2PQD08w==
-g7DHOg/jeTx+iBdCsxSRFA==
-4wY0YT+8/YtNU8GjNbjddzkf7xWlY64QJV7lk6qrRsG+/71yexTY51p1+g98FTub
-nxjpfI2OSAytUUTgGosUWfQPk6sGbslHoMOc8+pbHjAB5uQXYTJcbzAiO137016p
-tlbx7xldg8ta3iFQBKlxTA==
-cQ2dVhTP7LHktToG+aQ3fA==
+-- @docclass
+
+local function convertSettingValue(value)
+  if type(value) == 'table' then
+    if value.x and value.width then
+      return recttostring(value)
+    elseif value.x then
+      return pointtostring(value)
+    elseif value.width then
+      return sizetostring(value)
+    elseif value.r then
+      return colortostring(value)
+    else
+      return value
+    end
+  elseif value == nil then
+    return ''
+  else
+    return tostring(value)
+  end
+end
+
+function Config:set(key, value)
+  self:setValue(key, convertSettingValue(value))
+end
+
+function Config:setDefault(key, value)
+  if self:exists(key) then return false end
+  self:set(key, value)
+  return true
+end
+
+function Config:get(key, default)
+  if not self:exists(key) and default ~= nil then
+    self:set(key, default)
+  end
+  return self:getValue(key)
+end
+
+function Config:getString(key, default)
+  return self:get(key, default)
+end
+
+function Config:getInteger(key, default)
+  local v = tonumber(self:get(key, default)) or 0
+  return v
+end
+
+function Config:getNumber(key, default)
+  local v = tonumber(self:get(key, default)) or 0
+  return v
+end
+
+function Config:getBoolean(key, default)
+  return toboolean(self:get(key, default))
+end
+
+function Config:getPoint(key, default)
+  return topoint(self:get(key, default))
+end
+
+function Config:getRect(key, default)
+  return torect(self:get(key, default))
+end
+
+function Config:getSize(key, default)
+  return tosize(self:get(key, default))
+end
+
+function Config:getColor(key, default)
+  return tocolor(self:get(key, default))
+end
+

@@ -1,9 +1,9 @@
-92gLUDUwzwa6qltXdfHwMQ==
-WNmHDm7GnnhA771HcAfQ+5+AtU7G4nq2OVy91/Q7sfs=
-e/iatvqPkHSWZEudnyjt5ScrZvTNOIhLTWhj68hKbOM8ma/E/RAk2sXyIi0ESCBD
-L53QoSKyGgT+7ZMtw8xMsiF4mtpsYAk5+gNMp5h+Dxo=
-BaX8F6WA8kJDE33nMEX78qt5Qp8jRSpgnKkL+jcxqNlKkil8GS6e3sS71gOmCAV3
-3uxvGVuflrCLyQ0LIeYWdpfaiD+olJFmtlNYQatBPyE=
-ofd6pAZuFGq1IClglebs2zlHpS7rY8CJHiORHkFY+Ic=
-b1NlK2Kg/RIVJ6VYbj52EFnXPap/62rMxMJfp9IhpUA=
-XqGmFK8334ggAfVIP/9oc9N9HB90OZyfA6pznAmSevI=
+Module
+  name: game_textmessage
+  description: Manage game text messages
+  author: edubart
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ textmessage ]
+  @onLoad: init()
+  @onUnload: terminate()

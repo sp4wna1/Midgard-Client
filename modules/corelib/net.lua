@@ -1,16 +1,16 @@
-RWqij1hbsUMWeKqgiDwaskyv33JhWdSrfomIXxkU6roUKC1Sg1MKVJCCZ1Wqwmv0jFdnbi3Nb3v80iDCIVQBxw==
-VGo1ejHWt6Cakj/pHVuF5Q==
-cl6TjysFmggvp9a9nwt89w1pBR7G6apdljf3+TvZgyU=
-1o0sivc+po6A0t0YS5Ayzk3CyTpHT/BPC3k4nIdLgap8DWoQxv5Co5GL/vsQ+LPlexWAydg7mjhc9hEhAyRV+hnntFo6LYaVxwU30pwAaKSkd4iu5DCX0+ZJi7BvGlVMypZv8dssfZlOQ1rO5VSSyw==
-05twnTMF5w8++36nm01UwdY5r6sOKFrv/Rmj34aw8MY=
-zB6dy6VEAsh+QMB321SVji55yZvGBcIKTy1uP7UcdHOr+5W2VAifYvZE/9HTh+dy6m7BpIudfYk2AaVcvx8/Sm+f9t7DxpX4ebnUG31XmcxDQq7aIOnjOPB4F3AUUExw
-5wFEJ4d04+SRlUa/+wJ6xGZmwsrBQspFnh1Hftvt7YU=
-/Cwmy35niGGfjsXizCUqzsdIdTsp0mOvSEVVEoFCOrUer5hbvnia/ipcuHpGvhNjrQ+EV+grk/U/DFZUIHKtqTALSx0NRqxKEuQaP3W2IOM=
-2Kngo8Ep1whUgqg66mEXhiuJBce4qsBUHcKMn34bHTY=
-jAUPLymwowASbYdLxDy+obciIVxIMpOhyL6g2DA0fdTkbt4fKl/98g1zqTzFo0S1
-slyAcb+OtvthNj21Rhra0w==
-6mxQsXEDDo/jHPQyUUIRDvb4e/qtuPY4hdktpCQDos6njWBu1eH4gTw+fJg01DIp99AM9nwUBj+2D+FAhEZ6/IDtCE+2fYgBOslN9hE4haVrpdSzptvYf6DI3/NHf3z3
-2iNRhhAWcGOF7i8AzF+wEQ==
-/EMo96zKQDmlGc67J3NiV6ZdQNadHG+TqAJt1HhPz+nyRCIBKJjpudpjD1MkuBqqwGjG3QO5Tp9CozVu8VwKfw==
-nBtiqFEeWCweQZmsqk9hFw==
-wTJodHEAMsaKVyRdLhjMew==
+function translateNetworkError(errcode, connecting, errdesc)
+  local text
+  if errcode == 111 then
+    text = tr('Connection refused, the server might be offline or restarting.\nPlease try again later.')
+  elseif errcode == 110 then
+    text = tr('Connection timed out. Either your network is failing or the server is offline.')
+  elseif errcode == 1 then
+    text = tr('Connection failed, the server address does not exist.')
+  elseif connecting then
+    text = tr('Connection failed.')
+  else
+    text = tr('Your connection has been lost.\nEither your network or the server went down.')
+  end
+  text = text .. ' ' .. tr('(ERROR %d)', errcode)
+  return text
+end

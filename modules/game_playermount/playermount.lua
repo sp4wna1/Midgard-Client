@@ -1,48 +1,48 @@
-+BJnSs8DrIujkixbz3lBUw==
-HvtffNwj3CPyRg/j/7e9gfxIBUHyqFU7D1+qG8Bk6eU=
-q0qaw/wsh70NurUJKvr2OyBpmWFVuP6fW2soYqtJmDg=
-+e6g4C7CqgmPiANWYiIBkjGATtWt31vxsFBxET8JyRQ=
-B8knLR3Y5mlQE+cCH5Zc8Q==
-etaT9eylqYWVtSeOyyVXoxum1bjc+YbkkdQ2yQytFMQ8Nsc3UiW7TvFlSPsCCsy6
-TGRXr2RLDrA/v5WmkkPJZQ==
-K/oy5cC1th7Gw5R7LvSE0w==
-e9PjD2hCttd4AxRgp56NGSZ7jFNkDdDTc7PGrm/7Yu4=
-9cYHS+D5dZACQDVrWcdhyu03ow/cWuWkLNmpZBHS/GA=
-tbnlHXz9GYJSxTXfdaMbVIguEv2NIg6xiN5cw+AkTOI=
-LnTuzKHqoeB3j9wG6BwOF5CMAr/v1asBULOgjcPfiYc=
-QJG9mAt1I3syoisms43wjA==
-tNPOReBQtmwh1bJYDMiPsQ==
-/L/zCc6XH/pWS9pX53VhNg==
-+jlGm7/cy2e5Ip12hxaNKg==
-qC6MQFwQ8t+NIJyneJrk9/LcXSgedD28FSziRhTucns=
-lMkIDWUitjpNqm3qe+rUyn5Y9jGjNPuYTQRPV5PpbzzUDx97Ww16BYedr7OuC9S3
-+1uP1ePEI362aR50gIInAcuTM/6pGSeM6UWzaYXGk29mTEbglTZPOamfQjykyqGDXZgnD9dfTvGmqtpCTXaPJQ==
-giUXKZ/jxENi8l1wM7bM5w==
-RHx3i3mLN9L8EfPLgGNdBA==
-/Yafxxd5+CzGQ3LYlflp5Q==
-8DBS+IKFtPJTZdXqUX82pYv7XVO2AQFx2U6nKw6LzCE=
-YJf7VDtijLK3OFtZfW9WTk0EiPsVHYMhNTKeUCSbOn5MZHeg75kA2Js/vQx+GtfH
-RJsEIuml6x6Uuff/Srl1dFytuK1t7Zz/12208uPblKkf9nfOyLsLtDoyT9s5udTj
-Gp5qiUt0JxvYz+3h8Ci2iA==
-0ACFKTZPqy9uBzd/YmrCQw==
-mFVD+JoiDS4k7c0fWM+dEA==
-2hvKVApNXI4nMKvySrUFlwUhmLCMa4VQvQHUCDz3uyY=
-PXId2WqEr8PK/QruBKIB1fm6EbDEzboITVfRwU2rstNkFsszul658vbYoCOM0Hh1
-QUPRCtgtGaJaxJ8YCxC2JErOY5vk0jRAJLbU1YKhyEU=
-sPL46dwf57wUd3LwtwnI+ihhgF1eKMv6F/xbb7IsFzc=
-zWjmQKSzFlarF3kQD3DCjQ==
-q7Ru5/b7twSJJQQq3SVahQ==
-VfURKJS3Vgj1QqVRIhDTMQ==
-/bQhYm8iaWQfpv/3D0yQTa95x1H/kudWU/SrrnuxQcM=
-p+dZUTBFec9fhwORVg1ZgQQb+gPKuozc2gEjg21MSxcdjhHoCxRUZvetPg+QhAv7
-YZrEXg43TPVtfPgZEFOgUmKkmlVWQJAjllyVNFcveQk=
-pXLDoQQtEVUicF6n1Mzc0EbLbDfU2UGXD3sH/JXvbaE=
-FlTjsh2UF8/yNGM/h6rjzA==
-bXQTLqb3SObKaH3mpD8l6A==
-c00bvQBMK1EIHqa41wETCw==
-NmkZZquexmlYFMK6Q1YcwwvFQznMolHjZQkKmEOn+9E=
-D9Ezodls6lWUb8Lx3xvRNoQ5wLZYmy949AH1pRVXeQJPgWbu8W0/5DUqkPEwoSiJ
-4k4rtY80EOBfki99zpPc3RsexegbjAWGXW38VJG8upA=
-4CoLRj8TBl8MpopGyLGevjuhcoW16Eu4Y0iLwj2+Rj0=
-ZA5juZQbQpw1NE+56bEvyg==
-HsoEtwJ/GB+nwlwl5u95ww==
+function init()
+  connect(g_game, {
+    onGameStart = online,
+    onGameEnd = offline
+  })
+  if g_game.isOnline() then online() end
+end
+
+function terminate()
+  disconnect(g_game, {
+    onGameStart = online,
+    onGameEnd = offline
+  })
+  offline()
+end
+
+function online()
+  if g_game.getFeature(GamePlayerMounts) then
+    g_keyboard.bindKeyDown('Ctrl+R', toggleMount)
+  end
+end
+
+function offline()
+  if g_game.getFeature(GamePlayerMounts) then
+    g_keyboard.unbindKeyDown('Ctrl+R')
+  end
+end
+
+function toggleMount()
+  local player = g_game.getLocalPlayer()
+  if player then
+    player:toggleMount()
+  end
+end
+
+function mount()
+  local player = g_game.getLocalPlayer()
+  if player then
+    player:mount()
+  end
+end
+
+function dismount()
+  local player = g_game.getLocalPlayer()
+  if player then
+    player:dismount()
+  end
+end

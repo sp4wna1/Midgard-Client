@@ -1,205 +1,205 @@
-DmUkH1JFmOVluiSBJEyopQ==
-xJ1Y1OAEWFr40Elo//QIfKYiJ0zblW/+C01BQiujT28lb/NqcrLxg4wD077weVyCC+ZMd9WMXoIBz7vdd9faop+dyIJwfqp5XHxcGK/+zgvXLqcqQzCA6MSJbHjne5tk3yzaDGULr7hS5qWU47BhUXm4/Oqajpd7qE7j2sBDPknWaI4twv0kzdcDpFSNf1Vt
-Vn95THPXzzUXuTWruBuzfWtsj55Wdju5tcmpfjxhamWuD86Gy/g9bC0ISBxuLCxGgDmahsdm2XrvuFNFpInZYq10+i0ULlXGo0IpoqupDFUvk7kL9ST+Fk9zDuUPFLNGrIsZrdM7NcR2N3zlj+pA+gcpxcsHUsLj07qLrhWLfL4=
-M+/TRcMtO2yOdF1SOSWJiA11EVSscqX3u9McG3iQCND8p6kAXxYcV0XaDpZVcOOhBWFDBughYKdGZ6NtclmCcyfkHRrV6PQDfDA9IkNgmH1Rd0L/tmupBrrQ8tewQMXKeTFpDiZCHqF1jKBA7rYvRi17cZ1f+30EFFPrXt3oKSAN5GtapqgJj3mw7qgS0ocf
-Mq/uuSYTWXk9RLqEImTJF94y8l873oNMsNce4KrAmxZDDZsdNYkraeVgTXP8i14KVxlf1VDvnF2+PTHfLiCpNNHKCLhAdc4N+jz3IEp1H3XdhtAr/f5Vwo00mw9fH0SuKtoLn9tNn3/0B8BAid3CtcrE1+IO0Y7Z2QEQ5tPGk/8=
-3KJ5FcFSFeJqeg7GguRUPAIpSgNmA9lc3c5LVwc4wve5p84onI2l6PT5w6VyxUW0FkxdkZuX3ElN48vGv6vGELKmMk/B83cgRg+prj+ezeoyhbAaZ6swwixPkH+840TveflsUIjJ0fwIQMbyE8sGviMDjszb/fI8z2y0pP8/9XutqiWW1JSM2sTyDkwhbqiTI8RLv77fvCbOxDS8rhJT4jQryFGNXCkRmSLxtG6AOhI=
-HCatymKNfuPf78ZQDEZhcHLu/vshupIxtPSdS+MxbSL/6oQv5AVX4amKZDkzRlfdlAly2d1Ribk3iyXUTu/EIqkY3bbkFRaUjEz/iVBlFuhcMZ6ffJzijTlVEzkFCcgPJ5NhJYj554IgpdZnnlcxHnvMFiVDtzxbT7OR1WNhx+g5Qy6DzffBdhm3Jk6+VePo
-iFfTls73SSzYFNhQ9pPy0i/taBnhyUrNjrWdLquK16wQAIj3N3MEDOrqnVq2hZKBhZTMU8dwtXYBPBGM4imRq/JOoA2vozPApyLQOZHVR9afInuTEOq1TGcgTHobjxFN0ZDCUAIhIRe6PaxmCg3oCBZHwsVXB4kcgn16k5y8Xe8=
-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
-pCutBFKMf+KKtfr0HLN5qQ==
-JdFXdtE6PeL6oRyjnrwfgTg0EVNzHwqmGyBNOEbY0Dw=
-h+2c7QyK0BnktM5YPjlCoA==
-EQRlAhEM5M7Dg3Vyw49hqw==
-cn3lWbIMq9pZS43og6c2g+MhxhLd6p+WUDvWq8kdGvQ=
-16Oxn16xs6qiQxGX5nQs3A==
-A0BAsP5Rd+/gSC87LbOaqA==
-5xNkuIymXn3G4a0S8U3/4yBZYbaO0HRq+NhMUo2bWdA1uNjivB1B/DcDQuEbyrIE+QMt9kus3yaIjLljSZXghg==
-iSnRtt/3+moQ2neYvpWASzHQmNKhH0VV/oN0b9pCgW/gdisw8LU1iIzYJJ9gb5CREyBlS8+ipydrhSzH+r5ikw==
-lexfxtgd1TnJajEOqgyRkRGAyVLLx0NO67w1aGuLWnRJ0NwsSbMZGYh+X+oDkXPXpEqcEw7nycW5Hmw4jbXSnA==
-PsRN56musStkiAgrMkF8xg==
-UJNi30/fYKFO+QHu/swMnQ==
-NEq8VZhAocY1jHLz0ez8hcNL7huXI/AEwQur5Yl59XtqpHydOYp9t1hdJKs+KErIl4xi3RyZI/S2iJYyeQaqmA==
-UHcNUbsZGjXZQQEeTHt9T2PctVb49CVMF9+f951VO0xD+fUssgXOTlFTmKGgyjFZc3OwvvM/QocuTKTWUE8UjA==
-InzzhppLgWhDO4z14J0faXkoU8Qs/ktjIW3rjRuMpKICms2tK9WDG/UrsmIFV2Vr3sbikac96Y9Pnz/OOJ+dNg==
-AFH65PqEpk/A/gmWDgebBL6EFoCUIjX4pxUZDQsm+ZM0v3MEx7IvAQKEEnX26OI//4FkWGbSoyAFTbdkv8AbYg==
-3LDfWiVaXhoGGDolouKXh5J6DT0HNi+pZBX+GBlvPLidJvDiKOJ/I+3hs17SZpIHToFaXjOpAvT33BIHKKePvg==
-RuFQnfoWprDuTq22+2pW4iyUZlTKiBWkzSk+ZUE2UA6lZZp1kUKWX2XgSWmbXkQrXBCDjD9Te4fYmrTTCig2xZl59JvBJJqcrUYjmycxMaw=
-j+gsOMVjM7FB+8UMqoDTvw==
-Urddw+9yJGF+LCeBM3N9SkmRX7qbswRFcqlPG8Mf5NgF9Y1nUCGT6TB17vcBfv9D
-iqSTW2s8gwyj13W4DxKKlQ==
-eLtGq+/q5anBVJoN3UBGjbnQEhMnpvzlWOovRuA0q8bloCCaFOIzozn4T6gbTA3uZpqjD2qmqqzrUUNgc4GXDhsq0BbcgbimmsAY68AVm/QHkZ/tVndo8Q8w4Fnq/nFGLXT4x+RhlHFYtiUzYTjucFGoVgoyx6xaWwH043XJz0xO6eQWFpn/1hSRWS8VcDxRbYBOS8cd0Mnbkc/h16tq4Q==
-9UV9UTncxBROE1KevGtGcAPPuxm9osCnYZPyfa7O3zg=
-ljSqFczNUijI4jj4CxSGnQ==
-skmefS2vei0yU1IcpLwNM9M3qG1k978iEZLfO0p1yaaaPekIbMfgzIXsnxbE3MklT5lCvGb5AqfYAgbSoqZ8cWPwgnDfwqFC1xpsSbKpGA8c/C0qS220FTSWQfH8RSYS
-0zQsJKopMxAglbVZplP2C/8/QlScn8ESPAT+I7GUCCy5APh8BO82raYCggOUcbMS
-q0t1oxbyQFWR9ETQ8SW9/EP7LCrPf8jKtqQNummiLdSUtUrrRLmzdY7tG3/K+xU1m/RXnWHTS1vkB/E6oDtjK2YdMqtbYbj7Jo/luUXaRe0=
-cNFIa3GO+lNyQG9q6W0i1uOVqC2ixrgO/XfwtfCUj3HRIkJ3BZnktLtC6oOXAw4PgwomtNrTAdCw6fYHNN+Elg==
-J8oLsNVj1mk2itrdMxdIAQPmB60ypTlrAm+aFq7NSdwvkrzUqDsAsitdmOGV1Np7iH21XYPMjzSecqbhxwgzHTyKx145E8JlNFxgK6RtqHg=
-lvUP44tzI5439aZvRnnJzakDCxnG/rFBmoaV8HpWTQ1c5peEvzrqnq+9xrwVUBAdTb1a8NZVoHlOpY+o483ENvHePRZ4brB5rFddsGPX8v0=
-cdcxkguG/ZJLH8V80ozoVON6Q1mEQh5vkut7rB5ngp2TQDhfQXu61D3NIjAvP2Kvb9dQeSnnQ3Lfb59d2HA/ag==
-8e/MOxf//7nx4ck0CvOnkA==
-YHZXFf0nR1DjDsVBCjW0oD0O+0rO/divPSArDcywTGA=
-o9JqDmCwO2k+bqP2X3CDmj0Qx+HBRYXzLx4X7ZM+xME=
-OE3Ynr25j/Mv9y+o36hr48O9jTrSvRZCnKWfVIiMJgk=
-2Us6z8LGqLmB0eBCeRNsBA==
-MNJmX/PWxZ+rrZQs1v1EWA==
-HxC1D/uGerLzS/I+gS9alznu+H5JchXrUtXl/h5DNpA=
-BnLWNN8wDsFrJEtqli03eDK8XGrKVt+hi1BFLlD+TSJZocUoO5waA+qGuOfgcAug
-17RDJRvbXqbN230ff3G8ZMsDD8xv3V8Bn0LK1wrroifCe6dTqXIlnBxmBLfsObytTTgG0poV6fFGkR7Rt4zBdjDoUaB29EVUWsQ+Bik4YpqsvKTDmdohWajzLf8bf7oa
-fQEpUnUB5EqjKPGdmbQzUgW+lpQh/zSRmUu5i0iO1TExr14MjvejdSnvd5cciK2/Kz3bk8T1PQ1OL2xyQ27SKqyN3wQb+1Vy6j1ba5g09vw=
-DqGGxiOm04GGV7Nybp8fm2jfcoB3SVzijE56Lm2M04IXMMLuXX1e0R3Ylz78kQhQE105/6PjNMcKjgZFbIAPTZW4ZWlinUEQUjrnArsRFNanE8/9Ep/a5YHCVh7WFzrV
-JrujQsqisNBR4jIhV9QR/mWmAAyNb83UG3TWsbdOwrSF6wx3SwK7Uv1/nal6vtlr/TvLGif7ZjHjPwKiPx7+lA==
-4JIARquMEBrxGt5NfI/Ca4k0NfqAocztYd7y5/AoMjjdYy3UZza493lIB08wGP8iIbF9/wdY2rIJTRiYZw585Q==
-xUf2PYKtcaOpnfWeGVbQD3A2tHWru3EbLmcTp4gXx751uldhDKfx9pNYTsFBvmwAD6+1CR0y6455IG9k26rn1ID/5ZTANiO6I93XudW+HzI=
-YAD96U2u5cndnnpdF9K4lw==
-sB2exMI81cSeED2UEHroMg==
-LfXrMgkqavwpCavRh5X37h1H9W8kjGml8moTtzZ0wIg=
-sSrtFrDPft7dgL3tvjgs1w==
-e93jJi9ogxFyucPzdwGjAQ==
-00aLFSBVQHK8Cbr0utLkhMdNgQQ/8U2SlKONkntHyng=
-iTjdlfrn9//jcrr2oeaKceNzazt7aroYWvL7mLPrZjNh9dHCDjAor5q/Cg8YTXskxl6c1sjhYVz+wWDc51c13A==
-xkX2/G50h2EyG8KbxDWUckdSEsILl1AS3dovK1xQLVry57hGmwC+VcvFa7Y9selCtUQQ4p1DzF8hmeaWFKApEQ==
-0ckpu4T0xXm0DbxQhJ6R1BKI93mJdi/9uSdTSNz5iwa+IjbVzUUVKqyqDWSL9MBxDjQodS77NDEmdJ6dC4Xrow==
-TNwp6p5++U9yO3908IqufxARO2mYEsMvwGPPv6LR4aj76ch3rk6KnILsC/hFmB3BmrWmgGteswkXIsdYIUH4Tw==
-iRPkZd4FP+wTsXG0i9REQos/FILSUHBFhS9IrxaYVhHAhWIzEcjowLG6+qx0E+zKfNgHP1iOg2riSQ7kudb9Jg==
-kwwZuXSehRj6J/bpUtP7KfITxWq3one2Am3XfAr+UxK+9SZyHFJCy70EVOzsEE6yhrSUBrUq0R9A2hh+dOgBsWWWOU8/Jmoe3f+UB0l1+Dw=
-95ztFiXprNaS71uDGkSRFw==
-yMjWhd6PvOAkeBwkYRpraCMsPHoWxijnUWbtnEaajeBssYOus/EkZ2lGmGzoaS04
-RfTw5vi+o+9wRQeXQDKxKQ==
-1hsWq0Vi3eK8EwKeuWbUmHdLIiFIVLFiHbQj3scrK3g=
-3Rk+8oREPN0Fe60ZM1uoNC1nkHOD89FRC2sIm1e/J+8=
-ujMA2NGE2EctKYCQj4FIXg==
-98ynNKVyCZ9tMbtqOd4sQg==
-Jh9FT4HoDRrQms+7QsgEpqOUdU6Ac+CXj/R0do0Mar0=
-dmvQ1My9+9IAkFUkqEXO0f66OHUvYz++Sq0L+3oFYSf9SoWchk67J94RXBf4nJZ6
-u/2J/IB/czEbeu8V1aN6P7Vuxi35y9peCXuUjUJK/r0=
-gQrDN4BXqNK4dv/SeMUgW4OMRjZvUYre6o7so+2K+9foUO+8TtCLUuBSoQl5hqU1
-rtqh8XzfpfNHk/RnER7Q7A==
-MjrLRPxWPIaEdyGIpoxf3w8QMLAG+oKJCFMCQCFBzv0=
-R/hN6lBkZHb49IRCsXPVCcVdrrHNf44fNm4Y60pMtGQ0EKxCrGU7Dm1Z4J7I/F0I
-ZXqzlk/ewq2YfxrJA8t75w==
-WXaUQKHBEhJOHucKjMXomw==
-2VLiK2+xx0S9BS6zfBPzIA==
-8MkQ+4UXvuDvxRqkBbNINjcru5L8df0MrVlN1CWMxkU=
-aRn+/iMGNTbGA4mPU7UZvxuhxLJhMw6q8JkTq1GmVbE+z/Y2WxU12VJAHpzGGRCrC+N50R8UtyF0n6ZT3tXQUMHLi4Q31A1T9o9UysZ6u3k=
-J3SdFhf0shxB4uOO+STmFA==
-tOY24SVG4gDT57eXdKaGholglvE5Jm1m9kV8yFQW253Xm8d4UYuVYzbnA9jKO2Px0VaAVMYb22KSIfoIR7bgZg==
-9XKi2XrnK1rSKkfEBt3g1g==
-leCF6HKmCJz51O4z5m3iJEkukOoN5tjSXVFV1RhbC5A=
-W+7CcgRPMTDwvlNZGuBnEQ==
-dMtOYKJdfly9wVezFFDTTg1ljbO4GH+mk0O8ETD2QWw=
-Q1Kbk3QVqAZtCOlTj0e3cydmfzjsStEcjGSHz4YYRQE=
-WslqEwgp5QDB8GM0DRHhaw==
-jditCopsOBX7HjqeGPEi4Q==
-cG1R7lr0qZP8QzCmQudihQ==
-1ELyNQcCZujdeU8dsjyohGm+WjpUXrW1kN+KD2xLMyg=
-DhL6SemKLNNbqgT/IPAZL7mAeUJg57M6NCaEBcXSVFSX00UwG3TJhhZ0AlYlLh7AaDJZtoL9MRNuM76Y+Q+mPw==
-KTMH23KTv9MbNsLlPTQSDEm9Yz2VfUU8liLBot7AmJv0ax9ry+OUk6vQu/5V9wHD
-kiFXtwKnfRbmKSkHjQt6fwCq9btK/E7y7OBCn8NAa3PjMdwdmSB8YGVwpFSd/1zt
-F4KsqSmn0O3qGcMBjI2Eq1IK1YgO1usIn1aFYdJ7ZbrJ224/c6scSqmy/Ij2J/vz
-mUUTRmfb0gnlNSnBXKRZRQ==
-AwgyijnWItCNp0tknJ9rqA==
-M+FAaIe/7H907lPjBZ/PTQ==
-WLzgltDxztuTps5w+5cMGaDKmwPVbvRJnFROO3k/oNM=
-tUvbscUd0pizRtOet4jMhAFpMBlKh+LIHEE2D9jlBjoHTTqxod21w4tERCYZfwrvgJstUrDkW9RzwFjRTKLygDsBeerozCFya8Pl1gko4cw=
-C5tHnW9dlIieweLUv+2fiA==
-ogresS8OILxSrSp2jMwMHA==
-TK4felWfoi3TPCt0YXBkLGMBGJ8FSJruVoxERVccSaE=
-fsAAFED/uX4dX+Y8D8E+klzsd4ZDMvUqAH+BKy3lcPU=
-YoloLl0kjeBjJ2Qj23mZzztDQclweQWVTds+2BhvhmU=
-RNylalXGH+iuLZsb/fh9iw==
-PMMnlV3wnkAsW7jqcoRp6Q==
-SKOjeTD+8wt0JHydeQ6LBSFaUE865x3FD4cciTudf8aVu9X9OQJiJamjYZ/iHEcajwLa7rFWY5I5fp9XlslktA==
-pZjBLV1CkK9Ts7UaLZK8bBr4An6ilwUw7M8aRTysp1xNu/9BC1hD0V85z59P+7REc+or2o6z620GV8WLHnftVQ==
-8oP3B+JR+Cgulsg8vlPH6UjhiVz/VsKQHUbFr3TFuvvvUSYcqgalFoswWLgS9WCl2SVd4lNaFfbZPZXJmrTbVw==
-RWGp2KgF6YSqqnxA4bs7goXy5+0uygqt+C36SSmUVrENzLAZsU1xN0oeq1ccD/eK
-e+opJFyIZzUvTXWfKk6XGg==
-aQtpdox+ulrsiYtul4IqgA==
-R6EGolw4x8hxdwGt/tS0WVGgCNi4rviIP+BwBNpltHejDMjCkYUrdBcf9Loq2txZvqgb7LW4nKfjJHRgMOCzvg==
-5iIBg2cz42VBdwnOBdp/zCE4kOAcNaw+iQtRcwN5/nYoS6iiH2sRZL90bPyCSgJq
-tWbdjktFAOpMsGSHdBZrG79lZVbklMDY7T1zu7ZR3nrP0buJfQiA/uK9A9bVCjX3fnfNFYVzm4TmEbVfNkiShw==
-d1mXvwXKxDXyh4V32GWYkyGcq1C7gm2sktem+MZf4q7XVf2Npa1HgQN+lL5y/kfM
-pZO3gx/JQ83B9GN8x7qCiA==
-Uh4OENM1dN/H7ZgBPXAClg==
-fxqzHYVI9327Q7yu84kX9h23YTP3cn/hpFUQf82b9qDm33PUscI1ZWc9pm7CWJsn0UNvPTPoqKJwl425M7yVAg==
-1CicGe/Ssdq08+B7LwOPwu79h62O4NIchUKNQakgOYh3oD+Ee+mk2g3TvHwa26Xe
-eFYTLhkoXySwZ/p44yycandEYAp8k7mjeNwKG62yY7Rf4sHTvw/uM4AMFkvmPBZWavmlNjwmrAceWFsE0WY9bHzLBaED2k//deYGNYVAlkw=
-K+OdjkyIqpKPa/Y+CZj1lzf6vhyqSzMmY43jFMfOzTcHIBKbGWnIXdtRRnYCaxoP
-SPOxwSeNHFMQwe5ubMukMQ==
-aGDstKZrfPZFWnsrQqcKqA==
-B3jtzJO0IgPJTCSlL0bhoboWcrIqEEFuepgI5lS3Q+knGuoVlPo32byaTbEJvuaz
-FZQa6P/emPmN1U9KLRgZH/bC95mLSPbmbffJ6dY69y24f9sQHqRfhc9K7In+vYaz
-IwXkkhoQccLMzYTyMQgnww==
-bygVkWAUT2yC/AD21BZEKg==
-m1B4ZZC+XI6tE9x0RQGeoyqwhljLALflAGTYTX/E0VK2QhTsJA0gbsgjVkB6NHL0W8BkOLlpDmfEaEPKd6Og1g==
-LUhTzwyDvoRxs133P26xs3xAwJuL96TQDf64XsztiQjE9Kpk0g+jC7cLHwmrn/FF
-/gqfUFL1qiDa/aiFwVPu4SDd89Lnko9mIPS52p1cV7Ag27fy+mjXwL0SxInT9jCeYul8pKqn1c4h/OuqBLOBCg==
-nGIz7oDppWQhqf4VsXgsLTMwTyThJf4JOIzDwBRzt7VFIck0MvCrMKHjD2zhQC3I
-o600J1T/HMwgfWv15Hz5uS4g4U9pPoIm5jR1RPuI4liUNrYHr99qrPSHYDgi6HA6cRb4UP6weYX4q8ZQ5Lfzag==
-M0dwdg90+tTlzH9FykaDYw==
-S6TZmEE/00pcmj9Ze4dOBw==
-p+V1kw0iO0btRsA1Ev5FIDlP58FOEabcTbNxbyTZ1QSk4m0XrHlXP41b/g/7JgND
-7k6DWipZFlWPZOfuDVNSXjpjv5p+N1pJ3Db3OxvuGSE=
-M9+xu0aMALXs2yhuSbZFyg==
-8xe5HCYnb3ymVKyZHr78h192YKkDajiIRQfoxvcGtLexHEbLnjJkM8EdoUjdoZ+z
-TifDaTWnKxaNrKOZLA+hMP2lm3TpbxCXM4NKPrWl5Ro=
-mf5/36HaTr1WJMOKlGGbyReXIrrSg0rnDs2199SumTH22/t44icyTfG5UN956C06
-dLN/PVP70C4H1XNSOOrVI4JidtR/c71qDPJ3XcqBh3brouEzClfomja5vl+BX2J1
-+7MJOdJoMqWxK3B7VgGVCmHpEEkA8l60ccs5e/N4YgeMwFGGw4LCSAGxGsfWfBH9ONSRz7SxRP31OSlNGke+0g==
-iXthLIlgVJb3wOWyV3AJlshy8VjrYUrtS0ADPYQEyzs=
-QoK19R5mQQoMtOuvYslfktjsR5LJn/9IaHyHFiJCCv8=
-PFAp0apEVul2rXs91usFSw==
-0CR4eZ57zJImj0hrblOBiw==
-rD2z4vocy+LOPeGZmZOwww==
-M9TV8yQHxUE2UzvApY7CDQ==
-L0eUSATZqXLt4eO4riYVI1+GQMLQO0tlPdLSG9Lka3g=
-ummQhM3/PtqH4yrnEBYPckYjO0zdJANouvO/nQcNxOU=
-MCxX1H3sKnxm15SWGZbYuVsJOHzh14/slVtgv4Emi1l3u7kMZITAs8UsWVWJyIqX3sNrqVrjE9wvshj3WfnNdMT3arSSoHlO8/29Ji3oZ0JLegQvWyRETtnNU+5TSgx/nQZE7DFRlowo+VNuiUVqaw==
-WQ0Cdm1bsvH/XzDoUVftzB30kG1ETIQYwVcS9MT9Z/k=
-bMCpuGJOqHsjWG30jb8ahQO5zkUl5YPg8PaAnXIC4fs=
-CtqfQeH8tJRwuITp7sHUvz8sHnzJsh7h56UsWdsV2h90FrXHDcaSDUSnQQsCmtKWPWvR2/NsK2WHxK/ATdmtuKONyZSCZivJk5fpY+X5YvO99CRL766hZsOnpuSY+iIUyZ6wWdltaysJbCg/Lqpx7n2z2MnjYe9ZfOglvBGScsg=
-yWNCXpdhckqcn+8i7Yca3g==
-WIDBlfZeTAiBZoBKAD5rVQ==
-QeZ+sB59Nnbet9tKUoBOUjqRaLGlK1tBnx40wgwMB2g=
-sl4gqBdR09j5jtv21HMyxdlYBWi7YN8mfmaNd9vQFuMaOrTIqEP4gZReh/J1w0gMJ5rxYuElNp5mll3ScnyJDQ==
-MoMqz8Dcctw1yz5PzQO7/QRntR8Wq4aHgDAkDDiLh/I=
-LLFZLx2Tt57j9EA1ek4BEzYlmbdCydIRBIy0TI3I7uPSuHyE+b9s2mym3VH2G4NFiknSEsnD59NrCsFZ4BTgem1RtcNbJlMvIGC83px8jmoq/ryP4WL90OsRqxqE7hkPCNAute7Jed9CADUYERd4eh0CsbMNG3hBU/pl4yfsbuI=
-GLYqUwDlU/x0RjSEk6xH7A==
-48s7xB6/5mDy3aJLip92OQ==
-F6i0e9lwbMx8VYrfvfe9POn06E8zNYGPy8anXY9vaUJIVda1t4vw5G5+u4LU+NyX
-eAYEM8wHnV8RtUg0/wM5rXBSwQ8bPgzDMnG6Jxrg6PU=
-Vky1bCHlGuSZ/e9BIZjPGw==
-R4Ln9Z1C07QdIXTGJSF3DUXLAM2LX0Aua/3OrgnxbqR5kcJ1C1mLt41bmiICBMHU
-YReORnOWEdpKxJKdjuKceD46LH7SyZsMi4JvrywQ2mQ=
-LfKP7xYJJKp83/mOBOV2KrPOXFh6BVbUT5stMsOlfnD7MTkGzq9MVmPYf389h2kLlrsX9+znV3LJRO497gtXammgNXjxwp/F1HBIA5m3HewOTC0ud4HH3U8RPflwP3xbNVlXT04FTB2bkR4AMCJbBA==
-O3qSzdeppO7embn1IdJsEw==
-9gXtTXnKfCaNPMtDgB/qtA==
-cLz2pPKtKXCnN77RvouTdg==
-UgimDRpHS8I8XnTs/npRaCUYSS9Di/kmTintJ+eRGE6CCb2aJreh1v+W1ttysyyY
-NyTSCPfJryYmLOOpeYNTwZJEGoq9OF5sPFuOBij+DE4=
-daGUki943WaLd9tRuNJobA==
-TeE0yVcFghTliNeVo5dpSlSvhDBEYyqjQYiSDh/gOQw8+LzIpIl7M3QvfXCZQC1b
-/fAJmmc7MzyQJ4PIKw+WedJRiie4qUCGzcQYfKd+fFE=
-USXLKPbhjTP8IoqbTxU82tpsr4F1fFsMwSiL1rdzP9Aw89k3ZME1DCbUZw04ZJ1ans8mhIIUZx0zw4VM2f+zP29iIZ4pyXO+Iobmv5swlPBwkG/eZ5UtNHZ+XcmZ9BF8
-WHDbfz60eYqytG8xDwICTw==
-D2O27uUW/yvw4rwuBy7ucw==
-om6zeFy0kQk/VRl41d+qWw==
-+hi4AiSdA0TkOactt055cB7bkbgVzoIO0QnwsyXg+v+PvglIdrM3T+BLuTe5YoxE
-T/3Ax7LmtrIezeWSnralRFn0/wTcDLNvsZAFR7ZVFgE=
-Bpx7Ju69ffWzG6YR2uC+1g==
-UHdcXmiCv/krjFT1yERsfOQAGthAUlY46uCq0btZTL7Xjx9yKWyDUJRgl6rn363v
-AQqFKHrpX45LKNhI0kFipmvI/wTnmaXE3HKBLXa7jH0=
-wclYUbspaur5/yptPNriuQ3ZhTSG1ReTKeC0DKUZIcBZdnN8S+ZstajsgH/C0A8Y5gDBqmUYVpYB/RK0yyCyOa/TkOBi9R73YQ109YcoD0dC7rzZ+s5gN8Uzf8FADdlI3ukLAWx+wOE/2fVadhtsSw==
-d8YfEwtUopZ8I8MZtKTLHA==
-GooAJPCwmKfmyCxOpMEvOA==
-e/KxHdYogRsQGmNjEQqyqA==
+Icons = {}
+Icons[PlayerStates.Poison] = { tooltip = tr('You are poisoned'), path = '/images/game/states/poisoned', id = 'condition_poisoned' }
+Icons[PlayerStates.Burn] = { tooltip = tr('You are burning'), path = '/images/game/states/burning', id = 'condition_burning' }
+Icons[PlayerStates.Energy] = { tooltip = tr('You are electrified'), path = '/images/game/states/electrified', id = 'condition_electrified' }
+Icons[PlayerStates.Drunk] = { tooltip = tr('You are drunk'), path = '/images/game/states/drunk', id = 'condition_drunk' }
+Icons[PlayerStates.ManaShield] = { tooltip = tr('You are protected by a magic shield'), path = '/images/game/states/magic_shield', id = 'condition_magic_shield' }
+Icons[PlayerStates.Paralyze] = { tooltip = tr('You are paralysed'), path = '/images/game/states/slowed', id = 'condition_slowed' }
+Icons[PlayerStates.Haste] = { tooltip = tr('You are hasted'), path = '/images/game/states/haste', id = 'condition_haste' }
+Icons[PlayerStates.Swords] = { tooltip = tr('You may not logout during a fight'), path = '/images/game/states/logout_block', id = 'condition_logout_block' }
+Icons[PlayerStates.Drowning] = { tooltip = tr('You are drowning'), path = '/images/game/states/drowning', id = 'condition_drowning' }
+Icons[PlayerStates.Freezing] = { tooltip = tr('You are freezing'), path = '/images/game/states/freezing', id = 'condition_freezing' }
+Icons[PlayerStates.Dazzled] = { tooltip = tr('You are dazzled'), path = '/images/game/states/dazzled', id = 'condition_dazzled' }
+Icons[PlayerStates.Cursed] = { tooltip = tr('You are cursed'), path = '/images/game/states/cursed', id = 'condition_cursed' }
+Icons[PlayerStates.PartyBuff] = { tooltip = tr('You are strengthened'), path = '/images/game/states/strengthened', id = 'condition_strengthened' }
+Icons[PlayerStates.PzBlock] = { tooltip = tr('You may not logout or enter a protection zone'), path = '/images/game/states/protection_zone_block', id = 'condition_protection_zone_block' }
+Icons[PlayerStates.Pz] = { tooltip = tr('You are within a protection zone'), path = '/images/game/states/protection_zone', id = 'condition_protection_zone' }
+Icons[PlayerStates.Bleeding] = { tooltip = tr('You are bleeding'), path = '/images/game/states/bleeding', id = 'condition_bleeding' }
+Icons[PlayerStates.Hungry] = { tooltip = tr('You are hungry'), path = '/images/game/states/hungry', id = 'condition_hungry' }
+
+healthInfoWindow = nil
+healthBar = nil
+manaBar = nil
+experienceBar = nil
+soulLabel = nil
+capLabel = nil
+healthTooltip = 'Your character health is %d out of %d.'
+manaTooltip = 'Your character mana is %d out of %d.'
+experienceTooltip = 'You have %d%% to advance to level %d.'
+
+function init()
+  connect(LocalPlayer, { onHealthChange = onHealthChange,
+                         onManaChange = onManaChange,
+                         onLevelChange = onLevelChange,
+                         onStatesChange = onStatesChange,
+                         onSoulChange = onSoulChange,
+                         onFreeCapacityChange = onFreeCapacityChange })
+
+  connect(g_game, { onGameEnd = offline })
+
+  healthInfoButton = modules.client_topmenu.addRightGameToggleButton('healthInfoButton', tr('Health Information'), '/images/topbuttons/healthinfo', toggle)
+  healthInfoButton:setOn(true)
+
+  healthInfoWindow = g_ui.loadUI('healthinfo', modules.game_interface.getRightPanel())
+  healthInfoWindow:disableResize()
+  healthBar = healthInfoWindow:recursiveGetChildById('healthBar')
+  manaBar = healthInfoWindow:recursiveGetChildById('manaBar')
+  experienceBar = healthInfoWindow:recursiveGetChildById('experienceBar')
+  soulLabel = healthInfoWindow:recursiveGetChildById('soulLabel')
+  capLabel = healthInfoWindow:recursiveGetChildById('capLabel')
+
+  -- load condition icons
+  for k,v in pairs(Icons) do
+    g_textures.preload(v.path)
+  end
+
+  if g_game.isOnline() then
+    local localPlayer = g_game.getLocalPlayer()
+    onHealthChange(localPlayer, localPlayer:getHealth(), localPlayer:getMaxHealth())
+    onManaChange(localPlayer, localPlayer:getMana(), localPlayer:getMaxMana())
+    onLevelChange(localPlayer, localPlayer:getLevel(), localPlayer:getLevelPercent())
+    onStatesChange(localPlayer, localPlayer:getStates(), 0)
+    onSoulChange(localPlayer, localPlayer:getSoul())
+    onFreeCapacityChange(localPlayer, localPlayer:getFreeCapacity())
+  end
+
+  healthInfoWindow:setup()
+end
+
+function terminate()
+  disconnect(LocalPlayer, { onHealthChange = onHealthChange,
+                            onManaChange = onManaChange,
+                            onLevelChange = onLevelChange,
+                            onStatesChange = onStatesChange,
+                            onSoulChange = onSoulChange,
+                            onFreeCapacityChange = onFreeCapacityChange })
+
+  disconnect(g_game, { onGameEnd = offline })
+
+  healthInfoWindow:destroy()
+  healthInfoButton:destroy()
+end
+
+function toggle()
+  if healthInfoButton:isOn() then
+    healthInfoWindow:close()
+    healthInfoButton:setOn(false)
+  else
+    healthInfoWindow:open()
+    healthInfoButton:setOn(true)
+  end
+end
+
+function toggleIcon(bitChanged)
+  local content = healthInfoWindow:recursiveGetChildById('conditionPanel')
+
+  local icon = content:getChildById(Icons[bitChanged].id)
+  if icon then
+    icon:destroy()
+  else
+    icon = loadIcon(bitChanged)
+    icon:setParent(content)
+  end
+end
+
+function loadIcon(bitChanged)
+  local icon = g_ui.createWidget('ConditionWidget', content)
+  icon:setId(Icons[bitChanged].id)
+  icon:setImageSource(Icons[bitChanged].path)
+  icon:setTooltip(Icons[bitChanged].tooltip)
+  return icon
+end
+
+function offline()
+  healthInfoWindow:recursiveGetChildById('conditionPanel'):destroyChildren()
+end
+
+-- hooked events
+function onMiniWindowClose()
+  healthInfoButton:setOn(false)
+end
+
+function onHealthChange(localPlayer, health, maxHealth)
+  healthBar:setText(health .. ' / ' .. maxHealth)
+  healthBar:setTooltip(tr(healthTooltip, health, maxHealth))
+  healthBar:setValue(health, 0, maxHealth)
+end
+
+function onManaChange(localPlayer, mana, maxMana)
+  manaBar:setText(mana .. ' / ' .. maxMana)
+  manaBar:setTooltip(tr(manaTooltip, mana, maxMana))
+  manaBar:setValue(mana, 0, maxMana)
+end
+
+function onLevelChange(localPlayer, value, percent)
+  experienceBar:setText(percent .. '%')
+  experienceBar:setTooltip(tr(experienceTooltip, percent, value+1))
+  experienceBar:setPercent(percent)
+end
+
+function onSoulChange(localPlayer, soul)
+  soulLabel:setText(tr('Soul') .. ': ' .. soul)
+end
+
+function onFreeCapacityChange(player, freeCapacity)
+  if g_game.getClientVersion() <= 772 then
+    capLabel:setText(tr('Cap') .. ': ' .. (freeCapacity * 100))
+  elseif g_game.getClientVersion() > 772 then
+    capLabel:setText(tr('Cap') .. ': ' .. freeCapacity)
+end
+
+function onStatesChange(localPlayer, now, old)
+  if now == old then return end
+
+  local bitsChanged = bit32.bxor(now, old)
+  for i = 1, 32 do
+    local pow = math.pow(2, i-1)
+    if pow > bitsChanged then break end
+    local bitChanged = bit32.band(bitsChanged, pow)
+    if bitChanged ~= 0 then
+      toggleIcon(bitChanged)
+    end
+  end
+end
+
+-- personalization functions
+function hideLabels()
+  local removeHeight = math.max(capLabel:getMarginRect().height, soulLabel:getMarginRect().height)
+  capLabel:setOn(false)
+  soulLabel:setOn(false)
+  healthInfoWindow:setHeight(math.max(healthInfoWindow.minimizedHeight, healthInfoWindow:getHeight() - removeHeight))
+end
+
+function hideExperience()
+  local removeHeight = experienceBar:getMarginRect().height
+  experienceBar:setOn(false)
+  healthInfoWindow:setHeight(math.max(healthInfoWindow.minimizedHeight, healthInfoWindow:getHeight() - removeHeight))
+end
+
+function setHealthTooltip(tooltip)
+  healthTooltip = tooltip
+
+  local localPlayer = g_game.getLocalPlayer()
+  if localPlayer then
+    healthBar:setTooltip(tr(healthTooltip, localPlayer:getHealth(), localPlayer:getMaxHealth()))
+  end
+end
+
+function setManaTooltip(tooltip)
+  manaTooltip = tooltip
+
+  local localPlayer = g_game.getLocalPlayer()
+  if localPlayer then
+    manaBar:setTooltip(tr(manaTooltip, localPlayer:getMana(), localPlayer:getMaxMana()))
+  end
+end
+
+function setExperienceTooltip(tooltip)
+  experienceTooltip = tooltip
+
+  local localPlayer = g_game.getLocalPlayer()
+  if localPlayer then
+    experienceBar:setTooltip(tr(experienceTooltip, localPlayer:getLevelPercent(), localPlayer:getLevel()+1))
+  end
+end
+end

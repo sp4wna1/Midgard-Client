@@ -1,85 +1,85 @@
-n+JvUrOxIM2w5XQrk3QLCQ==
-HJxFjut6hbe4aZRWUxA2D92Ipzsz/R2NBlufCrLq1jL10aiSjZvaAEKC+wie2im2
-zs0RQHve+RNl8S2pcMg/dg==
-3r6Hl/THfw6OKKxQ+L7x8ha0U/f3CWVKbM3rJRZZvrI=
-lIf1QoLlr9l8dkpI1BNqh3t2QsmnrxvJd8pQjP/dKyMqa9ehvT+KeQhSrt7hOBsk
-y3rbQHtHRbPRZ3MxMedSt6TTMMxaIZMVNeGMGpQOsks=
-iDc6IWcw1kbagk0bJFt4ErYs3kCLkwY2KUhwUswkavmTapc8hN/vNHkM1Agt+32u
-lVc80UBbCdNFjaA5/CsZ4/CoKLzG2BZfIAJ5mh+k1HU=
-16xlawLy0DiFxZKj0IsGDw==
-w4IEeZFSPuk4axuyv1AP4g==
-a8pI/qBGr5acFJv1Xw2k45Qo2PgMj1iAJn6wjsKXNvhbRi++bgLu+VY6ZlMo0kFw
-6KQFE0uc/HIBxRzGfvLA09QgHSqpDSTnQAkmPh/cW62NHyXuEktkgaDZF0vblFCa
-ACv0+kMkBN77HAV9HLP3i3+toVvTP9UC1mznmv0KmgxDOUyN6AsXGBdbeYk2ti1r2VBL2OYOSavU2Leksks0U1I+iGE2f8BRK4J59xJ4u3EX/T1fxwydwkZZFlopSbcP
-T6N9M3rzXqB3IvwpywkSGT1l/0YGaof9jEYe9tymMuh+NhSezi+NL63Sa1BePPAIcgQr+ZCMdecD4cX5vA7XfS2pNYnWX24v20imGNLAIqvHrkWn3EPlbj/zEPkR0h5/5knHTQK70Ws28/vOc7yC/AAKe3P6xLnRGaw6g2+x5jk=
-tcib3MmufinHPzjKRgejcmuVq0uxn6zZ1SDxuTtpTX/ieKOMcjsts5xfzhLkExdzXh8JESII7WqpcmRrJacJhG/hYAEzEpQfIpdrqCM2lrw=
-D4x4Z1hHaUOHSY/Lk9iDlE/1U3BHrphY13OkjqJLZz1o+oLRWHKm4c800w1suLFA
-kYEz4LvPHQIUQIJRY1P0y1ALYPtQw3FMvw41T8wCniI=
-Fb/b1QxYeguHwsThIHcBz/55ZJFYn5Yd4JEB9IVyCdEepZx72ctc3057R0G5BJJE
-yrY2rwXx94+IBdRhZODd3w==
-TzsQsuSD960dh7wrHh+KMu+CpKNyxiGgAXL2H9n0Lhc=
-esjBKuL0UMsvQ6ce8wUg8bnmGJxHRcfM6VX1Fo+ngMvmLB0Is5KDd9VlycmBs6Ky
-3l9YRAfBCwdarBGmWXqCyQ==
-9b5aX9RWsDAf/yPUfr5CBMgk0ppLYdE+OPtCGLzpAe8=
-V8UtDU4YsPvZlCglMAv+xSBikUE42r3IKyGmgOZuKW0ljmgfVD2ACnnAbsljs8/E
-8sbUmqfAIAH0DflLnmLEeNLzQ7Yd1dBxREMBQiAxVYMsaqTnOFzkMwauKxeuFHno
-Elx4HeP7TLnGB34FAfIyIjUUYswlDrquJHr37+puUhc=
-bsU8RnidKSKYp/pmd0sH7Q==
-mNY8Y4YMlvCw8nC7TlZdtQ==
-HDevj2z/ETul1nm0FeC/kA4VN042Z2hrhJFE9Q3C2COqpfobch+VxzysdCrho5pw7ATLNVv5W5T6mP2YTGaOnA==
-0mTM7bZVtxMaoekA/kuHp22qknLBye6HwBkZ0blfCrKUOyM/3Nsl+cfpXF1yNzEJ
-8+3NsMKicXnTGuyAVBpSC2GH3c3D38dKFfot88Hibag=
-WSCylU9YJ6NMU5wLZSnrqzeGhVgX+SDgbOzSBC8vGVE=
-JUgnryxB0jcEsGfsf3yFzQ==
-tWgO4bPVYdIC36HLUs36LQ==
-wK+8i+png4n3CGOpdntJRg==
-coC+brgfvsHgm3KF7YtS/Q==
-5WHJ2Y0Ju2/ogVT7g3luxxtMOCkNJfhJYN2SBGVXWLaS/s53O8h55PVnOZUouXCnODWwa2ppdDMQq3+5oTCmpQ==
-pMu1GQQTn9J6U0ItD+0xl0gGdmg1qlc7CFqUGAfAD7E=
-fLlOh/BMnX0u1/B6dMp56qrO+mo6oTbQA1LzbfQ7gkCZSmFm0NNAr3Nxs2IMFl8C
-Rl0ZbeJUB5biC9DDub1cQiC42Hgljf45N8CC9kiUffo=
-SOB+65BjMq77bMqHjSb3tFtgHdCv0wCs/Gam1biiOuCUuW3seVYhNpSD22jWbm5jXg00hVIF3oMGyUhRdwwvbn0pwZavYiJoNXtnxG4nXoA=
-PUCJtIxChVlhdD0w/uG8eeqmFqWPU04pu3jtfR9i/QoHbeim5EbuGeYfvlJ7QylsHtYuqudyyt35e23JkEJJUjLlDT9LZlFrayhD7+FWuVg=
-qdvySTr6mKsWF0+PuFco84oDMX9VMrfHXft1i22jonnMicMMfIhGO5D/vpx3e8KCI5tZLr1mnRkWXvusxlfH/g==
-ieqozkzr4a8MPCV12WXnaqiPEMrMLRdOuAX76hbl8qqbTSvyx5aXkpPlnq7sFO6s
-WzjXTjkHFF9NiHxtArcsYkuat29T9AU4zefBNVEosLS4W0vQhQuqn5EuzTK97oS9
-E47CBGIbYPMPCombypxUrjA5e+HLAc1mofQczylldDYJq0WsQ8FSeG1zra1/3qfhO83N3ybEGNaTcRvTFoU8/g==
-ty+IUqIiZKCAh5ftJBnxPiayH52KGArzBO5HJltyc0HvdfirVuOpBvP0h7dUPJ2A
-DuWmvpLlCqk5zR7XBTw4VvvZGy8aaljRS66aMcYVBNamRupzrKgXmVGdevM2xUhmKX6IP58g4eAPQ78ACP9Iug==
-IcGWeArOvQyQAtU2BeXJGA==
-veAOTWXfJFJ+Ddq2ABYAuw==
-UCWQvz3xU1ipnSZs15/5BA==
-9c3Ygd6rXT4D87dyGzGdjQ==
-5MsuMcjYstnoOExte5zMjk3N8ONLUf8ci6bMwspdwBuZrkWnJMFfEUtqjxb87dw9wws9nSAljKKB7Jw7prdwJxwNd1QRjMwmE340CIv7psA=
-rmJP+o/d92y9D62FYa1thmey0rvHJg3wl5EyIk43Ws0Jsbsd8srhV8dQ/o65G8jeX1gk8fckMDZcS0Lgbyib0DDfFSQEBDaVhTepKf9HonE=
-zoAP+qtXOcRuRtSeN+8HnfS6at3fDnh8rRJCRe0rjG/oyNnsKtvg0NLCI6fY8O7twHrGxwGeHiFfRbOyLVIFFA==
-z2z+zdsj/VZT6uh3VKmb6YME8CGG1aFlJ0jOXOGvh/86gwdUMfHX8M2KZyJlCPnE
-R8pCgoXupPRpaDw6B4e+zWGl+dQX7CqTZLRJty9myCYnChNkNFuPipsm+2OO0jGd
-EhkB4mY0T26o2ifbYdg+TtbLLe6cxm73m9xToRKFfm2+1oZSBoE3l4WKtmOuIsSejfz1EOXRJXav/YFo7im6cg==
-Lf35vZ6cp/Tomqkf2AM/KkJuzQ7uqw1e7ROtCh9GKel3fa4Qhj6SSBya8Y/qtZsk
-qF/fcN9p62Hm3lj6alYXCwpQ2XsC3wYehxPJb64QAltZdrY9Jk6ViRs9CHq7JZVd
-bImPQiqm31Q9JJhhk5YRYw==
-n4RkpM0OxU1gttZrzMCE/g==
-vKbna8EVSGUzJ4cXlYNDkg==
-LRDE50BywvbY4tnTOXsQ5A==
-ZE/r/pP0uimz0P9h7QRhNw==
-MbaaX2qhU9rVWycOiOHxww==
-1MELglh/PeOlBOKJWTBIcg==
-nLlVO5SYa5LObWrWOCxI7A==
-1e2P87iaGYHbT8V8vy+GHhGCyxBlrHBmvl2umSK3ZPylq8Xv1WpSd4AmRBVvYxsXRtt+KMNco/CKQqr1z35tng==
-9ouPqe25E/x0okf5skP+SMco8IWou6cxiuQQ8yc/Wcs=
-3ck1NUbyQwtfdVPHBjcvXlo5eJPHyg0vJVliNVsyxOyEaK6E6brx9Ay+mIKYhTFg
-brtUR3FjAJxXPf430NUdScJnfFlE6BVgFnu/5NoagWc=
-bPTAOe5qjKRELWfd9ByzZ48/F7Qkxw+9Tym+HSBaCHc=
-ipf7Ts8jGpffwBmHuDKYOQ==
-Vopeb0jorfkoRs0sHir2lg==
-myBQdOsDIR8asrtZjLv31g==
-c1U+102gf6dUBMNQ8QZmJndXmA5jUhmV/hwldTxvbHshPNtVDqYspuMaGtIshyd2EeO+H+UWEJSXD9/2kkAEZQ==
-ChD1wAYOFEXksgrnKkVsw4+v5aUmhQH71IyujwUKQrv6G9Lkv04UPTxABB3cftCk
-WKA83ZObExZioVjzxPOUn/Q7hCiLQXdjqCJyMworPUkfvLP8ffxEO0CD9jtGeNvJf7R7yxkm9HCpMvghDYDdRQ==
-EV3iOcv5IC45mVj0kOsfZQ==
-XFBJaxYiTq9a2kIUsLvDCQ==
-ShMOygQp8iJ2J5tbix1JwQ==
-OfuAOpMZsLtsiDvwXOFzztagqKVh58XGNMEEujS95tOAEcB4pRNMj/9CCkw2T48U
-9LvQh0RDFMfX/fSmEjbZ2YqFuYHbSBW2g6SU9bu5tu8=
-iliA63WLIAyy2MH5YeocPA==
+-- @docclass
+UISplitter = extends(UIWidget, "UISplitter")
+
+function UISplitter.create()
+  local splitter = UISplitter.internalCreate()
+  splitter:setFocusable(false)
+  splitter.relativeMargin = 'bottom'
+  return splitter
+end
+
+function UISplitter:onHoverChange(hovered)
+  -- Check if margin can be changed
+  local margin = (self.vertical and self:getMarginBottom() or self:getMarginRight())
+  if hovered and (self:canUpdateMargin(margin + 1) ~= margin or self:canUpdateMargin(margin - 1) ~= margin) then
+    if g_mouse.isCursorChanged() or g_mouse.isPressed() then return end
+    if self:getWidth() > self:getHeight() then
+      self.vertical = true
+      self.cursortype = 'vertical'
+    else
+      self.vertical = false
+      self.cursortype = 'horizontal'
+    end
+    self.hovering = true
+    g_mouse.pushCursor(self.cursortype)
+    if not self:isPressed() then
+      g_effects.fadeIn(self)
+    end
+  else
+    if not self:isPressed() and self.hovering then
+      g_mouse.popCursor(self.cursortype)
+      g_effects.fadeOut(self)
+      self.hovering = false
+    end
+  end
+end
+
+function UISplitter:onMouseMove(mousePos, mouseMoved)
+  if self:isPressed() then
+    --local currentmargin, newmargin, delta
+    if self.vertical then
+      local delta = mousePos.y - self:getY() - self:getHeight()/2
+      local newMargin = self:canUpdateMargin(self:getMarginBottom() - delta)
+      local currentMargin = self:getMarginBottom()
+      if newMargin ~= currentMargin then
+        self.newMargin = newMargin
+        if not self.event or self.event:isExecuted() then
+          self.event = addEvent(function()
+            self:setMarginBottom(self.newMargin)
+          end)
+        end
+      end
+    else
+      local delta = mousePos.x - self:getX() - self:getWidth()/2
+      local newMargin = self:canUpdateMargin(self:getMarginRight() - delta)
+      local currentMargin = self:getMarginRight()
+      if newMargin ~= currentMargin then
+        self.newMargin = newMargin
+        if not self.event or self.event:isExecuted() then
+          self.event = addEvent(function()
+            self:setMarginRight(self.newMargin)
+          end)
+        end
+      end
+    end
+    return true
+  end
+end
+
+function UISplitter:onMouseRelease(mousePos, mouseButton)
+  if not self:isHovered() then
+    g_mouse.popCursor(self.cursortype)
+    g_effects.fadeOut(self)
+    self.hovering = false
+  end
+end
+
+function UISplitter:onStyleApply(styleName, styleNode)
+  if styleNode['relative-margin'] then
+    self.relativeMargin = styleNode['relative-margin']
+  end
+end
+
+function UISplitter:canUpdateMargin(newMargin)
+  return newMargin
+end

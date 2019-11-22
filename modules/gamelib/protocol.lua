@@ -1,206 +1,206 @@
-Cw/ANI0ZjyBnDDzyZ58BXauWE5v9KXke7wMZJ7NB0Lg=
-B7oUliKE2VPcHemJsM4J17pk2khjMquvBHVwrozBY6ohgiKtKyrqvPsG+yTxdphe
-sXDUnYd6mq4Xf+9iFg9xBHu1FIPS3TJ3d2TtUBwFK31KODJ6O9gOdGa1jRf880C4
-niQ5NVY/LgO3QV1yftPq+tdtt2Vi9ac1Jgh+0bSyE+w/nPo9eJ1pO9N1xjLrGoUh
-t3T66EQ2bMbSK/gXs9F0RJTCSSsWg3ONWkJANQxuWbdMrWk5RwKCeWg+gSRJVU8+
-hNmNT1kjLVhSYrdPqJgbzUp242GnbLvT80yoYFTaisu/2c3/bp5nCv25W1pOWo/M
-EZhiZbS5VYhCtZKLwWsJildFG6YDrFA+NpCNBJgmlXMZgeR+eFRE2RsbCYjr9XHy
-hmRklk/vmg3tVhlwLqFzHfvsfnOf0Qi5POg9q9oWDzK39dvMLaB/1QXl9hys2tEo
-cDFODwk5jrUWd4mWqbL2g/skEJTlPOyysSXH/pJuIOdcF8U//qIFFRxtY6/W6cTE
-hYAtuku+Q1DEUOEF92pUszk6ZqRgNOfQK231FI96yS9DvGton6Qf7gv9ZG42h6rb
-n+FCVmaWsA5BlILvkh0Z9zNCUm+l3RtmsohZuzw+z9JxMROBZmBf2HxQvHNETXF6
-mf1AXKVP41hBVgXHgB05PimxKD5S3bSDtEK2ymaJuQFxHY3caDHy9dx4iKaJHjy7
-QAx97DXOS7fNftyR95RmMw==
-Ye8CE0LhDl1wLo/vRytbWvpDlDyjV9/9linDLMCZLtwvyvqDJbfbIonAQqrHlzz15flo1gQ9GAxL03qyf7o4qA==
-JnAIToEsWbCZ/dqnNfLGlaV6AsH/zf8dDydmH3A4SNj2pGjdkx0dRyFeIwaEK9gf
-jJboM6YGbahZzWam/czP4w==
-IN1StCtJpSjs17K+VwqFA2MxzzyDm8sDv3UvuHBaaKk=
-az7tS+T3TLdfOc9IGgNYAp/Ozzfs9w91ctb0YHJaIKk+LJNNK3UO3IeMlfYMQYWj
-sR9a/6PAW/7bIntAJwk5aA==
-DRVXTYS+JEzsAnCOahUGpmioBmN/lxnSEez4v3TML04Z7cTiwEg8+mbJ38tHafo9RNyMrl+QqPhRhi9RsNIR/w==
-j+WZ/H5z6vFuy3VHZI81BQ==
-7R3PqQvutclGF4F2gm/AlQ==
-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
-V8443v4x5WBDI1CqCacXcQhL/E/FdU5E1Z8oUNPNOqFbo17KbUR9h9Mpm/a58EaRDZOLL77kecrK32RTbnXtkw==
-xc3FszMWcmRrn8vT3aIc3reV1MnAqbi9TMsAK17FGSU9sKKl0BeF624uIbMoyCcQKhq7cGvovcS4meETeFaQVg==
-bC42BUf8ckHy9tDE6ud+mW7cFsv6ZIWDreLEjS3gPALyrMMVnDIT7Gyx3nSXzNoMf2Omiffchkd6MwBF+lJp3A==
-eEChmOseuwJG2zfC8MwTqUSsnSiKTrJOPXh+CMb0wk4j4LOkhcTTDQ3u7pbHUjYlcNsVqW/G/U9dF7pj/dkGiw==
-0dNpfHr0RxEpUEyaRdktDLDcV8XjqHSkuP05jYWAcbniOwEDyRnGsBnrztndp7/O/qZuvYWVJsUzMhJ1r1Falg==
-dEBeqJoxc9OjrMdyeNHc831pRC7N+/XVZKY8hI3lqYouS9hlNXUU/mJoc7hGpT14liRR/DEN2NH2nSOObrA6LQ==
-HK90l0f7GXuJR8HShjvOtJl9aoyCSZA1d13zxdETO2nVAD3y50xyLKs6x3NLPrbLYsKdpDpAM95qb6ESVYRcGA==
-mA3H2j4iutB9oVJle2Yj/CC7hyRJiVQOhyJcqWvIEW4GmDiTIaDbY2K2MmkFBXMbXRxFmL9/8bLaGtbsL0uuwQ==
-1NLAwueNmLRMsCFezB9sGnE7tQ0eq9RIWQ2WyPBPzz0X8uqTAejUQ1BavbWGlBnbrF6xuBxQXiaznTiR3rZChw==
-G+/imwcUlTytOU8K/v7WErJPzaUs1Dtz553avDP2k9TLUFnDM25TEju9btMCYGXFrRIX3J2GLlDj98pLquPLrg==
-PDjMvgZ3+QwQMeW4bmqiwps52tr3IkcbeCIhxtnZ5SCdmsG4NGVdddf0ILgoYRlMKmf3UzVTMPUUapxrX4IbMg==
-P6dwgmFqNTvhD6SzvJYpz7SpnzZNyvU02jSvcNlmnKaOodHmcUYa/3fwVUgGHr1jG9/dD8JSUoTKBWROeT7HkQ==
-1xVBmURIFixf9XHlPqcX57fq+ySVUsm6g8HMxQ3Nn5Mez7JHsq/n4jJRkd7L/flVSBy6AiYn0JEbHdZNIXHP7A==
-9BgAg+fnUALA8s2Fl3u82Q==
-nYKOcyvcATVeVqhEzP0fqg==
-Nalc5GsoYCRJv0niCOgl1Zf1SkNBJE8MAoPxgwXQidQ=
-KkG3sDEgqWgKt8IjEFl8d+zH6PJL2bFLXPH2yeGfJ9YMCFWltslM/Kj3BSCYfp71
-szLipygAeFB9cFGWCA86aYUh83MFyQkrWyuO5d7MJvQFpg0AV5cgEvF3rWfxs383
-u1VplIUoWpBdse2BUBV0qo6EA4zyb0vRZddLWI0chZ6FlgY+35HfvTdciPbvxV60
-GXoHCnbCav5I92BEyE1mb3buDaVBDa0ZAk3VEsC2Nu8PNdf0yFMZkMTa8Vpo3VyV
-4b8bC6cQPxwwaqr0J8MTXX53Ho5NUEzSh4SS7u3nJe5WZcpO2s5fSqGjEsiHAYHK
-r5QewT5EbaRQJiiYIXtIzA==
-ivM/mYew558pVSH7lwc3B98MWx1uFibYjtLIyr+ffcl6u+ZB+/sL7KLgjgkS65S5CQXkhRW+q86vr9Njl50wHQ==
-zDmPRSj1GqaC48/37QeaOSqH3I2dsiATmzn6XL6D4gOyrPv+gnbuqj0dQ52SKIse
-0KRoeiykTmuZ6xp8IPE6rw==
-BKOfwOrC7NmMWqPuxZND7cvz+4cuffIbIQM8UTi3iCw=
-y9QAbUo8YXmRAHy+IvXfySDnjJwKhKiLN8+lFMOLiphsnWcwZeYw+iGjSmYO3ItM
-VfgEkh9lrbbiqSCn2lBchw==
-5NmULfd1dei1W60M1c+Y8xr+VcG6+yG194bs0Zv0UrCtm/AHCOmcztvybd9GI/l0eCm9n7/HoL5fNH/QwK1oYQ==
-O9MC7l4xzr7Gb1e708WS4A==
-38qTQfXUp5aIU3L/25kQuQ==
-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
-dvnBHXmJRRK35fCRqX1xgH2usvgS5mqyEhyvqHDvSd8ueqMLXX49DJpSp4oqdTK11vLg9CXUTbiPJN0ECFLHnw==
-lhwfMDQC57Pg19v4Sf46niB+b+YIbkKDsT6/vWlqUTm3xTdFoFmLhUcqa3PgidZE
-LQj27Z5aerPFtsFiO3pHEa7aIV2LYWkJvQt9nY0o4hJbBrE1txf34e/7GBKEPGWy
-2yLu8oVaG2oulXhNPXSBgDMNmh2OCrdya0oDqa7SQBdLN7e8ieYzum29D0oF3Rkv
-MXdxSh6ZjNE6MxraZg8vkt7AG/yKlVntkovwMmM/gyQVK/c0OxTYRiwd6aaTQvk9
-9t47eufRXsHH1pH4mOyW+kVDebAERO00ohmoHzDK4s8GLz9oTebuT2jxMuMXhZJv
-PaZpNwBWdQls5VxS7tTHuptV7HkbUADQCTgXEUz1XF5DQa9nb2OiLfgWo3F0CnnaNT3PISC34UEPlOsFMGgVYQ==
-hlfpCkAvjuhALqizJ/D0hhJ6CQUQ/82qYy0d5otb4QaWbAxSspXblTs0aChBi74z
-mULMShe4itkdIY4+o7jf+guO1DYGK+FOkb4TVhdQzbdk9sya3Ev4QQjU1QxVg3Kd
-/iYcGiTQkzCHT9/jd96LJL7Tp0Av0b6SLs9Xo5ceT/Hk9HokfvGNxwIL3TgKuVrfLhkfjqlWmvkj5SzOuniYvA==
-2IVdGZXXobQ2AEz5KKp0Dkpl9rtWKiY9HBYjbULnGn/bSZ40y72vwbJY//UBh7+w5wmgvVlQVfU/BKpXJm/jvA==
-RC9EqC5LClCqOGCtn6LTTFtMKcxGimzI92RqEGXKzE8TK+eMzyrBBX6xoblssYYHL7xrUi8Yhd6M/QRSvbCDLA==
-HUr5rV+u02SM6mkGNmHpHOGDPEhNuh2Xy0Hc4IascqPLIY0JCRQm2U9564cce3TA79qoxjpFSIrpyIvxn+6aQw==
-IF8LraVeyz8NiLTLhTej1b50WvfbHTWCk25HCtSLCkEEmO7VKy0syaXffJYUkOOQMhXPzba6k6boqGXp5NsF6g==
-MKNaUfteWx6uf4dyGlBtapzCJIyvIjns4S7F78h9cAwNBpTclSK1KuK+0R7Hfw7gcpZ4bAgwe60+hL5ahzhhVw==
-4mtiwV1EZIaCeHdFP7BrYRpSPxgGZiOPCWczC8HEiqibe9wucn5ceFNvmQUkywVMP69mfyHaUMvQcFYrXrs4Jw==
-/X07SuNkTdl1XZPne8zoBk7KqQ96LpSVLWtICRf4a5MnIz/o4tNEasxlFc1LUnR0njiziroBqJ49ACRifFT3Qg==
-Oa9TIRkLbX/8QLVT161gfpG904UUNXb52uqjjKKfHtrJZ6mazhNIc0UAPY7Z3qGEoMu/2OTvv1oi/F3hZxYMFQ==
-ReF6ORGROuAB471nP5K06fMVMOqi5fUdNH08Lg50u7KFdQngAsm4y8oXmdJzJ9Gm8F/LRB8uSBc+EYjVulbqpg==
-pUvprmUKILOFut6QUL/1xrPlWgcou/kYe6/ZjZGMzO/rNHT/omY7THOXCWAW6flgS6Tn7/AJyaJJ7GyhnE902Q==
-Ed5fs4q940+Q16lEgOp1lux51LYTxOvdlrnRRymjku8w90hG8H+xinBRAFZbSvH/ZHn3UpBoTr7yWt/VgtSBEg==
-HFnu3BzYWmXqLVRVoApbN8rUfODfWwtiJ/qQW8ZqGFaurj9Ow4zp8VsQ1gGNBQJJjOEu5gbgGzvAC55oYNkEzA==
-H0GGwHT0pLsQgX4BBZ4kZw==
+GameServerOpcodes = {
+    GameServerInitGame                  = 10,
+    GameServerGMActions                 = 11,
+    GameServerEnterGame                 = 15,
+    GameServerLoginError                = 20,
+    GameServerLoginAdvice               = 21,
+    GameServerLoginWait                 = 22,
+    GameServerAddCreature               = 23,
+    GameServerPingBack                  = 29,
+    GameServerPing                      = 30,
+    GameServerChallenge                 = 31,
+    GameServerDeath                     = 40,
+
+    -- all in game opcodes must be greater than 50
+    GameServerFirstGameOpcode           = 50,
+
+    -- otclient ONLY
+    GameServerExtendedOpcode            = 50,
+
+    -- NOTE: add any custom opcodes in this range
+    -- 51 - 99
+
+    -- original tibia ONLY
+    GameServerFullMap                   = 100,
+    GameServerMapTopRow                 = 101,
+    GameServerMapRightRow               = 102,
+    GameServerMapBottomRow              = 103,
+    GameServerMapLeftRow                = 104,
+    GameServerUpdateTile                = 105,
+    GameServerCreateOnMap               = 106,
+    GameServerChangeOnMap               = 107,
+    GameServerDeleteOnMap               = 108,
+    GameServerMoveCreature              = 109,
+    GameServerOpenContainer             = 110,
+    GameServerCloseContainer            = 111,
+    GameServerCreateContainer           = 112,
+    GameServerChangeInContainer         = 113,
+    GameServerDeleteInContainer         = 114,
+    GameServerSetInventory              = 120,
+    GameServerDeleteInventory           = 121,
+    GameServerOpenNpcTrade              = 122,
+    GameServerPlayerGoods               = 123,
+    GameServerCloseNpcTrade             = 124,
+    GameServerOwnTrade                  = 125,
+    GameServerCounterTrade              = 126,
+    GameServerCloseTrade                = 127,
+    GameServerAmbient                   = 130,
+    GameServerGraphicalEffect           = 131,
+    GameServerTextEffect                = 132,
+    GameServerMissleEffect              = 133,
+    GameServerMarkCreature              = 134,
+    GameServerTrappers                  = 135,
+    GameServerCreatureHealth            = 140,
+    GameServerCreatureLight             = 141,
+    GameServerCreatureOutfit            = 142,
+    GameServerCreatureSpeed             = 143,
+    GameServerCreatureSkull             = 144,
+    GameServerCreatureParty             = 145,
+    GameServerCreatureUnpass            = 146,
+    GameServerEditText                  = 150,
+    GameServerEditList                  = 151,
+    GameServerPlayerDataBasic           = 159, -- 910
+    GameServerPlayerData                = 160,
+    GameServerPlayerSkills              = 161,
+    GameServerPlayerState               = 162,
+    GameServerClearTarget               = 163,
+    GameServerSpellDelay                = 164, -- 870
+    GameServerSpellGroupDelay           = 165, -- 870
+    GameServerMultiUseDelay             = 166, -- 870
+    GameServerTalk                      = 170,
+    GameServerChannels                  = 171,
+    GameServerOpenChannel               = 172,
+    GameServerOpenPrivateChannel        = 173,
+    GameServerRuleViolationChannel      = 174,
+    GameServerRuleViolationRemove       = 175,
+    GameServerRuleViolationCancel       = 176,
+    GameServerRuleViolationLock         = 177,
+    GameServerOpenOwnChannel            = 178,
+    GameServerCloseChannel              = 179,
+    GameServerTextMessage               = 180,
+    GameServerCancelWalk                = 181,
+    GameServerWalkWait                  = 182,
+    GameServerFloorChangeUp             = 190,
+    GameServerFloorChangeDown           = 191,
+    GameServerChooseOutfit              = 200,
+    GameServerVipAdd                    = 210,
+    GameServerVipLogin                  = 211,
+    GameServerVipLogout                 = 212,
+    GameServerTutorialHint              = 220,
+    GameServerAutomapFlag               = 221,
+    GameServerCoinBalance               = 223, -- 1080
+    GameServerStoreError                = 224, -- 1080
+    GameServerRequestPurchaseData       = 225, -- 1080
+    GameServerQuestLog                  = 240,
+    GameServerQuestLine                 = 241,
+    GameServerCoinBalanceUpdating       = 242, -- 1080
+    GameServerChannelEvent              = 243, -- 910
+    GameServerItemInfo                  = 244, -- 910
+    GameServerPlayerInventory           = 245, -- 910
+    GameServerMarketEnter               = 246, -- 944
+    GameServerMarketLeave               = 247, -- 944
+    GameServerMarketDetail              = 248, -- 944
+    GameServerMarketBrowse              = 249, -- 944
+    GameServerShowModalDialog           = 250, -- 960
+    GameServerStore                     = 251, -- 1080
+    GameServerStoreOffers               = 252, -- 1080
+    GameServerStoreTransactionHistory   = 253, -- 1080
+    GameServerStoreCompletePurchase     = 254  -- 1080
+}
+
+ClientOpcodes = {
+    ClientEnterAccount                  = 1,
+    ClientEnterGame                     = 10,
+    ClientLeaveGame                     = 20,
+    ClientPing                          = 29,
+    ClientPingBack                      = 30,
+
+    -- all in game opcodes must be equal or greater than 50
+    ClientFirstGameOpcode               = 50,
+
+    -- otclient ONLY
+    ClientExtendedOpcode                = 50,
+
+    -- NOTE: add any custom opcodes in this range
+    -- 51 - 99
+
+    -- original tibia ONLY
+    ClientAutoWalk                      = 100,
+    ClientWalkNorth                     = 101,
+    ClientWalkEast                      = 102,
+    ClientWalkSouth                     = 103,
+    ClientWalkWest                      = 104,
+    ClientStop                          = 105,
+    ClientWalkNorthEast                 = 106,
+    ClientWalkSouthEast                 = 107,
+    ClientWalkSouthWest                 = 108,
+    ClientWalkNorthWest                 = 109,
+    ClientTurnNorth                     = 111,
+    ClientTurnEast                      = 112,
+    ClientTurnSouth                     = 113,
+    ClientTurnWest                      = 114,
+    ClientEquipItem                     = 119, -- 910
+    ClientMove                          = 120,
+    ClientInspectNpcTrade               = 121,
+    ClientBuyItem                       = 122,
+    ClientSellItem                      = 123,
+    ClientCloseNpcTrade                 = 124,
+    ClientRequestTrade                  = 125,
+    ClientInspectTrade                  = 126,
+    ClientAcceptTrade                   = 127,
+    ClientRejectTrade                   = 128,
+    ClientUseItem                       = 130,
+    ClientUseItemWith                   = 131,
+    ClientUseOnCreature                 = 132,
+    ClientRotateItem                    = 133,
+    ClientCloseContainer                = 135,
+    ClientUpContainer                   = 136,
+    ClientEditText                      = 137,
+    ClientEditList                      = 138,
+    ClientLook                          = 140,
+    ClientTalk                          = 150,
+    ClientRequestChannels               = 151,
+    ClientJoinChannel                   = 152,
+    ClientLeaveChannel                  = 153,
+    ClientOpenPrivateChannel            = 154,
+    ClientCloseNpcChannel               = 158,
+    ClientChangeFightModes              = 160,
+    ClientAttack                        = 161,
+    ClientFollow                        = 162,
+    ClientInviteToParty                 = 163,
+    ClientJoinParty                     = 164,
+    ClientRevokeInvitation              = 165,
+    ClientPassLeadership                = 166,
+    ClientLeaveParty                    = 167,
+    ClientShareExperience               = 168,
+    ClientDisbandParty                  = 169,
+    ClientOpenOwnChannel                = 170,
+    ClientInviteToOwnChannel            = 171,
+    ClientExcludeFromOwnChannel         = 172,
+    ClientCancelAttackAndFollow         = 190,
+    ClientRefreshContainer              = 202,
+    ClientRequestOutfit                 = 210,
+    ClientChangeOutfit                  = 211,
+    ClientMount                         = 212, -- 870
+    ClientAddVip                        = 220,
+    ClientRemoveVip                     = 221,
+    ClientBugReport                     = 230,
+    ClientRuleViolation                 = 231,
+    ClientDebugReport                   = 232,
+    ClientTransferCoins                 = 239, -- 1080
+    ClientRequestQuestLog               = 240,
+    ClientRequestQuestLine              = 241,
+    ClientNewRuleViolation              = 242, -- 910
+    ClientRequestItemInfo               = 243, -- 910
+    ClientMarketLeave                   = 244, -- 944
+    ClientMarketBrowse                  = 245, -- 944
+    ClientMarketCreate                  = 246, -- 944
+    ClientMarketCancel                  = 247, -- 944
+    ClientMarketAccept                  = 248, -- 944
+    ClientAnswerModalDialog             = 249, -- 960
+    ClientOpenStore                     = 250, -- 1080
+    ClientRequestStoreOffers            = 251, -- 1080
+    ClientBuyStoreOffer                 = 252, -- 1080
+    ClientOpenTransactionHistory        = 253, -- 1080
+    ClientRequestTransactionHistory     = 254  -- 1080
+}

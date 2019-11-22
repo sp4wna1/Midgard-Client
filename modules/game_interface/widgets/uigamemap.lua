@@ -1,118 +1,118 @@
-pRkaFM7G+HB2Wja3MaSjAuATA/UVEaFiVBZH0NcfFgRwds718+HmSR7qswLMEnuv
-1/uCv90P4V2s5HyatD5rbQ==
-pVjyAtI309WsLDdsZAKnsOzeu/F7d7rUnR1KOKVO8kQ=
-dClv6zmuAy7o371/IfPt0HVsqcOj+xVHIqb5PcZEEqmR06ThM6UGk81NZH3MaqzQ
-vTaLqvxi9ZUj5kzkcKzbWksU+TZRhXtaYfujhYoIP/sRoIHzJWf1moyXg0EvzPyv
-nNko5i6CSBribDbGzkK9l74yLsQXPrViQnLQ6cr/GW9zzUz2kco4I8XFgq4VptQzLEPCZoATaNDsOT7bIv+f2w==
-uuWslQPkqRf+ZPQNShnQR4awuI9kgh6x1wg/Uor216Y=
-D2I+saT2Ytw0krAd2M6O2fc1jggdFHtpP8g+Ae1Sd7s=
-ZpnWDIxRZFbRMDJDuoZVDg==
-TJSrLJr7bjSmspIukURu9w==
-097fZpzL4U46IaLUx1MYpPdfdiUlNfD5ZHzL1qht3zNuCVIY5eY4nhwPFA40HxHG
-gaS8z5KdQ+Fmc6p9NC9ZuSnDReb8qdg/zFXaQqyH2Ek+n1HflvaJyUowErpLK/Z2
-7p1b3JizYOXAn7fV0DQPBfKlTnzWr3S33QBr2kpXCP6ZpYZtMDDPhptOp2eg5oVX
-r1Yr7dT/TXZCX50WK/bMZg==
-vaS6A3kqkQwvCRnuToXTfi8wZFaEUpWjurxwkhzY5JB+TJ7E6hNim9YknIKc2q86
-P6MAgXMxSWgmgV9fR2HEN74LUPdOYM+1NjkyJ5zrNJE1WwtkSNjW3N9JZMa0oo2O
-UKuJznN01Mh8wXtn3zUvyQ==
-fI/WWKQw6r6Km2aUS04Um0fyq8/p78yK3MzoT4U7N8o=
-RJofYTTnJnbNFSP8RnKdXA==
-mArvlu6PGNkodtO0SQ1xiF24M543cJgIkt4HFClqTgg=
-SLtyizo6zPEFmTUW9IvPDsmtobU2I8Hi3kNDo7z4ylY=
-NN9ADxXnjEbnRm9wGb/KOA==
-8ozL0gV4hbXEwNJ7KqSBBQ==
-f504mcZUzR4kkwsThX0YNA==
-2dVObyUZAKwQDfDctCqSmSVaX0Yp+AfBCNxrGTPfKla9reePEQFRSp1ex0zC8ZSfHNNPmWaq5gT1arN/lzWhDA==
-ZvFf3hWzXOw+c+ID5X+ENE9kqBEdrxfN76WVbm8FFVM=
-H6PwzThlfg/tFnnIwXP4uPNt3T75xpO7t1f/B5I+uJk=
-zJ0eR1fYsF/FIWHSF5R29SlrNNoD1LoRbusGnMU8BcU=
-sTQ3lpQLU9TPh+L/Z52QSQ==
-QKmAI7Lr+Zcr+bA42jvyqA==
-IH8/Z3M4RgZMsbRT3kUuag==
-ebmBP78nY+DP6AgnWsONaGPW6BiPRnV41rwUqwzn3g6LCBYIu8dvJsRAQZliKfrj
-20daMxig+CGS4hvYKOZApbk+kJ+SlBP0t0SDz2dqGxEHnJyvP/iHElCWNqZVEOM4uOqVBbhcPwiL+s0mqBBY9F5gTn6w+qDC+AhxKTrTRTk=
-VWHuhAGImrH+Gw15Pzot2g==
-Y5wl8P1sr8w6JdTz68UIDVr2NaoOeyqrQg8/9iqOdB2xVIGZZl837OUUClEHiEaL
-OCXmEIEZrAOwolKmx/JGe7zyezX0zFFrtU9r8NK9e323xEe8uYy+36OOQYRt3Vqr
-CIsCL3Hvz8G2Rh/D3WjNWw==
-uMuMCtzO/c+A/LUOzyaNN+9RPQj+LwpNGBfRP9XBlz6c0le1aw7ieRqyNUcOArzq
-jihixN83QbHewt97A8zE3YaXZVpwWqMLKobArMfIdDcPe6t5GgaNJbL3TsHA4Jax
-GLTznyWL7YYJ8XlKWc+A2w==
-fJHBtgxy0nJK7rFaa67pcZV/rpLOqPqvEpVMWoHlh7s8dVx2sskPfuH9QEkUGUgT
-T1A2LEugP416AyMvW3O/SVDyJ9X1rjqEfhwJwLsFbvAndPji5mnrM7IIeMlFK7l5tl0DOYHUYLy3OY9sjmxNFnUX4A9z8KJ+oOvPZM1vdXYrnOLwy2ESIFp2vdFoVPO75ZtnnMtIEyQu904kJ3b0ww==
-gGDbfy2+OAVQhB4OLcq++w==
-RIuFrRnqNaW/hcTZq6NUOgcoA1imEoNZvOU8hJg0Efg/5/NDgO3vkwMDYWmXgtNrllnw1Wzw4nxSl2GpK46rTg==
-qfMYhfQm8XakoCj8PIPRqWlfMgKnP+5KQ1UCH9EXvyyCaGhPBhpHLiT380E52PZ7uPGxrpZ8wISAcwmJgXUfGw==
-QGyMlEaKCVpQHDOg6m9Deg==
-0Q8haj0gK/rE6R0K7wtfNth1BVdUrO/SN319+jLVjKx+QvjI/37JcG8RhjXdZvCq
-/hgR04GSplF8AlkZu6Butg==
-FBHdh3mVgaLbSpyneRoZzA==
-iMAsX27Cw732DZ0q6tummQ==
-Paozj5836lDp74G/3fTqng==
-+9QqNYctPyvPj9xWmHOocg==
-gYtPcT+dh/qXYdika1GjjM5shtU9687qp+TjV40tMiPnQocGeQ7C8EymdQQmOw6t
-Xov/8kmToKVT8p6tUOXD11Op3Mlz1bHj2DT2K8DONdo=
-sqBWMRPUtG732IDe4ppasK4pjvGSA0r36jYB/3S2Tky8VUU8gNVHr7G0tqISJzUs
-KV6JFfXr3k2BC15TnhdOmQ==
-lifSL1t4308lRcAyirICtg==
-z5MMIoa7OF0aeFvjYuGduw==
-JX87w/aHOLSMPVwP2I2dCE+63/FlIFkklMNmqoETvVRkqw3+JRP20YHrU4w6KrVbpq/hxmD8po8g3g/ixXdV7Q==
-bMKYo3TU5OKS6u31ZP5Z7H7h8CvXKNxpwstj/zDCjV6NPggzusjVUXwGhs2Ri/zy
-wXBpJiOw+X3f+TbMuI8QPg==
-k6pbTsCp6lxUnIvl1Sw78A==
-PwEyAdwa+OSm+MSEL2O93A==
-D1SvaHS/+D/D/Wcj8LUfE3CMSITPpDnP9QJaPAKA9a6O7LC2EMHeT2xsLdSXYDdgCaCBXfZMLpdfclwYnIjI/Q==
-TprFtESQzed3+stjY8WbmQ==
-JLjsPP/28i2DX4Rk2Nbj46RATEGiQvIQJe+MpkyK09LsLHus53bYPsSwRh/lqk0v3eWC0PpbGbT0RT+I1AeH3w==
-ecgD3MQcmZ4FsFh3J8fNrh8z9HmTh4trnJXx8eX2vCXKmr7cJqsFRbJGv/E9oxdb
-OvCehV1O8CZDoJp9OcHAKw==
-i8J1LBf/q55JaYSCuRorq6jWboG9q/D9Uz1quoTopbYb4qhtsk31g26IX4KGGUjYBqDXFG6viRBA5Pg0mkyfuA==
-pTMosBRwQnNMhwz2oGoKnrJCZ44GBgSW+AFIDtmRnZrACuBg7EazPqKKxv/tkcIO
-M4QRD5nIB1aOrtOCAJUvw8HtdLJ4r6DTzkSRoXACwfKE2FOrH4dBymwoMaRg/y4a
-KHUyYk7oVMPSPnjPSe/AI6j6pdPRL2qN6eWFugsveMmChXvObmLFLT64gafsSB/O
-OLEV3TmmmDyLPj55zPPMt49jQQZ4i9W83xPD2OPHvexRkZZ8NS0M9aXlC5wcUwz8
-V/a/+dX4N03C/k+w804VOSG/fsv9zNPKHrktrq3cggFALsnchCy7Zmemv55huncx
-JxnnWnnf3TcTs+1gA6VSMA==
-iH0OHdfjagZO+fvPmvoLCw==
-RpTAP21lB63XkRSpynZOxtXD0RsaF9Zv8skE4hblrI8=
-YUTz68XsxkuKMhlGT3jH9dbolTuooNFNmbGnHx/k4/Y=
-6M5vfLtCpHKne9xsug3lIc8lB3k/YtDlgHHEXPtUnSU=
-YljFvvk2C9wRf4V6rYfUXjly1m3YOy1b1tnMS5RO/BA=
-3XgFnOVgJpJ3M8Ew1et+utD852wDdW7u2a8I25v9FL8=
-MryK1QIaueRjQok+TuCTTw==
-2hCVy2DuiflpkGkzOMeAqi9T4yy0eYrGkxfHOyZ0IR1UetTVYuAqQ1/ih9VTS8ND
-F4Y4vPHQNY+LiaAz7IQiTw==
-9eUN50MGzhEnCw+Vcfk0OBrZP8E4urxfaRkP7H0i4u60JrjkiQJyggFuIy1oqKf4
-NI/JruxGv5QDHDVsxElUGKWNFtUtXHE0OWl9yeZCymJ61UTYBVjWTLiGw7RYDDko
-Hfo/vM8e5DNlc+8fHcVaHvlZWW7gE2lF1rlRrpBlPZxw/sH/qZ5xh0cdDyun5H7T
-PeXz8QlyGhV3HMY/cFptdg==
-hMAK0YW3uZ/1fkCsYMlhhQ==
-wLdUD8K/hKw5KmXyYpcOZyCai8w7fCFCMf/u2f4OyBCT2GExA3zRFQk/0ULm2jCCevrKJb+NTNDaPKK1Uk170g==
-kYEfzgTQ4kG1zKcrgFVD4E/kchyR8ZpeBPOSjazH9FU=
-54NOn8x1cgyu0hkTtnOECmUKcYyjTASLvjqcG3PRmpJQ5n+i2rHRPB8ESlzKYANOk3c7BG61Gapmw172H/UVgw==
-V8gmDCaNKio71E88RWU2Xw==
-BurASYG6jlkIj+pj94DdYA==
-veGzPC/2bD0za8ZaNVZY0j7ipKSHjODeKrE1qXKWbPfR8+lCbyLsiaXWifnwZ7OM7eNqg3WU+ihQ8qVkODwDaEfb93lvRSaXPleiJaN2PJIR7kvVJznhW/84/ktxgU5oG+4i8wwhX6w+WEvyIfnZIrFO8IRrINppl+J4cjAqTA05BiOeKVELHJcTvkSHQOu6pl4Lyn4MYYJUQviFH6W9Cg==
-ZpP2MMRO8/oZXMDkxRELBg==
-Ie4+SQ/0Ktu4DNbhSt/LOS4+jOP+vYCyombKz+cyE1+LUguaB1APk0xdPU4aMFV5
-nBsOWXb4eW6NDy8gs+JxDg==
-tVow95vwyk1r4siUZOCGoQ==
-gMoIsgiiL5vM6UweTKvvug==
-rrjISm2v6HkG0+X1UFjdug==
-z2y0eNaVZem6Ln3LANKOLg==
-Yf7mdk2foiK+3Tj3xQqJbXhj7PnPHryw31+m+NfI2xo8wOZm8k45ylrLnmFNRHnFOtc5qL1EV44mCGa/kQXHRQ==
-T/5pLzxYW2cBMMVwL53ST+6xmd/HQO0OEENMdMC4lI56jLvSLRX2lreP/Pk7OkpeutdvVNgM9Du6chQ5t/vmHaHX0D3FXqc0/nSg4Omrpa4=
-5zWatjthPgyLSd++gU1fng==
-vzelALXioCp6hc64tiDy+WVN+7GHA/6pYvOzF6oRdkJ7YWk6Rz5EBUwhASNswuFLINED+zIDrp6DhPVYfP+9zsjq5To6erZp5dipzkMkXYU=
-4Spot9hD3dl7Vg0QS7mc4apIR/Ygdcs1BicL61lg5T8=
-/EMULAsGD4e/7b+KFbkWM+zzAxQw8ErcqHrYEid/DN0=
-dN0c39nBK03jjupehERQIhkB+TaFt9xK8m5g6eCgbPw=
-AIVhxw0hUZqQf81TKAmfBQRgtn/G4plnjTbkXFOx/Ik=
-kNvEG57XNnkvJxIxvEQFepPOubphMzzwCK3ejmZn5FplBxdOOyVL4/wdlNFpOYnZ
-bJZv/1hgxkccoqEUJgNFfJz13INFEdFTM47xqVnfFgg=
-PF7CcpUP65hZ5gAEb9tTXg==
-Kz7jcYCQepMzCcqOUcD8xw==
-T+iVa7U9xUvmDrflygDExA==
-GYQhAcc5kBDFP22uNR8P60h/SeMLk5ycmZwz2F0NDOjdY3Ltb5pKJLX+yPOeLxZcnLyXLBBGKrWTKPPMf9K8dw==
-xKeo6Xw2Go/syP1CdaMAmQ==
-LzYCiuWal55eTQAud9mc9Q==
+UIGameMap = extends(UIMap, "UIGameMap")
+
+function UIGameMap.create()
+  local gameMap = UIGameMap.internalCreate()
+  gameMap:setKeepAspectRatio(true)
+  gameMap:setVisibleDimension({width = 15, height = 11})
+  gameMap:setDrawLights(true)
+  return gameMap
+end
+
+function UIGameMap:onDragEnter(mousePos)
+  local tile = self:getTile(mousePos)
+  if not tile then return false end
+
+  local thing = tile:getTopMoveThing()
+  if not thing then return false end
+
+  self.currentDragThing = thing
+
+  g_mouse.pushCursor('target')
+  self.allowNextRelease = false
+  return true
+end
+
+function UIGameMap:onDragLeave(droppedWidget, mousePos)
+  self.currentDragThing = nil
+  self.hoveredWho = nil
+  g_mouse.popCursor('target')
+  return true
+end
+
+function UIGameMap:onDrop(widget, mousePos)
+  if not self:canAcceptDrop(widget, mousePos) then return false end
+
+  local tile = self:getTile(mousePos)
+  if not tile then return false end
+
+  local thing = widget.currentDragThing
+  local toPos = tile:getPosition()
+
+  local thingPos = thing:getPosition()
+  if thingPos.x == toPos.x and thingPos.y == toPos.y and thingPos.z == toPos.z then return false end
+
+  if thing:isItem() and thing:getCount() > 1 then
+    modules.game_interface.moveStackableItem(thing, toPos)
+  else
+    g_game.move(thing, toPos, 1)
+  end
+
+  return true
+end
+
+function UIGameMap:onMousePress()
+  if not self:isDragging() then
+    self.allowNextRelease = true
+  end
+end
+
+function UIGameMap:onMouseRelease(mousePosition, mouseButton)
+  if not self.allowNextRelease then
+    return true
+  end
+
+  local autoWalkPos = self:getPosition(mousePosition)
+
+  -- happens when clicking outside of map boundaries
+  if not autoWalkPos then return false end
+
+  local localPlayerPos = g_game.getLocalPlayer():getPosition()
+  if autoWalkPos.z ~= localPlayerPos.z then
+    local dz = autoWalkPos.z - localPlayerPos.z
+    autoWalkPos.x = autoWalkPos.x + dz
+    autoWalkPos.y = autoWalkPos.y + dz
+    autoWalkPos.z = localPlayerPos.z
+  end
+
+  local lookThing
+  local useThing
+  local creatureThing
+  local multiUseThing
+  local attackCreature
+
+  local tile = self:getTile(mousePosition)
+  if tile then
+    lookThing = tile:getTopLookThing()
+    useThing = tile:getTopUseThing()
+    creatureThing = tile:getTopCreature()
+  end
+
+  local autoWalkTile = g_map.getTile(autoWalkPos)
+  if autoWalkTile then
+    attackCreature = autoWalkTile:getTopCreature()
+  end
+
+  local ret = modules.game_interface.processMouseAction(mousePosition, mouseButton, autoWalkPos, lookThing, useThing, creatureThing, attackCreature)
+  if ret then
+    self.allowNextRelease = false
+  end
+
+  return ret
+end
+
+function UIGameMap:canAcceptDrop(widget, mousePos)
+  if not widget or not widget.currentDragThing then return false end
+
+  local children = rootWidget:recursiveGetChildrenByPos(mousePos)
+  for i=1,#children do
+    local child = children[i]
+    if child == self then
+      return true
+    elseif not child:isPhantom() then
+      return false
+    end
+  end
+
+  error('Widget ' .. self:getId() .. ' not in drop list.')
+  return false
+end

@@ -1,271 +1,271 @@
-9rTKE+92JribjGRdlWw/t3BNx2wqinkuH9ZYh/dnH+c=
-pC7fo/EN25HVS4/jRTRfYlhHskvxgY3HWtt0kEaf2M4=
-gBv5a2kJzJee57fHK8NDcAC5eGNn01zC2p2GiBhEDys=
-tFLkULFnA3Cu1OJA13Nd5RJV8K9Kxx2HrnJWEI3HB7A=
-4FdYbbbu90Hfbcea/yd/Mb1JpbanYvveCKmEuiGJ5to=
-5Ma1JBY2JvYWUWxdPvdlxJvXQ6sfHhAyBn5rlEM65hs=
-voXUTRUn3aANBiwp4yyUlLEuSgpat2Ur3SiQSgBBd78=
-iPUB+D5g6ZjggOsJXWAWexbqI3GX1aqJrV7AdPtAO74=
-7QA9rhLnCzgcNTpN9x8lblgJF4qTixCe3A9Xn956be4=
-KJdq5HnVGKTuxv2ciNzHDUKzyqZtFO3K7vX6d5LZwMYS0gM6sG2Vcy2tTlT6Or3P
-rOE+KABNlcrA2vMXIUBNIi/tyJ/yj9IzLkqK4JJ7SYUivPPaIt+KB6jY6Yy7jH+w
-UXX6+2cFD1+HmHmjyq/fC+qCtHe8+nKel43KYS4RyF6XF8OdtV3D+P/vUEH3EncE
-u/24XgnDphpNSyLbJ42tdYcdR3ilfp2PqMuMnw7sFqggFVmlRESHiz7QuLgEbPfH
-JZrsIMvC/hN0ZZHKAZeTMTIyHzzjkTSiimU2FdE/Csk=
-kbddvcAthLpfG3+sVLdF4m2hPA818m3kwBSkFC1gLr7eJV8soPDlprSYtpqBbVLM
-91czNTExQAbSUnwPaFO8JN4ycO0bDWxWXVjbjMUyGiY3GnC+z4D8Mkm7mtzRn5ep
-b0lCSPmFokZnThihb1R0iO5WHrxAnuUfMMAJFtCJLvg=
-jwtcffLs1k8qPYCzGS+ne44ToNRU7Ybz3M3gPZqgWcU=
-P0m/KzvdhInrGKO8RzWFaAEQx7ZwaVQbnTT4kouPipM=
-BglkgVtqTGMDYhBfxD/u7SJhyUa0Rt7NP4phareTObk=
-g+o9WeJmiU8qY2L8SNm8lVO0tT5AqN/u4Z1RGt3t/j8=
-PtD7vNdLfR7qsaVaM/9CXMBZGyuue72gm6A45NKWUw0=
-IQfo5PhmK9wEeOpukiIUfMRm4dDUTRHsY9vn4tCpXcM=
-gBLXVnQD4l1GVYerHoOJY4EubLaAJa8YtEQTUtkG7Po=
-NWQPjJ3bCw8uygayOQ8mBnTpmVC0l8V3ENKqfbxKAsI=
-lxtrM2aB110bXvyiHOHdh0QZt1XdXIRlh7Xl+TK8SQs=
-aeXcYefkDy/YwJylgJALYM3SM1XDSUI6Y2ZTRDIs66I=
-B4YGMQTy9u9T2Yo4ZioWpgDuzQtAch4c+sB7/GzTvmo=
-/RpMynLKIcsY9/ebxx/CPgQ4rSu0U/4SpZ4jayQ6Hck=
-ah3y4ueXNUlEeG6owZ5cyV6haOj9MWEkaCyTV4Uj38A=
-15RaYYpgFiX3p1fmQ75xowX+YNpR/2J8C+azc0N0k0Y=
-+15Buh5LKZI51vYagGnyocWj3vDovas6U9b1HBtvLQY=
-mb4BAQoACyIuubZlw2OAoA==
-cX2/7saO/s9rcTWAym1m1w==
-n9Sw25z1vZoHfxaPfrdjrPbHQyTHy9uhKeFZaVA3/4U=
-wDJYoc6TgWojBoUNC6kNvGGBumydewiPLKHagHwf/no=
-04hPJilWR9avy39AjmceiuxQ3KAzUe4Dflwx3oC62IU=
-j0bq3OMExo7evwA2SOb45kfjBqyVQ3SDj94+ZzhWZAA=
-62u+gY3FxGwSqeXxiED0OJlZX9pXaZpNL97HSYXK580=
-SPL2q0Nm2cloqsyF5wRGET1Hic/CUNDrg4Mp1SZljSM=
-MDgyOD2mXHkkBPEwhQvmU7M81L4ToEJjoOfxUQILw7M=
-D0+NU9YEM/BdqBQSK0TzZW6td7qqApyLUSCIwGnVqVw=
-4xerIbgXjZjFVOM/pRqlRMXUPBtl52G5u2IbBM0Nczw=
-ttwjlVx9Krco54pEqnQLVQ==
-w8uSK1Jg+N3iOo2IvGfVxdbPOk4FMoVAvHwj5neF4HB1mhAwuxRhVjy4BkvbjhPb
-Q4m91Uz6nFN6s6TmoDtw4Zbhbw8qyq6CchVvIoF7pZsWq1qUS0vno6DdlUj4o9iD+AEJvOV8ln3hLjx/RSxpaA==
-2M/jwBv+KvZlIBWLKOLVupv4IgDuNAlHEx2v83d8uOsls8irz7SqfV+dD3AqR0nvPmkRhodvJAdweWXxXet9aw==
-Rb7QGZ6PEHYs0go5iIXWWHvz1Qke0pTy8z1CjfMlTgey4/DVI76f/Vv81FNogUfc5xzPDZ8peNhQK6KVCjJGGg==
-kYj+Vg58BEok5Uo+w/A8rrUjXBoEAkvM1Z+SMGUtgZqB5AfDTuRABtB9w8w8KnkuExCI6Hl5Qy5pg5HHeQK63A==
-jFgMZrJAVfFAFH5Y0gQVobicRTuspcD5CLBf4TznM+JHVxnwl2xA8Gn0EhP2Xzjv
-HkESQPz51zRUXOYLUT9vDT2z5pa4NaxDotRVRr1Nu2nuX9nh/1uieyFvEp66RyVA
-MraDAmC7Mj4PvvSa/yYszR8pswXXwRSdlkqBabtnFvWGXrMh7LCCRJtO/qNRx4kU
-DBpVcg5+VFatciESH8CaQg==
-AjeHsAzp31SxM0lzZBqnOw0xlcMm7nXACP9HKIzPaUm2smoegxVWpE697SRKeL/troUWS48+HPoZptnrO9l23Q==
-gl56h/XI+LiPt0KONAIx6btWGPP+aSJ0v3hsZx56GhiHP3sFGSBS6sox8Be0RmRd
-WlsTq1HeFzm36DSe9vsFXPopDe69Y8llZ8E055wjzLc=
-SN2sRL0bjBzIoiaNVxJcfH3Rl6By7KJWDkoX2DSGr7c=
-Aw6gRphrXJA7VXRKfxVffIvOgj/maE/yTkKjbW9LKag=
-amui5AmJG1gADBM23P/CKQ==
-Pbqb+2r/404qIdo0Sl5MV33P0sjg+Q7woDBU8nclJUZuoN7vO/ZvYuQ3guRlLwTHN7o6C0hMqbMrluEA7AnSbw==
-6nqAd2lLhXiFYLYUVPAJ8R3LskkMdJLKpIkWGXGqgk7pV5ODdS/mPaO4B70T54/LwIfGjlWxfvY/6fWa5W3ixw==
-LWNof1DFgN/VtMTdwJrGlfMotwYyetDNOm37Mqv4HsU=
-iiY+XPkzR8CnYLxva8KFhmchOIgOe7CAKHiBYw1IL69f0FFmx6/CkeWOUVp7KgX+
-WQRk9/ZpKPGq/VJC9bXMKCfUbWX9aKYgaaGDXhPQmHPfB+zvt6lGXTMUf3bywJQd
-4yXTq5Pov+k8hT1zEhov6Q==
-FAvE+oraevurgPXXjX56ZLRi6keuInVcFDcS14H2L2VUXafq3t0opfNBq/oSPT+M
-CNDjtlZNbtc6efSyLVhhBA==
-WAtnaTRJZvro9fzWlcChtQ==
-4JFUD7Yyzf2qZngKxTAsS4YE9IDeW3/559HRUoH0Ot2rY+UTsi5XFWfAa+LmV4GJ
-OLLYmIqfPUcHNbdOKIwE0ZFeD8rdLczvLlnKa9bCGCo=
-LRUVsqnRlNCMaNDGs490tw==
-JlJYz1+OiUo0En7GQukevw==
-NPbanhAbGc4emJPQgxwx1Q==
-Z6IFQ9JpuLEiWvP4dzhx/tbdtjg30rLTxpKbWXLXGtW73IXvWGdKHFYK2mHOw5es1HjIs0YIRkKMPSdTX7Bljd2UVFzx5XHL9rW680FX0OU=
-7ertcN5ZWpZXzlRoD4fox9X8cj//OJnOIUeBWFnfD5E=
-135gd7lXZzC85ZW6FdLDOKT3mVY8ZrYNW8p7W8jg88Fs/x/NjEO6rLe4M7qlag3U
-6epbDJ9AO1CMpluMBWkKd/jhHAZ1e0iC/52itNyCm7XEp3a9piJaEamc4FAnPQEH
-UY8pJIVVrNAgG5rZK5kK+E0+yOHfN/OdUWyGFYJBGxy2m9E/E8CrR2U1RE9+0Ulj
-nI8f0eFVf2l5UG+1J292Eg==
-Fj04p1p9+RyHjHXKFCZpcA==
-knhPrtyYhtvaI//M5N481A==
-omUgohYuffBhea4aJIysTwK++U+c7epBalTMzMvjvoDW7Q9xy8fi8EpiGAS1Ecrn
-ueIIzhr3gTDtln1is9Ot9Udv7jA1xXeNJgE9wq1OSTGoM2axmjBOa9QXHZBsigKigV7YDDMrFxng/I+Vr/bJvw==
-8JSXJSp8TLQpBDTUZkm72wHdX67/ZoLY0zD6o3WLNtnVx9/CaNvKnfgBB7n1MMuF3JtaqtCcuoDscKeQ5aikOIMkTrHBI7J+1njUge0557Q=
-6BQ5wm2YNpOhu00Wz0UMww==
-s1HkiFGwjT/3ssQ4eAAIcw==
-geUIby7dLDTbJYtAgEbYpQ==
-KoXku+pgdGOLGuVUyDGgMA==
-GFYon2Uvn8CDZyi4qPx3BNoP5bTg+1va919zZ11UGaxp4++OAUpNTvj4XFbvC314
-SL9zP9peuhXdviUWW/emdHjSGm+xx54T+USyvUUFDbU=
-WbUvaa7HzdQ4z4gXQ/N7S8Y6yv5dJc0l94DLPwmnIuQ=
-jc85ViHK+9Sk8FUVHB/dKw==
-9lgm7LqhqgwY8qowaRurXg==
-IXNcMtfqfA6dgIIallgt+8cupiOU4XbDVvxy6rLxUr8Z077AD+3eYIhxJQGGD6aE
-FpZcKVEcd127NdS+aBWZY0eceNLGqLNEKpS8SQQ7Ixw=
-opUCzge/ipWIKpwrDzTHhA==
-ftDHE/h71rx8aDwlyD0++GZgx4sA0xdJ62i/9mOcV8KpfLhxQnY9ZmqBLO+YQe80pMW34fO7dLU7no+9O48nag==
-ygDW4tTyPHLVwfohL2XJuu2HEozskXj5U7zRd40nx2zYlOluNIyI0CENq76KooCkN6Eivqnsu8Z2iyxwFMCEgYPsP7eeVN7NDZw+fDu/qWw1eFJPimKmbtyXv0RKsM0F
-8kr/Z9bW4pDbiUtVJThGJA==
-XBtSXtRvRjrLmVE+eakdH7gbQCpCVQRJXzY78RsCwwKLJC8jLohGcASEGMqnSExsolMKzeD/CetoIyv+Fp+lvAuscxDQQbYpkfZjhXyZDum+xrX+MwFpP4XZcCnbEKPE
-1TFCLkI0Qt20LBsmcQZBnS6j1W/FS2DYpwJpbgpP2Q8GZDpFGRcXiV71HxbvCWmBEnN0Bme0WEv9cpgKQf4bJA==
-dAFPt0RZFMriGQfJdHiwFw==
-ESfmHWX7238PDKD/0KlrKdfbgk/7s1G7uHyMigZSAWtOoRYIvOtIkZvu9bnghuNR
-k3o7Zk0Stf0mueS/9usMdTJ1OUnThivPRjES/yJmeIJw20+CIy6V+ExciZX3mOLjNQGjydJXmQmO1I17zePhjhVCBv3qqj2tNh8O7Ua3ik8=
-3yMl9Ia3nPpMHU6c1euEXw==
-XILqlamPXTiw0bdaGqvfCsQtWXLrUUW9LCKoaVbBshvHTJtBIPIDtWsWraUhhIe1
-M8UMtOWNzS8BoOnWT3Cs68UMZI7fyozicjlLWo+4PExLWGbOUyUOF/4l7sSMguSCXpHwMqsSbdhQO0fYiGJ9V6KDQ0WbpGXtDZmgFmIOUwwaRqPoEMMRxvukd+O96Dav
-qt66hEcK18cyLlEhuCQwpw==
-F8Wew434ZpHllezJ4zhLFnaFrFC8u484v4tJTxps69wb2l2c6Rcfm/kv1mK5Uc11
-evZDOr3iKxCqPTaWgJWHp9V3c0gPRXQ40y5pTXEblBYKhudu/dyhDWxvgrXFy1uxBSa95F2JbGMFmG8sjGJwfmb7mgye9E8KBQbUn0pXPdkpPskfGE3jfcoojGZESOC+
-ZquY61yK+3GfWAp15MV+Gg==
-CDyVZdYx4w/myJWuDwBFjf3uRSXsF+RvNEo934I4HE5tBaBkemKC4Rv9wkYnVgod
-L31ZO1VlXao2xne0TgtZbkxYS3ySNBU+qkwwBKBkR9/2JPhup0Jck+aUPzfepPh2xzRuwGxb5DPkcY/FC01tx/2uqOYpixjOqL2fQ15c4/o=
-Tmkl6CcOuhyudHxmQgS0Bg==
-LOV1DwJ338tvv2RCzL+Gue6jsOejTG8IYzibxxs2SIq5JofgMdPYwVJBFDsjOJcCXLL3pYr/a1zdS+zebZhgcfT5rHeRLmEXWY3r/8tJbPsGNJquhQ0kOKn3LaL2Rze8uOrDSCTmEj4X9/hjUWrSJJMQLz/TmXPJ3w548T3nVmE=
-32VWRr8OFnEmP0457a4R81G20IJV5C2BtuZolUcORE89UQnku61kdXUJPnEQgjU3C/KwwJ49f5QJZOlZTpVDEzxa6UjteWWu0UhLviAQtame2zy9ic2ZnLUeUP6YT+L15s5VcTIKy8AyKVkROKQsC0+sfGyTkiOx3ud4/BZK4jl81FJznC1G5P0fORJb67CLOWJD1Z7fgN0feGOaklwjTQ==
-d+q4jqDmAqflWUuFAmkuCA==
-BDMrq9KltBT1d+gNccJ5LfpbXcTf3lE4B3lh6RQZvKrTPBQBlmUrI6loQApKFBYk
-ffszEJVolgLxawRD4aoyKg==
-L2xTKg8VXYDxx9esalpwzQ==
-R3Kqw/J/nZ+Hf8RFWjKRWVSVgXq1fnd6ajxqCgvAwX8=
-2a1gLxpTNQtqT7IZNxngrEFOIFx7l1aU+I5W9cLJzCv3yEebuYLICC1n3TA8cAB6
-UZ4GEnVA8Bz5YWbNY3rYV9IxTCv6FBnYp6aT1jPzv767NgnaZe2fNapRJuX510VY
-SStRQP9oxmItgX+lR+A9rhn9MplFJGeAMlVoWOqKzKo=
-GBncrrekYaNgVxea1APgaujCOtB2nWiuNiPXO7m5t1Q=
-5M3wH1dZY+OmQEN7KXypfoOLXfltRMocsYUW8IaeZio=
-kZw0g1ElUuHp68Impmhu5g==
-frfdpX7/dAatjkSMsr2BEg==
-EPa7DSLmnX8KExikusU1ov2M0pfkLVs7CpNwtFuATTs=
-BKh+2et9x0P6WyY+DYepfdGE5OginoyTyIpqSbwR+Fk=
-XlpTuVrGWLWCE4E6vueQSQ==
-mKP6db7WBAGlRAhdWIhVbrMfr45OmOgVJycxTRexlK8=
-Ff6Vr3qzF22JgYHfPhHWu8z/GUAD7FknBsk158s8C4KvAY9mVMg1+ct4NP2iODIE
-oqSqfFFppgWfMqF0V6tNkS9+c1HEv/jUuhp0qVT6PD0qDsMwWwUwEm5ggDkoBjMz
-Pm6IkQ95wfhjMAsf6j23cqgrYP33690KMiWMWktdwqJGoiyP2Z0faxJgJVlpY49b3GqUsLnRzbSICIvwrv3dVw==
-vwFYsG5Mh/rWzhTNMuP3w5CM33YBCjwLIKgRgcHMcXKINE+N9yc3M98GlF8CGM7k
-NRl9duXbir8pbDzgsYXCdgZ60cQ+0ZfBaACwoZtct6hTk9S/O8Dp2c3wfVExM1jTa4Ge5s1Q3qrAZcEq3k9Yqw==
-cQPlUp5RBHnKnSShHuXo7g==
-md2v7LQ3cIfxybsvKFaFEw==
-1rdGPCyj8lZY7NW6E8YWYQ==
-xyS2stsgXkPCSlTHa4Y58g==
-XLXtgE+NB6FYxLQcwk8oE+7280aOYQ+w/avdj0vMcqk=
-XYK+VivbEktcHXPjMnWx/LYsW9yRzXNPoSK226iPyBelUGA1Urq8Y4+Imn/nm3lK
-4ESXGN+9/hTNpSjYfuaX4w==
-JqoYnj/I9hsTPj1gh0WOmQ==
-ziQ6PYRI6vi2LTlxUYgb4g==
-LAxtorTTLPGDOHZW/Tfu5g==
-o5LC6QYXJ/bYMZHi6F7mYg==
-E3ZoqDxFpRE/21m9p9nUdg==
-T6nWOasWLpuejFcxHflVjw==
-Y9qQSbc5HtNwoWJVaYnnNJj3WNHXGolKsuQ7ftUggUc=
-ejNVsGHQXBfx57PW3xHrEx3wmcY/b39qYgxAKMMZuhM=
-0KmrOLgfS4RyH/1VT5ac4OJ+hAhH8KEXlm5tQWtunqo=
-CftWhC/QibVSeOpsR2j00w==
-1nb697GLPH2RGcn+HbAJ9g==
-oMLHYZE7Dxt9/fX3y8yWGw==
-GyTAw4oe9cBLUXYnb51AEc1+HrZrO9znTM2sXAHohso=
-jNF3mHGe8Y3TH75G/mq7Og==
-04Gfr8sV01az8YAi0o9MHQ==
-ET01qOlJ0nOk3YG/wwFTIne3LeF/TzjaqQZZ1L8SH9I=
-bkurmvvAdYFWWDJDmLE2tIZqgQC4BGkkp1pOfS4KJvWFUqiX/R3B43JHMXAypWRWKfbryq3i4dzt9Dxl1iV/8jefveezYH3vn/dpp8mKQNv5yBIUINfysrPn/i0SNKfQ
-X+iA7FBiAY8WPAVoGsXMFrKK9u9E8IKKBx+MkHE3wct7xo6wf1Kvqjo+fJjIMN1l
-jghm3bjVZ17Jgd7gQY3dI461P1W+ZVN6KVo/valg2rvBRLFxEPK+RFE4vDoaJaeL
-Oodd58IiALn8QW3f2mdBA0qJhJ2+fD+csG5u6UUE0icRqQ+Hml2Ix8cWFipjX5Hq
-IOpBcIenkPqKLrff2oS9/VjudTHPTLl0SY2qnTihPP/AyPwZzEagFImpXhvwSGeG
-Kj35SFunme4rD31OqZc7PQ==
-lZjLFeXDDM92L8gne5YO/SYlH57uFXSuuMIMClOCjkWjSZFkXtD3TP1dKNjiOpKFH6JbieKrgaWZRx1VxlzISwV3n/HpNOng8rdAkVzh2wo=
-OqoaUgqIxRND+p8Mq5U4vcObTx+c+hk2IFbuGzov+VJUxi7IrTwujdF7oLONy2l6
-0VkssD7yNX47vB+vU2QIgA==
-73rZOHDRjVzl20LxqX3BOJpf9gd937Gpf8uukL/bFXCKlySmJ9MAUbVnElvpOlEO
-1b7WMbeg/vE/KyG+tUqCVMx4yL5TPvLPZrg6V09yJsHUV7OZ4iBqKo2uDzO8wx31
-11aIJ9GJn8ViU11CdbDt3g==
-p6EACWIdCm97NoLR30Tltw==
-3nYK/U1HjKIrz+4YT/2E8A==
-7FK0aY+NPQDZYbvE1qdp1w==
-I5Q72BUgc0NfjV/P68I8FGBz77yVgQqzgCtV15ME3dA=
-oh0C0ICPPnjM7dO5hFLREzqsEUZdqlLlG8K1iAb1bxDQbdUHkKeNwl1oIARCnZff
-vfHTTMKmv3FO8FeyctskQQ==
-TOLfFj+CkZZr4rCmn/c9tg==
-ig3r2blMeL8fAfa0AOgBFZJE/Zm2bw28BQ/+wpqGx3DWOljcxXMXeQ9u5mLpTXRB
-Ih6FeXnp73OZt0v3xXwEAkn/Kbfmfj7YQn1ecB17zLtR1Vh5m/rh4LUrcq/g9stb37GuWuWOSrFG0+tuXRFv7A==
-uybASxZPiC53FTG6ySpWOLL0Q7VG8L+7B7uKUJEwE9W+B+p3gcfTKFvfL2QjkfYIS5zc503TA1B2FFSl2kxnjg==
-djZZlt89ofNS3a0oZEXuZg==
-aSSaz0snKiBv/ItCZdAiBdAk7jYHvULMzj5BJ8VXJMo=
-xZ1xJP2mTLH9hzjr3OaniOClYsO55T5W8sUKu5BWf3P9eOHG5v1fuwgWpqQ0F2pN
-Sk7Sg7H/VEhqYuvVI/Qx2tT1znpdkkuUxWrKjF7IVwU=
-Xb4+ZhdQzxzVphb9isudtd/aY2nVOT1guStRSfrRyfTTeC6LPv8gZA9QalVwuK3n
-J+HcdoEUkY+4+t908N2xe2uIZymhnseyb5dIVQLaskg=
-x8H7YI1U6Yf2Awnf0Wn2ab6aUxfCZ1GOgsPP98dyp2o/dAwLdMUp9DAMfLFrT9e6AtvvlLgD5ZOrgDeLivk64w==
-wf7AiCggkWJqiAtLx+3nOqtVOKqVWOiQmUPemEffcHvlbjj6v1fhwXD4w1qbdiYS
-dUx7f02JKvcaRDsybLfFNzOt0cX0coQqNLHY8DqScr5iQpxcooj3knj8KG42tp2Y
-6NtbQRR5YF6PNTix4WxrZ5GuTmi6ZZ0sDZpMOvTrRIEATmQMpUugibuSedH6e1vn
-eYieCz7FcDeTdppZtTyKBczzJf0ztdYHkRJoKA+dYhPF5uaPafYvwxxiFACy+OLF
-dZU6L0kFLVG19MO/HcC7v4yjUnZ4lTFFvrTU20eVxaQ=
-9nq9okDt8p4f6zbkwRUyj7e9yMk+RyGm43coMpSpGk2T8KXEE+0JyKKyg4Ck9P/8TGXwBoOdAj3C4EvQQ3lIIw==
-Xzqw1DJqLzFyY56yml0neQ==
-piBI6/zK3xvVtf2UiVXNxRcjIwOFf4VepdmAac6rnoLxQfuod3fA+ZobU0HuTPYc/uod+usgGuVw/REiGJLyLA==
-nBTiFZSm17cLvGsHacktcw==
-hP21k5m3eodkaY5c7VFfxMyqBpQWch8SFFQwNyrOCvfKTBTLi8DbsEkWr5bcAjnV
-3SdQkML7+rRo8Kl4asSeCxIx1ZgG5S15fDsSL525qfazTNg0XkpxFTInfLhAVGQs/4Vpk4GbkVNryr+cT+qv5g==
-tLFjM8SzNqwoS+hPPRqK9T4MeDUnQYns2iC1ei9EU/n0gtHU6aSedRUVnvDoGvWy
-3ZWX0e/Xy/I2XsDDpVl8QPRlnsIus9ezoscI6keordKZaRrFLsYOP2AmG4/d74yPJPNgSairqKciImtlUgkKWg==
-8v1w/9lT1ayNq5K4OzK4tpF/lHEpOIFJPyqeA0XrDv6M/LNll1K3WsxUfzoX/lyHwmIbnHmA74lsekqjRwROwT5rQyqbiQ/pAZHHzaSAzern+i3K9fnRBFtMNsdjB9S9
-48wVAYe0RmydOkixkwlM+G0cePVA59KKPpxLruLElWcecQ9Ckp3dYOvimYhNwsu7
-E1WHbU3Eks/8Imw/iDZbpSmSMrNQ24kLTLIpvnpBW/SSee5HOQftQ3CCsMrWcptOLKU4S6DvWSRKM/uyHs8QSw==
-gVXZOOuLF1ZN8eYyfoFbDcpbBJbTQLBcgFTJhGqxX6Dpj0pgfeOtPN+Wpncz/FfF
-Hfx9Aeo0ldHpg3jr7VVlibnaaTMIaGAr2gMjxk6cLQvsmhCFtaOGPQ9vz2zXR4jM
-dA6aMqdnsEfx3l/O0ZpPi248utROO8f1pZ2z0Bxp8MnAxbjuLucXM+m9pMCy5ud+JRwSucalrbbb6ae2RnHGMA==
-8n4rlST3/KyczePMIVGaluyzhk0NHpF7ZODtdNKhVi8dr2Sq9uoGr+uIo+z0D/D+fSc+Re6EKBmae2hiK508tU5qfuRuPXFga5sbBPNLbjAdV/aPaTwctF9oVymjOpVK59WaW3lo8C2zsnhSnZVRRA==
-WZ68Oaxi86spaU9YvW8VoHT/Ya8Id1xFgrFoBfq+xMwXIOB10sfMoVs/EmL7b4zP
-7V/Bg4Typ+4nSII2lEpeB0/aUOaRebBBYJLlfvDsYo6vWHZvAYgQQQr4My6ms5EG
-cnWmhRuQ24T0ovzbE+8/Ym9OO0DvJrG/hbVK6r/V3w+EPPGaRn1JfBNJvuhO3D1E
-S8TIsePF6EScEVppvLh/sgfYlvdvDPUVBsRkkhUv8mcKxmDoUKpxRWWh3PL3r8T+KJI1b9vF9We9UIhen/ZJAg==
-a3exHRa8GqwYHqzN5dK0B3uGgtCw4yaHKhvO8flHRiFJv1sPrd026kjtSBe+HLkU3v5OvdWq/UhHoVerJmgjtXmiADbiGQsx/45nRA3Gv81kWNed8VythaBlxYNKRSrVxra1sysSgqyzRdIGiXZZsw==
-QTHy/ritW0P+SP2d5g7MDyV/7v1md9eEPMRXRx0oShtRqFiqu5hKeG0+xmKDq7Vy
-/cNufzDmupd/4aj3bM2gL6uR/uM5y/nzwKX3mPB57fbFEnbc/zkuQDW5MnyvUo2d
-fuHWKvJn7XmDhXfaUmDYfrbs9l2zggpZ5PnvVHoMa/JXymOkH/nqOYOMmiBZuMi6mL6gZai2pxtsfxC6HHmZQFgm6GcCiNnDqQgsoVdROwk=
-rYa645o8LsyxjjMUAQ4HQ1eznLOJmsESwSweiMaO2lwUaSKP17Jw4SRRuhaB2djTbfMsh6A/XJooIdlLhBRPgCeU6G1hDgr0sINc5cGSZFA=
-RH+ouVagFvgM5mBA41Lh2r6z5tgMfQaILuNx1Mk7nGIDMc5IRSYhps0IVFrmjFsEzPETPRepgS8yTUl4SyKjRumGXf5slo519d3Y9BeweUE=
-XMEIW6BHcj7A4qe2ZFIT7g5f5/o91L4KEC7Y6toMx068eT6Xr4rnwy4nN8svTxnz
-eS6svYXeE6uzJB73/yjAeHoNSpfVFZouztnSLbz2KZO5b7TPHclAZXxAuL+Sb2fKOrIOyRzwyss7LGQMiUBix+W4bOb8kxs3W5rdg3n3eRfvu6hWgVc0gu7e5ehiySz3
-7hkjwx9rey+bbWS+IweUxzrlqnM8XjZ4FuBEL4mshG2X2vpbKdceaBvy23rjVg0JH/mRXqOE1iMD9A2lkfZmLA==
-3izDNGFYE1Wm24cYni4YxSWgzaZk8Hvo6A0f+WJtblI9uHhoY8ELa32uUEa0adXZDYwaWWxL7UaqkX6XeRT5CSWsM0BaKs0HbVZgXwVRct8=
-kvbVpDWg+ac5KU1w8M/deLUjCgbpy2+b8bmaQuvDsUmtkBo0wIW+DtnzJqsh3I5F
-80L/73Wp2tsBDy6zp5W+HXwRM7o4txNswlbNT5JSLnI9W0BIjgbXulKU57i6UX+S
-0Mj2o4zJvX1BVOoryIJWvOAU3zbIPjmnLJu+nZWy30R85+2R4lWiandZXh2F6CKJ
-r8rh/tra3WFjl0UjbJ+fxb0EoPpSWhrNY8nHo0MS5cCIAvmoYikH08DdIywnExgD
-YyzBQ8NahrYWMvUgP1FyuFCh/Y21o8TyByh0MMhefTI4qsXjIUJZhWvpTCB7fpQI
-ygdR+XBVY3NvUXG/qNy2hvuW6f6qhSughPtSVf7z6udDi+eviF1jmN1SyvXVMDc0
-Tm1FZ8so/5zCoYpal8QfCkamD5KH/IMnlobW/3sPe/airw+EH4iDoN2HQ6Vmf3vI
-sMIT2Wsy6d9m3kcTgWPMvCw0PmomK9qiL5I/nZN29dKltjtd1327SRVX4ZHe76Jq
-3bmdXbNhO8je02lP83yqAEi/NsmNPuNoF+YIO6kgTNHjDqJNzgGfSDrnAl6REJqW
-S9FWBsBfmGTj01QgbbRP14UX18bypI9FG6B7DBP9gnWKj3lmofw9hpIV0svnL8wf
-yBc5P5Sp3eJuCw3ZqcHPODppB+LlAcqWfxyIlZvCd+u1RhVGeNiuR7Y5XpIyBQBB
-Iu7OkBid7t/jYkrYMLEvFkDo65eS0bCbne8XBPQlvaw=
-WM3GeYacDsyo11SxazNGjyDa0Ls6On68qOmOllt+oLA5T4ep2TsP3kSo1+ERQEWn49qRfPneFRK4l1jNWwdyHA==
-LHAWWbX/3ABg9VVGrT+xcA==
-pLjlMKasu1AVC2vG7uPht+3GQs//H9ldh9iL+QGcrF/wx42fIskqqs7jgIbG/Uvu
-Yu3agq4XIsDR6hJ6jv9AHYfb5Fv1nF9HZExT3xOMOU4IFNOjOV9z88w8GbDP9IA0DuU3jB8uhmgIOts1fc0PuxLecpAkL48k94KDFF+CL7ox80i2Qs3AqUZ/bYdRRqlm
-9+QWuLTSMmlYZoiHMmF4z7zxdRfPGR/zu7BuPni5E8Hl3RRAwl7sRf/AtQ2XtDu1
-foEJA7904EqnaxRGq22QNkANluWysi2fyPP/AgwTz8WBvulhKtAhePQqs5K6gT+JGS+jKujoJuBq0E8EQd1tFNtSBZ2sBmKCtnJeVYv/TMktIf90OPMe+jbdtF3AJQDs
-zfN9DChjeWuMeuO5Ui0Nog==
-vqEKwe5kSfAS5cKt4/pthw==
-fdoI199TrGHGnKTMshEMEBUcij4WwWv9jbX4XuhKq8dycr+BkUUUIzdGv9XnovRH
-J8jvodMPq87Z4qDcNvLPVcNbHWCh7EXtQvAFgkaJPnOtpvEOwIbGaUD5VO1E8H9gIQJOm5xrhN6CfwbsCauc/w==
-vh2aBANF+Eqh9P1cM1U8g4MM3SDYFDVCsWBXq0q/PLfcDvnl7VFIwmrBcH8P+YEpjuUIA/QDWNPehVGWCkFzdg==
-rNYovbUniatJ+KnmLKPzOzL+X4PB7AUNMgumYowOO+Q=
-A9ZD0TPU6zwxv77rcOht/UnYU81Pmr3DYyIm1jjeD9yrkSaP96VNJJSuqV6X6mXz9qRpGTderRHLz2sLxcp6uQ==
-99jykilptEJsHfDHZIKpp3t9foNnOD3fWpU3qR54PseF5S5Kltopd87h5oFW4Fmm
-ln9Y/DQv4GpsfZ1ZRkJjW8LUWSTR+HDuydinWoFfH1qpg8kYDe6FleunIqEDMumtxF3ZojSelExE0yUWgfARQA==
-lmSWkETb/SqYm9fu9evQAbjAcECIFFa8fsCHhEy//lE=
-HrwPg4cHhQBKza7XS8xm+Q==
-VArRnW7L7HOWCV188UlP6A==
-rbpRgNFhdbdNXDTFlF5SGQ==
-txtE+rBy5/dLUJswnOM7mg==
-mrEg4gTcYtmPU/wVg7zQzg==
-Zfah3APYM3P74eLYmawEz8Jw6ozVOgU6Cr2kNnf/+DA=
-lPFxQDv1vU/78DojV0X/blkdxnPYoXRGYSGULRd/Xgo=
-+9+nIPmnB0zSKedZ/0q+/Q==
-B2woOjahUs6zbAGl7jS78w==
-2XUwZPf90ofO+8uX+1aDr4GDr/8echOA5gSpQNvZmXs=
-kz3zuNgxR6xbxD/Wcy1zw8QUC2QXSncSLHudeS1SLKQ=
-S2i0/xgz5q8Ic7bjecg2Og==
-/saY0QTH+cKkF8h00OHtsg==
-bkFLMKZl7xd4tLFsWd8LbutKtM1aBS1nJKMlwWusPvei160AzCtGNqerTEThrwrl
-M5H05tQkJELhS5DTLPPqaJ21Q2bYsJOcT3YrF0t+fTeW6/IjmXwIXjdcT0cJ+nUO
-/0e/+7K7WdQFOzRRjl3hEw==
-o0gh0QyliaGnWl3kBbMFVg==
-Tdl8pQxK0glSa81mjzFIrN+LOMOBZYLUnkYz5294GiczppOxFJ5WYAM56LH7o5PY
-LONNz4BTBwkjQe4/TmkNXY8BVaZSi6+9OTQ3978CQAjPI7UMiifTbbdSpcaQ9BxW
-r+5GiiJWVEu8jKAZYl7uzQ==
+local defaultOptions = {
+  vsync = false,
+  showFps = false,
+  showPing = false,
+  fullscreen = false,
+  classicControl = false,
+  smartWalk = false,
+  dashWalk = false,
+  autoChaseOverride = true,
+  showStatusMessagesInConsole = true,
+  showEventMessagesInConsole = true,
+  showInfoMessagesInConsole = true,
+  showTimestampsInConsole = true,
+  showLevelsInConsole = true,
+  showPrivateMessagesInConsole = true,
+  showPrivateMessagesOnScreen = true,
+  showLeftPanel = false,
+  foregroundFrameRate = 61,
+  backgroundFrameRate = 201,
+  painterEngine = 0,
+  enableAudio = true,
+  enableMusicSound = true,
+  musicSoundVolume = 100,
+  enableLights = true,
+  ambientLight = 25,
+  displayNames = true,
+  displayHealth = true,
+  displayMana = true,
+  displayText = true,
+  dontStretchShrink = false,
+  turnDelay = 50,
+  hotkeyDelay = 50,
+}
+
+local optionsWindow
+local optionsButton
+local optionsTabBar
+local options = {}
+local generalPanel
+local consolePanel
+local graphicsPanel
+local soundPanel
+local audioButton
+
+local function setupGraphicsEngines()
+  local enginesRadioGroup = UIRadioGroup.create()
+  local ogl1 = graphicsPanel:getChildById('opengl1')
+  local ogl2 = graphicsPanel:getChildById('opengl2')
+  local dx9 = graphicsPanel:getChildById('directx9')
+  enginesRadioGroup:addWidget(ogl1)
+  enginesRadioGroup:addWidget(ogl2)
+  enginesRadioGroup:addWidget(dx9)
+
+  if g_window.getPlatformType() == 'WIN32-EGL' then
+    enginesRadioGroup:selectWidget(dx9)
+    ogl1:setEnabled(false)
+    ogl2:setEnabled(false)
+    dx9:setEnabled(true)
+  else
+    ogl1:setEnabled(g_graphics.isPainterEngineAvailable(1))
+    ogl2:setEnabled(g_graphics.isPainterEngineAvailable(2))
+    dx9:setEnabled(false)
+    if g_graphics.getPainterEngine() == 2 then
+      enginesRadioGroup:selectWidget(ogl2)
+    else
+      enginesRadioGroup:selectWidget(ogl1)
+    end
+
+    if g_app.getOs() ~= 'windows' then
+      dx9:hide()
+    end
+  end
+
+  enginesRadioGroup.onSelectionChange = function(self, selected)
+    if selected == ogl1 then
+      setOption('painterEngine', 1)
+    elseif selected == ogl2 then
+      setOption('painterEngine', 2)
+    end
+  end
+
+  if not g_graphics.canCacheBackbuffer() then
+    graphicsPanel:getChildById('foregroundFrameRate'):disable()
+    graphicsPanel:getChildById('foregroundFrameRateLabel'):disable()
+  end
+end
+
+function init()
+  for k,v in pairs(defaultOptions) do
+    g_settings.setDefault(k, v)
+    options[k] = v
+  end
+
+  optionsWindow = g_ui.displayUI('options')
+  optionsWindow:hide()
+
+  optionsTabBar = optionsWindow:getChildById('optionsTabBar')
+  optionsTabBar:setContentWidget(optionsWindow:getChildById('optionsTabContent'))
+
+  g_keyboard.bindKeyDown('Ctrl+Shift+F', function() toggleOption('fullscreen') end)
+  g_keyboard.bindKeyDown('Ctrl+N', toggleDisplays)
+
+  generalPanel = g_ui.loadUI('game')
+  optionsTabBar:addTab(tr('Game'), generalPanel, '/images/optionstab/game')
+
+  consolePanel = g_ui.loadUI('console')
+  optionsTabBar:addTab(tr('Console'), consolePanel, '/images/optionstab/console')
+
+  graphicsPanel = g_ui.loadUI('graphics')
+  optionsTabBar:addTab(tr('Graphics'), graphicsPanel, '/images/optionstab/graphics')
+
+  audioPanel = g_ui.loadUI('audio')
+  optionsTabBar:addTab(tr('Audio'), audioPanel, '/images/optionstab/audio')
+
+  optionsButton = modules.client_topmenu.addLeftButton('optionsButton', tr('Options'), '/images/topbuttons/options', toggle)
+  audioButton = modules.client_topmenu.addLeftButton('audioButton', tr('Audio'), '/images/topbuttons/audio', function() toggleOption('enableAudio') end)
+
+  addEvent(function() setup() end)
+end
+
+function terminate()
+  g_keyboard.unbindKeyDown('Ctrl+Shift+F')
+  g_keyboard.unbindKeyDown('Ctrl+N')
+  optionsWindow:destroy()
+  optionsButton:destroy()
+  audioButton:destroy()
+end
+
+function setup()
+  setupGraphicsEngines()
+
+  -- load options
+  for k,v in pairs(defaultOptions) do
+    if type(v) == 'boolean' then
+      setOption(k, g_settings.getBoolean(k), true)
+    elseif type(v) == 'number' then
+      setOption(k, g_settings.getNumber(k), true)
+    end
+  end
+end
+
+function toggle()
+  if optionsWindow:isVisible() then
+    hide()
+  else
+    show()
+  end
+end
+
+function show()
+  optionsWindow:show()
+  optionsWindow:raise()
+  optionsWindow:focus()
+end
+
+function hide()
+  optionsWindow:hide()
+end
+
+function toggleDisplays()
+  if options['displayNames'] and options['displayHealth'] and options['displayMana'] then
+    setOption('displayNames', false)
+  elseif options['displayHealth'] then
+    setOption('displayHealth', false)
+    setOption('displayMana', false)
+  else
+    if not options['displayNames'] and not options['displayHealth'] then
+      setOption('displayNames', true)
+    else
+      setOption('displayHealth', true)
+      setOption('displayMana', true)
+    end
+  end
+end
+
+function toggleOption(key)
+  setOption(key, not getOption(key))
+end
+
+function setOption(key, value, force)
+  if not force and options[key] == value then return end
+  local gameMapPanel = modules.game_interface.getMapPanel()
+
+  if key == 'vsync' then
+    g_window.setVerticalSync(value)
+  elseif key == 'showFps' then
+    modules.client_topmenu.setFpsVisible(value)
+  elseif key == 'showPing' then
+    modules.client_topmenu.setPingVisible(value)
+  elseif key == 'fullscreen' then
+    g_window.setFullscreen(value)
+  elseif key == 'enableAudio' then
+    g_sounds.setAudioEnabled(value)
+    if value then
+      audioButton:setIcon('/images/topbuttons/audio')
+    else
+      audioButton:setIcon('/images/topbuttons/audio_mute')
+    end
+  elseif key == 'enableMusicSound' then
+    g_sounds.getChannel(SoundChannels.Music):setEnabled(value)
+  elseif key == 'musicSoundVolume' then
+    g_sounds.getChannel(SoundChannels.Music):setGain(value/100)
+    audioPanel:getChildById('musicSoundVolumeLabel'):setText(tr('Music volume: %d', value))
+  elseif key == 'showLeftPanel' then
+    modules.game_interface.getLeftPanel():setOn(value)
+  elseif key == 'backgroundFrameRate' then
+    local text, v = value, value
+    if value <= 0 or value >= 201 then text = 'max' v = 0 end
+    graphicsPanel:getChildById('backgroundFrameRateLabel'):setText(tr('Game framerate limit: %s', text))
+    g_app.setBackgroundPaneMaxFps(v)
+  elseif key == 'foregroundFrameRate' then
+    local text, v = value, value
+    if value <= 0 or value >= 61 then  text = 'max' v = 0 end
+    graphicsPanel:getChildById('foregroundFrameRateLabel'):setText(tr('Interface framerate limit: %s', text))
+    g_app.setForegroundPaneMaxFps(v)
+  elseif key == 'enableLights' then
+    gameMapPanel:setDrawLights(value and options['ambientLight'] < 100)
+    graphicsPanel:getChildById('ambientLight'):setEnabled(value)
+    graphicsPanel:getChildById('ambientLightLabel'):setEnabled(value)
+  elseif key == 'ambientLight' then
+    graphicsPanel:getChildById('ambientLightLabel'):setText(tr('Ambient light: %s%%', value))
+    gameMapPanel:setMinimumAmbientLight(value/100)
+    gameMapPanel:setDrawLights(options['enableLights'] and value < 100)
+  elseif key == 'painterEngine' then
+    g_graphics.selectPainterEngine(value)
+  elseif key == 'displayNames' then
+    gameMapPanel:setDrawNames(value)
+  elseif key == 'displayHealth' then
+    gameMapPanel:setDrawHealthBars(value)
+  elseif key == 'displayMana' then
+    gameMapPanel:setDrawManaBar(value)
+  elseif key == 'displayText' then
+    gameMapPanel:setDrawTexts(value)
+  elseif key == 'dontStretchShrink' then
+    addEvent(function()
+      modules.game_interface.updateStretchShrink()
+    end)
+  elseif key == 'turnDelay' then
+    generalPanel:getChildById('turnDelayLabel'):setText(tr('Turn delay: %sms', value))
+  elseif key == 'hotkeyDelay' then
+    generalPanel:getChildById('hotkeyDelayLabel'):setText(tr('Hotkey delay: %sms', value))
+  end
+
+  -- change value for keybind updates
+  for _,panel in pairs(optionsTabBar:getTabsPanel()) do
+    local widget = panel:recursiveGetChildById(key)
+    if widget then
+      if widget:getStyle().__class == 'UICheckBox' then
+        widget:setChecked(value)
+      elseif widget:getStyle().__class == 'UIScrollBar' then
+        widget:setValue(value)
+      end
+      break
+    end
+  end
+
+  g_settings.set(key, value)
+  options[key] = value
+end
+
+function getOption(key)
+  return options[key]
+end
+
+function addTab(name, panel, icon)
+  optionsTabBar:addTab(name, panel, icon)
+end
+
+function addButton(name, func, icon)
+  optionsTabBar:addButton(name, func, icon)
+end

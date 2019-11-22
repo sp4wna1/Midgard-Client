@@ -1,12 +1,12 @@
-n+JvUrOxIM2w5XQrk3QLCQ==
-qC/irRGhY2szFPzsiyXz1HTuOBuX+5SmtUySGf/47uBAcdKXcwzO9ek03kTLVGa1
-+JKFl2VFnea6rJlhmbuAtQ==
-HeUsVipI7Pi/EOsJMZAafZrekA7S87fqEfG6zfcuoys=
-jQKVLplM7SV4JrfxUWKApl0bqc+0meBoPX8q5FlQjSfQT6w+TZV1+6Cl5ycIwgBI
-SW7bEgHmJAgRpDXSQ1iHqA61CWWLdp13IzxjeG7Fk2k=
-RUoevCoGn6SeFlP5CE+Bgw==
-wSzhV1DoF2QqIAJbL0eqSg==
-5C7qDoIa2y6Rt9XdYKfzjA==
-tHoyte8ON/L0uSoaejXaK0QsUugofNlUSU21Wd7pWAWhAivCkSPKj7IIMBjCwXq6
-wzz8f7xFlhe+xMlGRCJvW8fMOUmdlEaB++yYXUnYV+g=
-bxKJVuhq3+GPOwusUeSTWA==
+-- @docclass
+UIButton = extends(UIWidget, "UIButton")
+
+function UIButton.create()
+  local button = UIButton.internalCreate()
+  button:setFocusable(false)
+  return button
+end
+
+function UIButton:onMouseRelease(pos, button)
+  return self:isPressed()
+end

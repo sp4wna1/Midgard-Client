@@ -1,157 +1,157 @@
-n+JvUrOxIM2w5XQrk3QLCQ==
-z3GWnQLYt6v4msyXMssnaAMy1s7jnraVUNHpJIvFchW0SOUMezTwNbMO89niScpw
-6oYtehQ67Ew2KO/mb5zt3Q==
-wN1eaK6eabEpDrbbKg34YfPOC1SSm2tjkfauv856ctM=
-901GXhL0c4qdNW7oZW2HUaxp08EkS6cuUZL7eVC6Ao0=
-LUEi4mHHXaNEfBwLwcWfyo6lc3D2oDgC2ny3aVvCNPs=
-J40e2u3bYxnGhYbl3REJcQ==
-+cQ3BcZZ0G5mH4l25JUdRA==
-V8SgLEDP4/L1PfU7UMb6DY/FdIRgW422pNQTKpAfRjjwRzqcvLVPSQZC5aBH594msLHxId8zjBRqh7yM3qrotw==
-UkEgTucwU2cLveK8CK+XIAPV9g6vXndnnZX57Rb7b5WKbaErmu/tLFLPB8UaZ+srzm3FrTMIf/Mn/M40lRmpdPGF/GQN0MiGHCtGw/n6faw=
-z9zIkPpa/UKCe3/93xiqw+YT/dZ9ZccE2qHGORhZJarqwXTY7E9bdM+c8lOWsZ55S3MAUj4n+eagMwYY4Z6h8w==
-SplPBs0Y5gIUYDemxxcF0g==
-/kYYFiOikuId0aLo8wb3HA==
-vI3ge4BNEiLpknNhCO+t+Q==
-MgDgTKgddc8tCtorSPD9Sh9gm6G9RsZ5Q31W9VGwpCI=
-lb4drg8Nna2M7ZOTQQBO3LEMK8VZJYkI811asPIEqVM=
-aq8TruHfaR4ayn9QsMt/EuKHRuwOR3mj4it3MgoG8Lxezhr1xU1DSTjp+dC76MSd
-SThAyaTH+iX9+5RWbY2/OghKLBZDlYf/rtcaMZk7GNQ=
-AbqrrmFHC3PNAETZboKxE602If04TopmBYNq2updJzY=
-VmgaTDClgU+1mIexcF9r7Q==
-SZ7mUpmHzfCUUwnZQ6O3hA==
-e7NbcMQRnyh2Fb4dxC80ZQ==
-IR3kQ5AdRtrzbJLvt11pSA+FjlraFkvTC9t8W6fABXc=
-lid+ivuupWUXryc2Y/tWa5vA6ixlr7CVQ4DWFoWKBcRbV8/TIY48gBjz3ogE5vsqM+Jg61scWtiEGiRulpyTOw==
-WbdzLddhBEjdbWZFT+eEqw==
-hYgC0Zhs6lXTqusljmOtsw==
-el+cE29W/DfVvIbzEGENynOMjwpS2uc8kEEPLBNf34nP58tSzMrTm7LMboIs4qC5
-LxIWCjgPt4kE8lcYA0jy1yOGGyVFN1AGxh9B2OiOjxc=
-SH2yj/00RIQZywmylPreFGdXzXQbWnxHtHp4jyWX1jk=
-vOwK4LSoaEtf/aFzr03lIs12iFimyZgd0QhS99gXVCxdbSkETKvNoCuWCqqEj/n/mCrAXFi0r+BLO32HaI0djw==
-gdRr9b+h1UlvfA4ljlB2OA==
-GAXanonEO1LTCojNfLj/GA==
-QqiFMximGJ1E3DKEGNqxOA==
-LVNzeMLoe8ERhwIDFOt4oSfyoVf5lrCxgjqIFLTjIwg+bVrI++XHanbSjhYNa23b
-q4TX9r9G0IZ8oqfBu7vG9ZZE0+FyFFtryrTQuDZuAwo=
-XtFuLGQeq9deu8lVXDxEzQ+K+crBfyuRor0jJ9xcrchMv1Ipshih4hx92inZo1AERyPJZRtJsBXIbEOD8ZWFSg==
-lXLTxHApylVwKwNvaL2Tzaxa9iFrtQPpuvjnISH5gQ4=
-min/9eH/KQzJqgLQ/aYIwg==
-AXl/WkMqXd7/0/ktK4u7Rg==
-sS1eIoXdqaqhbkteFQOcHtqdVbFI0ERCbV8b1o/grpiSTdwZ/wGV12R4XdFR6dJTGC2kwbVCQDKgzTkJWX9EKFJR5r727pvjU0DL8oyQ7vwdUR9YttDFV1ZOhmKPmNMa
-Ead0jRkKLgLqyx6hl1m9xw==
-0FmMVllW6BzVQxo8GyFtzL3rXbHpzQVD1w4wLB2HWBA=
-UjvDOH2nTFi1aGTRZZa0Kaitt5ZqQolM/8yqTeV/O6w=
-Y36y8sbnWoW3dO+0ItNCnAK7vUNpIRv/D7fjuyGnCfY=
-X5i4JzewIdvPKs6VWv6fHoee+/qCyUCZxFe4yVPEjZM=
-houONNLnZ5rS9vwD7FFwE4qwb+PhCTb1HyPq2WOan9g=
-Y4mo+mNjO8luQv/n+t7LuBNHxnCqsmfkARypWyon/RkzIpYzYcdAk3NwP+w5OzheVHsDojegfex/Wyf2u2WYw5rmB1W8Svcjbam301/W8sNqxQtqbkJ1OXI7g7afBEOo
-YmdPq12LUyISWEGr/C1mf8TT9/NRfx1hdY54iXLh8mU=
-5v90Rz96VWHnxeTg76BCKQ9kxA+jKrXYKANWNHmEk1XivUCAn9MmHlfttFnrc/DS
-KJSF/jwcoD8v/9ZpFdiNFdys1RxXZIidb2JdPLzg4S8wKdpmZOz1eUR1ycB+mM5oya4lfhvjxpAu5b0dWdSTkA==
-5dlw6vLvEtmd2OIpjCA+mA==
-GzAijMnzWaRIYAd4S6m5XA+OM7itBZYvm/t1aPQgbCg=
-6NjnmOkkFvIfvdWhv9Jb43HlV0lJnPAnwqUMlVIb7Xs=
-xmNIwYPCqP4r9CJZ2WfIlhOOb1PuSto/O3GnVF2bJio=
-LX2iTVWxqJ5uUG+vyCZ82A==
-vdFz7Omwh2tSC6FcQIgTRA==
-G5rxtkT9JFKF9nyl9VL+LJCO5bPzpKLsI21ewM9OzBg=
-W2Wul1B9Tab7Q5VQ3CqbRh4QKLc1tSaiz0VjV+E8NxEwNGQ6FIiZ3H28hZRBeKM3
-93KHmmDak6dvF7cHnRg9fHqYRV/XNDiM3YF2UpUjQCc=
-1bUpfR1+j/a2p4sD/BTUcg==
-ilOylHUdVAaj97/A86UaYQ==
-UN7/1w2Lm3TDiyZhw2v9iA==
-iyencYyDAPCkptbWZpABhw==
-0I9FKGs6nHYCiYZJ92Kpyp0cbLPd1Dl3G8l+AivR3o/ebL+7RaQl+/SrEATCviiE
-nF/qTskRjtUvCGoUbY655JWhjYMnHpYz0bEv5ys2kmT0YHDQrBXOldJCSgQh4mc07J5iowGgvjEoYw24hNDSVcXQAEPv9Rtt2RaOGevW+I63X0CC4HxSfhXPWqHlXsi9
-4rnCOJ7b+suWnRt+RlPr5qx1dkDCT1vISBGKYhepS+o=
-+sWFxzljohoLcfOnUOwjZQ==
-8eCnhIXVAciuQnIy5N1BMrrcloyhtyuzd/dtlS4jabU=
-Mw01OJwsUU8Bhq8LwJjnIe30PmRQRDU2+YTp6ttgmEk=
-YRWyGWlaDu63bEYQFm6wJNONGtciP2w5IDb4ZzFLgi4=
-nCtwpzxU5DHtwdO8yfkGFQ==
-IIoN9lpJGkse5pSfug2xd0/QHoKloJcCm+srU3JZbYw=
-8RwN25Q+ruD5E6fFqRJSFg==
-v0KFR0Wa+ehHg8PmeuXBfQ==
-uNt2tdIE+S0tTGPDmFCcUg==
-+Rbp2JvXhiFrd9mQGDUULLDhP01+WMFnmLDnTWJGF0Hj1BjdSWrCQL7nRIwA+e1u
-riJ47RwjX0NfurPSZAxlwpMEH4a7NF8TWoiMrAXuQeKJlobMmS3XJzJqYzOgsY0H
-94HSkB8OxNgAl3sedeFz8SfcCDjt2f+Gsrh6KqmjIMdZw32EDwFLLkUW7EbZmr2g
-v0ralD6n5ctJwU7fnqrQKvSHb/2Cuf4tgTqjJdoONdzO2fjFOsih2CY/6LAfQbyV
-6cD6DXUShxx/RKW7J0a3bMjvTHcT6N/W+nEDjS2NU1g=
-urjxOT/lJreQz4esLXzg4g==
-vCr57XjWW07qOY7B8DZMFPv9WOJphkZcL1kn++VvgFTQJSH83viPrjLsijsD3JOQ
-1WgfElnNoxKKrVVVl0r/8w==
-RnkhUGbKOqXZoU0gpQj2DQ==
-REFEQOPmMyRhbE5+HiXsCA==
-Ix5W/5KDs0433GRMCcU2uqDnJzYGAdg0xAbSqDwMfzY=
-680IXnubWhWClTnTrCQPIV9pRNpMffPLtGsiVSjs6HqCAGKnko3u94ewuv4w8L0L
-hAefZGTq1ZyjN5C6vBl93ehshA67Hn7oLL4LVUTvdxD/vsx4U47/tKMweF/eQYCa7u6rnhurwmbezJtBrz6xDw==
-MKMeZc1uvLQMsFfHs8ZyIb1d9+5/8t48e7k8FL/Urmk=
-nT4eLXxF9B6s90dnEHVz0A==
-78eTNDbeeTijVqPeLkOOzA==
-U2ylFg5xNwb15QFBGnErow==
-BxHOAkH3ue5FVqziD8aBmg==
-/g9uNwJlIAchef+AkuZHiZcODiPjF8uWddbIdWFkGyD55VW74E4qxQ3tE9ahxaww
-ZGK1RovRwVjtCY2m8n0+iIvJ7+XhDpjb4IECxRwTC/cwu73s7LWvG1jJUNdEQWW3
-+GvmELQLZWBhgIc0H4Pnr5+ESk7YMzytggqdj2BllXk=
-CFLJJ4CWdHKwsOHwMPIC6mWDacLf9ZLuTIJPYFzyw4Skt3toHZykipvTvKosY+c2ohS7Entk4AYQduseRrEpew==
-zSA6DfHHLeDE58EYwlthbu577ZEYVe2A+K0HRqTLbDKK1AxE+PLn1Lxm0UHq7IhHv53etI4IYhr+T/azQe9Avw==
-Y/xgAe9q/3Gw6P/9LXShU7dWIRumjXor3rtqgrTnAyxmwrMb9VVjjB61kM7N4xWDQE3VIsRkLexoBbbq0vkW4Q==
-s6RpoKX0j7LuhCDBQQZxvA==
-TLWgJq+VKk/bgooOiXgVgXs0YL1m0Bwx3Mf5K+lulxdinnazmdroD2zV4gDqCBvR
-kPosu5yiOQoGeFJMSy95OyIK1HJHsVgVOUn04YFvnrw=
-1ne/HReTLvPKU0AjaOitYg==
-VIQBt6EaxCJoMvRTrk/Nww==
-DTPEsI6/ti0OGqcdi1pPqqHdmmw1ef+O35BJKpZLD8E=
-2f6pj6TzHp8pI2hoSp+Roo75p1S5tfhGd3dv0GmdPbM70XGOTuqgX1imXOdu+z9j
-MIATRCSECtHB50Wdoh5VDA==
-qO7M+p+Nx7JbFTrzDKfp5YC0XeNo10p8l77wpuboP4LcBdtBNOb+uwNk0PhITyfH
-Jx//1h+EPv0yXfm4dgWuAUopjXOvv5jACQL+0WA+Pjg=
-Xhy9B+QEQ2HI6LLPx3FM4IwX8uoWC3dKPcl0COyZ+TQ=
-8PocdB8xvPU9F4zUnS6pFdHc3WYu4gPHF7oI/TjUw+E=
-hdFPBMt6eit+LKtphqlOMg==
-Ms6QvmHZVLNoXUOwxbmCrUsXXqNNyrynkdy7E2CVAQB1S3OBIII1k8l7gnqm0Oun
-bZxCzvbshIFL3iAlpQmlzjM0j0Vq1rCcgKA7K7IKnBM=
-bET0/0HfDPiAu1rWEyQe4nlHtWTX5tO7rN5xcLvKWIS7RUtFtVS1VeUp1goyqXhj
-CY+DzOYcWf4Rk9xGHzfoUA==
-dWHnAWcAPuV6m0VQh6typA==
-zNjoekgqjitZv428tt4FRg==
-osnuZUnpHwpD9ipV7HjULq4+LB8nMLJIzUAqUYy/B2PdL8LCQCVnlDbkC3uw4UfA
-s3Pn3mWAIBmbe0MsJ1woiXd4c7GeYYWPio5w5ADlm/OAwFWAMjeyIQuJ4vYvmnQK
-OmO6ZP9PacB0dyJAtVj1n1Z/QB84goYVeTORkCdEWiDRiDugAGMEFgMnP1Cz0t7wXJ27IycmVmMru5QwKL4D8w==
-JP7eKiynch+jyfPRKSGj1lg0wC/ylSpWKfIH3RmSecH/Una9Iwjzzj0mrIsTvYOh
-CpZPpAFaqhuIcxKjEuBF9F8w2q6hSqef9h7kL805PJVjhHeINUWNBUEEAM2Qm/LxYwPSSf2lc6vq/1H2jwgScA==
-AiaByK92t+d/pAOTTD574cnsUZwBIwqcDgdfPQUqqqAc3QLxUYQaSki+EMWVVV2q
-4K5EAFHA4B405pVZb+pOO6apodUbrdZYUegct1xGXCU=
-61pVZxJlGMhsZhklulwhkA==
-NpkSmI0g+XmcO51dRuxsTQ==
-txjVCfcoxR+KO/GPL5K5Nsa1DJJySfM3OgqMzK1iwUErQq0aEUi80H8AnRkndFnb
-BRay4Lzts5bnYpR2qBA0ilgDydZAj4npx5yo2d32fx/JpMnEXZZb3Fp3QXM3Qsom
-kj+27ogIKzVgsiHdFYTJr56uUf23vSLTuRzZqU4OQUobK1/AJ7yNdPPjg+ZccqsKUbN6thFuuRsCUOoXGyMoYQ==
-7Vp34P1FfX24l8jRcvrTrPiTLZMloQmamjLz9pgbc14bXXz8p3JdjXzgx9+cmaQm
-ZPgoI1SqbCkLxRS8vrykuyBIVpGB0P+wHcCTku6nyTVCeKTXrWllSKNEkS2gYj/4k5rBi19EmFzP87mXFFplMA==
-MvLYkXWBsqbnL0nbUDF6VjHQpdETplyzKUw9BG21FWnjOuHouHjt+Vwukus8IpIp
-Wd4VIfejMGHDQkfr0COiMdzC3YsIiUzIjzw2AIX4Yjg=
-9iZm6RToZ1z2zmDL20Vr7g==
-XglB0tNSFBrLbdIWF4pJ/w==
-E40Tnnqiyj42XCMTPC0zLf/5kr742NNNYybCBI3/0olNXIFgKRNKUIFn3R0nCP5l
-y7NEBf2oXR1Mx8lWFCfFO6jPXtxjesC9Iok+nCEYArE=
-i8w8tzH7/viwmy+sSQjuLg==
-G/TRDbUQ1EpPsub8JlsJTg==
-ufA7KgiA1NKbp2pW26yVd0iyFsROzy97lKl33/LrjkG5VL6Z5OKH2YF0eAxlkzLv
-CE6FNpzhriw7SuUq/ireNPvLzItAiOSqDgImYI3WJSg=
-x8MHuLNTmZnBojv74ugRA9gqKh1Hl4yWEgj80iRhDp6tQw236FFZ5M5eoZNdwzGF
-1pRSwYVzKIsgMiPxtzNJBg==
-sBVwDEpOaLlPmxDAoXwDaA==
-LgeKkjqVCVyK5TfVDTriOw==
-z3DRK9HWD6Zl4mFKadyeDYzToHbZTC6+/RIA4UfZ8iHNE10q+UKjj4xy1J7NHmje
-qLCHYilfuaKAJHOSZIePY9l3YIgO6qn6prSXWkudgHo=
-H8l5nMSKM2FLsSom1i+pvw==
-bcFMZfES9cvBMQopwxfH3w==
-o9lmlEmibfv1+POQyAEwsnAWNvrLNjoOIYkMwYtJgM0=
-Kn+QfQONmY6EVe+zmyyuFRWBEtYwc4s9KNY6VCoQh5A=
-6WZyNd8kod2vYeC+H9dXZA==
-wnpBSf2xr8ivVH/0/zwhfw==
-LdN7CYtCpXb8l4AR4jbIjCTa9np8mPtF/L/6h/0rhDETYhxlAiRBln30YDqpCRZf
-A6KZfG++VOnFsHn1NsvLkAQAqSLoDxpRyhrD/c3TAyYLVKkWVCr5n8Ne802cao5M7iQaqSH8mgAI0i4xUQSwVttXXmrCfbfzjXyMN3XvOPU=
-p2FgiZ2jy1/PEnSnTnnPrw==
+-- @docclass
+UITabBar = extends(UIWidget, "UITabBar")
+
+-- private functions
+local function onTabClick(tab)
+  tab.tabBar:selectTab(tab)
+end
+
+local function onTabMouseRelease(tab, mousePos, mouseButton)
+  if mouseButton == MouseRightButton and tab:containsPoint(mousePos) then
+    signalcall(tab.tabBar.onTabLeftClick, tab.tabBar, tab)
+  end
+end
+
+-- public functions
+function UITabBar.create()
+  local tabbar = UITabBar.internalCreate()
+  tabbar:setFocusable(false)
+  tabbar.tabs = {}
+  return tabbar
+end
+
+function UITabBar:onSetup()
+  self.buttonsPanel = self:getChildById('buttonsPanel')
+end
+
+function UITabBar:setContentWidget(widget)
+  self.contentWidget = widget
+  if #self.tabs > 0 then
+    self.contentWidget:addChild(self.tabs[1].tabPanel)
+  end
+end
+
+function UITabBar:addTab(text, panel, icon)
+  if panel == nil then
+    panel = g_ui.createWidget(self:getStyleName() .. 'Panel')
+    panel:setId('tabPanel')
+  end
+
+  local tab = g_ui.createWidget(self:getStyleName() .. 'Button', self.buttonsPanel)
+
+  panel.isTab = true
+  tab.tabPanel = panel
+  tab.tabBar = self
+  tab:setId('tab')
+  tab:setText(text)
+  tab:setWidth(tab:getTextSize().width + tab:getPaddingLeft() + tab:getPaddingRight())
+  tab.onClick = onTabClick
+  tab.onMouseRelease = onTabMouseRelease
+  tab.onDestroy = function() tab.tabPanel:destroy() end
+
+  table.insert(self.tabs, tab)
+  if #self.tabs == 1 then
+    self:selectTab(tab)
+  end
+
+  local tabStyle = {}
+  tabStyle['icon-source'] = icon
+  tab:mergeStyle(tabStyle)
+
+  return tab
+end
+
+function UITabBar:addButton(text, func, icon)
+  local button = g_ui.createWidget(self:getStyleName() .. 'Button', self.buttonsPanel)
+  button:setText(text)
+
+  local style = {}
+  style['icon-source'] = icon
+  button:mergeStyle(style)
+
+  button.onClick = func
+  return button
+end
+
+function UITabBar:removeTab(tab)
+  local index = table.find(self.tabs, tab)
+  if index == nil then return end
+  if self.currentTab == tab then
+    self:selectPrevTab()
+  end
+  table.remove(self.tabs, index)
+  tab:destroy()
+end
+
+function UITabBar:getTab(text)
+  for k,tab in pairs(self.tabs) do
+    if tab:getText():lower() == text:lower() then
+      return tab
+    end
+  end
+end
+
+function UITabBar:selectTab(tab)
+  if self.currentTab == tab then return end
+  if self.contentWidget then
+    local selectedWidget = self.contentWidget:getLastChild()
+    if selectedWidget and selectedWidget.isTab then
+      self.contentWidget:removeChild(selectedWidget)
+    end
+    self.contentWidget:addChild(tab.tabPanel)
+    tab.tabPanel:fill('parent')
+  end
+
+  if self.currentTab then
+    self.currentTab:setChecked(false)
+  end
+  signalcall(self.onTabChange, self, tab)
+  self.currentTab = tab
+  tab:setChecked(true)
+  tab:setOn(false)
+
+  local parent = tab:getParent()
+  if parent then
+    parent:focusChild(tab, MouseFocusReason)
+  end
+end
+
+function UITabBar:selectNextTab()
+  if self.currentTab == nil then return end
+  local index = table.find(self.tabs, self.currentTab)
+  if index == nil then return end
+  local nextTab = self.tabs[index + 1] or self.tabs[1]
+  if not nextTab then return end
+  self:selectTab(nextTab)
+end
+
+function UITabBar:selectPrevTab()
+  if self.currentTab == nil then return end
+  local index = table.find(self.tabs, self.currentTab)
+  if index == nil then return end
+  local prevTab = self.tabs[index - 1] or self.tabs[#self.tabs]
+  if not prevTab then return end
+  self:selectTab(prevTab)
+end
+
+function UITabBar:getTabPanel(tab)
+  return tab.tabPanel
+end
+
+function UITabBar:getCurrentTabPanel()
+  if self.currentTab then
+    return self.currentTab.tabPanel
+  end
+end
+
+function UITabBar:getCurrentTab()
+  return self.currentTab
+end
+
+function UITabBar:getTabs()
+  return self.tabs
+end
+
+function UITabBar:getTabsPanel()
+  return table.collect(self.tabs, function(_,tab) return tab.tabPanel end)
+end

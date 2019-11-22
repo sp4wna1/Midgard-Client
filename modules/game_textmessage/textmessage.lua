@@ -1,135 +1,135 @@
-z74fFno4h6/lSG+9/QxWefX2shqSlP9dGusxSJuEjH4=
-+vhsXcaUzjlOSAUHKyoDxQeah/c+rfOiv64hlh1sOB4=
-8P+18wECWxW5tcjkeOdiw/vaZH/Z3qt9Ebwao3yz1PEhETgBvao1k6KYJif7dxpFrYbjiyBrxpbUmNKudW+uLf5NAwqblnTBtovP+3VO2/w=
-qJbuYNUB7S0aLz+iJSxzuMIFWl9JCtWnYyts8m9xpSJpS/lNCu1wtDQ4SRIaMR1yrA1coTDgf3Y8Dv7o47ZDBMERSLtq/QFzOs8R83fN2/I=
-RFKnWVm5tWlcnCeUXAbGCy8Vok9PdufoBA8ZSJs75b8DT9z0H7ZFJ/IXte2fo9VpKaYdVARle7yFUztoccc9ZO1j89J69USjOG8onPlSa/E=
-jq6hKdPR4KPIeNn7l7fZzKnQa+6Rej3ojRqvFXaL9IliAgrjVN/ogJJZ7EjS0S8N1Qg8t790EvP0abPp4PKhWGu4nq6uN0H/bo0jU5w2aLsLYY6Zi37pSfeHHiWW6tB1s1PL9triNO4x+uvjpf+1tA==
-B0Lmd6egwv8e0V35exlNW5HuOf48Q1JQpbfbr4LeBYTgNd3Mj9vYU79LS5NxIUzYRWBbMs8biGRyoIm5bvdjJvccco8dlEHK1k5iRif6TMTwRb34Jic9hucalTiuVOBLdvsNQy3Byq3GMqv/uZjHVceBFAgGULk44Gzx0lZX36Nah+uvpW35L3rquQssN3/tsqPARFtMzv8BFC3fFy7bng==
-IIAmHhCkXoFa/43nFFkuVrBFMX9wSUBsz7OmWw+dpUektmmiNmezx4vaNyDEfMUsqzMPwwD3aKWViY9lzzE0YmvMDBJerQ2ewZX7BNUy5Y9LLBIO+eJAZgMB4HavJ5N58hJos/NKcnNfZzU/WdwqVKszOQbZ/dYXlRGFKaO4tvpyS4mnO2u4D0QRRQeFe8lqwaaEMK/VxkpbQR0pRYPQFw==
-SlUHSrc+oW1gDW0Xm1sLz5VczG8dc/fdQDBg3k7qHroAf7LldUz8lJ0Cyd2JS7zrDH7Qp5LAprILJMsrWhGsLGaFScZbqZbwyqXdhGmIoM3mbniUTRzYzZs3fR8QryqemPlt49YwZEXmKyzUuFFqgKFenphuxD3p+adPOubcXosS5EX6JmhNn3sWJOaDMALqO5GfUhuetxOl7LgDTa3wqw==
-fK5L9mG81zzYCFcXh/hUmjDbp7lKZyqXZXUUHls/gHeZKqsqd8ZhwGFLgwn7syeO99CIOBfznwzSR9MuEPnpjynOGEZNpklvz0XWWQdJBdUSKxVRaQnjzFJhm5treRJbTqoNzN83sK4EHK7pceabBbCkRUeM4KdMqMJ/h6lalgmzS0h9PyCE8RHhx36nbo3ilERCv+nrI4iheGtwuU4hzQ==
-m+y7n4EnnE75WNPjMqLZrgW2oVG49Lue6mw6A0G3cQYLanNNXUq/5cP3MMkEBlW2GA5GgFqZm/EcD5gDirFIay+4+aBbUcLPaRfRgqw1P/Oy94WCxq5CxDyBk+AsHGa7MLb7bDrkSWxug3r0D1OHKw==
-Iwv1zHXvs6pjIkhuQ09pLqvhhUsjXRYfgDp6blWca6I93PKwxo6Ta6IsU2f9Kh24RL4ufuF8a+70muws7WVhoDqWkvG8Mg+nHr6w/z+KETJpBDB/fqLCbpuvcYPjQnInIzRaRid73tP60I4YgiImLA==
-i5+ICJB8pLRELqdKyWAZuQ==
-ux6gcDWSh7Uevf2c0IL1kg==
-qUe/pMBp414VEnFdvz1LGFieo/bc5xTDFjvk6srbv9w=
-GhZ60mRBBevIoWG6XtZXtc4ZHuG9sspzIegmJFyuqCMqVsoeSt1n2MgwDoBsA5fTDulMz0DRrDGi/uxGhSuEDA==
-BcePsd9H07tR2yRadbU5F135R9Pdvv9JvmZLhmgud5+Hp4fiUYzVGxojIQhLeYOOpojAoN7OqExD80GFGFA6Gg==
-LyC4w/Q0rYawWZUpfTUkiHkZ9Y4kLQCUdDiqm9Lb9Gf39Aa9uU1PAGvaaLjZpAXUc6lGo/jE5sP3q32labOpow==
-W8+GkMrVcnBaWFuDoHyG2ml5JnZhwLr6tGRRkarONQ7Wm+IIHCdHtoQX836ojQtAhxuYNIRX4XOTtTde3ZIiFw==
-BfNZqjtorRmM9e6S1heMQ3Qr3NS8PRsj+EPFppGioQpwRNyTKLMNQooNGoOuUIWZSAs9CfAXjE6H8J6DXa49yQ==
-8TQRIMMn1QncjCSxQwdP+qWdGOaTlJsXE2Vo1Xn/FTmC+26aLMv5XT38rD/x9WNDjiF5YTK36g0O78ren4vzPQ==
-rkBmQrmySZhOuy+ifINvt2iocx9zZZltllejpN8K2ULXNQF6y/qWbLxA4kH66R5X5KML0zGU/XdEZErWrIC5qg==
-ctLGBKEPTDDYF+7fJAf6ymU12uCLDweizk0/knsRfGPOsd2DRx4OeN/F1yIvs57KWH3feOV+z/p8knhF/8ozrA==
-nepLXe8ztQsK9Uew9WKRqeW9ReN42ddqUPxasxOI4T19Ogh0MkVDUNTgcjzvRXfgiX3Ce0zYO/qY6yGaoZkegw==
-p4AS7mtkH9r6F54UgReOeiWkTv4w53hQjK4eS/m1MYbZb2YNUWSRI1G+MhAX35sWX2TbeP5Xg2ad0mkXJGDkcw==
-X67z5OVDSiw4f7GSNEvbDr6vmSDx753C5MipOSWxeUXXvvROZSQfDitb2wM4m4p/lZT8/zljxnWp5GyB34DFDg==
-6jEdDClxKFrl6YwDgf/bnLPx4niDFGR5Ib+gkJdFf3pxhvNJeKkW5saLT2i2R9it31woyVxlcAnp2fOTlrCgsA==
-SXzts3Iv3rnWgvLqorxAvYr4vDzd1ZUJudZ5w3o6EDsJYanYqZ0ChtbkbsfTHpgon6JgHcs7hdpGKD0ESqzDlA==
-lNcqi7phAN8br64C1yuzOhZmfnYgBPoX9oKFT6dBsx30//HVx3DrVIzlMCQv4GsV7PzjzV7Xkt0C7Sw46k87qg==
-O9S6rE6bqHYtOq0lUhSvZg==
-NMzu2rLAqq/DeR7UMlIy6OESqBncm37km5ldxaawgt6W4IgYbdrsOQQBAhe891DA+a24vhwPmmM+I53xSJvZuEM/wmzxNu+TL0M66vFCmpQ=
-r8LJpOTzdB0QXgZe2Txfyw==
-kmhN3hOQ+UR2WljVo9z8CkxZGWztBN5Ks2UNcujSAsBh7Yw1++GlxLZk5y8CkCClckXoS+nLkVd9fqtGtaMu2w==
-1wZBTlX9RYzY+jpX9yWMOrdvxPDlrUnrpcuWH3VSi+MfaHA35AfKVFI1thX5qiNEOjwGSVBldtaVW3IqFnObAg==
-AmUjUDle7JREgwIX6bdDwc6Rl837oU49uyl34Uiy8vai0AxRPCM9FhYLVFS5Eish
-hwiT/d/DkmAH7GiM88IWx45TYuLo9MjsW9LXj/2lF4kZuvGBgfD7YMo143P1wzyE
-p+EwV3KlO7SeW/q1J+xcgg==
-f1kdI2OS7dKmUXFlvPm9bZpOzHIoWZq5g5aSeFpfHIJDLeKMyJ0xMELE20xRL3iKnZPXKGS3uoDx0GsUhjTckA==
-zTq7UzCPZoJCFN8+5vp5hVKCINWoCEThRXVNkTjzY+tuXeIlaaARb9xaDH661biEekTb3JsxzRJMWpTEy+19yA==
-Sk3A69gadcE+5tJx86qQzWYgu/ZKeFIV20dhhK8u4NdNUcRO80Mk5qdMNuwXzwJZtQ2WNAZiIHRnee58BXkHDA==
-HH8T0VEDVf2g1khNO4hxGg==
-VDiD5JmuyNpk9SD6E6SZlDw2QLs/b4fm6LI3HFfG8blxYEF/k2ZY+zBrbJZzuHOI4Vum4XzySQ5wkL3i3E83kQ==
-6Qatp9+eSmWn6wqAHW3DB150nvH3c/5WkZSxJD9rZj5F/vwj86MtTWylHB1D18HTjCkjn3BbpyP5UuYskeLtdA==
-WzY3FDmrbpJiMWZMJ0wdMGOrofiJUVvksSE1AYFjGlNo5SbyNj587TfQnO6W4Vuu/H7znpa7KZ8AD2hyirH1cg==
-u8dj4/j9As0O8mQ7w9Wl50RMzIpbHJx78oYK1DA4bqNgBP+ZzuVCTxdqnYdwoPoqsbqKjFd8axUN5umRb5it5g==
-Ch4bWvPvwTXDqWJtnmNLmPfU+rmuAK5ybnfogWg70v6NEKxZeHZ0ZFheEEUqjmNNRdBuULu3ygAC6Em0iLtVXA==
-FUHE2TMGI1S09ndNy2Sl9rTIYwujn/EVvrTggpFDWlMZm+ncRl4ubPNIVMM16SAn7scziq0D/unKmvRnJr2THg==
-wONCDebC4DLMLNZtgYcM+ktOkkIhj67g+wqhwVoHOBkxSZSbNNMLzZosi/Ybs6Owxqfg7OXxgBxA8Twv7pI9Ow==
-OTdmh61OJtIB7a4f3WoleItFrx59iYepqDiM3z4Iv4vyZWKzbQU5Dqf/0mD4kFdt/4sUsgN391PnGkCKx6mYLA==
-f6n5BSf5QURD+nQHKNbBHw==
-iApzHyn66NqKChhs2B5rAOiXnVtS8+sKocheng8Xo+0hFMVTm2hbRzaHpmNlAfRH
-ayiZ5dzHXXMnx0ezJFFQnQ==
-YNrmvrmS+DDfTmjDwoHr2Q==
-wm8MfNFPeiqM6y0wcQtCxKr3qvptKABYoJiHquoozPw=
-pi+6AsxmaGjxksRbDg/lKg==
-C93U+Ldz5SW/uMCr0ZITIQ==
-OOLf/x0JnWtLlD0ewkU4ZRZJ2lQYD62zT+3LHGIjZ1OjE05rOYfeugWys1JDiswE
-e2cEpQlfKJ2b4eupOGRnwGmGooes1ywGe3g1kYvOHW+RRT00IYapJsrvKZrf67nuEpmuoa+MGFJ7iez+kVRXog==
-ENoKOX1igb/xBgOi9Rb/1g==
-lEqu/jhTvuaMzkEny0915g==
-lfZ4bc1oJUucwHwtW6eIgUedJPf8SHWFdceie2WKLoMpZ3DLC5uloaQTJnHxx5Sz
-VpEZiR99bzuSD+kIIU4wsFaLADZSzF7tZlA8YrjF3H6kejI1twPmPPguHy340NZeDYkHLvBJ5b+MTI+9nzxWGJXyWrYm2JyheRgjF4C18WpMMqZ/PuKgybDa0D69nHQ9
-lFGHVbXXLcOSnsxPMxefLg==
-6vn70aWmM1XBAl3G1DOXrQ==
-RjRDznCnLZxXwqrFVFUS+NEU59wj9qTIG7g5P1joIqU=
-y4L+mNFLVCe3i173kdhs6IKjncACWFF4fowSxIKMM8S7cxFmHsvk+OY2T+nPqq6N
-WNF25s+q/2zy+0ilrX/4Tshug0n5h0ojlh0fJ5Yelqm3JiKRNjaIOWnMvjd+gi+srZ5DOgxjpXwQhjTSSr6KqA==
-iCjEEV2EUw+el9Rovvqm8A==
-1ZDije28QrgKkSQBfiM3eg==
-o3wDlS4usudhRBeHnTHOsZ84M0T13X7zr8ROLAsLTuXGaqCG+PFS3zyOqyZtk+IBRcuYU7sNiyhPz3P7/OJdUw==
-NPJWoKtSsMw5Rz1lLajvxcYjbK8Dk1aGZVcPFkouS7o=
-GtseTZcIvccUP9xU+9lCBXoPfiRzs5vLS/fPqrrWXR8=
-mjm0qmAh90TLcOod/PvL8w==
-4GYcOwM9ZQ87qzfS6qVvsg==
-t9CNTSazphKgJOINWjfh/i6AW1WerY1Iu857+f23hyuQ/Z7bOql4iNnO0RrNzrp+
-oenj3itD8r9JsCaW250CbVcM+W91I5ndDVM6fOZ7FxR3b41T/qOfBuoohXHLiqN0
-hGsctN8TEBhpXXZ9LoiOkA==
-HXnNnJdtebNrlpl5VAyzRA==
-mFPUeGeCKFK0qP8HiYPgVeaJkYzW1TcTA7rpMwBs9c+rXZzQiuPssKt8pXcWYjj1
-95Q+EVqS+cZKK2c1gBrzjL4wRP4QmnQhI6UtyeAkxt2Qf/kl0si2keo3DeAVUfPL
-MD1ZNaWceKDw2PQyd11SJA==
-vbsawqjebFLgD79Dfpzg+pKXEO3JmY7l7PmXubIYmq2Kpe0ahflRg+HT9BXUOGpm
-Cj388CJ8MJUFa5xRui20UsnYOit7kBhv/3rbOAuno1Q=
-mSFw224D5IYNJnJ9qPR6hA==
-czBRuRsz2C8uqWn+X4fRgA==
-Gb732XtmkO5QUCxKwaguQQ==
-Cz+mehI/8cR4djshJHPSTvC21DzQGnw4pkb+cswBUU5nDBHuPWIlyi17dDoG9EqrFl1oQTxq9nMPvOxfefIlzA==
-bSTiuN/z20ZPZHOR0hvShA==
-DARTMMZwxizvohKaaj1tKfa6fauUvaMDoERfQ1DNE9TN+BOGgS+cF8Ra3Gkr6UaJku6apGVK8VOduRm4Zz00w5VUPtiXZUGliksuqCL0fZka2iTa52HDtTT5UqM81fwUvcGcp3ex2oEY5SXJ/lGCeiu9lgIZCmy+tP4HNIODOpIpdNvCiotGEPxXGnuL4oNy
-AaO0dqdgWoZO8csPq94w6SsqVYw+oyQzpWMFJFsSHTJtXOv2fw1Z6CrD00/MMXNdQlGDlGpmycVJGo2P7MXCZruF1X4+Pf6R9/D1SImEOIs=
-rOKv+t186qDNgFEuXqnSgGYLb7dhW/2qapp3RH741jY=
-hW0p03D4mUUSI71XQZo+xw==
-tJ7aqAzHkrh6C2bCFr0UAg==
-weNG9fGC0zNlm8CeEmDnsRlutecBWDSS7IBlmwsx6fg=
-3Q9r5DWRTifIqHfuT9C50JRGY9C2GpeuquWto6dQheHoKq0HToaIqJhtkIaCIRWS+auFwFOSwFU1OWPaehWUIaIUn0NE5+4aaz10dPbTGGo=
-cEqhzmw+JhYuXy3zIXxsiHw9sLBoeiRpRlrF6sfbE3Q=
-iLuosrxZL86rGoq2ggTkqG5+ON/3aNeEuCcKut02Rt+1gH/sLWMbJvSHQsREYHyn
-uuhHIo9U0NE0ZZm1T3nSkFhVW2EkoJY7K0His2FDW+k=
-b2BpstRIYFcCiQEYkTqsEq8YbwnxD7cgsGIm/i1TtS+k6rRy4Hira4sE9ek6ilke
-stjKwgAWIhUv5AWcOOUVBujxCoOsuEDwVNQsJd4crgPB/H3rQ0nRLDMizc1lsB7PeJ0wm7jrsho3E8E9l1nU8vYcjUwVEJpfT03mRXJX38lZKC1/RtyMhC2oJdf0M97n3G8+lPxvNBKcbeUBfI8GSQ==
-F9xjrboXBGdvzJhLwlrdUg==
-3CQAEOGJCmd3AT6geXC0CA==
-SSAJnFWBZX+Ykbm2PqkcWQ==
-ynWwDnkO/e1Y10zOFb+YZCY6/vXN0mvKp1MhIGoMhMsv2z3NNFmTnAuZXdB9FkST
-S7E8essM+G3/KrFoEobJpBlHgz8TPBrKFZ4i7DkVCJk=
-B3AZG7znMSGLHb+kL0Hy4g==
-Bc6wAX87BxBYtFlMX199Ug==
-A09Z47kivIJu/H1V8aKbIINW4LcY/JM291ZoYaJkcV8RghavWX/z9VA7fuHj49pL
-S+udfiAsU/IHXiyiduhy1h6hoK1FtasezdnQhRZVx3lSLs8eicN7ev4vrMLA8C+5
-gtLFWncWJPvPzhRhK9Mq2w==
-JesIdheILdqQeNI9PR1Y4Q==
-7QhFt0CsuZAJou5Qs5aZjoLZFujZ0sJ8uBgSNjxmeeo9mlKlUzKCSXnOGJ7Tljvu
-7195crUUGfpClnHDtN1Fr8QCZhz91dNA8JiDPvg8KHXwP5WMmisEFsxbEM/ITiMp
-jeJIppUYFrI/b2VTfila0Q==
-I1ocBUy85OIQ4akQ9upx5A==
-dBtcg2gfO5kN8Mp/79yP7iif0YIv1uPpESNYoAegtFWb8O3Sc5biLYvzbpSDQNcL
-unPwOi3K41F24sEWhq8XXxD8NctezpXgGLFlDscgE89gErZ5EXRoQEa/D2CXSKaq
-O4ZWimoYEUj05UFxTATEwA==
-j2pQJgmbc4UsSwrfuzqfdA==
-thfzX18/R0RrsLoBgiClga12/e3Qg5BrM2AOlfhmSoZI8AnMnTcsP1CUgLG0tpcA
-HuhYXuYo+4twwTdTL3WhySKi3E1c2bvvzdaY9SpCIPO3Ki9TlaTvJyWUZ6oM/K5l
-zczqxsOfVjD1xZDMhyDLyg==
-d8iCssLjBYY7uXbC+D1Aow==
-qEHsu3aEKmkvpQN4WP0l/2dL8uC+4qHbrCo9goiAfPU=
-6rKFQwcND5F61LVe7NtoyIWXfQWE3RaezyZGJFR2SVRDLJT2pCnsT+GY4rUh5aACkloqzYzjXzIJ1TpO8E/smraAiY6VqiBY6WzodZU3ils=
-YRlB7nOgwUwcI+ivWS8LFroKDJJTBInOZHSzbLHtnWzapReveAoq9Vj4uZISv8J3
-CzksJbMNcYA+CwVapy368HU89vZBFi01isatqAnIZ/0=
-NtomejDF+oXbPFOOTIeBKUJ9++1/OHOhEREVKha60YpGNAvq8jqXD4CMp7DcCffK
-1HBa0EWsE8smhuGVxJHkRg==
-4OxOrLU/+qesU32hOAkXzQ==
-HhuliKPhoMDk9flW/A/gqw==
-vI204I+e25g4vnGwxn6GDg==
-5ALwm+MLsXX2YYAYJWlfESFAjNROwtUhK24qwTwfhNprMs9wzGmsasfLfz8XWYra
-rWG9N5BF2vZsVEVWc/jeN9WhlwTPTDrcja/zD4Km5YSpHLz64cXDZXz2OGr24fqcoW/7TiDAUAkMv5nw1gR/KmvvbcZTpc8KEECZB8qTGRI=
-C1a+e57Wc2rck11efzQXwA==
+MessageSettings = {
+  none            = {},
+  consoleRed      = { color = TextColors.red,    consoleTab='Default' },
+  consoleOrange   = { color = TextColors.orange, consoleTab='Default' },
+  consoleBlue     = { color = TextColors.blue,   consoleTab='Default' },
+  centerRed       = { color = TextColors.red,    consoleTab='Server Log', screenTarget='lowCenterLabel' },
+  centerGreen     = { color = TextColors.green,  consoleTab='Server Log', screenTarget='highCenterLabel',   consoleOption='showInfoMessagesInConsole' },
+  centerWhite     = { color = TextColors.white,  consoleTab='Server Log', screenTarget='middleCenterLabel', consoleOption='showEventMessagesInConsole' },
+  bottomWhite     = { color = TextColors.white,  consoleTab='Server Log', screenTarget='statusLabel',       consoleOption='showEventMessagesInConsole' },
+  status          = { color = TextColors.white,  consoleTab='Server Log', screenTarget='statusLabel',       consoleOption='showStatusMessagesInConsole' },
+  statusSmall     = { color = TextColors.white,                           screenTarget='statusLabel' },
+  private         = { color = TextColors.lightblue,                       screenTarget='privateLabel' }
+}
+
+MessageTypes = {
+  [MessageModes.MonsterSay] = MessageSettings.consoleOrange,
+  [MessageModes.MonsterYell] = MessageSettings.consoleOrange,
+  [MessageModes.BarkLow] = MessageSettings.consoleOrange,
+  [MessageModes.BarkLoud] = MessageSettings.consoleOrange,
+  [MessageModes.Failure] = MessageSettings.statusSmall,
+  [MessageModes.Login] = MessageSettings.bottomWhite,
+  [MessageModes.Game] = MessageSettings.centerWhite,
+  [MessageModes.Status] = MessageSettings.status,
+  [MessageModes.Warning] = MessageSettings.centerRed,
+  [MessageModes.Look] = MessageSettings.centerGreen,
+  [MessageModes.Loot] = MessageSettings.centerGreen,
+  [MessageModes.Red] = MessageSettings.consoleRed,
+  [MessageModes.Blue] = MessageSettings.consoleBlue,
+  [MessageModes.PrivateFrom] = MessageSettings.consoleBlue,
+
+  [MessageModes.GamemasterBroadcast] = MessageSettings.consoleRed,
+
+  [MessageModes.DamageDealed] = MessageSettings.status,
+  [MessageModes.DamageReceived] = MessageSettings.status,
+  [MessageModes.Heal] = MessageSettings.status,
+  [MessageModes.Exp] = MessageSettings.status,
+
+  [MessageModes.DamageOthers] = MessageSettings.none,
+  [MessageModes.HealOthers] = MessageSettings.none,
+  [MessageModes.ExpOthers] = MessageSettings.none,
+
+  [MessageModes.TradeNpc] = MessageSettings.centerWhite,
+  [MessageModes.Guild] = MessageSettings.centerWhite,
+  [MessageModes.Party] = MessageSettings.centerGreen,
+  [MessageModes.PartyManagement] = MessageSettings.centerWhite,
+  [MessageModes.TutorialHint] = MessageSettings.centerWhite,
+  [MessageModes.BeyondLast] = MessageSettings.centerWhite,
+  [MessageModes.Report] = MessageSettings.consoleRed,
+  [MessageModes.HotkeyUse] = MessageSettings.centerGreen,
+
+  [254] = MessageSettings.private
+}
+
+messagesPanel = nil
+
+function init()
+  for messageMode, _ in pairs(MessageTypes) do
+    registerMessageMode(messageMode, displayMessage)
+  end
+
+  connect(g_game, 'onGameEnd', clearMessages)
+  messagesPanel = g_ui.loadUI('textmessage', modules.game_interface.getRootPanel())
+end
+
+function terminate()
+  for messageMode, _ in pairs(MessageTypes) do
+    unregisterMessageMode(messageMode, displayMessage)
+  end
+
+  disconnect(g_game, 'onGameEnd', clearMessages)
+  clearMessages()
+  messagesPanel:destroy()
+end
+
+function calculateVisibleTime(text)
+  return math.max(#text * 100, 4000)
+end
+
+function displayMessage(mode, text)
+  if not g_game.isOnline() then return end
+
+  local msgtype = MessageTypes[mode]
+  if not msgtype then
+    return
+  end
+
+  if msgtype == MessageSettings.none then return end
+
+  if msgtype.consoleTab ~= nil and (msgtype.consoleOption == nil or modules.client_options.getOption(msgtype.consoleOption)) then
+    modules.game_console.addText(text, msgtype, tr(msgtype.consoleTab))
+    --TODO move to game_console
+  end
+
+  if msgtype.screenTarget then
+    local label = messagesPanel:recursiveGetChildById(msgtype.screenTarget)
+    label:setText(text)
+    label:setColor(msgtype.color)
+    label:setVisible(true)
+    removeEvent(label.hideEvent)
+    label.hideEvent = scheduleEvent(function() label:setVisible(false) end, calculateVisibleTime(text))
+  end
+end
+
+function displayPrivateMessage(text)
+  displayMessage(254, text)
+end
+
+function displayStatusMessage(text)
+  displayMessage(MessageModes.Status, text)
+end
+
+function displayFailureMessage(text)
+  displayMessage(MessageModes.Failure, text)
+end
+
+function displayGameMessage(text)
+  displayMessage(MessageModes.Game, text)
+end
+
+function displayBroadcastMessage(text)
+  displayMessage(MessageModes.Warning, text)
+end
+
+function clearMessages()
+  for _i,child in pairs(messagesPanel:recursiveGetChildren()) do
+    if child:getId():match('Label') then
+      child:hide()
+      removeEvent(child.hideEvent)
+    end
+  end
+end
+
+function LocalPlayer:onAutoWalkFail(player)
+  modules.game_textmessage.displayFailureMessage(tr('There is no way.'))
+end

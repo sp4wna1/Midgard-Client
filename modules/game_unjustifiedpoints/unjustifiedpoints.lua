@@ -1,148 +1,148 @@
-vleuN044rTKfOhJFRY3ztbqZKSmf8pjZAWGCiTLf1Mc=
-8rBWy9IYZ0KaZQfgWENSRg1W9oUiGY18YmaaPkqgUOE=
-lwM4hRPC3OO7essgCVScI4UDqgjfkAjzhT3YL9eoaEc=
-NAxp1zwxSp3qzeIInnY8NQ==
-saKOjO/v3sYFFQH2oFBUSmY3JVsE74fcEv6fQQsn0MQ=
-BfUJz3IYdcsEvLjB0sToz77tORozb6Jo8XovoVnNULY=
-ZfOZuG5t1NTPmZy8nNpraaKWXt7wTEpCq7sbKJK+DyY=
-nRMu2PA+HJoj7AxUp8V+aw==
-UYsSdalPKICg+XEQNN0Q/o5pYsiEPl3mGOHY6EHdNuc=
-6QyX5ux9hfZMxKdFHHWKjyXweOmYURHwYYghGz1dD0g=
-vwfT/GP169E+3JOFC3ytlY8yitMck4VKXEzQCLJDaQE=
-2LzBOy+O9H0Tsnsmjr0F/w==
-s89dxyPnf4iSbEHXFPpFPhyzd18r3lTW2+rR9ELRFd4=
-NDa4sIFe7FXS1vfpEJi8GPIa6UpqvLk3tPSLC0br5k4=
-oKbXWwqObDkHSjb6+x8ho4qDVtWRW0KWhvFB4yeJqn8=
-kfkf1U8/80XGD6ofciW0lg==
-6x3exGbLESxDYBH+BjQtrQ==
-CmARItr/PFtll9uliaxwBANWlareprsIfY9QmUdOv/INHN3aZkOhBW7u9mhWS/ME
-OJQ92QVXv/dOJzim7VyeW8kClU//6rSjgjPckEgbT+zXuyUw9B/byTQfuATO1qKkEkrklG1EBrkljEe6EubBXNKgkqq0K+0R7fV7vdoOqUg=
-0YOADPSIExZ4Qb3bbpetiJPIBD3toVXiIbLigqtTozg2d6b24Xnhi4smndNFFeTRKdYVN5rS9pFNtB9dukOMKghhsV4D/Ez3npI1OY5HqPE=
-q7Z9zwRNiwY9IP+WGyrkxw4sXIWISXRl7cywEkRnvfQZBKISKLtVtQUW28O3U9maGPbDAxAyH5AT9t/udk8OJg==
-M94/4bzbInToD9ssbMQr5w==
-6h1V/VMBiA9pg0jzayokjxbuIkWRRSCJnmw0h0fwEzcSyl/EmsWk28gAq/ACPap70eUxdkYIvB0ZWf/EbEZhS12gpi6KaSPNI9jV/CfWenMP10WZy2BpDHOhlWp6jGx95DSBOTe8YSm4T7FnuknykQ==
-JNV+gUVnOYGeD7THBjlXE3ICTHLf6xinUyipAlSqU4hs0SYmd6R0xloMCpaV5rtXLQzRuy6XnfsW/xa1fNFR07GAYHiolRUfetH+6Yar79A=
-30iAxyENPB3b4va43s6tl+UnovvnKvalwGvitH/9wSKX470MxOQUURjVYm93NQWg
-ov5YZ4zZQK85JVXlaD/LF764O0FfJIW2VjH/Dju0lVKFAdQlBRGIrqCcwsEf8q84
-oCcWAha6/mMdJOwF68nWRw==
-/m3NYmKBe3gkQHQgdDGLffodHa/INjM5A26XDzZOwxJEWD/P9mSfv52CodJgX0XX5gzwCY6p0advafvRo7jtodv1MdPFkqrUwATuffBaZI+TdnImfNfeN7WDn4t7RMuG8IPuzqnuZgMCxPfKo820yw==
-P/U2mOZcZ/N0hxsEJDcbqeD1EET7PB9XvbRlVFvDy68Dglx/++lduyBr5DVj1jF+
-HKuBJVDJwuXcwHMY9f578lENSLIOOmm1+JriTQb1E/5vjzNIhVKe4J3fvQd757kq
-lpODWb0gtI1vnHA2tzVlng==
-g5/RQHwPUKxX0G7dmwDbqlcMPsZxdlOwWnfUEPQNVH8QkOmutCbXffonZtZYOHSKkdXYGNyOuTKAp3KSww71gzwBLXmm9RK/8L3NNbjeePE=
-/q4nZm9k06zeHL8y9GqNSg==
-kkeekVbHOo/VI1QH2uMv9vLDxkAb/7eonQ9TQ35cVSB7ltTO2yz5xbORr34wXSxziOQnCxcDu93VqtfCZmBDEk3UsuFyl2IYqRPCVZPu6Uk=
-ucnk2dgaVDNvNMJXV/uZFXQdGRNKPQE7Y7yfoNYYAHUZgdRP5CFFfjsCNoAx6yhGUpXn+A/1guOafXHLCLMTdx3GNJiQmey/HPs5JBjDFhc=
-sQEYyWUsg0uZRGTQDP/U86rCijaSZP/l6SEkDVD0mQkLXLyJ1kdv3iuKbpLEm6YvYqPwhCPpAcI4nOTqP6u7oA==
-BOG2QfN79bwRNqGL8TbbNw==
-JCP9OSLAvRBRCZLQMju8foPIcLaQLzjEwy20kG2oJjI8fUEbuKrGfDj1y1vFd2ggbfvn0yNDDuL9OYuthBezQQ==
-bEmDzkNVpmyC8CEFFYwqVy9+X+gocZApt9uj+aSxKDs8AWAvhNNlzAyWYx4CWBBPRzTlDpgGXIsclzfGCCXYdRgbiuh6WkqIqODSycoSfRs=
-EyZBUm8i55eF4idqh8BTUseSAajV9nk51eyA+GTEtL2gqzVsCn6LJBF63VMuUrmS9VwFqCBmREM9B9H/M5NqBOZr7DEmYWzA15idCdgaOIM=
-x45GGpk6bJS6YaEnQFpMqGytGwKecwTXkJJVVJ6tKtYpfb9x+dhMOQ+fMhVGjERCOcgMKF6kArNztpTihtOBrQ==
-lmy0+rsa2pS6Ze0NmpJI7JJ0/rW68YaUggJwRl9p+y0UFeBWA5n0jTS9BZp7lpfI4jypQ0rcQkMtHdeQcx5drO9v/VL6CyLqCVRpntxHqU4=
-7xnHHqsQqyPhFKPJh4pX9TW+43AgYG45s+6nDle3GzRxHm4CGdXDXcO3ZABd8XxdTqQBcjFnIhtxAeVzqnMB+tcJ74JkdB5hpxinB539O3Q=
-ak3W/dgFQev5c7jVx+ohEA==
-eEoi5/3bPm1NjCGGqfZl3lELSpPxMUwA4SiJbMlrU/c=
-wVNjParcw3AHJTap2rYsQQ==
-k8U5zPaLs0betHtaKNdRSQ==
-wMmBuzTQCEOJPwnu3mqygA==
-CvnszqRBT1A8OCBg1zcXsw==
-2DvsBkGbrm32Q003/fvyWnDbb5R3qkO4TWIRkzQYF0U=
-/TcLWmJStge1zYUHzr/nLFwS8shffY4k/I9FHaNjPxYjyeUuhR9+PEM9mPbf40hN
-2/L8fjaeWdOhyuN5taY2Y/PUw+zLZVnxxvvmlOlLn9wUt6Zv5D7PEBtUpWiXKPN0je8HEsK4sbpelK+9eFZuFqWbRpYleNvJ/HVO9L3UwTM=
-yBc168wmxUe/oI2e1yQDJTCUwMTAmT/rR7RlS7PBQhjCY/NS0EzuyTSc0nNawps9+oaipkG1jL9yehJ3yDJUZu7FZKyF+a0aH0zi1szTVR0=
-enep8x4A579gZNhaH/c7983cUjSTNZkTeUWyi+DOSvI7rP+R3lXGq4BIrefwiWRvA3OYjJKG2srHyMYlRSbg5A==
-J+ZljYzAhuti5CsXzLHAIw==
-S7OJ4YeH9PfIvndLv2ova/XdYXddOZMR5Ar35O8bD8VwcMvT04pmzs5yUc2TAkyX
-DBxri3KoDswHR+XGYnbXS5ELOgQrw/a53yATXyzQrr1CplMde+P22NZWvIkpj49S
-7zxmtOxKxm9PTAM4zeApcA==
-ZdEuBL1rEDFnsz3+vFYv9Q==
-O/qVxnBbUfkK+/Yx2rtKfP+4L38JfxV6yLuth/HkySY=
-wLX5z6xC6A7ZzkxbjGkxAlIMQ8adWVc4mXRNMYCxuWw9yRqnzKVpEg3WI/HimB3C
-ANsGxwM4e8DlsbxDktyRxg==
-TnhOADjhqit8AW7O4PYGkw==
-rhej6cmGduP5cNwZnEqrR1mRzGKYb2X/yiCYBJQux1c=
-RIm845A4UfzE3LlBw5FHoxzb9+69F+U7RW0MK+WD8QTIRDZnemhKHmmNLS0LkmFl
-drb7ggGQxF5zqFePyjAyjaKj8mPQvR32TCbaF5K+mVJiuwgNIkzXqVaCRHJ2U9zg
-h6bZ0MGnywOL+HjcmLQ8ddFXersYZDQLZmkQ4N9H60ynHgPnYpprPXGbpizav+8z
-uJBkZWFWOfaj1Z51tzM+Sg==
-+vE/4c9Q0HHm2IRggPbuTwAmI3phQ5frDSr91WmG6UpM/uE5ErESl3GwI27YLlR9
-3o3ogtcmGiVzr0r4sTSNCFEph8oyeKWirnkM64aUw9TkI8FFibWTwkpbdQuQrktz
-7/CGdoLL10NmpLzDbOgJxA==
-2R16qg3YOLV1AVWCbXs/fw==
-6RFbk1tRVhKNSTZ94GdZLw==
-ZytKFYm7yrZkXgbhmIDqWQZfW/x5i53ZCTORc8jdEWI=
-djjXgMuD/WjG2kJLFvnqgLf632J+0X+wJlNDcdPBcINdsjvzf5x7/FQdpoDo6qI0e1PJUnZAqH8GKlQRnQEsgg==
-Mmv/IOgfzXHQCdZYG+jHvzJbAul6cJcb+rOOF32eGAOqpqmc6boOHX+Vr1TL91Ke
-NDG+zXS75w5JEVngi+5w2w==
-/2LWNEZsh/S1Pwe9ODCQeNK2LUxxH1cpt/SIQ46Y2d4cV4UpNk7zV+jIBwxeESRP
-1aGlSIgdTJeOjr2QWSnvkDcGWv6JyMuuc+bYmOGYPzRTYq13vjCs8fl+HCuj/FuO
-I2LeCq93KSlZrJRILwSlNA==
-pU7eafVJN2veSn1dItfy3Q==
-rymdFpdZmj4Lw1sdBlkZ1Q==
-P+hc9OHq6ZzEiTFy73Axqg==
-P6VBn9jK882V/AKm9sQgBA==
-KVGhmXUqADHyLt/r9mCvHHh5JklFxUG99zamt5+rFhY=
-9O6rm66voVcFpu+TgXFGtRfDeO+9dphrXPwzQCGVOxv4jHGW5EBtPSddkJXQJaIW
-vW/5GM4CZ4beV0MrOj9Hgg==
-+VUw06Kb7qWEM1SX3xU0njTt5AGZaRocSukInT5I6Nhxl+L6dVWCEV72fcCt+k/hfNJeMsYtQ6C/u0D7iOyV/Q==
-5BzT7bN1wS+5dij5d7oNKMoZOrww/vO2nF7X8S8MmPmwQPIxV20soTcRcR2vmb/E
-kX1fStAeMrvxQ+9JBc5RwQ==
-YcL6Pfzt0BRWxY5FL5l9gLc4pz3laX3j3UA4OVBb7nxNZR6F8OszqELDJn/lTlhr7WMQJQAhhhkR9pdGT40otQ==
-3/KAAxNpsL683Q+xMzQ22cE8eAzYC41Taypai4tf8JI7bM8JTUoF5Vdq5vZAPI63/sWcNfAfYgNoIyX0lEXwhg==
-wrfSCy/rwZBu/qK50rrXtQ==
-BzoZnje1jUOFeD7lWa0oIA==
-8XY4shgTRD1ExlPaWnVBJ0F/8IkAnKqWn0mls71XC8HgsON20M/6L81Lj0h7udIN
-UNh4xvWh1CuFFW8RMFxFV0One7IA++t0sHHLy0+8sXDtIaePi2lCIOOvMzmi1Ko0PGjFBFSsgF8Km4XDLVuMOA==
-Xq3+jjCU3/EY+qvPy5QTSA==
-p4xDU/T6BUarLSakOpBxQtBD2Pn+5Nd6oQRjgytonI1Osj7bJ9652QA+K27u1yM+Rr6ZpFRoff/fUEK3cTspNQ==
-CtNNifibQclog7346oLDct9IP521FsEHZZZ7TaMAYQ2MWLF/Zh2q6AomnV2S8cFOjivqfwWEnP6a1eBbC5mzXA==
-mzXNBviGVdFA+3uIoocBM5JxGyhv1stLNckW4pXeJy0Anu+8Vanh63usi3sBPgJxp8a6mqj6G4NhdGGWYVn1QA==
-zs+2OfT5DdFS8RITKKzJmg==
-2HhhI+g7CSdw0bmC4lnW30IpuojAymDrWtbQ3CIzptc282hl6dAJccM10p2XITtw
-lHwZJqcTQETcjA/1OSwBW2St5A7e0tDokQPcQh77dVJOuHzsPQL828AKV07jly10dyLasrE6tkiCbVypB7BO1g==
-7KDC+1We5NyJDavELfRPUw==
-UwI+MrjeiUiTkayNunLtRQ==
-GOSRaNj4NtaI8uL7jDiuHpCn0dxvISvm8GBWsBf/1fJO+zKEF7i8phJ0X2li0bI6ihsfmJ/FtUljRIqMvpZ7+1nga86szCA/S0TDUIyq018=
-b8GusQW/3Q0o5exuXzg9SxbqjUuetNsy9zv58hW+0P9JfvHT+kwFP8s+lB0MI9eMwcqaIn2YsanaIZterygaXV0ZN2hSp0EyMFsNrncUBR8=
-MpcOHBIZuJ9oYSiTF9t302TF5LqPcHx3zed3V4kIR7CN2KK3zG44rU4huCqefuVJJrdxv0W+zyQR1+HpnYMk7VN5bpJWGKKWIwrwho3ddxE=
-hCp7k3eENsiKc0n4kQUfsw==
-A7lKYNY2pmZkFtMMSe7PZw==
-cjFK8q34hH2o2EVK1+lkQUeENHdWU38bk4ZIInLKjRZvRPXUKQQoYKlBc9EzdIOG
-VZlG4BXzXztM7iY+2tGY/SgEFay+ki28aGMPffIWSlPH3MDXToSTBYMmI5Irc6jQ
-ShH5z49B6+SJ97P9yflycA==
-0TAji5CrCDEAM4PjOGJt6w==
-t6tx6XQP0fv9NlRTT7UIBxCbtpVKQuQkZ2HXVBRId6If4u+zdHL0c2Hj8kJ7Snef
-p7e6vT8J9Wcol7Rn2KqX4/iZyVt5aGhgnfMys7rYiWo=
-oz05KjICODVBz3hqSeYH0NHuRYeQXf67SmMQWEYL+Pc=
-OQqkJnB4fIWwSGNq7w09Pg/g66KuUf0cq95//wg12KM=
-KaOGpOHAbJn/ZyTgxjUm1y8Nzm6oPnpmVyFAQ+wNheg=
-cfv8wHg3ql+QTMTSbskVDg==
-CN3lNfQ29zK3vXDFeFyXLA==
-l+GFMDAq8NuqbpsD6lVgg+OPjIspuHNOVY5+5p0PXqc=
-NDNYb4bRJVYpDt/I9lyFpQ==
-x0iDwELqM9INXdJaUxsl6w==
-zSnmCf6K5v2ifHFhYCmpAve7D9oPgt0V4vO9D7MLrQghdPhGp0PeexAq1hulRSYi/FfUSEG9rxFyFuGrVx5E+Q==
-XMZKzw0o8yeYDFKf4DEB5aXXxxy9UzoaIfdA6VOhk2HE7uErGb2c2fnMqRNStPYa
-O8P/MzNhE0jvkGHEO+htSvCK4kyI2j35OTVLeZdcCXVcVF0/rCL/tdN2Ly2+apUE
-XRl+z3yUXyhkgzR5xc5gYzz8Syh2n44p/u50c1MXax0wJz9ntmd+YpovMGpXcczedQVjtl13BERKKgpgqnIWAg==
-0EOjjwQh3fFshiJy8iiFrw==
-b6Qmpe6xZejgVS7SBlZQ0tkV89FHb1cECp75ZQ5v9N+L4N3syMqdd8cLHhl6ebAuvDMnS/0RSDSpLXT+kt8onBnzKNTYtH1UyjpzGAYNzwo=
-Fh0y3j9WXwSLonnCMegPoj6+YOBXXaJL2hwu6qw6Tzw9pPnRdLhTcBhKWrc2bGYJ1s7Zd3kj2Oqq0y0XGymwAw==
-4k1To3Tr1pZdXP4S+XQFMA==
-07BwHUxfRbCUcPqw4bUJng==
-B63KaVFGUJSQzAGm+kJWX3CiLv7ilEtHOFfsFVnE9TtdMxpa+/rJVYlMw3WDYFLDzgrgMJM0/D4rmy9rOswMRw==
-8zLfifxKJKB+P791zY60U9JaeNbe8M0pWBQnXe/nrsTbrE6iqnT8YcFatDjxo5cqR7syselTGtos9oGVliDYzg9fawId6/rnDvnnIUlLbJP6zybhYtsI0ECxfC+14jq5
-xBkAXx87srGDg54rS5+cX9ZtDRSz9WE9GOZtPOl2VPdZwM0BaCvb3kUaPtcavWNexiFjBZ1AWC/IR3KTzBiXt/g5JDi6kE+5gaEd+kKsUm4nD0dUI3smeLDf/Gd+Y1oKMKyNchb5p+9+V3dVDagBGio+BgejuzbT8JLaN0yPx19afvozVlfy+1pjD0ycW7eHIY8oJ3/vQ55/jWxGL/yh/gW3+g7IHEXk03mmxVvxStCpOAngDttC9bKhX0IptfuCgUVN7iZHnrQK4sZGSftzYRvOlbP7p9iwImckPjo57hc=
-NuE2DlKkRjS3PrMzWYxFH14/T5q/c2bNvFsPFB5NMvux2CRdSHqk12n0RdcNeYY1KUjnpUM8JiMPO+AQpa+oYwpWFJlQO0vMdRZMzppGhY3ZP7NdSiucADuILKV7qBE5tnneMZd+k96+0GD9fUx4QDWdLZ+wMVXjDEP3CZWQo4AsYp3nPZlGjiMQWSIIoQRwCT3mjGe6pmckXiiNcBzYFw==
-ox2ueDtGUgE4kmR++Nqb1A==
-EGYfV52usNytQZDxKB/NpXEC4keGVN7PxO/ZsVaqXHwDtp9+a3xxad37C973CcZl1Obwp63KOmIK69Uu9wRuaQ==
-BO+6ByTHMZ5vbUmrlq0QOuRekyhtNeqfaBANYoMPlM5UggSInwBQ4WD2eKxuFlt/LjQHV/hhqE+5iXG8oDFT3rbgYsRAnqpQ3W0s6S8SKN5qSMUqrHItKS3XLqiNB9DX
-sFk8c32CoIh0e8TDqCNDeKetn4fTfWEkJ6qmwKhXba8zaZOAJDIV399spuoNhnUTFR0iAZg8jv2mKeTy2Lq1DdzTA69SJo8gk0aKceSiOyXVMBbx3eHOA8N5gKUqDVSbpxfWeXx5vZUcYxAM5YjjJJYivJ/58MoL1po5PIzDR0Yr+ghOHPRAfjdOkJNVcZz9+KaAbzSWb09Jzv2mFzBIxU6yXDyc8nhSDlxFQ4bUvsJ+CtEU7Lsa4OFAM/Zp0H7oTodQYAYTD3clz2T50qRa8hfISRC+TNIekBbzBaXM9VM=
-YbYC7nYmvPdGt8/jB8hKQ7aRqTPt2WQsYN6kArgHMQ2nhvjX4em2K83OxCJ0vTrx4JR3vHh3Q9ku9a3zBlA/uQFhHgsRNp11pZylccOgKcdJZYro5wtJASITueLxM0t1LCi/fP/NcILlfJum+wWwL6YKNY0lGCBTfiqXPhKn8KIIU1wmEMuFHXFb6JI36zNzt9ryLug7Y0JBpOVyynV2Wg==
-4PyzPr/quSJkrroPVs4eBQ==
-t0Lq2iDHzTdfPNZzcH6VNPJbWgqx7FRRKiJ0XAt26f8zp74izUB7GGKOf97vn88vu11cIDt8G9opJKonZWkb9A2VqbGQHfVr6d6z2QuoVT8=
-9I9lcH4d+aen4mneXggpp/V5h4qKkfPVZKtf06L/ovCFVyrHWvcRfaQPASmnSTN6CGN22UAfMYPHqzXHotUIItvbDGmOqr0yMlL5KGSnp/bnE6iR+xbIM53gBqqDpJ+k
-dNGhIJ0tOkYUcZWRtiKshhVsEA/kBxQQFhHUDx7IDOgc0eKVZBXdvvAht9Sll3RDV3pJ2N/BGqFP3fWMFnVbbg2+V4akfRJnB8J3FKde/OJ1/gE97cKviwXzwAujMHY3Q/7UsiWYXOQ9oZThZrwRN8EMvvl2xBuE202z65pXE26U/X980QvJY3sNQuXU2HRGfC3o4p4gSZt/3DHz/0rmIn6BJLl0FXX+0XSYw2E6kk1f0POhu2eTuTqE5dO8usjuqnvhwRErnJbirmpLy8TEDwBcNxkAIHsaC5sqIZDxn7w=
-b+aU84E0Ec3j+7xcsxOu6XskmAppc7Id3WZwdMvy8DDkZ9UpX7FR0dgMJr7SuYB4dzLnz+w9QXdzRD7XX60yrsQtD4yjH22BrCNOf1zHpJXxik1o1Rkk+/whIOGRkxRZgCPlwwUg81vVuGxIrSrqG9N6byykFwohgR8hUUiWmUWDx/htBY5eT9MM2zAct5CArG6rMilea0FFsm+AwLjwjg==
-k3M9f+C/VWW1JbpW+nhMAQ==
+unjustifiedPointsWindow = nil
+unjustifiedPointsButton = nil
+contentsPanel = nil
+
+openPvpSituationsLabel = nil
+currentSkullWidget = nil
+skullTimeLabel = nil
+
+dayProgressBar = nil
+weekProgressBar = nil
+monthProgressBar = nil
+
+daySkullWidget = nil
+weekSkullWidget = nil
+monthSkullWidget = nil
+
+function init()
+  connect(g_game, { onGameStart = online,
+                    onUnjustifiedPointsChange = onUnjustifiedPointsChange,
+                    onOpenPvpSituationsChange = onOpenPvpSituationsChange })
+  connect(LocalPlayer, { onSkullChange = onSkullChange } )
+
+  unjustifiedPointsButton = modules.client_topmenu.addRightGameToggleButton('unjustifiedPointsButton',
+    tr('Unjustified Points'), '/images/topbuttons/unjustifiedpoints', toggle)
+  unjustifiedPointsButton:setOn(true)
+  unjustifiedPointsButton:hide()
+
+  unjustifiedPointsWindow = g_ui.loadUI('unjustifiedpoints', modules.game_interface.getRightPanel())
+  unjustifiedPointsWindow:disableResize()
+  unjustifiedPointsWindow:setup()
+
+  contentsPanel = unjustifiedPointsWindow:getChildById('contentsPanel')
+
+  openPvpSituationsLabel = contentsPanel:getChildById('openPvpSituationsLabel')
+  currentSkullWidget = contentsPanel:getChildById('currentSkullWidget')
+  skullTimeLabel = contentsPanel:getChildById('skullTimeLabel')
+
+  dayProgressBar = contentsPanel:getChildById('dayProgressBar')
+  weekProgressBar = contentsPanel:getChildById('weekProgressBar')
+  monthProgressBar = contentsPanel:getChildById('monthProgressBar')
+  daySkullWidget = contentsPanel:getChildById('daySkullWidget')
+  weekSkullWidget = contentsPanel:getChildById('weekSkullWidget')
+  monthSkullWidget = contentsPanel:getChildById('monthSkullWidget')
+
+  if g_game.isOnline() then
+    online()
+  end
+end
+
+function terminate()
+  disconnect(g_game, { onGameStart = online,
+                       onUnjustifiedPointsChange = onUnjustifiedPointsChange,
+                       onOpenPvpSituationsChange = onOpenPvpSituationsChange })
+  disconnect(LocalPlayer, { onSkullChange = onSkullChange } )
+
+  unjustifiedPointsWindow:destroy()
+  unjustifiedPointsButton:destroy()
+end
+
+function onMiniWindowClose()
+  unjustifiedPointsButton:setOn(false)
+end
+
+function toggle()
+  if unjustifiedPointsButton:isOn() then
+    unjustifiedPointsWindow:close()
+    unjustifiedPointsButton:setOn(false)
+  else
+    unjustifiedPointsWindow:open()
+    unjustifiedPointsButton:setOn(true)
+  end
+end
+
+function online()
+  if g_game.getFeature(GameUnjustifiedPoints) then
+    unjustifiedPointsButton:show()
+  else
+    unjustifiedPointsButton:hide()
+    unjustifiedPointsWindow:close()
+  end
+
+  refresh()
+end
+
+function refresh()
+  local localPlayer = g_game.getLocalPlayer()
+
+  local unjustifiedPoints = g_game.getUnjustifiedPoints()
+  onUnjustifiedPointsChange(unjustifiedPoints)
+
+  onSkullChange(localPlayer, localPlayer:getSkull())
+  onOpenPvpSituationsChange(g_game.getOpenPvpSituations())
+end
+
+function onSkullChange(localPlayer, skull)
+  if not localPlayer:isLocalPlayer() then return end
+
+  if skull == SkullRed or skull == SkullBlack then
+    currentSkullWidget:setIcon(getSkullImagePath(skull))
+    currentSkullWidget:setTooltip('Remaining skull time')
+  else
+    currentSkullWidget:setIcon('')
+    currentSkullWidget:setTooltip('You have no skull')
+  end
+
+  daySkullWidget:setIcon(getSkullImagePath(getNextSkullId(skull)))
+  weekSkullWidget:setIcon(getSkullImagePath(getNextSkullId(skull)))
+  monthSkullWidget:setIcon(getSkullImagePath(getNextSkullId(skull)))
+end
+
+function onOpenPvpSituationsChange(amount)
+  openPvpSituationsLabel:setText(amount)
+end
+
+local function getColorByKills(kills)
+  if kills < 2 then
+    return 'red'
+  elseif kills < 3 then
+    return 'yellow'
+  end
+
+  return 'green'
+end
+
+function onUnjustifiedPointsChange(unjustifiedPoints)
+  if unjustifiedPoints.skullTime == 0 then
+    skullTimeLabel:setText('No skull')
+    skullTimeLabel:setTooltip('You have no skull')
+  else
+    skullTimeLabel:setText(unjustifiedPoints.skullTime .. ' days')
+    skullTimeLabel:setTooltip('Remaining skull time')
+  end
+
+  dayProgressBar:setValue(unjustifiedPoints.killsDay, 0, 100)
+  dayProgressBar:setBackgroundColor(getColorByKills(unjustifiedPoints.killsDayRemaining))
+  dayProgressBar:setTooltip(string.format('Unjustified points gained during the last 24 hours.\n%i kill%s left.', unjustifiedPoints.killsDayRemaining, (unjustifiedPoints.killsDayRemaining == 1 and '' or 's')))
+  dayProgressBar:setText(string.format('%i kill%s left',  unjustifiedPoints.killsDayRemaining, (unjustifiedPoints.killsDayRemaining == 1 and '' or 's')))
+
+  weekProgressBar:setValue(unjustifiedPoints.killsWeek, 0, 100)
+  weekProgressBar:setBackgroundColor(getColorByKills(unjustifiedPoints.killsWeekRemaining))
+  weekProgressBar:setTooltip(string.format('Unjustified points gained during the last 7 days.\n%i kill%s left.', unjustifiedPoints.killsWeekRemaining, (unjustifiedPoints.killsWeekRemaining == 1 and '' or 's')))
+  weekProgressBar:setText(string.format('%i kill%s left',  unjustifiedPoints.killsWeekRemaining, (unjustifiedPoints.killsWeekRemaining == 1 and '' or 's')))
+
+  monthProgressBar:setValue(unjustifiedPoints.killsMonth, 0, 100)
+  monthProgressBar:setBackgroundColor(getColorByKills(unjustifiedPoints.killsMonthRemaining))
+  monthProgressBar:setTooltip(string.format('Unjustified points gained during the last 30 days.\n%i kill%s left.', unjustifiedPoints.killsMonthRemaining, (unjustifiedPoints.killsMonthRemaining == 1 and '' or 's')))
+  monthProgressBar:setText(string.format('%i kill%s left',  unjustifiedPoints.killsMonthRemaining, (unjustifiedPoints.killsMonthRemaining == 1 and '' or 's')))
+end

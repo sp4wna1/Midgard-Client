@@ -1,9 +1,9 @@
-92gLUDUwzwa6qltXdfHwMQ==
-nGoHBUSHLXyszzqrUAbCu3P9RIzOp+R+pZ8xpiJcW0I=
-NxGNPv4t9F2s3AGlAKIUqxf23Ys/soUIbVAiZwZH4a7/ATxFmkPsYZYHUGgSaB9D
-hBgZGEdHcLxOFfnwYVDsuQUi1kvp3HZQq0DiILKrBnEIVWP8e85cayGc5hmUr8MoawEJcdyBGuyS7FJQlaxHTg==
-ZtCRhEay+eIGhtdnOvTn4emE8AuOaXXKQDLs8c122p1z4bmBd3oXBFZdIipya3n1
-kQpEy0q5kcYUAsnh4o+LZfCDQVAt+MLAoFwgfvVId2Q=
-90Ws3m+zzxHEUn7u2pTZrRn1xvEr9itwaRtylIQDY10=
-/yJUSR8+81u90Q7EG+VIK+RucxLVaYOECVamahLwAdY=
-duO4AuHQoFJHywR3VwrXpCZepAUX3ACC95XHhRdruRM=
+Module
+  name: game_console
+  description: Manage chat window
+  author: edubart, andrefaramir, baxnie, sn4ake, BeniS
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ console ]
+  @onLoad: init()
+  @onUnload: terminate()

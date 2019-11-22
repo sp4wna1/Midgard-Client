@@ -1,380 +1,380 @@
-4V5U+ZlTstSewBVkngwynw==
-ZqUKijZuFOEqQdSlTVBKfTgSZbtSmtdbFNYTlO0YMFDdv2q4/VDgJjWpd17TN5B4
-HDplcQ27pi1WsUE0W8Br6XOdDhLxJLS29OwD7GfZ5BQsVzsGCP06Qc3C8CalMyOc
-LywvTiL9qawH1HgCaw9tLthuxGeLXQ4m5P08pNlzW2cIHNEDwxUVmI1YAZKdwc8O
-iryTLBkYx2ednZyBtTZqIwRitwUqewRBJK0Zei4/gK1dGyH6mWA+z3mqicFKlSa2
-Y1dNJF98crFs9XJUSkF9bvOXidoYMRhFo63ZZCyIn5Y=
-mLTHp9coMNZEF2voPbKTdai4qk78xiaWLR1sm1paYN4=
-2uNDrgBVFR1aA+Z4aq/DKw==
-xPTAUtHCMvEKxx3ta3ugbPMo3WFOVKxRFDt4UZUbXWk=
-KguBHxUUx5i8OGvenyFS2Q==
-iQ65F/C8wDIY6PQkVUj1MfeJM/KthFDj/S9BkWsDE2nlCuScFHB9FsGCs3fo+VO4
-EBLMaHzXj4EIrlbbQ8BdF1LiJpyfiT/IllOirBim7TQ=
-M5lo6ZANS0Ylmj2IR9twSw==
-42NtFvg0nE8L+FLiXnbcmEsgoq0mYnGEWq6CLATrU3E=
-74eHz2+ykFWvXzfkD5QIVtreMGB56dFnlArJp69DoXg=
-+9G7UUXzg6FSa26aHHVSNoERVcpTnPKtKq87Fon908Q=
-/OIpjRYIplFYum1El+239QioBJSWMiiC5upzOoyvN6s=
-J9kHLqDm3YVQ/M28DDuNsAO3aRjZuTKpLmmiRpFvWDM=
-TGNYoR0KxQekIqZ2AfUAh9oLBO4uvN914Yg3hygMJBE=
-axihv8yx3b03pvZDBc38/gDM1pRDNnesT2conLWuOJk=
-MSgEc+YLtIodq+2RiGyFz8cYZVZ1WAypA41Ngzc6C3w=
-P3RBzsgccsu4HlN3E9AoNG7MdUFNi4Oatf1U0brkjIs=
-pBNDOEbE6NZJkJ5Gb4lGtg==
-/aD9RdaEoyu+POKdnK2qQw==
-lxiH6b02oP9cqejY+aMUS19tMjHFWIGwrzEN3dYdoSA=
-wYSZoWWKGjKpVf2ZEPv3NrKnUE93it3cgc33IxQYEwI=
-UszyQKKipqeYyIjud/Kv/t4WtFPSryJbEgMSGj9L4So=
-uO2B5urpi4ZvcHQb5GAuoPY/I4HxEFg2ZJR/cK+zFqk=
-rVoii3Q/Ot28kMntuF26WJPxxJ1EiUTAxdhi6plYlmM=
-UjDahy8rzY1q5B3FLqOqGA==
-Vg0cHTYGWFm9oxYhw3/8JxyceMyMplmA0Z+w4Iv+Xeo=
-zcXenE0t5WaMUeapBsDBkTyiaCh/Vbrcr3hfB5fDOtuYZlZJ0KlUNm5RK27tk+dy
-AYM6r1ISC2EKTBISc72UX0D/FkSdxy9EWWRT3HdqsqXMTUi8lO7YcwQPFmLGSKxi
-CCTHmGhZQAhgyCBy10SH3g==
-bnyQoHw0YP0DyjMx8LFjeg==
-/VFJ6QfGL1s05uojfQXuJg==
-GbN/Jc0jsCcW5rx+ZYLJWexnZy8knDpixLGWTTC2Vee24mk8uiZKvwZ3TtauY6FT
-oSPMRKc7wsdA/C9T6ooWXAdRXYLObPggMftYq6zDiqo=
-+AKemrhxduV1Kj0Wbc2M3nYRTTn/FQIwOcSoBhFMbhhqfEL+Q4rIz0/BYEeTwjYmm5wQfJsIsIr7MF2VuhKTqtx5YpVhdZIxRZKfsTmnKD5I5SiGEyQRZuEYcxumGfLd
-WUx/5rOsf5VExqq/v7WjffVcMdYfX8SP8K6Wuj0dcycUkLdRHIszytFIDo/K1gOV
-K1rANGTgXIR1J6R2ZV8SeZLOFTaez4rIhFl5NzUzIaVd30JO3QXUKBJ/AHFnz8S6NheLbGHj2mUKFfuqarXWBX9U7jDsX34CXlNhzJw7qkw=
-RPx9EavZe+reGzXNKfOElIOUzbzzPv600X9THw1Sgclw810suD9AcWOxolVmn/Rz
-mrqxLqOzJmA4gB7VzNLxB9W0rWLR7JxTmQYa6Zc4+17Kc8dT/VyH1G+yGSif45m0
-JLu/eP4V25dn/BJeF1xmPQ==
-M2gUl+HFmTm4/JGnUrispXfYRKcW1hn8+h5SlHIdcfhp6imAgsjH6ON25MAXrOSm
-PE9iAHISXxsm5yGp/xfI2Q==
-l7bUZfUx6nzDCAcYfon0+Q==
-kR+lKkZwmKE/9ByHAjTahg==
-nFR7q/oxY4Yt2iv1WHx1ug==
-ly4CyP+Ca86adQlmiK4dp9ghdr/MDVGmtMesi2aaMnnFerctGlSo+f8QeTwaqIOz
-4WITjWE3MwwFMGrT2623/EwWpS8y40bsy7VXiacJ3tRABkBB24olGqp1sfL7dC6wSXx4IEzpN5BZT0Bf22XAhQ==
-D3+kreglmeVLv0ztxAds9oHOpQ+6tKcDBAqX9Ta16tvx/GKTj9POxOTDYrl6qLRs
-mSq4eo1+6C/W7bCN/WsZBA==
-9z2AEJsOr1hrYqfxB+XhC+dOsxa+AygCwBYGIuj8fsS0vKuTdro+AhrgqpZ6nYo/R2MEb3ZVnL93tyEfNWQVxT+jApoFXJKntKTTRhAKSjA=
-P+745zvTMaVMtdAK/kF8Qox3qei2oY817S6895QiYxc=
-3OVZsqm4XbDKTWaMpNDqGw==
-yop3uLwBb0M+bNanYJqC2zm4jTHftSAZkPu3NywMzKu2rEZ+4RUluv8cNsA7/kqG
-KD7y96lZRz8aRJlLxFdud5u+jwRCrR2K77MvUzphsJkUF/uXY7hc78YQzt+DiDwX
-dIc2+bPmfZWgyDQwOpHAEtGqPoeRHSFYSSwMHtWBPUxrMoswY3Xio6CritTXSLhP
-LAKzCn8I2boowcNS4tOAVQ==
-h+HuVeKFdB+/5Aw2oj86KIpIixsRx/Z7wjWDR+UGhCk=
-db50FUScIHqfvP9uVKyrcqzMNtTO0a9vBegHENHByi0=
-c/aQHnc9YK4N7iYXRuQO/gSWxGkGhyJ6gJAVqZyUKwCqOgNNAFA5G5BppjNAsQqI
-QriBsu3W15jphHS43hg0dgzvkuPUlSLHF7uoffr0Cb6ydFIadvLfiydAF1hYjBdB
-DNrLqR9+7SLpZY+GUtnmbg==
-Adt+H0lvahF1eUq4gIb7EQ==
-KR2wCr5+xZCgwgYNVXNAzQ==
-TMnGE7PMvJI+auTEpsvzwPaDpF9O3EESqPKzPMoOm7ACylWJwzcufzK4WutcLolB
-HhwQdx0iFEzXuFCxhCHYBSLhAVeqLHZ/hz/Mpw/LtWuKGsGFb+V52gdY8UsRZuuj
-1Mfnmum/hlhEMQYv/6XBJI4WREwAgZK7SsCclegufi7QSv24sNBUWhxI0HQETyNiA9dB932MWLPp71xbXZl8jw==
-Rp0EkhHnLJXWLVXZM0jzv4l2YTCmNoFVKa5CjEelfXPEvW1yw/G1/9BxAr6MIG8p
-d8XUYh77QGCJpiqRFU9ZMijBCdOuJ5MfSjfhtX7FV/4=
-KWIFluIN6H1stK4MQZnBdhtZUkOyiFp1knx3brFFsF1cBMArc4HiB9RGlf7OdDWN
-lpybIVLGL0rfjRUiWbBxLXQAFFDbtzIS6G8/3YdbCq/iTE00Fh6j4Vjr2VuICirW
-MHXbgHKeT7rHaEV2Jz4b+w==
-0llA/HocmFjZkZeUpjn/IXAdxkW9+NY6yk1shyUUOQI=
-AmnF0LpbUzpTn8CA4Qf4l+DZhd875UDx9xC6dvc3ZG34AjctdcTm6uV1mLp3tzw0
-gSMJUdyKzFaIrrYkur+sTK8jE8ZJEO8Piimf79er0ec=
-Xm9hp9e8rX5fLtbxSOd85Y366itx/u55ln7C+vDExNU=
-YFI/ndFqEzrjXTYCnZNGG24me86rk7IZ28gGTnM2LJy+5PPCvRB+jUV+4DHbz+5H
-EKYQUDcIV8F8jgaWAHjwWYkQxoclcAA4RFJYWmrc6Txc23SeeuDMNWQLg09D6fYg
-k4ZtsNwQSk8vQlqxPP5V/g==
-cTyDm7Z3Csp3mVQt+NVDeg==
-SgAmxvPDm/mJ4mOXCzprtfeh/t1ooYbo6V5vl5fljFSLQlkDdf1ZjN0k/TwPyX+YHXoIgLIHn8cy2Fakmape2pQXPSyZoXWNuOLcj4yiyR+Zqas+p+emfbTOaKDIDN7y
-VswV83h14RW2sGdRW0fg2fCUA1qmqVZhBFcjgyjAmfxNqGI21+v9xZOxGAT4F1Iu
-gXgtKU+yu21viSBpNOyCsrE0Vb7JoLxXHw4JXVR5fB3Zl4T5d7I13VYRjSvfiGBdrqyLVhKA/2NjiYiz/ZjEDA==
-fc6AvOwbzfibjKjgZizB+MIHn4YWWFcX5h3jMxK6RXg=
-AsjgLYPwb1DhRk1kT7KTnA==
-gQ8x/T8NjGj13+5n/pLcqg==
-qt8ZMpgvGLp58q3FLYMjZeyd+HjTGTj/bkaG5uLh6PU=
-PR/50kDFnHzuPZ0UwPfz4jKn2H0f7UNuBTJNYSfGfblDgZL5ZNpXN+mjy18d+Ebd
-UgY7Iloe7xPFNEOrmSEIdA==
-25L9F8OV2KVbKTL2JZPm3g==
-oMrrSeziHUrw8siVOg8g01mU+jRBRCHWo0RFrruldpARfZHN7RJa9IyS1N8KJWlY
-svNf3oGZ+t4YpgQow/JQdyTTlH64mr0EFrcUX1kpqXgdViwHWZMRoRmIykRXjCfy
-iVLEfcB8+IFd8FGFU9ALog==
-31lzSocVIy40uSc+YVDOsD8TueEsH3v+rQaAkAJKQK1baaQRo9TtpprZHVVbwET1
-TXiBodkiRnrgVpyU3WatUg==
-Kh5AAZVcLJ3qDa5snQQUqw==
-SOizOZtO7ZZODwt2Kp0GrQ==
-f5xfEKWmgkeLK4ZbtJ4NMg==
-EpG9H4qgQoN66OXVEAEVeA==
-Nql6PR1PozkRwnuMhLB6vcmVnHbzeOsvmgMazZn7/0hmgpqTctd9hFbmWydz3iuN
-8NXIUufPlF6sQ7EJbQS3qcFkFS25ohadExszAtNouxYdVjjvbTm1hqLgA+2zsSYX
-IBk71RleOea2Xpcb2nlAelHDskT+WEzTo1satCh9RS0EHWW5ziIP89jhuOG0gD8e
-nX4TKIfGglXDN5WQT7BvvOInxq8VlunWd8c1W30e8cA=
-E5IKgxnPxruVVAdeNhD0IQ==
-vZKDFeCHB+XOAYLBcXot2A==
-gxZ0nitxhNWwwnkuX4kYhA==
-NDWTwY1VAjp++iyDSeT0hpKBf88zFtpM+B2cGx02q8gzO0aw5UDrfD619zmSTTOm
-H+fRHALI/MaFDhDphEYf+n4RwXeS7wybL8bREGXyRsA=
-Mv5VTfD0lPr6oqDE0D/uQ8P0bWR7iUY1Ad/qWEBnvMo=
-3lirVCju7TdX12KBnxVq1A==
-JmLBHxGs5ouGJmMqxew0ZG7w1wQhmBzs4298EJJmgQA=
-43dACc5gcGe0qGxHzbudeg==
-DggY8lDSgYE+fp6aV/6Fig==
-MpJ6Y8T7EqZP0EpikhmAL9ozTnxEuIAIoLGYILUuZtefszKuJ1Fmq8Z3f4F77rPPyRMgZm9RIVtq7L1bqJnrPg==
-qzAr3TI9DSXYqfIh52S3FrjwpXsz3GPg4QJrmkIbOO03WGKltuiQvgbIQ0DIjbTrM8CT3tmWoQxUw+H6YTq64A==
-LF+Jcvo7PVME79jmzAbpP61SF2oYxYbJtz/KLNQPuj6nT23DfJ+oOme/VgpKjaF1WcO+SayrNFEAqoFZu2AqDjTjLa/DCAqLhApOzowj7ic=
-0JV8CCp3Ry6NrElSV246Vg==
-lM4WgRH0v0Kkij0s2fJCTZ561GzRFNvsbhbumb4wfwAuQDKxiJB1p5b0S5Umj5mq+oFIojXtVuopltaJN8QLqw==
-C39w78pSuwn+MC5r4zUuzzqaQLKjPdNl5YlpiUXAZdg=
-LKQVpIZ4k/nehSyMelHVAQ==
-lpcC6yzMn/c9Be+/hR/Lgw==
-Mwjq0gviM4yKuBabprJQwQ==
-y6eWUFYgG9s3Wp8A7Dzz4/6zqHKR9ht6/2APCv2WWOE+L8LwB0+WR7DVYNGHfZ2K
-SqvI0zAVMYKMK5XbCqCR9+tjlcpSgyxGz0FW71UlH6c=
-a7ES91pfucJd0rrT6GyN1fC74jmKDe6iG2qW6CWeryVHaSndDKaMTMp2UbDylT6XZtPZ/rCvBKuANpCDUNDNVNFIsOW1np65bm4tm38bHAI=
-Ck+ibQW99F88socNA0+nLYd6Ive6M/glkBS5xv8ijZo=
-faEPp8C0ggYupzQTEYb3Gw==
-GOh686wJ2074H6R2pGbQ/URAufJVZBhrIHYKvO2ge9Y=
-9ECJQao8Cu1WmkzxgYJvihJ8x8AAVpelFZ7BSPMfwAr1Kn3isp56pE5OFEgCiChx
-Ge+ga5QQBE4ISA1DBs/2ZH/1+up4QH/163KBP4+tzDk=
-NLvTxPvpBsJdk26RNEi9Xg==
-pUmAlIS8j7TvBT6AwRSjqQ==
-wCsEAApGU87nevMTWC/PUZbzk+jO3M4azibKCIL2MX0=
-yJEdXjSbcD7AdRwdSrI44Q==
-JqjeDUS+MXDgo5A7wiEevCX3/bk7euvgmnVH4ZKflfQBKMg5OcYq/iowOZDHSnRW
-UQTy4/ftzVaAixzFDKSHJIosRdbrtqMBWTRaqY8hJnOgC1cyICDxbOmrL/uOMU4C
-lm4fCAidsqkYuYI74TWTLQ==
-tDmntfQQrVuBy7dMRwaqzUGXXg+eBYj9Q/oxakSrgJW0qSeK42r+R6krJAiSMKso
-tdDRVjl0WrhoLH6opy1yZA==
-inzrtv/1sXQH78tc7WIhaJaSKLQxUJ9/pJWpPb4BCNhI5n9uC4MA6beV1bK2ltwNKrYovL6TeCD8/Dqv4cY1wbKCSEJSsbyIzPhz9hqju5WCog5+0DaKESZ6g7ksmwB+y+RuxXlS6DVYdKXaPoASH7iwaF5I4ipAj9zoOgxiP+yRE6G+psqC55HFPz/cM2Dp1SV9H1MXH2+EscZIvBVrsQ==
-C+HbPF7y9oR1Zd/wZpOacW7nvfwcPafM18tEZA1sEFmGfXsTs+Woi8bNlq7/8cw7
-1gR1EGkPZWLJzMdMa4UfbA==
-Hb5pGHVysnmFUBIcnEPMIcaa1jaVzRfcarp4QHhnJnWPB0BSdruRk1gGYXIc+mrDzvTpq7lRjITcKcdzDpBsrw==
-aDV/s3FZvDg3ZFMikXUTxQ==
-dzAkXduHZe2kl/CJAY5pUXuso6fkuRXM1DnVvpxwmMnLJXtmE6RgdBmRpz7D5QjT2BrWYtDHD2b9cY5PQRFuN6CtI7yOg62rF6QNXXc8ZSU=
-V36wYZ+lWy99HYmnXmjSn9w433z9MfaRzNfxHHTJdmJlR2O/TU2Z79jCbCaP6+WvLfOtgclgkE9RJUPBVHS6DQ==
-ARCyiz7FR0dH6E/W8BvhDqsZytGs55v0RGYAbo48ctNcetmxgAGU097dblVWksHBK5DEC1Gd+ktiDTcuhiLqjQ==
-lJQ19LzfMIuTX7fbH3exq6ondT4srAawMCHyGUEGvEhHie611WdPMMI33Ew2uqU7pU6ekom7LV/PsRRbOEsqaxiBf/Z7/WYDNmQZHDIiLjtgYHYEIOyiRzc87RBXRyJr
-E8S8pshH26Dq7mSsS6cyIeArvQi7Ux6CFfIUCcv0laC+VWmdeHGKbfvKC1Qxc1nuSlnsf4qMF07wjLEEqiYpLrYWX2QsY+b7+JVFglec7KShRFfu8o4erBNjv9C/IBYQ
-TXrpAqM9Bejt/8tFfYZFyXWQoO+kJYGKrydTAh+rPOOHhkBzRHtKjsY/yZU/kDrY
-trolwb0d3tq91ebXc/EzIQ==
-59sfZD88wqItNITEGUFFYq3Pa4MP36AZVAW7xKhlvbrdBJ+cQWvenbaoRZV1WVPRyXYV2n9c+95IF2BSsx+YLKhGzRJkJILoYaSew+IKA0NCoS5QZuaG/ZrKXqiCoOfjhUkMVNc6MFr6ZQwUcGbJGA==
-96E3a4pia9ErCmT3UG65SX3fhZmAQMsVkTeflocNluOFcAHBajOi8yBFGS+7wgDn/wKuGlQMq/icz0pcWDTtLB6RQVGDfeLiNZVHeFtDo34=
-VplgdfwXQUdM3RA6wXmaUw==
-kY5/3XtRCWiJatMXd0q+iRf7kzCyDzv6sF33YADrA5I=
-iDkTkIvYv6LtfghVkWnDFwoEaamdAhx8xgwAK+HaSWeACf0Eq5J6uXKDcTpDHYv54NXOBpOWm0N73Ne6w2ovXrhL5CzKYz5cnjJIPKhUPeo=
-B6bFjlJDJtmKEytr7ucscNvysDTXFeV+UbhcB4iI1U2ISavK0x7dzuP5oYVF+InwkNdhRYLp0pC6hL7gZy9maZFdFhH5PaaFt93FgfiFQH8=
-940TCvutUqBWecwr3n9v6OsWB48tpzlCwo4CPqpeT77+eUmMu/4gOqNWjKJzlMYPUhaDau41KtwqyGswG+6PyQ==
-+0bT/fL5gXTnMv/n+0WX9o8ezrZgEgTHfBOeD80YF60fEyOJMvHv+mpbmxMf7vvjbJy4ZOYrJ0DZIRFpl2elbg==
-oh3DLsmDfdjUn4hdCamZ8w==
-1yuJpwxujbl+2P+r8yBv89kFn+FSr3k41PtanUG6rGvHGg9g0sLM2B6NLYPsI+FXvmXTdNMGeUBBgIf3v51dZNLYhfpHhbBUeDShdcbis+E=
-xgk578tgfhHG1B3ofGDcJIjn3B3uSc1VRvFMd/yjUQ3vor7MwZzvfZT8RhY3qIvJkSyJ4QmPct86HolQk4V0sQXRfeGtpOvlPAUzmA8F3Zo=
-yyQLuLsLgVFQrTipVuKXYuotkkNuuFGOD//6/rizyvPfrj+3bQTDiOQBvV0A+wDb
-RyheKaFY5/aBGJ+hzx65we7+18WywLIqvi3K7hORnsDRTTPlj2g003KXHoqaGod9EmmHZMwxu7SMAyQrSdR/m5WBfxmRMAyOIeiiRc9h21H1ftBCXEFmkwUuQfrq+I/z
-U9SXEXiXc3iY4uWfJ8kQDzEFTfSM0wvrrAphCQB4Ky+BONEDDFe9w06/kz1C81aEtTEp1Bge6TuuqYdCwd3ff6e6KWDYZUx/tjhe2ev3rLOO5eSSGMHxBeJ8MGuOyIW56rLDtGb1tsBdgHhRw1Zf9A==
-f1zhHwT9BW3VguojK3+DoA==
-0Gj8CQOOhGqtgjUU9mVqNF0Z46GxmagUmCoK9aicuRQ=
-UjKMgJUVtRQVioJa21By4A==
-tYdKE//7bycs1jDoxqsZmzyX7qywBpB4dE3szocosm4=
-Xcx9viauJGH5/Y+TNli1sKHeDuJuMrQ6//DbawvGevQ=
-WPyH2OSxxm4loAmIr4bTbNUvYrk76JCko5FWnzmQLNI=
-dRjilMvf9di+2d8KCYN4rd/zNkF3IahFbjrenSqaMrPEKHQGf2/Hw2YmuDHfFhdY
-fs4EZ+E6FdnabioZtiUZUqvDEWonLz0kGE9RrTDnjChbLI001wBxyCv203JClx7E
-7LwLNSlH38znE40Eo7O2jQ==
-W13+1vPVkiRJAaHV0S5+2w==
-d75lJhyPeQq91oD/a0vwBw==
-AUF4V2Tk0nO8bFIe1jex8w==
-tQbQZCICMgbVg9sX3JrkJ6/ockplg8KyWJmA33WacR8=
-Fc6U3gcPqG8oiFgO6SmZ/+QlQJP4qEq26fDukYgGfd5i7bQktbRb2CXE7BTiWQKR7+AFb2wuzUpSjdfI+5tasQ==
-0OTofVplAZc5PFuKH5B9JA==
-nheSpGLhj+5dFa/T1lrItxnoNBrokMI/3C4cSBl9DJA=
-aeurM7O14jYaXVB7E3Lhlg==
-XgMJgTBx+WOf5YQeiiK33g==
-a61tTng54qnam48St/AKDxwK3dhyLMpdhn90XvhhFBDDNpYU8wlL9Ao9j3iM9U7l
-bw62eWw2VnrAxnfpu4aSm7Bl5dU7Im413YTcEXo2z3321Ryqkhwn+qo92akNysqd
-xu+dy5IBFOtj8PAYsmhhqg==
-cqJzDpEirah8o/euo+wBNKAOpJrRas3/rC19DFTGdto=
-7P8pVqeR8/0dipQbE7EHwnuAsm0dQs9XubWG9ldR160=
-Qf3wPUhsqOwKLVM8PqM3UvLIeSEjSxlSR4bP8h0INt0=
-k9JpW3E3BiMLb9sOj5fGTSFBfF3i+y+ap4AJuRmBWgw=
-mCD1SOzzEMBK4eJJTDFoXQ==
-3Zcga4atOaE2HZiFrU0/nG14HKxgsqALKWuh4ZXdU2E7xl2KX2j0TE/HjBo+onhMPagKZJXfBv4KKvzCGwpQZA==
-Npa/NP3U3AXjsp/wry6/pw==
-LF6M4iQj8h8Bd5itsWUfbPVzNG9m9gutXeEMxQVtcYkz3kvcZ0MGi8p6xrPoKPBr
-E3yz8w9RwVyiZ6Vqsw+chhE3PxUJc2SvjntUIMsu/B8=
-XCmoHf4JJT8R3nPlW3stgLD3Cegp0yJbiMFDp7QGdaI=
-FWvyaW4tk4Oy5Ok1f8RbVKb8jw4RQ7x/EP+3/zNUVic=
-PNjg62Pq0YK6ZaSDpdJFcpUZwkkAMOcdAI58RXLeYeA=
-U7D6HUO+m2UzvNHq7RL24TA35dnNgKsLJgIVEqHffJw=
-Duxq7b/qIABTzWpzgz0xXw==
-opL6KH/TSbAjMy81FzGHQQ==
-pOQ/9wxQtmoJsA87IfTX6wNo6dJI2i8yf+GIpXAZs1g=
-vXTj43c/5+MK4jGuJdw8hLmqqAI8X0TTS5MEXp+6CHo=
-lZBxzXol6fOFLqr2wiYH/w==
-mZQTesE2QtTSECG0rU5owg==
-JhgUjxsGsIuzaJYx/Q0S8Vl6yF8vRBzNKnXH7V5po1s=
-qyrG5LT06WZ3n6woDatBag==
-ux+VReXe8G780Kh3Q2oXaM8FBWCTrzeuFEAULkkoTKc8Gz4rHAD1upb6LkiHY/HN
-6Ojf8iiCxPBqdqaKwDNfkkBy8qLR/DWskLMZZiZPO5HpDPulQl1xoGfN/3DWpZMF
-BftLIrMWJ5O5hbNPDNNaY6eSa7AJRA7P5TgKfMsybqdDtyJx0raPLf6aVKlreuII
-G3uplwzaBMtUos7lAedamkk/tiGwa+u/FB21C5fEhv0=
-x533LqFRvGiNEkn4BEHy9i64CyNbLnSCsrIButrnG4zY48DF3850Anfw3muggTgqJLAOmW5l2ar5ATbDUMX0ww==
-Y50ueypyuYYF5IIjzY4B72wCSB1B4XYzE3J4iYIUdyljv20L18sXO6Kxh4DyeA3nzkPcgVhun5OuoYs4YZln5w==
-IyP4xhFg1DztxrWVgoz7WJL2ABTLzxuXAJcuyfyi9mlDgzeQwnguKyJNQRaGSWe24D9wtnKg1RJ2sa3cK//o7w==
-1uCQaQUdYle0YPsZnK3xjK8NZIvj/Z6v1tEKGNWbKzP4hbAg1Bh/whnaV6h6Mbhs1vA+Fpm0cJp0TePvLRGxD+l/MuqFEONf8h56rHlILLQ=
-HW63F/dE9/vbQwqPjGP+W9cAthlVB8FQbaPTvpERDtaJOtF+G0qqe4BAEs+S89eTCpnxHI1ZzIFaK4a+2QvFzhsXtkOWZsBZS9Xo+G/qh+s=
-yCAaHADuXszjWlRfbjcNaYaY2zMfU49FYjidhVzWIGPWg7QNyeDKF1E88yKXvVkUSnVvZj2DKJ87k5fioSNxIzwrdN6+fUnZcI8zmfOhZDg=
-idfPjFL1pjwDiQ3jfLNrYdg21qgztbjA9bCLRM5Waik=
-DmdSuEDKBIRzpDfbIgdRig==
-QfzLLSaVBMuCIC/pTUxRiW6CaVG/wETAqmi0uXt1GH4ZOMkTZDtAVHW/dgNXCgRg
-I2DAm7vYMhB9mGWwhMjqSkquWJykmQTqxH5y1mHLJAE=
-L+QwNW9fAOLpVTXPvI3fa1eMRyag0nE9l6DOXxC+R1h+wA01rJ1ItDGyo8Us2rMAev4Ptzvzc3J1ktZSmU5Vyf0eshg/+yl3vvk41Mbr4bINyVYNxMYDi8q9c/K0U5naS4pxO51U11K6AMbi4A7pnQ==
-gPm6vY6yDd0Tkw8k0XWXzDLZ3NqLoSLWAYh3Vof8XthcjBZSm9jdkONIcHMMBQhn
-xxTxWK700sOiEmKI2LG6XzX0WLLUMzgZO1BxraygTHxJ7GJCfyH3JlSaxcJ+5A+XDSWGw6H85WuYP9C86o9iZg==
-XBL3noIb8/OEaX7FGOAYdnquZzNPLMynv3YvG2yfe/UcVED8st0UgluH4odcXKtb
-0gBy4vO8ZpQ6U7IK9HgHe5nXCzKpxtmJe2jHUNysCjYOTvVcOGk8gxyqomzt0VyoWHHH+ZwWf10NahffxkoRyw==
-xZmzAmfXHSkBApjEqY9K8iehE1TqV98S4QJuRUgo+Iwi+pidfgLLrfc3dZSsR/CvBamUz8dr3s+PVLEbk5XNvA==
-AE3NwiSPprAQ01Ofgv2qHx5+Oo/bpNmIKeawsLYUjh7qjo0Hz8HoAadzaojAzwkIgLYkwZSEJL1pvUhs7Y6E8g==
-Vr84zmCB1n1DDUxVDQot2ZPC6gBl1ST9S7lnUiY0U8BRU9ZSBEajtQ6XHIXWc8ztZtT8d4SmImxmUssd+oPKVlOOINhr3wUdd+09/uRQ5Ok=
-KL6+iIMBq01qUPbVhhEi/zj2Z7bEXx5/M58HIHzzf1ick0LL7oKVTBqCfHkiSDrnOt3qMRvTF3a1SlTU2D4kcxHUGMDyhCz9moEa4ZfZsi0=
-g6k9cBRcdd5C4FEn42Q1YFTKjrDFShGNwNI8wM3NM7s4VSwIWVJGsxfUkDOXojymZTO/PmpzsyC8B9h+7N1zCbY4ZRiuZtq4TnIlFrgXjvg=
-p+eD5+pNK+QUpPoj/qxYmpoEWIBGhNROnwoi5j5TsMYXtnzupSMbu+VuegRA/683
-QLPHv2DoNYtGjpGyGPK95jyH3JJegHquQxV0SIzxuBQ=
-CiF8wIvudwqb8Qv25bCC8Q==
-ZqQPfas6awzrBve5S0OH6g==
-1UwP2kSs6uLk5TeMQqdZQg==
-Wzw+eElGmHymQ8LbOSCo799W55AKvFdAolrItMDN9sQ=
-3v2iQfWJxHd5meKY+RTRIRvQs66td41m+zlpLIo0/Pw4ZdWCOIaUo6fzmlcUFkY4
-IcLrRrTgLH3nNQzY+iNOeQ==
-+QQxVkYpi5LEr1VTracnDA==
-hBA9bgt1JPJAcJH+QT/qhejD7UK9RhWUcPc4F+UGp3Y=
-5GDkZpNseNo6VQa+5eID4T2/QrtiLksuJkV1FEwqn9srukLdHSBU8r1EuqguUAU0n38sb6NE0HhBRq2TAtJ1RA==
-2b9dzKiYRIfhTufz7X8M6ZGhx/847nmOAqUdEQA4c0U=
-OiWiFHRzzPLpD+JwTpftGT3vi8qM6/W3varLqjCnN+GQeUDSEcdXRT79THoZrQA2tKJTvUUPG9URNHa0uY0hpA==
-Lp0M0W/aWDg78DNhJV8CnIdBU4AgEcksQCStZDYpBavmv5z8imEoFWA/F4CvseOt3J3v15tC5AVBi884Zt9nJA==
-PKDowX+uDEOlCd/Yt/T+2T6iUV2r/3lsbIj2yUdUOBeSfZv81FI8HJ+5pBkh3Xjc
-BmmgcS+VNfdYhNozTybIwQ==
-yUgH+esvr9xvRCmVWk0tdIrBllOJi0Gzg88OccU158U=
-LcCptjkZ0ysFhuu8qe+poA==
-xFSlXsV/V2ijnNS9cwzflg==
-uj6HIDtqaR6BNhTf5alGVA==
-dclk2sBxJqcsaeJLApvW2Q==
-4SYbDjcuegt/vA618Fb9HQ==
-dP4CdeXlh7o1rWc1A+9zgw==
-abbld8148cJU2+8k8mCA1ZQEup4+MwlpaaKnEqBUmMI=
-PgBVd6zr1a3aA301yrTcXjTWMtjVJb683rZBpXntvV0=
-92YFIkB33HRI9TGrhUvWQ7jjg+gFRnzKX2A6sw7Id2Y=
-z5K6/sNxqNoSkvDi+eGuHg==
-b1Kcz9vqadLipxAp3IVdMg==
-yY3xkKFi/12mg3Hk8F5NZA==
-3k8sPRJvLrXsPUMx8HjASYe/B6Bi4PXCHIHohndnV1s=
-Jl2m+dIB5cHqupq9OeKKsw==
-J/7Vhcu3cegO/FWSo2U3jA==
-NaheQqcFv3mJFL6H8t/YE0drRDc9Dbdl5QRyqmokEe8=
-LXb4rVPuAhSPXNgM3P9KZgjcaMNBuKVpJPH8POScxjs=
-C3tdTA8NUPSirvW3HoqBNL40nsjMbZW8gb5wPd8+CkoLqzSXpyYf+vevaWgrnE4n
-Pq1gE/ax8Qqqk5BaR8X3Y/wdaInlLun46iCtDqTp17M=
-NqD4DRAFi/o1q5tpoV8LJQ==
-soyw3YNo3D57yIww/hx7kw==
-17ajD06HmGIQK12SSN5hGQCoP1DQz3DN+zSTYasErrQ=
-hCqJ8Auaqfx2EXAdqTKudRwNqYqPFIC/42GC2MaG+L0Vk2WVRkx0i6ZRiPnnVbALmRxWKjZ8Pk32TmgTcvCaWDWfQG9NDbVWzhAgJThfjUE=
-WkYR2MvRG9QDN2C35wJ6BwyfvaA8diS8s9bZrW4v/jWBzEPJqhJ7KZUX0NaQU9BV
-/Ep/81ffztc83WyywzCMLg==
-UwIYj0V0zw19zeCn+/MghvbIxILoZ7tBF6rjIc6VJk8gVSVYga3ok1W/tdRj0I2+
-4Qj1Z1nKZZBEcZszAvkemkC3TTb//6n5dphx+7cdztKlQqWm8eqCYbgDTH48yNTW
-nWJsPl0yLCvnsRnwE9GvBrBwM2LmeFN1qMRUn5p92BKPyOC9WBHjBSkBheFuOShk
-irV+Qkz6/FXLySCytpbZ6+OFGggAGvwVMnI9eTDjxx5Z0uGhLycbrzgmv49B2sdzp/XCFYVh37kFb0J4/O3hJg==
-skD009O82Rq/kL2rJ5KP/lfkHKLNxO334tqZwQiS8+I=
-EWy7lnnI/8LMPeydpw5duXUTQLaY+Ym6MFQ2kc+lJJpohmB7N5e54yi8jtt0veDi
-WPw+pOFUYC3PtTLjuy7FRb3Cd92ZjLQb8QxnWdKLFIk=
-uoQ7c+O45DYLx7xykGltwz4FTJ7xlF6IBQUfPfLRhI7Ud5yiedP0YsjeuK6hKNja
-5VCkTZ0VXURQgZ5M4Rso8MRQEpC16r/uGuQWQCaNsUhkx694JElRRe4Pc/Jlh5k9
-IGbYXShU6gmxIpnGIjGjJg==
-dqhpfshPXbTOQcyo2kJ4Sg==
-iiexx7A05M9uaiPdSqClFQ==
-MQsgLt7vYGJEER0XrXwdpP/9yuasbk6Q0qbK3SsHOT/m3RKx9m8tj8YJOFUhaHIEkD21Jbv19UiEAPdP0K42dH4QO6LSvwPwbHr8hrH4k40=
-YOJsGWohMxylR//HqNHAp/dcewGj2KjG7jrtsQV4B8yaiE0lMiuDaPzhII3r2T5n
-dBvTWBx1EELs5icJ68yU+ytosAdF/y3GVd2EkY3fE6o=
-M7hZ7ncp+gkMkUb20byUGtS55zIRoisfCZ2w89hcdUQ=
-tylqWz2kuAYOGik7gxf3yA==
-wjc6p1KckrDhqHCyWQZ9/RzhGwH9c3VWFwZ31fCMvs5z97nE5YPdYVFNpCRTKidrWXbMGmwggJ39XzeOZCOidg==
-Mu9eZACRM4kvWqW9lVTpPQ==
-kIHpe4CaeNOVFNYJCZ+Ml9YTwUUfnE2jpnpGh784eD1QsfETv3UeAkYoROFXHCsI
-nwdgwkXUY3Oe63jg2bwh0g==
-4udl5uW5OSOWjMsSIo/gVw==
-eWeOAr0YVnDTBoODGvY5HikDnin3sEGIHH19m3JUNxRNelA2hNmpYDlQ5pf6Smrb
-xKGkR9uz0kX8rnSzCTGaDA==
-NCH2uuBlRp9kNp5KM8HTFCI/HjB0C/luLOJoHgyJWfQ=
-pBG8I8ntsxN62qEKppfImhYg9ZWQGmAtIQ2ezNwTC2Y=
-DgfD3ewhzZl+2Qelv6+ZUsTq3FkxLBwCT9jc77VO1jM=
-RcgQBOsPODwzSM93xHyDqg==
-dd3Ro6MuzHknDcPZMCwSRw==
-I2gOr2dQH1SlaTC+aErHgFcQKAzFkiu+RdyJdaoIIrA=
-Ats5kd33pzk/6ZEXYH2TGqRQ22lHDIsfafEdfa396xk=
-Ir4i+pgIpIJsLXcJBD+8SgpEUj3C3rCxJpltsPoeJ6AKakzAI1zXJpCrgU4OmvCv
-0BVL0UWTuvesEEAQ0uTacA==
-8MxdwTuaMRukglT5PxoleA==
-MdQL6lffo/XqZG9sD4e85Raoe8/kbjuGdjxmekzDctVF9s6zVRJnGk3ymJr9VaUT
-R+HFHpGcdIEO8UJQpj1eXjQWGHahx4G2wzz8MmDxOjI6v4QKMyfzt6ztoJMmChk/shor1KH/7Pq1jEDPNtoApA==
-QDFhgdaRNd42ltz5cHsxpQ==
-YzFEnNlp9Al3iESrMW2ing==
-3GlFUFy6lGQGshI2EsIAxN58umzLffFR3se/LNlvCmZmOg4g/QUi8ZeQEWqj8HGa
-5kuZect4Ebiuvns/BvtMVw4V1ajkKr0fro5VUdf2LbgE2sLlZUdbMhPjI8Rbjbfv1cI396jMc+GI2HJgsxhmVFNNPRtZSK7IShj/pVlyePc=
-mJLT8C0bXyGqLtTZQpdv6Q==
-S6AYa/7ZXmz3N9YLD2TJt+3BdwT5Ljg9ljQI1+5TLh8=
-frJJnK7JnaT3v3+G5/T08EF0aYv7piPF7zdi61culX2xjggGdJlmaWsewST0OHoy
-fR28jrYgtUpWHAqcBQrR8g==
-/JpQx1+Ul9CvliOxuUYlKlY6x+eY6/wa7pfrCRCKESv0Br5nMkyq4T6Cyx2EgLkx
-f0eGx87JFh51FDsSafWqsRyAiGRvHnLwfywPdHO3dUE=
-baDXIcDYvp0QEYniQk+NNA==
-v2Fr2DPEH2EYzMbYYVJo/KpMymrqFxOlugs7maT3jRQ=
-M17QuNGLSu5U0EQYpb16isypj1l5+BslynttOIjisJBeW27JAedSfbO7zHTYl7BmoSQ7RAkPeJ1B6SCRz3mOoc7w2yGbXb/50LAkrwnFs9g=
-q7V1vP2BDO3iXWebkA2L5h81DtYTAcpVbI8uATLZ+CdM496uaKAG5pWxZ/NGZFER
-KhjtXBbmrh0rTHQmMR/PfhgS3RQFVsRXdKLAUFLmUQeJTN8s40Uv3NLN9+ANKQ1z
-25n08JIRg13UBghNBYXbnLutwXUwSjjrJkpogyCpIWvn7qULjSLPo7Cy9oA4ZJwI
-V2wkScJdh8GkhOnfXCzmew==
-R9JuzSIdIAtMJndqEqkIdA==
-uX6ppzOro1aZH53LOHeTgA==
-oaUWgf7mbZkC8pmm+JT/86fzyVhNYmSzWqZhM49U+GgqsZE1Fcf0nCR6PnI0fww5aaTljTbcKgCFwKBKBH8s3Q==
-WEZEAt9wMsARikxRNWR5AAV4IzCd+LtbWvR/cOZGUoE=
-Dz1H90wAxj1k4xLstjqS9aVyYngh91Dl5WcRhaOI7hdC/938e7/01j5Tlsrvhnih
-ygJUgBW19WGxIGjFjCDhdcCoiryH7U0jpcvPtPmyNAEDs1OnuySQbhSCl0MpZAdWjJJM0GwLEKvhujwISZ7OKg==
-lUaf5RbPY1MQ+pAZvN676w==
-bLjzg5H2Sfy0L2rQkb0TPBPhOAtld6OYm0bf4bWnsfA=
-fiXKmXOYJjuFmzuMJJtFDA==
-R731wTZNPUfQtY0qfmjQNA==
-0/RBEExoheAfLjXh7jG33W8ZjRlWipA6cL+5gik6T0HE4HXmZDn3f6FEdJ1ncFkR6Zt5DBCneZZYZbA6nUV5Wg==
-wuUfJ52tMCv87oqJ8kin1g==
-f5qpIa1wNBXf7G7s/pNG64SuCh4GS5Hl8hr6QXq4Jqw=
-Mg20R5BWD1xITuEaJV59+qIlqzqEoJ+LVciTtsI6whk=
-CD+97RmzOhLO6sWl+iP/ZyJVY8D3/0LbLImsqpyyft0ev0dgbd7OoOb7aPBueYSiy6w4TVwPVkmFVBEev+Eq8w==
-4W6lzZEbvWFvhZFHRZ8XByt09/qlQvGnQ7CGoey3GdI=
-Gd8UwO6ZlmSqtASZ7t3vCvkgUoi8UwVGFvHqpoeRKK6KfN3NuwUEhuFwu/3V+Q7wCvlEvORFFVUHRRdhg+hPHNCLhbkdVoT0/vX4IiENrdo=
-ErdLY+7sIxpnMVCaGmP0JgAg+1shFYMB8nkbZfYGyxoh5FMuyQ8GPMKNPA1HbcgUkiuCCvQJSsqhrHgdAT2sjUxmmIetugzRsOn+EXPHZQcRxLRjkiD+yOIQuoHdFsWt
-HiqcVdhR+1QZVO5AZwF3j+AwTgSoT9OBA0vlUxF5QiL1RR5ho6G2SH4lFrG4uEUf3mVvF8GY7nkQ7Pa2/7ZCAVPWwtcdxzQykP7WLacu9YKT2N7MqKytKCjA75KMLCL2
-gRaIEvSsfj3bV+Voq4PHaH0B339TJBRNtPA/3JvT/mELIZ0tQWWp5EZINk9DT1UK
-HvWrgbjxt/yQVTaTWComk8FcpFBv0Y0+XM5pzuCcS2WHDOAM9X58Gny85OQ/g2vyPysjry7rp8/hmT+MrMwC8g==
-EIVjBfbv6G0tv0Bj6nYaRQ==
-4sw1jjCkCP/DmV/pLVNJHQ==
-104Vwyiax+5JY22xPEUsfg==
-zoQsUHzkJMSy796Bii+7NQ==
-G9Tm+IeYuiZrrXHB4DxCJQ==
-idfansfDhMVhCI4HdRTqTOtnE+3wSKng+fJL1DMm/To=
-T8IDMMYiTS23Y5JBpAlIvMK2D/C32gZ97kPP+6+sUCA=
-vijLakSJNrrwFJgogEyq3oQ6K7ImtFCP7/Jlt0Ss9yj30QwEJFy/yjGk7lZv5hNYivRXiUoWBsVeK4ogKuZhpLpQVIxuFudB6OfevV8aIJk=
-MclWBCJSvkiUr2qDRQtTFg==
-8wxqokdsa28MFZEfGj9OPw==
-bgU5twPQjUO0e1WkUCzGMw==
-KNfJyee1pRdijtVI4AjIAX8Hdvjfoyy0M9YUr3Tf54H2J8HSK8nV5JKT4zVPe5Q7
-yUSoBt7ElDzNeFQHU+h7PjQm7XG4EOPJjLKM5DHzTfc=
-U6whma3YWvuLk0b48E5Wbw==
-g98Bm5ONqAMr2jbNylKUVCa2u4ejYYwij86cuxMPyJI=
-yBgWWbsmEThphcLGa9acJIr5pcdyeJ8n2BcrOd4gUAI=
-g5fvffANkmvdNFqJYE0obQ==
-Mtbicnc+t1Af/7tF+Tv2nBCdBjMuUqBf0k8PklIR68yZY1ukLk2eVDxRkJ2ST4jPS021JdcExK8J6Q/V73igjQ==
-M5ECaysz2iJ7h4q2Lp9GveQewHJ0voF40qqtJ0BP7qaVbAbHUoDi2QC+31alz5Nv
-AcgyHfpY0DPgUW24nVdy0Q==
-74Pvhy98IkI2gWcbl+849IPY7AWZsq+atMQNXxbUY1vee+xLeETg6QlJ75vfQNGssNxwUQPoIbmcC7NW2I+8YA==
-Hb4Cj+FVCnrlr+wjbXu4/w==
-XjGIQYIZ6Hct/uQjMna+CQ==
-6vQrjOcffSLut9OGEWvkaA==
-Y9t7pXKbBdbZlEJCYYv1joM8VdvNS2uQkXHlI9vfnZc=
-Wd1964UEHkX1Iceb5vHDYue/j9zqo6cuV9qEGtSbP9rvjqz2pdi3WJW2zc5XiGi0
-jFIFTouBvqdN3nPh25LfHketSC9gxemVX/jkf3i8HlTqwZPEUQ3++CgzOR4aJEHw
-D7265rcLjLP/ZtwhICFw6xo3Mue3m1l9ucsFkkie++o=
-zuA7vaYwOBl/qjvKFAzmLw==
-dq08t2MRZC0lLLq3Hz3kuA==
+-- configs
+local LogColors = { [LogDebug] = 'pink',
+                    [LogInfo] = 'white',
+                    [LogWarning] = 'yellow',
+                    [LogError] = 'red' }
+local MaxLogLines = 128
+local MaxHistory = 1000
+
+local oldenv = getfenv(0)
+setfenv(0, _G)
+_G.commandEnv = runinsandbox('commands')
+setfenv(0, oldenv)
+
+-- private variables
+local terminalWindow
+local terminalButton
+local logLocked = false
+local commandTextEdit
+local terminalBuffer
+local commandHistory = { }
+local currentHistoryIndex = 0
+local poped = false
+local oldPos
+local oldSize
+local firstShown = false
+local flushEvent
+local cachedLines = {}
+local disabled = false
+local allLines = {}
+
+-- private functions
+local function navigateCommand(step)
+  if commandTextEdit:isMultiline() then
+    return
+  end
+
+  local numCommands = #commandHistory
+  if numCommands > 0 then
+    currentHistoryIndex = math.min(math.max(currentHistoryIndex + step, 0), numCommands)
+    if currentHistoryIndex > 0 then
+      local command = commandHistory[numCommands - currentHistoryIndex + 1]
+      commandTextEdit:setText(command)
+      commandTextEdit:setCursorPos(-1)
+    else
+      commandTextEdit:clearText()
+    end
+  end
+end
+
+local function completeCommand()
+  local cursorPos = commandTextEdit:getCursorPos()
+  if cursorPos == 0 then return end
+
+  local commandBegin = commandTextEdit:getText():sub(1, cursorPos)
+  local possibleCommands = {}
+
+  -- create a list containing all globals
+  local allVars = table.copy(_G)
+  table.merge(allVars, commandEnv)
+
+  -- match commands
+  for k,v in pairs(allVars) do
+    if k:sub(1, cursorPos) == commandBegin then
+      table.insert(possibleCommands, k)
+    end
+  end
+
+  -- complete command with one match
+  if #possibleCommands == 1 then
+    commandTextEdit:setText(possibleCommands[1])
+    commandTextEdit:setCursorPos(-1)
+  -- show command matches
+  elseif #possibleCommands > 0 then
+    print('>> ' .. commandBegin)
+
+    -- expand command
+    local expandedComplete = commandBegin
+    local done = false
+    while not done do
+      cursorPos = #commandBegin+1
+      if #possibleCommands[1] < cursorPos then
+        break
+      end
+      expandedComplete = commandBegin .. possibleCommands[1]:sub(cursorPos, cursorPos)
+      for i,v in ipairs(possibleCommands) do
+        if v:sub(1, #expandedComplete) ~= expandedComplete then
+          done = true
+        end
+      end
+      if not done then
+        commandBegin = expandedComplete
+      end
+    end
+    commandTextEdit:setText(commandBegin)
+      commandTextEdit:setCursorPos(-1)
+
+    for i,v in ipairs(possibleCommands) do
+      print(v)
+    end
+  end
+end
+
+local function doCommand(textWidget)
+  local currentCommand = textWidget:getText()
+  executeCommand(currentCommand)
+  textWidget:clearText()
+  return true
+end
+
+local function addNewline(textWidget)
+  if not textWidget:isOn() then
+    textWidget:setOn(true)
+  end
+  textWidget:appendText('\n')
+end
+
+local function onCommandChange(textWidget, newText, oldText)
+  local _, newLineCount = string.gsub(newText, '\n', '\n')
+  textWidget:setHeight((newLineCount + 1) * textWidget.baseHeight)
+
+  if newLineCount == 0 and textWidget:isOn() then
+    textWidget:setOn(false)
+  end
+end
+
+local function onLog(level, message, time)
+  if disabled then return end
+  -- avoid logging while reporting logs (would cause a infinite loop)
+  if logLocked then return end
+
+  logLocked = true
+  addLine(message, LogColors[level])
+  logLocked = false
+end
+
+-- public functions
+function init()
+  terminalWindow = g_ui.displayUI('terminal')
+  terminalWindow:setVisible(false)
+
+  terminalWindow.onDoubleClick = popWindow
+
+  terminalButton = modules.client_topmenu.addLeftButton('terminalButton', tr('Terminal') .. ' (Ctrl + T)', '/images/topbuttons/terminal', toggle)
+  g_keyboard.bindKeyDown('Ctrl+T', toggle)
+
+  commandHistory = g_settings.getList('terminal-history')
+
+  commandTextEdit = terminalWindow:getChildById('commandTextEdit')
+  commandTextEdit:setHeight(commandTextEdit.baseHeight)
+  connect(commandTextEdit, {onTextChange = onCommandChange})
+  g_keyboard.bindKeyPress('Up', function() navigateCommand(1) end, commandTextEdit)
+  g_keyboard.bindKeyPress('Down', function() navigateCommand(-1) end, commandTextEdit)
+  g_keyboard.bindKeyPress('Ctrl+C',
+    function()
+      if commandTextEdit:hasSelection() or not terminalSelectText:hasSelection() then return false end
+      g_window.setClipboardText(terminalSelectText:getSelection())
+    return true
+    end, commandTextEdit)
+  g_keyboard.bindKeyDown('Tab', completeCommand, commandTextEdit)
+  g_keyboard.bindKeyPress('Shift+Enter', addNewline, commandTextEdit)
+  g_keyboard.bindKeyDown('Enter', doCommand, commandTextEdit)
+  g_keyboard.bindKeyDown('Escape', hide, terminalWindow)
+
+  terminalBuffer = terminalWindow:getChildById('terminalBuffer')
+  terminalSelectText = terminalWindow:getChildById('terminalSelectText')
+  terminalSelectText.onDoubleClick = popWindow
+  terminalSelectText.onMouseWheel = function(a,b,c) terminalBuffer:onMouseWheel(b,c) end
+  terminalBuffer.onScrollChange = function(self, value) terminalSelectText:setTextVirtualOffset(value) end
+
+  g_logger.setOnLog(onLog)
+
+  if not g_app.isRunning() then
+    g_logger.fireOldMessages()
+  elseif _G.terminalLines then
+    for _,line in pairs(_G.terminalLines) do
+      addLine(line.text, line.color)
+    end
+  end
+end
+
+function terminate()
+  g_settings.setList('terminal-history', commandHistory)
+
+  removeEvent(flushEvent)
+
+  if poped then
+    oldPos = terminalWindow:getPosition()
+    oldSize = terminalWindow:getSize()
+  end
+  local settings = {
+    size = oldSize,
+    pos = oldPos,
+    poped = poped
+  }
+  g_settings.setNode('terminal-window', settings)
+
+  g_keyboard.unbindKeyDown('Ctrl+T')
+  g_logger.setOnLog(nil)
+  terminalWindow:destroy()
+  terminalButton:destroy()
+  commandEnv = nil
+  _G.terminalLines = allLines
+end
+
+function hideButton()
+  terminalButton:hide()
+end
+
+function popWindow()
+  if poped then
+    oldPos = terminalWindow:getPosition()
+    oldSize = terminalWindow:getSize()
+    terminalWindow:fill('parent')
+    terminalWindow:setOn(false)
+    terminalWindow:getChildById('bottomResizeBorder'):disable()
+    terminalWindow:getChildById('rightResizeBorder'):disable()
+    terminalWindow:getChildById('titleBar'):hide()
+    terminalWindow:getChildById('terminalScroll'):setMarginTop(0)
+    terminalWindow:getChildById('terminalScroll'):setMarginBottom(0)
+    terminalWindow:getChildById('terminalScroll'):setMarginRight(0)
+    poped = false
+  else
+    terminalWindow:breakAnchors()
+    terminalWindow:setOn(true)
+    local size = oldSize or { width = g_window.getWidth()/2.5, height = g_window.getHeight()/4 }
+    terminalWindow:setSize(size)
+    local pos = oldPos or { x = 0, y = g_window.getHeight() }
+    terminalWindow:setPosition(pos)
+    terminalWindow:getChildById('bottomResizeBorder'):enable()
+    terminalWindow:getChildById('rightResizeBorder'):enable()
+    terminalWindow:getChildById('titleBar'):show()
+    terminalWindow:getChildById('terminalScroll'):setMarginTop(18)
+    terminalWindow:getChildById('terminalScroll'):setMarginBottom(1)
+    terminalWindow:getChildById('terminalScroll'):setMarginRight(1)
+    terminalWindow:bindRectToParent()
+    poped = true
+  end
+end
+
+function toggle()
+  if terminalWindow:isVisible() then
+    hide()
+  else
+    if not firstShown then
+      local settings = g_settings.getNode('terminal-window')
+      if settings then
+        if settings.size then oldSize = settings.size end
+        if settings.pos then oldPos = settings.pos end
+        if settings.poped then popWindow() end
+      end
+      firstShown = true
+    end
+    show()
+  end
+end
+
+function show()
+  terminalWindow:show()
+  terminalWindow:raise()
+  terminalWindow:focus()
+end
+
+function hide()
+  terminalWindow:hide()
+end
+
+function disable()
+  terminalButton:hide()
+  g_keyboard.unbindKeyDown('Ctrl+T')
+  disabled = true
+end
+
+function flushLines()
+  local numLines = terminalBuffer:getChildCount() + #cachedLines
+  local fulltext = terminalSelectText:getText()
+
+  for _,line in pairs(cachedLines) do
+    -- delete old lines if needed
+    if numLines > MaxLogLines then
+      local firstChild = terminalBuffer:getChildByIndex(1)
+      if firstChild then
+        local len = #firstChild:getText()
+        firstChild:destroy()
+        table.remove(allLines, 1)
+        fulltext = string.sub(fulltext, len)
+      end
+    end
+
+    local label = g_ui.createWidget('TerminalLabel', terminalBuffer)
+    label:setId('terminalLabel' .. numLines)
+    label:setText(line.text)
+    label:setColor(line.color)
+
+    table.insert(allLines, {text=line.text,color=line.color})
+
+    fulltext = fulltext .. '\n' .. line.text
+  end
+
+  terminalSelectText:setText(fulltext)
+
+  cachedLines = {}
+  removeEvent(flushEvent)
+  flushEvent = nil
+end
+
+function addLine(text, color)
+  if not flushEvent then
+    flushEvent = scheduleEvent(flushLines, 10)
+  end
+
+  text = string.gsub(text, '\t', '    ')
+  table.insert(cachedLines, {text=text, color=color})
+end
+
+function executeCommand(command)
+  if command == nil or #string.gsub(command, '\n', '') == 0 then return end
+
+  -- add command line
+  addLine("> " .. command, "#ffffff")
+
+  -- reset current history index
+  currentHistoryIndex = 0
+
+  -- add new command to history
+  if #commandHistory == 0 or commandHistory[#commandHistory] ~= command then
+    table.insert(commandHistory, command)
+    if #commandHistory > MaxHistory then
+      table.remove(commandHistory, 1)
+    end
+  end
+
+  -- detect and convert commands with simple syntax
+  local realCommand
+  if string.sub(command, 1, 1) == '=' then
+    realCommand = 'print(' .. string.sub(command,2) .. ')'
+  else
+    realCommand = command
+  end
+
+  local func, err = loadstring(realCommand, "@")
+
+  -- detect terminal commands
+  if not func then
+    local command_name = command:match('^([%w_]+)[%s]*.*')
+    if command_name then
+      local args = string.split(command:match('^[%w_]+[%s]*(.*)'), ' ')
+      if commandEnv[command_name] and type(commandEnv[command_name]) == 'function' then
+        func = function() modules.client_terminal.commandEnv[command_name](unpack(args)) end
+      elseif command_name == command then
+        addLine('ERROR: command not found', 'red')
+        return
+      end
+    end
+  end
+
+  -- check for syntax errors
+  if not func then
+    addLine('ERROR: incorrect lua syntax: ' .. err:sub(5), 'red')
+    return
+  end
+
+  -- setup func env to commandEnv
+  setfenv(func, commandEnv)
+
+  -- execute the command
+  local ok, ret = pcall(func)
+  if ok then
+    -- if the command returned a value, print it
+    if ret then addLine(ret, 'white') end
+  else
+    addLine('ERROR: command failed: ' .. ret, 'red')
+  end
+end
+
+function clear()
+  terminalBuffer:destroyChildren()
+  terminalSelectText:setText('')
+  cachedLines = {}
+  allLines = {}
+end

@@ -1,187 +1,187 @@
-SSnlM/nuUeo9vLi8dQDD1kpQsxzILL6LqMzqqWhnQAk=
-ZJZzWbyE6n/cxLF//PxRHA==
-r+06K6Vzim7CFibeirhewXI2yHehzB213/QpIjkTbbI=
-HJ2hyP3+DxPrbpv9+TJHJUVxnB3m3lJqrBwctHuJXtY=
-24tamn37WDlZTk0HVARVIrr9IelXJAAZMTLWpQJXpE8=
-uppfL+1n6obEgWqtRueXHJvUs1aUk2zT9yU7UvTG7dk=
-gtLjAFCGA6eKrxsVwtNCmw==
-YSSKQADeXgesAlsp7fqvf9TcEf6k2sQpGGQiToSwmFc=
-KtTg5GZi+EFlIAr2M2dGwKNxUAYSY32sjOZ+DSQKiRoD5FnpFkPlNcGMko56nfxLUJVzr63oHDFnDa6lrKDKbNRI0ePBN31sRDoYemMA+Rk=
-5cbDyI++cCGO/c1GAO8mRA==
-s7+QYZ1zXAjZfqZ3G56WQY+4jsoTrv9whi336OVnP7c=
-MWMpkGDQjw3McyX826qfTQMQYt0S1htSQAZDq2SMGc0=
-VVDFlEfJMnZuYjyIf77RHA==
-oEcdnXTbfnlOMgN5xp+STq7gSuW2o+jHTTuASf4yKbI=
-h+a7J3R0wTPftBrkmNHzGw==
-TrfRnFYrXRYkA82904dEwA==
-kzXiQEg+m4xlID1BW4SN/95mtTi7oGZD3n4pVCR0hnfRMUY7RAwMMLotUITpQuxN
-0XvItBVgbvWNFDzSRCIHgy4xWUPilaHT/Ro4dcywfy8=
-sKkod1bnKHQfK71mW1KGVQHTXGu+Y5vVygzBZ3Q5wjLQljU4MGs9hkvuw7Cx6DhT
-nWcfxk9NYIbRWtezpr0h3PajdzHZ8u+cZ51MkWaJdMw=
-DvLLGaqPa2JL5WF7En8r8X0NvR5+PvXQc7OIDPYSFev/sP8A4tDdYUfmzyjqONzS
-gAzdgZyUzkVldFuWErn3tg==
-EQKbbZPk7sYyUwXcYilBtgK0R2tq238zAlNs/qwmgZU=
-1njYmeDsDrBlH12nCiIibw==
-dt+ekj5hiJTXDP4Sbsdk+g==
-3HtXFB+CuQ/o1gG7OZyzY0sjYo2AVee0t9TAsijU3E8=
-9QY0XhT70b7/ZBTdImRgYNh1cFggdlfHt/8PGC9pWhNn26k26qb84tWN4nZYc9wj
-IkkQjFct2MTPndzZPw8SD7KRMGA643yc60dnNzUk+mXezq3lE76KKE4ITumq54MS
-aqib+1Hj3xas7gn5sTKRd55LJX7IkbbZ6dTiBttrDS150/e0HKkNxSwBoEyCQ/gupy/eydLwLffMy1SAtz2xskeJLqsT/ALcGJ1wnWp+pB0=
-rlZXtwXcTI9nhW/AZ/UUlFYpP6Mt4UG+Hnjg4Lsnz1i7DO+bz9fidWjxZF6NGIOdap7f3/PdOz9lO7NDna6glzmOXbcrezcmxGkURPeDUzc=
-DRp55tFG/sWuTOlLQflgFLGWbOgY6VscDGOMQ2L7XGY=
-NgsgUWdkmDJeowHuQsRxlpl3Hj4RgM7kiXSNKabuFEQ=
-ELipKmKWOxhVo/gGZcTI7A==
-0Ra+eG5P+zzmCs5cZqzJqg==
-7alvMaZ4Xc+7ew9sR4SMRQ==
-AdkaE4U1h3IIrVugleUKTQ==
-rIM0+mudVEo31hv8H7tRGQ==
-ZDHrQJq2bmr48ZmooI61J2B1tIKhTohS3ftkXCa6oIU=
-0Ww35nynwDnDCWnVnVyOoQ==
-OvCqnz3hhP7hrivAhVo0Vz3MVCwttI4HxRNPNFTmfrkRMZ/kqB+q0f0iSMXhOB/b
-sZjQo0WMAZmRP7OBWru/uy7qtARXlRZ4mf2ugfDyyYbUfT5oylj1Y5ebmAIJuz1X
-qRXn4LqWlu6RqnibXbHuU1qxAyuW14/GBWi6VaE/MLOkAOmgA1ZkyMFVCKoV7sDX
-fCh29lLO65ew78Z2k14e1eR7q9kLwdsVlzOeYu0Rjj0UDG3Km9xHtn3esySYYVBg
-1r65gW45b1U/PP5t6+FnqQ==
-L7VfF3TcH/7iKqGvIhrSS0rtq9g0fwQ7ZElNX8KieZK9Y8ab/cYMpdbJTWE07SoW
-YBEvDuIBe+o2N9n2sD4DFQ==
-aaXaQesrFgJcV5hkrKKnzFcmQB9mjhuY7yDjq5g6sj7O7KHwh6xW8oTgJGVxfUXZCNs9P15fw9QdFVYq/jUvdw==
-MtY8DZ5clN2E/cvOqHzpTJNdJa/sVkrUnfImkGeE2PG4Z2eCNW/yflrz2eZoQB1xFNluTVrEMdBa7X72WijuWg==
-6XuLQCZOVA1E/8Gd8LXgB5+ExTYyFyjZ7K8R5nrV1WRlEjPYWJR0td4wQY7a0esedbyjD2eV/pTMmyAlAjCztbOO6oQwO+I7XZ2a6lJqT+w=
-pOaZcG7U7Bep44og+afqxlC6rb9qd6YwoGGwAnMVIo81QV476xp+DpZ20YvjrhmcsACBv4AlOG696uEvrsSZ6nCBUUmo9tY2dZdm4XZuuQE=
-HhiSptNOuglgmzqCdvdCEllxgVM12upo27hokwwz6fEmhvDooZfOkupwxzSth+L+
-jVgyfRv3mUJJDf1Aq7TD2KsSEgOGsRHA5GSPXRjVJIIeMd8n7BUjG3YH0tCfy0As
-tH5HXPt0yo3L/ykmw3XkXQ==
-CHrvqvXXvDCWcOAUa2D8EHfGsju/3nPON2s0FtxGhpbiOUmS5YryHJLQGrs61ajRfFI2pqBVn6G93c1q1EFgyw==
-lRJt1KL6N6hEKfqZpo6XZA==
-9Q5/+RzDUoijdVVnHfvdwJstTNCADxG/n3fYvTlhoFI=
-kx0F66GIKh0H6I138/1H4w==
-fKe0pCvEAUtHcO+o9/vhBg==
-dyDc22yttmmRJkQrCPkiOw==
-vVEvlHI946KkDZHzei5ADA==
-vvETnweh2Z7RnmeGQaqO9XOnZC+zXujgW4jWNv4xIf0=
-BGHpEXmlYge0qntEAHAjMIBbdnTNQy5pEPKYr8f++mZBKwvgHs9Ewz0bnZBw2sXF
-gQXiyiAT29s3QNTCmoIZmvB/E5t4rKWCokGg5UqTg9m39hkwS0Owe3wLFGdKe9bt
-b4iaSSnMsQagHvr/n0ZEr/ATdSmyFR4IMMVGCnt3CU4TDBNtLjY4RZFPxelsymqhtqcLOxzM/ca6H3/QngiqmA==
-opaqNgpxhKxO9/EBaBCPSr7YhbIVX6kMvuiAb3PFi62r0JthiflXe4pdo7nFzAAS
-lyJ++Gz/SixIksHTxId+/g==
-Vx5ge9rkO3RH/3Pcd44fcYYxDKCRlPdl6lMPu84Jr/w=
-nZT/BspCiZ5guvuTGNDLXg==
-87pO3IHEM0sB7bN93PhebA==
-RWZdhbJqaBDKKkqo3oF3cAmMqTQNdkFvmfZECDGqkxg=
-Qp4HsjWDb2AtILu+v7qaqhhun00SDtoXXyKf0HO1aQQ=
-nSlsLr+vLBJuXs3gaaqYPw==
-xLa2dL6ZK3fXaV7FIxpeTZASeQ5mE1+6E+8UE6nZW3Q=
-PKK3nYRD39EqbB7vrEiCTR5lTWVNEXx8NhxXYpCZAdz8n8H5pj7d59L5DZHFGpUVOU02y/42reZHGDtDftyRWyMbebtDBlfoo0QZS7RVoJaOHY/t+kTPUSXcRXCrMYzSvHdvs33LzQb1UqiW3MGXH/l/To+iIkad5BspnAq3dBHbWEKNypv2VtKee/u0TzN8
-GE5P1vbXGLRIjjqR4ucs+4Jy4MgBqNx6cpE85Ig64Kk=
-GFPQ65j214tl9qpCD2sHRw==
-AQj8zMh1rYsiMXopfA2UhH9R1GYQ/4VGHS0+/PVik20=
-nMwhqZBQ5tYYQAnugvrXlQ==
-Ih3g1ryvYCtfsE0xzOnBXA==
-cdIAObLS+mSaRiflFTY0ow==
-zO9gz8DMzp0CeEeywsxUJA==
-rW0/DhfIg2azoyGtg4PINDfNZrnP8tmC8EGRarmlWso=
-hotJSOqV8+8AcEjR5wk1oWfA0qCAQwJJvaI4j+rfnYY=
-8CoeOrDLR5H/n8A5Kizdgg8xFo9A7U7rOWUpg02knH8=
-6TaDef5qO3oPhnmLUzYcrA==
-DB+WBuAW21/DTfswJOpRQQ==
-WPnlBJxrhOCEGsy8bT7dfCAad+JLlN7AXO8yrUV63X8=
-QmwUGPdIttjg9A8zG37vPn5AqCxkPyGYj//rPVaeVu4=
-/+Suqw2axsHtEe1MZvZe/cBCua6O9Gxo+vz7cnrbPyc=
-bIh4c4tcFQUR/AJyIJgoiw==
-BNqS/gMTDWMnRjEJb4nlzw==
-sJFiNGznR3xc6MKw6lQimWQ5DlNOn9ck2Yuhg1TPPVE=
-PrkNgr/D0uF2oJZ9xK8OdYIydm1jnJd0rExecYux8Wg=
-iwYK4yAo2HS9tITop4fKTA==
-d9zZ24ap/k5y2s30O16pSOPoSPvPT4McBbc200t3UoI=
-a2Yo+PHmO31AAw56OsK7ZQyfHAtqLBWFl+Is+I/rm68=
-jvrkIfxRL/8tJpN5fc4mnXhrwzIwaz3/9XUiazh3bhU=
-FpC8yu1K/ilzHz4MKxQ9hg==
-qDs3OdKDzo28TbdDzCC82cXao7TlsNtyzM86IlitgkE2ikIchitoIQrLZVxUxwOW
-4b3mMjiJaOE5XjucofUa+JDd8liBvpl85pPXNJkRE1M=
-wd5uqVihqZqkkGcZXUiTs/r/m0R+HSDLaf4hsH7O1GQ=
-tF4rMhcrf/9w2nnwnLtgdMJAM+69AEe38C6DlkYBY1c=
-pragc4xOQtPtLPCk4t1M36k1e1h9aPCPL40SuSH1v94=
-6F2X0AD3AMe+WfDkrWrW+w==
-T/LLv1v3FTKMBhYuZuxrTuq3DGroDWJpNzAV8+vNVJA=
-t2oUjMYGvK2JRxCScKSuzw==
-XecYS4BHCsjQsJlX6jt69w==
-V6ed84+ZVTcvyv8TYJdctMKRoUOKaQULkjt2kjtaP8c=
-3fLHTXRUbuNeieAdgmydN4OIgdHZ1dvZniUR6ZU+Eq0=
-QzTfJNZp4L9xTRsgVjN6kQ==
-nY+o09lXV7LNsbX8McIjgQ==
-1TMOMVFb1AZDKvXGqU8EYvS8daT7xfqfrEppqpvu7og=
-66LXfsgubcp7xGG2AoEmxjGAG2A4qnafc4YGAa/wUD0=
-6cAc9dRhMFFw5XeGiti3ZA==
-THrSYYnGtbNV68YA1UZpgA==
-G9jNw9o23uChK46FqmI6dS8rILgkHPVUWvbEcd6mgl4=
-M3bTFgQpnV9IQFPAlhF7gMWxi7MTMLtRNfYFu5B5zoc=
-Gj/XA0UotGhm+mugx3GpSg==
-l8dqHDXIBZLPznrjFOPhlw==
-/KQGdM+7E+DNV0xEJlv94J5ZJL6FWz3ZdZVMF7ijLne33Sxb726PsYrBrRDx6OtAfiLn+FU4wuFE6P/ELyHDmA==
-1JGZN7oGwP9h23Zat3on2/mBCQS8SibEj5dS2bAmdI/6Rnx3yKurvneaH2SidnpSwbhiWf8mWGmMd6ZyC4h7e1bfrZRLvw0zrHvYViDzYZohaafTip0421ShefE3F8AP
-I/MoJjYKsOG+MMrBjcCIrQ==
-dDNu4yjN5Re3PS4YfHmChg==
-sF8w8ouU+rgprslpvpg1zon5IN/QFo3cAYnsgNHdGY78zqfZmc3m5d1Qmg1CcGsDIqFtU2E5Q7zUZS9en0tTHVXTJcnkmPa1oNv0AhAFUr0=
-XiiLlGJWyK/puvJ/8jOEj0X/QUbWXU8U3hV1yFOA91vLMM2aRm9BclHJWluPiOMFv10DMPekyc1lnylrPAE6wWTdtJhC70sBxaZx6b9x29iIa6FuaOAeEqG/GWVEZkc2
-rYJxqBsyHRfSdXyk06Z8hg==
-o+ZPkXFLoXO7NRe7+DpRLg==
-VeVy45/i4sisvWusnedKrTUarKQNBW8VMxW0xoyZpy5uzVo0YAk62IayeqYuJHSHIT/k5axzliPDPPDEnsA/0g==
-9zCWJU29ua1gTFXhl3T1pzNH43PtyXFquH7sPCYw5smOVvtp5GIMMQbWPt4dUwMhytH1/+wqkiAtzZq25I6p33aTe+PzHNtkUiS5ByhONuZrjPNs7zT1agDCMZfeFitT
-mSecx/e1oycWfAYhBzBVww==
-6ttc9L+E0dGp+PCRR/Q0Ow==
-34QaKKZE5ykvXZBOLEXZ5KO62NgbRGJKuCDGcATFboFIRtPU/edwBHKB29VT5n8GRloQ1Q2v0xgye2F8ELOGh2M8ALVJuOde4BHh1Eh1x4U=
-pZNgqw7kXzjmfGweoJQfmH7BQoo3JDU27Q5FKKWnMX7c+5jZXN3Bl8GwxeyLB2tHjYbDrjfbZA7Suva7FRTdYVBck3TRF62Q+dBoX3Tfbf18RNdSkMqFTQ4qPe6IWUiv
-Ps9+uotpv9C6x1XivMFA/A==
-zsCNFVVoocgtLFlE8N3F+w==
-EQN49fjwqZFfcfaHQB2aCB6vf5+0FiC0KBJzRqQNPMhUofe8QoTHd0JM3JZyaOxcnTcDPcjkzfwYGUZibw/pwR0Vf4rRMHZSK/JsJbnUWH0=
-lTWUxkyGTPVdPVodhFwt/68cl7TZEmo+0TZLj+rSC1dbL4HboK+QwRy4i9fh0TXrIFUldaEcyiyViqOKvETlZObu8mwRuLAOVKpwHzLFg3Hq9zbiBPx8+5JlWZTyhHg7
-cmNs0ERtp/mZsnM+xPDNag==
-MiiFx9rcaKFAIY/BMAd9TQ==
-BaQwLaD7CjoWfM7sT3GzIiRBga2scw72Rc8c4A4OKlzHoHojMxyCy8fAQCcTrbB0w8LPVl6pc656oHO2oD+DDgJUDGC0ZnetGuamYYeVtJI=
-V4WXLt8vBTt/wLXo8JFc4yzJUlyvX/T3r4uYYnBRDy/80l1AxK8RfhXSMVs5en9EoxG83SBh2ptp9VHkmxLXZxM4nW7kuQsV3Qw1JxkvsAtEk468l+F7mIrmKtLG0LmP
-3ABnaeASIGk0ufF82sKDdQ==
-60bosqRWzQx6rC0xDCszCg==
-KWWUzegWx/zXf6PdmjcdhA0CHjHGu3zpdTfS7C/lOVrgCTS2gEuUxehSrIj4DTLOZMmUBC7rcylnpK1q8D3zYs32DJS91jiRLL5xrHf1ndM=
-9vxC1IdyUvesfklZBbNYkT4ijTENpEt8HdKxh5b6XYLFfyqOZ74VRlr26/+1UhUWrnMeEnTi5sLZXDASg/Ztf/txZ/l/E60prWcRcHP2e+/nvN+Ehi5O3m4p1VLqxpjE
-2EerxPScUIcXQAD/+aqlrw==
-S0yyMlcJtqH9l2e0KkcQ/A==
-MS1XtDdqgN0qcgg8IJeZq3v7ApV7YfVm9qopCsGmIbxVCdXKBlRo196lbgiRyzAEtoLWPz2DJT5Q2td6ZJxt0pbc4l990SVTVxBWZbUj60Y=
-uuV9/mdCphIl4IKlE8TqN1LXzSZfS4tCTW8aLdd0fAL44j6Pjj2rDe/8c4RMHCiDssGKF2DQBtr8o3w3zKvQOM7j0j0/iYMtoEbRriktIxjE19UG1M0nKwd0a3ZnDbPf
-VNhsJrQA0nA9P01xiWP9sw==
-VDc8ZZiEk9GESa8yObinqA==
-HgtIxPm0SHFiP6om/iZ0YreD5uZGTNQgEeWUW2caYpM=
-amWss6bD2qf1OZw2FxesVc0J20DUvLw9mqBZ31RUmbQ=
-Egzs8xjcf1zb77kXJto8bEuM/uAWLMXG498LYbF5YjY=
-u7CoPVyhs5nh+UAptepY4Q==
-Jz2LPAA+hrpca+MsUL/Rpw==
-qjiiraCq8Je+NSN6Z1abEPiRCc4CXWgrcP+Pb0B/Rrk=
-/7BSdaq0xH1uucCYGsQcMGCpZw+CTSTSUTI77lZd694=
-jqcSZ3w2EIG3i24FeWtNH91jIrXhSmo/Bvic9z0TjtU=
-qQTgPKyVjHakQEAEHa+6bw==
-ZrDtXTCxsES4ey1i7o4j4w==
-qakjO6uTC4yPOc04XdQEbOFJxN/40xTNRzV4i5MlE8I=
-nGoHtdAqzpnD0yj69V1Ko40//odsjUe8xC/CnYwHKQ7zj+YAuiOvFo7ZkfOn32l/
-dZmSRA0Sj7qlRCvlfIUhaQ==
-vEGbfaB2VcomOemw/PrZcg==
-7/2Coecbixpww/69Nsa8VmRWedMwWXUeTFxEBehen6Q=
-18DLTKRmLRwu0thUpnO8JOMllkxwz7OMF4xcLJFiqMc=
-wl0J+PPblzFupTd5Z21/8g==
-65L+UGGYx2uuiCDgoQsVDg==
-ICwT3WkI9nqIb8GXnfA2XgXKt/TDSCRc3GPBzC+TRKc=
-drpli84fM0npsFALQt955fC4Ymi5f4V7EBUtfJkqrmU=
-nFIfwaUJNUxho6ox9r7J6illh22GoCJR9x0I2OVI3Xo=
-3pzCaUSFMitXhi2iZwZ1sg==
-Go62vvDCkkc2Y/qYh/b7lg==
-gefih7GZxwOcc4XtX4P/yg==
-1kV0VQ3yLP8jIK+filq+/tW2KKZ1NGYjLq7rUAyKVqU=
-MiZ9R+qBfGPiai+ku9f2Pg==
-UEj+xHkQMjhFtblafgl3Hr2E4nBCR0PCBQNQLFXB0owvsfrilu7gfMoU/hO228vA43sNF/Lvh2XY429XCH9HiG0Bi1+zcIuNk1lyU/NjkdN/s7+n+WQ57yxAsKuVW80y
-bZZyj434Ztd/cr2PWpUyWfwUw+y1fimWgql8/RScktuug2Ism8P/UniNIc9PId0P/+w3zPQ7qwXadYmki0s6abMfaxf3s93MW+gAVIW0hP6JYbsHrra/3Onp9ovdZxE6
-ZS6g180qOsm7Zf0ozq8Dy3SeCnCcqBz7wUWe9MEeRkWMFvuIcZWd/RreSwBJU/IKD29Ji6a+3nYQP45uJmoZ6Q==
-0DeBA4svisToYyORmlP+0g==
-JmZXhmziM8Nvnnx1jzSpTw==
-Cctwt2U8IaN/BNp1tZ+9uHPMNItb7Q5PuBEwNrvSTfy3o0/1Iid5gWS8HY7XL1XUSUhvHt7rC1kkgA74vQTMpDORma1UOkfeQhN21l3xt3fdV5dUKRxtZfpJRg8gthvp
-RiAGriurGIu6WZM2OglM9CXR2jhtwZyTHdPh13NiKYJ+VKPcVEXqf7aLL5hrsfC8gWKL0IMC/m13bA56ZNRNe5AKyli1q+WdYhhr2YJs7tVDiWamWvY8PqYDfBFtt5/u
-oLw7upW7fP1gbsj6jasVnQBSi5CEnvDtraqt4SorhgQoZTS6k91z82QvpATbjZghZuhPZ7uHmcFMq3akDjvlRw==
-s20Z/DKS8gAl2CM81bdNZg==
-lIHcn11iJaWA0MwGqVyYBg==
+-- private variables
+local topMenu
+local leftButtonsPanel
+local rightButtonsPanel
+local leftGameButtonsPanel
+local rightGameButtonsPanel
+
+-- private functions
+local function addButton(id, description, icon, callback, panel, toggle, front)
+  local class
+  if toggle then
+    class = 'TopToggleButton'
+  else
+    class = 'TopButton'
+  end
+
+  local button = panel:getChildById(id)
+  if not button then
+    button = g_ui.createWidget(class)
+    if front then
+      panel:insertChild(1, button)
+    else
+      panel:addChild(button)
+    end
+  end
+  button:setId(id)
+  button:setTooltip(description)
+  button:setIcon(resolvepath(icon, 3))
+  button.onMouseRelease = function(widget, mousePos, mouseButton)
+    if widget:containsPoint(mousePos) and mouseButton ~= MouseMidButton then
+      callback()
+      return true
+    end
+  end
+  return button
+end
+
+-- public functions
+function init()
+  connect(g_game, { onGameStart = online,
+                    onGameEnd = offline,
+                    onPingBack = updatePing })
+  connect(g_app, { onFps = updateFps })
+
+  topMenu = g_ui.displayUI('topmenu')
+
+  leftButtonsPanel = topMenu:getChildById('leftButtonsPanel')
+  rightButtonsPanel = topMenu:getChildById('rightButtonsPanel')
+  leftGameButtonsPanel = topMenu:getChildById('leftGameButtonsPanel')
+  rightGameButtonsPanel = topMenu:getChildById('rightGameButtonsPanel')
+  pingLabel = topMenu:getChildById('pingLabel')
+  fpsLabel = topMenu:getChildById('fpsLabel')
+
+  g_keyboard.bindKeyDown('Ctrl+Shift+T', toggle)
+
+  if g_game.isOnline() then
+    online()
+  end
+end
+
+function terminate()
+  disconnect(g_game, { onGameStart = online,
+                       onGameEnd = offline,
+                       onPingBack = updatePing })
+  disconnect(g_app, { onFps = updateFps })
+
+  topMenu:destroy()
+end
+
+function online()
+  showGameButtons()
+
+  addEvent(function()
+    if modules.client_options.getOption('showPing') and (g_game.getFeature(GameClientPing) or g_game.getFeature(GameExtendedClientPing)) then
+      pingLabel:show()
+    else
+      pingLabel:hide()
+    end
+  end)
+end
+
+function offline()
+  hideGameButtons()
+  pingLabel:hide()
+end
+
+function updateFps(fps)
+  text = 'FPS: ' .. fps
+  fpsLabel:setText(text)
+end
+
+function updatePing(ping)
+  local text = 'Ping: '
+  local color
+  if ping < 0 then
+    text = text .. "??"
+    color = 'yellow'
+  else
+    text = text .. ping .. ' ms'
+    if ping >= 500 then
+      color = 'red'
+    elseif ping >= 250 then
+      color = 'yellow'
+    else
+      color = 'green'
+    end
+  end
+  pingLabel:setColor(color)
+  pingLabel:setText(text)
+end
+
+function setPingVisible(enable)
+  pingLabel:setVisible(enable)
+end
+
+function setFpsVisible(enable)
+  fpsLabel:setVisible(enable)
+end
+
+function addLeftButton(id, description, icon, callback, front)
+  return addButton(id, description, icon, callback, leftButtonsPanel, false, front)
+end
+
+function addLeftToggleButton(id, description, icon, callback, front)
+  return addButton(id, description, icon, callback, leftButtonsPanel, true, front)
+end
+
+function addRightButton(id, description, icon, callback, front)
+  return addButton(id, description, icon, callback, rightButtonsPanel, false, front)
+end
+
+function addRightToggleButton(id, description, icon, callback, front)
+  return addButton(id, description, icon, callback, rightButtonsPanel, true, front)
+end
+
+function addLeftGameButton(id, description, icon, callback, front)
+  return addButton(id, description, icon, callback, leftGameButtonsPanel, false, front)
+end
+
+function addLeftGameToggleButton(id, description, icon, callback, front)
+  return addButton(id, description, icon, callback, leftGameButtonsPanel, true, front)
+end
+
+function addRightGameButton(id, description, icon, callback, front)
+  return addButton(id, description, icon, callback, rightGameButtonsPanel, false, front)
+end
+
+function addRightGameToggleButton(id, description, icon, callback, front)
+  return addButton(id, description, icon, callback, rightGameButtonsPanel, true, front)
+end
+
+function showGameButtons()
+  leftGameButtonsPanel:show()
+  rightGameButtonsPanel:show()
+end
+
+function hideGameButtons()
+  leftGameButtonsPanel:hide()
+  rightGameButtonsPanel:hide()
+end
+
+function getButton(id)
+  return topMenu:recursiveGetChildById(id)
+end
+
+function getTopMenu()
+  return topMenu
+end
+
+function toggle()
+  local menu = getTopMenu()
+  if not menu then
+    return
+  end
+
+  if menu:isVisible() then
+    menu:hide()
+    modules.client_background.getBackground():addAnchor(AnchorTop, 'parent', AnchorTop)
+    modules.game_interface.getRootPanel():addAnchor(AnchorTop, 'parent', AnchorTop)
+    modules.game_interface.getShowTopMenuButton():show()
+  else
+    menu:show()
+    modules.client_background.getBackground():addAnchor(AnchorTop, 'topMenu', AnchorBottom)
+    modules.game_interface.getRootPanel():addAnchor(AnchorTop, 'topMenu', AnchorBottom)
+    modules.game_interface.getShowTopMenuButton():hide()
+  end
+end

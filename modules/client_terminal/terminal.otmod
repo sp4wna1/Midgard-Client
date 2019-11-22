@@ -1,9 +1,9 @@
-92gLUDUwzwa6qltXdfHwMQ==
-/onxLtZKZXvEMRJzC6NfwDTgXDnihnoatKbecdjmjD0=
-rGjF/w5XS8U3ec2uhtwZlK5b8eth6sfGO0k6dPR04tX2gGlcyd3cDlXNSxP+ZYvV3xhtD+YBvqMds55lwxdGtQ==
-LJME8RWIXqvVezjjq/lbqUKAbreCeoStit9Tu4iuVFo=
-mqOZjDcf3NHoZlhj4I3wdKhFdSedqF1n99qeQpd9MIjEs1cIBMc+w+q5wp7mBMAt
-0m+9lNwnuPC5u+ayzF8v5yXO9tLtWxkwgHl4+h9OQaA=
-JWMJtqbTsrvzZ3Fj6PY+mofkHm4CAEAHx77+x2ukm5A=
-nrygBsD5s7nD+qrX+z/DyKe1HyU4S8BS41O8B3R8o7I=
-rJcnZpk1aCff7t1yX2g4VGyDOBNqx9FNfY0P4KW9cSo=
+Module
+  name: client_terminal
+  description: Terminal for executing lua functions
+  author: edubart
+  website: https://github.com/edubart/otclient
+  scripts: [ terminal ]
+  sandboxed: true
+  @onLoad: init()
+  @onUnload: terminate()

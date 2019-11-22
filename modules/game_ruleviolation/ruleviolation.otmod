@@ -1,9 +1,9 @@
-92gLUDUwzwa6qltXdfHwMQ==
-PtFTcsx9LNrBtr1p9ZN9D6jsccVAuXsZHBsN/UOr+fU=
-yWar7MAzn4iHvIf+O+3vb0NTuLcPe673H+/M0e9vw5v54fJxL3igosYc0JY2HeuW7VoBAIhfbx14F3mER/y94w==
-RRU2FsbRR6xKiDuGFMRDHz1oBcdJWKvXODOvcXzsFHE=
-LJLL0j5C8blHpLB9AZ/JeMpXzk7NY+qZutS4DfBfmB7FbnZY2lODAhvO+AEaKguB
-8Zfa/iypTo20IkMSinnDjrsYi0IflQSSRJ4WbbkL25o=
-cQnC3YTZv/uKAKSD7NtcydoPcpgyEq/K8FtueC7wShE=
-qi5Uq+hQR74gcNJx3IYyq8IZ3QjWh97We0HdWAmvCGM=
-OdhD+4JD2U1yp2Zywe8W+4oLdYM6r7Z9Brb8d7N/ppc=
+Module
+  name: game_ruleviolation
+  description: Rule violation interface (Ctrl+Y)
+  author: andrefaramir
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ ruleviolation ]
+  @onLoad: init()
+  @onUnload: terminate()

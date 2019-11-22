@@ -1,67 +1,67 @@
-n+JvUrOxIM2w5XQrk3QLCQ==
-AW/ZZoc1fsijfySvIfYTAA==
-qW8YIwD9dZoFkIaGTpIgoQ==
-H68iZ6cfi5J5C5ld9A73Lrum+NT62sgEo9YGK6cVhby24QGve8NTv7H8X01ZGQoCOweAp9LaOOXJiYV/0DkGkA==
-VpTDpjrVezQQrZMtRPdJwCYmpm/1WZOghE/IJs8qgl1bTzRGPFxZnsQ+LiC5Z2uw
-rcTHbfUdpIfw3zVQNRVDN2d7OVlplyzGetjkmednbE1YMnXiqqSwK+SDiyOwJsEd
-PWayHn9G5Rb4o4jlYzJ/VqhCZqan8uz2nevHHkKGLbVtfOSBjHlpmnI5OOu/2ntL
-aXYJ4/TN4msCpGF11FlYSB7HcLdhzlj6hL2ekuryx58=
-M246PWJFmweVGfu2IPK4NncNuOeUJulsK6jj3o2G/aY=
-qvbzqleLQ8aagmaUZ0iQtdsBxjPHJRT22ZJA6XTiNLAaZbuOaYZmar+9gD4weRGp
-Mjo+CfRsvNhNdB8cPAO6dPERfbqpT3BeM3S1ODjLYp09AdpL+c9ejjLwwBGENsYx
-g9kmy9ukmOXLN0e68qllkeFzwPf43bYH3WHHQoIww1IX4lPtOL/Lfllep41/8VixlwSqmNn9AKmGeTDP1KygQw==
-sOi0J7C8FO4Kkbhkai0Iug==
-GCdvWlvOwpaqIi8s34n7Hw==
-+0upTGOiRorkSY854XEInLWAfv8EDQHQAIHueoe9hlk=
-UODr3C2ipb1j8j995yAwrA==
-QfT5nPwCxPRLbvLFEYNAwA==
-Sy+4aG4h6Cagsgx0UmJjjQ==
-BZxddQEe65l0VrKC7rOKJ90fuAqKrSSEGDOY74SOIllI807Ddm8UCOvLfmeBpgMkDX3+9Sc5OzMYztg/167PHg==
-n0wTbC8Fnkcj3Cs8nvnkvVi2AhvYaezoWmg6f5Vuq+xm5ZVC22Xg+inQXB7HvDSD
-kSKFNW3WfxpxGZQ0m0BdVgxfNwksxX/cI9vu8Bx9OXoGtB+4+PULH8uolH/+eRul
-asJDk+Dte67AKHqa9N34Wh9XwhtgFJqWN9VTzBDVWX0vg4IIbH701Q2JlTwkjJifqszSmv4FJSxVKa0Wxc++iA==
-Z53OAlbRG8V2r2hqmxcap1G3OFmnmoGLnE8bLsXNCzw=
-eZRbTWtCzxhnEWwrpC6r3jsK70HOJP3vzC8qNtO+anpFypjn5lKbfT4HlqfwBLFNxK75pukpCtJXFfvVH3RC2Q==
-Om50n2JrtiONkmH59Zx5YG2Z8oiu9FJxEUaNgfzUruQ=
-2TMJm0ibyeqHejEIyyAXB6I06H+h/U9r/niGlCVHqaPK0b3l34JIoy3veUuczM0K
-O4Xb3VqNX/5C9X0uNLS08uq6otFG56cPPJG+3HxsKu+XwTlHUQ0yNr+xSXqR5PDqwrRqPG66oaosgCInmDcXpQ==
-K4kdB9ipdoHugDcOpfx3BQ==
-S0nGIGnW5iTMnQ1NoBZgBw==
-osUgvCRrDFnlj5KRrDVqYKiV9yNv9iVsIF5x3WEcl48=
-wwiIpfrVHbKb8Zq9t567zA==
-XNxkL0jFl0LPrW8sp1s8kA==
-hZl2KaGPDwzj/L61qr1g4w==
-pcp+DUv5VNgH9MAvbku8h9zd/BaICpSv7jP7EZouCdiTT1t0ghMNWbfyHD8ip4UW
-l5VwWRstRyQYzoMDW8zQqh1lufDdZB8LIBMl2UiZpTA=
-c3lUhwlpmGqw4Aj0ZdZ+9/YWRjc/QirDsROwr4wHa88=
-s9SOUUpGtqPNXIAavNhaCQ==
-Tx5yJ6lqmXiEgCXDw7MYkg==
-+4VaMxAESX/t/eWOkhZIp/lWpZ4Q+jTbSVqp3VgQ4wU1psC6Y1XIZyPMSCPGNWNV0/SXsGNYZF6B06iZNgwQmmXI8kNs/p43jAdrgG7Tjk4=
-5Y24yNyK3ysdSkugOHWpZ7Ka97CXpCnngrxjiiWUuktbulW18vnddRevG4ECKN/hclq154O06FrMEX3fpOK4Zw==
-kvDwSNUbT3Brqkesgj3ywDB4zMEdse1oICZiXcf6EZE=
-oSUd75GhsEsXhIytyir3hPstnkd46q1OiYSkXaQC9nFtHYalAoSyXyp/6VWPXOJ2
-vM8LTZYWAa1YLNh/xV8p5w==
-z9IIqczmhhZADDezexo4VWTsBW/fKBvU+2/fnJCQyauKYkBA+ey29yREm01jG4Y6
-8lOcFRCgH7W5o/R9I7jPEuhAxFhzW9pAE74mmeL6eJuGenwjOJJOaspRacf26ekd
-8VhKQ+bf69KcxMY3+fKBxw==
-7nJDIFsNMqyL9MVN27J+omfidaoVnNGOc3/7JuDqT8LKzkRbo5hZ0RmY0qI5N1b7
-+WmVBs1MzCwl3gp0V+YPys1UWcuovUzjINn0Z8dAmJAkrV4sr7THDxQZGW6H0z+8
-HqZz2qHnlsw+8rx2erAr9pRZdKeTSDLeLY8BO5zRodI=
-jffs7Q8sD5hHoADV2M2P2A==
-Xww64DtMxLreL5icYCJpAdjYtHPVTXamhFXsY8RCNaM=
-bZ/RKiSqw9OtVbKyrzh+qLnhPPJNoebWI7F3UqiTqk7hbuBLRb6goyObUkicX6RmGteitwVHYs8h4eYbjrUY1g==
-QHLf82VezEfRXEcYXN2VWjMIWqsZGn1bA9mZK7yUJHq3tydOq7RuHozfaRKslb/c
-AoNcCOuKvtgMlhV0m00oPv7VGk8xAWm9Wx5E/hOgT3o=
-1d2GVytA5lW5vcvIQ4Dd7w==
-6kHOfNR5IqGRNDWpUAle6A==
-kg389k7dBDYFRruGOHDi8MUvUfNRnLVTWtVFTBEEyiOvzqp0puHceyldbQlZsNnXEzfmcLxJM8urNN90IkpTVQ==
-GB9AawQG4ASNiTk1U7RkYQ==
-LH/Du664kgaQiNwqNDMHwA==
-aVsAAohEMwJO5SL6u/vLUOYXJz/PEHTJlIvEpJHHl0Uw3kml5CJBBbluJwoSxaMC
-nzOM2UQhBAi4RW0doIR0K9Ce7PjL1gzzEftKAYopWKn9zVJlyzt3Cw6HRA+F3R22bSNPw1FMYmH56mc6dH9DDg==
-N4SLauSDNUL+ETC3DTQLxlpLzHLEXOthYHpre1I5tjx1z52GyCpcMwM1xBM2mxGw
-r6Qq2FA5i06Im3vO2qFQAwJuZAuIDLKD5Uog+leuTAa41pcrxkLU4tCErSP0uBlp
-FFhevoCVWBrPoEqFIpyYx4MwhuHj01y0kFsTPrzw7/c=
-lLS6m2L9s6J4yPP7iLGJuXvbs0GIfQGj1bh6wIHFlyw=
-rvwhCctRzh0pFjZCDclkZ8Ijb3SNiBqXScODo+hXEyk=
-yHb+VjevL+Et/PB6y2G6Aw==
+-- @docclass
+g_effects = {}
+
+function g_effects.fadeIn(widget, time, elapsed)
+  if not elapsed then elapsed = 0 end
+  if not time then time = 300 end
+  widget:setOpacity(math.min(elapsed/time, 1))
+  removeEvent(widget.fadeEvent)
+  if elapsed < time then
+    removeEvent(widget.fadeEvent)
+    widget.fadeEvent = scheduleEvent(function()
+      g_effects.fadeIn(widget, time, elapsed + 30)
+    end, 30)
+  else
+    widget.fadeEvent = nil
+  end
+end
+
+function g_effects.fadeOut(widget, time, elapsed)
+  if not elapsed then elapsed = 0 end
+  if not time then time = 300 end
+  elapsed = math.max((1 - widget:getOpacity()) * time, elapsed)
+  removeEvent(widget.fadeEvent)
+  widget:setOpacity(math.max((time - elapsed)/time, 0))
+  if elapsed < time then
+    widget.fadeEvent = scheduleEvent(function()
+      g_effects.fadeOut(widget, time, elapsed + 30)
+    end, 30)
+  else
+    widget.fadeEvent = nil
+  end
+end
+
+function g_effects.cancelFade(widget)
+  removeEvent(widget.fadeEvent)
+  widget.fadeEvent = nil
+end
+
+function g_effects.startBlink(widget, duration, interval, clickCancel)
+  duration = duration or 0 -- until stop is called
+  interval = interval or 500
+  clickCancel = clickCancel or true
+
+  removeEvent(widget.blinkEvent)
+  removeEvent(widget.blinkStopEvent)
+
+  widget.blinkEvent = cycleEvent(function()
+    widget:setOn(not widget:isOn())
+  end, interval)
+
+  if duration > 0 then
+    widget.blinkStopEvent = scheduleEvent(function()
+      g_effects.stopBlink(widget)
+    end, duration)
+  end
+
+  connect(widget, { onClick = g_effects.stopBlink })
+end
+
+function g_effects.stopBlink(widget)
+  disconnect(widget, { onClick = g_effects.stopBlink })
+  removeEvent(widget.blinkEvent)
+  removeEvent(widget.blinkStopEvent)
+  widget.blinkEvent = nil
+  widget.blinkStopEvent = nil
+  widget:setOn(false)
+end

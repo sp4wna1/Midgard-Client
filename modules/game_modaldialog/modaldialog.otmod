@@ -1,10 +1,10 @@
-92gLUDUwzwa6qltXdfHwMQ==
-MNw1Qij4PGrxwLT3qOSmTzGt4MwHiWjuoZiV+HucXU0=
-Buula4hKzjbahII5gfM8gGKXkx/tQhML5RIDe821LZrwrskW0s2eQs6xEmuVLTCw
-7MLoeW7BHKaUt08otnUVvg==
-6PHXUzC9rqE7eH6KJdJy5cMEtnei9Al2HCQcKt2kgl1u0SrJc7Y6w3KWC9IT629F
-4oRzO1WIUmbSHSC+AgEhDrfLWfX4eHLuc1fgRpblCv4=
-gR+a119ZmiOUOUjyvAZPQ7vTlxRcSI4O3WLuTuvfJkBw+lUJ/JeSuQCF6p3ZNgoJ
-b9/MyZglXgjBsBYPeHBrXZqlqPniTgbavCP0yu9eGR0=
-O7ozQBSxdYB6VZ1FfLXCbhJClYECdraIggMaWoBox7A=
-uFvfftuEcmmO+I/zPZXO7t3dkwtJKxiuiLSJtJqt7sQ=
+Module
+  name: game_modaldialog
+  description: Show and process modal dialogs
+  author: Summ
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  dependencies: [ game_interface ]
+  scripts: [ modaldialog ]
+  @onLoad: init()
+  @onUnload: terminate()

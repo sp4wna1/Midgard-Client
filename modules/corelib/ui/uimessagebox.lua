@@ -1,96 +1,96 @@
-MyuSENyGDxGVLd8dW8UKi2T71A9G09979eoAKR97SHLWKz8Smv8aXMMweHgKdldm
-4MJxG4AlkJc54jnhFGinOQ==
-zOa+XumW0fGajjdswkGVgw==
-tKXtj0ifx0e5PRhWLpJSdXDu5f2JbG9NseP3sFnU9gcRWbEGQPNp+bd9+KVa6tkEFubWExX9bcg/Thxhi3yGwg==
-qfY1iQ82+DYfBBi9e3RhIw==
-k4XRDu5Wsb8uueZFgY30v7J6ny1tO6twR8vzgPHX39XpZAgbGmCLYvmZMPOr1Dvp
-5BOebUCEVTUM7lGx1EdCVDTFhxAvTMLQC769GPxFTbU=
-kddDCiRgbh8kn3EiYKcQyA==
-jgZMdEl6i38ZD/FvNDiNJ+H7XxJb5Px/OK+UX0WdYzZVBh35kGHhoSQB889w9KJVw5i32xBh+McP2kdhZUGacJPffMTo4dKCQfM2b2aTCpjd2NOS7mqiUnRwCmD0q9eo
-IDilpNO3b84z3pTeWMAg6cdaRUBC/AJqh96mvZoGHCDolB+q7jaqh5+FyRfqQWZNrEXheV/A8g52nCdgTCBfNg==
-rnrIMCgr74EusV1kquGa/R69mZUgaY5wqRZLj2XOenXdARq3uNFUgADRhKBqdoVv
-6lkVIAySuq60UPdjHGFYCg==
-HAkXcSZhPq9gqpt68efsUUZD4tU/2bYkzKCFoykoJWjdp4lwjMQ+PNBGfnq5vDJY
-YEJanOclOiPdzSojxK6RM7LrAj2e3Xk0HNPMpn0KhnE=
-BdIQed0OnhqUaPesqXt+KA==
-kdjbNcnhSd9JePR6DggOBd2SIqf1EUmWdRD/wtT6JUk2V95MGIwUERt9LDpgjMYFMDqE4SAqz5Byybv/oww+QRW6//vPRV6w0MbX/7iv7Zk=
-Uu62dmOR9Wbn5p5UOGLn0l57O8eBYuT9wD0XOxJVBds=
-vP5NkOIIKRSGcgjNGmZ+nA==
-YqlTOQFKHatwfIG0rhONAmK+hWrjyYFHKNw95cSSt9A=
-KlxJ+6/3DoIO8RLFv/iVi1KSBnMQdAQkp1uC05zvRPw=
-mHzTclT2HkMy4nStuEvMtQ==
-zJOaDv7xTcjlfEpWDCjEyzFgYJPNxYOUX51gHO4oqCY=
-y6x57Y0bvOs3q13QUDabxsRgZEa69g8ZelCMXbnkYxT2X4js5umJO53ibQkdzAwWxiAHmdoEysxPFdqSAcRI8g==
-jkRB5VM3Pd7F6vi+PFXQ8A==
-4U9/jG2Nllu4Kkp1dq4NEumigYVWhRLU03z17Fmy5UfV0J3VKaKTo2JpubBNvPUR9P/17Q66nNPB5Fe8kn/rS0xzRgsr9ZyimdF40h4Tffc=
-VI1LnmR+KjosQzp7AStZ4y11lLyxHsPRWU6hnJcL/mtPzUOZv2xYT1tE1b1wHoUItdjDXi6AZ8M/6Jqa7L/ctA==
-gwFzvYhSMPTg3UurydPhLw==
-TeCpkjdcVanMV8tMvH3gxEcL4VgPxWSyn4gWPSyBI5w=
-0MMHaHMVSVCApN1bURXZVxTiiHptNiOQrwhhclHksVZTTfMwDxZ6zQZ4mlqjuZpUVqSxAAne1/bqfV12iG0O405v4aOWTxdecknHS+0qj2Q=
-ePRsui4BcnV0FMB/q1MNXa82bB6toRb8ugoi5MjSUuw=
-YhKxgGeEHhc2Q7satvLVCYawjs+F3p9jOt83H6A83W4=
-aYhgMj8ZAVrHVEAnHrG+o2R6XWuAVVcCWAnifQF60YirxYPBksJFMeQ6u/qyGPPe7Bx0VMeOGmgZIVAPrDSmZA==
-EHgV/+C596Lf0nsUz/IFDp6I6Vaz3VZWMI9bl703MaUdrFwWddwW2PfQIR9R5kBzP8pSKFW48eR4nTtOFMruCA==
-4PO9NcXdrRiGzz8scPWR+ULDuMT4AKkDEgCE8JPdfFhKe2T/VYyHQgXTODHxzCHR
-Ik9YwDn1KW4WSQd5kR4EMA==
-+dyZNDRaQa4ZLZDYeqlpp/POiamV854tWTNBzD7vB5ipjZxxdzJCr5Q75Pp427sy0nQ0AQC2plxq9Mn5Y/CNqg==
-OneaXLDJ7QuMPwsMGFUtXVJlbD6Fa/URvLqn9dScYK+bnrWdc7ZeSvuLVLRl5IBrJ8kvIWk5KlYmtnSdShYqXA==
-LJi+gxMD4ukSrwbWpS2Whg==
-CkxNnlGTCMxvqtmAYSk9H8G+ZZpouSlHPnXpObbQAWWI8mMjl1H3jxisktxZgIqbayH+VVdYHQEui/i1W8ludBPMYp1k5ILVHCNXkrMBAPs=
-lhvxGG/XnW4+K41CAASeJw==
-oDcp91uzaG0gbWJxPGw8ow==
-mmp3gVOll1cK69UKajh9NuvPsu0pq6O1tsoboenmv5JUUlfDfD62oRThPrnRnMel
-TRbq+UgI9RT8gyel+FOeUVxmeRX5xg1qUvxW2bwC7+K2UzYSXM0HGeISRJcH1gp1
-V8xn58UN+QwUjmSZImxs3w==
-8inpcQXZPMw69DMt4MkVyEa1uCmFWZvpM+O6BDrUV7gLxS0s1sWEKuxv1K7NfaryyDJpmI2fhVOy5GWc+XWUFtuSOAF2jTl8sRGglL699B/YAd75Eic3a7lp2ODR0oAB
-NUoMLDR3x9WXiXHHhik90j8AGbg1MIbhcyeiqCTmKSO8QaQyIvmzi9/uVsrDje6u9sROBJc61p3KIY5dnTe33nY5y0JpFVsdrqvgk1rLRgBfubBI87utU4I+OwLZajTJ
-e56eLL0WiEP6Ve3r9ZRp2Q==
-NXaJKZb7ogrsjGXbrGxLCntH6f+IziQaw+Mov5BR7Uf5Cxc0T2h9c4w0ScsgaXCOFadfYt+CkxRLoWPL9rfd9asYGbNxl4pgb/FVyegR1bRoJPeXAXpKzosAJArMQLfYsizeucA8mjTc8c2G0s+LjIrNimtTTfrJhFYtLmx3pr40yth1ma7zARt3WeT+8EEkC3YbVSOz185lJR86jeER/zR175D7EGCpYjZkqZNltGU=
-WMaMhzIb0LlIU5Jq+aV1ldIVY1B9Mw/7YmViDqE4FpM32PCcqRSua3ZH89TbuSmf7dAXhSTQFfwt3BfJ0Sajchq4Hp1AGXpdLENFmafdBHVu0RJ1Bhq8t79SXaEoameM8bgPD2AFL79f0upT1GWJu+gLdHTb1bbLKdnsd7Zphw+pjkzfVaRcyJw7T6vqwh7s8GHK0z1IGSdPMdlfHapA0Gqrp1k/r258HFTolJn6n9Y=
-V5gIaqrCeXER69huqQOzShswn2dH7Tx88lUOw7Dp4FE=
-8/YtF0O6F15pLdNigknuuA==
-oUojnekBWKAhjrUqBbPmfA==
-Z6n6KB0e2GVU1+YBwhVnigraFFa1L5Zk7xs4rj0zoaTomASmSU2aSIGQPERSkpaw
-VDfRqQXLZGAMJdZJRMXNuGkDAWX/uIksLxPnR+7neQE=
-p4I24NZTDtzNi/VzM7ZsLXVKE1axtPOIcbDGcHJQkCeWlz5K9PSFWv/77pTh5i1pU6Q7irJmwSW87oIi0lyLRQ==
-X9b3WQFpBexv6rD5/Pz4vUfTxxE7g3lEhspSg2m5BrWdtGQkADObWzqvrMJi7f19oV5qSwHgpi+mr/2/+jW/lgbv5DVYHlgzaulMOEVvTg0OvRdynD0CkCc/gKBK7oAx6gfpkxqB+tvlcXqSRwqdial1ygkNtDwTHcYWwdtI/yw=
-Jq50X2Q/k+FF4C652hJv/mp4ebzmhDvTwCNN+LO23yI=
-TdmXbIlYSQ7Tn6oDXL1eBQ==
-LWBNP+Z18RaaxN7s38ghyw==
-XxpypmR0ax4ZVPaBbTl03h0WMLn1K5VmJAu9ML1k6WYgfoQuqMI9WkNBZgy/Fqj4
-Wmu6Zwznsng5FcdjDvf4Lf2rhZ8q7/SbjWyXfLJacbQ=
-V2KQx59HDkx365/YC4btB2Zv8ZJ8ZivK+d8oWPYrRCAOC+64x0DMXZq+fMn/7+f/Ab1ys0DJgFHB+lmz1SDclw==
-eqWQ6jc+UJqApRbMP5A7qd5qnBk/l5TOi8VHE6PMkm0LI+dumRyrBdFTjquYq5xL6H8vWaUzBCjMkc7D7mBambmfwnsPms3NfAvMjeIuB/EzOCjZldzW1ZAnMrh1EDFc1v1iRHngoarzDsLd0HpPxxR83m7gykmuZNAl2wE6iNc=
-j08gh4gwdqZsMZJ6P3rgGepSB53fCGohTM9VR2Qfd70=
-fwXP6+2Vt1ro/pUP/uw7mw==
-PlVIMttcgh7QrHC/V8nSxQ==
-KkqdDiu3Gx/CqGXDOg2vELymoqyOumAQMOewzkLqqEzAW1Yengx6WRRq28iSv+no
-yVyJDMalxk40qyXoe158x9KGYuH3v9p4JkKWtI82X24=
-dXq0ZFBITN1y7pCHDlOMz2CmWX8a7MYnvup4I3LpFZ/b4ytT3sN2L+ETJZ5EJKu2cL4k3NSrfNnFiXqqW5Efog==
-icUpTwaKL4yw59WXLCNfe09ZceICQOqX+RSgysBnKAUKiuiqO/SogdPgGk0F9WZoK8hPpeWtZh2QgHXykX5KHZgxp+SyGPHmZ7C2QhIdqVq1RQfl5GQThOfbrCWrjRrKgOqAcwMdJe5nxL0Lgdr7Y3VajViR9jIT8sIZp+OgNmpHOEWoR496Zo0WC16R5LdX
-hv6vq8ohXib8qp3YOLTVEnPwDnizv7xuzXMZi2LM/Po=
-OMrpyo0lQBDHTbB06dD3/w==
-OnqX9oSxE40nk4/N4T93wA==
-bmpMmviP7NoXv8YFAjRudZ8ZGHzNO696BzAwajnfQMBGBBvbxbPf918VQEpbrDEmzNiTmm2zvg5t+QG8ILVb4mCTFJw5R50xG1OrsPnup15Qfo8ija5nCnU3SXx6pEBv
-k2bgFqTg4TAk+0euIX4LuiUYkMV2o49P3JyQ0QFw2NcKPMJ7wBncCImpyYpZO3xJThIlP2Clh4eVFKt5DUjAlW47zNg7pbeTtnqyQU+ltIoyNrv0I9bzcRRVDxIRmbUu
-gnEAvijVOvweqUUqZ3voHg==
-GxTzZmXQJdOr+Zv9SqW4NQ==
-alFHGGtIWLtYH97lvzqR5kN6Q+RNFkyPhPT6xDN5GWp/TQW3PcRPy/GJzOLQe1yn
-1hfqzQegpbHj6WqN29Tl0Y9a/nEMEDg9pU9Ya2W62yligQ/CVL8zOV2W6NjWWubdblnnhtrypq9nhpyEDDokYQ==
-avhCFdo25c6xOFN5Fk6VvWqKzC7q2LIizQN8srbBqrAgNAupFJ7ydsl8bl+BzcNIN7FCyxY/cncQqu+9gypZKMp6iDN9qtyeZT8dUS+xlUY=
-9i1Ue5vwLkShxEHdKdYGSpbu2j0feMs30Zh4JNLfP78=
-iwpkK6tzNhlmFZLxLoBtu6+omKvZl+Lb13vJRA8S5uDd2C95GkfWcM6Lva4cCwGq
-HIPp4Os5hLN3GH1j4V1ZGw==
-37Et2SieTaELu4hFd03wAA==
-dq9PaamQtECYBrV0Nxn1zA==
-S7MhW9MKPRUuSe63VQHbf/VVyEETICg0k45+105aVIw=
-tWPGZHmCn4gFsHi/67GbT07pbGrVdopThM0FWgmJuq4=
-SGvnmUXKz3aVZeeMogVz+T2tv4FTyXiSWL0g6aLLYZQ=
-C2W2UaKzzi12WE/sFOGcWKWdty8IwqNwSkrZ0MOuOmA=
-II2hFptVD61opGoA94nW4g==
-wGwaQE9zCIDbTtzb8HWHww==
-BRtrCUYWjz2IMDrE5RU4TRuXNobjh8HN2z23Kfzmdoo=
-IiiexOCfZpnUBp6Pwbi+7NZ7RL0r0UsaMHGqsF2nKi+ZzdPjw8hTQc+7om/03DD0
-/Ud3PAQJdavm1sToKg0HqD007P2FnRr4HzUMVVSTM9U=
-kMutU4k/UyLaTdxdcB+VkaVr6q9FKR+Oc06g7LtIGe4=
-XVzj4D9F2JRNlPf+UPDYDA==
+if not UIWindow then dofile 'uiwindow' end
+
+-- @docclass
+UIMessageBox = extends(UIWindow, "UIMessageBox")
+
+-- messagebox cannot be created from otui files
+UIMessageBox.create = nil
+
+function UIMessageBox.display(title, message, buttons, onEnterCallback, onEscapeCallback)
+  local messageBox = UIMessageBox.internalCreate()
+  rootWidget:addChild(messageBox)
+
+  messageBox:setStyle('MainWindow')
+  messageBox:setText(title)
+
+  local messageLabel = g_ui.createWidget('MessageBoxLabel', messageBox)
+  messageLabel:setText(message)
+
+  local buttonsWidth = 0
+  local buttonsHeight = 0
+
+  local anchor = AnchorRight
+  if buttons.anchor then anchor = buttons.anchor end
+
+  local buttonHolder = g_ui.createWidget('MessageBoxButtonHolder', messageBox)
+  buttonHolder:addAnchor(anchor, 'parent', anchor)
+
+  for i=1,#buttons do
+    local button = messageBox:addButton(buttons[i].text, buttons[i].callback)
+    if i == 1 then
+      button:setMarginLeft(0)
+      button:addAnchor(AnchorBottom, 'parent', AnchorBottom)
+      button:addAnchor(AnchorLeft, 'parent', AnchorLeft)
+      buttonsHeight = button:getHeight()
+    else
+      button:addAnchor(AnchorBottom, 'prev', AnchorBottom)
+      button:addAnchor(AnchorLeft, 'prev', AnchorRight)
+    end
+    buttonsWidth = buttonsWidth + button:getWidth() + button:getMarginLeft()
+  end
+
+  buttonHolder:setWidth(buttonsWidth)
+  buttonHolder:setHeight(buttonsHeight)
+
+  if onEnterCallback then connect(messageBox, { onEnter = onEnterCallback }) end
+  if onEscapeCallback then connect(messageBox, { onEscape = onEscapeCallback }) end
+
+  messageBox:setWidth(math.max(messageLabel:getWidth(), messageBox:getTextSize().width, buttonHolder:getWidth()) + messageBox:getPaddingLeft() + messageBox:getPaddingRight())
+  messageBox:setHeight(messageLabel:getHeight() + messageBox:getPaddingTop() + messageBox:getPaddingBottom() + buttonHolder:getHeight() + buttonHolder:getMarginTop())
+  return messageBox
+end
+
+function displayInfoBox(title, message)
+  local messageBox
+  local defaultCallback = function() messageBox:ok() end
+  messageBox = UIMessageBox.display(title, message, {{text='Ok', callback=defaultCallback}}, defaultCallback, defaultCallback)
+  return messageBox
+end
+
+function displayErrorBox(title, message)
+  local messageBox
+  local defaultCallback = function() messageBox:ok() end
+  messageBox = UIMessageBox.display(title, message, {{text='Ok', callback=defaultCallback}}, defaultCallback, defaultCallback)
+  return messageBox
+end
+
+function displayCancelBox(title, message)
+  local messageBox
+  local defaultCallback = function() messageBox:cancel() end
+  messageBox = UIMessageBox.display(title, message, {{text='Cancel', callback=defaultCallback}}, defaultCallback, defaultCallback)
+  return messageBox
+end
+
+function displayGeneralBox(title, message, buttons, onEnterCallback, onEscapeCallback)
+  return UIMessageBox.display(title, message, buttons, onEnterCallback, onEscapeCallback)
+end
+
+function UIMessageBox:addButton(text, callback)
+  local buttonHolder = self:getChildById('buttonHolder')
+  local button = g_ui.createWidget('MessageBoxButton', buttonHolder)
+  button:setText(text)
+  connect(button, { onClick = callback })
+  return button
+end
+
+function UIMessageBox:ok()
+  signalcall(self.onOk, self)
+  self.onOk = nil
+  self:destroy()
+end
+
+function UIMessageBox:cancel()
+  signalcall(self.onCancel, self)
+  self.onCancel = nil
+  self:destroy()
+end

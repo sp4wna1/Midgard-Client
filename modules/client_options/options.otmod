@@ -1,9 +1,9 @@
-92gLUDUwzwa6qltXdfHwMQ==
-aBRvbdM+8q8nB7PPmZopswkO+HoSTuC2oxczT3b4Ayo=
-LteSWmMDZuTm/ykszQpNV6xlMd7gQqKs+QcUk3OAMXWqvbasiDyZZIPbGl/cBMwf
-46gSLSXn5NFk/TFJBGqAvLAFfiyfjDlHddlR7BwTBYg=
-6k4xOWIgkTvxMYNZ1hi0OX0CVpEQIZIfoZ7un6zerFVmKnwnv/g/0X4XVf/yva5n
-IYDlRJcrl0vFFDRyWxc/WYluxdmQKZi4I2oeQCB/VmU=
-xtt94B+Uikj5CXxzDAiSAUheQqc2ajGQiNUXpTCoDqs=
-kE5sr5Jyxssollm+6QEhe2F5xNOL5Blbvk7H/L1+nYQ=
-iZZq2VhMh/6y1OUrzbrdI/XKdXZwjd4z2X5+beXYrBw=
+Module
+  name: client_options
+  description: Create the options window
+  author: edubart, BeniS
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ options ]
+  @onLoad: init()
+  @onUnload: terminate()

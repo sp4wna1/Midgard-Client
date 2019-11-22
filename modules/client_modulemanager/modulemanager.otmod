@@ -1,10 +1,10 @@
-92gLUDUwzwa6qltXdfHwMQ==
-Bo5JxIU32uihmwxJoIhdaERhoG8y2dpdoh178pudVmw=
-xVAddv4Skmb5N48SmpB886uo6uAv2vmsWChlGmBb5m6WV9EZJwDqGFbye259IVo5
-NsRq07GzOPxHaKYEe+jQroQHgYqIB1L5DWL7dwtyZJU=
-FAFUNnxUvWT9YdhPHxwgqKnB9kIZXXqOPw+sWMhBD1IYTAMhy0KV/bGcMxGxYQnF
-KYHar3Qy2iqV9om0P7SGa7VLxScx7ujt3UQHJSNXtwI=
-7FEZ2yMvWUjc8xQFTXpmTerbaXTAaFkuBUJU4kHv/qI=
-cFvTqm1FauJs3mk+3dBvbueJj+pqaYvJVAjixdUgkSfajW++cpcDTFMf6g4nFHyE
-VI++W9xWH9NGdQgr6/UwDL0WseAR7QUpu/oF4KacH9M=
-+cxWOpzcgDS+vELHjbL1/tcU8gIJpRX3TSt8DObyN3o=
+Module
+  name: client_modulemanager
+  description: Manage other modules
+  author: edubart
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ modulemanager ]
+  dependencies: [ client_topmenu ]
+  @onLoad: init()
+  @onUnload: terminate()

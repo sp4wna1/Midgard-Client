@@ -1,35 +1,35 @@
-K/W6msufR6cS2J/vgJdu3jCxaP8KPVjn+AjxRSkK88E=
-ZEbfLQYDrJosq+u979Rvyg==
-zjNoA/l8XLFQb9p4SFM2rQ==
-2vLzj0LtIImUgQxu/7sVymJbb0ku5mBSXf22w/z6lP4=
-a+QCIRIynyEYNet7bmFF5ufBUXwNhPufQ0Cp/GC148g=
-YZeMFU/VJgkin5L3qvGNLzonkEFKDFlaca8JAS5XzZA=
-YG2qy2tk8tZW0LDcz4M9oQ==
-PP9wKlYKyW26INBgrbxPP5En0pbq8+hRXXar5kze8Uk=
-WFNRIGFNH82bQUnSftZDPzQl07MdIYKGvWdTBqSO098=
-vgF3ikseWn1z/n4bE+gTjwmymdLGSAARbXZ2SjHjyOs=
-JaRPL/tWHBAIxMDQwZZMkzqtVxCgaV23vsCubYtHQA6Ye3eroNmPKDkatGMdK+Qy
-1LcKvEKSKbBxOrqGDiLDiw==
-sAOwofewGyznn/25S9BCEKgYwAQ3r+LhosgPi7Vzp7PGjrLFikQLOTX96yYEZZao
-FFb3HrNiBQcw/selXS3Cqg==
-t7mjXRz6eBLDATaxDq7/Cg==
-l1tihP5c4mp2n93FVJ1vRA==
-dwVTEvF5HRWlSa19c3lpwj+1tZvSCYtUsBjeYUeXm08=
-ja8jQnFKOC++jO+VhhwerwaNOLDWPfirAlrAMimhudh59Hq3q7t+GTfV5+5AIAiD1H9btM3kp+LbR/M5oabx0g==
-ePNuNIVpRCgp/aoBxdUK8A==
-xYwm9Wz/ROn2JJ6+e1T+1w==
-cO2G4BoI7brDZDFnLzRTnh8fqAeyDO/w3EGpzXHulok=
-Nwwq+jsXnp6oNnloh/BS8p/I9nPN2v+0AYeq+VtTgI9B2oKGBxkuQFwqBycXdM02UE3hs1JPtlcTDVppFYzSeg==
-zcXS/ZxEyR8IufEZyiqfIg==
-zvllg11dFuNTjQlHGNiDgQ==
-Vg35YHdt69fZvXPOkuhv+wKq0KW7jee98igv4eRsk7s=
-sA2Y5qLqea7mzxe67S+ZGqBkD7puUtSHOmSKTSG7rn64W3nOAjtGI872ss8zO//ughURB+TPHGK9HBlYf/s6IQ==
-CwQuOp3K+h58whG9+JJiPA==
-1//DcycGHfvTDR+Hpl4lcA==
-+4/naQmOqYloCCDw1/0P2hMyLnSardfpq4k+WArQ9SM=
-mW2NFpBaH4g+13mDJcfUUMr+oN5F3wm46IcKTBseAw57BpZV8LnuAre+RKlDgQpctpRH5buQyVERVCO0bxEM4g==
-+x3IE4QS0xmhqXD81BRz2A==
-agieIIlhqxdtLbq4lqMkvQ==
-xNXC51JKlXPRww+Yqpf+H+AoUlXN7g63+x1fjUZYfE4=
-Kc+Oxsz4dmV+pb94zXRGbEwtvSl3SRA4/4LDTaverYFE9M9m7fLZIEa4tPnUcL+r3M/WEnAyQ2C2cw+zuP1EeA==
-r/EAeXWk7QYcGxKNYEhFHA==
+-- @docclass math
+
+local U8  = 2^8
+local U16 = 2^16
+local U32 = 2^32
+local U64 = 2^64
+
+function math.round(num, idp)
+  local mult = 10^(idp or 0)
+  if num >= 0 then
+    return math.floor(num * mult + 0.5) / mult
+  else
+    return math.ceil(num * mult - 0.5) / mult
+  end
+end
+
+function math.isu8(num)
+  return math.isinteger(num) and num >= 0 and num < U8
+end
+
+function math.isu16(num)
+  return math.isinteger(num) and num >= U8 and num < U16
+end
+
+function math.isu32(num)
+  return math.isinteger(num) and num >= U16 and num < U32
+end
+
+function math.isu64(num)
+  return math.isinteger(num) and num >= U32 and num < U64
+end
+
+function math.isinteger(num)
+  return ((type(num) == 'number') and (num == math.floor(num)))
+end

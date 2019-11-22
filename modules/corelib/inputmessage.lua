@@ -1,51 +1,51 @@
-1jtRs7P50w7zV6jf3aCpX5Mls1eZu7iYNRMwoyEM+oc=
-c3AF3iGxOuH75JXeta7JU3JEeMoOZBj67Bl4Df5oNpA=
-aLVslK2wGzkZadYzrd2WcCHHYydt4+aS6wDjWx8upPBRRSAerb8EY3b+Wbie/Fn6DSd9U+p34zQF3m1Ic4tbfA==
-83cHlnxM/wRP5aXpvjqN5s3KIBfVeEXrRluut6QrCWMe+QPF7jquo1NMg/p+wWVj
-Z8z+I+vkeSTUVN6aIbCgPvXibLQOznVNOHAQcnBzsInSFTS6OJ67dE+nJAhtVAySWQEeANGXuICpODYR031mMQ==
-S1f9I8wFrU7sKkOwqYAtvgh8e9TCgAeMVdxV86f2fDs=
-vpIpM9cjoUcOXhqxITtMkWbbJu11SPaC2jNL6NhlVOqPW6kx6FF9vnHuO85PGjXcUCGUXGG5bZsoqvAwhrnZQQ==
-K0cmLFAK4BxD9xgNeEBhuDU3BSiM0tOa7n+PITMVb9E=
-7gj7FNSS+d4tE+igFSPfIuN0ztkBG8LoX2OsIcjjik32cwADvOHVO/mj7mTPHQCD/2JB87KK0lNqdNKskf3t9A==
-NQlhWmUoUd/xhGTDPv/QEnKkXjy5h9hTpcTmxHiSvUQ=
-G1whDqiUNtHFoAIT1l/b38y8B0H1Bd+QEeUasMDGJn7Pq0SZZzXszfESx2DFYz70lp5dR+PtfqYY2hJBc9rQ/A==
-8pVMjnzY6ZVsKOZpzIoMXJER/gSHNqwhg1SLdnjpEFs=
-oDMIpriGhaPeIfg73WQfyx9PfFYJttorOMrcmJ0WNgJbM25wAacI+VVzTULPJJERE50MzSx6ZXpDIK1c/NVR0g==
-NV6Gr3OCZ10jmjWE/J1mBDt6K1VSayOnLlwN6CCSxAhRT3KmguzUCWlfToEq0nQ1
-D8Uniyl/jFXB6JVoXfldZjXkBTh/WDzBRtVHQndceF1K+l/NI4GeThKUEQOlK4RVkogMJeRefZo4fi82+3DFXQ==
-vWENGS83DdGyEe4uwCT+sZ7S/TDClBbo5b7A+qpd35k=
-3/fxBHzzQCjyteu4x885ycRLLHliWVz+UPqeO5DEehhfaiUbV5rk+y2zKjvF1w9wCxjBOiQJ66qQiYWTbs9Cpg==
-km+FqczD08O03xOabWSQs9hBWRBfsv6k2LfVmSjcm1A=
-uTGXyi9T9QAdKYj/8GqhQg==
-9xmB7x+6ELgVIu8GYJ4fe+3tyeZy/4G/LufRXkWoNgqFghRIK8pGm6aY54LSVwCq
-3PvlTOceAaFEu9gL4HoZWg==
-48HRtSZGDkp+0XVGgqCOOg==
-zZ/DexQEojwExzEniNHhXg==
-e07zIWqlxpK3KHSoFG1bWw==
-SOn9fRmiVDJg81t8H/R9pXsg4Kigu57spANth9J0NcWrUxUOtxmV/9Mh4rQ4MISI
-XlaJO9PVaq9OXPtzc9oH2nepcgDfWKk83nyY+J1liEg=
-uHkG3gBa/XGQDZof7QCH25BL3z5wEBemR629sMUGkUA=
-8Sf5SwlPpt156Wm25zMI9xy27fherUJPzItZXdbYE8A=
-FMtxFxQeU2r6G3RoDFIPa5JbWoFWV1n5+7HW7AuUhMkVZq17lohCtv1CjDmFDMwO
-yElQ4+/gujq/5JQXljTqX2s8132I667ja4XEXBN2K3ho9HXLf8oCy1A+D7rJGBy7
-Mm/1lJspTXFu3yusLGW5Cb66Ll6FINWgUXyqFUSBhCc=
-DKKsoEjThiQKU0+lPo8P2Q==
-u3s60IwKK1o39R2qltS/5g==
-veNNX/C9IjJFi7nXZt5/bA==
-rGvKbUHRlolINGSbQES2QQ==
-bN8DZTCF0wj38aEBZ9rRpwIpdaQr6b29L+r+3iRxP9QO8aN3b6PcDYgrNMGg1ZA8
-aj1eEas5Aycq82UHGZNGVUbnh46wklrfGlfDxoD/tuE=
-vdnLGbY7yawMkqliXdPkuJ4ze7kll8wEQaDPOiWVams=
-qGNN6Gs4QzPtI2XihVlSY+6guYfNVp6U0SYbqQje0jg=
-P42QYUcCdcryAXs9E9fNynpor4OftZUbNE8T8ARXQtU=
-dyoPiIfgZ55HUcSH0Z1UW+0azXa2Ez56VO4J+cJmG3I=
-AmJsTxDYGgPda4zjgRxDWQ==
-I4wh4zGsWhnCkZAjtSO+Yw==
-ToJeAGPNKZBhO7fWKulyyA==
-BgHbGkTFWdUCgWQTMzJOV5z6R1/WC5IHMpWtDZRfmPQrjYCng3i2vptpgIwglK1K
-NjqiQveYvMU4s3Zk2O2DywrrvTOgyVFqfVGQLKFc6yU=
-10xw7Rwv5pNUoA5RDYbaroTVvW90ZDyXkjJ6Ea/+rEw=
-KBut5WIEZgbgEBHRgzmYnUAXmRRXzOeSd+0WN6tpl4M=
-Vh0p8GoK5fq10c0Gwnr4jx9j9i3FH4MUfuOGJB4/k0E=
-i7cba4g31wIIjyk+8viYUo9YGAsKHW6ZkAntKiAiCKQ=
-tTwOOJKAEznDN/yuw63UvQ==
+function InputMessage:getData()
+  local dataType = self:getU8()
+  if dataType == NetworkMessageTypes.Boolean then
+    return numbertoboolean(self:getU8())
+  elseif dataType == NetworkMessageTypes.U8 then
+    return self:getU8()
+  elseif dataType == NetworkMessageTypes.U16 then
+    return self:getU16()
+  elseif dataType == NetworkMessageTypes.U32 then
+    return self:getU32()
+  elseif dataType == NetworkMessageTypes.U64 then
+    return self:getU64()
+  elseif dataType == NetworkMessageTypes.NumberString then
+    return tonumber(self:getString())
+  elseif dataType == NetworkMessageTypes.String then
+    return self:getString()
+  elseif dataType == NetworkMessageTypes.Table then
+    return self:getTable()
+  else
+    perror('Unknown data type ' .. dataType)
+  end
+  return nil
+end
+
+function InputMessage:getTable()
+  local ret = {}
+  local size = self:getU16()
+  for i=1,size do
+    local index = self:getData()
+    local value = self:getData()
+    ret[index] = value
+  end
+  return ret
+end
+
+function InputMessage:getColor()
+  local color = {}
+  color.r = self:getU8()
+  color.g = self:getU8()
+  color.b = self:getU8()
+  color.a = self:getU8()
+  return color
+end
+
+function InputMessage:getPosition()
+  local position = {}
+  position.x = self:getU16()
+  position.y = self:getU16()
+  position.z = self:getU8()
+  return position
+end

@@ -1,13 +1,13 @@
-n+JvUrOxIM2w5XQrk3QLCQ==
-KQaIdFGEh2VTJDEcCUiKMoDQEyIRxNP4UEDTUgvIXJRBA7bn4WdYLlhn1PXxc5Dp
-bTL0sh9Lr/7uXpNrXe70Rg==
-YPEVaj6FVUQtbya7oviXnSSzyugsPfHP5dAH1TheuJU=
-J8zFs+FFL9A8lFVWH6N+Swxpb23KuvoHonSjXYDgY8JDxen0sEMHD5pWnLO2I715
-ZK+FFDvwBgy0zYg3aJMgCQ1CSknwpmfYLYF0hBqI5IQ=
-a5+lMz6E6o/xrsf5aLHHvqbMvfoQdXnSBXUd1Go6j2F6VdLmiJkIXfTe9l9h92Nx
-hr5xRVw83KcK5AYipVYp/HKOLjOLqhRdtm8lRJO2FFQ=
-q+m5VYw2/8TrwvskmYmCbw==
-sGmvD/5sb4FmlRGA3+3VSQ==
-oEjoZD7LQUixQOeavwL0CGj3kC2zjbnH6IlGEnGF7Vk=
-3ZekMtrV4aLoOQiILp6wnhfI42fgm5ZFTv1PBLnr494SoRx6uZyQ4+3mYkLGQX4G
-a+sHTKwEruqAHJ2vlJE0Fg==
+-- @docclass
+UICheckBox = extends(UIWidget, "UICheckBox")
+
+function UICheckBox.create()
+  local checkbox = UICheckBox.internalCreate()
+  checkbox:setFocusable(false)
+  checkbox:setTextAlign(AlignLeft)
+  return checkbox
+end
+
+function UICheckBox:onClick()
+  self:setChecked(not self:isChecked())
+end

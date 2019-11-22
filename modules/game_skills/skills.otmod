@@ -1,11 +1,11 @@
-92gLUDUwzwa6qltXdfHwMQ==
-Yxpw58TjR8T+7wUNZyi++h9D2GBNtloVE1Ry7pJpRoE=
-iy7cStrMP9LWrprtOyLc8Pdzukr461erqJzKw4E9r30YSZB261SUBkGupLrilZme
-ABBOPJfpas/y5oM0kCxrwlF2Pn0o+IJ0QbODTLwu7vU=
-3g7ufPEBxNpeCEXmJI4rDSjwqueCQc/9qZFFSqGQKo3bc26AVtpbDMpygN4sQX/m
-H2Nt455krg6pHi7SICE7zYdzDLfUlcFL8W60R0DSV20=
-UsPIL0eK2qn8KQAY6iTz5rz9RcJeH2PSu60aHEPm39E=
-N7aPIu2DZuQDZ+PkARfYIlQos0aNfLYONl3OjQZQpN0=
-3oE6x1Mx/wjZ140HaY/vycIpz+g4hliQDrUxCLy0IHc=
-nG7jRLSUxgm1KGI1Q9hvlw==
-xj1tSbixXKHwOVTil1H9s4rQdB+aL3JfsKKje1LHh7o=
+Module
+  name: game_skills
+  description: Manage skills window
+  author: baxnie, edubart
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ skills ]
+  @onLoad: init()
+  @onUnload: terminate()
+  dependencies:
+    - game_interface

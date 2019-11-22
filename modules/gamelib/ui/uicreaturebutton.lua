@@ -1,135 +1,135 @@
-n+JvUrOxIM2w5XQrk3QLCQ==
-gkqjpFhYZv+ZHOUCHOMmGDKz+AGGgo355Zi0Kyn6rj9QeSDS4U7G9ZBc7WfZ2TphEWBj4GA05uhOXnkMLppzBg==
-eXEy3l10Fwb03Ybg20R42g==
-5KmFDJsv5i5C6ArDvq8Prh/xrxsQQz1c7byr+Bl7Eg4=
-UsvxaUpp6V4REFYTtC2PgwbmFW+TR0DZ6AF+ANsTUuCEEVrE4luJNpIqRswu5tw3g5c32H6GZWvVkg7r2o91sw==
-ckADE8H8y8BTGZ0s9pg9DI5RvjrwrYUei7DEBq/2Am8dzgd6Cd38O4ogtLsHk5KqdrYEHNb8g98/62nrZRf2gA==
-eGxUhDTlXwhKERpfBR08gug+oT3UnhyCkd3Ze7E3wT1LXXzQNAxSivPkMJSEVdrSec/2+VT95Dc5V/PFHAqMkw==
-UEYEgvQ0gYTKR8Bko0AJrA==
-LQpJd94UAJhbzKwG2wmtEw==
-rRHFtHO9QnjITi+T/u9M46Av4nmIkm9/Tbn7SubXvKoaJi6nUcPNvgtmvFol6RlH/fyLZQPuzB5PTHsoBavBDw==
-wf6W1sAnoPJkk35VaB7r9m7pYYYu0+3XOAWhAH6az0xuY2Gmb2Q1KZbbbvxYxZ/w3GuRITm7rGIYaBpql+ZrH631ita2UvakUchxaIkwO1o=
-ixhJwcmd2OimELH6jEA97x1VL3MsHM86iIPh/Yff2YWNWzpZG8z7wC9xzRjM36jJiMImrl2hJ8bpQoV27Ht0cWCuvi0uwexOOl3SvQT7dro=
-ASDVa5LMFO9XTiNawjnMbfjSEjP60lZ4h5yZ8tD1USpfNm0KJQ9zgBOt+bFbN6aCLqXjeAcD9kRN1CJ3SGq7HZKRV3PdkA0z36TKMtnugGs=
-YIMpf1SFybX6rNDpNk8sFHmL65Bb2jpCsPTOcRGLB0jsNvPcthzqNXep3jul01dPnFA6qhuP5grP2J+p9wTjZumWfxGRDEKg5XFp4VVPogg=
-dElcOpSI0GYSPc+o+06tWOq0JDxcqeS7ceSgTPNoMptLzSwNLw/pgsjLjGIhqyemmQ6UHsE276E5DqlM8BFUtfPQtD2ZXBssft9c3FekqcQ=
-LG7mTnavQq8ix62GkROZ/zMsEeUDXpjZRtlmYv98PnZPtX+GYbbZekNIlHwfEX6iN5pvbxmuolL2B5u6YMPgtJRuYrHc1hea3cnLkfo1wKE=
-VWvRNoBsDuvzqiQrzWXfaA==
-wet9LiSWSiH88I/RueB89786OvBRC62cMop2CQfuniguw0IBdzZS62NhNiBRNZEK
-si8o1ump1DPLUnhXEqUbdcJ7QKI33U1YZ0vfnqK3sWNZKKh2WTpmBxcIoWSdCEYf5H5Kw8poj9mWDTw+XOgIsA==
-IPJ2eO+D+cZLzLVGW8KdCSQ+7bKYrX2goPqAL7d2tyE=
-6xwujTjBYz0h2izgkQRqSXVrmvBto+SWrLEvScA+jkk=
-5NCsyeZ0uuhEyJmPFDQKywGyRpd4zUI4+zq0hEaZ9Uk=
-1/OGz6a739Mt85B7fznK4lLZChuEJdTvzyrQK5fb9Fk=
-/Q+cXbO19apLpHRO4jdLkZb90VK/9Qs4JoRbw6Eunb0=
-C8cqcjg4hRV4xnXwEU2c5w==
-bmntZCZcNUehO15n4GHjww==
-RCCLeX6WMKNqO3DgOnu5/g==
-+GvwQdhFzvIXmcjnHU8rpnzTeMJbvAV4YBcPSyE9FwzuYxrYx/JtlaJII/0Dv/N4
-5ENOIR68caOCmt6Oa2zrUg43LCIduuiR7aYKKNXrcV8=
-rKTjMdZrVe9YvbogdoRodg==
-Wd1JZy5F2GPEWRBmi3PNmQ==
-BuPDdAGahVJ2lG+QjeC7Sx+RtZ1mAVwTjH+lYnIAaM57/rj2iTvyIoNH8Jr7z4vB
-MEQdOTtTehONRGRnDvLYloUr2MJt3nndRPe6LUbGOkg=
-4Q/6wEN9bKxd2XXOgUSGmw==
-L0IvsuGcfqorUprSSrYMbg==
-2F/UnS2Jr13kPwDndkvz00r6ur680tqWrrdbxBIV2hDAzIh5n2G+nrKU9AvcI1lI
-nmp6YE7YUzLs5IU/4khelnFXbGcz0UIbMWB9JpmkI5njxUw5QJ7ps228bQgXRtnh
-08609zQzkC09YXMAvv22Hg==
-39O1GL1Psl0fl1PCF3M1dQ==
-6BBr/6S+NOPwxB0wUArWfm0gDsl8PpLdyvPVHGjx9+uXpHiXMaZ0PmhTbYMWKcGj
-8k19HwtDeooWZz+VQzKkwDPBgU2PgpSXZw4e0mnkggs=
-QhnlSV9W8GTDtVWZ/4ZJrQ==
-f8dJ3Jl7WT5zJF8f/AfMJIuz9CyRhdhx9qusib+7FUPTbjCMRh3B0CjiggTSvs39NwoA8/1Uy8XN3DnD6kw3Jg==
-DnA/fl8Uq37SBfVVxcg6CrBYzlER4tUo41IQq4agyjldiA+lj0Ccv/l/eawtJNsJQ3CH0PwL/XJ+cx2nGixqWw==
-Z2txQUC86Rb3Iz1tR3bQbCERmHE0USMi1m7Q8hjN1km2gVGbBK0TCnG/FwEqVSEKo3s72ROM0s7gkFc9n+b4Lg==
-3KreRDBWAHlJ1a/3rM8K6g==
-EIuzAQrLyt0CBeA+Jrz3qZguNNvWOs/o5Ov/gh385SIiXST0eDdO+8VpNp8ppjZW
-+yO9CcPJCuo1QIdbLs8+6mu0a3eBpB0rhspWhV/LoVlmKJH5JJ6tPx/TZz51C8RG
-/OrsmY498yb+Q2xyWLYL+A==
-wggzHpviHtpW/CSwucEPOfupADGX8/p7FK+Dm1bwr93tXfmNI3QSvxyYnWLl/qSWvPdeCMayYKtB7DMReaSkycaVb219hXbp6PkzLS4K7OA=
-qpAVTjPQ4xjoSKA0Z2b+flwSOYEhS2Kcu8zmBenHmXoYwa7x717VVFT1Yie8DjNnXiUyhA5YFA1box5c95FSiw==
-C8TDJxDz8EPGCI3bYA5jcw==
-SJj8BJEz08IW5ua3fuxwbuRPGECrdWTiDtQR5TknCFBjNMYK/FA0yPg85fsU7RAq
-LOIdyYBeaAqSCCvdtDU77MDe/3AijBhRyYEU4vkcFtU/Mt29ambKEWXspqsAmtEr
-vxjXfMAXWV6SptsRLwX8ZA==
-9LZp7WmuBoghTscT1O/ppg==
-3Owh3WdrEJc+m7loEuFhhyYfwQUyC4GL/N3PeczYvyhp0pdHUV6wKAG45PkblAZy
-O/3dHYZtta/Ew4ubJoKca3DWtZw78n/N/8BjjNWOfgiooWM40iDDA2MTpmu1KWy+
-Tdg5pIP2FIIvd2YnXN9TWmnZqSsG5kDZZk7jNn/uZ2I=
-cGkICBauom1uu9hQyTFE2vAl6Tuj1XIYgmRh4FN///OGBqtltfAiZGUri8z3DJVq
-RSuSHCmC9HGIOm/5vVE/foVo25pWB/1TD3dfB3FD2K4=
-CuNXDHH4tSiA/woe1+v4fS60w+LBzJbPZZXv+5yMQjKkgPaisOXVsmhHndN8tOAH
-yCfUn2dV9NSZkpB+IIYaFA==
-C+lbVM8kno/b34mRW/azZrgeO+LMNMIvAXZYfnDrqhTq1Ji4iN3aRdOBHijwm2H+dn38Kp/l+u4xETI710CzGQ==
-1myKFTkGiAp9AfPAlt9Qdg==
-fpDjQLhQiMD8wmjMMSMiAfjtoxWXdWgdv+/G6DviSkvJ1/pMjGOhqXAe4B7OFzBW8Bpcb53XYNOg+lCbssSKrw==
-CJzGdg+AZvMCzAEeMAmFXvaPqB8rNoG2jROpIX4yxojybTVDyRgEbwf/mnICzB69
-cdxifhb3Huwjxtkkky7DjDj1fUGPvSvEpXrd9lwLN34zF8ermeZkSTb7Ql3823+vHi0Rtwooq3ygMvEoZN7hUg==
-aveGUGSampDVBB7cUs9XHiaEaXT5frqjbyn1tccUBBy1l55Olb703UnJxj3dMzoUYp0QnvChrScS8J5mMjlkKw==
-BA/0CoYLr/6wMJc1RJ7xrHW7R5RgVq6W+R+Y3IT1LRF9hTgnLCf4YrCE6dSy1Pdd
-0vN5pCCESeiGeQr9zKlUeA==
-pA+SiQGkIrBEnPnF/Z3LvA/0a3IHVYt6bFwpOSIzjlME0c0NR2uwv3d3Inq8Ako4
-M22SAsdmkoO8NUhlQX2rYj9vIAM97ht3fedOhJhTl0PqFKZmjciMlZWrs8lgmsDqGAl9sw4rPktDRG00kdO5WA==
-neoH+v7naBwgoe/7Mq78IWC8ih6Yt6pgo7ci5okqQD0e1aei11F8y0XJ5IR1Wti5
-dRKa4uig8wactUsEofsREw==
-ypnCC8cbXsyUcTSJE0778Q==
-z0/3mSkPFPfJn7ffeIt7lg==
-ZrHnyu8KbR0UwGIHtaZgRcwdV6YPk//iBHGElf9C3qRJh02prKS0Ykrv1NylrpH8
-uiK/GbxdLjnJLx6z77qwvn0uWIOo3fCyH0up3fGtmOw=
-IMs7qQ9INkq/LHBD1tm4Yg==
-wfNBEGbuUeTZLjPGz5yZ1Q==
-LpC4xY4d8tL3t3z0T4X4VHKayYTmSewwAd+4jMOuLORsOUrmLwl+vROFv9q7WWW7gnu4jTFWFES8qRb2OLDfgQ==
-upXtKxUt5di+7hl0ubsceyKcCNHez6BquhGlvWIU9RocvUzqugfBz9LsAiOTBRIgz8dAz+EAyTGv1g3NpAZ+DA==
-rMbFnW4UsOUf9hdzcCeEZxzGOqJHhCf9ngXf2h36byVmph6+eEdjiZN/86aeaPcl0r62pZHgV/2Kei0116u3Dw==
-ZhBLqYDG5IiWI2P6uQQ/xg==
-TKC9qWjR1kLdPMdh0Q35pYCHIXojpH4bX5nwUn15lcg=
-PMyfv+Q8GCA3xUdPsSOgrLE9nUb0isLBwgZQcPzStOha1ia8oOcjj9I0jsbp8Ma18570mJwt9zeqh+gB47bfXA==
-twBjH3ScN/ZNH/XN3CYrGleC9qwtPk4diUK2IGPxV8xpvJj4bwvwMgI4qeAl2A8CdY/hSD+oZNYU3nifu32LuQ==
-PjMjCz4rQmp1aSpjeoLKvO3Y8A2zbHu7jbL2an7P/IxiMJaFdfhkNPhRcE3bF+W4
-4O/1BIHy48fSu9MP6RNl1o6YpW/KCcpFwQmrzbw2N2xPSbcxQyl/sUZierD91ncU
-Y5E6mWx2o1jQwqhKMuk0oA==
-/QqjONjWk1h7ac+Xk9iLmuWcOslJmB0Hu2NtwoepZu0=
-1pBJqEkieSazmhewvbqwnwYCquY/fV8z+pmrkT1n6JX5gIzIdKgPrq/o/N5PEseXs4DoNP6Bm01KjKgBpzqnEw==
-16KxOpaIieGzYockyrenEpOtLgZPA+6kQQMDgGfx/8e+kXo6Pjtyd+s3tSGYsXky
-QD2uc9TGDqDGy2PAU/xMAw==
-a5Z3tJUAYiDkWzSO6+BNFA==
-mf54Mmoa+w4nMAqP8tKrrA==
-2jIirFLUfnFe9nbfFSIBlw==
-fCVRNFY7f9YWPVZaO8xgIHMoIg+7DTJ8bNzKuLP0qZlVI6L7nlGKjyVFnsoOPbs82+uGj+pia1oqlqgMT9NBOg==
-w0XTC2/1ikUk4N+jMbY1gw4YAKpCkeFFAXCmLtq3CeY=
-MUKVQXL1nMi4IubOyMMONw==
-c8FYeWrIELhqu7Q0/p/7SQ==
-vBK81M++DoTADdoHPOEfYMNdjkjMwcChxttx48+GRWbrTGMc1JRlYxd7DYchkbq4IW9buPowuyq6SkjVdmEeUQ==
-zWDQXAF0HkNkBU73zsh3zlTF+VPTjLhkJTTGPPpBx1UXGqRxS/Ku0Q7AIvr+77abZ2idre/iT9B7F5ulKzWTtA==
-BwK61z1ska+zmGTSJX7+2WzGa1bgxFJSGQuhe6ZcIOeQ5GtjWtbR2wQB8pvHMPBke0rRUYLJ6k5d/oBdeuJGog==
-gSdLwI16S3kjyDpJj6IvFg==
-vVjDve6HiiY3+ySq+Okvb+0VLxrQQn7/MulDGQreTcYWcNwI1Ltv1VYJRU93lEs4
-jkKy8rnjIfdsb793ltYA4lxcMM7hohu/Y+O28X6q01Rb5KifJZAl+D2gWdeOVV3/aTZ/nAE3gXkCZPkqWg951w==
-cbpj8ySlcjK/PFpKamQ1I42zbPmrYTIVIxalsrneoiQnkDO8qiXnCXgR50RVXMUzPpyOaEKTDBSxXEF4dLvN/g==
-eevmXUd7yBPnYYK8NnM58xPBbXWzCNLdhiK/Tc66aAYvCW/mUhaWaRpxVyigaqGZ
-Iav8Hzvr8/PZ7ZhGnqXfugqJpwH/nZyiHCu9qvxxbOqpkgHNn4VYBtmiWmf5ETF0
-V2NqMJSvzE25GlIdDRuF37kkIkuYiEeT9iA/TsMyB6V/a22rV1lvMtjRx54D+BjQ
-hXoxKLIbsDAsJBbF1b9VGA==
-a1qeMo2T5WckEtHv1dV3Hc6i+XzJ9U0Ekd1lSjTZPZ4=
-9QR+GrMCYU9YDXDelumk9l7wmeWYe3R/quEz6heGAydEEsgvYVCXAG1EjI3P+3d2
-Gfqv9j/pgzG4vNyYgn/FlQhfEuD49Yk+gxcS/UOa1TQabYyZK0TMxClNpXRdpM7qEkIJDE7DKM64lmWZ7i9lhA==
-em+J2GyTgFlZosH6F9K7IPa0Z0X4saSst6KQQH4gzf3BsykfmToqBr6b+ObO/iTW
-UxVKi0rptmP8oFIwiTuoww==
-N5O/CiMyAxl1wZ3FeWtNbg==
-GJ8yfoRyGLHqM79Oqc15Ig==
-UDXY9GndbVdEv+BuCRALUg==
-sV2/bu9csNnoejbkrppzUvVPzTEgvYwhx8WX1DBOBdr1M2zDsq6SZZ8+S24GT5O4HcZOZIhj91WwTDn6LXj0mg==
-wWHZEOGyUyBE62Gc02q5qUaXfR9f0s8zKApogJCKOS+WiFjoBiS/7lWVFNCXY/Olwd9DWhd7adFcvd0J6Cpx5w==
-elZOd7QnNAQq8Wo5jM8W0Hpr4NkG2Jz3EEPa6S8yPec7w+AJZgGOuaTQ9gNPKOcp
-yNSG+vhalJvM3roP0Bsk5A==
-NCPspTuqFWw9qjXCwN9PfA==
-PcZYkugZtBlW2ZTTyuKBTTZgzLEuo8GzK+y8k5vwDFm+JWALFiQaOjXk+VrN49rb
-Zj2vhsb5eZ32WBJpFL2MLcPS8Z9yL9jfT9lHo+fx57NxJFFpXa/l+r/yA5OuOY1x
-JKSxzTBLngNypxxQWjUbTtPWniTLJgvHoyE1KpyevBA=
-iLUHER8JLfPPCiwcGO/9Ew==
-pb+PTpXjSwMAKJexhueIYA==
-rQuI+iQBE1kIAS4e3t2tgw==
-mLo/p1Vjw46KJp/SCQFAfA==
-+R/W8oxbc7BaFC8WUwAXM82ByqdN2Wf1tisa1cHSczmY0Lsex/Kb/mLCgQwlsipi
-RvpdJreSEAXucYrZrUiUGg==
+-- @docclass
+UICreatureButton = extends(UIWidget, "UICreatureButton")
+
+local CreatureButtonColors = {
+  onIdle = {notHovered = '#888888', hovered = '#FFFFFF' },
+  onTargeted = {notHovered = '#FF0000', hovered = '#FF8888' },
+  onFollowed = {notHovered = '#00FF00', hovered = '#88FF88' }
+}
+
+local LifeBarColors = {} -- Must be sorted by percentAbove
+table.insert(LifeBarColors, {percentAbove = 92, color = '#00BC00' } )
+table.insert(LifeBarColors, {percentAbove = 60, color = '#50A150' } )
+table.insert(LifeBarColors, {percentAbove = 30, color = '#A1A100' } )
+table.insert(LifeBarColors, {percentAbove = 8, color = '#BF0A0A' } )
+table.insert(LifeBarColors, {percentAbove = 3, color = '#910F0F' } )
+table.insert(LifeBarColors, {percentAbove = -1, color = '#850C0C' } )
+
+function UICreatureButton.create()
+  local button = UICreatureButton.internalCreate()
+  button:setFocusable(false)
+  button.creature = nil
+  button.isHovered = false
+  button.isTarget = false
+  button.isFollowed = false
+  return button
+end
+
+function UICreatureButton:setCreature(creature)
+    self.creature = creature
+end
+
+function UICreatureButton:getCreature()
+  return self.creature
+end
+
+function UICreatureButton:getCreatureId()
+    return self.creature:getId()
+end
+
+function UICreatureButton:setup(creature)
+  self.creature = creature
+
+  local creatureWidget = self:getChildById('creature')
+  local labelWidget = self:getChildById('label')
+  local lifeBarWidget = self:getChildById('lifeBar')
+
+  labelWidget:setText(creature:getName())
+  creatureWidget:setCreature(creature)
+
+  self:setId('CreatureButton_' .. creature:getName():gsub('%s','_'))
+  self:setLifeBarPercent(creature:getHealthPercent())
+
+  self:updateSkull(creature:getSkull())
+  self:updateEmblem(creature:getEmblem())
+end
+
+function UICreatureButton:update()
+  local color = CreatureButtonColors.onIdle
+  if self.isTarget then
+    color = CreatureButtonColors.onTargeted
+  elseif self.isFollowed then
+    color = CreatureButtonColors.onFollowed
+  end
+  color = self.isHovered and color.hovered or color.notHovered
+
+  if self.isHovered or self.isTarget or self.isFollowed then
+    self.creature:showStaticSquare(color)
+    self:getChildById('creature'):setBorderWidth(1)
+    self:getChildById('creature'):setBorderColor(color)
+    self:getChildById('label'):setColor(color)
+  else
+    self.creature:hideStaticSquare()
+    self:getChildById('creature'):setBorderWidth(0)
+    self:getChildById('label'):setColor(color)
+  end
+end
+
+function UICreatureButton:updateSkull(skullId)
+  if not self.creature then
+    return
+  end
+  local skullId = skullId or self.creature:getSkull()
+  local skullWidget = self:getChildById('skull')
+  local labelWidget = self:getChildById('label')
+
+  if skullId ~= SkullNone then
+    skullWidget:setWidth(skullWidget:getHeight())
+    local imagePath = getSkullImagePath(skullId)
+    skullWidget:setImageSource(imagePath)
+    labelWidget:setMarginLeft(5)
+  else
+    skullWidget:setWidth(0)
+    if self.creature:getEmblem() == EmblemNone then
+      labelWidget:setMarginLeft(2)
+    end
+  end
+end
+
+function UICreatureButton:updateEmblem(emblemId)
+  if not self.creature then
+    return
+  end
+  local emblemId = emblemId or self.creature:getEmblem()
+  local emblemWidget = self:getChildById('emblem')
+  local labelWidget = self:getChildById('label')
+
+  if emblemId ~= EmblemNone then
+    emblemWidget:setWidth(emblemWidget:getHeight())
+    local imagePath = getEmblemImagePath(emblemId)
+    emblemWidget:setImageSource(imagePath)
+    emblemWidget:setMarginLeft(5)
+    labelWidget:setMarginLeft(5)
+  else
+    emblemWidget:setWidth(0)
+    emblemWidget:setMarginLeft(0)
+    if self.creature:getSkull() == SkullNone then
+      labelWidget:setMarginLeft(2)
+    end
+  end
+end
+
+function UICreatureButton:setLifeBarPercent(percent)
+  local lifeBarWidget = self:getChildById('lifeBar')
+  lifeBarWidget:setPercent(percent)
+
+  local color
+  for i, v in pairs(LifeBarColors) do
+    if percent > v.percentAbove then
+      color = v.color
+      break
+    end
+  end
+
+  lifeBarWidget:setBackgroundColor(color)
+end

@@ -1,118 +1,118 @@
-T+vwjMnUAHfItXMLptKzXtgW6PRPmyB979uQ/Lq2+yw=
-3bIYZd5K4LsH6GKDxpBqKk71lW1sOQLyufyjNnftG2Q=
-tO608feGhjru4fg18MxoKQ==
-XyJXjWJVDGjlabhoViuLUA==
-DaCggfxwBHIljEelwkh0kbY1ICvs7qV1NMSb8UHijHCd7V4pgGWSnebCa7tx6LdP
-v6fe/NT6tGfNqDVyOu5oZt7D3TIrvRDcFhbaDTd0OeF8c4/2Wflh88HZ18dwAmEN
-3U+qTqmFUxzaRopcR1jOCMQ09mW5kld1MOlyd9S8jSU=
-Rtxiy0FnFoOE61h9vzWnKM1fFjxF0ByMPWLnV+9xOGSxreIlf7UT4KszfCTyVl4umnzrykj7I+XQyaCz/cWCag==
-t7ipsGIJuT1EkI/pQCk9B2pddWKEov6B5HerNG3pyFoY5WJsDTGOLpDl7fc2YevquvJ98AMxjKYA9MjrLU1mSA==
-xk1Zq8k4YEXDa9JwIYnzOAivc0xhGcF7B84GfiPdsAH26u/j2UJ74pV67f7XehG13d/0kk84LAJefYmmZA7OuAVmpb6efEoYwbdKgjee2G8/McN5xr3WsQmuuPFJtaG8HZHudRrYA/wefQbUjQRmYA==
-/sYuDB6lNKbk9GH5mjrfcY3yJ872Odo1DvpNfNby8M0=
-BmsYUsTKz8s5BHLVaYnplQ==
-lfylBBcrArykbYt1JlgEnQ==
-cFXhmRfDntCafOXdej2ABA==
-xwF9lMPerbYRXZ/uNC8NBw==
-/j95towCjKsJl3NE3QZE/5y5bMhi/oufUPSp7lQ96hxoHVTWNDjyhVE1BXcHvjeLmP6zOaDvxzmWb0PM2oHqZw==
-o+Bzzcj27mVAhWLIGuM7eg==
-FWppmTkwNLs41qPHj8THhw==
-QkVQ01ij4h901VhYZmdAbFAKbHyVDNZ4LbUu2x44ki0=
-tKU3KJzlJI2QkWXtiNQusifb8hOSHEHV1h70Yx0fT54JrlD1h/JGRirFgvdxyGxxxsLJyENS9Ahy0cQ6iBnxtjq2uX2RP30hScjRVqmLt6o=
-OWNwf2VlFPSL/64tfcO192eIg2kxoipURKLkzLtLmbzXDEuOuEbHOIYlDGbHJYVU1QdO6Uyqc5E9UvmL5IQu5w==
-R03CRG6cF1hTW1KVFZIlPrUD3h93VI1+7KTJLYqqtpA=
-VwTvYbnw5WU4RiVc8y78og==
-0ChVcfCDB4xK7kx6LKTeC4MlHekMfvKN37HfKZdXfIEwDCRtDMkGk7j+y4gdI6lh
-8chsJ3UlaqeDoRg7XKvPsKoXyyHfsLJQLVI5wludOsq5rXmzwrfl28YJ0MKks0t2
-ycq8yPJ8JGzD/phK20zphw==
-/7F1dDg0viasktmGUI5qzm4DaRTz1X/bxAYSKa7vGC7NEvopX8kQ7MfHBKrsJS8E
-BuGt60QKVEguTT2R4upLmg==
-Gw374w/xF05WDyDHi1s+BA==
-egVd2WXNMBE94emudwHAfU4CrIT9YMg6FOjE24F/1d2z4tcBAeqGeypmjdQKgSjL
-I7KDCm02hGrHuplLoVS4btdpACmuUrUEvCdAnClcei0=
-wAiqUYOjKqR5pIEKy77hsQ==
-y15yy0gwHH+XfEJJO5wpqh/Qi2X7xie3e1d4cMuMY1s=
-aI7OqkZAVp30RRkghpZKJw==
-GiN5UcaGjbLD1Kh4GtvVUw==
-Mr0sp4XXXgtHgPN1VzCW1tjalzcR+geYx/U/t/UYpanLXI9xepsj5LCSD+ui6wja
-9qmhXjL4aNUmhCeTS7egECPpM01lXgAcnfQJErMkCWqKKATNjb0rWDBHxUaurw4e
-yGqjYGbj+Z8TRRz8PDMKtXqja0wFce2QVg/zRhJLzeQ=
-CU2cenUIkmEPh1CJaw5FOg==
-k89BgwM8xYHJ8ZjrQh067g==
-+Y+0G1+55MCJQWbgcRiaPQ==
-3ZnKNAqJCk1QxsZyhgLiZW+MsawiHVlEuavyqOGJMiw=
-HOzdmRiJy1ce4rnIwTNdcp+Uol2SqXiTEThIGx0mUZ0=
-2XhgJBSTPZbwrvMG9OxBBbfOmI/lRWx894PrTG4HKI3cf1bORsbG1xTl141dGguL
-f0pCmxemOnFM48zzmNDPRelAXHr+jEi/lHgaJWQEWIc=
-uIS9RXoI9OWcj3YISxafyg==
-ek7nmu+crVOon6gABdwabg==
-Z6qHUBOpCweEtRgfDUnUhVinA2Pti8y0qxNSqpLNiAvN9mCWy1W+TXGZf0F7A3Ps
-pFA3D/Jd916r+ws7idY+D3+JThHogQagy2/sBSkBZlgnh2+pO/wk+uWRxVZpFD2N
-9nJq0AtqTcx8HH3Lpj21NA==
-T+fB+xRoM/OgkPt7vxjbfw==
-GMYvn4HsA2FSE44Z+5SWaClijKewBGo8khs1EMPJBgg/ruHy3lu16G6r2stLIv63
-vi/LrStxm00yxT8bBhenAg==
-ROIpTkAUevOQ/13t501RdnnMT91uD/DmoU0x50JqiwuiD2bxaCinfdKF1BoB8xfM
-mSG5wBUpZNtPqddTJgk9xYy6eAtUZ64pRB9LHxk0N7A=
-j5dUwfYhFY49JRpkMyvwkQ==
-3tCf9LdLoB/DY3QspRvRNlx+k8ss3DJwh8T+grQNBp10jR0z1BT2fQDUkmXQVgKP
-pGjaQRv5JmaTeBvEgMoMLSE5/dQ2dce1UB8TA18leUaZWwlYnrBok4OxxOqcG+AQ
-Np1oo7x3ZRgthHTvCeSYYe8CqigS4jFboEd6VYt3SJcoD+EX1ivfKgu/7dOYHaNN
-JmN9/uOqEZQc+unP8m2/gg==
-JyGCmgO6Z0K4/q5mMJaUzw==
-YykBeGD6nZsMrwqKrPFvq/lHEG6n5ZgR3d1haaNBqx946jZ2hzgrPPNqXeVokHwF
-2qSZVRfaYXQ7YdNBu6YuaxsPKZYGpX3gSEklduwxTmZhvnJyurhQ8Ylm32SGsePg
-Hubf5LcbHUcB0VPvJR6pTjvaoQUxsIgGNC4Ki2AoRjpREr+dj9uUzhsBWM+qSdXK
-9ZNj1gMoN8VaW62cdZfE4XGchK5NvG6UxLVOW3U+tSNCQnl5er/Fgkkn3MuL0HOt
-peREEuq/nrEkOMkOVjDS2g==
-6MYZQsF4px0NFUpOZVmr8w==
-xmT96riR6EyHc7Fvf08KzLtW/bnTzhV7AzaooOnlfCJMbBXx2D/DzLHL7LSSMR8z
-x+d4yFBJtp1yONHYTxUJqOIqKJ+VsQDPuxKJjp6AZ8tYlUAork7GufxitI5AVx9Q
-qiboJswhVKk3b0ZtDJNCBZ4ZzBcgeLcHvFOVZuXOfdD2SfPhKQVye/nmDXJYpTuJ
-m156w+bkceI6AcDyrnnMTjO47CWYw50+4uvkrZ0DwO2tG/Vkd8fBI20nl25V6gii
-kAlUygwwL3tM2jaoUeYGQIWdMFXRTnsXQBsukW+H8rxq/oN9LWJxcADMxhBd85eG
-24t0eEzbtq8kWPi+ZM9t0S9VwI39oLDqQyOrYDbacAIRD7HwucF+ykWuMWTLkAr8
-1p6TyApW2p7/uEGGQt/K1bcuC7yCn8haJRFAmKJlFvpIjC+/B/QeCAi8QV4rKMZR
-mY7RHJVFn6danq3NwO35KlNAt8NTrijzAJLJH19ypGtgNk6J8nNZGlbG9Oc2RqZL
-cPZLaZdz9rJ7X3T/6tgaj8LvLM8gZilYzEjwvvpi6h/gK0bTyMYf7AVnF684NFa9
-wOtNA+p2CaY/+plT04vCWfE7nnmuUzWuzrakoqLaRqBTWG8jDfzSNWsbIjvSVYpp
-v9UATToGQDy+ceo7YC9EnftNme8Lmqed6yefNM3+ONz9LfQ7v/yfnFJDhDpU70T/
-07qFk019g4pYNq3CsjxvNw==
-lU5ETo8x5PTiZtpKkuktyQ==
-bILnpE1do5nEEzs7eOdtBw==
-NG2qZfqhkBbAM9HrE7q58g==
-Gf46+HbvCsVmZc5JHYsg0UL5KkePo4Gp/k+CWjReravaYvCyoCwiubossaPfamRvnRtkDZYqQMH5z8OX7nqy+w==
-Bua0WPbzEF/S8K1kEUkzkPd6KR/qX99ZXqaU8KWVcfvUJA0u7VQAwuu4cADDykrEoVlPSqnCHOKxJLV8gWwcyA==
-MZY4v3/I+V1LEyctSXOrwin0EeSWTcP/SAXbA5gozP4=
-yt0nRFlFpA9Ezn0VrwWneg==
-oBhm88CrEBdfGelcuh/axln8M/brMSGc4OI49IWPWHXads6EN32cjekhZ/D7O9sc
-fZ747tXHhUG3+lwf0ozkjgQMKyJu7uLJNuZgVqFJJeI=
-q53Fd/1xJY10RwWZTKhY7g==
-q3P/bSyfTMlo9UySnVJJPIZ/qC8oKb4LhPzmIjXBXg5avJJswfBY5P9t0bm+u4ui
-sUs0T2gLuqXfhNgUivjEh10ZelxQnKOZL/JGuEXBQFtFPHZQvAUp8IhCE6m6cv+8e6xiYetPyHKuwXQRk2UAyQ==
-7pmsdG+zdeC8qc0GBxzBwTx0Eu2QPR04L36FAY7iG48op8yTJ9u8sH3rHwtNY0amJiGdEPoXjJtIeNCNOwLyxg==
-BYfrclt11cA6adKQ+6cgIrwrZ+IaKP+34D73cvyC2CwYHUm9S/TVFzT3zLufVhGA
-zYmeZx+6EJhCPcqAdOtDOg==
-usR9ToAuK4UU3FBfql9o929/hb/y43uVs65n5/w8RixTNZI2sevRyIQ/+tgXeY0ka0hC0+3RKcN8WkkYjbVhWA==
-iIB+w0jJDDt6R9piVBC6QKbIS9hPheYDA3jcs38/cX7i4R2aXZ5J+IyE7xh7KxiIaELSOWdtHmvLxvFriSoKUQ==
-Z2VPMzTjruK4Com6Zyxj3A==
-ar+rY3B7gVS0YmL2Wqr7Dr0ztRY+0Uqq4DW4j6d8ZupbDxXS6B9cCNdG7WEKI8GCYfitU1mFNUJYIqjdE4+8mQ==
-HzI5DiblNmdrXM+zqxoqTALdNDfXj/s3INRqGi13yt+wvjHrCX4uV+5ivm+Jt9SAF6cHQT5eiVS3r6PF4rvlDA==
-GnEBQ4SDaLJ7b3xXs97Puw==
-EdRJ/ZSFZ7DFjdkkq2taF6IXK7P9XCBuvykmCPkR9lFBElqJn5GEM1kHvAlcIAOSQYLv0aE+62Zz4C2Mk6n5Xw==
-tszwqAsaWdBYKpp/kwMAtzdJHLLiZ1jsOLf3bGzGQt0=
-Czq/QbX5pVS+tfu4SVyj3bVi0NXoGJa1eJv6HJSI1EM=
-YBrbqHdBLxF4fUY+Wm7BWWdfijdMLoGi2ZO7ZM+ANL8=
-4PEEPL/ipBFcGoupPLB6jy5kZzLBJZhahEM4DukM4Fg=
-KrUHIVnanFlWNk4DsidR3Kn5rZXdKN8GNN5KNC0bxTs=
-x6sYm9yjwuoHcvAMV5C4V88aT1Cw+Cp4G5EHF1H6iFU=
-9vdPe21KLvKcLLy95tTCRMcMdKgQM1MWoesDYC225Ek=
-tAoisdk7GVKq8cl8ysLz4hZC24E7Aavej05CGqG+GPo=
-d2ielTPE2x74gaaimaoVX84fq3zqCoQPXDLvbZkkLBE=
-NgSYbXhQniHT0KrOsgnNP96SyL7GyBQ0SKH5CTqHYco=
-4pIThCnvGWPr3gHNj5oOCg==
-kMKnIUL5xxbEe4tykB7vp+kKvG3VoPzgKCNm1OyjDQDlusS+MIpsTC0QgJ8HULdl
-v5kEsDzsJMTcj3HwVH0CTQ==
-YtmloyWq5xLVfu+2GA2GdA==
-SfLcyrY+O7R1T+ZKkfEFrLmNYKYz9Y4r2IZT3cv1Nvc=
-VWlL6kV7GZoMzxAIJ169F6/9hQDZZdtV7o++XRkpznI=
-dAvcgie4Y53vHdLX6xOG0A==
+function g_game.getRsa()
+  return G.currentRsa
+end
+
+function g_game.findPlayerItem(itemId, subType)
+    local localPlayer = g_game.getLocalPlayer()
+    if localPlayer then
+        for slot = InventorySlotFirst, InventorySlotLast do
+            local item = localPlayer:getInventoryItem(slot)
+            if item and item:getId() == itemId and (subType == -1 or item:getSubType() == subType) then
+                return item
+            end
+        end
+    end
+
+    return g_game.findItemInContainers(itemId, subType)
+end
+
+function g_game.chooseRsa(host)
+  if G.currentRsa ~= CIPSOFT_RSA and G.currentRsa ~= MIDGARD then return end
+  if host:ends('.tibia.com') or host:ends('.cipsoft.com') then
+    g_game.setRsa(CIPSOFT_RSA)
+
+    if g_app.getOs() == 'windows' then
+      g_game.setCustomOs(OsTypes.Windows)
+    else
+      g_game.setCustomOs(OsTypes.Linux)
+    end
+  else
+    if G.currentRsa == CIPSOFT_RSA then
+      g_game.setCustomOs(-1)
+    end
+    g_game.setRsa(MIDGARD)
+  end
+
+  -- Hack fix to resolve some 792 login issues
+  if g_game.getClientVersion() <= 792 then
+    g_game.setCustomOs(2)
+  end
+end
+
+function g_game.setRsa(rsa, e)
+  e = e or '65537'
+  g_crypt.rsaSetPublicKey(rsa, e)
+  G.currentRsa = rsa
+end
+
+function g_game.isOfficialTibia()
+  return G.currentRsa == CIPSOFT_RSA
+end
+
+function g_game.getSupportedClients()
+  return {
+    740, 741, 750, 760, 770, 772,
+    780, 781, 782, 790, 792,
+
+    800, 810, 811, 820, 821, 822,
+    830, 831, 840, 842, 850, 853,
+    854, 855, 857, 860, 861, 862,
+    870, 871,
+
+    900, 910, 920, 931, 940, 943,
+    944, 951, 952, 953, 954, 960,
+    961, 963, 970, 971, 972, 973,
+    980, 981, 982, 983, 984, 985,
+    986,
+
+    1000, 1001, 1002, 1010, 1011,
+    1012, 1013, 1020, 1021, 1022,
+    1030, 1031, 1032, 1033, 1034,
+    1035, 1036, 1037, 1038, 1039,
+    1040, 1041, 1050, 1051, 1052,
+    1053, 1054, 1055, 1056, 1057,
+    1058, 1059, 1060, 1061, 1062,
+    1063, 1064, 1070, 1071, 1072,
+    1073, 1074, 1075, 1076, 1080,
+    1081, 1082, 1090, 1091, 1092,
+    1093, 1094, 1095, 1096, 1097,
+    1098, 1099
+  }
+end
+
+-- The client version and protocol version where
+-- unsynchronized for some releases, not sure if this
+-- will be the normal standard.
+
+-- Client Version: Publicly given version when
+-- downloading Cipsoft client.
+
+-- Protocol Version: Previously was the same as
+-- the client version, but was unsychronized in some
+-- releases, now it needs to be verified and added here
+-- if it does not match the client version.
+
+-- Reason for defining both: The server now requires a
+-- Client version and Protocol version from the client.
+
+-- Important: Use getClientVersion for specific protocol
+-- features to ensure we are using the proper version.
+
+function g_game.getClientProtocolVersion(client)
+  local clients = {
+    [980] = 971,
+    [981] = 973,
+    [982] = 974,
+    [983] = 975,
+    [984] = 976,
+    [985] = 977,
+    [986] = 978,
+    [1001] = 979,
+    [1002] = 980
+  }
+  return clients[client] or client
+end
+
+if not G.currentRsa then
+  g_game.setRsa(MIDGARD)
+end

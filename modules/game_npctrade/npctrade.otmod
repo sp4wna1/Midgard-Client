@@ -1,9 +1,9 @@
-92gLUDUwzwa6qltXdfHwMQ==
-MmHjfgMxxH3j+wzq/UfAsm4ju+SQdmZl2XhQqIdHz0o=
-hoHNihu/Exta1C/orAIJBs9x/UnU+LXM39jId0DgenwmWXLaOV038P5LXGmhQ8q1
-xsx9T9uI/g11pvDRf32trBQuSTWZaaDVULc70N+ZkVg=
-3dGlPDZ5W0zcO1IdebkuKjGINJqY/WC+dxV55GYeEL7X3oPyYQLDOEAfP+FKqxeZ
-iKxaO73eA/cP+5srHziT+E8MsvXVlrqMeHrLzIFowlI=
-AwSIbrtvOVqRuTn05reV95f1g1PbbCv3kLK3Npm7mmE=
-917J7Kf7KIAttBuk99zdKg/RH5jvcBaZE5fige1IE3A=
-vp7w54xfLtjcoJICSxxZQ8VhEMYYXHoGG4FRpMCjKJk=
+Module
+  name: game_npctrade
+  description: NPC trade interface
+  author: andrefaramir, baxnie
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ npctrade ]
+  @onLoad: init()
+  @onUnload: terminate()

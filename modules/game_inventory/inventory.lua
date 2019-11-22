@@ -1,124 +1,124 @@
-upD98nT+Kj8TwrdmxcX0DwvaJow9OVGeUw4ElY009dw=
-sJi4exOp+adv9K28U8Mkl3+1ZFEKRYET3lDrxyO6kMPOC7Ue8fvThJDA+p6yigHU
-jDjNI5aJOjDShj63OonQ7k+aqw4h38eLIp/xx8t5a8sLLAkFR/DJkm+AdEWfFDgN
-0Z44YwsRFVAsd7orFZYvM/QbHtGpsP2wOH2QTs0blskYMZiQTLatgw2AjC1E4kzO
-Lxj88N9GvNHAe4MPOzCjdrJGT5JAJpYafg76d0UdfWYBYKdCy2yDq1emSv4ydwwJ
-VEWllotW7rB76Hm/tAozcNL+ZiMsORoX4k3GA/rAiFHs1Qaotz93vHojSYlKXSml
-izem5RYmAcl9VUSYJLgfulORs7b2UY4xMyZ1TQ2p5HCE8+hslu432hSlXQSPqUg7
-F8lSsFyB9V9nWUX+wLK3eiSYD1YCZy2zOqHXBD0SSj06L1W9YBT86c/zW7NazJpq
-gGLj4cyPHyoZiYzLeNopuehC1kQ1SnvcUEACy9+Cn5iMm/SngI5rkFSWzM/iuG+o
-9zvoaTrgxFhqlkPGGDGmmnLc3h0EEhkdvh7Mn0o+IbdNzsmopXM5hDUDrczKcx6t
-vWQLDYhB5iU5B0d7Rf2E4kJOHBiql6pLgoEtVixLiN/3xHaH+qjY+iIi3hilVvwl
-IEPwSyeAfqT8Apy51On+lQ==
-5bFYurjoplg1PdLgLSNYTA==
-NSY7X7+X1zOFv4MrdPg44krTBe+ZxaC8oMuT3EsFpP0=
-CeKibge9hYtix2iWttvWhC57Uvp3X4pcVIAhRQY9C9s=
-7dobQs+i1JyElH3OMKv27M4FK6sveskuHGwrcbS8UNs=
-V9dPGaMdZtuqiQJrxN7EHB+57dTlDiBAhdtZa9XVdIc=
-feG3F8Dyy9UsH/VIzpIg6w==
-mni/kJJdRLrWaHVswq4xlA==
-yJRGZdbWkVa43ohNYW7tb2aph3KJ8CEsdD3wzZyLTC4=
-E8K/MWDKBlhGTSVn77M/lCoCMz51baZNMSQJaOudFQA8BLKuFOrwopyKicLxjZ77
-FjTvUokuB7suwsQXreudnURtA5D7HzPEh0BCfK3yZJqN0Epx+M0ZkEnexIq1sVc/
-5Aknw9bSuonUzcD/TNbBcg==
-kkdidhwAT62ok9UABmaNA7RcIGKSUGBXP7NWuCOSVGwUnWHENWlJk2W/uCoiPdfe
-dHCIVSh5SpXESlLpIzxn6A==
-CpAKO+4LR2rHCHBpJBynqg/xico9/PS9S3DpWgku1x54snb9CF6rYYRFLPp7eOWf
-8oF4ED+PItoXqRc4S/MZBw==
-Kcq2TOOVLuUJojpAc1hxzOwa0+b0YGx/9TyzCW6GdX/t74bFxv7nYA3MXylBcI605GkaraowBmMPgrP529vsSAvN4tS/bNuEE/9XnkATpbl/BkYas6z67vD404p2BN2nC6Ba/TnaS/HqK/rKx6VRZmI4nNx0t7YTjAAv9PIylL7iMhrQQbmWWDQtB2I96/+aXxtxOO3xaQQd9+kquADVWg==
-dVtefw42lsdwa2m1lpN/DMH6evAJIi6xEBsuyqu/XhE=
-qJJPA+UjOKCzI3olDefwxA==
-t5lCH/iigxpcnddSww7U6HNgPnPZ6K/lyOyjl97+TFtMEApsBFtSbx0ChBGuAVDbWdIMjgr0WHcuVRbJr7pJc1AqRlWuMw+y2SOEZRmphqw11kqZ+1b6HPO/MhCwfL0P
-OXvv5YpDp+Abb5U1W6rSMpCZzDy0+RLIrTGgjXHpgDNbU3Iv371qCceDOfXacb6G
-FT/siZaQk+gCBcQ94Xu0H3b9JtWCqyQP+kymtUFR3Ipa7+37mw1d9VYkAxektOfFDODlEhhjZpXeydb0KRUFA7DX55kGe+Xd7bWsWob4+3I=
-U3pak0tA4HdGGGrNyAMeig==
-C1Bg3kTQURHPfpUiiWwtWLqE4DjFencEtRDxC/9MQ+Lo6mrtC/01fSit9DaGbNY0jFog3jWOCypJ3VsehR5deQ==
-GhpjNclWuR1iszKVZvYhSEA7rckY8Uj66WFVtKXRI82uQp48JLgH8/5Wp0IU0rMb
-eAGT46IkgIPc9yn4Dk/ONwjN+XZ3ZErR1b51LaqtSTOXlxVmH1D1bXmXUwQkmeQ7WdoVi+xlMy9TIV8gdIyedizJA3jXzJpgaAwGltcnvPI=
-XyeqbVTBPpCiIRpIPg9u9hEw0hKgUAmEC5bcNPxHYsY=
-djvJSd7CEUp2Va8yr/R6MG1fi9Nf2ZOx78rSHgkkIkw=
-cz3/JvQZUG0wkvSO9L5fIw==
-jzJC+sYH+S4KkgtVXwKsdw==
-r6ly6p1lWgkbWjhb3b2l2Edo97z7x1VISkd4G+3sC7ja90oPZJCYCAhkfpJmwoE4
-q04A5+oNi7QH55fHb4HjjA==
-v4OuSLJwpZk3W53cE1tb6g==
-+EJNSHXCfGNl7lU88oG9qV1SpvkUURfyvjkLM6rZl5s=
-T5hp6kBtd/HkUOrgT/HrVA==
-mcmgHOeUDfaZf7VqWtVdQg==
-loevsLHid2xMoQ3RmX9ifwdQ0y3P3wU4e6UZAcV8XLY=
-g28Hd3KGjd8ZvMrWfjwy/VHwClhehskVXbtDzmhfYb8=
-srEspJa71XSfviUR5S5KqjE3GjCwdHcOQ9wWdAIeZyIqfOmvswpJRvcd8Q8hF3eu
-2vAXLLmCX1UskhZCABrixu/VhlN5fYTed5PunKAuqFtAnKR2pMZiR13u7J1UEX5E
-VKAZet7ZJFTAh1mThS/chQ==
-jZrJ5jHIjMVa48xLQCYcHpBBiaT8SZ9BeZV5U2V9dOwAw+6xZ/b03kRVwl34e0Ct
-gDm99UTzeXgEZE2m2aPrTw==
-MR6Pr2qICiEoN2e1MM+HLReOyiVLejHWje1JOICyN/mgTQRRb2oYPYLGMY9wamvU
-XtVJ/kpeDNalbnqfs4FXBA==
-lwFMmaQOBffmStbU1r3500CWauwM7CqRCgqDGYHL0Cs=
-6d0ySO6+HMqNyigBgfWEGfwncWRFWrTh8pnEyzTKsN4=
-MTQJM+2kqhchinw7c56L8A==
-l9RCdnLHs7g98vQTtXDhLg==
-rOUY0BCL9tH68N865KBcR/kqyjmKNnj/vAm0l9gHVsIxq7+cub0/ssxCfatE7h3e
-urhSiMeCFuZH5kEl4tukaAMWWFsQ52gD/Ea4nbW1o4H91XbruweNXHlE+0U/fSh2Ptre5UGbjJN/lt0SKGdV2w==
-ZmsDcDf0PlH4a6mjmzV5dlAf3iqq9GchLv6vk+iDudZa25PS22OukEHCOqq80A3Xu/C5QjENEKp50qvh52dWWpZAZAUTKYoBU8/RjAO8uqA=
-TzE80WGXona8546xslAxNv/kxduEVvz7Micup/+3Koo=
-cjbrdIV9c4gPVnXnGQgVcBuT7ze6NAbgrLHCiGmcdm1m+Gx9ePj5qkHp+NyLuzBw
-1u44GiyRs01YIXAw28sbbg==
-t24s2A3kJSoDdzPhE3FHSg==
-9EuPM8IiIR1IDtCRqsEdaw==
-UZwWyLuTnzVA73a4BpSO2A==
-tGSIuj9ox9Z2aSKmyWTPq/ieVXAX3+Hmo4f2WwfxcB0=
-SaHmEMKZSCrIcgwoNx5jusOTqeaEaeWYiMgmj36RQBc8TUFpnLlAYVTuwt02fE2/
-MfuX5RJs73kXdkFhqourrrCofZsZphhqQji3qmU/+7no9PUkiXrwt2Y4NV2K4U10tD06pRQ/vkzIp/2QRZYfvQ==
-sz2oDc6w/KeOd+sPYYXuV0WDZG2yNsXOqHNhd33Mk4U=
-K7XhRSrkZ8MTKnTsiQwKZospMuZv8ZsOuXiUKmmrLJFWgWtdkEZq3S2LE4Q3VEKOnG6598dXIHsrEMjQA4TDlg==
-jIvo7vAfKIPiM/NfapVUvQ==
-4vJvG7Mg/U+IHPZ6xokP1/bop7kh82HYttgMVeN71GUVYcxV9noTw38PXpg0wBXn
-OtXU8skrz3HY97HrxQcvmw==
-qexxxfwXub4PHvNJzu2sGMRuJkBPIkEUynNi/zjiCLe/+guGaL2uVCInUdtWV9ChkgKuy5/NUxNJ9hWpUIekh1BTcnrqrwd+rgJFormxGVTatyjKVFyC6xfJHx8+VP885dJCsWZlDn4kPQrb9o6drA==
-hiEsOtVFjsKE2fJrMxANjg==
-VuPXf3nlvziZrgsYKKa17g==
-bBOo/wx8RNQ2rIYpprVTRImgI680fMN845oQhta8yYgvaNMI6h2Yc/C55N+OcLgdIJyGkY9Dgm8naZYqt7VtFQ==
-xMz63OdNKycmRx9lDubyeg==
-UbIZCoACV1M4SpCk3qfuWA==
-RxBA8s5a5F3hS0IxydNBz+DrXtx4ixbbK4Redc6l/Z8=
-ZzWK4bjLXzMNVqbajPeW5OpLWUi1A6D/2L1xst3yKrKd7j7eLzraZM42bhPWHzPh
-sNxE5tNEfDSZEcZBEpvRA2/XSNblkKaCOiXA/kxim+k=
-9MWcaWg+p99jY8L/wQSVTDZFJqKwKJQxO6Qean23R8gZ3mNPIh/+SgwFeW/XgyH4
-6364s+mEB06HAPCEKP31eQ==
-1+6hFKALCxRv/5hsuKio2b2EeaFLYlmhWNe3z/rwGqI=
-JDnazQpoRjLPVR7j16uajlU457XiKVvSXgznLb6SUXQ=
-VCHFWmiXdOBRt/+8ox7lcg==
-UzOksq8Jku4CHzOOBia3DQ==
-d3To7CN1RoqgNQT2WlpLdg==
-HbWtNaMDp3SHR74cMheEvdmlQ4ge06Jho2e2fdVJDkU=
-2Ped4aTOLH4xC3ernt69wohfLcQvwakoDbxUZRdLViA=
-VLwfzFZ2DKmTIBoFnIRmEw==
-nZWWsCk7kxwyGeQoTVYJWw==
-Ap7JdoQUeX+124ts0/b+ldPzQOE7Gzq0Y7fBc1BfmO0=
-N1hE0Eram30J25AKN+NcutWNJApmLf/fX1BQsESYp1F0FBEtx7LB0HQR0olOwQwxb0vdDJNHqTkMV2R5NqYueQ==
-uzERsuvHpAMNK3J71dOJ33VSOHSQzajbVlawL77ASQ4Wl/nbONwhA9XLL0fbzkYI
-DwJXSLNXmtOqNATFgF1Yvg==
-4c08McC+PXSKGHSteqyjAsp6ZR+2nC20y2tEJWyc4Ix0FcBRC2QkcIjHtZSudzZd
-g6K38p88EWKbR0Bj0leDWX11XuHzoK9w85ZuHdfz1sVL1lcCab9m/FsHRs8M6/A+
-UvEdLR6ea+o8ApA1cGUq9opZRgJhFkcuuOqdXYejlJocJapAi+5NtVy8Gb4gnsGS3OlTxsmWnqh/X1p0p8Q9IQ==
-NbSZSsIfU71GzuLAwBDeIw==
-xCGBSg4gR8+5CFECFVJjtw==
-c6wN8yrJKalsL8amcEIa7w==
-v1WXiNv/mvXboDB/pNaEng==
-X+Kd9TW51ZALtCfdR47Oqu1xUwdpo3lglLvFjlClKTXnMMCEpABzSV2DNQ8I4fLVTPz52E7gN8gdLJWRZ9L860ODtRvWSHK561VzfF7Oj3k=
-VZNBdewFbTHhBkErEmE2Cg==
-0dVh7gKm90T3Yk31hWT2GxsPr1rL1Tbf920SCTidjEGAkAQ4GFax59KXfmd8kTfG
-/l14PisoEng8NXdhPgGb+GSNg8LdLxVEdqCpj4bVnQE=
-Dfu+eSjMgcNn4DFA32Yzzg==
-Fk0VFkPD2v+McU0+8ztnU+DBskph5HybOXnd70bnvGAhJ2t5inu72izTlgn2vqV8zYuGDALZgDaLNmPTFRBi9A==
-FrjBvtKdiSr41oUiKq5vhk0SDrSllgHD4Kv3+nWYhoA=
-D/3YUjToPqAQZU8ZLjV83w==
-OYviYIo+jm30YUvLershWw==
-Ont8skJ8592vzcSAA5Yadg==
-9zsdWlqj+wdxZRVnkO0NLN4z6/O7uKcXRmTbnj58HLqEcQyL3+SvzPwTuBcez70rOKbPH2hvNB1tu5dSW6NKuA==
-GYPwgbbH2ZgSjkOOof8petxWwWgxSrR6HRS4vgDEpoWAgZxmenVrIyFZ/D1d+Q7Jy6avf1XfwF4rjYikQ9TssP4YlaI+0F9A6diJmFnXUMI=
-AIRWZV8i1Ifsix14CDILPcu/3a+0M3a2Av/Yn+Ceyx6qLtwOqfIr0AetLoH7B3bccnMbIGJfMQw2qzbJfi+5OkZBa1mc1cnhUrPjTA2R/X4fatKaaa/fIrIqGPTgWM/5
-MlipNg4lhMh7WakL42xe9enfT3Hqrn7MrSUGdZcMMM19lYkbcsX0QhUv8i6xeLlLtmzBwajbUA6vwkRKpeqz9w==
-KRbKFP1LIJFW5PFR34tjgg==
-QtrszlpSOX/EKbxXfaEBzg==
+InventorySlotStyles = {
+  [InventorySlotHead] = "HeadSlot",
+  [InventorySlotNeck] = "NeckSlot",
+  [InventorySlotBack] = "BackSlot",
+  [InventorySlotBody] = "BodySlot",
+  [InventorySlotRight] = "RightSlot",
+  [InventorySlotLeft] = "LeftSlot",
+  [InventorySlotLeg] = "LegSlot",
+  [InventorySlotFeet] = "FeetSlot",
+  [InventorySlotFinger] = "FingerSlot",
+  [InventorySlotAmmo] = "AmmoSlot"
+}
+
+inventoryWindow = nil
+inventoryPanel = nil
+inventoryButton = nil
+purseButton = nil
+
+function init()
+  connect(LocalPlayer, {
+    onInventoryChange = onInventoryChange,
+    onBlessingsChange = onBlessingsChange
+  })
+  connect(g_game, { onGameStart = refresh })
+
+  g_keyboard.bindKeyDown('Ctrl+I', toggle)
+
+  inventoryButton = modules.client_topmenu.addRightGameToggleButton('inventoryButton', tr('Inventory') .. ' (Ctrl+I)', '/images/topbuttons/inventory', toggle)
+  inventoryButton:setOn(true)
+
+  inventoryWindow = g_ui.loadUI('inventory', modules.game_interface.getRightPanel())
+  inventoryWindow:disableResize()
+  inventoryPanel = inventoryWindow:getChildById('contentsPanel')
+
+  purseButton = inventoryPanel:getChildById('purseButton')
+  local function purseFunction()
+    local purse = g_game.getLocalPlayer():getInventoryItem(InventorySlotPurse)
+    if purse then
+      g_game.use(purse)
+    end
+  end
+  purseButton.onClick = purseFunction
+
+  refresh()
+  inventoryWindow:setup()
+end
+
+function terminate()
+  disconnect(LocalPlayer, {
+    onInventoryChange = onInventoryChange,
+    onBlessingsChange = onBlessingsChange
+  })
+  disconnect(g_game, { onGameStart = refresh })
+
+  g_keyboard.unbindKeyDown('Ctrl+I')
+
+  inventoryWindow:destroy()
+  inventoryButton:destroy()
+end
+
+function toggleAdventurerStyle(hasBlessing)
+  for slot = InventorySlotFirst, InventorySlotLast do
+    local itemWidget = inventoryPanel:getChildById('slot' .. slot)
+    if itemWidget then
+      itemWidget:setOn(hasBlessing)
+    end
+  end
+end
+
+function refresh()
+  local player = g_game.getLocalPlayer()
+  for i = InventorySlotFirst, InventorySlotPurse do
+    if g_game.isOnline() then
+      onInventoryChange(player, i, player:getInventoryItem(i))
+    else
+      onInventoryChange(player, i, nil)
+    end
+    toggleAdventurerStyle(player and Bit.hasBit(player:getBlessings(), Blessings.Adventurer) or false)
+  end
+
+  purseButton:setVisible(g_game.getFeature(GamePurseSlot))
+end
+
+function toggle()
+  if inventoryButton:isOn() then
+    inventoryWindow:close()
+    inventoryButton:setOn(false)
+  else
+    inventoryWindow:open()
+    inventoryButton:setOn(true)
+  end
+end
+
+function onMiniWindowClose()
+  inventoryButton:setOn(false)
+end
+
+-- hooked events
+function onInventoryChange(player, slot, item, oldItem)
+  if slot > InventorySlotPurse then return end
+
+  if slot == InventorySlotPurse then
+    if g_game.getFeature(GamePurseSlot) then
+      purseButton:setEnabled(item and true or false)
+    end
+    return
+  end
+
+  local itemWidget = inventoryPanel:getChildById('slot' .. slot)
+  if item then
+    itemWidget:setStyle('InventoryItem')
+    itemWidget:setItem(item)
+  else
+    itemWidget:setStyle(InventorySlotStyles[slot])
+    itemWidget:setItem(nil)
+  end
+end
+
+function onBlessingsChange(player, blessings, oldBlessings)
+  local hasAdventurerBlessing = Bit.hasBit(blessings, Blessings.Adventurer)
+  if hasAdventurerBlessing ~= Bit.hasBit(oldBlessings, Blessings.Adventurer) then
+    toggleAdventurerStyle(hasAdventurerBlessing)
+  end
+end

@@ -1,365 +1,365 @@
-nVBOCan7INU8S36A2jRSgw==
-h1h50Yi5QmNWEwpAkRjuhQ==
-XPR04VShbfA4VYUpTTpnL3cwmKHq+vthuIQgIjQDo00=
-9v63a59hCoArsQeCdV1npy9MPSrUAImZ9yXqVaP5L0A=
-2drL2Ozp5+JgkBXuaKGTcSzE1D9zS9CXXrWUg66Cplk=
-4Y5Q9KQ9xsoeL+czFXPakjSLgfDlbABr9rAymAgT1Vw=
-wUEBXBMNifJZbM7RmWAOWeWo9GLrojEBRc7YupYwer4=
-B95wWxmuPU73bFUs6eglLIYP06p2FfMhjWYWuxfYBME=
-gktmUKF+Xvj0D/UYa/Bq/wJnLOU6A9+rx1wodHTiTw7hj324xRxtjFFVhIOH1GPb
-pt61o+NV9jIGsCfQalRh6wJaDFt/EAKvn3UWkdx5SCY=
-y3OYylJKOGQgpZ1pnyLyqQ==
-zBSIb2JgLuOeXXsXEsJRQw==
-GJPHOW5fIcjSvm1vGXKZ9MOu421uvbgzUITqO2iyk0s=
-pWvGaGmPLpSJluRbgXi52w==
-SXEPh+3vMpbb6+ldx79zRg==
-ROMEJchjPXNe0/vfqcO4s3v0uPWEpxf1lXdc80G6sIw=
-PbHNskoHL16sVVoqX3RnXOMYLeUIJM1hXsU82ae6L5g=
-HV4YoQ7Xfrvu5QJDobDMDw==
-I0MvNtrSzj+2k7FBqNE9aA==
-SsjPTTvEQnGyo/X9zJiHvu5x1TFYYTiCN3+OOGNiPto=
-vva4NGVIQG317WCjzDMwms9sQT8mWjSBsDftm0/WrN0=
-dXuYpGAylnFh2lFT3ZUEIA==
-QZlOeJAeityqlkgIXHnFdQ==
-wkTp6Ragb52rshtV2zcKnN+tmCgOgknQOHavObAQ6FE=
-2Ayfgml824PgV5bVJ2FgvwFhKEbubNsZE01F10Y3YGw=
-ImXBMN/CzZvbOSoxx/dqnw==
-tl2mzqd2AyR3Eq/tXScD2w==
-PJVS5na/FjXeGhIwR8cM80M9fwo0fXCApFBbxLFHVLE=
-G57dixNh+PL2wVCuD7A544e/GmBBnbhpIDiLPFl1fOY=
-rh/rglLJJQYbEt0VxLYfCg==
-dMEYltTQ+h1mTVO9wvXV0A==
-MQkycw2uWN/k/sszBtPjNesoikq0TGslxE9yWSd7h2s=
-kMXR6qWne84UTRVO57rS1rWXF99qn1CMdO0/+PCqyk4=
-kk8s7EKBhtvOJPiQT/Q7ZQ==
-rnv3nQlg7sZR3c+SGImg0A==
-j7uLFNZqsGP6/XgC1h2nQw==
-EkE2V1rLrrh05ku2yLBVgQ==
-CPVSFivVcE57WhykfrccMw==
-wOhhx8UsViipSAgVbENzTA==
-KWV3TU/Y5kstIUcVqv8SMA==
-jtyWwQfOi0CcheX7VRo03g==
-ywm4SwIGyPMmX+RqIrJ+5w==
-cUcR8Lgm7xatI9VJTt/HhQ==
-jRBkYB6xnpGlI4v1b+cjTsjMu6rU61u5VozMEzhHl3SiqpDP/QsY05XbmkqEfXJz
-qaa/U7aKEFNQ40J9iNNvHHLlG0HRCkAxrYznecDJj4M=
-tZZklX1n2CvQMcD5gqvwdXBBzfTAMDvtQn0ASqL/zYY=
-KU4CnkKykULRNiuLVJc80Ey7v56cu5hFCDqD/aHrg9SQBGliQWOzbjrq1UlwuPfW
-CJkYQB9jOOnBPUSQl8o0vF3XpWTnmYbocAeaj2nF7tZEMLX8Gr4FozyXcLnfoTB6
-I6hVsyhZaXe1TsHZGE/EiY8VNuEbYe9rOPcnM/cRgDg=
-kqKe4CgcnyJmV01JZicgLQ==
-6ML0TCpddJqOscGI9ZEtYKlIt1qTBtwuOIs+iDUS3z4=
-EqualVjxl0wUM/G5EudFtwShG5JQrMa/xVHdppmaZXM=
-cUaiseGO5fjdcfHJxao0uA==
-fCO/VE+ma9fPuLyJXQy5bA==
-WYbR1NbdobiaEHBuP/MVmaHr4xMLMMgqK104dQQdLuM1S4tyLSCfHtWTfGfJBxF0
-6rZU1qi4Bx5oJWOtdlr5b/Gss7gFtz4a0OkdMSt2unM=
-cCW1x94Ydle6JmxV9w8CTfQEmZfoY70dzn/qey6Crh2Dd4dDPMXc/JvSGIcIYkLG
-wMwpBGiQCeyAd91wOLUX0ITtSRwYzVrZzs4Q567RnCof7wpFx04MZNA2tlATxZ4v
-c8v2sIAuCa5v87KXGNIep/Ca/5CduFdv3z2ZZUVD1UTJRaHL+RjZ+imleP/w/fjP
-ruUfghmfNov3BnWcZ/RN8/o0UPHGbORctQbYXFtKlERhE3oCt82NL+ppghznu/Gy
-jAhd5chhbkwq8uBPkWjVKQ==
-eNjMV3F+pztGZrTSv1Cmdg==
-yfE6CEhdrE8P+ia1kd5oZQ==
-yU7B024bdx6gofbB5kIHaA==
-VG1wqC5YCxFSarJfccCNQyLjUvpW4I7M/pyO79xpShY=
-EDesErJ4MnvTlngjec3xvh03beE15q4B0DoheCoyVhs=
-skQfQ8UddtAAHI1Q6wXjIWGmhKtFXBqdf5RxKhTns9BPuTDocDScoIbj88j5ssr/htZi0kr/rljEb5tXrKNRRw==
-/BJVqlvvosSb2BSOGjTc3VyDDvI8UOkD4ZaAlZ6NYVgEveTKZ8YcbCmp/4QeNYlF
-yBXwx6tG64/9VBtSImTvuw==
-+2EIzDuJvKUFE5CpdQA0Wg==
-0KZmE0wDczWdw1m4cpwM7s0NkiTRvu2io8Y3jcfoujXT4ptaaXL8m4J5y5nbCqt/
-pAPPPjvHYb9kid54/72OTmr25/6z1MrKlYdJHzGJ+crT77ZCjFLU57O8zSl0t8YEVp4KzaQHnEyAtIRdI52AawGr/OgUXZAvnlz3tCn2apI=
-5DVb9vwU76f9ZXqrWosOsA==
-0JQxASoEyOT+pMU048ttGg==
-SibHm2xUodP86cvLBeGNIscF8QM+KZ6al2VIkZBeS39lQ6uqAViSzdkG/1veL03K
-tuibopLnUvyswK2X5Pj8VGUv8OUtAbtPpm9rWTj78c4=
-lLjtP98ckyQSqdAccPTfxaUV6mgH/e9GFFYYW45vHjQTW5S5dusIxv+WqfTFaF9z
-+l67QoJDaciCbgeHHw7laQ==
-CI/Hd98urC2iHG8DAxK8hPqQTTd11qm4C9nj9wBSEH4DgWBnW2BPymz6lcSEGH+7pnxSublgFhufyLoALatdhQ==
-V+ZXsqxgQCZntRn/cRyDFg==
-6dfCbeN/QiQwIr+7hk9IOw==
-7XYW9z2GOQeHKWxpkmEMBA==
-VnCyCpNeIZ1uHaUwqwU3Sw==
-GOsGql6JEI8j43lJuKVf4A==
-j3WLiJYnI0XNl6/dO95PSTPagJdKOz9r41oQohhgeD0XruvCE996avmdT5HVktm5
-i/hTvOnEKA17IvzVA06lAvgui9LMR6u678FXwkMZXic=
-YqwXTM56POZoYPsxiEz6/o4qioQTV2uj2goFWQ49U1JFHQo2kTsvM+5E5LTXNmJg
-PhQMpsCBzIKv42XMWmakvb8QWEqPgALxoIkX0byosTE=
-wBt6sPlhEsLDVodIVzO7cfZowqkNPS9kOuG/sNQNurI=
-xRoMnZ1Rq4vme4zWuTOtbw==
-qnxXMjIxFso8Hs4pb4899A==
-hOKeA24RTi9Efy0uK+Y3JllYwuTcbqBZO7kO1koOtHKJjVu/fUJsICgDimhmvx4q
-OIfht0uvV5CaCUE2v+7oZW/554jFr1FujCpXkYoZbI3N16L1k8CGJhiFtfRzZHHk
-7KpXDtBKAz9u6dUdivywN3ju7BZQOFpD8TU3JlgLM64=
-MUuwHVCq11fZYWcpInlbxg==
-oNX3AH5cZDh6k8CgYCHAkCf9udtG9AEKx+6TicO/ehI41UtHL57jSobp6XXtO3Ftcj5Ds+n5U3nfSDdjd1xqqA==
-JNQJ8sKcX8N6eaXe44nXbg==
-p1oPn69glp6xtTlL5U4QmA==
-w/aVZ6PzIqu1DOOmUeN5IdqhMD+hYdQ6O/CLNrf45ZblJ2XaLjC6pnBWcnRPQHXK
-Xf4+ljsHknG6sRCBTliE1YI8wL+m1GrDCUhHiNfV+ns=
-RSpI8agcQvkKjOp6UGnUkuHR+hvvuh79K9rAxykxasbSutrgYq6Tv2SyOpYhwcSeSRhowcWijL6S38zmO+bOeQ==
-xYm9BYhJaE8bf+mjjiT8l2h6n6IjrmijvEKNziIW9T47g0h+oCGjMijS3l4dgOX7
-jyy4wQJOJghSnSKwAyWImuwCU1SkkIuCsaWN74MjkZo=
-+e6+NX0niaHyM6k7avF3AA==
-y9Eu9UrAhZWDwDKBcLBaVXT3rtBmrfqqx0MXh0JayhxATwWE3jSmzLAFY4c/X7k4
-seiBv74KoxCD0tQzsIJYCX5viP9c6LFhvGrJppWQDXTwcsqTsmX5HZ3yrbrz3F/v
-gNqnqTKdSc/mkWWn8U8p2gFItN1u/oS7JvOvPmsO/EA=
-pf2gsqC+yEug22PIIwr2qS7rdHXGAvWkTpifNWIXEGl40Uqy8/VeS4vfOamBig2V
-GQNGHqWA9PLHlH1NqVAYSg==
-cARWQytF1F8TxPfmiPlXI11xqNU+hzKK6CJ4IK3kqkyNCAjmiO91BpL5vK5RwkCs
-9PQ7hZ/+5pNMMpFz+KlZhy5Fn8ylsPih8OJKxbOtlsiKILvOMbMrlp5wcQMl3i8A
-K9IsR5er6toB39wBxG6uUw==
-jg8CDJboaK29nJhUXqf9dg==
-3IW2KXfT0v6fPdS1/dr/ug==
-5M8g87kz4HNz00F43Sterg==
-5/WWYXuvaQ4irrxZOok+hw==
-st8Qj1sqCBKKLKErHXSFIw==
-VGWfs5VJY5h6NGkMMz4c4w==
-9LOvujY66prJDyOBqNb6cg==
-5FpCSp2VNgpdP/wOKMmbTpbTv5B/U8AdO5C/oKM3wH0=
-2J3ttJHvsA4pP30r5uKi2EPNoiLpIWJDUF88USl8FzU=
-CgajVJdHMQjhN6mA81D97WsFsBxfLkFiivTzlogAfvKQqRLil6XbnunU4cWhY7q87cUfO6Zy/IpdSIiPBHA0ZQ==
-p7ROUh9E5UuEKx7NtuJ5Hw==
-ZBoj6lz0TnPsUUbRLoL2Sg==
-O59d4KXPZeU0mHE8v276pm3724QyC6UtjEtwq2zSnfI=
-97Hnf26PkZWH772pveyfKZ/ySE+YHSK806MU258ripJ5YMEc2Z+S+Fg/hFqcYCwG
-KML//RC1rQmgu4ahtLvUa88RhNvngGG1O8hZYMxezeE=
-IfA4ONjO/hVvAUcf3rWeFNbarOsfeLx7YiPUOe8C4RE=
-COM3UXLeSWuE6Kp6zCKWEmmSmutN9dwT79kGyFwxkTY=
-X2o0uCRmq1zK7VYv68yeJg==
-WgTKTUZss0nmq1SDa2g2acPKpFqNhdDgs4OnnNl0Yx4=
-LZBQi0VW5cIDHrGrtjhEWA==
-ffVP7mT728RoM0KZD4xKBfHIRfdT1STmZy1RlyUUjw2hi9K+CwNILXUCa/237wot
-vHbv1G9EwsbrPSviiqK7MllvliABqoEMFCEenXF/fxE=
-dExvD6oiMgr5yuJdH1Kfv0vgiPFjAe1WyGNJv5/9EB7/BpEN76NEZMuTxZ2QUcsYBdhj9lkn6scsstlIQDY9oA==
-PD70XXglDjot2+SYjJIEjQ==
-vqCGT874nPim4YDOuHe+5Q==
-owoYkj0MNmjRfH+e0hUd8w==
-X7DOmyNYjL7BzNIid3Vm2e6UEppp0Pz2NM2LZsZ2n7s=
-4nbc9fFvdwaQgkM1Qo+NmE4Dm2A2xv+0NsLExevWLHY=
-Iq3+zyW+LHfKDw1RPYhPAQXuHLEiDrUBppyClNLJZ5yJ9buN0jYZMtQryIhDmdgPOvWSye5O43xM0kDfogbihw==
-XEgFLKWDvUpECaIKK2+00w==
-KRA5S8fktjpnbx69c5/krA==
-R2lIdIrA1USDs0H3tS3aK4pWZ0KzjQx6xWCtp33EcAg=
-wwJc6GpfNOI/MLBKpNPty9Mp5fmVv4u5qEg2EQBJzVIyRnvOt8x+Dm/jMVnKiTAp
-AoSJ/4zZBGgvKH2ss+cECLYk74zIy9u1OVyZdFHEo5L6n5EVRW8kk1Cgh+0c3n1/
-sSL6PhJn7w0EhjsXpCHyhepIHwAnUKti2JTarvVi0uw5oDEQ4vgZIuASmzEgWbJM
-WhKCKhBS2uvT68rCnRZRuBEPWnWfZ7ULMwDwb9tIAS8=
-UYHjPgOrET1cwrcLxhlEkQ==
-9RBYvyKyZfGNHDwacgoNM2VdoALoS6VBclzA1lDKmXI=
-zKaqr+H3iedOhVTCbOLcVQ==
-2cYiRUw75YOmaq4Ps4ro31T4rf4Q1nXS3lhj4WsVL+IXhLAf6dxiRhbRBnLUpViN
-S8YWVa72iklK67uA91R/hmPdPeLl1I7mlBELnLKQWiw=
-GSC1dP7WDffBPnYVrDiobjaX1lp2PvpzdbG6RuebVdZ2IQP/bSDmhrJmYplHyftRTir8fC0OKkuf/NYi/24NDA==
-qkx8ylFp5qG7/E2cuUcFC+/UJvJXSIeWKQICxp5RPVw=
-1XjVeDVrD/9p93mL6P4ajw==
-nIsJyUKCVd103aSOL0kuzA==
-Tm3xZaHGs17F8UIjrU1QfFJJMfoscqxGkwObwU+Ie7RprYhUiNsH+4qf6iF6jU5p
-VxJJLsMbq1DlhoxcB4eRSZT/e4+UJ860Bg0Imp3kv/U+xU84z4o+zsSe3cHXTTAO
-/EJvg4EPVHm+6JIoKUBYxiP81Ab1Eay1uZAIrOvH2IoGAP9dfZRcK9lr6wLOUBZs
-c0AYXYoIMUrRVkmv7L8ZEiwJdSOfZCuKEEO+0zHvz2g=
-Am2G6CsCCVGKnoH4myISobqHNj569Fzy35Is6pZvSvo=
-XgNkoyVq113FFmsWmv+xag==
-JEceXv6KB5S/b7P0qqe8ZA==
-3qAa/cOeapkXhnqdbePy7kzTeyoU2+zN2Uptct2w+AY=
-Hg0kXIzLzWZpM22haam9eqlZ3W8vg/xWKylm0AFA9Pw=
-kpWfAcyT9GZVZ32pr1GspDntPAvGVFQJIYIRaFdbza2rPuKa13bgg/OGNewulSrG
-XAeygbMosF75MBazC9F14zFhWv5GrS7gK858AcL8B2E=
-q5MDAKx6DimoUOCR9k6OsQ==
-wNW0dm0sMCdjpDh6gBsYXn9xIB95CPaUrefJeoL/RVg=
-P6U1aYru1bTSMYeLH2Jtuw==
-Z2Cabvr/MV+/ZUZ/D0LHTw==
-GGLHspduHmuZpKziTDZAvA==
-6eO03CXKkbDaxYNYr90YSVogKpWeovzhFT97CIAv4mPqCA8KvyIgw/Kn+Z0fvtaa
-HKeR/EOAf5GWvybF7gCdC381e4sAQLZcP2DiNhSJG0N/az6ckVQr2n9Tw/E1HFaa
-9Af402xFGdUy1GEQ66O/ta/q/Kxy+YsQu5vxKnQr5bE=
-5NWaq9FduAlz0nIN13eY4oTyqZUTvpWSHmnHMuuVO00=
-u/2sJkuAqbq23KikUfPiVw==
-uErpsrPvqu4uk1jYNPflK6hPYQlKOa5MBaUnnPp7/yDfc27PbdZdRNNFtJQIw+s/
-YEeo8r0fI92zxIHPNTUGvF9VOCldx4Az1Ds7wiNKSsI=
-m8tumNy8wIUjh7Owuacf6w==
-WYhhlgnwi58PB9V5tI0Nvg==
-Mce33UDXidGR6/gbuyMpKQ==
-GS/LCRTutpiGew8Qfs92Z0miMO995FONqqKWKN05pr0loR0tbD8XP2qXjyrLAM3Q
-A0V+tPP7y1ZCl7a7pQzlXVnJIlKxTLr008hk0etO0s4c/4NsdEZHw/EfkSpy2sr7
-Cf5qsAre+CWt2ymVziRPBkMD+/XzmIFVtuY651Lj/T4=
-Ltagxm4fUEs7jB9XaJWp+LzDpN9LwhABR3HiPR+HV3GMB6uZIpVZcraR1wtIMlQ0qQml6v9k/+k6CTiLbhs8lw==
-3E1gUZVsU6tFLTvaQqGa4w==
-5NzPszKWu4BmnED9WEpJxKS4rQj5go3iBAMBxXzIgww=
-EXSEZxBffpkFwCB7lfUhnTil5bBmXbSF2WVj+qXea5c=
-6aKi+Jo3kOnDVKPkzhdWGsTIGEiFFWu1BZERQtWnGAW2PAU/Fb9UODfHb/kSy4t31GMTpMGNMZ5h+XlLAoFtXA==
-BGlQqTHQrDntavib5QRXsQ==
-iWvyJnF36Y53MhetWhUqgLp4zyxcEQ/7+H6SAh9hfJ8=
-TN8sjhQYjPbuYitUdePTMQ==
-c8+/vGYtUrjvrzbpUhivuw==
-GMpcghVYugmthu+EQq+nlT8/DPzb5+3lF7iG/88cCt3vDUoCgMl09etvE2sTr1iw
-hfoqQvtTaOTnd35AJyj/FA==
-cjhezN0WNCZ/UI3ZU33/O6S/+i0ohEq5v19rK+k7cAg=
-V3SVRxiOUNkq5t+Z/TvGrIrFRfYAZK7OoKgmsXdyIi/OAlziz74T2E4OWXsaXhdH
-RtdIzDFPfLmbn7TKzxm0moT1m+6yYVySq8DvhDs1wZ0=
-J54IXSPQeVG93vPtWgWCUaFp1NaoID+HAXE80K5XcHY=
-5QlGrz/YQU14p2g07CcsQQ==
-/03+U/8K135ijP1S/SS9iQ==
-e5aq6ftjX2UY/kgwk5uMpg==
-4J/Ad+v3GhXU5QfGsqrmrw==
-qDiyrGdUqQgEXLMa9pWMMMOhm0OAi9yfhpyx60PMKEE=
-u2QjSk7H/EdJeYzFcSseYWhUYg2ThGW3rqMwle4g0Hw=
-Jwtg2lxDJ394WNJr9fVtm45LapU+b1D3ilQf63+r5rg=
-0Fn9sRGswmp/n5BJmLGO2Q==
-VYaaKFVuQwl19CxFL6lyTPD357Ap/rewUnIxcnrQO7Y=
-Gv0G+jKFMSkiyMcwm9M9tQ==
-bjUvIea7/pZ2efTgPYSEhQ==
-kl58kXgR8tw4lWLvL9W4LQ==
-sf8uIDpimpjgq0Xd8eq8sQ==
-OsiWO2dTfOPQyreYE3630w==
-0Ld7LOsxZzHFLvUkCnl+wF1PVt+kx/n0ANMO1LI+Cx0=
-Mkrjz73GcBP9cSRa8TP2n5FrKtgNN87C65sUYsq5UGk=
-9cEFNVYeDk/S2BljGFMcN25CKsGMIVPAJ1VwmggBXPM=
-ulxiBKUJt9u7A+waZbhpj4myaS06gSt90hyhaLn23i4=
-cqUBvpj5b1IzxZclZKMlWA==
-rAwezr4LzXqD9/YJBdGtUA==
-7MIFtcc2InN384EcxEa2oAXYHLnu4OBPsZCzV+7quHQ=
-cwHeI8i6sp02OgcGNjLnuw==
-dtwBuUv135UMKi9SD8Ig7Q==
-3nXwBJA3Ky8LuhWFPjHrjw==
-orvkuQSLWm7VVNo4hVO9ggUmNqRPdcoQstHw62rUi2g=
-cPQAZkCBW687098guD7wFltdq8mD+66fN4k9RzCXFko=
-7UdlBjmtU2zaQ5ics9GVvFtSMHVgWw33yIsXpjywkbXQitoyPoLMX0rMYt6jGHsC
-KYahmjres5U8JJJGuipMtA==
-tAPC2Q7dc2f3Bw/ccGbi0Qh3y0bHB+c/Y0HiU3pxlgA=
-42tC5sm0lydINXYt0FuQlC9zfYF3PAT6eHfeIjqOWUe4UtzrVvMiCDNgHs4+FyDa
-MTd6+T5/k98/il3uBNJmHA==
-x49xxII1D61dNVU/1HPImi/cFmsWEdLoIjvz0dAgczs=
-YVGcQRtUPBREbeA9HJLJnQ==
-0v1+Jl9CaRp/ukOySxR1dXSYF6JxpO/PbFBpNBr42RSdkixA4nJF9oEHgUIJ8Q1k
-imqi4VJ/QgB21TfL7LpZxtt5LC515tCQKNFkvKD0FCQ=
-CfIOWDSbzwE+23YIovjEsQ==
-qgcVzixvOvPB7mtgCvFYBw==
-9S5b/hRSYroDQic626yFQA==
-35nTK9zd7SbdRCm1Tww4KQ==
-BJnBnVQtFPBQmFAqI7ydyD9fLOx2Jvtrbqtz8mp8yBdpk5jisxYO1McSNRvSjqVz
-6632r/UJW9JZSbzWKTPbu88xh8XSI/J5jduwp809O1/fJn7nbaJTKkmdNVQ5Imtb
-AZTsl9Z4t9n5piv7L5dvRMOEUM2yV+PxGthMADwfVKM=
-wbdQMW9DFVCKfQFSC7dV7KrKMlxGt0ylCYwwfqbzzlk=
-WI35rJNw5TmP28DQ5YyPnK6YFUOR+iAkeKGqcBs/tuZCdrP5RqWP1d2DPkPv2rrE
-g+dqE3nsHMYsbK95PjM5myTFcObGCWfewN0/+mp3v0devBUKXBjJfxmkgxxulxY+
-gCQdTZgUlpRRyOfdvtunFX3sTPg6eYgS7dcUhG+ZlZebjAFB7fDPS/myeQ0D7MHs/QMWl/pMY7MipyJfITqeJ2t+l4gUemfI9FWZMkWMS74=
-BMm2rBNJNWSeF79PuT1kRPAWv8+gr+ewnf2KgDjnFcb6Y2ZUXlEwSYyuvyW3ERta
-nUTdFos4Cilc5av8Fm1Pgg==
-qyrqP9E/UWgPAiwK6t0ZwyWeJtEhinFt5UxislCQ5Vc=
-JBJYz38dO54OULayyPNW4A==
-THm9yHYv0L22kBSh9ceOsg==
-51bq1AVmNSi5eCbsxBCoUPmHsqqUGUC+bDhRkWG5aPTmC5WpNnEUhCUWfh7weRYJ
-x4lKxXqIoFROpfnaEI6wRgqh+RnW0cKQUxxyc/V1zORgbxcJqgl1JR6l6ebQ+Aj+3rpYGi6aUQ8N19Sdj5OvuyFgg5SMGnfz+toFBGW7NNk=
-Tp3UjdnMEkj8cFvfqVcgH0cvn7K1BaVzjpiAGHwj0A4=
-CP4OgjdcJ6v+c95dUTjdJg==
-uAfwJs+y9OmcVHycOoT/aQ==
-39nR3W8dcZJ8u7LClmJ/WA==
-xto+uIs/n+2szIgWZHFn8UpI//gwrkm/S71ofXD36Qw=
-UWyO3wr3HBmycz80abBEWrSvmCi5hf5CWuxpIOtgvb0=
-1spM0mnN7ZO1WbxEdN6blECFZ2goNMmRYS+RFu0pq6g=
-ZGAT+WixO9E26pFQlQNAt/Hj17CaVss/u3kEJZ0HZvZti95LDdGoL47BtZF3k4dl
-7x94Q6Lvi+WeR9lKlDYhrzi6BcwmLHEH+IrQ2rOoF/4=
-2rgLJWxctNGNxHHF+MYOBA==
-VdAwCgaQl9ZGt8v+PxbP4MQhvxdS5sFbvWz/npJlOzIkO/nVSmXyq6x2J1EiM3Vq
-CkL4jummSIOi24g75Ol46q2WFnEjCcJf83vv+rrlaSE=
-3UBCNYdKtH18RBegNTznk2ukOOH9cg4KuGXOPY1kXYQ=
-ES4E9hifWDXnavf9VCWFxA==
-JcDY1KiA1AOeekGkUgqnniGTbc9BgKbJTTPdhCy5cZLXlJ4HsFcz+At1KnpXpi65
-Y1nsE3h9NdkiPOtcOj7Qwg==
-JhBoqkdDIwBjDgWmJZFEOw==
-A8RuRKaDqf0z86EuYApAYw==
-qAAjBnVYGpmBRVeyVSqA2A==
-2r/q2pN5jCgeTauBjwmZMQ==
-bjCHtmjRf+p/jLOfdtYTv0FyuHEvJ+AZSziL/hWn0KA=
-jAkR55ebfkL8R39Jfxu6GtqrJKeRyw/GyhTgZky+x/o=
-aZoHFFWyM+EIJkHKP6YwjnNXtc7U2DXo1WRqXs48K3I=
-R8X85SdZ0DLgu71pHxliJQ==
-fcMCgygacmA3Ksy/9BlZDalQBTvxDD70HZlBd3QsH+M=
-yEXb5USgTtbmy7SNxtCWxw==
-u6MHyAn8cLwc8qVf1qTOqQ==
-Bt742v7k/LiZdAEpkYvNDA==
-Ubx+IVG8HUyRkXTIVhWz+DAtzIFQsAmL7nUhDtuSxq6mSjwPU7aCvUl9MkhuSdLG
-6aoNqeNhwKRkXUW3xRx2yANnYyb1y09unClV5o4g3ds=
-l9qgDzaxdhtbhvgmwmDxsw==
-l1DnjziDScEX5zmkTcwt8A==
-TRRCMZCcyj2gkAtem7QBsQ==
-L/8n4WTTBRKmyM8ct3+Akg==
-CtxPYFW5YCxq/drsELoZ+g==
-R/4QNlET8Qha8tjT+7Jz4w==
-3taSc3LGtJddBiP6H94kafC0ZtKkpgXtS/J1bXbpyhUJmj8yJAbf8BvosJpWsNrK
-TDN3ftHFIzsWNKaUDJphSDFNE26UxfWaRaABv2tDWOg=
-g+1DrqD7JZaHfwx0mULVMQ==
-IjOu+iJ1DfFRWlKAjrKNfw==
-wDTMOgOECDyyUooNNQJvg5yBtGCb2z5OMYNAVdvQb0c=
-whZOzVKKR25rB2wwkdgotA==
-2/8DlqTU87ZTsI6gr3kEsA==
-ujpe9p0BlqJZgp1JTxoCMA==
-NJY1AyeSx6VStSc/QyqsFHNuPJYnnCDusobptSd7NMlgaCmKRlX9GLzQMjNCmSJo
-bTidGRJCps4+4gDcUjkbsOdtFL6Y/0Dg1k06UuE33yfjUOiBHgtKkUvNYIsWDA8+
-YmjTfrtcSkv0R+gPwK9XkfA8y0JtR5FLJQP4xgRFSM4=
-b+WRmhvWjAmWJnwlZIVO1w==
-/hxoCWfyGgOeXnX71B9mWw==
-ZxbOXqxpVmzNqjx1z479Yg==
-sW0hJsbvDf9t47BjDrlzVw==
-8WFKxKggfStLlJrK+M04YQ==
-RzhBhvKyZt4uX8bal+kObg==
-OOeStWS1D6dGQ0ctoIVbPA==
-oJDbYv+y8EZfpH99gXuIsc8nTj1GpxePE9ISaRxaau0=
-BlZ0dP1DoR/xA12dTEfOxGBtglmgATbgwzll+FYF258WbvZdeJHF3btlYjqN1Uiv
-Ec1MDZq/VE7nX9GXq1SsxNA5m4fdos8YZxmTIQdY/aeUE39XZutEBpeVS9iIWLhY
-t40vmKjE2uwfaqvLFcExIinCnFor1DXc72j/7Y+W0q8=
-rMjvD5bxk49OhGRSdZ2QTM18pB68sB/wq3Vr6eb6T3w=
-zPBPl6ImTqmOiANVuMHzuQ==
-qYq8bwx6YVhaaXnRL6KLFEBtQkpENtGKIUVGVdAKDGk=
-h2F4FDS+WdRk06eG2xL2uA==
-dheRsyx45RPbUzTnFP7CwlgxNmlkhWOLfoAqrtwszmklJTbkjLdq7fRTLunH5ZKJ
-Zc1R2q4dxcM1v0p0qrZBjTBNuyzsyuTqv7+P5BiybZk=
-L5r/P75+fyCGuNifxGtSpXq1A1ojf0WpVZkVleE1Exqj1xIzyoPpeDPbjHN3L0Ht
-H6AchiSQz9OQUoWVOYbTEokTIMCfR1Ni5yAZHT+dKwo=
-KWrVXgT5uUPgELAHsSzjkOSfUsLcvNpaCmJd2ELkcROtFK4D2/wjbf5f7GJOr4Cs
-Yiwb3ERvHw0Wkj7IqVqDCQ==
-GaNQ6VUu1hOd0k3IspfTVw1PnSBZEh2LZ21ua0z5ynA=
-1lehpRY0F9Bm4PqBQZO6nw==
-QFdwImH3dMEzfF8DLod3LA==
-0duIVLMD6wsk9LuoONfKn3Z5jobZsgo+XDAWviyT3tE=
-PPdQzKmNsqm9dUCMhh24WT2ohPiEDfulehHnNHruCfs0F0/pbHZZWq3GH4V/kf3YbPOhSwvyQ7FP+YBIqXZELA==
-aXPlhBN/f9sX5zFPBnTUPA==
-4mln4U/zVpsKu0vWSUMh7g==
-1e7Ihj5dJB17fZiw+dZZbA==
-LA8908VDposgFmUzEHh0Uw==
-8/y66Q/050fF5SdKDgty6lmPrnUs43zVeD3nPyj3g4w=
-rJ4pvclqL+AYh21dMhpSEzFw7ZypKxrSsfdMrWMXBWM=
-D8P2/wgy4PijdCJ08qEASg==
-ONo2htZa/HnbmWJ22P1jYw==
-4HlImGMEUequEWalgQSgxNUpY7JenncFqbOgaS+Xv7d5mgRg/jXBcZ5MgA9ApE/N
-g6e4qiSgGz+a7oWAdGan8NEuIDFUa5vBkxaBmsVJcCU=
-SjF1OyIy3HUyK2oDsSNJ+u9hvoeps/quP6wCn5w/fdg=
-yJ3FVn7EZ1SEBi79wFfkQBPNqf1t1a4UAiDMfqISjDsZ6FqO250Shbol2PnS189F
-SW+0pmCzfcK6qmt2xBQ29CDAMxSIIrDFF/Da8OpiwfU=
-6mabvJljnwcunKxKM533zIS5HMDu3ukn5hdDdh4oFJTeDxWbKzKaAD6y/z85ut/d
-ASCjFgO4RWf/NOlGJs9MYDBkzATPU1pVHKp1mgLNCMU=
-eEIkCi1S439jduhI20SXkiiNLLBUow4CpdbuhXsD06AUmvXuNaplZ1H+gjIMfiqP
-DuQtcTRovy0Cb1j4Ser79Pe79Az1/HnnATRkHL70UsY=
-wzdw7fg7zmjW6EcJJsG8si8uBSFdESkZzS7GRsI3fclxI4UUgLSKu57irTkjsd5k
-ww69ZxjAf9i/4IwSpKHnOUztUDdqoqWcvuc1uhAxL78Pub6TDBw3u22IVva+aQWi
-H1O0S9Folul1j8gzqiLGtqn77UChn3gjBXVHITl2pdPN9o9m6B7OOFO0GyxlITpf
-3WQP32xAJ1sMhbTYpXg6p4zz0PsYPOejO41hreSn2kA=
-0HYhZfsjbquyTj3QwApy8A==
-tnagn2uMhrRvuufMtRi/OA==
-82+I06/bASUyekit1ndA7w==
-a3Vhwcw5E6AUeFLZg0f19g==
-z+lv0VUWBgPSZoE7lCigFKATuBFkvgy+hmNC7xLmpXA=
-tyYOdOTlTEYKmXgV45BlqXCE/SfcKMtI1Mh7L4KfdNc=
-bbKocq4neDHIYa7O5KkEpJUVXPZUMvA4xspsp9oIID8=
-8zcv8SJUATRxzGCK/K3HsAvzkRwLdnuIXDOZVKKnhxEbgZBZakkxCSdmVVPc2SYfV6v0zhrvBeTuDJkf5Jyndg==
-7LQqzcVcwJONQ5aAROfHsIv/wAywryEklFOqh5yi5tuI/IaDrWfkkQKU2tsHUTYO
-7dJP/ojValLCJ/0pYdf7gcxsAkWGAvuZA+GFId/004XL+xkFdoAlh0g2NB+kvXlja5GmDkbJfK6FP4WiseH0dD8Gj0cq70YU6ymQK68S0NI=
-wQmnsOrD7coYnv2ak26YWg==
-xUelDmCRkI7/sfntaPs+Sg==
-iQD+fqOcG+Bj+SyI6Va4Pw==
-xr7P9Q25umDu28yZGOYGGnq55aHwJNbtv32yr80CM4w=
-hTQsZOz4JnvI9sGJqAX+AA==
-hhr6Xu1L0srCEU69TFyPzQ==
-qY3c/PbKTDMwifpymJ85hA==
+-- @docfuncs @{
+
+function print(...)
+  local msg = ""
+  local args = {...}
+  local appendSpace = #args > 1
+  for i,v in ipairs(args) do
+    msg = msg .. tostring(v)
+    if appendSpace and i < #args then
+      msg = msg .. '    '
+    end
+  end
+  g_logger.log(LogInfo, msg)
+end
+
+function pinfo(msg)
+  g_logger.log(LogInfo, msg)
+end
+
+function perror(msg)
+  g_logger.log(LogError, msg)
+end
+
+function pwarning(msg)
+  g_logger.log(LogWarning, msg)
+end
+
+function pdebug(msg)
+  g_logger.log(LogDebug, msg)
+end
+
+function fatal(msg)
+  g_logger.log(LogFatal, msg)
+end
+
+function exit()
+  g_app.exit()
+end
+
+function quit()
+  g_app.quit()
+end
+
+function connect(object, arg1, arg2, arg3)
+  local signalsAndSlots
+  local pushFront
+  if type(arg1) == 'string' then
+    signalsAndSlots = { [arg1] = arg2 }
+    pushFront = arg3
+  else
+    signalsAndSlots = arg1
+    pushFront = arg2
+  end
+
+  for signal,slot in pairs(signalsAndSlots) do
+    if not object[signal] then
+      local mt = getmetatable(object)
+      if mt and type(object) == 'userdata' then
+        object[signal] = function(...)
+          return signalcall(mt[signal], ...)
+        end
+      end
+    end
+
+    if not object[signal] then
+      object[signal] = slot
+    elseif type(object[signal]) == 'function' then
+      object[signal] = { object[signal] }
+    end
+
+    if type(slot) ~= 'function' then
+      perror(debug.traceback('unable to connect a non function value'))
+    end
+
+    if type(object[signal]) == 'table' then
+      if pushFront then
+        table.insert(object[signal], 1, slot)
+      else
+        table.insert(object[signal], #object[signal]+1, slot)
+      end
+    end
+  end
+end
+
+function disconnect(object, arg1, arg2)
+  local signalsAndSlots
+  if type(arg1) == 'string' then
+    if arg2 == nil then
+      object[arg1] = nil
+      return
+    end
+    signalsAndSlots = { [arg1] = arg2 }
+  elseif type(arg1) == 'table' then
+    signalsAndSlots = arg1
+  else
+    perror(debug.traceback('unable to disconnect'))
+  end
+
+  for signal,slot in pairs(signalsAndSlots) do
+    if not object[signal] then
+    elseif type(object[signal]) == 'function' then
+      if object[signal] == slot then
+        object[signal] = nil
+      end
+    elseif type(object[signal]) == 'table' then
+      for k,func in pairs(object[signal]) do
+        if func == slot then
+          table.remove(object[signal], k)
+
+          if #object[signal] == 1 then
+            object[signal] = object[signal][1]
+          end
+          break
+        end
+      end
+    end
+  end
+end
+
+function newclass(name)
+  if not name then
+    perror(debug.traceback('new class has no name.'))
+  end
+
+  local class = {}
+  function class.internalCreate()
+    local instance = {}
+    for k,v in pairs(class) do
+      instance[k] = v
+    end
+    return instance
+  end
+  class.create = class.internalCreate
+  class.__class = name
+  class.getClassName = function() return name end
+  return class
+end
+
+function extends(base, name)
+  if not name then
+    perror(debug.traceback('extended class has no name.'))
+  end
+
+  local derived = {}
+  function derived.internalCreate()
+    local instance = base.create()
+    for k,v in pairs(derived) do
+      instance[k] = v
+    end
+    return instance
+  end
+  derived.create = derived.internalCreate
+  derived.__class = name
+  derived.getClassName = function() return name end
+  return derived
+end
+
+function runinsandbox(func, ...)
+  if type(func) == 'string' then
+    func, err = loadfile(resolvepath(func, 2))
+    if not func then
+      error(err)
+    end
+  end
+  local env = { }
+  local oldenv = getfenv(0)
+  setmetatable(env, { __index = oldenv } )
+  setfenv(0, env)
+  func(...)
+  setfenv(0, oldenv)
+  return env
+end
+
+function loadasmodule(name, file)
+  file = file or resolvepath(name, 2)
+  if package.loaded[name] then
+    return package.loaded[name]
+  end
+  local env = runinsandbox(file)
+  package.loaded[name] = env
+  return env
+end
+
+local function module_loader(modname)
+  local module = g_modules.getModule(modname)
+  if not module then
+    return '\n\tno module \'' .. modname .. '\''
+  end
+  return function()
+    if not module:load() then
+      error('unable to load required module ' .. modname)
+    end
+    return module:getSandbox()
+  end
+end
+table.insert(package.loaders, 1, module_loader)
+
+function import(table)
+  assert(type(table) == 'table')
+  local env = getfenv(2)
+  for k,v in pairs(table) do
+    env[k] = v
+  end
+end
+
+function export(what, key)
+  if key ~= nil then
+    _G[key] = what
+  else
+    for k,v in pairs(what) do
+      _G[k] = v
+    end
+  end
+end
+
+function unexport(key)
+  if type(key) == 'table' then
+    for _k,v in pairs(key) do
+      _G[v] = nil
+    end
+  else
+    _G[key] = nil
+  end
+end
+
+function getfsrcpath(depth)
+  depth = depth or 2
+  local info = debug.getinfo(1+depth, "Sn")
+  local path
+  if info.short_src then
+    path = info.short_src:match("(.*)/.*")
+  end
+  if not path then
+    path = '/'
+  elseif path:sub(0, 1) ~= '/' then
+    path = '/' .. path
+  end
+  return path
+end
+
+function resolvepath(filePath, depth)
+  if not filePath then return nil end
+  depth = depth or 1
+  if filePath then
+    if filePath:sub(0, 1) ~= '/' then
+      local basepath = getfsrcpath(depth+1)
+      if basepath:sub(#basepath) ~= '/' then basepath = basepath .. '/' end
+      return  basepath .. filePath
+    else
+      return filePath
+    end
+  else
+    local basepath = getfsrcpath(depth+1)
+    if basepath:sub(#basepath) ~= '/' then basepath = basepath .. '/' end
+    return basepath
+  end
+end
+
+function toboolean(v)
+  if type(v) == 'string' then
+    v = v:trim():lower()
+    if v == '1' or v == 'true' then
+      return true
+    end
+  elseif type(v) == 'number' then
+    if v == 1 then
+      return true
+    end
+  elseif type(v) == 'boolean' then
+    return v
+  end
+  return false
+end
+
+function fromboolean(boolean)
+  if boolean then
+    return 'true'
+  else
+    return 'false'
+  end
+end
+
+function booleantonumber(boolean)
+  if boolean then
+    return 1
+  else
+    return 0
+  end
+end
+
+function numbertoboolean(number)
+  if number ~= 0 then
+    return true
+  else
+    return false
+  end
+end
+
+function protectedcall(func, ...)
+  local status, ret = pcall(func, ...)
+  if status then
+    return ret
+  end
+
+  perror(ret)
+  return false
+end
+
+function signalcall(param, ...)
+  if type(param) == 'function' then
+    local status, ret = pcall(param, ...)
+    if status then
+      return ret
+    else
+      perror(ret)
+    end
+  elseif type(param) == 'table' then
+    for k,v in pairs(param) do
+      local status, ret = pcall(v, ...)
+      if status then
+        if ret then return true end
+      else
+        perror(ret)
+      end
+    end
+  elseif param ~= nil then
+    error('attempt to call a non function value')
+  end
+  return false
+end
+
+function tr(s, ...)
+  return string.format(s, ...)
+end
+
+function getOppositeAnchor(anchor)
+  if anchor == AnchorLeft then
+    return AnchorRight
+  elseif anchor == AnchorRight then
+    return AnchorLeft
+  elseif anchor == AnchorTop then
+    return AnchorBottom
+  elseif anchor == AnchorBottom then
+    return AnchorTop
+  elseif anchor == AnchorVerticalCenter then
+    return AnchorHorizontalCenter
+  elseif anchor == AnchorHorizontalCenter then
+    return AnchorVerticalCenter
+  end
+  return anchor
+end
+
+function makesingleton(obj)
+  local singleton = {}
+  if obj.getClassName then
+    for key,value in pairs(_G[obj:getClassName()]) do
+      if type(value) == 'function' then
+        singleton[key] = function(...) return value(obj, ...) end
+      end
+    end
+  end
+  return singleton
+end
+
+-- @}

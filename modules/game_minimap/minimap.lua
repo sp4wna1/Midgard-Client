@@ -1,165 +1,165 @@
-8VUSXf2twY4Y8QIn1JaMg9trHAlyy96UHwdEUWpxXyc=
-qTCqFPU+JnLNq+sLEi74psLCclwQm31wb6F0J7HszCc=
-DibgD/nM4SRlX730D80dJEvWuPDvinVRjVr2do1oWRY=
-rG8oiFNQLIVbCTlnQXb2Jg==
-ZigRwFb042kFvgWyt4DncveFcEE+Ydl69Uy6t3d2cg0=
-XaIyjukUa1x/XfN6NGbpzJOzjWpIEo3ntGjxTgQ8M1Y=
-HRgDX3+OutGCBeVK9Mx9IQ==
-9b1ltmU8qqy7gRGypohImQ==
-0Bf9PM7Wm8cRhvpPvVZDfw==
-ktPWyPvImGTv1SDgVfN4dQ==
-Dvnn6EFwGNhVRD/pP/k0ZcmgsCd286jxWopMwn8pbsVtELGNCX2jlUt9q6C+1GZZ5VEfQAvRe6sxS7vsQsQbL30gPpyYOyJw6PBb4/vnaRnMt2+rrlgAVAXnahkiHHK3
-mGip12IyI9KZ9yoZa3awPQneva4DSZWATgx8hlVOmlRA2t3GC5VO7xkMd0WFvrcoaC+P23wl83ZH1NmBTTYG8bZHYGnd9+L5HmrhtWJ/gJ8=
-r8XmsNGgqicip02jCSN8gj0zNa+emI7lpA89mF0fhT0=
-8XtEmEbNtawdZXHHAHr1SA==
-2hOnse1/a/baEwJlkVO1dhoaf86+errWZZhhn6lJqKPMHEE4Fy7dSmyMV1lQShe6V2w+cQKupEq0Nx/gmSkhuUiqtAHnx5m97Fk3XcKvFfv1RP2JCIzWVZQb6H7w2cNj
-B0qpKbdO+eh91oB/f7xw2hhSjHLyad0Eaa4KQn81fnN3tdBCkruDOKi4edzN+LbA
-+S7zvnzNWJFjT4eia/AhGA==
-RGkGuTj/wAb2j/+QUlcDNXW3Wwg3JFb6wiereTw5pAXxgmfT141ky+cJSRPSZwKwl/sGUYUOSo+bI6w/ZlQ9JNP3H3ugQQvWuodzOxf+D+g=
-G6dUMEl56NjqXjrQArwiNA==
-1/yw9Dyi3np2LrzD8DLSt0tXEct6LTgEQnCI2wNH5MwzFkmp/YSyZdjXcZq5aaYEGXZhaPnUwKrlr/jTyJ+eAA==
-RHlvHTm711cm1avakOiY5nVlj0Pmer8lQSCKmvOib1XTgxFvnGuGJki0xFkwzcLwWTThGAZqz46CMRroxc+SgrcoIvVL0g2CVq/BJAEwHQZQ7wgMx7TysOIF5aqRY5+0
-275SFYEReJo5R02J7gQcNPIvK3HHz/+li/u2gQH0cRa9gBl+fKoMVcGIQ3XTv26QyWhSP4g52GCkQl25wVGq9smM8BqfuZE8SdvKHliu1MSVAxxDAt8vaS+FksNZr7/l
-gBa6CFx9qMgslmgznTRJHEYX6rq2yO5W04T/GqwiGvY268r/e9xIqx2sOs7yBZs45IDzFAEb1mVysrAmwxtVUj9f90H2HLCiYZnImSxsoQ5taFlHprpp/9pG5ektXn/a
-r11aBsFgxefHh/OUy7uUSW0Z4/veF/76ek5oSeVHuQcMsEEpW4NDDB8bXVipj82KMlN/ZQ0MqQuX2tgKO/fXglLAd76wgru8YVhcuJjNqaUytmnT2/WzVs+SH1TPxX4f
-4fEUoyW7+QOSyY0ga1svKxGF8h5fDt/trh2E1+3OpgYbDPQiaislYGOrQWS7XHJh
-etJvIv5KKobUgo2gOOS0KPebVGk2a53EP0FAxnk54yNZGkLBGr6lfHxv75ZIJs3WAIRDVCw559dn0vtOxh9CXg==
-uxvKhKeDHEYC47osJn5VyA==
-mNSfWHza49WJ6tDdZ+bfL3sRS1NyuZqqkMiJucoQe58=
-nPLTsmMWydp/RVOirZ6I2w==
-WXuoLTujmcZEIr6mHuXscOTAehrtY8Gtk+DuWBsAfQw=
-xupc6fJuAfyvy0xefyokRfONj4lPBc5zyWGfdEkYLZM=
-1RepSrCxRfT1v8msulzQ4GNswp9WudIYJAn2YLjcbac=
-pJz3wj175uCNeMTKgVWM4A==
-djWmjyKwZqyYG2oJumjQRg==
-qbwDphwz6PQrw313ziOhg5NMxInt9UNPV2WSkpTRp04=
-GyIvV22BVLcDzdwueBhTd/4phkRYRO6h1xw2Kq/g34RCqJUvoxh4zPilf2nwMwZ9
-cDjeO+cmpfCqcVlU2Uw0Ig==
-T035xEyo8tJI2sogwpNydA==
-iLOecNY4hsH8QQODBz7Y9Qq2rsW2zKRJmAWDtSvtyAU=
-b3KLvM4vnDI/k7FFwuzq1g==
-D9y6FkH/NFYoi8uE1InyMw==
-Vm+prBd2gsdU5/phc7Bvvw==
-cpVQD+ZTEU63NAIm5FZ67A==
-gQAoUYUevQGJzwQI5bWDvijY5uq0UJuSHcvDllXjUf0=
-+OFe9pPis20IC7dP5CIADixU2kej9Ymdghj3y1Txv8Q=
-pRjNcRpBTSyKem3G0tUsaA==
-/vSuxYtAvbzS+Cx5RrfvSA==
-hPStolV0w6d7Q6JMV5CMRQ==
-F48Bx5PhfIRjx0d198DBtV+lSb7GXy4hrHfuDdp09kY=
-jxdyPh8tsNRxP8+al/EuPVS/ueEgdBXFe562JbYT7Po=
-id5vsGWj51Fj3nNJvKsPQyDXbHiUBd9F1tgBi94+f4c=
-fj6f2q31rEwiaLmEVLLgLg==
-7guScUS97nAy7BWbhGLECQ==
-HxLhMibILdCVISyk5Muskj6/2I7sFc4mnbWS3dVE0eY=
-irPdCJB+fpHw5/6X1UyiFZ61sUd2gvXBoJ1r/gjvrBVRq6slcm2lRS+T4In4/Q6w
-SH28470zt7yXr/g12dGJVg==
-flNHW+oWs6Rk0v+BqpHFpQ==
-POmzh4S2pihcWYVLe9Sh2a0FJzaNIhLXdFjy8rOsjBY9wbSnWnpyOWSH/5P7lyyLRrix+U7oNF+tVxEOnYmghg==
-QxYx3o92jKn49kxl7bt286dcozImJaTJtgVIcl/edEL1ylR8EcAqcl6Sq++1C5kfXsYr82lIQxLKhm62VmssfQ==
-cEDiqPn2riq0+qx5fpHjPmZG52+p0/eMGUI377pGHknSzDhNCcKHMTLhBEJUNt8GYAWica2s+DtqzVlF93zaYw==
-P9Mn5a7DuMMeaD8Ni45C4Pfyk8yVGNoXChWPxgLlEsnjhcpDoUZTF3wEppe7hVrHVxzu8ppZsa8X7fhKCAtHLA==
-9NmlOIVS5PDppvUTLwhW//PUL+qOCEvZV2XfES49qL9zs07HczCZiI6OHhMvnLbOmVNwf/NezvNJBeLQnucLzA==
-m1NVC3SNAVkJ2DebN8emyquM3WpLzy/gpPztmzMRe1FVqbU71fPAoTU6e95qIcnM
-a+B1X8OClu1vw9Gt9DmNOIOuSyw3841g3xqgZ2BUo6nqLJjuNhoxRa2DBffNjD0c
-LKZRi0vURxwXYA8hfh2vWg==
-wQoUHHND7/NMm5Qok2ww7b0yyi5Mq7ufcX8NJ7Mj9pQ=
-OUw1B5mtJLlYSURIwPhBwcLx/C8bt5JL89f+5KrkiS8=
-0TYms+WGH68Nh3meOSiv7A==
-lXqYWXOdjt1kPjZI1ti0OQ==
-CWIrGYIUhUHFcQTDoPuRUdCEDQA4+phTYJcNSLGabRk=
-ZpPG6rgOByUMdwxziCyN3PyRVDjqAGNURPteCDAYGAo=
-mqVWQ8h8fCXShmXxSbQY7nqzz0Ww3jHWMxUS5e8G9HA=
-wtbYmrez4srjhMvJ/4eELR3h5pj6SPKSf9j56ZrCF/M=
-PcnuX8xfIxwLjXqUs+aMAA==
-+EHH9ABMicasx72gjHRwAn/fs0Qb08KcXRcPEIeuoN0=
-JDwevGAnTVCAjOH06c9Xp/n87ie36wpkHXN8cBZ/vFg=
-bCh3xU/ahalc2xv0kenq2w==
-Oqa63drktZU425itoLwXGQ==
-n+li/FGwiqsIsSasrXlMpQ==
-BMb5DntNk+326MJk1GPC5BviWLn75+qlMwmDaO6fdec=
-DZnFgSPn9gugDMwTszkkCXZ0DgMTSp1Br0mSdkpmqB4=
-RjzTfdp4QrcfQqdHg8nJbA==
-D60KGFy68/cdSTSwDyes1w==
-eRz4QINlgyFs1Sbs33JJL4k1GMOVfwCH8Mw1oVsBcHY=
-/d3kbH/aVAVMwLY9Mhd+zN/qicqI+0GPUZSIHaZm9zg=
-hDmRrI+B49AMQm277UHoBZq6rhwraedwmLaCKkSbeI8=
-TQVi0NtINVJf/J6PlXvExw==
-wpkNbmEVtoLA0I7N715lLA==
-6ABd58dNCkmVPAVTaNoB8l1dO1igXJY6GMgArqnRi0A=
-pzk+CKSa+rAOGotfoLH6ZKZZQvX0POEs8twu2EbB3pc=
-K44m9E95RFvGw3bloiZ219hPVrWoWtH/0BRwXFxdvxI=
-sXd+bqLBEcDhTma0Aw+Mlw==
-5iaqmNsAMkNt2Ya4wApmDw==
-vjppGS0Vn49rrcNH2iCRvOujSSDlNRyaD32scfU7WTw=
-HY89x5yLl+mocfgKeDtiRA==
-dh8cg5l8R6MjeB5mbIFbKg==
-ekmSILxtUZe936cizAe26g==
-9ERKxZMWGF/SER+ncnNJv1vokYXcJRY3WjIm6heVgGE=
-JQX3ku+7MGmrW8uJjIk01ZMmd7hyNQ5fRXV70ovru4k5sCkJYr9ZQWZY1b7BlytyYej+r/eTewue776ebAmf4A==
-af3mL+0aF7/pGSEVnWcLVg==
-Zbd3zPE9UWbT1xYeSnw//w==
-dRzSPfMQ0gEqml8H3Fza2ypzlXo4kcf5WQkL9Ka4pMA=
-FU6Fwiazx5Gl8Bq8c9T36w==
-h9I0+jS9NzaI2LeR/UscLA==
-lzR5d8dvfTREiMqfDPssXw==
-1oQXwMzasXKJPiNk7HKZnEKvL+70y8/BioAUHNef3oa3GSzrVs7Ea0LdBiKso7Ho
-k66cSr6mSds3+NmKvwe02Kx2Ogv62d2NRTFw7W0sgx7bfdSCV+RRmqgOZzONBJKu
-0EuCFuoE8JMhGi9QqN2CUkT09pDZJpgT1/CHUZug+WCj6ROwmJTq/e0aDrxdDBQm
-k1GwjQWJ5DaDgZvUICpZRA==
-BcPAOfLYcxOMhHum23kx0g==
-X7xfVlCW0hibyA5r9j+K1TGLrMmQDO78VSMmfDjiu3kISK2HKQ2zpfZZPjarZYyO+MKhNeFZ6RzzPBXyoZvHKg==
-6H1UXkiOSKMFeEHsubCp8l40YmieLdXmjG4Z0Q8ydpdqfJor2TwcYqh3x/+w//6F
-9v2JbTO2JvX/ygF1Wgd+CxdVyNbiuTKbfP6FkQfwo4ROGQH+zYC7Hd+xaS8ngZRs
-gMOHK/6Iw+TGQfbwC3Eltg==
-72WtuT8gPllXhf+Ab7c3pw==
-E730divEgkINP208x1TxNFxOsAb0KJzgvfw8B6sQUXE=
-K84up1nKvAdRk1FtiYkHjg==
-Ez5t2Wmw8cdyYuWHgixRdQ==
-MMmm86TQIxB3+ghKQGn3gfjP985PMj/4VdYIuYnIruI=
-jcquA7qAXUpPsVUFq/Pt0r9w1E3llzxaJHFDjHYpQQOEeqj1wSr1pS0NFPOh/ERIhegHGjkhw8mTQ5GW4UDFOQ==
-V6uMw87uFVdKFl3GES0TEw==
-+yzeyaZPQ+tc0hVFj70Yhr2+afZNGC/Z0V6eguB3BeJdC0tYP7m1jdcReKeG0rvH
-g6pDvCDqCP8RzoKqcCTrBK6iRmkXXUqZ5mV+D8XH0/ATiWJUnQk3bkA68ju2GHKL
-hK3/SxOvDT6vJnQOrjMhkw==
-XRB5rHkrD3LTtDcus9ShcikIUGtaD2Uikgp3B6QD3442DDKRhKKF31/mNJe3aFNZiwjTee0U842u9oSCjiie5w==
-tDyS7Oaw1jRyYD3lsDEZYEp6q0CS5ddvKgtl/Ux54K4=
-pC3zQCmUObvHNT7iz7CrUA==
-q/E9NVPj72kvEtcIwFIHVFjWaXghPInBkW97XBlilSA=
-/pQNUoDhvPaPqgWrMoeJ9w==
-bxggCa8jfuB+30UA/RB5mw==
-xrQLvAbUOf3n1eJDi7fCr7Sav8ITLemb4CnmrmGSsCY=
-+y+9B5K0Cx93vUTq5HKtJMo37iaA71Kgz94p/wfEulGPMyjpB8zxYJ9mdFxRg1Cg
-SBuawtX28M2joN0ujyVl+dz1VV1uU7udhU8SjBEF6TU=
-2nUVRd3nJCEF3kwf5emzwTA/8AhyqArYOUZzmZEoNKs43jYyC3PL6nSYReYWIpr6
-Qtm/TAMGeggCqEIHAyA0HO3DAuMcBWbIDx9AT1fz4wo=
-nCp/4PuoA9VgkaGdRX+sRxtZePsYjSrV14xNh51QKHZE7zi2S3LD9gL4o/pSsDsx
-2JG/fomK3P08i8V3OQ24kJMTsWN1lPhXSG8xQsE7CA8=
-+tjwmF9oJVU2Tid4yIhoqVCKBqUhNxafi2MstTNcFLVVzC85hlLAcTnISLZEpLIQilWPfu5Fe7rIIQurUuxHuA==
-/DLKOzQqP6cSVgZVTiBYkg==
-URQeQ8qGJykZ85A0rePopHsBhL6ffqWrSg8h9AI3p8xyiGOsCx6h8R9O1bY0HjkkGzLoEHXHEGF2g0Uc2A6O3A==
-N408QozpEzG1+P3BeyPQqw==
-PNwp/+/FRh/cghrQxckCaA==
-I3U+JUMQYf4MSzygaSs09Q==
-rgmA4H6u/pFKcx+pyh04urANuU9BQIlsdUy2rS3Jhyg=
-TjW45NSGYM4aKdhCE/HTQ00rOrPkRUb5/LUSi/HgQ4E=
-LfhVsrXnRlkzWZd5Xar4UwrXivzvl7rUOswmmwwh0V8=
-O8FwBTcE9F3WEVsVzicF4ZSviJwBmSYfKyxoA1P1pRY=
-O6NGSPnXO9qucflydzY/m6iR2nL7XKtCX9owVl5hdESHdKS7u/kt1vQq26xYaOJwa90s7arrQGvcCPqSHlTvMZtUHt8ETimg0IHA8KZvz/w=
-Y0rnLXyJhruL95qe04k9NoSk9jqGpHZuPEMvEl8WAXCd/mAYCmaJ87AMnJUD4CVG
-0vGhl22RcgAS/3qBfdoCZJCOS47eMPn98Ly+pfCachosy3YHZoBfjvSd2NSQ/O/KYn0D7TeDeiyqKWqT3VmWqA==
-briEB6p27y+MET4GTlLKvQ==
-F/RZ982a563JcnX4wfTS/NGBqvWs58HVwS/xrwJh55w=
-Fkd4vjOGFasu2kwIJhPbpjz4Lzjk0FgxlFyjH0cy2VYBtbqfPNSLNEXYX2SZ8LmeOxxXm6kdnwTNZjk1oYzGuY37FXr2OdU7l0mrLOUeomY=
-C/v4zwyYNZgsVWFWUpU5bwaORbQmAf3yRb5/uc0xj03cE+8Y9TtO43IeL3BX/Sum
-vwOszJPVMKQCDj2SskqaL2RohZjnh0aPZAtwtAxo9J0=
-FAkBUg9qFZuxLJsMcMyQUY0SZei9RdDt/qe9c8hbidUeGZDGJH+jP/+najDBUiEJ4dHBTwRo3xnrfIuWfKkEIA==
-q5HcudRXjcPddOwSyl+whw==
-dZ25FjNcwrBG1neZ/a/31A==
-YZGrBwJSXAS8gMnZE4XFbZjfTPY1s6xpQzZIIVhGpp8=
-D5suDTJH0Jzh76+F7PVmmWjqab2KH8854V7By+CnS2I0fIsuFksGEmvmd6JxiKXiVB+lKRhlIYn9Vg9oPDLWdw==
-9Ipxx5Kdiqtd/gF8FSAzELhiCmos2GvoEuYg7u9wSCefW0PzenPqwprWKFn3Puuh
-JglAGYSfGLITITGxWBjJSGMyCSrFfwgNH/y/e882xotpwmXUQlgHtyu/3BDTcNwl
-stmAjVuxVbp7vczwIsVPgSfnwElpJ2SNBu4kAPip9QM=
-QQSqoU9xNCWwTli1AKByTbgrZ6rBT0LKoN2UVWT0TdPmLD/Q3Ah8I5cbtPHzGZ3B
-ps/jH+RTrsD9TL530BqcsQ==
+minimapWidget = nil
+minimapButton = nil
+minimapWindow = nil
+otmm = true
+preloaded = false
+fullmapView = false
+oldZoom = nil
+oldPos = nil
+
+function init()
+  minimapButton = modules.client_topmenu.addRightGameToggleButton('minimapButton', 
+    tr('Minimap') .. ' (Ctrl+M)', '/images/topbuttons/minimap', toggle)
+  minimapButton:setOn(true)
+
+  minimapWindow = g_ui.loadUI('minimap', modules.game_interface.getRightPanel())
+  minimapWindow:setContentMinimumHeight(64)
+
+  minimapWidget = minimapWindow:recursiveGetChildById('minimap')
+
+  local gameRootPanel = modules.game_interface.getRootPanel()
+  g_keyboard.bindKeyPress('Alt+Left', function() minimapWidget:move(1,0) end, gameRootPanel)
+  g_keyboard.bindKeyPress('Alt+Right', function() minimapWidget:move(-1,0) end, gameRootPanel)
+  g_keyboard.bindKeyPress('Alt+Up', function() minimapWidget:move(0,1) end, gameRootPanel)
+  g_keyboard.bindKeyPress('Alt+Down', function() minimapWidget:move(0,-1) end, gameRootPanel)
+  g_keyboard.bindKeyDown('Ctrl+M', toggle)
+  g_keyboard.bindKeyDown('Ctrl+Shift+M', toggleFullMap)
+
+  minimapWindow:setup()
+
+  connect(g_game, {
+    onGameStart = online,
+    onGameEnd = offline,
+  })
+
+  connect(LocalPlayer, {
+    onPositionChange = updateCameraPosition
+  })
+
+  if g_game.isOnline() then
+    online()
+  end
+end
+
+function terminate()
+  if g_game.isOnline() then
+    saveMap()
+  end
+
+  disconnect(g_game, {
+    onGameStart = online,
+    onGameEnd = offline,
+  })
+
+  disconnect(LocalPlayer, {
+    onPositionChange = updateCameraPosition
+  })
+
+  local gameRootPanel = modules.game_interface.getRootPanel()
+  g_keyboard.unbindKeyPress('Alt+Left', gameRootPanel)
+  g_keyboard.unbindKeyPress('Alt+Right', gameRootPanel)
+  g_keyboard.unbindKeyPress('Alt+Up', gameRootPanel)
+  g_keyboard.unbindKeyPress('Alt+Down', gameRootPanel)
+  g_keyboard.unbindKeyDown('Ctrl+M')
+  g_keyboard.unbindKeyDown('Ctrl+Shift+M')
+
+  minimapWindow:destroy()
+  minimapButton:destroy()
+end
+
+function toggle()
+  if minimapButton:isOn() then
+    minimapWindow:close()
+    minimapButton:setOn(false)
+  else
+    minimapWindow:open()
+    minimapButton:setOn(true)
+  end
+end
+
+function onMiniWindowClose()
+  minimapButton:setOn(false)
+end
+
+function preload()
+  loadMap(false)
+  preloaded = true
+end
+
+function online()
+  loadMap(not preloaded)
+  updateCameraPosition()
+end
+
+function offline()
+  saveMap()
+end
+
+function loadMap(clean)
+  local clientVersion = g_game.getClientVersion()
+
+  if clean then
+    g_minimap.clean()
+  end
+
+  if otmm then
+    local minimapFile = '/minimap.otmm'
+    if g_resources.fileExists(minimapFile) then
+      g_minimap.loadOtmm(minimapFile)
+    end
+  else
+    local minimapFile = '/minimap_' .. clientVersion .. '.otcm'
+    if g_resources.fileExists(minimapFile) then
+      g_map.loadOtcm(minimapFile)
+    end
+  end
+  minimapWidget:load()
+end
+
+function saveMap()
+  local clientVersion = g_game.getClientVersion()
+  if otmm then
+    local minimapFile = '/minimap.otmm'
+    g_minimap.saveOtmm(minimapFile)
+  else
+    local minimapFile = '/minimap_' .. clientVersion .. '.otcm'
+    g_map.saveOtcm(minimapFile)
+  end
+  minimapWidget:save()
+end
+
+function updateCameraPosition()
+  local player = g_game.getLocalPlayer()
+  if not player then return end
+  local pos = player:getPosition()
+  if not pos then return end
+  if not minimapWidget:isDragging() then
+    if not fullmapView then
+      minimapWidget:setCameraPosition(player:getPosition())
+    end
+    minimapWidget:setCrossPosition(player:getPosition())
+  end
+end
+
+function toggleFullMap()
+  if not fullmapView then
+    fullmapView = true
+    minimapWindow:hide()
+    minimapWidget:setParent(modules.game_interface.getRootPanel())
+    minimapWidget:fill('parent')
+    minimapWidget:setAlternativeWidgetsVisible(true)
+  else
+    fullmapView = false
+    minimapWidget:setParent(minimapWindow:getChildById('contentsPanel'))
+    minimapWidget:fill('parent')
+    minimapWindow:show()
+    minimapWidget:setAlternativeWidgetsVisible(false)
+  end
+
+  local zoom = oldZoom or 0
+  local pos = oldPos or minimapWidget:getCameraPosition()
+  oldZoom = minimapWidget:getZoom()
+  oldPos = minimapWidget:getCameraPosition()
+  minimapWidget:setZoom(zoom)
+  minimapWidget:setCameraPosition(pos)
+end

@@ -1,9 +1,9 @@
-92gLUDUwzwa6qltXdfHwMQ==
-BhPNb6A+97zQzttmnXVUN+Dvprw4FW2oXr8f+Y7uSVI=
-FUn1HgCGzleLIwuq04Km92dj93UBUGisrz66Uci/jDsBSaOGkiAtJdcw/0iVh/ib
-ZA6pg8wE1cw9rg4WXiruU0g3btEQgF3k/y0NWepURHQ=
-jCa569JGXi+4mkROytA1Miv1YVSOcwJE0uNZ9z8Ep+9z2MKUA01D2S4HsN14uEmS
-GgdLeGnPyplBs3+6Y08yYG57X+lZ4m26Jv9XywL/rM4=
-lER2J+EchZ7Ln94DKivgPJgt1kZwaWIHujXmPCcCG1Y=
-X6Ojmo10vqdt6ZSigd1gMLxNos9EaDZUmvw75feLrN4=
-CQpqKTwC0QFs/5QRFKsL5LRSvYms2WgkhvPderaWwnM=
+Module
+  name: game_viplist
+  description: Manage vip list window
+  author: baxnie, edubart
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ viplist ]
+  @onLoad: init()
+  @onUnload: terminate()

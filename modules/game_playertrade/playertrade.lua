@@ -1,77 +1,77 @@
-6uOjOpwiKNTRiIGw12HKFjPBqCFM5JRRmoKTDHY/7jQ=
-nFLqacxUW+aERdnpCYDkUQ==
-/aeJ3D2mJ9OJ8/7i8Q2MkA==
-s7rE3MUWBwVKaGm7h0Q3pJ5PzluqS4jJiSVUGuNIjAgRY87BReJm4WKJuFuLttHe
-Edld6z0yTJiAezRJD4ETew==
-KhI/4U2o4WfwWBMdcel2nmVObxKjnBlEcVaSnchR5Ihr33RUmM+58mQLwPCm73/Oxl5rSkwo1pDQ/Ps9lJH+uQ==
-uz/fPbftA4LIrUnDV57EzugI3/zDRg8ZWpbPkfzs89NpiK3czA2IppTUFR4S8ftj1Bsyc23/k+pHHIiFpPMtJA==
-REW7KfKsNiibMWWvJI/flipZFWsSwqrsjJonu59rdHVl7jfPECNmq7EHCNybcXWewgXnEJBFLhx2fnBl1bdv8w==
-aKozwc58F8uPbp46x2Vi+I9bQRZIKIZ3yIgIzDITZkWrPE/BQo9+S2jqbv//yllNWe0NbRYf9LHgsIZrS+X+8w==
-KQv9xhdBM3vgwmy3nT09Aw==
-z/ufMi0eXxuaM3w14siNhg==
-+xEh5nNpebXDb9h0SItbCKO69vgqzKfUhWRqrYqRHJM=
-+pQVAkCYSylhQgL1zyeXCwECeD6H7e5rYRKHhBWmipOw8AogL+DsPU2C6Nv/kHl88BJOO7n6IE/tTHnkPURLOA==
-pYvI3tf5656dgyWUNEC4xLEg4BcTJiKQarx6PA/GimzcjHXTztDlUcV4GM7CYuGjsiB+VEtiHcwTG5WN3jbXgA==
-En5tWqRmUUji0TwhAX3YQID/1sM7+Ly3a/IMSUFDBYL8zO9KqSzUSXaABBYoKKrMZlEUddEzni2Oli+bn0jg3A==
-+Ya4I7CG9RELGQOhPv/8JG5EwoSLH0TTMbsGpZerO5TNHB3vKN0oCoeT8ohseo7gjFTj7zSmpnDJb711d5V4HQ==
-0VQp+NYZdulljwgKvtFiIg==
-BkgCuU+X8HkSFs+rqDhyw8yfmVhefkny91PdeyNcQjc=
-hsDvMpQK0fywD6Vek9TIrNKQa+1YvDExDgns57TMoaM=
-sN6yZTrbWRMlIyTT/LgL7w==
-P2jWKvLhsrlc0SmnBJKv9Q==
-ZqOg4r/v95Uv0/KQ/PWo5g==
-Mt/kRDLtxtncpm0iuHkARVRQLE75mWzMNgDb4XVaSQI=
-AlGEPHC+Ptm9cQvd2TI6mH7ITUj4+97pJbtlJpUKkfJoY6NFcXKfuFbe2e3Bg06WMkoJAIWUhgr8CFAX3TzkB3rj8R83n7rRyRYezzJcjgClC0ZEivSkaxr1DaYoDZ5C
-BnNygB3VzHmTq3s4J/2C1ZWUckp9dt0SU3ygzXoxo1zCBzJllewnGudYylhhFoBi
-WWEJFw5xEN3Jm7D2BqDkraC2Oamtcwa2MH11bi25VC0=
-Ut9AcloGx6l4mJ8/IrFgtWOvRNdDCnjFmjERzhscLU0=
-2b4W3tsi4ji0Ai/jlB4tOA==
-CPHZVUGhpk5UQtBmpQDxVUbQm9xYSGWQsi+ZA80LYoY=
-trqSshx74Ae+Y8sYSAPkQg==
-tludouznHwiEnFR4z+ag8w==
-MZ5F1kikNEwZyzYtqtdU4BD8kxFHvrsxNDoX0iD8k6BkMILddvfk/+Z/kBYtzwTG
-ClXcuv4a6I14+6e9VAlZr7/Thbx6/UnKeLY4uKG9j8c=
-zWPiSwwIdMjI7E/eflfB7jmF/NVLv5XmmGW706hq6HE=
-/C5cJF36S+iqvebpvhmS3w==
-vBMdWaBac0vZRb11dRzEsw==
-KaCxxy6fHIbcF4dg3D2FkwOjDZIfdx8/z0hEVGDlTpLpyI0hBVQS7uFMHlmtTabASp/H85Ak2wJrP5lVGq+Twg==
-8uddkR11vQhj4jswTdR30GmfSjiZ1FSg7DakJWOH9RHK1hInUYz6zcupMlTSC1aV
-BaeyfACpsWDQHqWiFIfekQ==
-kG60H9NHNfAtCj9yV+DQJEEVNx0qcaRyMOTzu5qYujc=
-MnZLPaw7fIa9TeeyuRIaTg==
-x2SmglAeVjUA6KrZ7LgWMLX0oPsxJ2Tj0mT+91oaIW4=
-yzN/O8uv8+uemMBshjzEAT2cS0bjLjQt1BCHy1QSH1V+ZecD3eY319QVK6mnhRZqWMN9wtByTuBU+i0xniBEYFWhSbsBDLGgk7gA/0ojsd4=
-uMWjp9wIF6qQwdgj6oS4zFR7T+cAx+hialjsTMVwkJhaULQG3fNCsV1xi5pn7EhJhNR2xwyxJCOG1dq1KbIngo+EGVVOTti5FvHQTJqfMhs=
-ekg5k49n3dwDeB7M8opIHg==
-wm9TZTDw8FAZd7kJXekqiddtPDpsIwU9Cw/sBNFUcjjis0lfPsYLo6Tn8m/841nc3vrA1TyUhQvSarBJOYJWyg==
-sciyDQVn2R5oCWAZMM0wqA==
-hOyzzaxe4TqW2umq9luipMfT5RwUfVmfLYJkV1vBuacggDxooFSpzZVunsXLJzVwgN/m2ZVp989UgOXwUXGAWDk9twpqeV9Bw+t06J9HLMQ=
-FPS1L6PjLn2Rrfin0DppbpPwUVmI2Zikxwn4LOJ8ZyHnyG+fxKD1WcVPET8EUNNahg6wtUPgfc0txtVTRoEGkw==
-D60mSwn8EkiJr5cd7Fd8lg==
-Wdmz4efkroquKTYpi0g5z2JFwyZZpAIz2Y4DiPwAV5U=
-08EnWCzug8K47fZF0zyWDw==
-4PpZitDL9Su++fOK2LIjh/sENdakpmaXFAjI5qyoQPk54o3AaALQwUQfTaokVdw2
-m7LBroGY83K6HeCgxbu/NZ6qLivgdPmyVNmWjwijaycJctrSXtoYkMlc0Vfky8f3yI4bfc5xAssuMtetCW/UU1XLG5iDZnAUQEIxxsv+Kis=
-9/jHXwok+WUYBg4jxGgrycKGxrRwiknB3ygm3NRQb8o=
-r3Ta5LXtqhp6nQrYVfj52ix0iZNncwoBsSV8wjkdkKU=
-R0Nk2W3q03sS39RwMfxjexDgDCCQjJnYivTHHYU1RJY=
-HHZ+kUy6dQpkTBJOK+xW46BaKQihP6xsWL3ZXlsB/fAmS3mTMqsjAztNR/4v4beC
-zo7F1qLWxc8cZ+jpUlZQa005ZnA9jH3gm5lWniLylgrBT8lXcta3r52kxyfUqyQ2
-Cz2ThqAHc6G2ammGJpkdDA==
-7xBNd07bTBAHgllSJFIWcw==
-gD46xNOFo5hz+5H+f9/KrQ==
-jrK8TC15c3boxDZK1r83Qg==
-/mwtfyx/ypBpXceBkx028Xn7jb7yor8H0vIw5+MCwgQhVkMgl4WRRogy3XVXmUxs
-EeaV5COu7UNi5J8CeNXegmZOxn1/rR9lbCrAwakFKjw=
-Y5eRc6vJrbq9F5LZraYMiA==
-rrwXH7k+pz7GACqsbyH4kA==
-YHcfcvzIOdOHK/J6d/WCrGoR1iUe/E3FcbF565jerdUTOMDe8hQmUAeOGAWBwqMS
-3afAyaptayj4L4Py+oOYJFXDtuP051n3eCm1a8KQZtI=
-XeDT4DLDr1FmDk2cqRqT3Q==
-RK1t95LQq60Nt4or5QSTcQ==
-aSiPZ57BDQdnIvlWkeIjEtJXQZjRpzpuQ+29YP/Mke8=
-yD7o8z47SwGYSLVlKwpmfCzFIvC6CGBNoJUhgy6FGkc=
-+p+nrZEXUZyZMsxcEQkzqi/K+79iE6Reu72mtKUtk0w=
-mv6L8hQWB30pNqrJPx2Fa9emo/jqhznPprCMsDT8IwA=
-WS0KSa/O7IQ98srcJOZf6Q==
-cHWLvNxLcYmnQ1jfywKNyg==
+tradeWindow = nil
+
+function init()
+  g_ui.importStyle('tradewindow')
+
+  connect(g_game, { onOwnTrade = onGameOwnTrade,
+                    onCounterTrade = onGameCounterTrade,
+                    onCloseTrade = onGameCloseTrade,
+                    onGameEnd = onGameCloseTrade })
+end
+
+function terminate()
+  disconnect(g_game, { onOwnTrade = onGameOwnTrade,
+                       onCounterTrade = onGameCounterTrade,
+                       onCloseTrade = onGameCloseTrade,
+                       onGameEnd = onGameCloseTrade })
+
+  if tradeWindow then
+    tradeWindow:destroy()
+  end
+end
+
+function createTrade()
+  tradeWindow = g_ui.createWidget('TradeWindow', modules.game_interface.getRightPanel())
+  tradeWindow.onClose = function()
+    g_game.rejectTrade()
+    tradeWindow:hide()
+  end
+  tradeWindow:setup()
+end
+
+function fillTrade(name, items, counter)
+  if not tradeWindow then
+    createTrade()
+  end
+
+  local tradeItemWidget = tradeWindow:getChildById('tradeItem')
+  tradeItemWidget:setItemId(items[1]:getId())
+
+  local tradeContainer
+  local label
+  if counter then
+    tradeContainer = tradeWindow:recursiveGetChildById('counterTradeContainer')
+    label = tradeWindow:recursiveGetChildById('counterTradeLabel')
+
+    tradeWindow:recursiveGetChildById('acceptButton'):enable()
+  else
+    tradeContainer = tradeWindow:recursiveGetChildById('ownTradeContainer')
+    label = tradeWindow:recursiveGetChildById('ownTradeLabel')
+  end
+  label:setText(name)
+
+  for index,item in ipairs(items) do
+    local itemWidget = g_ui.createWidget('Item', tradeContainer)
+    itemWidget:setItem(item)
+    itemWidget:setVirtual(true)
+    itemWidget:setMargin(0)
+    itemWidget.onClick = function()
+      g_game.inspectTrade(counter, index-1)
+    end
+  end
+end
+
+function onGameOwnTrade(name, items)
+  fillTrade(name, items, false)
+end
+
+function onGameCounterTrade(name, items)
+  fillTrade(name, items, true)
+end
+
+function onGameCloseTrade()
+  if tradeWindow then
+    tradeWindow:destroy()
+    tradeWindow = nil
+  end
+end

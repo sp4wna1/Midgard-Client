@@ -1,124 +1,124 @@
-n+JvUrOxIM2w5XQrk3QLCQ==
-XuYHDKdttItyRUWfIP9NiA==
-1oNUYlbcT5LlC56AsLIS+g==
-uFZpCNdWgWTu+hsUwN7Tl6EC9Xk+WUCvEEtzB43DO/w=
-PQSJTICRqEnclxsplFUxz0Gmd4/K64g+LCH21jd66Eo=
-eMm8IZD7I0eSfHUlBDEWD/5r3LWJSO0m6ZyhHpeXwgA=
-2H3/2UlPZjlAarHY+t++5g==
-Q7Q5JjSdW55B/iih6WoPz5d4cIhXt3GPFpcNY5uu/Dk=
-wpeMGj68AAXbVm/OScDRFF7E3OHGQaMzzEccF7uqsa6vabsicoPxTJ6P9902NmFt
-/5UJmGMErDJ2wi/uNcTdBWrXlMK12oA46UPKherXm+95Os5AbwnvPjhyAEpodJAVYbVm3u8ARUcnUl6+GNwCve9NZ0FS/XNLhq68KUeG44mCdb9+xB7z79spabzm+1yETZ9O999yTf2tg5CdaSOMAg==
-iuRrK2wgYbfzIVWpM7KR+A==
-i610qA3ChOxP+HIYtdspLVJST0M+/pVu6wJLcKN1i2VMvNa1669gEX+bj7naOKtt
-K0mx4a3ktUK7iahGHjVSc3A2Hwnx1l6AuaIkp9XiJ8D+LBb96jIWUtWCfS5qg6Tt
-vuwx0KuPb7GyZq2u9bDn7cOGBxSZt3oB8mom0ysWIDnq6k/wW4AZNAf+ctwPNhRC
-bgdsALWXwRfprwdse1Tz8g==
-sk0BXBc4UUZREkg9NQ/vAAx9szb9mrA3BWVtYeUOoTQ=
-zGmZBGPVD9wrRKXCyHUyw2Jfcy15dC/lRuzCB+lbp5g=
-3eVyYXL/JRwR47PQEfCyyQ==
-Lc+JfrNuwUcRRVyVcGqzU9SpLKHC+cbLXsog00dljIzVYcHk7MLb5x2unetWKYZY24KFVPlwrKA+BouTJwNnmA==
-CsKUrs/mhXhCAdfiqqsHex84Flf/oxAPTo2z2DYcoC+K+etSJ/jYder8kDM/WlCL
-LRQ686qfr28UlTZcRV+ALQ==
-kkyF+ZNXnLqwS04v+MKdWZtuevwpEIjdKrDhhYJn+XQ=
-1TexyLG7aZFwxlbOBrm5fA==
-C7mX9SWCuYgsJEdEsdwwOw==
-I7MZbDVFxWf14jczoXenW0aHdb7iwagJYJhX6MYP7o3u1lKGBi69SYwvJrogAGq6ciFMP/FlQDHhbeJb/q/veQ==
-sI+zh3THrN48Y9VkpO6Jc/OEI92Sqca4YkGxHO0J1u5+15WgNPqYQefqnrRBy1yC
-b2hJIt09OedSOKP/nIcZQg==
-KRWBfSj7TyxhAVLmftVdByal+V9o6TyUUWAbvOzmufg=
-6eY/fbk1HfC731muIpriWw==
-0X+q2tehXGEQSVE4/dvVrQ==
-MAhYRdhZnX+oaTespbXvwFfZ4gikIMiNcXRaQ0Ul5tg=
-0B+nX83Hz1I/J4DuwjfIUA==
-Si8HtdDIJIb7zU/Bqt3Emg==
-lPsLo5o0x6fUKoQyFEB3MeQAXYTdvtaQDOlzL4EjG3+t1iyEGp0sOS0Meyj2mO7UKl1T3jKUbNyNx9kC7wL5hw==
-cbdzLLpQDUmQo2eupfGtc9RenugCp0NtcxYZXgZfpD8=
-BtSo1jqFlZKcFiqk8o5t+EmjexHxHbl3YDMhKkoGeYLqGITKR6d+TGJOV6KBlkFFQ1wtdndXwZVToJUiWMIoOw==
-knlVxYrYUYYK5stHqXq4Ch682McsqP7tHCiWFO11GZNj9YEzU26w4k9MMHks3Nxu
-j+5/f13KL03UrcYsi5EjZE2dkm1o2ctUokiMWf1x3WOla61e1Giki+Oq+Tdpu1jM
-XxufpefQOTTVNU5ptlgayw==
-CgOs7YqVJKzRvxwOYRhRsQ==
-TUaLR8c87tx0xvt1kxP20oXyyGBx/gH8fms8C6PXNhqQEctw0+L21SgVJWb2yYtz
-3LZDeEKSLE4QU09Bs6KcIorzq+qHmQKDC/hncinD/Zk=
-V2sn4F8J3JYdCyvtqBu12uev0RIJYuzwr12kZ5c+afInEVBYUK7wZIteBn927bff
-GR9N0Lswh9TvEX49Gn/s6A==
-Ncfw0E8H/L91ytNUY9eWGQ==
-sHNTloP4KzWlxc/C/Qu8hw==
-HQXEjzINJ+efgLsW7hdT8w==
-5FwpDwU+96n+q7dDNX/tyZIr4jXYCXgbm+AUTa6xjfTMNP43kwlXJGO1UfPpyVtzupPcdnBz7Bg0ZeNOWEa4eQ==
-pNG7Bk4Rnh/5uJNIEm9/Py+FyjjC/3jl8wdRzNnJ0dM=
-eEPGN3UD/QiOw6twt06CuL8eGZdgnZvHhJFesd12fWn1qGz3L1v+jNEn06k55FGz
-qXQuDIfZwOrWlWBPR1KQuA==
-zFSyudrs1gAB3cTaFYzdOA==
-+9UJNhvhTsqps2koNmvrmA==
-XRf5Lrp7axGN4RaN9u4uBgBRbORDi5wg/ODLu6Cwmmc=
-fEgkl8fK6mJmKAeiF5RCeBJdPw7koJjX/CCiE33mHY8=
-h9EC/XzCU0bfJlB0vnrV/zfLk5zTLur7crj961U1U2oTFp00eXTzpQAw237CTbit/GmPI8rF2RxUmTmNSv49jw==
-McOfdMGPiwq67uOdFkYv7OK6kdlrdpRJyk2CLILLgSfc0utaycqhphlyeNSWB5FiZgY/vi33V0tlrwC+YwzbQg==
-klQejaG7/+DdxGpx9k0rKA==
-XCS7K1gAtwsTcODax9LNMTusTkK2uSxnGkHKi9+A5yI=
-F2bpQdUwGHzTg1+QYZhsKWp3rTyjsmZhA6EA8+w29pkRoHe1utN6IcCf50C/Lkk5ewxMqg+R/QbCinQh5HvDVQ==
-6mjPNJ9tvI0wtYwArNMB+kPVlDujp3K96HfheY5Wdn+S7H2kLNcFup1CVdHXW2q9
-Q9bBpXYDlM7DSRKJej4JtrMQDYpcgrNlDze7iFX2BnH5LeZhWAtOeljy7LQzcv3a/2GxISijSrhOnyt4gizC8Q==
-DUXh1wTbF0ZAzeucQuFAAeBxP2h5doS3u0pDncPve3GNoFTG9w832WShud5x/69D
-1J3TlwHiGZW86B63FcXpHcXy4+WPKgD2eO07vo7BvNs=
-2jCDy2Mxf3VHZx2foPrZcQ==
-INmUGywZTnQ6HKPjeJmTvw==
-R0bR9n+geR3xRc9vTwnsuA==
-YdhDD4rpBKfnkKopnDV2baGlo3W+bv91CTwJ6j2l/vU=
-Pqs5MhKJqRWr0AxvzUKkS3iBh9R2k6rFKpVJ+i4h2b5vsh2z2GMtXq/IPpij/0OAMkUZhpDrPfZlw6uCXb311A==
-aV2vdiMKJZIEc/21CacLFv4OE670xCr0XfDqmEUwWienxMLeh7+OMp2RDprTHJNfIW1BlZPnmAjgNa47YK2ANQ==
-zhEwHjVneUdC/jhknbWOsg==
-sss8417Qeyan1gVImi+06UnBZLK93MsuS6s5ZoAB8n0=
-ky6/faK3z+bgrPCh/EJOGMaWtXHI4cL76RnA6QL46Z0=
-DRIBbNHeDXsNYnPRInYCYjhfd0dYnwLyes5Jlfl6lPg=
-ryV6ICLlGdNybaNq933yIA==
-cXvjAXR9ns3QD/0qqKU3iuJgn65maMM+xpNapXhjRCs=
-X/IYFIy8wLA36SbMadWSZQ==
-/IMKv7IMVJaP07vwU4DwqA==
-/8M30MAVcMa9XpJOTQ0F+PXH6gXazZIDR1dZhdPlMnOHpbxSoAE0+8+C0ByVZenG
-g5eLLMKxSTns+ArpGgT4O1fliLrBT4G9XdGmQo1+r1uaAQF9tJ5Mh6ZZ41Oy2Dyku1QL4TBHKrNzjvxWuEa/cQ==
-MdC9OzPw5zQaaQ38gRJHTlfGr8yBmWt4vaZF8vxl2TOZYqwiPjRlVHxIahrlds6E
-RWUxYJkBEkqynbvbGtf3fw==
-FlltJsR5Pq0FuDCk5kP/agO8czSCbA+VRdaqI1neqcY=
-AOGKM8cMrRVejrlmoi1JUuE/U2AE+jEV8DuBdHEKbaY=
-KhnnK1mC8VXRGRgNRXLmo4p2ph8YB9mgz7SSfIoE/m/3rOVlLUO+2JiCK7/re/I/HeFNkFmeldwqct/64fu4bn97x4I4u9wwxBiR/1QXs0bW/tehQde9nDHkRu922yCf
-dNMq+5NLyZiPgIH9KZN5qRk+QWQfOygePpi/ORgDK1M=
-8vXq21NIv4ZwYwopwZtAmOz6ackkevh5FtuJ9EoAOOE=
-OtALfi1kK7iLOG62vkngYIu6nY/LMMuIaJLUydiZUpQ=
-vlpwo9g6neDstH+Kofa7V8TEZhnCUUJyzt0i8UBzn6EvbOIO+nkK3mq9iAh48AY+
-ZJ+K95wFPYkULJRTn8mnu7qBCSda45CTJqzI299Qf50=
-3MrbWELMTB0aOVrEl3nOlA==
-X2oZTjriBM+6/MKMCYpBCU3cVUdm3v0+7QCj+hEGhns=
-VUv9HyuvYHiqbUiu41UYkB0ocPmoNenDh2fryPpEsrc=
-5p9qFwS0diCMEYUvl+ilWQ==
-UFih4opm/Q+nUH0gc3G2Xg==
-5JYXt71URTWkDG/wWRYY7g==
-e8FfEVHjxMLYnnE015OESHcrFo06lTLf9BTwPoXcxTo=
-hFszLhlwTGWwHOFnQ09qySiaGvLehgoQNZzarKdFh2AP2+/HCiATz6KOLaj7w6kc
-5BX4SpZackSMz7QEjewlyg==
-Us05K/ygP978WlVhl2ZLAQ1JFgXT/XMv5YkFDd3Wkms=
-I1wlxUmZ2fm9gz70mLvRFXlyk5JJ4VrYHzDuhRCNY2E=
-aJCf9Tb2GiluC7kWbj2o8Q==
-s2DefcVWhMc5KUlcUKIK2w==
-o4b9KzTw9Lm/l+Xd8qyC8g==
-TegVeFdxvAe3Qxqw3W+pXQ==
-dc7YZFp9qFuz/LITxf+VTqEkS90YTQnV1ISwE+hKmTI=
-6eLKqDMR4Bv4osbNnAQ9hw==
-KSpDmX1l8Ay1dQ68UsvYbd51NpWxjEuDiGCandkm0DQ=
-5ryv6i1ok+1pE7H/FNNcSgeEwTjeFxNEpUScFmMQuvK5KsflAzOlCoiuMPa27gib
-Fjh19RsKDv7RV1cSja/hoEL5xSqRQnEi/QwTC9MVOc8=
-f6EaRx/sii0x9tnw0FDWVQ==
-G1bVlQhN1+g5EeFLsnGQEg==
-s1K5X8jREKsTe8RrfJaaWchjkA0ZRRjzVlrcnXHmTeWxPtKJte8A5jgboDB+c1wb
-Vd3t4hNQcKLOknbeVy8DnpotLi70d9hITbrDHfqw7vI=
-dJYLET/KVhjJXd5Plq3bsQ==
-mZ2o0XNqrgCxO/tohIwL0A==
-H5/QOAsfHBmBBdQBsn+uWNGmckIJMSdcDKvC2+M7Vb4=
-PW8z7Ksfjd5xXxkYU2Xpbupkmh2fHEZuGncn3FC91j4=
-rAeXgDHouMWRG3Rpv+DKkg==
-4cpJT23VMmjogU96Y1GETQ==
-KgfEEOsm2TfCOAWfyLs6rQ==
-rJJzBm9gWZmdVANlQqPgjA==
-ue9sTGOoTGzajsTSjO37Xh5n3qdCs9FsuvynTYZoak8=
-dgX7Do3/YDJpHr5nGc4Bo8bGRCXbu/cHgrIGIMl6Lx+c3PfQG1v9bffMdj5wPmXU3OndMGSlK9Hkt7ZoRuyw6w==
+-- @docclass
+g_tooltip = {}
+
+-- private variables
+local toolTipLabel
+local currentHoveredWidget
+
+-- private functions
+local function moveToolTip(first)
+  if not first and (not toolTipLabel:isVisible() or toolTipLabel:getOpacity() < 0.1) then return end
+
+  local pos = g_window.getMousePosition()
+  local windowSize = g_window.getSize()
+  local labelSize = toolTipLabel:getSize()
+
+  pos.x = pos.x + 1
+  pos.y = pos.y + 1
+
+  if windowSize.width - (pos.x + labelSize.width) < 10 then
+    pos.x = pos.x - labelSize.width - 3
+  else
+    pos.x = pos.x + 10
+  end
+
+  if windowSize.height - (pos.y + labelSize.height) < 10 then
+    pos.y = pos.y - labelSize.height - 3
+  else
+    pos.y = pos.y + 10
+  end
+
+  toolTipLabel:setPosition(pos)
+end
+
+local function onWidgetHoverChange(widget, hovered)
+  if hovered then
+    if widget.tooltip and not g_mouse.isPressed() then
+      g_tooltip.display(widget.tooltip)
+      currentHoveredWidget = widget
+    end
+  else
+    if widget == currentHoveredWidget then
+      g_tooltip.hide()
+      currentHoveredWidget = nil
+    end
+  end
+end
+
+local function onWidgetStyleApply(widget, styleName, styleNode)
+  if styleNode.tooltip then
+    widget.tooltip = styleNode.tooltip
+  end
+end
+
+-- public functions
+function g_tooltip.init()
+  connect(UIWidget, {  onStyleApply = onWidgetStyleApply,
+                       onHoverChange = onWidgetHoverChange})
+
+  addEvent(function()
+    toolTipLabel = g_ui.createWidget('UILabel', rootWidget)
+    toolTipLabel:setId('toolTip')
+    toolTipLabel:setBackgroundColor('#111111cc')
+    toolTipLabel:setTextAlign(AlignCenter)
+    toolTipLabel:hide()
+  end)
+end
+
+function g_tooltip.terminate()
+  disconnect(UIWidget, { onStyleApply = onWidgetStyleApply,
+                         onHoverChange = onWidgetHoverChange })
+
+  currentHoveredWidget = nil
+  toolTipLabel:destroy()
+  toolTipLabel = nil
+
+  g_tooltip = nil
+end
+
+function g_tooltip.display(text)
+  if text == nil or text:len() == 0 then return end
+  if not toolTipLabel then return end
+
+  toolTipLabel:setText(text)
+  toolTipLabel:resizeToText()
+  toolTipLabel:resize(toolTipLabel:getWidth() + 4, toolTipLabel:getHeight() + 4)
+  toolTipLabel:show()
+  toolTipLabel:raise()
+  toolTipLabel:enable()
+  g_effects.fadeIn(toolTipLabel, 100)
+  moveToolTip(true)
+
+  connect(rootWidget, {
+    onMouseMove = moveToolTip,
+  })
+end
+
+function g_tooltip.hide()
+  g_effects.fadeOut(toolTipLabel, 100)
+
+  disconnect(rootWidget, {
+    onMouseMove = moveToolTip,
+  })
+end
+
+
+-- @docclass UIWidget @{
+
+-- UIWidget extensions
+function UIWidget:setTooltip(text)
+  self.tooltip = text
+end
+
+function UIWidget:removeTooltip()
+  self.tooltip = nil
+end
+
+function UIWidget:getTooltip()
+  return self.tooltip
+end
+
+-- @}
+
+g_tooltip.init()
+connect(g_app, { onTerminate = g_tooltip.terminate })

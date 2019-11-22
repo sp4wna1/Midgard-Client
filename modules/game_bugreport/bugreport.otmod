@@ -1,9 +1,9 @@
-92gLUDUwzwa6qltXdfHwMQ==
-DXqtSb+0xITtLPi1HJp0nGA0npYsBAQDJbd+gEXzyTc=
-CmPJdNAJ8tCBX95i0W8Yz4mPyofRD5t2Ws+DScqYRAz6694PdRVnts9p807rKehW
-Z3E1OGvSxcLrOKTML6AjK+9rcY5zazHzWBI06I0yVzk=
-DNU/rCkpYwHVgOl+FHq3SYh/Iu2LqV6KvqnuMfHuH0Et0+jfbBFVqNYb5wBaeyIU
-3It3eGalJsTPSS9s8t05lGErnJxLhun0eZGCeucMlaU=
-g0Ws44lrtYGjTgCuMxKun+7QXDUB5c8I/qahakCDcug=
-gJHk3cPwB9faNxvRN1xmd6SM2XsGhvO/HWiubJ1FDCs=
-8oPEd6pBTIVTQv9CIBiuuDyjCKNeh6PdHQrPxDv6ILg=
+Module
+  name: game_bugreport
+  description: Bug report interface (Ctrl+Z)
+  author: edubart
+  website: https://github.com/edubart/otclient
+  scripts: [ bugreport ]
+  sandboxed: true
+  @onLoad: init()
+  @onUnload: terminate()

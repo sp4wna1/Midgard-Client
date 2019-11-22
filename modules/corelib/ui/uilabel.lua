@@ -1,10 +1,10 @@
-n+JvUrOxIM2w5XQrk3QLCQ==
-Az15WIymgfZTtPDYrNus6+TZAJ07ilTsLyWy2LQUsiXp2yRmDozeMajbee85b00U
-JsGf3/7BqLVSfyD/xb413Q==
-bHEHpUu6tVqbm0goqsGrUOKEZWsFEtU6l3DL0hX9Lhw=
-vPZevFaC/1l4mCS/skEce1ZtYTQFFqYfN8kqjqybGtuoT3YESc+kP39bzErDdUg1
-i6Naansj8aKcxi0zxK9Ulq/oT9HQCWJIZNu4NJZ4VKE=
-zepOiobEuEIGwS4FtUTf3XLA1xwCubSRt0Mlf9HjBLQ=
-GBxpY/EPCBii5+34nYTt6omlMgBgQkT7FD2fCy6Wc98=
-IEnW3J78ecW1m5ThV5qY/Q==
-fpTwmlsUDm1M+MLdXU3KgQ==
+-- @docclass
+UILabel = extends(UIWidget, "UILabel")
+
+function UILabel.create()
+  local label = UILabel.internalCreate()
+  label:setPhantom(true)
+  label:setFocusable(false)
+  label:setTextAlign(AlignLeft)
+  return label
+end

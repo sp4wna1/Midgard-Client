@@ -1,9 +1,9 @@
-92gLUDUwzwa6qltXdfHwMQ==
-M6C0suOk+H4itKo2TMMta9XR41y6IZyS20s0cHH7Ddk=
-Utx8Jd1WsJNRAk9s2QMWnah9D65MnUQp1edHDYQ1XUsjpWY60RTbDHHXsC1R/y7m
-DDEdxQTY1cV4flqnZnkFE6VSzpKZeTo7/Dd+d13C49I=
-hcR6dQwVYdwEn2fZajcJiWx+ChawEMAAwrrlFWWfn0QSlstTW+Z6gMZXPbyQkhLG
-e+HmmmIyn4v+GNan6uj9zSW7nYHS+X0Gi/DnKN8QXxo=
-qYzstetD1vNX7mFQ7xNJSofXMVnH3w0h1/NoYN6qH1E=
-JaWOeULDQSXu4KoOKDiGU5TRYc+8gghZQD2fk6CZIYM=
-g1jI9qNgLW5AUV83J42AbMsSXrmryByGgUR0oMfZdQo=
+Module
+  name: game_battle
+  description: Manage battle window
+  author: andrefaramir, BeniS
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ battle ]
+  @onLoad: init()
+  @onUnload: terminate()

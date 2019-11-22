@@ -1,22 +1,22 @@
-92gLUDUwzwa6qltXdfHwMQ==
-BVPXx8q5PibD1Dj39jViag==
-GF7CiN3W1QsPXsho9hze/eyHa91g4NuVbANKQPzY4XMrxZqJr574jTNaBrsWlYu4lE8UK0N5Gj2Gcp5/alTnfg==
-OUHVAS4s8riGIBmjgHTHdtLlK22CrdFV9o0awXeRIf4=
-+Fc1JnProMgve5sW/nxwT7AiqRDq46297C8m7+kSHgeOwneggyVNaariGLKKjJow
-SfsEpjuPGu/ycBjl7com66uGR6kR1ZtIui+USn483b8=
-QsBUZk9vbnn1dDR0Md9KQ5W/xt2L7J/InoMQ9YXK7ME=
-POj3hRlmqQNZdXsdJj4R6PS43AeagIt9YzO6bfQ++KI=
-7MksbuXO5T14Gipja0k8g94MjsiMnIufVB3CgAwqGog=
-xexCZDFuCCnABkrozjbhJ1GozwCFEvqcvMjpS9OVDv0=
-vvS2uPetEs/XvxqnmmkMQw==
-NOwNxFuvb+x0t17f1/eTHg==
-4/WcXht28ZTVbip9N9Nxv+wALth4UKJQzmF0QrS/mMA=
-po1iJJNJYrkmT6e+onV3HvJ9OGu0QuQKbCZw2xAH9SI=
-DO/QxbFe/1CeyroTh+FkyzJYc21FIedvlrpvJTxtCS8=
-O/9/AftsTdFk/RDk8w+XfV4J+DkL2Tu1yt1Y2E52x9U=
-l1MAxdNDeVWlpe+amYKILlHQ77fo8QFGNhltkwdh6J8=
-dDs8SzHP+ddvmVNMrFVlGivoGXlgi1EHchTe/Z54WO8=
-SFMfaFU63fppP/8AkNKpr7jJSugsG7IEgdfPlF7No5Y=
-IxNUitFWe69qTQdr4dhZyERqu6sdLphzt9wkMxEOgcM=
-M/LXZPJMjvUorc9rXwUdhfNEc/cIQC45QH9gks9cqmg=
-R/kyX+jQzK4fRJ6qYhMNIeU+ORiwJsulM4a9B14mG3c=
+Module
+  name: client
+  description: Initialize the client and setups its main window
+  author: edubart
+  website: https://github.com/edubart/otclient
+  reloadable: false
+  sandboxed: true
+  scripts: [ client ]
+  @onLoad: init()
+  @onUnload: terminate()
+
+  load-later:
+    - client_styles
+    - client_locales
+    - client_topmenu
+    - client_background
+    - client_options
+    - client_entergame
+    - client_terminal
+    - client_modulemanager
+    - client_serverlist
+    - client_stats

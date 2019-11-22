@@ -1,35 +1,35 @@
-92gLUDUwzwa6qltXdfHwMQ==
-7fHuGsDPSgi4vtqOpthMcFGKb34AXqpc3sL7szjY7AI=
-BHgjTZqnmH5MkHk4vvN5vnlwz3U3DhBBQtTAmR8+BAZ2L4Qf46p/rC0ziRfAdvvZ+9bzNw3HObEQysBdYy10QohPU6+29ciLVW3soW+cttA=
-GjQER8NrrZ8nwIwAkDO6rRltPCkmBlXSKRH2+XCGSwc=
-d9Qnh+lR1QSHgT1NGF/9RmdZ8aeb2ILNtCLm7p5IW0/Hn8TEGM58y4gr6hkK5riC
-h77gT0vyJhx+gXzb5i6JN+wndep/sOo+svAx2921XAk=
-+Z/g9nUW30LIV7rfT5VSL8vsHiGshHLm0CswvUnNB7iQJSm6V5GWjSL9IBtU050vG13/tcP230RFN8fRe6/vDg==
-cVKOt2Ahf0fY5OhR056SYg==
-Ls6MN8Dm1o6T75DkBkgKI00gE78NQ3QW/oHy5xYaXUI=
-m6wDRv3iwQKsBFdyWZJxqCVGxrriNttCMa1TbPFemic=
-c5MCn0DyMz6sshHwwGHxB3C8tQq+exJWvAp6MJHt7ac=
-3cb8BNighyzD3cNXHE0gqtfAuFCv7Z7hBl2YNgVzvPs=
-p2WoIHkwhxWFwUf3gog3oRywCPuElUclTsYaYMsw4dk=
-9+njBe5Wc/8Z/Vla2EyjMJl7f7IepSYb+0cCL3fsK6Y=
-R02JrhvpNCqIFZoC14KQF3m0Py8HRaqxd2I0RkdvD3E=
-zm+w09KUhWFAUQYz0r8SjoneFJrrU9G9ut7VbA7D1Mg=
-Bza/ojIOHiR+QxLqb9ML4qkLbJXkyCaycpBwh4xBPF4=
-p+5BmGMmP7PtK48LgJEJeEueWu7Agy8EWbkPTAez0SE=
-9gVLy5odQPUgeRa/u1Km59YnHkSMpQr8UvMoOGnp8NA=
-1HVIy8HmsQHdmwS8J2XaL/MeacgTZhScg9TwNZNb/Lk=
-V1QxMv8rXc3OUlxevgpf9j/mwyAxZ1+Av/HOHyOpY/0=
-BU1EBAMpqNHyUlcFjR5beoXn8siiJ3eb2vh097rJ+1g=
-/uePxaFnJCuvd2zTukXBvTBLDOV8leb7BX0feMHvLiE=
-VeqZznict3ZamAPSREZ7uBSrg1nMfXys3P5YayKTGSM=
-Ek5dMQwYkwRcek1Od99+LcuyCmkDYxOMdJd7MYjR8Eo=
-gwgmYOjPgnM9yi3p8efSxCpEmn+yj9hxCNaJWBVDuAo=
-4hzThGcHU4V3Ca2rnolGEXCiT48QmcK9r0vtVqNP8Nk=
-HnXM3TBFYSqnVMRcpfBi+j7AdnXUz4wTXXh8tX6nKPo=
-A2nYZdGblrjtagk0+EWldSrOAPgvcBFe7trwxYNXIRg=
-J6gseAbftaIVRJ1aSSFt5HgaI5pwws6eE08Lm+X6qkk=
-MoNsYNFv6rzZapiuUNCnCbUQbQ9QDlfM6tBOEoVird8=
-cahEOXji8DCwKPBZ715n6WTvClbCgTVHqX7joK3AhWM=
-L7BHmyTkJ/MpwzgAvInK0RzbfMteRntErr5rUOnOIlk=
-reXJpw0BRX9Lvit4xDEvguXC+TXxjT9l1pawKF2NRhw=
-DTiny2Q3Iapv0+JODIVDZNVgmEp42JJ36us48qZXLr0=
+Module
+  name: game_interface
+  description: Create the game interface, where the ingame stuff starts
+  author: OTClient team
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ widgets/uigamemap, widgets/uiitem, gameinterface ]
+  load-later:
+    - game_hotkeys
+    - game_questlog
+    - game_textmessage
+    - game_console
+    - game_outfit
+    - game_healthinfo
+    - game_skills
+    - game_inventory
+    - game_combatcontrols
+    - game_containers
+    - game_viplist
+    - game_battle
+    - game_minimap
+    - game_npctrade
+    - game_textwindow
+    - game_playertrade
+    - game_bugreport
+    - game_playerdeath
+    - game_playermount
+    - game_ruleviolation
+    - game_market
+    - game_spelllist
+    - game_cooldown
+    - game_modaldialog
+    - game_unjustifiedpoints
+  @onLoad: init()
+  @onUnload: terminate()

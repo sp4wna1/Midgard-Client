@@ -1,51 +1,51 @@
-SSnlM/nuUeo9vLi8dQDD1kpQsxzILL6LqMzqqWhnQAk=
-6+5+MKgOxS33hzujfi516WPVfY/Ej3SgczptRwfrDdg=
-+XGFGjPsrJVtgmxUm4jxUw+sDSOr1DWFGXBTYeASFco=
-ktJsjbuYyqGlLpQGQt9uxQ==
-Si9yMs3PY9+rn6uzZrXrOHUGfdvf+xG8ZiJReiL3I5A=
-FKaGsCrexMCxWs5k0IfOjw==
-ANCW721Q9186ozHqazaqzjIJ8gRgRfQNnnqkS9hp3+xqIa7H3AD6s9d4vFxaF/kc
-8OKzSDBbLeFAAWtX5+bihaYmQsEzS8AOqC4NlSf5lt0=
-vO2vb9ZDW6iHY/QiUIXIfg==
-kHNJBuFUkvbG+bzZzeJC/MlTZbA7Lv0SfCUFpdmSIg5lMOneGRsXsyrD6k/uFzBEmLVYSWKBekyrMzSdwhXIleSvshbxERnzzkmdmdaOcmc=
-uX6lgtRFS7tbZr9edV7ROw0LSjcAxaZheCAONLK6Ub+zpjiKWjDx4Vv4IxrTSDwfTcXDktJss5jKBCWSKsF/Q1GRcfrRODue0i8W50mxcdX42EXj7eNGW7L2CwyqmDDF
-w1twfvu0M2yu1CJ9RVqUDTwEhU2iRhT4XKrWZW+/tG4D2AyzdUOdCvJ3/4N1AZdz9kLcwxT0BGKC3AKgro9zyKtjvf6CGUj23f1bEZN3AZsGYtHA0nRtxDh6+7SWA9EqClfSRg0DyZvx3PUmx8vwOA==
-oXR4dJoTP5PxopidKwwvsZDAO2Qq8WNoGgDsOpIyYFwnNrMq/5zSBE/hEdY2iNZtM/C8KvF8aawokSrQxoAuq2D5V1wRGaxdv8bJ+aAh59vV6K62U/4fyoZQCehWHiYfXKqbQ3xmheKq8bXBqgXknA==
-W8BFpChbdJMqe1njiaCwWA==
-00xuyFH3ycrB6Z0HyabiEUyYvpAl4v5PWlQqTzMwfqU=
-hHzy3dRJHQOIUEzMhbMKpS6whamFeMnXybGB73FySTvp7anXbrQmI3Qcz0jgcmxVb5HpLRbMaptNLDz/kKR+sVylchxB4QJeGkUrHbRnPE8=
-yEKhDoUKyY8S0vDKhkmEBw==
-k63DD15GJN34JUlypbpRUQ==
-fR4lHd0zWSY7hjiP5l8aAhBwAKnszxIzNPN0361D0Kekt36K2eTI7GlqrmME29U4
-PHv5X7ywgnuWw96qqYSSXL+RDMLJkBa06KeB2gTwGC75fxN3hL5+dW0RVzO6MuEk
-/2CmXyYPD6rc8oBx+Z+TJA==
-fUvTbxxJ8Uj/bD78hsko4Q==
-gZEBkwBD4hRvPxjFu/lCRQkjbjPmd8J474Js0suRLf8=
-IRsQNUpwWXlQs77DFEgpTeTSaPrqQl1W1ZvNNa0+qvSZFhKcNt7dGGeTsKpHPcKB
-Pvy/T7YimRpVNkEEqlT36N73rpNHUwSq+Cr7mIZwlY/M9RE6Gj98fCTApX53WHj7
-A7D5GXcl+WIMJZnU/7D8Og==
-MUYO3ZQgvGNFmdcl7txWhMZ2kkuw+rLDF0lQmQFPWzg+rPgR0AIXsOC0Gl5DFix7X76tKQetOIEu0TtzBeCmYjqgHNKq3xovJpJMwCWk9N0=
-snW94mWh/C0yE0MurppVSGxt/YvMy1I2jgl2m5cDnMw=
-Qkrd29uQk6CDzYuQip/AvQ==
-NjEXtoJlg5ZUZzPBQZVz8kPkWJ4Mt6ht8tLI+T0VKME=
-01HB+4XHEroEdBgAFCjwuw==
-PCikpEer500SJV/Mw9Lm+Q==
-Un+wvjJRs3y5kKuqparyZQ==
-w1n1sgZ+RCMhvzdLBHP71Zrj2C2zoLDOE4tvzV6+21o=
-SMdjMQPtLSfU7+clrvOMCg==
-5TZP0SWdPPql2Pynu5bYKw==
-tq4xTRk/TuF6UdfknK1Fpg==
-xCKiDFHzeH4jPew4we6QjlPjCLassnrK4/qKWcu0rKI=
-qGfAiB6Qc1+sjZa2hjiauQ==
-lu5z1hNWr5Eob8BmJVpw7w==
-7ljHzxbmHCWnMhd1vQnBjD4R8JGhe6FYiYdK3dqQh18=
-FnQY3foVeK9uGWVfsfYdx/LDW1k3lk7B5MHsGpYNRD6xnbPhi+c7dXYONUCbsn3N/s2C4g6YThtd6JRe2jcZdQ==
-Ge44yhNlviy7GP2IJpBpQg==
-Quj5Lmuks6NPAstVvBgDww==
-tEBVxRhl+zSzWwmavvg4C3tbSp6jLnCepDeHt1GxbgM=
-16isTJu/T92pWy27+ZQi/1zAONhG2W13E26yZLcCpvW14iI7yeRQHsC58H4H550t
-cY1xzRbQ6rqdxa6CvSrhOA==
-cTm5RUsLLEZbBp+FCO9vlQ==
-sIt+SeqNIISAlysUtusd7MXg1gRHIOF4y4SK708XNIw=
-N5buTQKRq40fMqAdCexNWqnRijxMQ+9Fyd6iBV5nvZM=
-2Zo5RzgFslVHsjQ9juSD+g==
+-- private variables
+local background
+local clientVersionLabel
+
+-- public functions
+function init()
+  background = g_ui.displayUI('background')
+  background:lower()
+
+  clientVersionLabel = background:getChildById('clientVersionLabel')
+  clientVersionLabel:setText(g_app.getName() .. ' ' .. g_app.getVersion() .. '\n' ..
+                             'Rev  ' .. g_app.getBuildRevision() .. ' ('.. g_app.getBuildCommit() .. ')\n' ..
+                             'Built on ' .. g_app.getBuildDate() .. '\n' .. g_app.getBuildCompiler())
+
+  if not g_game.isOnline() then
+    addEvent(function() g_effects.fadeIn(clientVersionLabel, 1500) end)
+  end
+
+  connect(g_game, { onGameStart = hide })
+  connect(g_game, { onGameEnd = show })
+end
+
+function terminate()
+  disconnect(g_game, { onGameStart = hide })
+  disconnect(g_game, { onGameEnd = show })
+
+  g_effects.cancelFade(background:getChildById('clientVersionLabel'))
+  background:destroy()
+
+  Background = nil
+end
+
+function hide()
+  background:hide()
+end
+
+function show()
+  background:show()
+end
+
+function hideVersionLabel()
+  background:getChildById('clientVersionLabel'):hide()
+end
+
+function setVersionText(text)
+  clientVersionLabel:setText(text)
+end
+
+function getBackground()
+  return background
+end

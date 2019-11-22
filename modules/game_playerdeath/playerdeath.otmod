@@ -1,9 +1,9 @@
-92gLUDUwzwa6qltXdfHwMQ==
-X+SzH/JK6hYE5N11n13ZKg+XiHitTCH/kBAv2hcJ4uc=
-/1HUFLxxEg3MNXLwwZwgyueYRmw3Cx3biJLoVKpacNAI5K4jtywros62tV9Icw9G
-RRJPxVg3/U0ukTn3WRdMhTZUCTLQHmbhwOWnY4Ds8fw=
-vX+Sv6ZQvi0A6kBQV5UAg2Cs3FiKSf6xd5pUm5sCWQ7CnCPD9nl2wQQTEVmrJnyT
-PKCDWlhHxWp0y5Ucg1WZ2PlG2tOFWmnZ+Hnf6RRUn+4=
-8whWUkaGpb7MADUC95C6MYSlFl9KYji8qzjKdLp4AYw=
-iuceHTD8SKKQ3T53PlVzvSvZpiQrv8HGUXx7Woem/wk=
-y9iodogD49Csla98RRVWZFRfnLocjYelOsOpJre0LH8=
+Module
+  name: game_playerdeath
+  description: Manage player deaths
+  author: BeniS, edubart
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ playerdeath ]
+  @onLoad: init()
+  @onUnload: terminate()

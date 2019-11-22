@@ -1,10 +1,10 @@
-92gLUDUwzwa6qltXdfHwMQ==
-/onxLtZKZXvEMRJzC6NfwJvD5S+Nk1nLMJAaJl8mwb4=
-HDwdAjou2Turz7BnEmcQefnECIClzuldX5ndO8FJ4tlM8fnxplGJ8LbWlJyEaLyf
-qLg1paTJD7hicOvCKrFEYSmcREGX4P0UanN/rGvTbuM=
-izd2/gUx6NfwxmXyPpUs5tzbYCnPCfjgceyYk9OmVaNecCNxCdskjjRecUhfDdFJ
-Dl7ihgdvGvyerB0tDPvUinRUdgNbA+ipkcSu1Bkw9Ec=
-lT4LlWsjP6iQSN2ZoAcWcG8lDwTsH3+6Im07Z6eQmoM=
-0nLFzaFMbwTCf8CHLfXySr7l6SlgVr7KMArIHmln/vI=
-RXRrScMK3F+Tb3hhIydJxpTXln5RiAS0MfyduLhcm5A=
-UW/mq2Kom+fZizxV1BPuEQ==
+Module
+  name: client_topmenu
+  description: Create the top menu
+  author: edubart
+  website: https://github.com/edubart/otclient
+  scripts: [ topmenu ]
+  sandboxed: true
+  @onLoad: init()
+  @onUnload: terminate()
+

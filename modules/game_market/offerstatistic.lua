@@ -1,101 +1,101 @@
-hQnNg99xH+RksVIRdStk+h0Madl4zWeib9b5d/teC4o=
-nuG6DxpOz6SSkOIDVnmjLtCTUFDFzCm7wQKLWcDkPAnWsTFd1Xb+VHheemVijrep
-xW8AlGU5vlTYuEQeUXA9LA==
-eLy42X0b8mj6LHS+zUfyDNzKqCjTeMdHI89iFDMggwQ=
-H3U3XPvkK076HUDLtAqx/A==
-VHRfGdsaUgPzWMJDsgi8kaPnJ13ku2ycccqANfQq916Ffvt3erLTyleb1qzdRUXFZeTH5xGXM3woroXYiO+WbsVp37B16Pr2pajVWcUuqcwwwZC4SSQwQedy2MI2XbpcxCwWeuw9f+czlYFRp2sNTg==
-4jtObf0UsdHlKL5y2yW1xjU/WcOivEPoj6PIJBlgxJc=
-SUr8z26L1OHxQlxN69mRHA==
-4gUqLjnklyzEY8o6szpI3w==
-LzXxMnoeIgmyXD69iG8cNudkkO5RRYREgN2AUsiw1L8=
-gWLrn+aEKfj14CZGW5yOkUYeK7GKGpZ0aoXvJoFJTfU=
-d8lr6/30d77l5LUNeK9rL4xciJWkxXuXGA8/u2O+7Rc=
-eSn6Yi3IQ2eqX57TkaAR2WtFNwZ5kuYbBx7uXaCRgCw=
-ipLQNIGrDFh8LWR79O3ZMg==
-/dbL/QjWRP2Odck+vgz6LFHrUbLmjKoRP63ihLLPpV7DZ4JXO9w+7UmL7pYDAYnDXSx9pMgTLyExOH//ndKDqVy27CBpZrYEjx3FRZbb5EM=
-NoAYOrib/MK1GMH4mwneIQ==
-tmZMDdnC9XKR3oArb8ZJdyUoB6kqXPQq2BDHEPAAQKerXdkanQkMaocuadqqW0M9dNiUuQdk3zWMNxmy9nKMFA==
-LDExRvDCzDYDUGwS52tUL7+fFCiHLx52FFfw6gm6jkqDWY+cOdPFBMD/RXRsgfVMSKJS5ogvAvg1zDW2YP+AaxHY54aloiw//k4FHhKHeSk=
-pWGw3lSa9JIfFILxLgOQag==
-+7RX9iGjJZDqcj9IsoOFMg==
-bNvHeGALJqPnEmLZmNE31Q==
-AHRk8jjvadqZdBQ1qV+1ybW3WFHj69u2syahBkrIGJ+PS3gc2zs4+zk6UTgo+9T9
-gaxnLCoTsxwgEGgvpvSLL8xtf7he6qWZSDcUJtMp0/Y=
-FY4/ODOzV65CYdNuUh7pVhfup/m/GxuWQdYfUZI4gyqZ4qELttDBhjqopkgMXT9N
-wRT98z2H06u9dagzKKKG43ivKuJsRX/IoRE/apiulYrX/z6cz+p6RgJaRgwL07Cy
-W5EIpFzIxsEuPguXrKS+Gw==
-yNwFNu0sB7x0J0vGmtBnYxs+74Zj06STdDNCMZK4t689nOqGfZf2Mt3vybjLv4Az
-DU6gZpuyxXg0ncsmfsuIAQ==
-ML+XUouRn2k6kkY0WeWLjg==
-cf4JJ6T9Ulf9bUL2qzUDmw==
-iJAF6Qb/+9H3J7kx61sYd0iGO7TUipsF+d9g1r1POYaHcjSCQhycehKq9ZvfOE0I
-cGeucU0G/6y8SNbgz2PTCN4vZrCe+vGCDpunatn7mbKxjHg1lbVtq2wR6XUfc5CK
-YmF+7U7b9DJYcXMbpCvA5g==
-U7O9mDxl+m7fNWZKIcXj4A==
-ZJQo3NYWyCz5KU7fbN1+rQ==
-SDQR/2OAVUdVnEEzRR8GDQ==
-2wDlAd4lp+6FkI2XvufRTN+LmlzjAo+qC5Z6kSkiccEGUJ6b3sms9+97PCG6U6lW
-FFifkDC89pyRTijO7n1lxS/+nO73YQyEMr5m7xgHrt/k/3mhrzurFsfrHTz1S03O
-c0fXnGF2b4dWZtYxif1iGLXE55hHhLPqsMiqdlCbZYmYmaSVwCHyj/wse+HD77/IJ/Z0yegulNVsYAIq4xexVL8UCmbca187eJWlwRu/uUc=
-wHDQsGDsoGze906BVrulsA==
-JhpZQa6cAvbzrGclO3S4+biKBeITLFQPY+jpXW60EfU=
-Iv/YwtbTrtTlgwprqeLa6g==
-q5DujxptRg+C94W5xIFPKw==
-nTjKVHwNvUJ7hijYcFeHMLZhBIt9N+6hj1hST7iPsCoAkaSCrfTQIIDICH6z9oAy
-a/b3yyUmZMa2JEwIaX+N1wduanVNvcK9D2z6lvET4nc=
-d8WHNz7vqr9IGKcT0W71cA==
-gcfLt71uKqI1BCy80YIo3A==
-c020POC7zcfIwugS1wur45EySUG1bxhwhaY4tIlECgm7HcotWK6oEqXV2Qd2IauE
-8bAMj5+NnJdw2KSgdT3ARvT4jCgjRp+lApxovrb6BbPDgkRHepWl2MGavb77O4vk
-vr7snhaw5KVlZlM3occRdth75n0gKkUtUPBuuqQ5S6nqCzYLZHw+wFf8nhE0IdVKVV0GbuKt0VGCNuwLGUIV4SXxML0zC2qb1Sli695jljI=
-15fKLDp0V6twis3Z6KIY9w==
-I3AJO7Ovv2ES7OqzUxoUJQ==
-Apjie81LU9yxYGgsck74zg==
-k403eQHK4RJtDwri6e6lTg==
-IatBWuw+4ffsLkdccBknB01Qbr5heCXiG6ktFKeCg6bnP+/yEZfFua/bZCNSOawR
-NqMlzY9P6pLeneEXXjAmiFIT0nwnJcR8ku7604xMaew=
-pvCvaw8rJSYG2fldZy1nyA==
-3Hf6cpUTyUVLce6NiS7lUw==
-21bPwGIrh8qVYkkrwDAdGoRd5mcchR+eLcoKaWLCkZRn1OsMSfGDQMRBi68L/H3qIDcxezkdkJyvHgtD/PIInA==
-vsFdpTwrIpcOgCUEVGq5npJ++5u4eceAI+ZKUP84af5ZGegOw86f/mfY/AjnaCav2Cu0i1lURdVLobqpBO/6uA==
-sFIUvBFdMKKGWgFhn0WjLm5RRJa/SQzWztNByUbCttWZVlPsgt5X695TRxWV2hvixO9b/+ldDjDbx3/XeaMiBIgMdWSxKwzNq4NdAR3dyGXp4XLBT3Vzplzo1a1GwCXX
-8ggPEPxE7JQk8Ax85XfAXw==
-+L+Ffxx8L7/kNkBbyUmU1pX4tNw94jJbucGfXnqp7dlbN8IsJeM8b9s9rHWAredx
-IK+juY9WoKCCBJiTAOa7wA==
-zQ8UG2hOHQCarQqQBPz8nA==
-HlfE9uu9EfX94SZYRbNQJ2gbMSzsFXbzNH88cWqlzbepY+87uZ0ryiKQ5uU9O9JV
-WmjOD0RHKxjeZw7U8q47o9NAAR8nA38NRq4TlI09SH8=
-9yf/2cEhxrMFxjL0Xp4yuA==
-x+/IGBd+pf1jnwbbyfbxIQ==
-jbzcZa+BgxYrORyWAf2ktbhAh2/brq5f/IbYXpnOVnw/FjzA5mR5G8XUh7M28oLo
-FVZmPcAdPwMg4it6Ut4352m84irzW844bR/vkuQb6Zars6e1cbWcdus7fteHD77V2atLaonnBDXhICZPkryMNg==
-d7zCjs2YPsXuRUKAns6co4Wr9k5Usdj8jzOmOApLFD1QbiM2+caEw9ZeiOy5UNVPf/vEeFmT/Xpvcjpc7wyFuCXh/yUL6QA2FmkPqkvXUoH53nLzTByDdrLzgVXSXqdI
-Ku/VpDqoxFL1m9eZEq1isA==
-X0W6wef1DNHQ5fR8nklE0wWzW3nZoAAZycI3Vc6c2QA=
-luu+M45SfruhvXUTFzduPQ==
-SpnrZN2GEL9h6pN3vQ7LBg==
-8Zc9wEX0mNCCs7yljisFwgXJG/RqJT1Cwuo8nP2QXlnPJbsIfIdjrvS+6rxNGcRB
-dLFjO/BcddgYcZsHAmmckC9ictjqnQffxyOzd1dj8kk=
-SBnAwPrBMwGipVVvmxuRow==
-754YPoWrDse6VGZdalB+Ig==
-JXzivPnChLEnOqqtKiW1B8YwV03X/bkxi1muB16w6ihRQN3YcNQBA8RNZlNrvnAsZNC3fnLyC6n28iUgiGB1SQ==
-lBeGleYzy/06Qki1e1SrVLcwadwWY8DPDWnHkaI2/zQTp+UElmt9mnN95GvsGOddZ682uuvAYHlMVnI3YEzGwg==
-qk3+i8alycnkW3xdqMqs8Y7ZKDuje7e7qgEh2m3X6SaJerdOxns4T38aFIHU+snguplyHCNY5ud1w39dG4mVME9UKCQh/XLhVO5wUvkHl7yxZrSLzb08mniPOJhJnqCo
-htgyy5UaEFTtwR8CKYaLQg==
-0BW032+dAGJVvvpplsTh6pORfSUV9Ja19pUtaqvwlf9A7Irfw+QaBWSl00oDPqmq
-5EuDFnRvO4ZUe7IrEAnAvw==
-g1ClqFbOC2k0RycpzSQuJQ==
-bP1XgBZWhK/n7H4WvsVPTZzQ/iupWt+hMdiKt1SEIsO80KlWl0vuhMgViSruclcU
-TWS9ZIEnQF1vh6zuUTlGPFuFJdSME4+X9FO0p5xvFVs=
-hiIdLHbMBZJfPZ4efKFTfg==
-TxbZ81OS7Y9Wym1aH8guFQ==
-Oa+sEvnHiavsEOfBcBTO0B7UH2xCJQK4OKQiyEt/qiyZP8kWcnM3P46fjuuXB2kB6O1+9aTTszSOkuZDYlBRaw==
-dIPvC05qdZm7IzxttVTzYMgE1XSFzMPpckSueBdmgcQJWWDZnJ7ZZGurcp+XpxCcxjOSbX+VRd8fgRAcp25AAQ==
-MCOfVufRy20IhBIItPRVfDz6i/sS5cwQnuaB8XXpa3OAYXyVOci1AzQ/sio4gVpeEM5J4c+nbB7o+uHuiGiU2XS6amaN85n2tW3QHdoG5QcwtI3sLF+KFlhxPZWXeIyV
-Uj67KzOR8vd1ZRTAlTQbrA==
-Lx0g4Lq/o/whgV7N+1d8QeRnC6DBXNCREwUfSk4c2JKD1SpLwvWd5bVag2GFWo98
-DpBbBEpVb0yST3p3m4uLHw==
-ayAveQ/4hkZlFcDbyYEK+Q==
-w5cYFQUE13Pio09mMUMrlGcMjYCKhieVk180M0818Nkh4zN32EViqrEncrJIpurV
-dK33IrAA29c8dqAyjlpE9eDJBY1/T3RVShcj6VopHEA=
-NOpQQuMg4oMspKUkWvMVPA==
+OfferStatistic = {}
+OfferStatistic.__index = OfferStatistic
+
+SECONDS_PER_DAY = 86400
+
+OfferStatistic.new = function(timestamp, t, transactions, totalPrice, highestPrice, lowestPrice)
+  local stat = {
+    time = 0,
+    type = nil,
+    transactions = 0,
+    totalPrice = 0,
+    highestPrice = 0,
+    lowestPrice = 0
+  }
+  stat.time = math.floor(timestamp / SECONDS_PER_DAY) * SECONDS_PER_DAY
+
+  if t ~= MarketAction.Buy and t ~= MarketAction.Sell then
+    g_logger.error('OfferStatistic.new - invalid type provided.')
+  end
+  stat.type = t
+
+  stat.transactions = transactions
+  stat.totalPrice = totalPrice
+  stat.highestPrice = highestPrice
+  stat.lowestPrice = lowestPrice
+
+  setmetatable(stat, OfferStatistic)
+  return stat
+end
+
+function OfferStatistic:isNull()
+  return self.time == 0 or not self.type
+end
+
+-- Sets/Gets
+
+function OfferStatistic:setTime(time)
+  if not time or type(time) ~= 'number'  then
+    g_logger.error('OfferStatistic.setTime - invalid time provided.')
+  end
+  self.time = time
+end
+
+function OfferStatistic:getTime()
+  return self.time
+end
+
+function OfferStatistic:setType(t)
+  if not t or type(t) ~= 'number'  then
+    g_logger.error('OfferStatistic.setType - invalid type provided.')
+  end
+  self.type = t
+end
+
+function OfferStatistic:getType()
+  return self.type
+end
+
+function OfferStatistic:setTransactions(transactions)
+  if not transactions or type(transactions) ~= 'number'  then
+    g_logger.error('OfferStatistic.setTransactions - invalid transactions provided.')
+  end
+  self.transactions = transactions
+end
+
+function OfferStatistic:getTransactions()
+  return self.transactions
+end
+
+function OfferStatistic:setTotalPrice(amount)
+  if not totalPrice or type(totalPrice) ~= 'number'  then
+    g_logger.error('OfferStatistic.setTotalPrice - invalid total price provided.')
+  end
+  self.totalPrice = totalPrice
+end
+
+function OfferStatistic:getTotalPrice()
+  return self.totalPrice
+end
+
+function OfferStatistic:setHighestPrice(highestPrice)
+  if not highestPrice or type(highestPrice) ~= 'number'  then
+    g_logger.error('OfferStatistic.setHighestPrice - invalid highestPrice provided.')
+  end
+  self.highestPrice = highestPrice
+end
+
+function OfferStatistic:getHighestPrice()
+  return self.highestPrice
+end
+
+function OfferStatistic:setLowestPrice(lowestPrice)
+  if not lowestPrice or type(lowestPrice) ~= 'number'  then
+    g_logger.error('OfferStatistic.setLowestPrice - invalid lowestPrice provided.')
+  end
+  self.lowestPrice = lowestPrice
+end
+
+function OfferStatistic:getLowestPrice()
+  return self.lowestPrice
+end

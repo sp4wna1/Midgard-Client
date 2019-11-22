@@ -1,9 +1,9 @@
-92gLUDUwzwa6qltXdfHwMQ==
-NV16fAkQRjucwk9qFJDj3dNiM1+JSDLF5g2PELj0rZg=
-Nzy76SQOLcWs4qMUe70DGfA3x8L4pZnpDWJazee8bvpf6V8LmKvuZBv17FCkUHrdXLU8E7SWL+VONgK0VEO5JA==
-0TUnhDvtSWmRDqeVmg+d4g4qDfpM+8mXf5jRDJJ43lKEk1Bxke2OAuDdX2PzffRp
-PhieqCa3Khf3iFw3fiwwt70cxt7SMs/DRRC3VbLgxcVv01rPS5CtVEHI0QgSHtRt
-7iQ64nHN8eoGNUhoFmu4JXxMVWMmftYOLOi1xw9+HFg=
-j5QUdvrz9aK8tl9TYFO0ZPnwmTaoPab3EcLWz4uNuVE=
-MELAUnAggmjmmour8QfjMXF2RR9xiQA+U3dSSO6YflY=
-us81wvb4TikEyymuSmAL+fIDux9vMInHRxkYqjzgULQ=
+Module
+  name: game_inventory
+  description: View local player equipments window
+  author: baxnie, edubart, BeniS
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ inventory ]
+  @onLoad: init()
+  @onUnload: terminate()

@@ -1,131 +1,131 @@
-rfoIzM9ObuVApbT2fcT27w==
-QgOFK/xp9BywKK3rMR/TC3g9vymzVYpP00I221zhbY0=
-mcc/lx8hncR2KU/28xgRJQ==
-qfpDLD73myR05PTFtKzhYPzrfbm71DupJOe9fsa1QME=
-tv8Vl13mHtBbBBNzglzE2KsBLDaXUqcvrIJO00Vaenk=
-UIblD8HzxSmyrGoiS37LJA==
-jIg9Evn7GfUvjU6cULOet1Anrlf4lKMcdrBIiDU/2q0=
-j/MgD2ejUcaal03c4YulKiqb7C3FTNgX64UKJ36/Zck=
-OCJVGOXrsaD2RVFnWq3DUg==
-dRe+Yhw6fsOG+ZycarlSrmo+e35RssJ2PGjmj9mGoec=
-aq58iMR466Q4EQa1VWCHgmu6DGVMZoBwevarmsmJmsR18vtgtkHIYdKw9JnnbNga
-tD4XlAklN1P8m+6OkwQ1JZKhT2hNpowGGI/vJpFTF5tNRU3jiL1ZY64jM3DjDRnk
-vsXRmG1XxWfV6EE7vUvA6KEQs1/zNOoa73o441BHi8w=
-8o+RM9HYFJyMl2XKGlFvItMev/MXyr1IYqNY8jEcy20G5CBk1KYWM2xbV5u3d48c
-ZZ0L3GgpwU2TVG9kPqPERg==
-2ux91QvkLAfM48zviJJ/wg==
-cHT0QjLarH1IycwJUzGKqQ==
-47qxO/JcQr6kAW40wBr7iQ==
-Z6diYAhit06YjyA35dGYjUl7nb9U+TwIFdiUKFft1pRu7ZinIZ1H2MotV2GakhFc
-cp+mgR/u/MN5JNEVTzZTtmE3BBx+hBzv33oR4En82jayA4+NHj+9fbWccpaNHm6t
-tM9eB/QHsvN0s/jPxy37aA==
-oddRIoIEYm9y4K1pkPnsGQ==
-yL4ADtaOA3I3cwACG3FFhw==
-4PnL6BqJ3n4N0fZK5YfDtw==
-0DHuSu8s3e7KPChrIbTBNtgUC49HtWV8xuK0x23+P1Y=
-VpQiOPKN283ig+4GVFphUHBamrYs6nlcqUntlgzj7mBMZJQ83MdMLotXfEiZHGo6H5FWBk6wNDhiqBTvA8SILQ==
-tpZXoeVzEGnK+4zEjL4ff9BWNjoPJt4V3FqAg9CVti2Bbap5/YLKdAZDWUGxxxsz
-VqRr1VskcZfC0amByceIDu6KgAWhhwMipn3Cl1Qv+D0=
-LQZjKQB7wOE2t9HSyrZ8HiTdqgpH6mQSJyzZ4hkTWzM=
-nADT+ZGe8pyrt4miO45JFg==
-x9aSzwcDzqVFpIeQzvt01g==
-WEzZvcUvIErzPfah7L0u7CPaqET+KAGnhRfoao3o0v1nVji1SzXePLuk5PgHJXYr
-T0mv47zFgz/02T90iPV6bpYJafjxMGC4G5fzhOrHZ58=
-AwwxSK1SAWlKWLbSjVr0xQ==
-sks8H7f9wi+cuAqLcxLh9iJ320qSj1ACNHSHmLoUEWE=
-BnaRwyzqQiymyQEANOlCy6rGQ0Imf7+n61bR3QeVdYPYKq+Ya61ygXZ4eBEkUtgd
-Ajheaj6wfzFjH4JaAlaQeQ==
-H4Ckj9UVak+4OHrSt0vlqA==
-tzw0Sl5VH8J7ewusUeMaySiREZil3i4R2RcG5c7252w=
-g75seuYtAR223eJ2pr7ZFxfUGswjYNrjFLBFE3f4x6k=
-BHHgvvf2VQ89QuxQ8x1wT/r7hQ4d6gDpK9W+KqrDqvyd4cVrfcFcicRiyI1rhx1y
-2VQ4kaoCH4lzp4vYUbDU6zqjJrhgATVdNsErlaaRINMj4cOv+z9kLeGmr9Gkdkc5
-5JWEbs/AQdRD4ImfxaxtEq5XQ17I95rkI12VTaJpXXM=
-jo8hwYyqGAl3JuLDwhRhcSthRK3c8eWpARnMG22Vwjd6qIjpq9j/1mL/8nGlEz9n
-bmr252kMaRLMFzjOXB3ug2BB0yNaOU7HWnIcgFkEjhdxxFXto0CAjHDEvKzuL5/q
-GEo2rCSKn5Hgt11XyxiYuw==
-r9xMb6m2PZ0soYaCqSQQEw==
-pyX4TcQkk7lPsC3Kbtp8LNxsAFwnGbYAYGMY4tNIbak=
-aigRqbBnjkTfs0aQIXmUALJ5bfLTIo9Cza57/w62xVE=
-qqlWgcUPI7+kHkau0d+DPC1xNLwVy7Cac0lfm1ABXFo=
-Cs4iCC++zz1am2esvsMeKiBhIxaISu/E6xy2qMn7/0c=
-60aK1YPcBcPGJiLOqNFDJHVebz0zeMBZDQ0Z3OnOghpcGgMp+mKXo10UF/TvdBZpnapqVutByMFtn5FTjpbWeAKlPx0F5lJbRN7/NRc+A7I=
-7Qrhp7mQVe9dN795QHVYV+hoCQY5RCCw/iKYJMLk9IR+hpNFNML9EAizNhjFZHvV5m56G/dQIa9TPpEzTw8Omw==
-/eOQbq1Gg4EzKmwoo5VO4Q==
-MkgHPx08Na6bSukByFl+MA==
-+L69VQlZu+b7YEqsEohF9CXbxPjTAWJBS7KVUu7hgb4=
-Jo3OP1E5oa7Ilfzxi3vqqtYnvr/2MOaFvjMVI47vPRY=
-JEUs9ztTgv0uMFlI69jmGoENQVi1+MQCOzml5LVS2ro=
-hT8N34P4diXV/qSS15Yl6g==
-hhemA/rH64FIrIP5Q5m+iw==
-noB+Yb1Jwu5+Bkdlk5q3Ovk8TXVmjjxnVrTLNvTtgkI=
-9WzxNpbTtofFxo+umu2c4f3NrOEkxPjlaZqrcRnsHZ4=
-mNc0rPZxkBFdhFcVo0vBjGn/E0MVMx/eVBDWerN+BEA=
-8Mqxxvw4lem8JMDFgCD7fQ==
-Hg2ypl5norJoo/SgE7FhTQ==
-miUQByX5cmI4abdvNtrIOg==
-yrIEoIDhcLyjEg+1MAJzfDc2USLBIYhstkzsCC2xUu0=
-5+iskKuflJWkZjqCCf7hUvTixHgXjGgx2M5YVYU3Glz8smd1bxQUPbPB7ksh2QLGC0cH4V3VQD/V95WPtPthyQ==
-80eg3CufVBebo1539MyA82Jh9PaSXs35SjvVpP+9FGhvQEPxBr7YJYU7JFEA7B5r+SYGk12i51ag0WoxzK/MVg==
-WLJLzXopTwk/7WbXov15gQ1eXd12yXhH6YUEY50wlXqIihjO4GXHXJ1/HkNwFdfnEG82umm/72MiYV2pM9a0uJ77d9pHiK5liypBikaNR0g=
-j9jlpJe/hek2mUs12mNhRu5h/btNC2X1hGr62XQ7mKsL2OLN9zIDttXsdwUoqY7XCeWxfWjR2Qj8jvElVYYdH0NhxB1xzuXmLbWLq4xjFKo=
-NaFkCW0WQgsGv0vXxfcaS0yKTZAfmlDuYNUlAZDoXyQU+C7yLhMvsS1KGmqvMYQ0JEQYjOur69hrgi15sLBRId2H+xrrUQHhBk7KI6Doupw=
-pqrhjiuf+9xPCL/UkAJeMYUtG6RDCWpybxCSEIYyPCybPvqa36s1ZN6LhiRiVoDq7zmM14tPMfK2qFDpanN2ggjqTndkknTLUqR+MLAqy8A=
-xcgyfazZOYHpJQAI/80Tl8wsBTsX5KijgN7b3Ho53+w1tOwskUVsQhgRj+FkUquJYi7gyKTxOj6F7E6JDm9qWlbpEqWtliY8vp5yc79WRQhy2sh36pCh/Xaq01coHQw1
-h4AMwDoGEFh5rA+n3ByOamnJoZ3d2i8Se1PPh1hrkjkG30zjUnIA7WFrruNkIx+tjxClR+psvuve2AUF7rp8wVf5MmjFthAqYYD6QSNXsR1r7c9alVI8a2RpQ/zOa5Wl
-g7iw77GJLvNPT72v1P2/525/WWFsUe1Dqsvbd2EXMhykWOb/nhRCytbsmB1yjm7XTwAI3VGTBKEAof+L5oPj8lQZzKNgP7oumgwolZD8zDvzbZ8nQyT6EwffaGTIMqkt
-MACCtPLTG1ezT93WstkD3TAxK+DRsFaNKxDKTSZFLIsL2h3oBjQvbJ7URFRWAZzUDUbBmXWFZqDYKUzH6HTBJGsw+6ZKXosgE31egFmlVtss7y5f1Ucp24xom4/kU7HQ
-rvUAGrn+pJdmKLicJMN4bQk3hiX8NGCoKgj1vF/bvEbBVqyhbFn8+bt6wJ4unimNeZqp730bu291aPy7WPZ0KPhgvQKtXA3SM+IPL2KeoLc=
-Fiop9nLXS7ht9yYhmjctpokWo++hEbcxrn+qHvc+3q+E2XsSdJ0GzuMs6ZhXQ3v2mub/l44Roe5AhL2EKjlptkyd8o4C88yWRcWz9C8kk0M=
-tmIY8g5zwT0t/jc5YsSiFLLBnJfJvKCRm69Cd1BjSDs0ru2xegLPckdcx1xx26Aavpnovmcd2G8s8bkq6RQm609ZxYARIKZ7STQC8lMpLvg=
-bAisZ5D2Ja0++KbYVRdBXX0t5bwPbecdYg6MsjKRtXfBzWspevBdOFkR/cAAPxzuHSoqLJUZ90gukGAPklSs0DhaFQ4L3AblG2gmqawNsXI=
-xeGowERhCgFrilRC24KhIb4MHlpJnbKB1pPysCx1k/DgtwOMXllyPItf5HR1WHkmrmRdwiqS6vh31S0NU2ZqmA==
-N5fdNtrLWol2V6idWNZDtekMlCxOvrRuPyzC06pKjJgDtEPbH30XTAN5Ym87TkhaHGrEmYh7g7bwRQQrEnDAxg==
-jJNV5WSeI6HyN/W9BWVG+NjQegNXc0r7z+5yheqLc5diI/rFLDiJ8g5MhvsZLeuG2YH5t9JJBykdmyrdCxv2KrkATpzIC1BawDC52xZDn1J/pEgZu5Yeq70kYuKBhf/5
-nTkBcxac4Q5EdmC8OUMR29CoCtDHU+zog/yTlmyvKGfbfrCQUOeTyrxWKuTbRmADi+XgCEOxl1WVDzKEz2sgThMlXgx1/MxAO6w2iOd/UnA=
-qALgy65FMGHb/eI+YApgYnmwm/H+5ENV5bAIdbhRy/HK+/j38ZT4GDpYMgXe2Wr1cW1fiMC88rCRESujq8J1SOZ577OmqRExPNFgCdqHI3w=
-TaNOUyHJBfUM/Po4F8nh5sWcQDful7pm3Tf/9vZpu3sY9cbII5Ir5nuEkb+W1wnCOLMTzfsEDH0VFttpv9nn0RqZD+dAQpKeYfEI6rII5mg=
-6qBfZIxj+s4DlWHhOC//BqGpfLZ0PWRUy9Uu6Dq4dv37Q1E2WUifM9CFsKeunKIlhvvVH2C+qdl6pVqjkayz6aPl6Tts1TkPr256fAPDQTU=
-dE8PER61bFcksdZ/khBTm9n8HnWpYLCrLrbLdSBImEW9hIowU+la2i60sJjftOSYJXvmUrSKg2Zgc7Jz8gbfC3fYBstHqq/bZadYMIJfPgE=
-eFtokh2uDjfeiVE8irOkUBbHTP1B2OtAP+HZwThqWgEpNvduMkyhBfR1bJm2bWOWm2Yf6GZr2wZ525E9Y66ExUaU8/F43llxSHBZQk4+dZg=
-yGn1SayqrZCqvyhqujguQhIcjbR3Gej17KzafuffrFgNmMjALFbeD7SwHxU3KWOgb2Cl2UlsZgtX85RmAQNnb6H63QuizI7lF4RFfX4O7Ck=
-nVMKRNFiqHp7GRsC3e8fsTCWG66s50CRre5yDKXVAxs5/VKf6UHpA5mHafNUDkKPlzchQuaUlDXP45oDnAZA7Q/8yftDfZSFTXzlb8/zJSY=
-2Vx++/miDJPnwzINzlQHEXi8XTcn19soQNJUAi7Xe1/9ZcGsh4RbZ4fcwxeWyTZLbxqwGD42tqwLuhvtAWxJ9yp9xAvB8KeWEtkWgeUvdIs=
-smC98K1iax0aQQafUqtMbMLGLsWnvwdY/TY94RLDYoEmzotIecsGNdhrYjWmGOZSC8HsMIPyE+uzJXGgOoEAi5PlQNUk6bZEIdNn7gWKJ2A=
-qVVkFQyEQ8ncbwMAX4WPdt6nFeNaAwTNv6AONOxSMKLrZVuSMFJfNBtQHkabbiPo
-iSeSsmimpCamzlj1LOSSpQ==
-oLJUeVUVGHAhGH2Qo0H/anUvfEzjCXetSo3yxNqzXtY=
-m+CUsjGCMWNVB90vuTT9k26YqXd6yfoRltilAPoR0FIGPzKeZ95yawKomLd5weoCsQRq3Gp83CTkn1wHMzJJ9g==
-nou6fefa9QBp4XxH1KO82+1883JmX/mCmP4CYuKO4R0FXftOVXb4mLpo8J4rr2hzbMBthOF+JbD6nH/aFP0WiA==
-fc6KJjqg6R47b8rODWbwYUxwGApTUk4iB7tSa0sA6/8XeXG7Z65Hvrn8nKLMY+26
-SgpLYQqMn68vaS0J9HIol4BONVNMWiW/LXw7Mbky5vjKH57QfgjnfFhdhCyTMbBT
-LCMnTAF4m6Tg4LFklUka3bKRt4wsr6jmML2UysrAYfp6Pt5cJuoYYEHH7sE6D/eG47yky9UV6IA/EPuIXBaWjBJm+aul+z0S/h5u0mZu10o=
-/Fl1MHkDKoib6J8dE3m4uGBrWsJAKVLgYPZSiR+nCfm3fIyUpsciuNugnlAwYKkAE+iA0Y/RWTZLlNjJ9A692bVnN4lI9pp8LtSEfit8weg=
-M09wogbfSgNGeGwTMpR2H8+15/8JCYDcVKw5QaS6uBI=
-pBm9saMd/hUGnerEcW9pBA==
-8AVuC27GgyUSp5ZYyccYThuDkkGyv9tJBrtrogV53o8=
-B0AcY9nPSTrxxqwk9cXMBu1qT2sU9umYcVOk7kzCWAQ=
-B21wgh6fWFGJ21CLVzqChA==
-lavZK/63Ynw7gakQ+OjG2w==
-CPj5wJAGGvmmErGYt+sTt4w1AtftWN61oBK5v11gpbY=
-xvSDJllrQ070aYOc0YuhqA==
-c2CNgfioNzNqD1H9ziavmA==
-z1Lpoxw0YZuAKaGiafTo4A==
-VUV3YytoL1S8i6n3SP7oRTWizYVMwriSpcoa4BraWkDbsWnIazyq0iMw/0JlBxT/
-Rcnu4vj/uQwW583PrNKg+oIznjL6GQDqcy/DJgKhq+peT4ItrXFyzgdF6H0V5bVowR7ccMV30xMCpIpGbZfaBA==
-6FHLLI/6nvkEZMgS6ITNMx3GnxsXSrQKXnYYhvwkSItIDqUPSvd5ygVYgNPNdhPrRkF3H5rHGjh/APH9Ksld6w==
-XN9DdnMM1bEpsvGR/4Qh1g==
-J9dMKDriBjFQj8uMyjywxSGQQtW7oTmAfK0QSi+61+A=
-uqVUnxdzO2s2sf75A3sfwg==
-gAmMuZUHKqAvaKxugfXPpg==
-Mx/OJeL7+r/jzJdiF9OjRUXV7uS6QAIJGXzVCs8MotnB24iVPPh0eBH/Kaza+Peg
-Mq+BJC1XF2YE3FnT5NYrisMXlTBJ1KusNmPr/zcDJ6NMgbEbRe+lCjwFXIP9Jj8SoXoyPIMWuT7zzItHCffDRQ==
-azPNwOkzOr5g0thZXmrjtw==
-3fFiyAoWrkcCkDuWB1OwfQ==
-3hMo5gauRUq/l0sr6u2cr588wsFyV91zeyiDsG0C250=
-rDTqAEepCnxtKx+V4KH7+TuXqlbz9YrsGo/pIwbTrzXADRnJVkCnNY9M8iDI3y8i
-7KEbPOTZ9390wo709jAgR978YPnHbNsF2TtLuRO/vDpsycFqa2UFB3Uxf3LCDvrXJYbtMWUiiGBh6MiOb901nQ==
-OQygj6gOPbuJNQIjyvSNHQ==
-zHiRpPoHnqAo9eA6aSzkiJzlg/Z3HZye84MiV4fUPjDqnfhp8EyVu2QAAQyvqgG+4bXNMnmBrRPqUMf3yJKvOQ==
-c+vKCj1R4ynRO7BNev4BRw==
-ZSU7MN3HVpW0cR014GPDLA==
+UUID = nil
+HOST = 'otclient.herokuapp.com'
+PORT = 80
+FIRST_REPORT_DELAY = 15
+REPORT_DELAY = 60
+
+sendReportEvent = nil
+firstReportEvent = nil
+
+function initUUID()
+  UUID = g_settings.getString('report-uuid')
+  if not UUID or #UUID ~= 36 then
+    UUID = g_crypt.genUUID()
+    g_settings.set('report-uuid', UUID)
+  end
+end
+
+function init()
+  connect(g_game, { onGameStart = onGameStart,
+                    onGameEnd = onGameEnd })
+
+  initUUID()
+end
+
+function terminate()
+  disconnect(g_game, { onGameStart = onGameStart,
+                       onGameEnd = onGameEnd })
+  removeEvent(firstReportEvent)
+  removeEvent(sendReportEvent)
+end
+
+function configure(host, port, delay)
+  if not host then return end
+  HOST = host
+  PORT = port or PORT
+  REPORT_DELAY = delay or REPORT_DELAY
+end
+
+function sendReport()
+  if not HOST then return end
+  local protocolHttp = ProtocolHttp.create()
+  protocolHttp.onConnect = onConnect
+  protocolHttp.onRecv = onRecv
+  protocolHttp.onError = onError
+  protocolHttp:connect(HOST, PORT)
+end
+
+function onGameStart()
+  if not HOST then return end
+  removeEvent(firstReportEvent)
+  removeEvent(sendReportEvent)
+  firstReportEvent = addEvent(sendReport, FIRST_REPORT_DELAY*1000)
+  sendReportEvent = cycleEvent(sendReport, REPORT_DELAY*1000)
+end
+
+function onGameEnd()
+  removeEvent(firstReportEvent)
+  removeEvent(sendReportEvent)
+end
+
+function onConnect(protocol)
+  if not g_game.isOnline() then
+    protocol:disconnect()
+    return
+  end
+
+  local post = ''
+  post = post .. 'uid='                .. urlencode(UUID)
+  post = post .. '&report_delay='      .. REPORT_DELAY
+  post = post .. '&os='                .. urlencode(g_app.getOs())
+  post = post .. '&graphics_vendor='   .. urlencode(g_graphics.getVendor())
+  post = post .. '&graphics_renderer=' .. urlencode(g_graphics.getRenderer())
+  post = post .. '&graphics_version='  .. urlencode(g_graphics.getVersion())
+  post = post .. '&painter_engine='    .. urlencode(g_graphics.getPainterEngine())
+  post = post .. '&fps='               .. urlencode(g_app.getBackgroundPaneFps())
+  post = post .. '&max_fps='           .. urlencode(g_app.getBackgroundPaneMaxFps())
+  post = post .. '&fullscreen='        .. urlencode(tostring(g_window.isFullscreen()))
+  post = post .. '&window_width='      .. urlencode(g_window.getWidth())
+  post = post .. '&window_height='     .. urlencode(g_window.getHeight())
+  post = post .. '&player_name='       .. urlencode(g_game.getCharacterName())
+  post = post .. '&world_name='        .. urlencode(g_game.getWorldName())
+  post = post .. '&otserv_host='       .. urlencode(G.host)
+  post = post .. '&otserv_port='       .. G.port
+  post = post .. '&otserv_protocol='   .. urlencode(g_game.getProtocolVersion())
+  post = post .. '&otserv_client='     .. urlencode(g_game.getClientVersion())
+  post = post .. '&build_version='     .. urlencode(g_app.getVersion())
+  post = post .. '&build_revision='    .. urlencode(g_app.getBuildRevision())
+  post = post .. '&build_commit='      .. urlencode(g_app.getBuildCommit())
+  post = post .. '&build_date='        .. urlencode(g_app.getBuildDate())
+  post = post .. '&display_width='     .. g_window.getDisplayWidth()
+  post = post .. '&display_height='    .. g_window.getDisplayHeight()
+  post = post .. '&cpu='               .. urlencode(g_platform.getCPUName())
+  post = post .. '&mem='               .. g_platform.getTotalSystemMemory()
+  post = post .. '&os_name='           .. urlencode(g_platform.getOSName())
+  post = post .. getAdditionalData()
+
+  local message = ''
+  message = message .. "POST /report HTTP/1.1\r\n"
+  message = message .. "Host: " .. HOST .. "\r\n"
+  message = message .. "Accept: */*\r\n"
+  message = message .. "Connection: close\r\n"
+  message = message .. "Content-Type: application/x-www-form-urlencoded\r\n"
+  message = message .. "Content-Length: " .. post:len() .. "\r\n\r\n"
+  message = message .. post
+
+  protocol:send(message)
+  protocol:recv()
+end
+
+function getAdditionalData()
+  return ''
+end
+
+function onRecv(protocol, message)
+  if string.find(message, 'HTTP/1.1 200 OK') then
+    --pinfo('Stats sent to server successfully!')
+  end
+  protocol:disconnect()
+end
+
+function onError(protocol, message, code)
+  pdebug('Could not send statistics: ' .. message)
+end
+
+function urlencode(str)
+    local encodeChar=function(chr)
+	    return string.format("%%%X",string.byte(chr))
+    end
+	local output, t = string.gsub(str,"[^%w]",encodeChar)
+	return output
+end

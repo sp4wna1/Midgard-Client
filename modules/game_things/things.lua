@@ -1,51 +1,51 @@
-vCdYeJX9F9qBIj0EHDjLHA==
-K6cHt5yvhQhic7co7OdEEg==
-kYsLbLxP4VBnIOeJELuz2w==
-d2b8j6Ee8b8VdzvCSNbDMQ==
-jCyG5lG5/LPE/gNAo5ZrT2QGbsK2T0fzK28DNKUmLoI7ebGyEbu7PxAILmu6uYD9EAQSIV6jRW4r8Tamkh11RQ==
-Ibltr8WafSmfU/4czRxA6Q==
-BZTKyzg/0oePTbzMAnrtkw==
-gQEVchwJGLGwaCldUBUZKLl5ABbXzveFfIDFo7QaZJw=
-ZweUUBrms/ohPqJU0FsYsihp67Hd39jawthQVy58yDsC0z/Wx8jnycujFQ+9thbm0o2Px3KGXr/mMvbN2LbaIA==
-hGmxleG/DL/xGnzS0xddUg==
-zRnJY0mt4m2NnV3ZlW60bA==
-TlSyp6AbC7rgsZ+/uwJEyYOC2Gh91h65ixBMgoTDadg=
-Yk4TgihluOtpztu6/BV0h4axaUchUbC520VJ6qDWlVA=
-8JULiwSofQBj33FsJrC3FA==
-g6kslUt5/4Yr0g68OetdnA==
-1+JYVbrTOjxgea1M9i4fQa3xSyfJjomn9kZrejEzrv0=
-wR0/hJtfTrRgHzRkrPmDDw==
-9hGCB2k63dEJK+kupSkzyg==
-7WTCivIOW3DWUhum5nZp1Q==
-8tZm/AJtTxkUOJ8BeO4RqA==
-dLpdPV4yJak3Fw1BkyqkNg/KuzxfWDV/YX0nYXDqKQZQejGpTl3o1smogBacUFgN
-8R76ELIhLrfOpvYNHJ/7bQ==
-kD5qHSPaHfRKo9+nFkI9M1mJ2wWSLfCsvB1+1dm+ppk=
-rx3y0UHps8zfqaAxGqH3movNZUrMbm+7JdF3y7LMH+0=
-amu63llvrS4ydFaKTbOmT2Zl27uHuf/n78diggz9i8Bs8r/0G2N7WwwCqF0nHygczJgdA1S0le3Z+O9keNMbSA==
-6XFTQZSc+l7KKrfQYmUZ4WCwVgSx5yAn3PXE8Q8GVlU1oxEFxbk1XbarCE7pYXNUWOH+x++IDJ5ytAFYGj0JVw==
-uTzW0Tzf9P4VUk/HQ5ZduQ==
-ZnSvDEpKt0xkeAi2+aglr15/D4zT9OB+DMo1bzKaO9i8zis7Tsm2noRwjbLziTCRyUdtYqa7hJV+9s9P2FpCQA==
-/xQTcQMBMx5QZlNIv6OKDfxPvpvqEeGULZDU+9v0OpNvxjddbQO20M1rcZroEwXt51phjShoaVK2JYRrzhQaDw==
-Y3DEpGUJeZ6YHuUo8ZBYMw==
-dHR0rKQmHBs1BFHkfw9Kew==
-5UnRcuGgdyn2617+aA+xccSstIO8UM/VWEfNckHLjRM=
-pfBNwdu+eI86eR+ZT/lGBaNrTX+FhTs5qqEjt/cFwhH69cxaBPDEY6+cRvnwSB6E
-UgCMNFJms3d2MKPOzfJTiqlIZSiBUNtvGWT2AfxP/x5x+IYzkgFKD4OrD5JmjxUS+ChmaXQ+TGcULvnr1DEnhwVnI8dMHctbQEwSf3ygoRNNyReypBHPlyvd00UPWNWvzCM2HnpGnJdu4sKU71Qc1fDLXJe8pCT3V6FzWqMkp+0=
-NxGUtDo+eo8iBfu8ZtqRWQ==
-NhMG6Cm8bYg8xwkJgT6v87JjHc7ot9ho10nYbKSa2Fo/57eRcIyXD208c2InplzW
-Q+W4rC9BnqEbi7qK5Pm9CfVH4JPht3SXJpZN/bKdgG9KgVv3tX31z3DBCeECmgoxMZk+zt+dL8FjvUn+7DQgnQD2Tn5V22CWmaT2eGhnCzQk5fbgdf4+mkywusw16vR/Mvko3NzbvDNOZ+9CibbgdA==
-E+pIKiJ/Pzcac8pLohBH4g==
-zA0BS0TcwPgwtOJFwsK5eQ==
-M+gLuJRZyaln58pD8rRFQ1jXPbeezAIq1k2KAaSu/JBEb859L2O9OvHBP9gyDrVR
-KFH17LRbgueJT3wRK6bkNw==
-bXQT0+Aqofm4yA87zZaZG4HTTBJtrjKKl43xXYPHWOmqb9vMhae9Q87RdnOZ9hW8
-SFUpn5TXLJoA3HDlMRu/Br1UFWocvFdJCi/pQ88mv8ZMkIslWak12mCYUBUAedXmBNFQuvrvXpT3zDKPsNjQaqNulggIrimYi4eiafKvKRk=
-+mpFQ0t8E2Ww1d+/ZlOQs1fhR2EJ41UAzl6yJ1VDRkfzxeXmzNIPAV3yBQmzR+ZCJZICBpg4dxq0ODb3V9I7dMfithpBC7s/XMjtg1fPuak=
-094WGt44wktwrF+piOmPoQ==
-g8p003tYGfr8Tbz2gQpFoRQLWpBtHU6/AGfdmr2mqmo9IDW99PVCe9DSY8O9Z8kgHQRYOrANgd+wJc7ffQQndg==
-WuPmKACEztR2tY07GcT7AIxInWlEJbf95R6JU+WalD4=
-bCsqay2pemVi5JouCePDQ86VnZ011YDA0fsS8v/5Vp/Fy/v+iBbq3towltS5eKWo
-Re6jmtu+ubhsPmkxOzk/X9orBWk02NCT48j8N1k4qwhTN/82VVDqKx2JiTUmNHhbT30fdjdhgPXvrTBQJggeuQ==
-U4BL2N2t/qu68PBNHByHmA==
-HftbeP3m/RgCO0EHGg0LvA==
+filename =  nil
+loaded = false
+
+function init()
+  connect(g_game, { onClientVersionChange = load })
+end
+
+function terminate()
+  disconnect(g_game, { onClientVersionChange = load })
+end
+
+function setFileName(name)
+  filename = name
+end
+
+function isLoaded()
+  return loaded
+end
+
+function load()
+  local version = g_game.getClientVersion()
+
+  local datPath, sprPath
+  if filename then
+    datPath = resolvepath('/things/' .. filename)
+    sprPath = resolvepath('/things/' .. filename)
+  else
+    datPath = resolvepath('/things/' .. version .. '/Tibia')
+    sprPath = resolvepath('/things/' .. version .. '/Tibia')
+  end
+
+  local errorMessage = ''
+  if not g_things.loadDat(datPath) then
+    errorMessage = errorMessage .. tr("Unable to load dat file, please place a valid dat in '%s'", datPath) .. '\n'
+  end
+  if not g_sprites.loadSpr(sprPath) then
+    errorMessage = errorMessage .. tr("Unable to load spr file, please place a valid spr in '%s'", sprPath)
+  end
+
+  loaded = (errorMessage:len() == 0)
+
+  if errorMessage:len() > 0 then
+    local messageBox = displayErrorBox(tr('Error'), errorMessage)
+    addEvent(function() messageBox:raise() messageBox:focus() end)
+
+    disconnect(g_game, { onClientVersionChange = load })
+    g_game.setClientVersion(0)
+    g_game.setProtocolVersion(0)
+    connect(g_game, { onClientVersionChange = load })
+  end
+end

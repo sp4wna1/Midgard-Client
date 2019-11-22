@@ -1,537 +1,537 @@
-1goVwkNJQkzoDjBt4MunjA==
-qldzEiOkXq04jTSeUVO/BQ==
-ah3/lrzVTKg+D7/oaysTfzK3wYQjDFb/C9Qk47QwYB4=
-8/VxYkY3PVB3YrVe0equark6qse42+3AsCUc4pfYHmM=
-Ae1JWtZVTlZ3XbR8+C8g1SpNJms+PyWdYMY9wYK5jFI=
-Hv4JqBjp3jx3/ooamvm6jIOYw0kF31X9QFAQb+tPtCI=
-tjbWBxdXlxqkU4rZ8gLIKg==
-K3LONOBccvoiANDfjKrdiw==
-ytR9VQV6WPUKZGSmmbhT9bl26/dXRZcwD3GwhKPPN/4=
-gVuheYkpclcgOSxt3urAyA==
-gw09yo7SguqEqwotcd8dcgGjK32fIXFsyvayvTf25fA=
-WpCqNBu8GBm/KfrBLQ3el/a/MpxhCtZ4/xDovZ38RiE=
-ZXFlb1jh1IlykmwlM61zTXZVBUUhfGDMijEEmbrzNYg=
-WK2DSV3CEvzJNCVQYYR3qg==
-8gRxQGFLjeriIWJH1ApctpZ2dG4M+A+p5UU9fneBg/Y=
-xhYki6vOq+PlKfDGMB3Qkw==
-/b7jDH0+gqR36OA86i1XIazDmozCjzCXUruPpEULeeI=
-A8oyPNd4d+fA9RBTANSaKSrXPHJNXCDbLGWoSFJVaBI=
-CgGTGvzpyLwxp040zlsyEPc6lnh+lpvU81aot78ODwA=
-4r1PZKjlPOi7wefwNZ6dOBcy0pXX1fS6hQMfe+eKp2g=
-gCpdBkRsPOWlqjGIES7oDclmbYklUG7kjW1uJ7MWHCM=
-GnosChVdOTVj8Vb2X5ielMTQcWEsPWaLrqj8kHOV4ng=
-gD5h27NKVvOsG1pY/fp/Ez97ebt6FHREjWDp3kUKfvw=
-KLSIt/Sh0RcVyTBf52luSw==
-pkIPgmoHamCvVKbRAdqn3A==
-dz/svlwE9l4YGSIdeAwokpePtsPZkNVx7bh3AKYeflo=
-L6OOb5Y1wsSwTwjfX4sGzg==
-jPDqQ+LdvLeSxuzdVEb3X91Nt/ig3GPRtbDvOO7zRhc=
-IWdykZZ4mQ3WO7RdFIPrJmyU3wM/mgapxNiGHoFxg1Y=
-xgBBNiEuJ5tAIhmVtOuWDoiMvHgDykIIg3abQvv8ry8=
-4/e2BFTgHI93Bbf4EIMzItuWbrkXyfc+KGa0GrQhfxU=
-UOFB5WDnEC7htpyoV9DmZ7QPHNmm/HPyQboCARByLV0=
-RY94BWBXy6bqglxCnfyLT6HxkIchYLWdh8xLa1dK2Iw=
-dX74Pf8NVJH6Tva7nXKXYw==
-puIy95RBVdB3MREAYeAJFSYFPVRhcXOjtg32joRMQkA=
-xzAtU6VsRru2SupZQaZwmQ==
-0+V7xEP6EC/n/+8CQKs7FA==
-FHomQAtcZXsJ0d648IVgyQx766R7M9MSxwOXWR3kPBw=
-ehzyvvdPl0X1K/V9ojWXPw1+Xwio9W0wfDo4bIuwAiA=
-k2Feg9kRDtJMRYYhVcQOKg==
-7WBTrwQYyvt2KTkpmlXS/NV8/xTw1H10/PNtz1yO+Ow=
-bHJ8HyBOU8s3UJVU6I88gg==
-pVrhbcALsRr5J98tHv1QQQ==
-Bb/YCFCL4hH+yv/WXtMS0alkEOFa80I1dMcyH5obGi/26PqfSoFQOTD+46dcLy3l
-bZzBesLN/WrAkjJPurUv3bHLPRcecuO1kgHxY/IRRAM=
-JLC81+ZqrIwTeuyFnt396A==
-GVSsb068ipabzoSNCGtsvzq7YkMWu7331sxO6PdlqmPtyZwEXdJq3rcfnSIp/6jTJjxu8TRpvPqfKbFkMJZVTA==
-Zpu4mZkmXV3sb2UzBb8jtR8M1sDyKrM3YS8aMjw+UO91MBKw+yqyONIe/8PP0wVyXoABwyvuT+QRx/17iTpYrw==
-JeD60FaC8CwmZfG8kNnR1A==
-sj+wAKzxjhrM8aa589pPsiSNbfyfWjvhR+CBhkmStQjMq7BNSONbP06Sq2JRs+F0cijT2qi4L+EIox7/wNxBOg==
-WT/6lxQ6bRktAfcZ2Rs4gRzn9AMZB8rOQudlQ68KkrQr8ZiEy2Mk0S0YcvV3D8LQjOXYHPJO8W74N+hJbMOhHQ==
-xkmmcSO0HhFqe5dlcY0/uF2FQzzrcqVJQGdJTnJm8oE2wOuYbAIKPmkEzl0YZCHU
-denwREWa2y3g/MQbnMBLMtpQfDnrwFxVW9B6mp6PtyFbURsWHGikJSAb3WVKNAIf
-cwaIR/Mpo9mXuADFJ4VTH2Wbi1q3KvM55TDjiDxmwCcIwTHcLkaPK2BizQCDp9SU
-jRSidyDBnWSPhB+iHU7WDjzEV/GU0uRv37NP0rSzaeUyprQkZ0g1tcKAWubMvJmdhI9mp3I1ZIzPW3rQsWHuHA==
-LSLRT7874gzEl4pv3C18rBnY5eAh3KjExChqIxgyW86icVG8A8e6vSCDTgmNdDn1kLcsGkO53Iaqs8JE9JmydA==
-Qb0X61rqMZo1lIGOzRZLvZRJEAJ5Hd7MZOzl7Bck44qehj0TSvKRv+UYbTbo/6a9gvlcV/nHC0DXbGoOuuEEzw==
-5tKQvN2xBS+Cfr8X/5xamk6JegIAiuciygjcwFHjluZ9MY2e17UrshlGT9/pnNV73wQE9dOBSNFS+FpykQ1b4A==
-OT5mFg5D8CKp5jZJbpuiOklPSwf1Hdxa1ZaXEH6CCw7an0tBjND3JV7J5VyAcnOaVo4hf+w/2uYiHGflgIR+Zg==
-9B0vyt5geLmzCnJSLLskPQ==
-4qhV9cDxqv8ZyhDby6Vbwr03giLbbus9/pljrWRyM98QjUAuZQKYlPDvZEWCLLVGUmcbwlMjS9UhqIBmIT+GvGf5D+KfVw/D3ZFAhV2MIEk=
-EDYDaTNVuhER/OWI7DIk4OyoVeutRHxfIFgGoLInyE0MTnr+qijZJGovPxIDdsFhR11c6JL5xJJSlrr+xUvRzAuefzx5zJBWmcz4XIoWQZI=
-GJFghsdDJQ2H0s0HKNTer1NapHaeN40AH1qpMV57BoD4uC9LllOKsd7Jts3cDtvuaNOKXut5gJTHTQJfvuay56mQTU3P3XVFck4vVkAJ93E=
-e01GWIbVSxoGv20arU2irYY8Kc/L/GJ9cyr8Y/+bK36St7vba2+wS82+wBH8Dxc43LD+OZX62JM/ZqCbb1DsG74GFm+lRcEIOkIr2yTSxhY=
-PWXxxhpjsRkY4wlZ/ojRJ1ap0mExs/XnJsLJuJoXiMzNw3YefK9EuXHMINA5Cs3KNsWRAE1qEGYIElQz7Z5aRVQOqBg2rDcaCWqGAYj0TnQ=
-cdF5vpSPQz9e6+lYTvnONw==
-5CvYYpDLW65loAycLCiTsov8YoZ1jI8zkr6ZxBeD4VMY6k9yxMmz+qQ+BcL5txoZ
-EYzW4iLR4zrYOpovEYjfbL+V59PiKCW6v2fpy9+t5r+akpormeFUoG8ua8+V2Xoc
-ivFlfnaRrDgZsctDoRqItA==
-322xNSAPvTdrqr+WX1Ohhec6Nx/68XtYEw5ds1oh+wckZIEbSgX5XEfOt7OrXNP1
-dujOIMmvlMCVQvyVUlIO9kas3+ZvmQFcTDQsEexOpuY=
-D8ir9A2jryutAyn9KXgZxDW4yl6SB0eU3PNZt4L/Cr8=
-XHLgfhABiIkKQfC+ggzN3mLjOXVr7heuBRZPoVGm7vrCWn01k0MZxOVtcpUxMXej
-ohT548ZQ61saJe9gdXhLVuFuK8OrlGQHnsSqzqXG07vbj6yMmZc51eOKmv5lBwvvCqIOJicvU69PQ6Qx8VrI3A==
-/g9G95bEzNYfb/WgexTdbQ==
-dblc/MZnAKYjhnXyutcbogASH2BQXl8VYGKiTE9tGgY=
-x9Mzx3A+zjHj1Myl7w56EA==
-NnzTlHG73lnStl7aqi+ENaAa8J2I41FwyDmljZvbEN8=
-OHdsB+csHpJ1YS795xrYzxTeLQ7NFxAcw22Mwc8fXglRRXfZkqWaIRNfazQrTPEQwjl5+q0wAlmXZuzder3K4AijQh/7efae+WjR9IuqJ30=
-yCqssvyf5AeHWuiIqpagBA==
-axFFyEH+b265ZTi668YhmQ==
-0l+7+AWncli8gYdjRvwBq1H0wST/mApIF3FJY9rarRUFJN8UOWbdHghpqLJLmos7
-QTczleRk6xFx0MzFtkoGlqd65BXEz1P6RI9d33HFET9HxCA302vnyG+7nFoP8Nf0irM6f39Ibh/QYNdpDGeslw==
-rJisC8amK8e4LzMIR9KI24fJV6QSOzoFUliFMLpgqZ0/W/Ns7aHD1SYCN6DSHePLRf01Vt7HRsfgZL2yC3B4+g==
-peNRYi4tVJUDy+JFn2lRt6+Wei0E/n5IPG+D20R75EImsS1NyCd62R4rUgSDjmY+XIBtng9n6YN+68mTlkqgjQ==
-/bBSoQ9K2u6Lds4O1IywCQ==
-S9GoCB6ByDspeMryIjO2G0AEPICby2YW+2eWAy6gRcwkvAbShKFHdUV3tUAnWCSp0YkBYzRfa5FGqLUITeFOiIAsiTpZwtq603eYI0KXs+E=
-Bgxgo7Euk9zt73M4rCcXBixFAbzXIhck0g0USKiDMF3y1re9bFiXRjZjTpvp23b+2GudptDYsfLm3kA1ZsQApEBzlJ1MQubpgx7oV1NDz+8=
-xTJSABV21L9XrZUi46KP0Q==
-/6CroPDdyw26Jy4FBGpL3to1WaJPudxxsfdWOzb57EM=
-UrawdCsdYekpn8aOBf8JVg==
-eFOIBtkmBv+yj3w5ANdabQ==
-LmeaUGziT9qZmlyRZ8lHnX5QMQYuoCYQP4m3MnpjbpA=
-klR9v1xF7FasA3QIsiSFf/V0NLyiRhAXkmoi0GU49Mo=
-lHpMu/evjp9Tc0ZOsNQBPNi2Job5nxBrqSVs1JTyhHg=
-3YxFIs9JneWbyc/23ag1TA==
-oD98q9NV+1pRbrrdHOYzF955FPKsMhUWoG+XexSzfpiyxUANWd+y9WFw6r4tJvh1
-xIYhdV7zRhGQ8MMD6r7JmkyOn5zgq7bS94UYoYXvHCuBzs9yRqlqzwzBhu0z0ZkIXAg/1W6Zm5/3ORc73zhj4g==
-i0YF+DTdIlQU24huYFw5FClJgKWu3VRfz6l8lc+pnVO5/x4MBiVYvTLhqMBgcpREgAbq2BIQZzJcjRGF4xVPkQ==
-mqIIb/Gnea9w/e/F/3pjA2BfDzkjM3NWToViaYCtD0m1Jum4RYBwfFtJR6hR4OYBxWRdp5OcX60e0YGQY8smmg==
-RtH2o3uRKrEuH62wqRPewQ==
-RfN5b42V63mY4x156y9KwPf+2XgO0qAAPJCOtJo1x+M/wpSGOA0X2nSqoWJHytkdgcBVV+U9wrWxnwprGVyP4jFMHlHtaFhQFTHX5tWhuTY=
-psTcOnt4vwLBb19dZR9SA+OtTlTieLcqdIyciZyHmMt5Wog9SQVjN4HzZsmH+X5Zr7QLlCV6OQgKVfT/LTy38I8A4DuRK4q6F06AFKiFTgk=
-2gzkGaxxXm2r53Cx6yex8Q==
-5klsSe1gjaLOt3K1EN3pWA==
-JbYxqQyWQpVqyW5wNZNIOg==
-xPI2CuArHmsENcwo0HiqumFtEO1BBXVfEjGZFWXWQjs=
-hP99k6tzdnAWTPXuQ+0vON5iKqF5Kw6iFTeziAzQeHiEwTFGgttLFrgncVabLrxy
-CS/7BQQ05dVw1mXrNnvw3tfskQpH49t4XpMXvJaV02yQMZ/3vM/kGpO4VKdIqnwt
-6oefFpTcqWJL7rsPgCnC/w==
-bDJZVnSnQAxzK0uwMwwgXdr1NY+Hd+CfLvMMmBQ+YElqDcoNbO3AI+1aM5G6SpGQ
-vQvcdNB+nqKTmaIsxkAinQ==
-rngD9OWFhExoCxGBdGuZGg==
-a3nXFYRHFPCfdyO1vJI/8AKEYjNMn18m9WltxJtxyAQ=
-J/20eia+okwGwz3JmZSU02mZnW0XQCCgwMYUdbJFtes=
-2b/w/4B1F79shQEbDX6Poi4q9iOglI0GkMSo17b6gK0=
-rti79DeotXElN3uNxrnQOg==
-tjPMWPlVTiUIRYPQEEwOAA==
-Niy9MDHiBl2bp2JNmgEUFg==
-0YpHRWgQivDCHXYQqBgHEw==
-4oK7oa2QghGx34zOsnSbstnEeFgUEWI2W69aiOTPUY4=
-055z3JF0Vc+1jz2ECAzKlg==
-DDdMbDuhwN70qp2ddNEccQ==
-xXBI/84ONQeL499Os8Kbye3r5KxdbF9Bu1q9vVgcowdezACDOR8+CVJGWcPq0bvb
-gNWm2Dd+5YLD3ujvNj3vlxgAfiAnN02l6xbJbV9P2TQ=
-1c3jZAMHo8WEZpnAHTLPdOkW0gng8Gqf8vRSnXCr6nE=
-AxYHFaCScG5Fe6UX4wvyPBDWzCIp4qbrh0/4O39mHTg=
-LnA8oopWqTmhL3pprWwKctqh2/603hWDbW3W9Oqump4=
-nXFHoSRWfjT6Qnp2+YtdBHN7VkLgXQA6uebshyucOJc=
-Lw1gniKu/2oRhbLtJzfSgw==
-l1HhUB47F/Zg5JBwP6oDD1c9dpt81yRh+BXXhgPvrD9m7V7vkkqwSTnLDi8H0tNK
-K3LY8Hfhwe7OCZCruGhYXTLctTr1MZn1kECCwYToRn7+B91NdNMwZIksr7ovoH5IML8ILJEFUYMPZkMK/4W8nQ==
-YqiNAAdQSVXbOhBVqFuQhg==
-rzdayc47PiDN79+PyjHe4A==
-iMEpRUCwrkFzFKLHIy3tlw==
-WZMW/J8vbm3asUvmhlnH5Q==
-SQHcbK6dq9Sy3BUS40uNK57yBkoTbb0iHNgLxL5lYjVCZPrAV6r2FymAWQiIPrjU
-bJWkfO4j+EoLkTMXjSxAeGDIAQAFusImtTVpjIcXT/E=
-u33tlvsaPty6fZwrzOBa4JjUsjPYIWk3n/j7HYhIm3aT5P7Y2n2cEuSFSEXSPrykaLmvvs2hrVM4FsG+jBZx4cJY02fqFqBNYF/4yd6F3tRL3TOhl7LW55p19UniblPK5mAI2s4Qxf67cg29ValOgQ==
-5Dwq8KToXUC/gmNezijEYBef2u1MlRyKouThciT8wMPI0zhaDyxSEUb4DJMwrIPu7zCe1SnT5/2zoqSIx7qONDiU/ow8g3yBBrdW+wPUfAQ=
-zcUj33nWIZZvCq5tLIMsqQ==
-pZcF2/4fK3eczhEhBDhDyg==
-KUVxGta4/f/KsN3f7GNesg==
-tYttrlx2kvZfOeEjNhsBMlxEH6hIuLDy7q1PL1F6O+ei/2wVhtQvWkF3TREwhRPigUxi/GvljSB0xLYPeynM/g==
-JDe/b/JgTgIowjPfbnQmkaw7bdsMbQDugND/XWVeTsEzOHbS/Hd9uTyHyi241gdb
-vjJrtcN1h4ayCE4BaXawVmef8hmsOx3WNA0sWMSlwBY=
-YnqI9YDyyJa52i6A/+p17tukFLbzoiZkoGPpo5+Jf+s=
-NgE9Dtb1CIvIYKX+if0ukQ==
-mtkf4t3RWR37mB5q+d25Te6ZMYo9tvV6z46OOrUytWPp3wVSDX5AahDNQzLwT2tBv+A7ZekVvKQb3nJ7MledfA==
-xReUkbKYQqA+SQksuUjK6jTA4fLY5Te9C6TXpHKSQf6r0q3gToTtPzH7wUaUGzSwDKQiqCFqjN6uwn+f+xH0Zg==
-7sFJA/qKzPdLhNgS8VQot1Duu9Drqe6HXjYE6uTravWvCMoyLEQAQd56+L2R4BIkSxaPXma8vSK71ibl8CPAig==
-cGkNkB1HSh2RdRKU3FGRtqnm3rcQObrOtkpkJH0rHTTULLAf4vJpHpdsy+VU+j0L/+2SBsNrIZHnTyDS1ebnXw==
-EbxYHFAx2Zx6auR5b68jmPtS3QA1E2cvoggGimEsHMdAi3CVNjxVgZQrop78pXqrEppKX0fJeJ0Ow6jniB36vQ==
-BRkJY7jMl6IId2Pj2WvfMBayPDf1hdphcA3ZO/g+smg6jP5WOYxMFEYKJ78oZ/GvzhfDGE4gbMTSOqsBtqdeug==
-IyYlmuAtoOT2b7b1RjZG5A==
-Eucp5uWzP1E3Mbas/7cqBmeHSHKKAS8LqZXHt9F1yHw=
-Dq3RSFY1He/mtGPBbaBOYYftnYQEAQofaNTj6xQrFqI=
-rN2i6fpVTm28GpsnNZIjTw==
-I4I4k0aKFWK/EWIgMPQqKw==
-VDP2MFohY41Sp8o2mr2xndG1+JuJ76hCwn2ONcEn+W8=
-JqjkHbCy9dx0dIVmO305KVOXerm4hKbAcRU8bbd+7eW63dWtDbiFUjRP2o8Gs2Fw
-sVKQ6OizlbQhZxY7ZQHuGgrF2SdhFrTb/zXpAreqqvFzxEu7tJpBL4rWHS3NCd/TE9TSSZWAlC85E5mYovYIHeToShka1MGj4QynrimU0TvEDyh7fV8DK19TwbfBWA6MmwzXWpgVLM8BBhqHrATxSHM64AhfpHBXcU7CgIskeFs=
-7DivyRE/B+IrmMD0MAmn2g==
-6wLEshTjHCgTs3FL+9QMqaV2Zuql1FGGwKgaYnfRZ6ZHRgW+N/Gu7ZEmGx74TGVfciybQF8JpbePUpGjt806maaT5yNuJhacV4FsmpmlD30L6SDpZisCn7GIpKMKS3xu
-vJPU0mHmQ6tTU/Vv3e7NFg==
-b0238JRdrnKdC3pFBYiuUw==
-AiXetluZxbn3RUisyGMZ8A==
-g0HAUgCBg1YP2fH6J0S0RWouoALlkYUPYF6c2u0T4H8=
-8Ya0OHjila8ycLqlSl9ZNNp146uHqnJPaa2/EqhpsWI=
-1B2Amu/8yFPOcu6SRlgPLQ==
-lvgCxVi9uT/HYQAf+bwGCA==
-pd+g26gd6FxLmnpWgd7zRiufxtcDxiMaxqLkaFPN8cueaDr1TUvqGOB3ay0QDV9WrP6lJ/NeM9KJqdTlYqqaOQ==
-6ncqGJlpMIqVMg/Wsnxs0jStJtEVEz/wb5PDVvmTTls=
-HEeMUsVuyx6XgMqtyRdFMMfSkXVS0OOAKtvBM1qyMFQ=
-j+lk6/a9SkDVzbUgQj9IRDQfR7Ih1vw6rRnm9U26S3k=
-M5b3liN4YVxUAC0n8QRx3g==
-GfWRHMYd+DbtCTz3I1KIgQ==
-SnJJilv9q+cRtJ29cE1gPJp1NqRO1OhQhM1RDeecm3pM6zUYtVckS/hAwEr/zARP
-kL0POIit7KP1LRBFgi+h8XRQb8Tlu9gK39kt9ZDZVDmodcuzCgROtZyYjtwKiWTj
-FCwa6G7wm1H/GzXS6vtKeg596l/RFJ847+T6vQgY/Is=
-JJamTg2MUoTtCKSxVMboXHNngl6KPsr+uLE79RW/c9RXZ3zSQqEsPIIBIVD66kCrtMjHimZyrR17Xs6u6mT7XK2rxBS9aeadRTQE3CO84qDXOxR7t8CZIgSaUoexORnf
-m/NRylQQQToZHG/JJAfTdwYa+ojNJBEmZ/Zg7p3FMmw=
-s+lTgkNbt3zUjYLI13DGCg==
-X6YCBULKorClV2SUshPRMz0CP/OsJ1QiNqkXlV7I/aRqzt8puKLI6nf4RsNmuoPXJRan254ZoDRistr2TpNJCuJ/9PD9Ftoz5Jv5pjZNYs2y+l2yVi4ceXmV5PMwXlvV
-TaMja0EFox+BSc1O0/hOckERy4s58KCP0Nq2GNnQMCO70QI2x8BDNLEtS3AYRrBtFuoCf3p57hKjBMzzJOQ30TUtqDcaOnIKI1pntw1F8XvQnbZ9zJGerbD4exn4mTx6
-eFLCfly8guWN+EoOg6SUcHpFPAIBHIXZFBp8PD7CDFQ=
-6gIR6ytmFG2btCw8uOGUG10dEphJ6qZPODnJKw+g602KfwvcT/3GQkX4BigPy6X+
-/BT3DHJd4uh67/RfIadfMg==
-7oYHVLWdkaqYRA80Sr0rPA==
-BMY60K5ttaAJTB/7bbhvsw==
-nZrfNABAoCuJJC7L/CTohw==
-IzWtiVJTitbRuaGMuBtkfA==
-BexsJoDywK73SuEVQYCRIVn0udispUk2qju8ObJMElSwc2vHtEvkZfdqRQcnRY7H
-IQHAVGZdfyLNwn9kxM7Xy+R4g8uLE7HNrsgDTQs580Y=
-NdVFAb3+H6lTNCUXFnED9SheHAtXZOsiLFMDXxpYmKA=
-vU2v6wRW/UuSTt96gnPICQ==
-dNFA8oa2RRmt9HC0fQ8TMg==
-zW+OCbt85qswvPFKzweV0g==
-3Fb8peeZjt2lxB2VMT4kHHZmNGU77nKwHgd7kJvhfjHqR8ePHefn0ttj4+j/0ro5
-cfI/5yTF2Vx3RWiygLOCfqgJbPYln7wGuTXD6PBhYko=
-CpccsSPa9SqZWQvDbC6cCA==
-z8npPhr2mhNerhOmf3kX9A==
-5mOrCb4JZf7btzDHfS0h1K0SK/f5RanSzoYT3ZOWQr2I/fibW4TA3CKUoa7nN4G7
-hX5WbMiTxCAI0tqD7e8GjOviOWk6iRXe66oCOSdKTnI=
-x7bSn5ccONsQmAveni1pGg==
-P8u+6UwXd33atbEkPkeA5g==
-UZLT3B6ZH2KG/9lgkBh1WwnyLJ9n+1CZoqAsS7ND+fI=
-1dr+5i7RW1lJZ4Z9hkB+EvuKqwcNAa2z3ORkkc3AzP0=
-Nz96IAz7Jseo3np9tSb5/w==
-zCuqwqBohkunVOyj+SHhoQ==
-mpV/mrJC2k4KgCnk9RVvd+kSgu2rBgRUQj/jJ0kgfdqRmuQXiNvswXgO4Q+Xzu37
-pct/4hIJW6pcuoUqOg/ybnH6GnmCILbbCsw2Y+CDVN0=
-CL6K3TzK/u4HIuClTJty+BE40cCof+m7/VxIoWk0NLw=
-vRY+DrWfoCINghDruOpagA==
-VxwFdrq8/x+6MncXtSOJ2A==
-6uSn0OwE/lomDVO6ij+oC/b037ALWXJ1ThQKzyLstkA=
-HY6Uvlci6K8oMzW1V15MJAx7xywPH+jq4EC7Cf51njo=
-VhCBywd64a94epwFEghiEfcCHn2jTB9lYEMd3OXGNKw=
-08taObT7/ZO8Xbh95qd9Bl4p1nmKR2ix8n4pleHzzO4=
-2xaCqojt0qqGeuN1pgSEKg==
-bQKZlVhagmo7BJ2+sOPl9A==
-UrdVFjfK+twOUzIU3Fm7wq+yeQVImSLN8MQId61LJZytUmofkA8nH80TPgzSJR+t
-f5+C90UpwJwn07cww3vbBJ5LHOq1r+z8iimp1+V1wMBRVfgn2x07gxAR5M6vTrUd
-NYc1DhBQhDYL3fQJ3GJH8VUBBCDoo7q0Ny6rz5eJhYYfSLk+We/7sNOkmQOmsJtY
-0FWBH0d4srNVphLKcRDlqP7iwv6wencHSn9ZceWtT3327CEwiPAF4J5s/7rWrC1T
-RetHxTq7F0hDobGLKl6dFg==
-fJIyFv2ra48hjnvvmH4ujQ==
-aYGK3rTTqp5MDvYMeecANlw5biQxcpLAHu0L36mkpWs=
-t2qXC3QlXNXmxaumRE2omnxfL32rLjs0cFcjt+rtWp8=
-kUrVWQY8LOjEzbKgTjdrqXT4jEMvpIvNBEDU3QczMxY=
-WS1C694k8vvJU5QxdAhLfhnfEqEwsyoqh2KzSmvBsP4=
-QG/z6h9pNO7+jlC/K/BAkCy88vzLrC03/HEwyb5zds4=
-lk61iEXfi0OeE0E393mGodgoYIEVVYf34XkpDlAVchI=
-+4se0Vh3Tfu4ExdlsDKPJGQ/M91fUSkVRVVVLtSXxvE=
-sY5vmsNjUO+77MoPO2IhBVoNRcDeGO7aijIFRnG7xtE=
-bN/MdiNQLo0evFIMcLRaE5MtWnnhbFqpm3u8lGtKl5AtZ9ysd+MyXI6CMFAmSnxK
-swJ1nJ27HgdYnn3FAVuwfmTPLhk0FbzK0Wabu9jXtDU=
-U9TCuYYOUpJnKbmpAwJpqg==
-racI5vQN9mgseKSDs9sfvw==
-8fSiHRqQR7vbuEX172OaUQ==
-Od9gKC7lEhaK+H9Xnq8PlBDkCI1tP6MC9bhRhg7xeRo=
-QJ6l7wad0WpSSlCZBpmFkRvFipIY1saElypMb2qUeqr7p+cp6S3odYt5hcM+rq5q
-Y4rLQS9hALiL0T4Bn21Tlg==
-Q2RG28CwHTACyWRAmdTL/w==
-z3f268QBDk9iOOEtp8oJiA==
-k0h9h6U+b00QXLbg/wgMJA==
-JSY5yza5K2HxholK3T0++A==
-3tBLxzj4XOMfRQLw6OG74w==
-soGq2/JDUyx58QITvdnvKWaithPJ21zUAQGHUtcH/22m07rNJuibViFjLYkxIcAY
-HV0iHDaCo7lBFDc7EcAksJuyzhPELl47pLknIfMo9tw=
-60Sb7qzoco3vQhP3qiSvZBPqWOTFocdcTk5U6+9Pq6Ibr2lVtQRtXRrQCXI10hd6
-LbtHUMhRUgNL5bHdztYlH/YF74VDpg1SMqcEzVdgZ+g=
-0/vGIQPiohMLpGF6+oyZtzOxTFvgz0wSXOcozdLw5Ru1/yjvVJa+Ba4NfqfOSU7J
-+4wPuMdsVIGN2XEKnlznkg==
-boZ1g4mp2E9A59Ou4olmTxGCk1H06sVvi1spWMkf8kwZ4kg33VJWjoUvdQIwHgxd
-JXu46MJQ4F8kgRUobPb4GNuYcS05z9aquaO2UAOQfQveNuwcjwCXTyxqpgzuXMrT
-2UrHuPMdPtljwfhmY5TNga/jhLIOyjJm2CoxemX/lCDDWmvpMNvFBhugVc7V5Jtp
-DHbhRBE6Az4VVwUVuPl620ExIW9pzyUbCW/EChkh7BZV267isewASAp63rWg8niq
-FkcVIHs475Gy9gES9jlmag==
-zkgwVl7fxi81YM429hlvHSgMz9A1loHaH1iBfmqQB/UfqvxjKleNTmpmhQc9SaICF9j88Inb5lKyX6ObY7CnCg==
-8+qvbjVpJhJRMk7jUf7clA==
-8oyXLthq/tTNYIsMweoMdg==
-m3/3NGs9F/A8vtPfHMswyQ==
-lWmkc7NeDxx7sSaBwSqXJvALndHH6pqbIOOOtQj4AH4=
-9iaYfgau9HeBZsIwrBrnHg==
-FHnoXxwG48bgf3/bUQjUmw==
-MFA3SQJydS9WX0cLZsj1f74lROnapt5k913gGPgAXVM=
-VNEQRGDPwHZzf5tYh1jrV3fHxG80pgLVvS0Hl8q/GELhOoK7oz0GtR02FZ8CYp7Cn7saytF7hLcGO7/cP+EvYZ3LrHbuvu0oxDXKXLHtgKE=
-rbgGgjDolZOt0gmZgPEd9TQX4DKv1s6gY8hMZi+ZQYU=
-a2Y3r+YI5cnd+jNAbXvpsGNSimvp2pYnX2rnVCT6fXSWp4P5huh+H1f13jc1gS9y
-BE4lEP+5UE3714CeUpWKqloGW36vfNPJik9nAsvGDgYoCVA89CaH6VtL3XDrmoBi
-y+E6L1hcSxKPPyl7jA8TQHc+7CoXwplTxeElbTECh9c=
-K5trB8OLMoTrJrclXxDz4jWseFwnm0MeEauPX6t7ghisueNP6ZvIhxJYK/WoCYjeoSy2DZEHXR2C4NrLu2rOig==
-0S0wYWxkrp05OMXS/+g7cH3Ajg/qmTnjaGkIMa9Eio4wA0106N5xNnGDs/fCAuicBsBi1uqVys8zBAdGgbdRRaQwxeVPls5wFiyQWfeVeyA=
-V4P+Xe6crYhxyAJitwGEc3FTU9xSCQZ65GwOZl1vToqS+pXAycf0dcVkiTgRX3yQvgaC5joPO8Do+YdsvS9SsQ==
-wMBy9BHrC0sV4dofTCjqtw==
-H4XNG73uN9K5hkIhyMyVxA==
-VABNqcbFRiq+KJnHu1CP4g==
-VUWqa/CoQWDQuqDTayi90O6moCowErwbdHIPYN3M8x/1GiLOzOyx3JDbu99tjCQL/GPwN8gRfJWPZ2TPTaPpWQ==
-Psk2eppmigAKAe8OKX6kEw==
-XWFBEhxQntwMrbYJSEda0Q==
-pS+0GvXPgWDvajlMMQfAEVXtwtzbTB+ijFYjxDY0eKE=
-mrKqpNXoMbVpm1POxUVN/2TOYhe6H5Nd+4D05cj2fcDXNzNos7yuqJNl1+YJyP3L
-pmCVshsdhlpQBMkaFl7ODU+HcTHUvhCkru940SJkB16uxnb7+BbL91U8gWK4Zmt+uR/C0DCZbdBUOu5IahcBezenRgFLYLIse2qJc0KH2Clzmry+jIqHNUJ4y8L2w0FrDBjTbEDFwVuGLlxWacdKqE6TeUPh9jOs2JcGVIrSMUDyFt97uX87ZSyOzqD+vc+SKtv8nlhMkviTPKuno7MmaQ==
-y8x4pw+yrmAPMvKOg9ZTKg==
-tvpqx4YDpV5AXuLAVK2FNxCFEEZoF7jX5cI+EthtwKxriq52IHkvm7ZMTk4jytr9
-Y4KSz7ff53CcJ1nB7MRCkw==
-sf1b1dt3eeaTjWJguczeQQ==
-sDzbVVbAXgkqH5bAvmu1xQ==
-Ry47JgHzviVT7z86cGYOBPfcoqfihhLkgSH56CpvXJA=
-mdtm7Ac5mqyvi+eCLWsHC9Zdi5M2h36VhgylJumFM98=
-oc6iHfov7fIVa+Isak/utqY9xpS5UIRxjBXMde9trKg3BlKhtKhGrwFazu3PyMZ0ZhBPrR3wAR6YYwY4uSxN6yuIE3K49qPfcAZeBe3hPaM=
-/XsLCWWr5B4iEnY6QXMf5bHVK3yIwCGxx83M27uPUSW/45Q0LUKJFYDfdVfEY3bIq4sEFIr/MsKPdXpjRgZEBw==
-O1Uh60mcgNcsFICIVFAsMQ==
-JeTMkYlsquv2VsarZCBnbq7/j2aQ3mYNZBfi4kbZa8PH91Ei1CZ1X8qvKFM1gMcc
-FiWNSzRLN1D44iy2H5/EEZwaxjirGGt44BSqJihdm6/7ALsSzir8KETBe0mRsIonsXin4TD/XbCQLQTaoSyEOgCh8AhHWC7T5ucnnePCVsk=
-GdCcfWqNKruZGIu4vQSMXY+N+uPFukEOInP4BolkNVAokjZjVnvuiho7MqJ32+tT
-xwkw/s9/Y3KaBdEBkad3eYbb9xc2GbqDysUCS517Mg0=
-R86r9QS3tcCP8tiO4cn2pA==
-jDoNxn3a8tH3MixwkNLXExrry0ZpcrVt8psLbs35Qek7BWH82K+S+xiG3EmyxljSoYrltfCXEAHto1sEOmGBOMRKIfenor9ApYZMLXtI9MA=
-Uuu+T3VcCH+f4iuwPOk8tK8hToQPizLIimC4dfMPpG9u+eYRrts1RaN/eUlJITNw9dTbk3eDYK3fdT/QWTSjttlO5fqho3wctFrDBAOGuwRT2I4HWkquj8SaYFFg8WfhU7iyDB0RdicKwdQFIy+1OQ==
-oPjXHdB+6i2BumhiDU8YD0JH0jjfyFAcxWNxkXRevPwYsgzQG3bz2pVUNN0LaSWv
-geRwGaCRaeE/8HNg5t5nravdpOgnE7l0RzCMH7+XNaXaSrcRdPYC+/1EHeipmCde
-s+1MAEZZksyB7iukRZwsrw==
-E/BcLpNRCr4SsCgkF0qES4iYkih1g2BXc8v7v2fK1p/dsw9CZBnjfTbaVtgS48a5
-MSXqC3YXLCg+wpBEwJ+UpFK5RtGxxKvTkdZ56pPx+4MO/S2H9F3x/eVXazvm3tZ7swmPoojAYEVGaM4m2cT7bh1eyt7uy5NaYKgGJG9Ex2P0PRuHveDvKy6XH6nRtK1f
-hd8xFpIdxdvvIMKIsTtgkw==
-D1CvrAyGU+IAm8ViM8SgKg==
-EPZlZpp0k6hcOk5c9mkw1dhei8OARGAwxIyFIo3fk1s=
-ea3uzbnv8mckNcn5B8oThw==
-1TJwWOaO+5SU4DkkELe5Xw==
-z2MaEAlWDrLPzAnldlccSUz4h+E0vivmVh2OT8ypH6k=
-mxlv6qImLTwVdoP8Ye3xm9/dMZBx9NiNDT89197Do93VbJtvToHPpXtGnFu56wdi
-8WoZhPtCPkALKNnxnMjKm9IWQCcXTbwh1l5gop7ykNI=
-4RpiQ7xhJ7vk9l4iKj3BFw==
-Dz1+Rnu0JteKPe+Vv/1g2owegJBlYqIHmeqPS9kqkEE=
-9rKcYg2bLxLMnwd1B7Xqog==
-P0dGo0+j2Mfgc2FYNjJ0N31RrYsm7I0Rbt85W/uju7s=
-z1qNYtffuhuHgqyfnmCSzMOJjm/Jf1WAGkep+RbxNZ4=
-/7g/8djqZcVHqedizuJ8TmJSTbyV47DGEP7i4TA+ezc=
-dRMhdd4IAr9n560Cwpaeew==
-0ofZNq3LmDlPztX8LAkfOJGyKovV1LtbEl1AYvhwnzc=
-4YBEKU7Knh+Z2x63wCy4Ccqh9xVjR1t+/HdDvixVR+I=
-BHWNKOzLioa/4UFgxxDLCg==
-zRJCJSzuCTV1Hdb2H0enZs4HN2cCYEzvT1iw/ttoP1kmGO00U4mfX5UsGLkcYQ5R
-T8lVitet5mrCJlHkWAlo0Q==
-mvMLqb7FcZ1BRPrkb9U/mJja5cRWfFfUWmRRPmtQRsfAxvAJFiYI0FUs/vqeLZTQsrTWOBU1KWqQMe3+Ncd8QQ==
-aPgy2goat+tMEWaCkFHwwDTQZ8p73TH/8XMmMpqLSOVPCaZ1SyU8VGXMPCH3AiYm
-WSvnLO70Yw1r/QPRIwGv9KSdIIyM+3imXzb6xYUJVUP4Q89KKogNEQEnIZKOpCW2MGX0Cysw2TiIbIMiiCf5Tw==
-Zwj+GooN/KPQTVfwLuAU/PK8BSh13k6hV1lsIjN2hL0=
-qAeXOd1H4kcazs7orMS7FA==
-gjayXciGjAXbDq1DdJJzdkURSsAOvJWL4VG7lTxHSok=
-Of78qdkigXeE0T8H/QX1Y2ZnXhNbWUpvXvkeCUzftOQ=
-x6kyv/btxEBwmd3vgYlgNMs9gSziaZLys2rTzeOCvcI=
-zkJLSvBh4MO8T7WzmDBz3OB8b8hF5xCLKO4IDNX9ECs=
-kktqFNEFVRZkEhLg4ehYxqgjLRwwmiKdSe7RMZx+qQQ5F+QdFAa8alak62Xe2Pp4dv4FDe+zvM0ZJPmR4p7q83gcZ3cQBvLOc567gbbAUFU=
-UJVH45d6t8HiejbqsFKUX6td1SLjuznz8iOMNo2icOmlkOYhn4TVJSgX9UsG0/8V
-Ye57WuA1Wp1XAjxDrMEakQ==
-jfX9iwJdrSphib20a/eGvwheQrLhiVM60B66uQmNzPWsU8jcCUYKfz4zyoE7OpCQ
-jo8W89HpnjeVAFxBHFJBD4ioo5ilILiLRIVUFbWZIXeur9inAw8z+mC491Jub4mk
-QjbR1sb1iKKOkr+klKENvx8pctNR3dnG89ZDAZE2xYw=
-Pk0GohSvz0fykGvZ3F1qLA==
-LwJJ6pRwER0O3gRAZ/JiX2uwD+BGZtZ8NkJl2r9FRjdiRDwbdi3AiJ7u7Nu7bZ7d8v2T5iXxPC8cKC+xQfN3eQ==
-VnTKbYOSKM1pFuCLKrScgM6mwRdHb6S5XDMX9cVXmtu19Ba5Q9D1HssQ2sJLcXgA
-1EA4bxtL57KUcml3A8lQkD13KZyORL6op5a7+KCSVLJP425ZK6MdDjZs/6LNrWYn
-QDCA6CvPN9iIFEHWbTT8Uw==
-msR6oJ10VACK1e2M7L9LPdXVcaaJEkef8AVGQ4Vo54JhpSxHmYM/LjBKRwgBtj3q
-zOU89c2wSWB3NBhIZxBzMg==
-EQVYJW+at53YG9vj8uP2oA==
-wjHmw1n/RLVHSx0PSTbu8mbyeylFbDAHeDiKS3wf7K4=
-SN2FUHSZhjvf8asgd+bIGEkiV/X3o3DjzgZi9YURPlo=
-rXNq25ILDxtY4/k74tuO5A==
-f7r/mvj9+OdhkUnKo2cH5Q==
-hhqt9X/lRxeZgNtxF4JY1MyhoRX8kBh/Gx5yfehFdxk=
-eMoTkDnX1dymjWJpb9blOq5ifLvKp1GabQFE4lI3v3JFo402uaWH3odFozCO7Ld0
-JfGpbDIs2CQAPae83D6hBA==
-W4tI6WTpdBc6tCcCyx9BmO8VY6BCIZiD4iAUzVmG1fw=
-feSe3nl9KZRGZGXIsoQw5A==
-W1IjzfnBsH0bUxfZZF/8gWDR58lNZxr1/fScdHGpV3WVgX9Ehiqlj/kvYoTukszCIZ/5XFbIq+49uSccD+njoQ==
-vr6vibG1GdpSCoJVwOUX0x45qAvOxYNODFP9kRfuj5lLN0qhoAFo9A1DfSm3YhuJ1F02r1o3+TfOjmCSDEWktqi6BBBlCaKnlpU5tCFLNb+3KIwvVwlq8dPOgCaNhEae
-Z8VdhUMfm/7Xjxo/WjtIZA==
-TUN6fXLgac41CxFNzggB7bcXV2uQ2jXT0q2EXwb1Jjj0z+eP1I0F1NYPE6zVVakeALtyJ+R5JskPuZezr/vT5Q==
-JNsb5UEig3mYvOol+dn1dJA6Uno3drjW2GTE1z/ZNPy7q+jekSfwVHrwzu0bCTfnAOTUWaVFpJwm9q1MKd52fA==
-F0oV1sMuxeZl44vJMPjq2daOa3YPJUy6XosM3AM/yq44OeCgb70Q/UvLlCx6MzXO
-DrE6r63fP/NZR71SO3V4Uw==
-LtxLHUWONgdagUeI5d9piQ+K5fNGSACPHQpGUyVb+USahVHZ/PTGMheOdloDPrtp
-5r9KldF/Sabmh89mNRE74Nbryx3xLeFZxIrIBLASJig=
-mP4nNMABl0pV4BhoKww7ekPoYInegiWasoOi5DCDBqTYMrolp8DvTrXL114UEyLBHKd9/hNn7bVt2AjelPUwvQ==
-quxBAGzo0xUakeR2clygvOFOBfGZfHcW7NALoCNCad6mjz/jjYcLLMLi2AqlRRex
-UKKnmEJuswiOSAbD3yK2/Q==
-JtxKEhcxXYpwfHBdQCwkmgppIE0x/3coRy4thib9GdGznhadWk7fbUaHra9GjG3x
-93f5xFR5wVyG7lLU8LikVyjWHOR3u4EWit9qtsCzsxc=
-yryB5Uba7xZmSUikMb/1YVSbTT4vRWr2UgDriXB0CucglB0XLREe/mtix16jG70b
-e3Il1Qb4pt0Wzot7Ib6VXg==
-2mnlpTp+eieZFyaRwie9h6bbTlPXpoLQH5V/PybBcAY+wCqAYpMckCEhvIGngKbx4/eseiXuiSKrO+BXSDx7fCyA86nZJlAfBFZ0RgPeAw/PACkDLoC9jutjMbJyR4sHFjSpkppPVEheq2cMYLyNrj1pvU9yPr2tFvEd56yqJB7khEZUAIiV9L/OrJrMR/du
-ImkiL+3kecAnbFW1RwwJH+LilsxkzEUYQLrtht80cqnIl0yMyPCpqg0fUhlxLAHSxFmfindIQOP8XYzFUzDaBtGpg2HYapvDhdovsfldYS1r99JrMO5MeuQ0qhEOIKD16DauP+/FtPN+3shSFTJnPw1kIyzBXdzq+FrOeWfR0WZFBaSb0XMlywbBJ+RoMBsALQFZSIhqDBDzNfK3Ma09ATMusB1aPbT+BLX7p//8MEM=
-QaBnUaSwIFO43oyl6QuUNej/mA2ePS89JSyeIB7/LfOaEZHPzVhEy/20zoEZfqM63Uy3quC0Qh0XV56B4xtiAKrA5FOg5XdTI5MAl/f+EIE=
-6oXECpfRByUNzkZz7GZaQw==
-kbZKdw7QomzA4JDlGlaw00H1XBdxiiEA9ehGVtiAidLmeXROgrtAMWuf2+NU/baASgMD3NmZ5bh7KFSKHsAyz0eLha3dkk67dCnYv5TY409VLdIDvQm1ioF9f5GWx8XI
-xe7FSjZ3arHhchYHTAIJ/e/bHZRV2AXuoCaCo50WqE0=
-yLB8dtaU6nbZiUB4WYRHmg==
-5rK4WZZGE3oaDTHIkvbZQA==
-LZI8/9GEAF6cFxiJThJZuQ==
-Oztkn/RTuPGwXvz6/CgIYakBYHdm6xxg6Nc+jj2JUbg=
-5ISUVaUbOwF8wl/u1nEjBiJ71P1HE2HuG+MaOzyJC6M=
-nkdMAm1oH+ayhuIZofJMxw==
-odbK+IA4RBl72w1GXp1RWg==
-2BeBmUTABph/dy3em2iUF+EWMrGaiUYuYQXCwRf8Mjg=
-nB7N/xXQ9DRclYSTKUoerSavEHpdpqekIiHw2H4gOyU=
-cpKtdAjU8GyK5hed6eXdTg==
-uNO6yBe0eTl3SyxdgY9czg==
-EN+t8tZuwCPtYARww93Ljw==
-QKh9HAllyRAZzrttQKfr7sGQ/SA4vu9eFv5MjIwfaMs=
-X2IfEdPzm0ZjeJQ/VRXBufvbjMpkH0AaKsAiB/+OlE4=
-vi9MoQaBUDMtKyvk6m8hFj7XYB6fjUJ2WR3/QGae0xI=
-u+BO0FTM5ROKcBxUYHJfEQ==
-DXDLUbb38Pr6HZj1/ALd/07AtYEcdcbZlfr/zN3fMi6PeuWrZ6BXiuKMvzVt0lpZ
-fiuX25IrHHadEo+yXYk7PCvf8UHxHOKLVnECvY69O9M=
-I8KXB0DkE45muiLQNsOCYwiHtsiaJ97gBGtlLnZLxww=
-8Wr7a2uaDbzopILTiOQiu8BJURUZaARHmgL4iQ5r2z4=
-EyZ+cwOYhAdmclNHYgUWQ9u4teaqaN7NNbI+vm7xl9c=
-UbnLMM1Cxlu6n+8t/qjecczZ434kEF8A8AF1KMM5LOhM20dgDjCjHfKs5qLxtVra
-OS7/N/Vaa/gMAYxG7WjtzEJA4k8jnO8c8KYL8+i86R4=
-Kr2udmnLxAX2s+3gd6S7bO9UnDQeOfvTl84leGwIKcnhTH78cDexlMRFcpU7hd3t
-ow3bQqn6wFpFGYHQ/ylWrw==
-1DLr4JG0ET0zkoOyMb+nsg==
-qRCF62EeDrEzKYauontt2TnnD/qmVSGQkmpAjWbTJxk=
-bfjOW/4rqSZJoMYChR6ON4E8sPj3dUSl0zTlivSHJxE=
-Q98LOEjDQ23th4A7wrAbbIC9eUYTOuawS2/KnJ/I8+M=
-ZBH+OA1qu2NRXc0zrAfFwpkEKrczzjHdrK61MQsskMU=
-h/vVRHjjVOxnTka5rDEnJEgo2Ud/BIfYBIps2xmO5kC88HhrHNeYcYpSfM57bWla
-9yGOnpOM7vB17v/RdAKEyeNmoo4yfzUzYmKjOS8Uztc=
-x6lXyVVQXItszjaxvlwCqTmy9ADn9/Xlg3Nr/OSBtWrKv9UVUTfqEuJ34he7o0m0
-rKF6LgZhXyzVlm0MX6XHqQ==
-TTtpI4pkAdgXtTuj5/TbsQ==
-WNHWBbL8O0cvldTkgJz0Dg==
-4exdDgLtOrc9mWs+LJy7BigV4wcJx2CUby2VUz0+Psw=
-cUJjJr2Ziye1w6hY5SCLh4I8Xl3HKX8gMt60l5tYEs1cS9S+ZdSuBmsJcejc88O6PV2insmuzYGCGS9fnyCs1Q==
-AFdWQGzZvAyDCwQzmc7hcg==
-5pMUdbCAvcg/A6vWyfMAIQ==
-ZS5gXtEZHYHrdBj/kdzvq8jbbk0g9lY3mErBmU/EHNk=
-dtqKQ/6Z+TWxkkUDOYTDh2B60Je+ialLSd8CEtyUQ1A=
-634mQ3s6vkp6VbwRb6doSg==
-6bXcJErnItvFBaDY1OVzVQ==
-RH9gtoQ4R5/dku+mfBWHSw==
-remjYha3UFHOEjyHXWzNHtMm8SasuK67dQMRXgBn3x0=
-ko1F9sTgtpuKXMWNOizdAw==
-VrnCtKSgYbxVQ1frHGpcXA==
-WaIon65DSPeH1LUgVUGU9Q==
-zBBEiqrSz7otPQ/IWM4mgyU077ITxeEsUmrzhioI/DWI815XGtPycJt1cuVU4N9F
-3NT7CDJDbqWWE7tsD/UCA3MrgNhiU6k17C0k5XnAZ0s=
-yFzcdoUZKHk4LGy5g73/zg==
-9SKHNASAkfklrqbyke3i1hjMsAlHF3sT4iOzTutAMNM=
-AYqYhUYsY4jRqsC1NmvPJ1/enB1W/v/2x0gwmHgKEIHFzo42R2pzskSDugfdFdmK
-0S6cM8TuWwZh23TJIORoVSN06VTL0UXntAyKcokDyE8=
-FoZs6FQwqI9E2tT2btHnrAkdHx3spKuAvrvL5EvYcbY=
-oAtd1ELVUDuN9FEP6rYTuFlQXmj6L6VEcDuPlME0UxU=
-6njUEdT5ViqBuwDaY/bIVw==
-iztxyxDKGK3BLhbluTyEDcq8SDhWZOkofSDasV+B5XqBS0Q9tl4TLQmhzcz2OTs8llu7ShN1wXAY6bn5zCyofQ==
-hAuPnlBJiRpjtn30DztB/g==
-7F3BK/BxKymLhe9i8oGP9g==
-ve1G/FM1u6NL6JaD3mBqZA==
-Z9w+1rfmr6kWO9XLGDGvYoiEpRcfv1hfls1YhhcbCq4=
-8rHm2L1smw/iddolhOMvkw==
-4NalMesX56QmVzzzKsVxmw==
-7S5g6RBgdwV8SzbecaGChCxDLYSHHHMs4YvywOaWN3b/0eWItg1zARXQwx9a0iWm69NPpetGQWwUqSSCJ2yBPVX6bFjntJ06+rwWtlgPD6E=
-Hkhxb5hRMQ6frP610EhhEeZuBFXzuEocYVwD/c+2AqyByb7vjC582HRFdXPKE6uH
-DDcQsoqIjG1e/6jcWkERhw==
-bcfeuDgOnqV20II7rUfpG+BbjKtgn/lwQTG94FI+qVc=
-ge0Q66DX0r+fmw6ZWyqQVQJaaPoyh/Vve2G7rO0Af0g=
-EGbS4H0SmbcwKqyc6Y66Bw==
-Pq8NyYrIrtBFK/PYp6+aSA==
-zMYjco0RpMFpiWPtvac7Qg==
-Kok7lVs9iUOrapescQJdjOIHlLE4AfWp25+yGT2keks95MGxVA+SStGc+FZgLV30kgbtC/vtv3UCwfKLMsl78Q==
-lqxjRuLI3s1H+bgg7dwcdGBDqPxKBoFj3L78u7TugRA=
-2djdN+KW1SEHf9PtqiZ7Rg==
-1+UVkAv4NKt2QNobIJGRTQ==
-+MyuSN5HWp+nTFIR6TjjoXoZh/2BNKHObc3st7VWUB1n9tyYkW7+W/LubbMDQhKt
-2ww9U+i0yjAMYvmOznJ9KsNf3vVQXZCcNATQPVHlHRmtB+rlBTAf86dH+3KrdSQB
-YVejmrIAi+tqm5lNBW0G+ro4mONF/SdJV999QEXtG6o=
-TzWkI1z7utJoTHwNxO+OlQ==
-MWI7XQjmgt1tGPpI6hUueQ==
-r6QpibrvAq1J8GHOvdjcbg==
-s9tGAzAxZGMYOMgRrzGylD62xpN/S8JLt7cD9CXunt5+WFG8R/SjRQMuGsuOmVuP
-cZZyawt7kE/t7hR2zxJieEPVrRlfAd4tHdlnviReemns09K++6/HboeuShO+AQXE6aN33u5BhcBh1b0KM2+9Zw==
-oraPBMH4sX0l+zBv1QM/QFuaViXnqaIlKqmN2u8Fkik=
-kL+dmRXfWUEFpgAYj7UsJw==
-DcgniJ5TR727uyIhTgLEAg==
-qs7xCRZPyHSTnKBMz56UjQ==
-iz/nPNmCo6DrHly5rbSwCteEYFHNx+qURKhVyZUa1qaZ63lBHhmmsvTvVGxUa2it
-nQbF/tlAiTAOSHZarCCRzU77FVNZ12DmwrXh9ZASHysp4W+JL1xq/GR4cmjnRiJu
-sztBnwwYKWfiearpnD9OjZWOmJSsGl0U32jwUifd2mJIE3cKtFKHpAY7YZc2zT+2AwZrVsOJ1cH0YOtnLI7U1Q==
-t+Gz4KOxpgwu7EUv2w34sntXgR2UKnSEv9tqVQJvHaE=
-vqxOoT+0qH1E5yW72ZY7LQ==
-c0ZgaZL/lkCLf8ZFSzT4+A==
-GbWVxov7NF42NHEfOH2Vnw==
-BPOS//3DVGDz9JiDnTLJ8Q==
-1ARVKjI87Vw171yDdeX+KA==
-X1cUv7oR6DvD5K4pvsXcog==
-jcpsLApHg1CwaKjdh4F60A==
-ouZvKDWpLQwUB/+8Gjh5dqTz5YYf62WZnfXIWPYDl34=
-CILIeMvqGN4Htu9joEH5YAL+f3ZkS7P5FmAPckofcEHDK+L669l7uQ4JWrfVEyJ5
-K2ZCAGUtSeZdjbunzDcqjkOLC4g/aKusHtziDClBU+8=
-ljA2qTAfzP0sMvEebNK6+g==
-KHTTGoOVzNpnYAE749JI59MQOTHVd7f4+b7iOuY7w84=
-0wLm8JQp0kOraZL0Q39qKf2vBdaiL+iuE7Fqfc+sEw0=
-do+pqBpCy8ju5CfZVT7K1Tp2lK31lPuI/dhhRISUCNs=
-ujGFl/32ELUJUtjJ/fWYyA==
-me8UE5V4dWoxXlxJ23/SbYSGfN/l/S3CXkwc5Rhl0vqFIjeq1cv8XYXdHWwaDvzC
-DoqYLOtZ1daNVeYxR1TRADqFcKLiQPzCLiXGMZOV5ShJyRwZZw4Bpbvy1YxnCVSX
-UWappgAapX69qp77OnT26lxLYP4vZZ96+sc2aCCy+vE=
-WKoGfKB4y1fKX4GzAqANBXijg8ddIAtXhnX7iEZqaW8HDT8z2YNtlSsMhHUqPapC
-LNfT0uC0P+ZPe2IYXq+W8XpuU3FYwwWoByOIplvmSs8=
-/hLCROaqsKyTAmOo/nHXPeZHvMZWmdKtZ6J06ov+O1cWulDzGWuNeKgC2otHiDWk
-Ejg+K8W6bnOEe4qNjmJenhi2siZnUqK2kMR1rETr0URvoPprm8sKYAJt3m6EDGyP/Jnh3d8Fz1n3WUXAxJjUPg==
-TajBZWF77hR0Lwc1TCtFg4ol+VtcJ8QMT8oWIP8evgw=
-amIfrf0zrlUphcKk6kyNcuiVdof1+A7Wh8AY96hwTNf0cEdFkgTHGh+HXIQ4WNFB
-GiZjlffLNcPM2Z4UCdAzlySjqj7u/rwwlAMny2A+VAVDQyjY3IobR2ky2arkta8P
-ngWUD4/atUDE6s5crMmIHg==
-IeUGV8fVw7YaJ8IattsU8sxpbdcuPKovCptr2J7o0ZBcOiHWz/uc1LOjiLsqo4cA
-2LMzjmzUd9nLSGmUeOu+HUi9V2wtUCIg9bXESSCNcOYscXbBQvnEeT5JUfUGGmp8
-rL9UFaUvHE3Po2ruc88+JQ==
-RzfInuBvPXfOP2njYq72SQ==
-8/O+CdXQbLUbMHq1OYOrTg==
-MH+Xwl6UvVUzmqW5jSANgQ==
-OaQzQx2QjzrAaA/OQ6/3BJhDXvg+aAYDvMHxT/wsheg=
-AeR6NqtcgCj1boqJS6oyNOQrVXjU2iwcyLA9uO1S7iT1CooES1r4MHiRwYtdAPf2
-keBzkiHCs1OwE0TdF7N+FSnk0QhkK15slQj7ctBVLkw045qGR/ApmHdYC5cUmynp
-K/cvRbNK3/8XWpO/XN04zA==
-55kJHcEiO95lhhaIikmM3FoH/3tikcUs5Ci3cA65ABxd6oZ8CIYkSk4HjwEZxlG5
-kZ4zypSYTspwEIcPl3eEDg==
-QDpfQe0+rYckn1haB2uW3w==
-JJzAewNaRwltMhqQWua8nw==
-Uc1P8d7NYlmMh5nte60eNiPaqqUMKsd6KLt9ZMhl3LQ=
-4sfW5vs2eJxRSNhWNagK/vBt/tPD4NT9Pmv7dbMnyEQ=
-Tn/V+nduilrePb4TPHWZKKwFA/rcN6ol8U+toTqjI8zC5a0cJlsmXPplM8dbL3/gIV/AwQbU8d0YricmVP+wj/ztZmPuRkZlwFNSNr61ltI=
-QRdK8ovsbYnRT1QznCDQwQ==
-zr1cuPzLcoP30AHo0mcLr92JrT40mpDXgxC4C3DhjZJpc16PhC6JlocYBQ9C/89h
-ExuO5TQUwn3++TmUGYFMLA==
-YQWQGixKwthfyINkaXJZdw==
-24C9LjYBCDbgLYxAJCbrXQ==
-R/Lnd/PoYdg8YQ7cTp0U/O2uyhZrZkOmcduyi6YUWRk=
-t7n33PHxn030VqAeyJqU9lMaUTPUCH5i/lNL3Uxw4TG1QkN65k60KGq8PwCGnYW5F7DamTvIn+6pWssj6pYvD888z5rrw09S6PrHyHYcgl8NeXi6NzOTbEk/6E+3MENR
-xoRBQ7yIltYcnKjyV8i7VZzyt4GR0IGqreA4yXInPqw=
-r+N4bKcfS5x3KGtByBxKfw==
-0GLXJga9EaF6xCpdd2Le8Q==
-4WFlg3deXjbB38rPYKiwww==
-dL4aIGONpKINofNLmXn4fw==
-b2lFw1FUKSrkbSZoHT52VrIwKOhUy+oVcNqa14MwJWQ=
-SQf7zJ8ixxI8hnT8O2dsbc9FCISAsWUkYgZwp828hJsqzdNv+tm5N9X1h0KiBdwX
-DOg76IhigUfyv/wTWAQOsI4keyAsJ5r5P9SZ4bITNLcwvq92+67Cz7VGEhdFKiaz
-esFesCs0n7VYcPDEuoGUiOPz/fKa4OGal+1v9P2RNNPcqChqGM7K41yNvS887VxO
-YNcBJAcAsCQMGuPVWqDy+63VK99tio6MZYMWJAV5WaM=
-JKWyCC/tduc6D4u1Iwl9kN4iHMiEc0MJtWS/lfld8I7YZj6myFbqxqU3lWCqETUs9OFZbJT5RHl1ThL3j/vK+w==
-S5ROsmGWIP4uqopihll7+g==
-43mqbIiVtUNchTNQ9yxxVA==
-kNWH/1ak3b+nT4kgXI1GUw==
+BUY = 1
+SELL = 2
+CURRENCY = 'gold'
+CURRENCY_DECIMAL = false
+WEIGHT_UNIT = 'oz'
+LAST_INVENTORY = 10
+
+npcWindow = nil
+itemsPanel = nil
+radioTabs = nil
+radioItems = nil
+searchText = nil
+setupPanel = nil
+quantity = nil
+quantityScroll = nil
+nameLabel = nil
+priceLabel = nil
+moneyLabel = nil
+weightDesc = nil
+weightLabel = nil
+capacityDesc = nil
+capacityLabel = nil
+tradeButton = nil
+buyTab = nil
+sellTab = nil
+initialized = false
+
+showWeight = true
+buyWithBackpack = nil
+ignoreCapacity = nil
+ignoreEquipped = nil
+showAllItems = nil
+sellAllButton = nil
+
+playerFreeCapacity = 0
+playerMoney = 0
+tradeItems = {}
+playerItems = {}
+selectedItem = nil
+
+cancelNextRelease = nil
+
+function init()
+  npcWindow = g_ui.displayUI('npctrade')
+  npcWindow:setVisible(false)
+
+  itemsPanel = npcWindow:recursiveGetChildById('itemsPanel')
+  searchText = npcWindow:recursiveGetChildById('searchText')
+
+  setupPanel = npcWindow:recursiveGetChildById('setupPanel')
+  quantityScroll = setupPanel:getChildById('quantityScroll')
+  nameLabel = setupPanel:getChildById('name')
+  priceLabel = setupPanel:getChildById('price')
+  moneyLabel = setupPanel:getChildById('money')
+  weightDesc = setupPanel:getChildById('weightDesc')
+  weightLabel = setupPanel:getChildById('weight')
+  capacityDesc = setupPanel:getChildById('capacityDesc')
+  capacityLabel = setupPanel:getChildById('capacity')
+  tradeButton = npcWindow:recursiveGetChildById('tradeButton')
+
+  buyWithBackpack = npcWindow:recursiveGetChildById('buyWithBackpack')
+  ignoreCapacity = npcWindow:recursiveGetChildById('ignoreCapacity')
+  ignoreEquipped = npcWindow:recursiveGetChildById('ignoreEquipped')
+  showAllItems = npcWindow:recursiveGetChildById('showAllItems')
+  sellAllButton = npcWindow:recursiveGetChildById('sellAllButton')
+
+  buyTab = npcWindow:getChildById('buyTab')
+  sellTab = npcWindow:getChildById('sellTab')
+
+  radioTabs = UIRadioGroup.create()
+  radioTabs:addWidget(buyTab)
+  radioTabs:addWidget(sellTab)
+  radioTabs:selectWidget(buyTab)
+  radioTabs.onSelectionChange = onTradeTypeChange
+
+  cancelNextRelease = false
+
+  if g_game.isOnline() then
+    playerFreeCapacity = g_game.getLocalPlayer():getFreeCapacity()
+  end
+
+  connect(g_game, { onGameEnd = hide,
+                    onOpenNpcTrade = onOpenNpcTrade,
+                    onCloseNpcTrade = onCloseNpcTrade,
+                    onPlayerGoods = onPlayerGoods } )
+
+  connect(LocalPlayer, { onFreeCapacityChange = onFreeCapacityChange,
+                         onInventoryChange = onInventoryChange } )
+
+  initialized = true
+end
+
+function terminate()
+  initialized = false
+  npcWindow:destroy()
+
+  disconnect(g_game, {  onGameEnd = hide,
+                        onOpenNpcTrade = onOpenNpcTrade,
+                        onCloseNpcTrade = onCloseNpcTrade,
+                        onPlayerGoods = onPlayerGoods } )
+
+  disconnect(LocalPlayer, { onFreeCapacityChange = onFreeCapacityChange,
+                            onInventoryChange = onInventoryChange } )
+end
+
+function show()
+  if g_game.isOnline() then
+    if #tradeItems[BUY] > 0 then
+      radioTabs:selectWidget(buyTab)
+    else
+      radioTabs:selectWidget(sellTab)
+    end
+
+    npcWindow:show()
+    npcWindow:raise()
+    npcWindow:focus()
+  end
+end
+
+function hide()
+  npcWindow:hide()
+end
+
+function onItemBoxChecked(widget)
+  if widget:isChecked() then
+    local item = widget.item
+    selectedItem = item
+    refreshItem(item)
+    tradeButton:enable()
+
+    if getCurrentTradeType() == SELL then
+      quantityScroll:setValue(quantityScroll:getMaximum())
+    end
+  end
+end
+
+function onQuantityValueChange(quantity)
+  if selectedItem then
+    weightLabel:setText(string.format('%.2f', selectedItem.weight*quantity) .. ' ' .. WEIGHT_UNIT)
+    priceLabel:setText(formatCurrency(getItemPrice(selectedItem)))
+  end
+end
+
+function onTradeTypeChange(radioTabs, selected, deselected)
+  tradeButton:setText(selected:getText())
+  selected:setOn(true)
+  deselected:setOn(false)
+
+  local currentTradeType = getCurrentTradeType()
+  buyWithBackpack:setVisible(currentTradeType == BUY)
+  ignoreCapacity:setVisible(currentTradeType == BUY)
+  ignoreEquipped:setVisible(currentTradeType == SELL)
+  showAllItems:setVisible(currentTradeType == SELL)
+  sellAllButton:setVisible(currentTradeType == SELL)
+
+  refreshTradeItems()
+  refreshPlayerGoods()
+end
+
+function onTradeClick()
+  if getCurrentTradeType() == BUY then
+    g_game.buyItem(selectedItem.ptr, quantityScroll:getValue(), ignoreCapacity:isChecked(), buyWithBackpack:isChecked())
+  else
+    g_game.sellItem(selectedItem.ptr, quantityScroll:getValue(), ignoreEquipped:isChecked())
+  end
+end
+
+function onSearchTextChange()
+  refreshPlayerGoods()
+end
+
+function itemPopup(self, mousePosition, mouseButton)
+  if cancelNextRelease then
+    cancelNextRelease = false
+    return false
+  end
+
+  if mouseButton == MouseRightButton then
+    local menu = g_ui.createWidget('PopupMenu')
+    menu:setGameMenu(true)
+    menu:addOption(tr('Look'), function() return g_game.inspectNpcTrade(self:getItem()) end)
+    menu:display(mousePosition)
+    return true
+  elseif ((g_mouse.isPressed(MouseLeftButton) and mouseButton == MouseRightButton)
+    or (g_mouse.isPressed(MouseRightButton) and mouseButton == MouseLeftButton)) then
+    cancelNextRelease = true
+    g_game.inspectNpcTrade(self:getItem())
+    return true
+  end
+  return false
+end
+
+function onBuyWithBackpackChange()
+  if selectedItem then
+    refreshItem(selectedItem)
+  end
+end
+
+function onIgnoreCapacityChange()
+  refreshPlayerGoods()
+end
+
+function onIgnoreEquippedChange()
+  refreshPlayerGoods()
+end
+
+function onShowAllItemsChange()
+  refreshPlayerGoods()
+end
+
+function setCurrency(currency, decimal)
+  CURRENCY = currency
+  CURRENCY_DECIMAL = decimal
+end
+
+function setShowWeight(state)
+  showWeight = state
+  weightDesc:setVisible(state)
+  weightLabel:setVisible(state)
+end
+
+function setShowYourCapacity(state)
+  capacityDesc:setVisible(state)
+  capacityLabel:setVisible(state)
+  ignoreCapacity:setVisible(state)
+end
+
+function clearSelectedItem()
+  nameLabel:clearText()
+  weightLabel:clearText()
+  priceLabel:clearText()
+  tradeButton:disable()
+  quantityScroll:setMinimum(0)
+  quantityScroll:setMaximum(0)
+  if selectedItem then
+    radioItems:selectWidget(nil)
+    selectedItem = nil
+  end
+end
+
+function getCurrentTradeType()
+  if tradeButton:getText() == tr('Buy') then
+    return BUY
+  else
+    return SELL
+  end
+end
+
+function getItemPrice(item, single)
+  local amount = 1
+  local single = single or false
+  if not single then
+    amount = quantityScroll:getValue()
+  end
+  if getCurrentTradeType() == BUY then
+    if buyWithBackpack:isChecked() then
+      if item.ptr:isStackable() then
+          return item.price*amount + 20
+      else
+        return item.price*amount + math.ceil(amount/20)*20
+      end
+    end
+  end
+  return item.price*amount
+end
+
+function getSellQuantity(item)
+  if not item or not playerItems[item:getId()] then return 0 end
+  local removeAmount = 0
+  if ignoreEquipped:isChecked() then
+    local localPlayer = g_game.getLocalPlayer()
+    for i=1,LAST_INVENTORY do
+      local inventoryItem = localPlayer:getInventoryItem(i)
+      if inventoryItem and inventoryItem:getId() == item:getId() then
+        removeAmount = removeAmount + inventoryItem:getCount()
+      end
+    end
+  end
+  return playerItems[item:getId()] - removeAmount
+end
+
+function canTradeItem(item)
+  if getCurrentTradeType() == BUY then
+    return (ignoreCapacity:isChecked() or (not ignoreCapacity:isChecked() and playerFreeCapacity >= item.weight)) and playerMoney >= getItemPrice(item, true)
+  else
+    return getSellQuantity(item.ptr) > 0
+  end
+end
+
+function refreshItem(item)
+  nameLabel:setText(item.name)
+  weightLabel:setText(string.format('%.2f', item.weight) .. ' ' .. WEIGHT_UNIT)
+  priceLabel:setText(formatCurrency(getItemPrice(item)))
+
+  if getCurrentTradeType() == BUY then
+    local capacityMaxCount = math.floor(playerFreeCapacity / item.weight)
+    if ignoreCapacity:isChecked() then
+      capacityMaxCount = 65535
+    end
+    local priceMaxCount = math.floor(playerMoney / getItemPrice(item, true))
+    local finalCount = math.max(0, math.min(getMaxAmount(), math.min(priceMaxCount, capacityMaxCount)))
+    quantityScroll:setMinimum(1)
+    quantityScroll:setMaximum(finalCount)
+  else
+    quantityScroll:setMinimum(1)
+    quantityScroll:setMaximum(math.max(0, math.min(getMaxAmount(), getSellQuantity(item.ptr))))
+  end
+
+  setupPanel:enable()
+end
+
+function refreshTradeItems()
+  local layout = itemsPanel:getLayout()
+  layout:disableUpdates()
+
+  clearSelectedItem()
+
+  searchText:clearText()
+  setupPanel:disable()
+  itemsPanel:destroyChildren()
+
+  if radioItems then
+    radioItems:destroy()
+  end
+  radioItems = UIRadioGroup.create()
+
+  local currentTradeItems = tradeItems[getCurrentTradeType()]
+  for key,item in pairs(currentTradeItems) do
+    local itemBox = g_ui.createWidget('NPCItemBox', itemsPanel)
+    itemBox.item = item
+
+    local text = ''
+    local name = item.name
+    text = text .. name
+    if showWeight then
+      local weight = string.format('%.2f', item.weight) .. ' ' .. WEIGHT_UNIT
+      text = text .. '\n' .. weight
+    end
+    local price = formatCurrency(item.price)
+    text = text .. '\n' .. price
+    itemBox:setText(text)
+
+    local itemWidget = itemBox:getChildById('item')
+    itemWidget:setItem(item.ptr)
+    itemWidget.onMouseRelease = itemPopup
+
+    radioItems:addWidget(itemBox)
+  end
+
+  layout:enableUpdates()
+  layout:update()
+end
+
+function refreshPlayerGoods()
+  if not initialized then return end
+
+  checkSellAllTooltip()
+
+  moneyLabel:setText(formatCurrency(playerMoney))
+  capacityLabel:setText(string.format('%.2f', playerFreeCapacity) .. ' ' .. WEIGHT_UNIT)
+
+  local currentTradeType = getCurrentTradeType()
+  local searchFilter = searchText:getText():lower()
+  local foundSelectedItem = false
+
+  local items = itemsPanel:getChildCount()
+  for i=1,items do
+    local itemWidget = itemsPanel:getChildByIndex(i)
+    local item = itemWidget.item
+
+    local canTrade = canTradeItem(item)
+    itemWidget:setOn(canTrade)
+    itemWidget:setEnabled(canTrade)
+
+    local searchCondition = (searchFilter == '') or (searchFilter ~= '' and string.find(item.name:lower(), searchFilter) ~= nil)
+    local showAllItemsCondition = (currentTradeType == BUY) or (showAllItems:isChecked()) or (currentTradeType == SELL and not showAllItems:isChecked() and canTrade)
+    itemWidget:setVisible(searchCondition and showAllItemsCondition)
+
+    if selectedItem == item and itemWidget:isEnabled() and itemWidget:isVisible() then
+      foundSelectedItem = true
+    end
+  end
+
+  if not foundSelectedItem then
+    clearSelectedItem()
+  end
+
+  if selectedItem then
+    refreshItem(selectedItem)
+  end
+end
+
+function onOpenNpcTrade(items)
+  tradeItems[BUY] = {}
+  tradeItems[SELL] = {}
+
+  for key,item in pairs(items) do
+    if item[4] > 0 then
+      local newItem = {}
+      newItem.ptr = item[1]
+      newItem.name = item[2]
+      newItem.weight = item[3] / 100
+      newItem.price = item[4]
+      table.insert(tradeItems[BUY], newItem)
+    end
+
+    if item[5] > 0 then
+      local newItem = {}
+      newItem.ptr = item[1]
+      newItem.name = item[2]
+      newItem.weight = item[3] / 100
+      newItem.price = item[5]
+      table.insert(tradeItems[SELL], newItem)
+    end
+  end
+
+  refreshTradeItems()
+  addEvent(show) -- player goods has not been parsed yet
+end
+
+function closeNpcTrade()
+  g_game.closeNpcTrade()
+  hide()
+end
+
+function onCloseNpcTrade()
+  hide()
+end
+
+function onPlayerGoods(money, items)
+  playerMoney = money
+
+  playerItems = {}
+  for key,item in pairs(items) do
+    local id = item[1]:getId()
+    if not playerItems[id] then
+      playerItems[id] = item[2]
+    else
+      playerItems[id] = playerItems[id] + item[2]
+    end
+  end
+
+  refreshPlayerGoods()
+end
+
+function onFreeCapacityChange(localPlayer, freeCapacity, oldFreeCapacity)
+  playerFreeCapacity = freeCapacity
+
+  if npcWindow:isVisible() then
+    refreshPlayerGoods()
+  end
+end
+
+function onInventoryChange(inventory, item, oldItem)
+  refreshPlayerGoods()
+end
+
+function getTradeItemData(id, type)
+  if table.empty(tradeItems[type]) then
+    return false
+  end
+
+  if type then
+    for key,item in pairs(tradeItems[type]) do
+      if item.ptr and item.ptr:getId() == id then
+        return item
+      end
+    end
+  else
+    for _,items in pairs(tradeItems) do
+      for key,item in pairs(items) do
+        if item.ptr and item.ptr:getId() == id then
+          return item
+        end
+      end
+    end
+  end
+  return false
+end
+
+function checkSellAllTooltip()
+  sellAllButton:setEnabled(true)
+  sellAllButton:removeTooltip()
+
+  local total = 0
+  local info = ''
+  local first = true
+
+  for key, amount in pairs(playerItems) do
+    local data = getTradeItemData(key, SELL)
+    if data then
+      amount = getSellQuantity(data.ptr)
+      if amount > 0 then
+        if data and amount > 0 then
+          info = info..(not first and "\n" or "")..
+                 amount.." "..
+                 data.name.." ("..
+                 data.price*amount.." gold)"
+
+          total = total+(data.price*amount)
+          if first then first = false end
+        end
+      end
+    end
+  end
+  if info ~= '' then
+    info = info.."\nTotal: "..total.." gold"
+    sellAllButton:setTooltip(info)
+  else
+    sellAllButton:setEnabled(false)
+  end
+end
+
+function formatCurrency(amount)
+  if CURRENCY_DECIMAL then
+    return string.format("%.02f", amount/100.0) .. ' ' .. CURRENCY
+  else
+    return amount .. ' ' .. CURRENCY
+  end
+end
+
+function getMaxAmount()
+  if getCurrentTradeType() == SELL and g_game.getFeature(GameDoubleShopSellAmount) then
+    return 10000
+  end
+  return 100
+end
+
+function sellAll()
+  for itemid,item in pairs(playerItems) do
+    local item = Item.create(itemid)
+    local amount = getSellQuantity(item)
+    if amount > 0 then
+      g_game.sellItem(item, amount, ignoreEquipped:isChecked())
+    end
+  end
+end
