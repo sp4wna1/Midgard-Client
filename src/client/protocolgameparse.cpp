@@ -1392,10 +1392,6 @@ void ProtocolGame::parsePlayerStats(const InputMessagePtr& msg)
     if(g_game.getFeature(Otc::GameSkillsBase))
         baseSpeed = msg->getU16();
 
-    double regeneration = 0;
-    if(g_game.getFeature(Otc::GamePlayerRegenerationTime))
-        regeneration = msg->getU16();
-
     double training = 0;
     if(g_game.getFeature(Otc::GameOfflineTrainingTime)) {
         training = msg->getU16();
@@ -1416,7 +1412,6 @@ void ProtocolGame::parsePlayerStats(const InputMessagePtr& msg)
     m_localPlayer->setStamina(stamina);
     m_localPlayer->setSoul(soul);
     m_localPlayer->setBaseSpeed(baseSpeed);
-    m_localPlayer->setRegenerationTime(regeneration);
     m_localPlayer->setOfflineTrainingTime(training);
 }
 

@@ -352,7 +352,6 @@ namespace Otc
         GameDoubleExperience = 7,
         GameTotalCapacity = 8,
         GameSkillsBase = 9,
-        GamePlayerRegenerationTime = 10,
         GameChannelPlayerList = 11,
         GamePlayerMounts = 12,
         GameEnvironmentEffect = 13,

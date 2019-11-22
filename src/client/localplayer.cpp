@@ -52,7 +52,6 @@ LocalPlayer::LocalPlayer()
     m_soul = -1;
     m_stamina = -1;
     m_baseSpeed = -1;
-    m_regenerationTime = -1;
     m_offlineTrainingTime = -1;
     m_totalCapacity = -1;
 }
@@ -507,16 +506,6 @@ void LocalPlayer::setPremium(bool premium)
         m_premium = premium;
 
         callLuaField("onPremiumChange", premium);
-    }
-}
-
-void LocalPlayer::setRegenerationTime(double regenerationTime)
-{
-    if(m_regenerationTime != regenerationTime) {
-        double oldRegenerationTime = m_regenerationTime;
-        m_regenerationTime = regenerationTime;
-
-        callLuaField("onRegenerationChange", regenerationTime, oldRegenerationTime);
     }
 }
 

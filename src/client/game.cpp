@@ -1564,7 +1564,6 @@ void Game::setClientVersion(int version)
         enableFeature(Otc::GameNameOnNpcTrade);
         enableFeature(Otc::GameTotalCapacity);
         enableFeature(Otc::GameSkillsBase);
-        enableFeature(Otc::GamePlayerRegenerationTime);
         enableFeature(Otc::GameChannelPlayerList);
         enableFeature(Otc::GameEnvironmentEffect);
         enableFeature(Otc::GameItemAnimationPhase);
