@@ -198,7 +198,6 @@ void Client::registerLuaFunctions()
     g_lua.bindSingletonFunction("g_game", "use", &Game::use, &g_game);
     g_lua.bindSingletonFunction("g_game", "useWith", &Game::useWith, &g_game);
     g_lua.bindSingletonFunction("g_game", "useInventoryItem", &Game::useInventoryItem, &g_game);
-    g_lua.bindSingletonFunction("g_game", "useInventoryItemWith", &Game::useInventoryItemWith, &g_game);
     g_lua.bindSingletonFunction("g_game", "findItemInContainers", &Game::findItemInContainers, &g_game);
     g_lua.bindSingletonFunction("g_game", "open", &Game::open, &g_game);
     g_lua.bindSingletonFunction("g_game", "openParent", &Game::openParent, &g_game);
@@ -625,7 +624,6 @@ void Client::registerLuaFunctions()
     g_lua.bindClassMemberFunction<LocalPlayer>("setMana", &LocalPlayer::setMana);
     g_lua.bindClassMemberFunction<LocalPlayer>("setMagicLevel", &LocalPlayer::setMagicLevel);
     g_lua.bindClassMemberFunction<LocalPlayer>("setSoul", &LocalPlayer::setSoul);
-    g_lua.bindClassMemberFunction<LocalPlayer>("setStamina", &LocalPlayer::setStamina);
     g_lua.bindClassMemberFunction<LocalPlayer>("setKnown", &LocalPlayer::setKnown);
     g_lua.bindClassMemberFunction<LocalPlayer>("setInventoryItem", &LocalPlayer::setInventoryItem);
     g_lua.bindClassMemberFunction<LocalPlayer>("getStates", &LocalPlayer::getStates);
@@ -643,9 +641,7 @@ void Client::registerLuaFunctions()
     g_lua.bindClassMemberFunction<LocalPlayer>("getMagicLevel", &LocalPlayer::getMagicLevel);
     g_lua.bindClassMemberFunction<LocalPlayer>("getMagicLevelPercent", &LocalPlayer::getMagicLevelPercent);
     g_lua.bindClassMemberFunction<LocalPlayer>("getSoul", &LocalPlayer::getSoul);
-    g_lua.bindClassMemberFunction<LocalPlayer>("getStamina", &LocalPlayer::getStamina);
     g_lua.bindClassMemberFunction<LocalPlayer>("getOfflineTrainingTime", &LocalPlayer::getOfflineTrainingTime);
-    g_lua.bindClassMemberFunction<LocalPlayer>("getRegenerationTime", &LocalPlayer::getRegenerationTime);
     g_lua.bindClassMemberFunction<LocalPlayer>("getBaseMagicLevel", &LocalPlayer::getBaseMagicLevel);
     g_lua.bindClassMemberFunction<LocalPlayer>("getTotalCapacity", &LocalPlayer::getTotalCapacity);
     g_lua.bindClassMemberFunction<LocalPlayer>("getInventoryItem", &LocalPlayer::getInventoryItem);

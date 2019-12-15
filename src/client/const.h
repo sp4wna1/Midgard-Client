@@ -137,7 +137,6 @@ namespace Otc
         MagicLevel,
         MagicLevelPercent,
         Soul,
-        Stamina,
         LastStatistic
     };
 
@@ -352,7 +351,6 @@ namespace Otc
         GameDoubleExperience = 7,
         GameTotalCapacity = 8,
         GameSkillsBase = 9,
-        GamePlayerRegenerationTime = 10,
         GameChannelPlayerList = 11,
         GamePlayerMounts = 12,
         GameEnvironmentEffect = 13,
@@ -383,12 +381,10 @@ namespace Otc
         GameContainerPagination = 40,
         GameThingMarks = 41,
         GameLooktypeU16 = 42,
-        GamePlayerStamina = 43,
         GamePlayerAddons = 44,
         GameMessageStatements = 45,
         GameMessageLevel = 46,
         GameNewFluids = 47,
-        GamePlayerStateU16 = 48,
         GameNewOutfitProtocol = 49,
         GamePVPMode = 50,
         GameWritableDate = 51,

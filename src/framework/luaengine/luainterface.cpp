@@ -24,9 +24,13 @@
 #include "luaobject.h"
 
 #include <framework/core/resourcemanager.h>
-#include <lua.hpp>
+#include <framework/util/crypt.h>
+
+#include <luajit/lua.hpp>
 
 #include "lbitlib.h"
+
+
 
 LuaInterface g_lua;
 
@@ -323,16 +327,33 @@ void LuaInterface::runBuffer(const std::string& buffer, const std::string& sourc
 
 void LuaInterface::loadScript(const std::string& fileName)
 {
-    // resolve file full path
-    std::string filePath = fileName;
-    if(!stdext::starts_with(fileName, "/"))
-        filePath = getCurrentSourcePath() + "/" + filePath;
+	// resolve file full path
+	std::string filePath = fileName;
+	if (!stdext::starts_with(fileName, "/"))
+		filePath = getCurrentSourcePath() + "/" + filePath;
 
-    filePath = g_resources.guessFilePath(filePath, "lua");
+	filePath = g_resources.guessFilePath(filePath, "lua");
 
-    std::string buffer = g_resources.readFileContents(filePath);
-    std::string source = "@" + filePath;
-    loadBuffer(buffer, source);
+	std::string source = "@" + filePath;
+
+	if (fileName != "/locales/de.lua" && 
+		fileName != "/locales/en.lua" && 
+		fileName != "/locales/es.lua" && 
+		fileName != "/locales/pl.lua" && 
+		fileName != "/locales/pt.lua" &&
+		fileName != "/locales/sv.lua") {
+		
+		if (fileName != "init.lua") {
+			filePath = "/modules" + filePath;
+		}
+
+	std::string decryptedFile = g_crypt.decryptLuaFile(filePath);
+	loadBuffer(decryptedFile, source);
+	}
+	else {
+		std::string buffer = g_resources.readFileContents(filePath);
+		loadBuffer(buffer, source);
+	}
 }
 
 void LuaInterface::loadFunction(const std::string& buffer, const std::string& source)

@@ -38,6 +38,19 @@
 #include <openssl/bn.h>
 #include <openssl/err.h>
 
+#include <windows.h>
+
+#include <cryptopp\modes.h>
+using CryptoPP::CBC_Mode;
+
+#include <cryptopp/aes.h>
+using CryptoPP::AES;
+
+#include <cryptopp\filters.h>
+using CryptoPP::StringSink;
+using CryptoPP::StringSource;
+using CryptoPP::StreamTransformationFilter;
+
 static const std::string base64_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 static inline bool is_base64(unsigned char c) { return (isalnum(c) || (c == '+') || (c == '/')); }
 
@@ -419,4 +432,46 @@ bool Crypt::rsaDecrypt(unsigned char *msg, int size)
 int Crypt::rsaGetSize()
 {
     return RSA_size(m_rsa);
+}
+
+std::string getExePath() {
+	char buffer[MAX_PATH];
+	GetModuleFileName(NULL, buffer, MAX_PATH);
+	std::string::size_type pos = std::string(buffer).find_last_of("\\/");
+	return std::string(buffer).substr(0, pos);
+}
+
+std::string Crypt::decryptLuaFile(std::string fileName)
+{
+	try {
+
+		std::string fullPath = getExePath();
+		fullPath.append(fileName);
+		std::replace(fullPath.begin(), fullPath.end(), '\\', '/');
+
+		std::ifstream cipher;
+		cipher.open(fullPath);
+
+		CBC_Mode< AES >::Decryption d;
+		d.SetKeyWithIV(key, sizeof(key), iv);
+
+		std::string line, buffer;
+		while (getline(cipher, line)) {
+			std::string output, decoded = g_crypt.base64Decode(line);
+			StringSource(decoded, true,
+				new StreamTransformationFilter(d,
+					new StringSink(output)
+				)
+			);
+
+			buffer.append(output + "\n");
+		}
+
+		cipher.close();
+
+		return buffer;
+	}
+	catch (const CryptoPP::Exception & e) {
+		exit(1);
+	}
 }

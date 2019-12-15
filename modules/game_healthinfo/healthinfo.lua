@@ -202,3 +202,4 @@ function setExperienceTooltip(tooltip)
     experienceBar:setTooltip(tr(experienceTooltip, localPlayer:getLevelPercent(), localPlayer:getLevel()+1))
   end
 end
+end

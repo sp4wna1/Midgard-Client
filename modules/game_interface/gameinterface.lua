@@ -363,12 +363,14 @@ function updateStretchShrink()
 end
 
 function onMouseGrabberRelease(self, mousePosition, mouseButton)
-  if selectedThing == nil then return false end
+  if (selectedThing == nil or secret == nil) then
+    return false
+  end
   if mouseButton == MouseLeftButton then
     local clickedWidget = gameRootPanel:recursiveGetChildByPos(mousePosition, false)
     if clickedWidget then
       if selectedType == 'use' then
-        onUseWith(clickedWidget, mousePosition)
+        onUseWith(clickedWidget, mousePosition, secret)
       elseif selectedType == 'trade' then
         onTradeWith(clickedWidget, mousePosition)
       end
@@ -381,22 +383,22 @@ function onMouseGrabberRelease(self, mousePosition, mouseButton)
   return true
 end
 
-function onUseWith(clickedWidget, mousePosition)
+function onUseWith(clickedWidget, mousePosition, secret)
   if clickedWidget:getClassName() == 'UIGameMap' then
     local tile = clickedWidget:getTile(mousePosition)
     if tile then
       if selectedThing:isFluidContainer() or selectedThing:isMultiUse() then
-        g_game.useWith(selectedThing, tile:getTopMultiUseThing())
+        g_game.useWith(selectedThing, tile:getTopMultiUseThing(), secret)
       else
-        g_game.useWith(selectedThing, tile:getTopUseThing())
+        g_game.useWith(selectedThing, tile:getTopUseThing(), secret)
       end
     end
   elseif clickedWidget:getClassName() == 'UIItem' and not clickedWidget:isVirtual() then
-    g_game.useWith(selectedThing, clickedWidget:getItem())
+    g_game.useWith(selectedThing, clickedWidget:getItem(), secret)
   elseif clickedWidget:getClassName() == 'UICreatureButton' then
     local creature = clickedWidget:getCreature()
-    if creature then
-      g_game.useWith(selectedThing, creature)
+    if creature and not creature:isPlayer() then
+      g_game.useWith(selectedThing, creature, secret)
     end
   end
 end
@@ -415,17 +417,19 @@ function onTradeWith(clickedWidget, mousePosition)
   end
 end
 
-function startUseWith(thing)
+function startUseWith(thing, newSecret)
   if not thing then return end
   if g_ui.isMouseGrabbed() then
     if selectedThing then
-      selectedThing = thing
       selectedType = 'use'
+      selectedThing = thing
+      secret = newSecret
     end
     return
   end
   selectedType = 'use'
   selectedThing = thing
+  secret = newSecret
   mouseGrabberWidget:grabMouse()
   g_mouse.pushCursor('target')
 end
@@ -498,7 +502,8 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
       end
     else
       if useThing:isMultiUse() then
-        menu:addOption(tr('Use with ...'), function() startUseWith(useThing) end, shortcut)
+        local newSecret = 'x0660'
+        menu:addOption(tr('Use with ...'), function() startUseWith(useThing, newSecret) end, shortcut)
       else
         menu:addOption(tr('Use'), function() g_game.use(useThing) end, shortcut)
       end
@@ -655,7 +660,8 @@ function processMouseAction(menuPosition, mouseButton, autoWalkPos, lookThing, u
         end
         return true
       elseif useThing:isMultiUse() then
-        startUseWith(useThing)
+        local newSecret = 'x0660'
+        startUseWith(useThing, newSecret)
         return true
       else
         g_game.use(useThing)
@@ -689,7 +695,8 @@ function processMouseAction(menuPosition, mouseButton, autoWalkPos, lookThing, u
           return true
         end
       elseif useThing:isMultiUse() then
-        startUseWith(useThing)
+        local newSecret = 'x0660'
+        startUseWith(useThing, newSecret)
         return true
       else
         g_game.use(useThing)

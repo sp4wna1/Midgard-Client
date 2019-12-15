@@ -853,7 +853,7 @@ void Game::useInventoryItem(int itemId)
     m_protocolGame->sendUseItem(pos, itemId, 0, 0);
 }
 
-void Game::useWith(const ItemPtr& item, const ThingPtr& toThing)
+void Game::useWith(const ItemPtr& item, const ThingPtr& toThing, const std::string& secret)
 {
     if(!canPerformGameAction() || !item || !toThing)
         return;
@@ -863,22 +863,9 @@ void Game::useWith(const ItemPtr& item, const ThingPtr& toThing)
         pos = Position(0xFFFF, 0, 0); // means that is an item in inventory
 
     if(toThing->isCreature())
-        m_protocolGame->sendUseOnCreature(pos, item->getId(), item->getStackPos(), toThing->getId());
+        m_protocolGame->sendUseOnCreature(pos, item->getId(), item->getStackPos(), toThing->getId(), secret);
     else
         m_protocolGame->sendUseItemWith(pos, item->getId(), item->getStackPos(), toThing->getPosition(), toThing->getId(), toThing->getStackPos());
-}
-
-void Game::useInventoryItemWith(int itemId, const ThingPtr& toThing)
-{
-    if(!canPerformGameAction() || !toThing)
-        return;
-
-    Position pos = Position(0xFFFF, 0, 0); // means that is a item in inventory
-
-    if(toThing->isCreature())
-        m_protocolGame->sendUseOnCreature(pos, itemId, 0, toThing->getId());
-    else
-        m_protocolGame->sendUseItemWith(pos, itemId, 0, toThing->getPosition(), toThing->getId(), toThing->getStackPos());
 }
 
 ItemPtr Game::findItemInContainers(uint itemId, int subType)
@@ -1533,10 +1520,8 @@ void Game::setClientVersion(int version)
 
     if(version >= 780) {
         enableFeature(Otc::GamePlayerAddons);
-        enableFeature(Otc::GamePlayerStamina);
         enableFeature(Otc::GameNewFluids);
         enableFeature(Otc::GameMessageLevel);
-        enableFeature(Otc::GamePlayerStateU16);
         enableFeature(Otc::GameNewOutfitProtocol);
     }
 
@@ -1577,7 +1562,6 @@ void Game::setClientVersion(int version)
         enableFeature(Otc::GameNameOnNpcTrade);
         enableFeature(Otc::GameTotalCapacity);
         enableFeature(Otc::GameSkillsBase);
-        enableFeature(Otc::GamePlayerRegenerationTime);
         enableFeature(Otc::GameChannelPlayerList);
         enableFeature(Otc::GameEnvironmentEffect);
         enableFeature(Otc::GameItemAnimationPhase);

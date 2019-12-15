@@ -50,9 +50,7 @@ LocalPlayer::LocalPlayer()
     m_magicLevelPercent = -1;
     m_baseMagicLevel = -1;
     m_soul = -1;
-    m_stamina = -1;
     m_baseSpeed = -1;
-    m_regenerationTime = -1;
     m_offlineTrainingTime = -1;
     m_totalCapacity = -1;
 }
@@ -466,16 +464,6 @@ void LocalPlayer::setSoul(double soul)
     }
 }
 
-void LocalPlayer::setStamina(double stamina)
-{
-    if(m_stamina != stamina) {
-        double oldStamina = m_stamina;
-        m_stamina = stamina;
-
-        callLuaField("onStaminaChange", stamina, oldStamina);
-    }
-}
-
 void LocalPlayer::setInventoryItem(Otc::InventorySlot inventory, const ItemPtr& item)
 {
     if(inventory >= Otc::LastInventorySlot) {
@@ -507,16 +495,6 @@ void LocalPlayer::setPremium(bool premium)
         m_premium = premium;
 
         callLuaField("onPremiumChange", premium);
-    }
-}
-
-void LocalPlayer::setRegenerationTime(double regenerationTime)
-{
-    if(m_regenerationTime != regenerationTime) {
-        double oldRegenerationTime = m_regenerationTime;
-        m_regenerationTime = regenerationTime;
-
-        callLuaField("onRegenerationChange", regenerationTime, oldRegenerationTime);
     }
 }
 

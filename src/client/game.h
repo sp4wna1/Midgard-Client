@@ -178,9 +178,8 @@ public:
     void moveToParentContainer(const ThingPtr& thing, int count);
     void rotate(const ThingPtr& thing);
     void use(const ThingPtr& thing);
-    void useWith(const ItemPtr& item, const ThingPtr& toThing);
+    void useWith(const ItemPtr& item, const ThingPtr& toThing, const std::string& secret);
     void useInventoryItem(int itemId);
-    void useInventoryItemWith(int itemId, const ThingPtr& toThing);
     ItemPtr findItemInContainers(uint itemId, int subType);
 
     // container related

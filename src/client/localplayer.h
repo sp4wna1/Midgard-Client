@@ -53,13 +53,11 @@ public:
     void setMagicLevel(double magicLevel, double magicLevelPercent);
     void setBaseMagicLevel(double baseMagicLevel);
     void setSoul(double soul);
-    void setStamina(double stamina);
     void setKnown(bool known) { m_known = known; }
     void setPendingGame(bool pending) { m_pending = pending; }
     void setInventoryItem(Otc::InventorySlot inventory, const ItemPtr& item);
     void setVocation(int vocation);
     void setPremium(bool premium);
-    void setRegenerationTime(double regenerationTime);
     void setOfflineTrainingTime(double offlineTrainingTime);
     void setSpells(const std::vector<int>& spells);
     void setBlessings(int blessings);
@@ -82,8 +80,6 @@ public:
     double getMagicLevelPercent() { return m_magicLevelPercent; }
     double getBaseMagicLevel() { return m_baseMagicLevel; }
     double getSoul() { return m_soul; }
-    double getStamina() { return m_stamina; }
-    double getRegenerationTime() { return m_regenerationTime; }
     double getOfflineTrainingTime() { return m_offlineTrainingTime; }
     std::vector<int> getSpells() { return m_spells; }
     ItemPtr getInventoryItem(Otc::InventorySlot inventory) { return m_inventoryItems[inventory]; }
@@ -159,8 +155,6 @@ private:
     double m_magicLevelPercent;
     double m_baseMagicLevel;
     double m_soul;
-    double m_stamina;
-    double m_regenerationTime;
     double m_offlineTrainingTime;
 };
 

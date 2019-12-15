@@ -39,7 +39,7 @@ void ModuleManager::discoverModules()
     // remove modules that are not loaded
     m_autoLoadModules.clear();
 
-    auto moduleDirs = g_resources.listDirectoryFiles("/");
+    auto moduleDirs = g_resources.listDirectoryFiles("/modules/");
     for(const std::string& moduleDir : moduleDirs) {
         auto moduleFiles = g_resources.listDirectoryFiles("/" + moduleDir);
         for(const std::string& moduleFile : moduleFiles) {

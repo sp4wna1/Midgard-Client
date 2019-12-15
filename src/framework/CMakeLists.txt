@@ -13,6 +13,7 @@ endif(${CMAKE_MAJOR_VERSION} EQUAL 2 AND ${CMAKE_MINOR_VERSION} EQUAL 6)
 # add framework cmake modules
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake;${CMAKE_MODULE_PATH}")
 
+find_package(cryptopp CONFIG REQUIRED)
 set(framework_LIBRARIES "")
 set(framework_DEFINITIONS "")
 set(framework_INCLUDE_DIRS "${CMAKE_CURRENT_LIST_DIR}/..")
@@ -327,7 +328,7 @@ if(FRAMEWORK_GRAPHICS)
         # native dx9 support while its under development
         option(DIRECTX "Use DX9 support" OFF)
         if(DIRECTX)
-            find_package(DirectX REQUIRED)
+            find_package(DirectX    REQUIRED)
             set(framework_DEFINITIONS ${framework_DEFINITIONS} -DDIRECTX)
             set(framework_INCLUDE_DIRS ${framework_INCLUDE_DIRS} ${DirectX_INCLUDE_DIR})
             set(framework_LIBRARIES ${framework_LIBRARIES} ${DirectX_LIBRARY} ${DirectX_LIBRARIES})
@@ -550,4 +551,4 @@ endif()
 
 include_directories(${framework_INCLUDE_DIRS})
 add_definitions(${framework_DEFINITIONS})
-
+target_link_libraries(main PRIVATE cryptopp-static)

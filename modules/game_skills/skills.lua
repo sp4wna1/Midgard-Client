@@ -10,9 +10,6 @@ function init()
     onSoulChange = onSoulChange,
     onFreeCapacityChange = onFreeCapacityChange,
     onTotalCapacityChange = onTotalCapacityChange,
-    onStaminaChange = onStaminaChange,
-    onOfflineTrainingChange = onOfflineTrainingChange,
-    onRegenerationChange = onRegenerationChange,
     onSpeedChange = onSpeedChange,
     onBaseSpeedChange = onBaseSpeedChange,
     onMagicLevelChange = onMagicLevelChange,
@@ -44,9 +41,6 @@ function terminate()
     onSoulChange = onSoulChange,
     onFreeCapacityChange = onFreeCapacityChange,
     onTotalCapacityChange = onTotalCapacityChange,
-    onStaminaChange = onStaminaChange,
-    onOfflineTrainingChange = onOfflineTrainingChange,
-    onRegenerationChange = onRegenerationChange,
     onSpeedChange = onSpeedChange,
     onBaseSpeedChange = onBaseSpeedChange,
     onMagicLevelChange = onMagicLevelChange,
@@ -180,22 +174,6 @@ function checkAlert(id, value, maxValue, threshold, greaterThan)
   end
 end
 
-function update()
-  local offlineTraining = skillsWindow:recursiveGetChildById('offlineTraining')
-  if not g_game.getFeature(GameOfflineTrainingTime) then
-    offlineTraining:hide()
-  else
-    offlineTraining:show()
-  end
-
-  local regenerationTime = skillsWindow:recursiveGetChildById('regenerationTime')
-  if not g_game.getFeature(GamePlayerRegenerationTime) then
-    regenerationTime:hide()
-  else
-    regenerationTime:show()
-  end
-end
-
 function refresh()
   local player = g_game.getLocalPlayer()
   if not player then return end
@@ -209,23 +187,8 @@ function refresh()
   onManaChange(player, player:getMana(), player:getMaxMana())
   onSoulChange(player, player:getSoul())
   onFreeCapacityChange(player, player:getFreeCapacity())
-  onStaminaChange(player, player:getStamina())
   onMagicLevelChange(player, player:getMagicLevel(), player:getMagicLevelPercent())
-  onOfflineTrainingChange(player, player:getOfflineTrainingTime())
-  onRegenerationChange(player, player:getRegenerationTime())
   onSpeedChange(player, player:getSpeed())
-
-  local hasAdditionalSkills = g_game.getFeature(GameAdditionalSkills)
-  for i = Skill.Fist, Skill.ManaLeechAmount do
-    onSkillChange(player, i, player:getSkillLevel(i), player:getSkillLevelPercent(i))
-    onBaseSkillChange(player, i, player:getSkillBaseLevel(i))
-
-    if i > Skill.Fishing then
-      toggleSkill('skillId'..i, hasAdditionalSkills)
-    end
-  end
-
-  update()
 
   local contentsPanel = skillsWindow:getChildById('contentsPanel')
   skillsWindow:setContentMinimumHeight(44)
@@ -323,77 +286,14 @@ function onSoulChange(localPlayer, soul)
 end
 
 function onFreeCapacityChange(localPlayer, freeCapacity)
-  setSkillValue('capacity', freeCapacity)
-  checkAlert('capacity', freeCapacity, localPlayer:getTotalCapacity(), 20)
+  local fullCapacity = freeCapacity * 100
+  local totalCapacity =  localPlayer:getTotalCapacity() * 100
+  setSkillValue('capacity', fullCapacity)
+  checkAlert('capacity', fullCapacity, totalCapacity, 20)
 end
 
 function onTotalCapacityChange(localPlayer, totalCapacity)
   checkAlert('capacity', localPlayer:getFreeCapacity(), totalCapacity, 20)
-end
-
-function onStaminaChange(localPlayer, stamina)
-  local hours = math.floor(stamina / 60)
-  local minutes = stamina % 60
-  if minutes < 10 then
-    minutes = '0' .. minutes
-  end
-  local percent = math.floor(100 * stamina / (42 * 60)) -- max is 42 hours --TODO not in all client versions
-
-  setSkillValue('stamina', hours .. ":" .. minutes)
-
-  --TODO not all client versions have premium time
-  if stamina > 2400 and g_game.getClientVersion() >= 1038 and localPlayer:isPremium() then
-  	local text = tr("You have %s hours and %s minutes left", hours, minutes) .. '\n' ..
-		tr("Now you will gain 50%% more experience")
-		setSkillPercent('stamina', percent, text, 'green')
-	elseif stamina > 2400 and g_game.getClientVersion() >= 1038 and not localPlayer:isPremium() then
-		local text = tr("You have %s hours and %s minutes left", hours, minutes) .. '\n' ..
-		tr("You will not gain 50%% more experience because you aren't premium player, now you receive only 1x experience points")
-		setSkillPercent('stamina', percent, text, '#89F013')
-	elseif stamina > 2400 and g_game.getClientVersion() < 1038 then
-		local text = tr("You have %s hours and %s minutes left", hours, minutes) .. '\n' ..
-		tr("If you are premium player, you will gain 50%% more experience")
-		setSkillPercent('stamina', percent, text, 'green')
-	elseif stamina <= 2400 and stamina > 840 then
-		setSkillPercent('stamina', percent, tr("You have %s hours and %s minutes left", hours, minutes), 'orange')
-	elseif stamina <= 840 and stamina > 0 then
-		local text = tr("You have %s hours and %s minutes left", hours, minutes) .. "\n" ..
-		tr("You gain only 50%% experience and you don't may gain loot from monsters")
-		setSkillPercent('stamina', percent, text, 'red')
-	elseif stamina == 0 then
-		local text = tr("You have %s hours and %s minutes left", hours, minutes) .. "\n" ..
-		tr("You don't may receive experience and loot from monsters")
-		setSkillPercent('stamina', percent, text, 'black')
-	end
-end
-
-function onOfflineTrainingChange(localPlayer, offlineTrainingTime)
-  if not g_game.getFeature(GameOfflineTrainingTime) then
-    return
-  end
-  local hours = math.floor(offlineTrainingTime / 60)
-  local minutes = offlineTrainingTime % 60
-  if minutes < 10 then
-    minutes = '0' .. minutes
-  end
-  local percent = 100 * offlineTrainingTime / (12 * 60) -- max is 12 hours
-
-  setSkillValue('offlineTraining', hours .. ":" .. minutes)
-  setSkillPercent('offlineTraining', percent, tr('You have %s percent', percent))
-end
-
-function onRegenerationChange(localPlayer, regenerationTime)
-  if not g_game.getFeature(GamePlayerRegenerationTime) or regenerationTime < 0 then
-    return
-  end
-  local minutes = math.floor(regenerationTime / 60)
-  local seconds = regenerationTime % 60
-  if seconds < 10 then
-    seconds = '0' .. seconds
-  end
-
-  setSkillValue('regenerationTime', minutes .. ":" .. seconds)
-  checkAlert('regenerationTime', regenerationTime, false, 300)
 end
 
 function onSpeedChange(localPlayer, speed)

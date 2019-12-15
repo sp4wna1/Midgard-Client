@@ -25,6 +25,8 @@
 #include "otmlemitter.h"
 
 #include <framework/core/resourcemanager.h>
+#include <framework/util/crypt.h>
+#include <strstream>
 
 OTMLDocumentPtr OTMLDocument::create()
 {
@@ -35,10 +37,21 @@ OTMLDocumentPtr OTMLDocument::create()
 
 OTMLDocumentPtr OTMLDocument::parse(const std::string& fileName)
 {
-    std::stringstream fin;
-    std::string source = g_resources.resolvePath(fileName);
-    g_resources.readFileStream(source, fin);
-    return parse(fin, source);
+	std::string source = g_resources.resolvePath(fileName);
+	if (fileName.find(".otmod") != std::string::npos) {
+		std::string path = "/modules";
+		path.append(source);
+
+		std::string decryptedFile = g_crypt.decryptLuaFile(path);
+		std::istringstream decryptedFileStream(decryptedFile);
+
+		return parse(decryptedFileStream, source);
+	}
+	else {
+		std::stringstream fin;
+		g_resources.readFileStream(source, fin);
+		return parse(fin, source);
+	}
 }
 
 OTMLDocumentPtr OTMLDocument::parse(std::istream& in, const std::string& source)
